@@ -5,3 +5,8 @@
 
 #### 0.11.1
 * Corrected background in member activity
+
+#### 0.11.2
+* New status indicator in account area
+* Selected #channel will indicate using the defined accent colour
+* Added accent indicators to mute and deafen buttons
