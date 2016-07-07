@@ -4,7 +4,7 @@ A custom theme for Discord (BetterDiscord) inspired by Metro For Steam.
 `v0.11.1`
 
 # Installation
-[Download](https://raw.githubusercontent.com)  
+[Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css)  
 Enable the theme in BetterDiscord settings and reload.  
 You'll also need to go to Appearance settings and choose the light theme.
 
