@@ -1,12 +1,15 @@
 //META{"name":"Metro For Discord 2","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.1"}*//{}
 
+/* METRO FOR DISCORD by Tako */
+/* Report issues on Github or @Tako#6238 */
+
 /* START CONFIG */
 /* See config.md if you need more info on this part */
 :root{
 	/* You can choose your accent colour from MSDN. Copy the HEX code from there and replace the default colour below */
 	/* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
-	--theme-accent:rgba(220,79,173,1);
-	--theme-accent-faded:rgba(220,79,173,0.8);
+	--theme-accent:rgb(0, 114, 198);
+	--theme-accent-faded:rgba(0, 114, 198,0.8);
 
 	/* The colours used to represent online/idle users */
 	--theme-user-online:#72A300;													/* Green for online */
@@ -322,7 +325,7 @@ header,																				/* header */
 }
 .member-activity strong{															/* Name of the game/stream */
 	font-weight: normal !important;
-	background: var(--theme-base-medium-high);
+	background: var(--theme-base-medium);
 	color: var(--theme-base-colour-secondary);
 	margin-left: -39px;
 }
