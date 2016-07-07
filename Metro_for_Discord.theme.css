@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord 2","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.1"}*//{}
+//META{"name":"Metro For Discord 2","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.2"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -134,6 +134,13 @@ header,                                                   /* header */
 .guild-channels{                                          /* Channel list background */
   background:var(--theme-base-medium);
 }
+.guild-channels .channel-text.selected:before{            /* Indicates if the channel is selected */
+  border-left:2px solid var(--theme-accent);
+}
+.guild-channels .channel-text:hover.channel-muted:before,
+.guild-channels .channel-text:hover:not(.unread):before{  /* Left border when #channel is hovered */
+  border-left:2px solid var(--theme-accent);
+}
 .links{                                                   /* Changelog box */
   display: none;
 }
@@ -197,6 +204,21 @@ header,                                                   /* header */
   background: transparent;
 }
 .account .btn:hover{                                      /* Mute/deafen/settings buttons when hovered */
+  background: var(--theme-base-low);
+}
+.account .status{                                         /* Remove border around own status indicator */
+  border: 0;
+}
+.account > .avatar-small .status{                         /* Make the indicator look like a border on the right side of own avatar */
+  width: 2px;
+  height: 100%;
+  border-radius: 0;
+  right: 0;
+  bottom: 0;
+}
+.account .btn-mute.disabled,
+.account .btn-deafen.disabled{
+  border-top: 1px solid var(--theme-accent);
   background: var(--theme-base-low);
 }
 
@@ -345,18 +367,18 @@ header,                                                   /* header */
 
 /* SCROLLBARS */
 .scroller-wrap .scroller::-webkit-scrollbar {             /* Width of scrollbar */
-        width: 10px
+  width: 10px
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {       /* Scrollbar handle */
-        background-color: var(--theme-base-high);
-        background-clip: padding-box;
-        border: 0;
-        border-radius: 5px
+  background-color: var(--theme-base-high);
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 5px
 }
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece { /* Scrollbar track */
-        background-color: transparent;
-        background-clip: padding-box;
-        border: 0;
-        border-radius: 5px
+  background-color: transparent;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 5px
 }
 
