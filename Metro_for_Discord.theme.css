@@ -6,357 +6,357 @@
 /* START CONFIG */
 /* See config.md if you need more info on this part */
 :root{
-	/* You can choose your accent colour from MSDN. Copy the HEX code from there and replace the default colour below */
-	/* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
-	--theme-accent:rgb(0, 114, 198);
-	--theme-accent-faded:rgba(0, 114, 198,0.8);
+  /* You can choose your accent colour from MSDN. Copy the HEX code from there and replace the default colour below */
+  /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
+  --theme-accent:rgb(0, 114, 198);
+  --theme-accent-faded:rgba(0, 114, 198,0.8);
 
-	/* The colours used to represent online/idle users */
-	--theme-user-online:#72A300;													/* Green for online */
-	--theme-user-idle:#FF8F32;														/* Orange for idle */
-	--theme-user-offline:#848484;													/* Grey for offline */
+  /* The colours used to represent online/idle users */
+  --theme-user-online:#72A300;                            /* Green for online */
+  --theme-user-idle:#FF8F32;                              /* Orange for idle */
+  --theme-user-offline:#848484;                           /* Grey for offline */
 
-	/* Font settings - no touch! */
-	--theme-font:Segoe UI, Arial, Helvetica, sans-serif;
-	--theme-font-size-normal:13px;
-	--theme-font-size-h1:15px;
-	--theme-font-size-h2:14px;
+  /* Font settings - no touch! */
+  --theme-font:Segoe UI, Arial, Helvetica, sans-serif;
+  --theme-font-size-normal:13px;
+  --theme-font-size-h1:15px;
+  --theme-font-size-h2:14px;
 
-	/* This part is so I can easily convert between the dark and light versions - no touch! */
-	/* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
-	--theme-base-low:#141414;
-	--theme-base-medium-low:#1A1A1A;
-	--theme-base-medium:#202020;
-	--theme-base-medium-high:#252525;
-	--theme-base-high:#2C2C2C;
-	--theme-base-border:#0F0F0F;
-	--theme-base-colour-primary:#FFFFFF;
-	--theme-base-colour-secondary:#898989;
+  /* This part is so I can easily convert between the dark and light versions - no touch! */
+  /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
+  --theme-base-low:#141414;
+  --theme-base-medium-low:#1A1A1A;
+  --theme-base-medium:#202020;
+  --theme-base-medium-high:#252525;
+  --theme-base-high:#2C2C2C;
+  --theme-base-border:#0F0F0F;
+  --theme-base-colour-primary:#FFFFFF;
+  --theme-base-colour-secondary:#898989;
 }
 /* END CONFIG */
 
 /* GLOBALS */
-body,																				/* Most elements */
-textarea,																			/* Chat box */
-strong,																				/* Game */
-input,																				/* Textbox */
-select,																				/* Dropdown */
-button,																				/* Button */
-h1,																					/* h1 */
-h2,																					/* h2 */
-header,																				/* header */
-.channel,																			/* Channel name */
-.settings-header,																	/* Modal menus */
-.tab-bar-item,																		/* Modal menus */
-.tab-bar-header,																	/* Modal menu header */
-.channel-name,																		/* Channel name */
-.topic,																				/* Channel topic */
-.Select-placeholder{																/* Dropdown placeholder */
-    font-family:Segoe UI !important;
-    font-size:13px !important;
-    text-transform:none !important;
+body,                                                     /* Most elements */
+textarea,                                                 /* Chat box */
+strong,                                                   /* Game */
+input,                                                    /* Textbox */
+select,                                                   /* Dropdown */
+button,                                                   /* Button */
+h1,                                                       /* h1 */
+h2,                                                       /* h2 */
+header,                                                   /* header */
+.channel,                                                 /* Channel name */
+.settings-header,                                         /* Modal menus */
+.tab-bar-item,                                            /* Modal menus */
+.tab-bar-header,                                          /* Modal menu header */
+.channel-name,                                            /* Channel name */
+.topic,                                                   /* Channel topic */
+.Select-placeholder{                                      /* Dropdown placeholder */
+  font-family:Segoe UI !important;
+  font-size:13px !important;
+  text-transform:none !important;
 }
 
 
 /* TITLE BAR */
-.chat>.title-wrap{																	/* Main title bar */
-	background: var(--theme-base-low);
-	min-height: 50px;
-	padding:0 10px;
-	border-bottom: 1px solid var(--theme-base-border);
+.chat>.title-wrap{                                        /* Main title bar */
+  background: var(--theme-base-low);
+  min-height: 50px;
+  padding:0 10px;
+  border-bottom: 1px solid var(--theme-base-border);
 }
-.chat>.title-wrap>.title .channel-name{												/* Channel name in the title bar */
-	color: var(--theme-base-colour-primary);
-	font-size: 15px;
-	font-weight: normal;
-	text-transform: capitalize !important;
+.chat>.title-wrap>.title .channel-name{                   /* Channel name in the title bar */
+  color: var(--theme-base-colour-primary);
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize !important;
 }
-.chat>.title-wrap>.title .channel-name:before{										/* The # next to the channel name */
-	color: #FFF;
-	margin-right: 0;
+.chat>.title-wrap>.title .channel-name:before{            /* The # next to the channel name */
+  color: #FFF;
+  margin-right: 0;
 }
-.chat>.title-wrap>.topic:before{													/* Separator between channel name and channel topic */
-	background: var(--theme-base-colour-secondary);
+.chat>.title-wrap>.topic:before{                          /* Separator between channel name and channel topic */
+  background: var(--theme-base-colour-secondary);
 }
-.header-toolbar button{																/* Alert/users toggle/pinned/help buttons */
-	height: 50px;
-	border-radius: 0;
+.header-toolbar button{                                   /* Alert/users toggle/pinned/help buttons */
+  height: 50px;
+  border-radius: 0;
 }
 .header-toolbar button+button{
-	margin: 0;
+  margin: 0;
 }
 .header-toolbar button:hover{
-	background: var(--theme-base-medium);
+  background: var(--theme-base-medium);
 }
-.header-toolbar button.active{														/* Active users toggle */
-	background: var(--theme-base-medium);
-	border-bottom: 1px solid var(--theme-accent);
+.header-toolbar button.active{                            /* Active users toggle */
+  background: var(--theme-base-medium);
+  border-bottom: 1px solid var(--theme-accent);
 }
-.header-toolbar .separator{															/* Separator bewteen icons */
-	background: var(--theme-base-medium);
-	height: 50px;
-	margin: 0;
+.header-toolbar .separator{                               /* Separator bewteen icons */
+  background: var(--theme-base-medium);
+  height: 50px;
+  margin: 0;
 }
 
 /* SERVER LIST */
 .guilds-wrapper{
-	background: var(--theme-base-low);
+  background: var(--theme-base-low);
 }
 
 /* CHANNELS PANE */
-.channels-wrap{																		/* Channels list */
-	width: 230px;
+.channels-wrap{                                           /* Channels list */
+  width: 230px;
 }
-.guild-header header{																/* Server name */
-	background: var(--theme-base-low);
-	height: 50px;
-	padding: 0 10px;
-	box-shadow: none;
-	border-bottom: 1px solid var(--theme-base-border);
+.guild-header header{                                     /* Server name */
+  background: var(--theme-base-low);
+  height: 50px;
+  padding: 0 10px;
+  box-shadow: none;
+  border-bottom: 1px solid var(--theme-base-border);
 }
-.guild-header header:hover{															/* Server name hover */
-	background: var(--theme-base-medium);
+.guild-header header:hover{                               /* Server name hover */
+  background: var(--theme-base-medium);
 }
 .guild-header header span{
-	line-height: 49px;
+  line-height: 49px;
 }
-.guild-header ul{																	/* Notification/privacy settings menu */
-	top: 49px;
-	background: var(--theme-base-medium);
-	border: 1px solid var(--theme-base-border);
-	box-shadow: none;
+.guild-header ul{                                         /* Notification/privacy settings menu */
+  top: 49px;
+  background: var(--theme-base-medium);
+  border: 1px solid var(--theme-base-border);
+  box-shadow: none;
 }
-.guild-header ul a{																	/* Notification/privacy settings menu items */
-	margin:0;
-	font-size: var(--theme-font-size-normal);
-	font-weight: normal;
+.guild-header ul a{                                       /* Notification/privacy settings menu items */
+  margin:0;
+  font-size: var(--theme-font-size-normal);
+  font-weight: normal;
 }
-.guild-channels{																	/* Channel list background */
-	background:var(--theme-base-medium);
+.guild-channels{                                          /* Channel list background */
+  background:var(--theme-base-medium);
 }
-.links{																				/* Changelog box */
-	display: none;
+.links{                                                   /* Changelog box */
+  display: none;
 }
 
 /* VOICE CONNECTION INFO */
-#voice-connection{																	/* This only shows up when connected to a voice server */
-	background: var(--theme-base-medium);
-	border-top: 1px solid var(--theme-base-border);
-	height: 50px;
-	padding: 0;
+#voice-connection{                                        /* This only shows up when connected to a voice server */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  height: 50px;
+  padding: 0;
 }
-#voice-connection .voice-connection-inner{											/* Contains connection status and current channel */
-	padding: 0 10px;
+#voice-connection .voice-connection-inner{                /* Contains connection status and current channel */
+  padding: 0 10px;
 }
-#voice-connection .btn-group{														/* Group of buttons (connection info/disconnect) */
-	background: transparent;
-	border: 0;
-	border-radius: 0;
+#voice-connection .btn-group{                             /* Group of buttons (connection info/disconnect) */
+  background: transparent;
+  border: 0;
+  border-radius: 0;
 }
-#voice-connection .btn{																/* Connection info and disconnect buttons */
-	box-shadow: none;
-	border:0;
-	border-radius: 0;
-	width: 30px;
-	height: 50px;
-	background: transparent;
+#voice-connection .btn{                                   /* Connection info and disconnect buttons */
+  box-shadow: none;
+  border:0;
+  border-radius: 0;
+  width: 30px;
+  height: 50px;
+  background: transparent;
 }
-#voice-connection .btn:hover{														/* Connection info/disconnected buttons when hovered */
-	background: var(--theme-base-low);
+#voice-connection .btn:hover{                             /* Connection info/disconnected buttons when hovered */
+  background: var(--theme-base-low);
 }
 
 /* ACCOUNT BOX */
-.account{																			/* Account box */
-	background: var(--theme-base-medium);
-	border-top: 1px solid var(--theme-base-border);
-	height: 50px;
-	padding: 0;
+.account{                                                 /* Account box */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  height: 50px;
+  padding: 0;
 }
-.account .account-details .username{												/* Set max with of username, otherwise the button box gets pushed out of view */
-	max-width: 36px;
+.account .account-details .username{                      /* Set max with of username, otherwise the button box gets pushed out of view */
+  max-width: 36px;
 }
-.account .account-details .discriminator{											/* Unique ID */
-	font-weight: normal;
+.account .account-details .discriminator{                 /* Unique ID */
+  font-weight: normal;
 }
-.account .avatar-small{																/* Your avatar */
-	width: 50px;
-	height: 50px;
-	border-radius: 0;
-	background-size: 50px 50px;
+.account .avatar-small{                                   /* Your avatar */
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  background-size: 50px 50px;
 }
-.account .btn-group{																/* Group of buttons (mute/deafen/settings) */
-	border: 0;
-	border-radius: 0;
+.account .btn-group{                                      /* Group of buttons (mute/deafen/settings) */
+  border: 0;
+  border-radius: 0;
 }
-.account .btn{																		/* Mute/deafen/settings buttons */
-	box-shadow: none;
-	border:0;
-	border-radius: 0;
-	width: 30px;
-	height: 50px;
-	background: transparent;
+.account .btn{                                            /* Mute/deafen/settings buttons */
+  box-shadow: none;
+  border:0;
+  border-radius: 0;
+  width: 30px;
+  height: 50px;
+  background: transparent;
 }
-.account .btn:hover{																/* Mute/deafen/settings buttons when hovered */
-	background: var(--theme-base-low);
+.account .btn:hover{                                      /* Mute/deafen/settings buttons when hovered */
+  background: var(--theme-base-low);
 }
 
 /* CHAT */
-.chat .content{																		/* Chat background */
-	background:var(--theme-base-medium-low);
+.chat .content{                                           /* Chat background */
+  background:var(--theme-base-medium-low);
 }
-.message-group{																		/* Border separating messages */
-	border-bottom: 1px solid var(--theme-base-high);
+.message-group{                                           /* Border separating messages */
+  border-bottom: 1px solid var(--theme-base-high);
 }
-.message-group .comment .markup{													/* Colour of text */
-	color: #FFF;
-	font-size: 13px;
+.message-group .comment .markup{                          /* Colour of text */
+  color: #FFF;
+  font-size: 13px;
 }
-.message-group.compact .message .markup .user-name,									/* Username colour */
-.message-group.compact .timestamp{													/* Timestamp colour */
-	color: var(--theme-base-colour-secondary);
+.message-group.compact .message .markup .user-name,       /* Username colour */
+.message-group.compact .timestamp{                        /* Timestamp colour */
+  color: var(--theme-base-colour-secondary);
 }
-.chat .divider>span{																/* New messages divider */
-	background:none;
+.chat .divider>span{                                      /* New messages divider */
+  background:none;
 }
 .message-group .comment .markup pre,
-.message-group .comment .markup code.inline{										/* Code block */
-	background: var(--theme-base-medium);
-	border:1px solid var(--theme-base-low);
+.message-group .comment .markup code.inline{              /* Code block */
+  background: var(--theme-base-medium);
+  border:1px solid var(--theme-base-low);
 }
 .message-group .comment .markup pre code,
 .theme-light .hljs{
-	background:none;
+  background:none;
 }
-.typing{																			/* Person typing notifications */
-	background: transparent;
-	color: var(--theme-base-colour-secondary);
-	bottom: 4px;
-	left: 10px;
-	height: 20px;
+.typing{                                                  /* Person typing notifications */
+  background: transparent;
+  color: var(--theme-base-colour-secondary);
+  bottom: 4px;
+  left: 10px;
+  height: 20px;
 }
 .typing .text strong{
-	font-weight: normal;
+  font-weight: normal;
 }
-.typing .ellipsis{																	/* Hide the animated bullets when people are typing */
-	display: none;
+.typing .ellipsis{                                        /* Hide the animated bullets when people are typing */
+  display: none;
 }
-.highlight{																			/* @mention and #channel */
-	background: transparent;
-	color: var(--theme-accent);
+.highlight{                                               /* @mention and #channel */
+  background: transparent;
+  color: var(--theme-accent);
 }
-.highlight:hover{																	/* @mention and #channel hover */
-	background: transparent;
-	color: var(--theme-base-colour-primary);
+.highlight:hover{                                         /* @mention and #channel hover */
+  background: transparent;
+  color: var(--theme-base-colour-primary);
 }
-.new-messages-bar{																	/* New messages bar */
-	background: var(--theme-accent-faded) !important;
+.new-messages-bar{                                        /* New messages bar */
+  background: var(--theme-accent-faded) !important;
 }
 .chat form{
-	box-shadow: none;
-	border-top: 1px solid var(--theme-base-border);
-	margin:0;
+  box-shadow: none;
+  border-top: 1px solid var(--theme-base-border);
+  margin:0;
 }
-.channel-textarea{																	/* The actual chat box */
-	min-height: 50px;
-	margin: 0;
+.channel-textarea{                                        /* The actual chat box */
+  min-height: 50px;
+  margin: 0;
 }
 .channel-textarea-inner{
-	border:0;
-	padding: 5px 10px 27px 10px;
-	background: var(--theme-base-medium-high);
-	border-radius: 0;
+  border:0;
+  padding: 5px 10px 27px 10px;
+  background: var(--theme-base-medium-high);
+  border-radius: 0;
 }
 .channel-textarea-inner textarea{
-	background: var(--theme-base-medium-high);
-	color: var(--theme-base-colour-primary);
+  background: var(--theme-base-medium-high);
+  color: var(--theme-base-colour-primary);
 }
-.channel-textarea-upload{															/* Upload button */
-	border-right: 0;
-	margin: -9px 10px -12px -10px;
+.channel-textarea-upload{                                 /* Upload button */
+  border-right: 0;
+  margin: -9px 10px -12px -10px;
 }
 
 /* EMOJI PICKER */
 .emoji-picker{
-	background: var(--theme-base-medium);											/* Emoji Picker background */
-	border-radius: 0;
-	border:1px solid var(--theme-base-border);
+  background: var(--theme-base-medium);                   /* Emoji Picker background */
+  border-radius: 0;
+  border:1px solid var(--theme-base-border);
 }
-.emoji-picker .search-bar{															/* Emoji search bar background */
-	background: var(--theme-base-medium);
+.emoji-picker .search-bar{                                /* Emoji search bar background */
+  background: var(--theme-base-medium);
 }
-.emoji-picker .search-bar input{													/* Emoji search bar */
-	border-radius: 0 !important;
-	color:var(--theme-base-colour-primary);
-	background: var(--theme-base-medium-high);
+.emoji-picker .search-bar input{                          /* Emoji search bar */
+  border-radius: 0 !important;
+  color:var(--theme-base-colour-primary);
+  background: var(--theme-base-medium-high);
 }
-.emoji-picker .sticky-header{														/* Category headers */
-	background: var(--theme-base-medium);
-	color: var(--theme-base-colour-primary);
+.emoji-picker .sticky-header{                             /* Category headers */
+  background: var(--theme-base-medium);
+  color: var(--theme-base-colour-primary);
 }
-.emoji-item.selected{																/* When an emoji is hovered */
-	background: none !important;
+.emoji-item.selected{                                     /* When an emoji is hovered */
+  background: none !important;
 }
-.emoji-item.selected .sprite-item{													/* turn off greyscale when hovered */
-	-webkit-filter: grayscale(0%) !important;
+.emoji-item.selected .sprite-item{                        /* turn off greyscale when hovered */
+  -webkit-filter: grayscale(0%) !important;
 }
-.emoji-item .sprite-item{															/* Unselected Emojis */
-	-webkit-filter: grayscale(50%) !important;
+.emoji-item .sprite-item{                                 /* Unselected Emojis */
+  -webkit-filter: grayscale(50%) !important;
 }
 
 /* MEMBERS LIST */
 .channel-members-wrap{
-	width: 230px;
+  width: 230px;
 }
-.channel-members{																	/* Members list */
-	background: var(--theme-base-medium);
-	width: 230px;
+.channel-members{                                         /* Members list */
+  background: var(--theme-base-medium);
+  width: 230px;
 }
-.channel-members .member{															/* Bring avatars closer to edges */
-	padding: 5px 15px;
+.channel-members .member{                                 /* Bring avatars closer to edges */
+  padding: 5px 15px;
 }
-.channel-members .member:hover{														/* Hover member */
-	background: var(--theme-base-medium-high);
+.channel-members .member:hover{                           /* Hover member */
+  background: var(--theme-base-medium-high);
 }
-.channel-members .avatar-small{														/* Make avatars squares */
-	border-radius: 0;
+.channel-members .avatar-small{                           /* Make avatars squares */
+  border-radius: 0;
 }
-.member-activity{																	/* Hide the words "Playing"/"Streaming" */
-	color: var(--theme-base-medium) !important;
+.member-activity{                                         /* Hide the words "Playing"/"Streaming" */
+  color: var(--theme-base-medium) !important;
 }
-.member-activity strong{															/* Name of the game/stream */
-	font-weight: normal !important;
-	background: var(--theme-base-medium);
-	color: var(--theme-base-colour-secondary);
-	margin-left: -39px;
+.member-activity strong{                                  /* Name of the game/stream */
+  font-weight: normal !important;
+  background: var(--theme-base-medium);
+  color: var(--theme-base-colour-secondary);
+  margin-left: -39px;
 }
-.member-status-online > .avatar-small{												/* Use a green border to represent online members */
-	border: 1px solid var(--theme-user-online);
+.member-status-online > .avatar-small{                    /* Use a green border to represent online members */
+  border: 1px solid var(--theme-user-online);
 }
-.member-status-idle > .avatar-small{												/* Use an orange border to represent idle members */
-	border: 1px solid var(--theme-user-idle);
+.member-status-idle > .avatar-small{                      /* Use an orange border to represent idle members */
+  border: 1px solid var(--theme-user-idle);
 }
-.member-status-offline > .avatar-small{												/* Use a grey border to represent offline members */
-	border: 1px solid var(--theme-user-offline);
+.member-status-offline > .avatar-small{                   /* Use a grey border to represent offline members */
+  border: 1px solid var(--theme-user-offline);
 }
-.channel-members .avatar-small .status{												/* Hide default status indicators */
-	display: none;
+.channel-members .avatar-small .status{                   /* Hide default status indicators */
+  display: none;
 }
 
 
 /* SCROLLBARS */
-.scroller-wrap .scroller::-webkit-scrollbar { 										/* Width of scrollbar */
-    width: 10px
+.scroller-wrap .scroller::-webkit-scrollbar {             /* Width of scrollbar */
+        width: 10px
 }
-.scroller-wrap .scroller::-webkit-scrollbar-thumb {									/* Scrollbar handle */
-    background-color: var(--theme-base-high);
-    background-clip: padding-box;
-    border: 0;
-    border-radius: 5px
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {       /* Scrollbar handle */
+        background-color: var(--theme-base-high);
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 5px
 }
-.scroller-wrap .scroller::-webkit-scrollbar-track-piece {							/* Scrollbar track */
-    background-color: transparent;
-    background-clip: padding-box;
-    border: 0;
-    border-radius: 5px
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece { /* Scrollbar track */
+        background-color: transparent;
+        background-clip: padding-box;
+        border: 0;
+        border-radius: 5px
 }
 
