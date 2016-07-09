@@ -12,7 +12,7 @@ There are a few settings you can change in the top of the css file.
 A colour sheet is available in accent.md  
 `--theme-accent:` This is your accent color, it appears on some places to show an option is toggled.  
 `--theme-accent-faded:` Same as above, but with 0.8 alpha. It's only used on the "X new messages since" bar.  
-Backgrounds
+Backgrounds  
 `--theme-profile-bg:` Background on user profiles. Images must be over HTTPS!  
 `--theme-profile-bg-pos:` Background position for user profiles  
 Status Indicators  
