@@ -23,3 +23,7 @@
 * Styles user popouts
 * Hid the words 'Playing' and 'Streaming' from under users in the members list
 * Styled Pinned Messages
+
+#### 0.12.1
+* Finish styling some things I missed on pinned messages
+* New pinned messages are indicated with a pulsing bottom border (color is determined by --theme-accent)
