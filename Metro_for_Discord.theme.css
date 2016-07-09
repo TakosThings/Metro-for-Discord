@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.1"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -47,6 +47,13 @@
   --theme-textbox-border:;
 }
 /* END CONFIG */
+
+/* ANIMATIOn */
+@keyframes pulse{
+  50%{
+    background: var(--theme-accent);
+  }
+}
 
 /* GLOBALS */
 body,                                                     /* Most elements */
@@ -104,6 +111,16 @@ header,                                                   /* header */
 .header-toolbar button.active{                            /* Active users toggle */
   background: var(--theme-base-medium);
   border-bottom: 1px solid var(--theme-accent);
+}
+.header-toolbar .toolbar-badge{                           /* New pinned messages indicator */
+  width: 30px;
+  height: 1px;
+  border: none;
+  border-radius: 0;
+  top: 49px;
+  right: 0;
+  animation: pulse 3s ease-out infinite;
+  background: transparent;
 }
 .header-toolbar .separator{                               /* Separator bewteen icons */
   background: var(--theme-base-medium);
@@ -440,6 +457,8 @@ header,                                                   /* header */
 
 .channel-pins-wrap .header .title{                        /* Pinned messages box header */
   color: var(--theme-base-colour-primary);
+  font-weight: normal;
+  font-size: 13px;
 }
 .channel-pins{
   padding: 0;
@@ -470,4 +489,14 @@ header,                                                   /* header */
 }
 .channel-pins .message-group:hover .action-buttons:hover{
   background: var(--theme-button-hover);
+}
+.channel-pins-wrap .footer{                               /* Displays if there are no pinned messages */
+  background: transparent;
+  border-radius: 0;
+  border-top: 1px solid var(--theme-base-border2);
+}
+.channel-pins .empty-placeholder .body,                   /* No pinned messages message */
+.protip.popout-footer .tip{                               /* The tip message */
+  color:var(--theme-base-colour-secondary);
+  font-weight: normal;
 }
