@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.3"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -9,6 +9,13 @@
   /* A list of colours can be found in accent.md */
   --theme-accent:rgb(0, 114, 198);
   --theme-accent-faded:rgba(0, 114, 198,0.8);
+
+  /* Backgrounds*/
+  /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
+  --theme-userpop-bg:url(https://i.imgur.com/PlLrpy0.gif);
+  --theme-userpop-bg-pos:-196px -541px;
+  --theme-userprofile-bg:url(https://i.imgur.com/PlLrpy0.gif);
+  --theme-userprofile-bg-pos:-93px -613px;
 
   /* The colours used to represent online/idle users */
   --theme-user-online:#72A300;                            /* Green for online */
@@ -29,8 +36,15 @@
   --theme-base-medium-high:#252525;
   --theme-base-high:#2C2C2C;
   --theme-base-border:#0F0F0F;
+  --theme-base-border2:#353535;
   --theme-base-colour-primary:#FFFFFF;
   --theme-base-colour-secondary:#898989;
+
+  /* Forms */
+  --theme-button:#353535;
+  --theme-button-hover:#515151;
+  --theme-textbox-background:;
+  --theme-textbox-border:;
 }
 /* END CONFIG */
 
@@ -355,14 +369,11 @@ header,                                                   /* header */
 .channel-members .avatar-small{                           /* Make avatars squares */
   border-radius: 0;
 }
-.member-activity{                                         /* Hide the words "Playing"/"Streaming" */
-  color: var(--theme-base-medium) !important;
+.channel-members .member .member-activity{                                         /* Hide the words "Playing"/"Streaming" */
+  font-size: 0;
 }
 .member-activity strong{                                  /* Name of the game/stream */
   font-weight: normal !important;
-  background: var(--theme-base-medium);
-  color: var(--theme-base-colour-secondary);
-  margin-left: -39px;
 }
 .member-status-online > .avatar-small{                    /* Use a green border to represent online members */
   border: 1px solid var(--theme-user-online);
@@ -393,4 +404,70 @@ header,                                                   /* header */
   background-clip: padding-box;
   border: 0;
   border-radius: 5px
+}
+
+
+/* MEMBER PROFILE */
+.user-popout .header{                                     /* User popout header */
+  background: var(--theme-userpop-bg);
+  background-position: var(--theme-userpop-bg-pos);
+}
+.user-popout .body{
+  background: var(--theme-base-high);
+}
+.user-popout .footer{
+  background: var(--theme-base-high);
+  border-top:1px solid var(--theme-base-border2);
+}
+.user-popout .body .section .label{
+  color: var(--theme-base-colour-secondary);
+}
+#user-profile-modal .header{                              /* User profile header */
+  background: var(--theme-userprofile-bg);
+  background-position: var(--theme-userprofile-bg-pos);
+}
+
+/* PINNED MESSAGES */
+.channel-pins-wrap{                                       /* Pinned messages */
+  background: var(--theme-base-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+}
+.channel-pins-wrap .header{                               /* Pinned messages box header */
+  box-shadow: none;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+
+.channel-pins-wrap .header .title{                        /* Pinned messages box header */
+  color: var(--theme-base-colour-primary);
+}
+.channel-pins{
+  padding: 0;
+}
+.channel-pins .message-group{
+  margin:0;
+  border-radius: 0;
+  border-bottom: 1px solid var(--theme-base-border2);
+  border-top: 0;
+  border-right: 0;
+  border-left:0;
+}
+.channel-pins .message-group:hover{
+  background: var(--theme-base-medium-high);
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.channel-pins .message-group .action-buttons .jump-button{ /* Jump button */
+  background: none;
+  color: var(--theme-base-colour-primary);
+}
+.channel-pins .message-group .action-buttons .jump-button:hover{
+  color: var(--theme-base-colour-primary);
+}
+.channel-pins .message-group:hover .action-buttons{       /* Remove shitty glow around jump button */
+  box-shadow: none;
+  background: var(--theme-button);
+  
+}
+.channel-pins .message-group:hover .action-buttons:hover{
+  background: var(--theme-button-hover);
 }

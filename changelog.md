@@ -17,3 +17,9 @@
 * Changed selected channel background
 * Less gaps between members
 * Possible fix for the jumping account box
+
+#### 0.12.0
+* Added config options for user popout backgrounds
+* Styles user popouts
+* Hid the words 'Playing' and 'Streaming' from under users in the members list
+* Styled Pinned Messages
