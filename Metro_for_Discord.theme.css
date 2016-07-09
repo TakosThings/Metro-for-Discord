@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord 2","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.2"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.11.3"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -6,8 +6,7 @@
 /* START CONFIG */
 /* See config.md if you need more info on this part */
 :root{
-  /* You can choose your accent colour from MSDN. Copy the HEX code from there and replace the default colour below */
-  /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
+  /* A list of colours can be found in accent.md */
   --theme-accent:rgb(0, 114, 198);
   --theme-accent-faded:rgba(0, 114, 198,0.8);
 
@@ -134,12 +133,19 @@ header,                                                   /* header */
 .guild-channels{                                          /* Channel list background */
   background:var(--theme-base-medium);
 }
+.guild-channels .channel-text:hover,
+.guild-channels .channel-text.selected{                   /* Selected and hovered channel background */
+	background: var(--theme-base-medium-high);
+}
 .guild-channels .channel-text.selected:before{            /* Indicates if the channel is selected */
   border-left:2px solid var(--theme-accent);
 }
 .guild-channels .channel-text:hover.channel-muted:before,
 .guild-channels .channel-text:hover:not(.unread):before{  /* Left border when #channel is hovered */
   border-left:2px solid var(--theme-accent);
+}
+.guild-channels header{                                   /* Top margin for channel Text/Voice Channel headers */
+  margin-top: 10px;
 }
 .links{                                                   /* Changelog box */
   display: none;
@@ -211,7 +217,7 @@ header,                                                   /* header */
 }
 .account > .avatar-small .status{                         /* Make the indicator look like a border on the right side of own avatar */
   width: 2px;
-  height: 100%;
+  height: 50px;
   border-radius: 0;
   right: 0;
   bottom: 0;
@@ -332,6 +338,13 @@ header,                                                   /* header */
 .channel-members{                                         /* Members list */
   background: var(--theme-base-medium);
   width: 230px;
+  padding: 10px 0;
+}
+.channel-members h2{                                      /* Member group headers */
+  padding: 0 15px;
+}
+.channel-members .member+h2{                              /* Less border between groups */
+  margin-top: 15px;
 }
 .channel-members .member{                                 /* Bring avatars closer to edges */
   padding: 5px 15px;
@@ -381,4 +394,3 @@ header,                                                   /* header */
   border: 0;
   border-radius: 5px
 }
-
