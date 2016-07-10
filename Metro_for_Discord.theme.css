@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.1"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.2"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -43,8 +43,8 @@
   /* Forms */
   --theme-button:#353535;
   --theme-button-hover:#515151;
-  --theme-textbox-background:;
-  --theme-textbox-border:;
+  --theme-textbox-background:transparent;
+  --theme-textbox-border:#353535;
 }
 /* END CONFIG */
 
@@ -443,6 +443,17 @@ header,                                                   /* header */
   background: var(--theme-userprofile-bg);
   background-position: var(--theme-userprofile-bg-pos);
 }
+.user-popout .username-wrapper .activity{
+  font-size: 13px;
+  font-weight: normal;
+}
+.user-popout .username-wrapper .activity strong{          /* Now playing font */
+  font-weight: normal;
+}
+.protip .label{                                           /* Protip text */
+  font-variant: normal;
+  text-transform: none;
+}
 
 /* PINNED MESSAGES */
 .channel-pins-wrap{                                       /* Pinned messages */
@@ -499,4 +510,18 @@ header,                                                   /* header */
 .protip.popout-footer .tip{                               /* The tip message */
   color:var(--theme-base-colour-secondary);
   font-weight: normal;
+}
+.user-popout .footer .quick-message-wrapper .input{       /* Quick message box */
+  height: 22px;
+  padding: 0 10px;
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+  background: var(--theme-textbox-background);
+  color: var(--theme-base-colour-primary);
+}
+
+
+/* OTHER */
+img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
+  height: 16px;
 }

@@ -27,3 +27,6 @@
 #### 0.12.1
 * Finish styling some things I missed on pinned messages
 * New pinned messages are indicated with a pulsing bottom border (color is determined by --theme-accent)
+
+#### 0.12.2
+* TTV, FrankerZ emotes are now set to 16x16
