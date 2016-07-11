@@ -112,6 +112,9 @@ header,                                                   /* header */
   background: var(--theme-base-medium);
   border-bottom: 2px solid var(--theme-accent);
 }
+.header-toolbar button.active > span{                     /* Fixes the icon bouncing when its active */
+  margin-bottom:-1px;
+}
 .header-toolbar .toolbar-badge{                           /* New pinned messages indicator */
   width: 30px;
   height: 2px;
