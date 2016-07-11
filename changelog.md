@@ -30,3 +30,6 @@
 
 #### 0.12.2
 * TTV, FrankerZ emotes are now set to 16x16
+
+#### 0.12.3
+* Visibility improvement for some toggled buttons
