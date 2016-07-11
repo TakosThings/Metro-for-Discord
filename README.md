@@ -21,4 +21,4 @@ Status Indicators
 `--theme-user-offline:` Grey for offline status
 
 # Preview
-![Preview](https://i.imgur.com/bL03kTk.png)
+![Preview](http://i.imgur.com/5ry2Q4p.png)
