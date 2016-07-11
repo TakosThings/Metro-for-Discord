@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.2"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.3"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -110,11 +110,11 @@ header,                                                   /* header */
 }
 .header-toolbar button.active{                            /* Active users toggle */
   background: var(--theme-base-medium);
-  border-bottom: 1px solid var(--theme-accent);
+  border-bottom: 2px solid var(--theme-accent);
 }
 .header-toolbar .toolbar-badge{                           /* New pinned messages indicator */
   width: 30px;
-  height: 1px;
+  height: 2px;
   border: none;
   border-radius: 0;
   top: 49px;
@@ -255,7 +255,7 @@ header,                                                   /* header */
 }
 .account .btn-mute.disabled,
 .account .btn-deafen.disabled{
-  border-top: 1px solid var(--theme-accent);
+  border-top: 2px solid var(--theme-accent);
   background: var(--theme-base-low);
 }
 
