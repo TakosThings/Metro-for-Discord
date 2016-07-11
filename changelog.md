@@ -35,4 +35,9 @@
 * Visibility improvement for some toggled buttons
 
 #### 0.12.4
-* Fix for the members list icon jumping a fex px when the button was toggled
+* Fix for the members list icon jumping a few px when the button was toggled
+
+#### 0.13.0
+* Re-worked chat box
+* X now typing shows in a seperate box below the chat box
+* Styled the "You must be a member for 10 minutes" chat box blocker

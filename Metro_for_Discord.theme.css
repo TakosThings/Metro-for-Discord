@@ -182,7 +182,9 @@ header,                                                   /* header */
   margin-top: 10px;
 }
 .links{                                                   /* Changelog box */
-  display: none;
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  color:var(--theme-base-colour-secondary);
 }
 
 /* VOICE CONNECTION INFO */
@@ -289,19 +291,6 @@ header,                                                   /* header */
 .theme-light .hljs{
   background:none;
 }
-.typing{                                                  /* Person typing notifications */
-  background: transparent;
-  color: var(--theme-base-colour-secondary);
-  bottom: 4px;
-  left: 10px;
-  height: 20px;
-}
-.typing .text strong{
-  font-weight: normal;
-}
-.typing .ellipsis{                                        /* Hide the animated bullets when people are typing */
-  display: none;
-}
 .highlight{                                               /* @mention and #channel */
   background: transparent;
   color: var(--theme-accent);
@@ -313,28 +302,49 @@ header,                                                   /* header */
 .new-messages-bar{                                        /* New messages bar */
   background: var(--theme-accent-faded) !important;
 }
-.chat form{
+
+/* CHAT BOX */
+.chat form{                                               /* Chat box */
+  margin: 0;
   box-shadow: none;
   border-top: 1px solid var(--theme-base-border);
-  margin:0;
+  min-height: 75px;
 }
-.channel-textarea{                                        /* The actual chat box */
+.channel-textarea{
   min-height: 50px;
   margin: 0;
 }
 .channel-textarea-inner{
-  border:0;
-  padding: 5px 10px 27px 10px;
-  background: var(--theme-base-medium-high);
+  background: transparent;
+  border: 0;
   border-radius: 0;
+  padding: 16px 10px;
+  border-bottom: 1px solid var(--theme-base-border2);
 }
-.channel-textarea-inner textarea{
-  background: var(--theme-base-medium-high);
+.channel-textarea-inner textarea{                         /* The actual text box */
+  background:var(--theme-base-medium-low);
   color: var(--theme-base-colour-primary);
 }
-.channel-textarea-upload{                                 /* Upload button */
-  border-right: 0;
-  margin: -9px 10px -12px -10px;
+.channel-textarea-upload{                                 /* The upload button in the text box */
+  border-right: 1px solid var(--theme-base-border2);
+  margin: -16px 10px -16px -10px;
+}
+.typing{                                                  /* X is typing text */
+  height: 24px;
+  left: 0;
+  bottom: 0;
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: normal;
+  background: transparent;
+  color: var(--theme-base-colour-secondary);
+}
+.typing strong{                                           /* The username of the person typing */
+  font-size: 10px !important;
+  font-weight: normal;
+}
+.typing .ellipsis{                                        /* Hide the animated circles when someone is typing */
+  display: none;
 }
 
 /* EMOJI PICKER */
@@ -527,4 +537,21 @@ header,                                                   /* header */
 /* OTHER */
 img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
   height: 16px;
+}
+.channel-textarea-guard{                                  /* "You must be a member for..." chat box message */
+  font-weight: normal;
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+}
+.channel-textarea-guard .countdown{
+  background: var(--theme-base-medium);
+  font-size: 13px;
+  font-weight: normal;
+  color:var(--theme-base-colour-secondary);
+}
+.channel-textarea-guard .countdown .countdown-number{     /* Countdown timer if the server requires you to be a member for at least 10 mins */
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
 }
