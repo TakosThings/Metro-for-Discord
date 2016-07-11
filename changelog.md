@@ -33,3 +33,6 @@
 
 #### 0.12.3
 * Visibility improvement for some toggled buttons
+
+#### 0.12.4
+* Fix for the members list icon jumping a fex px when the button was toggled
