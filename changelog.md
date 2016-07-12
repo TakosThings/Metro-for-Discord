@@ -46,3 +46,6 @@
 * Styled Direct Messages (Will be completed in next version)
 * Styled Pinned Messages (broken in [Dicord+20170711](https://blog.discordapp.com/2016-7-11-change-log/))
 * Styled Recent Mentions (added in [Discord+20170111](https://blog.discordapp.com/2016-7-11-change-log/))
+
+#### 0.14.1
+* Some refinements in the Recent Messages box
