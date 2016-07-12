@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.12.3"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.14.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -48,7 +48,7 @@
 }
 /* END CONFIG */
 
-/* ANIMATIOn */
+/* ANIMATION */
 @keyframes pulse{
   50%{
     background: var(--theme-accent);
@@ -469,61 +469,69 @@ header,                                                   /* header */
 }
 
 /* PINNED MESSAGES */
-.channel-pins-wrap{                                       /* Pinned messages */
+.messages-popout-wrap{                                    /* Pinned and Recent Messages boxes */
   background: var(--theme-base-high);
   border: 1px solid var(--theme-base-border);
   border-radius: 0;
 }
-.channel-pins-wrap .header{                               /* Pinned messages box header */
+.messages-popout-wrap .header{                            /* Header box */
   box-shadow: none;
   border-bottom: 1px solid var(--theme-base-border);
 }
-
-.channel-pins-wrap .header .title{                        /* Pinned messages box header */
+.messages-popout-wrap .header .title{                     /* Header */
   color: var(--theme-base-colour-primary);
   font-weight: normal;
   font-size: 13px;
 }
-.channel-pins{
+.messages-popout{
   padding: 0;
 }
-.channel-pins .message-group{
-  margin:0;
+.messages-popout .message-group{                          /* Message box */
+  border: 0;
+  border-bottom: 1px solid var(--theme-base-border2);
   border-radius: 0;
-  border-bottom: 1px solid var(--theme-base-border2);
-  border-top: 0;
-  border-right: 0;
-  border-left:0;
 }
-.channel-pins .message-group:hover{
-  background: var(--theme-base-medium-high);
+.messages-popout .message-group:hover{                    /* Messages when hovered */
   border-bottom: 1px solid var(--theme-base-border2);
 }
-.channel-pins .message-group .action-buttons .jump-button{ /* Jump button */
+.messages-popout .message-group:last-of-type{             /* The last message in the list */
+  border: 0;
+}
+.messages-popout .scrolling-footer-wrap{                  /* Hide "In the beginning there was nothing" message */
+  display: none;
+}
+.messages-popout-wrap .footer{                            /* Protip footer */
+  background: transparent;
+  border-top: 1px solid var(--theme-base-border2);
+}
+.protip.popout-footer .tip{                               /* Protip message */
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.messages-popout .message-group .action-buttons .jump-button{ /* Jump button */
   background: none;
   color: var(--theme-base-colour-primary);
 }
-.channel-pins .message-group .action-buttons .jump-button:hover{
+.messages-popout .message-group .action-buttons .jump-button:hover{
   color: var(--theme-base-colour-primary);
 }
-.channel-pins .message-group:hover .action-buttons{       /* Remove shitty glow around jump button */
+.messages-popout .message-group:hover .action-buttons{    /* Remove shitty glow around jump button */
   box-shadow: none;
   background: var(--theme-button);
-  
 }
-.channel-pins .message-group:hover .action-buttons:hover{
+.messages-popout .message-group:hover .action-buttons:hover{
   background: var(--theme-button-hover);
 }
-.channel-pins-wrap .footer{                               /* Displays if there are no pinned messages */
-  background: transparent;
-  border-radius: 0;
-  border-top: 1px solid var(--theme-base-border2);
+.messages-popout .channel-separator{                      /* Server/channel name in Recent Mentions */
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-.channel-pins .empty-placeholder .body,                   /* No pinned messages message */
-.protip.popout-footer .tip{                               /* The tip message */
-  color:var(--theme-base-colour-secondary);
-  font-weight: normal;
+.messages-popout .channel-separator .guild-name{          /* Server name */
+  color: var(--theme-base-colour-primary);
 }
+
+/* QUICK MESSAGE */
 .user-popout .footer .quick-message-wrapper .input{       /* Quick message box */
   height: 22px;
   padding: 0 10px;
@@ -554,4 +562,29 @@ img.emote{                                                /* Set max size for JT
   box-shadow: none;
   border: 0;
   border-radius: 0;
+}
+
+/* DIRECT MESSAGES */
+.search-bar{                                              /* Search box background */
+  background: var(--theme-base-low);
+  height: 50px;
+}
+#friends .friends-header{                                 /* Main header */
+  background: var(--theme-base-low);
+  height: 50px;
+  box-shadow: none;
+  border: 1px solid var(--theme-base-border);
+}
+.private-channels{                                        /* Messages pane */
+  background: var(--theme-base-medium);
+}
+.private-channels .no-private-channels{                   /* Hide shadow image if there are no messages */
+  background: none;
+}
+#friends{                                                 /* Friends list */
+  background: var(--theme-base-medium-low);
+}
+#friends .friends-empty p{                                /* "No one is playing with Wumpus" text if no friends are listed */
+  color:var(--theme-base-colour-secondary);
+  font-weight: normal;
 }
