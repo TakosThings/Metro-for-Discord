@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.14.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.14.1"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -45,6 +45,8 @@
   --theme-button-hover:#515151;
   --theme-textbox-background:transparent;
   --theme-textbox-border:#353535;
+  --theme-checkbox-background:#2d2d2d;
+  --theme-checkbox-hover:#414141;
 }
 /* END CONFIG */
 
@@ -527,8 +529,32 @@ header,                                                   /* header */
   margin-top: 10px;
   margin-bottom: 0px;
 }
+.messages-popout .channel-separator .channel-name,        /* #Channel name */
 .messages-popout .channel-separator .guild-name{          /* Server name */
-  color: var(--theme-base-colour-primary);
+  color: var(--theme-base-colour-secondary);
+}
+.recent-mentions-popout .header .tab-bar-item.selected{   /* Selected tab in recent mentions */
+  color: var(--theme-accent);
+  border-bottom-color: var(--theme-accent);
+}
+.recent-mentions-popout .header .tab-bar-item,            /* Tab */
+.recent-mentions-popout .header .mention-filter,          /* Filter */
+.recent-mentions-popout .header .mention-filter .value{   /* Selected filter */
+  color: var(--theme-base-colour-secondary);
+}
+.context-menu{
+  background: var(--theme-base-medium-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-secondary);
+}
+.context-menu .item{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+.context-menu .item:hover{
+  background: none;
+  color: var(--theme-base-colour-secondary);
 }
 
 /* QUICK MESSAGE */
@@ -540,7 +566,6 @@ header,                                                   /* header */
   background: var(--theme-textbox-background);
   color: var(--theme-base-colour-primary);
 }
-
 
 /* OTHER */
 img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
@@ -587,4 +612,28 @@ img.emote{                                                /* Set max size for JT
 #friends .friends-empty p{                                /* "No one is playing with Wumpus" text if no friends are listed */
   color:var(--theme-base-colour-secondary);
   font-weight: normal;
+}
+
+/* FORMS */
+.checkbox .checkbox-inner{                                /* Checkbox */
+  width: 15px;
+  height: 15px;
+}
+.checkbox .checkbox-inner span{                           /* Unchecked checkbox */
+  border: 2px solid var(--theme-checkbox-background);
+  border-radius: 0;
+  background:var(--theme-checkbox-background);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span{ /* Checked checkbox */
+  background: var(--theme-checkbox-hover);
+  border: 2px solid var(--theme-checkbox-hover);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span:after{ /* The tick */
+  left: 3px;
+  width: 3px;
+  height: 7px;
+}
+.checkbox .checkbox-inner span:hover{                     /* Hovered Checkbox */
+  background: var(--theme-checkbox-hover);
+  border: 2px solid var(--theme-checkbox-hover);
 }

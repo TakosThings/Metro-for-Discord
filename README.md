@@ -1,6 +1,6 @@
 # Metro for Discord
 A custom theme for Discord (BetterDiscord) inspired by Metro For Steam.  
-Currently: `v0.14.0`
+Currently: `v0.14.1`
 
 # Installation
 [Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css)  
@@ -22,3 +22,8 @@ Status Indicators
 
 # Preview
 ![Preview](http://i.imgur.com/5ry2Q4p.png)
+
+# Todo
+* Direct Messages page
+* Public servers list
+* Modals (settings etc.)
