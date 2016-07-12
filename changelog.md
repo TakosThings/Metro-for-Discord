@@ -41,3 +41,8 @@
 * Re-worked chat box
 * X now typing shows in a seperate box below the chat box
 * Styled the "You must be a member for 10 minutes" chat box blocker
+
+#### 0.14.0
+* Styled Direct Messages (Will be completed in next version)
+* Styled Pinned Messages (broken in [Dicord+20170711](https://blog.discordapp.com/2016-7-11-change-log/))
+* Styled Recent Mentions (added in [Discord+20170111](https://blog.discordapp.com/2016-7-11-change-log/))
