@@ -1,10 +1,10 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.14.1"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.15.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
 
 /* START CONFIG */
-/* See config.md if you need more info on this part */
+/* See README.md if you need more info on this part */
 :root{
   /* A list of colours can be found in accent.md */
   --theme-accent:rgb(0, 114, 198);
@@ -22,11 +22,14 @@
   --theme-user-idle:#FF8F32;                              /* Orange for idle */
   --theme-user-offline:#848484;                           /* Grey for offline */
 
+/* END CONFIG */
+
   /* Font settings - no touch! */
   --theme-font:Segoe UI, Arial, Helvetica, sans-serif;
   --theme-font-size-normal:13px;
   --theme-font-size-h1:15px;
   --theme-font-size-h2:14px;
+  --theme-font-size-modal-header:18px;
 
   /* This part is so I can easily convert between the dark and light versions - no touch! */
   /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
@@ -40,15 +43,17 @@
   --theme-base-colour-primary:#FFFFFF;
   --theme-base-colour-secondary:#898989;
 
-  /* Forms */
+  /* Forms - no touch!*/
   --theme-button:#353535;
   --theme-button-hover:#515151;
   --theme-textbox-background:transparent;
   --theme-textbox-border:#353535;
   --theme-checkbox-background:#2d2d2d;
   --theme-checkbox-hover:#414141;
+  --theme-radio-background:#2d2d2d;
+  --theme-radio-hover:#414141;
+  --theme-radio-checked:#FFFFFF;
 }
-/* END CONFIG */
 
 /* ANIMATION */
 @keyframes pulse{
@@ -179,6 +184,10 @@ header,                                                   /* header */
 .guild-channels .channel-text:hover.channel-muted:before,
 .guild-channels .channel-text:hover:not(.unread):before{  /* Left border when #channel is hovered */
   border-left:2px solid var(--theme-accent);
+}
+.guild-channels .channel a,
+.guild-channels .channel-text.selected a{
+  font-weight: normal;
 }
 .guild-channels header{                                   /* Top margin for channel Text/Voice Channel headers */
   margin-top: 10px;
@@ -636,4 +645,187 @@ img.emote{                                                /* Set max size for JT
 .checkbox .checkbox-inner span:hover{                     /* Hovered Checkbox */
   background: var(--theme-checkbox-hover);
   border: 2px solid var(--theme-checkbox-hover);
+}
+.checkbox .checkbox-inner+span{                           /* Checkbox label */
+  color: var(--theme-base-colour-secondary);
+}
+.form .control-group label{                               /* Textbox labels */
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+.form .control-group input[type=email],                   /* Email textbox */
+.form .control-group input[type=number],                  /* Number textbox */
+.form .control-group input[type=password],                /* Password textbox */
+.form .control-group input[type=text],                    /* Text textbox */
+.form .control-group textarea{
+  background: var(--theme-textbox-background);
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+  padding-left: 5px;
+  line-height: 20px;
+}
+.form .radio-group{
+  line-height: 15px;
+  color: var(--theme-base-colour-secondary);
+}
+.radio .radio-inner{                                      /* Radio button */
+  width: 15px;
+  height: 15px;
+  background: var(--theme-radio-background);
+  border: 0;
+}
+.radio .radio-inner span,
+.radio .radio-inner span:after{
+  width: 7px;
+  height: 7px;
+}
+.radio .radio-inner span{
+  top: 1px;
+  left: 1px;
+}
+.radio .radio-inner span:after{
+  background: var(--theme-radio-checked);
+}
+.slider-bar{                                              /* slider background */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAFCAMAAAB7Npx7AAAABlBMVEX///9LS0vbjr+JAAAAAXRSTlMAQObYZgAAAA9JREFUCNdjYGRAA1QQAAABTwAGcCgaiAAAAABJRU5ErkJggg==);
+  background-color: transparent;
+}
+.slider-bar-fill{                                         /* Slider fill */
+  background: transparent;
+}
+.slider-handle{                                           /* Slider handle */
+  width: 8px;
+  height: 16px;
+  background: #4b4b4b;
+  border: 0;
+  border-radius: 0;
+  top: -4px;
+}
+.Select-control{                                          /* Drop down */
+  background: var(--theme-textbox-background);
+  border-radius: 0;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+}
+.form .Select-control{
+  height: 24px;
+  border: 1px solid var(--theme-button);
+}
+.Select-input{
+  height: 24px;
+}
+.Select-placeholder{
+  color: var(--theme-base-colour-primary) !important;
+  line-height: 24px !important;
+  padding-top: 0 !important;
+}
+.Select-menu-outer{
+  background: var(--theme-base-medium-low);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+}
+.is-open>.Select-control{                                 /* Dropdown open */
+  background: transparent;
+}
+.form .Select-option{
+  color: var(--theme-base-colour-primary);
+}
+.form .Select-option:hover{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+}
+.Select-option:last-child{
+  border-radius: 0;
+}
+.form .Select-option.is-focused{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+}
+div.control-group .shortcut-recorder input[type=text]{    /* Hotkey box */
+  background: var(--theme-textbox-background);
+  border-radius: 0;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+  line-height: 24px;
+}
+div.control-group .shortcut-recorder{
+  margin-top: 4px;
+}
+.Select-value{
+  padding-top: 0;
+}
+
+/* MODALS */
+.settings .settings-header{                               /* Sidebar in settings modal */
+  border-radius: 0;
+  background: var(--theme-base-low);
+}
+.tab-bar.SIDE .tab-bar-header{                            /* Sidebar header */
+  font-weight: normal;
+  font-size: var(--theme-font-size-modal-header) !important;
+  box-shadow: none;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+.tab-bar.SIDE{
+  margin-right: -17px;
+}
+.tab-bar.SIDE .tab-bar-item{                              /* Sidebar item */
+  font-weight: normal;
+}
+.tab-bar.SIDE .tab-bar-item:hover{                        /* Hovered sidebar item */
+  font-weight: normal;
+}
+.tab-bar.SIDE .tab-bar-item:before{                       /* Selected tab */
+  border-left:2px solid var(--theme-accent);
+}
+.settings .settings-inner{                                /* Modal body */
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+}
+.settings .settings-actions{                              /* The bit where the save buttons go */
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-top: 1px solid var(--theme-base-border2);
+}
+.tab-bar.TOP{                                             /* Tab bars */
+  border-bottom: 2px solid var(--theme-base-border2);
+}
+.tab-bar.TOP .tab-bar-item.selected{                      /* Selected tab bar item */
+  color: var(--theme-accent);
+  border-bottom:2px solid var(--theme-accent);
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list{
+  box-shadow: none;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list p{ /* No connections message */
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform:none;
+  font-size: 13px;
+}
+.form .control-group .help-text{                          /* Help text */
+  color: var(--theme-base-colour-secondary);
+}
+.user-settings-modal-keybinds .user-settings-modal-keybinds-header{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.form hr{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.user-settings-streamer-mode{                             /* Streamer mode background */
+  background: transparent;
+}
+.user-settings-modal-games{                               /* Games list */
+  background: transparent;
+  border-top: 1px solid var(--theme-base-border2);
+  color: var(--theme-base-colour-primary);
+}
+.user-settings-modal-games .games-table .games-row .item-game .last-played,
+input.game-input{
+  color: var(--theme-base-colour-secondary);
+}
+.user-settings-modal-games .games-table .games-row .item-game,
+.user-settings-modal-games .games-table .games-row .item-overlay{
+  border-bottom: 1px solid var(--theme-base-border2);
 }

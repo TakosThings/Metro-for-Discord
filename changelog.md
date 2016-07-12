@@ -49,3 +49,6 @@
 
 #### 0.14.1
 * Some refinements in the Recent Messages box
+
+#### 0.15.0
+* Styled Settings modal
