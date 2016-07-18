@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.16.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.17.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -450,9 +450,13 @@ header,                                                   /* header */
 
 
 /* MEMBER PROFILE */
+.user-popout{
+  border-radius: 0;
+}
 .user-popout .header{                                     /* User popout header */
   background: var(--theme-userpop-bg);
   background-position: var(--theme-userpop-bg-pos);
+  border-radius: 0;
 }
 .user-popout .body{
   background: var(--theme-base-high);
@@ -478,6 +482,9 @@ header,                                                   /* header */
 .protip .label{                                           /* Protip text */
   font-variant: normal;
   text-transform: none;
+}
+.user-popout .body .notes textarea:focus{                 /* Add a note textbox */
+  background: transparent;
 }
 
 /* PINNED MESSAGES */
@@ -563,8 +570,15 @@ header,                                                   /* header */
   font-weight: normal;
 }
 .context-menu .item:hover{
-  background: none;
+  background: var(--theme-base-medium-low);
   color: var(--theme-base-colour-secondary);
+  border-radius: 0;
+}
+.context-menu .item-subMenu{
+  background-color: transparent;
+}
+.context-menu .item-group{
+  border: none;
 }
 
 /* QUICK MESSAGE */
@@ -901,6 +915,129 @@ input.game-input{
 .user-settings-modal-games .games-table .games-row .item-game,
 .user-settings-modal-games .games-table .games-row .item-overlay{
   border-bottom: 1px solid var(--theme-base-border2);
+}
+.markdown-modal{                                          /* Changelog modal */
+  background: var(--theme-base-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-primary);
+}
+.markdown-modal .markdown-modal-header{                   /* Changelog modal header */
+  color: var(--theme-base-colour-primary);
+  border-bottom: 1px solid var(--theme-base-border);
+  font-weight: normal;
+}
+.markdown-modal .markdown-modal-footer{                   /* Changelog modal footer */
+  background: var(--theme-base-high);
+  color: var(--theme-base-colour-primary);
+  border-top: 1px solid var(--theme-base-border);
+  font-weight: normal;
+  border-radius: 0;
+}
+.markdown-modal a{                                        /* Links in the modal */
+  color: var(--theme-accent);
+}
+#create-channel-modal .form-header{                       /* Create channel modal header */
+  background: var(--theme-base-medium-low);
+  border-bottom: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-primary) !important;
+}
+#create-channel-modal .form-inner{                        /* Create channel modal body */
+  background: var(--theme-base-medium-low);
+}
+#create-channel-modal .form-actions{                      /* Create channel model footer */
+  background: var(--theme-base-medium-low);
+  border-top: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-primary);
+}
+#user-profile-modal{
+  border-radius: 0;
+}
+#user-profile-modal .sub-header{                          /* Profile subheader */
+  background: var(--theme-base-medium-low);
+}
+#user-profile-modal .tab-bar{                             /* Profile tab bar */
+  background: var(--theme-base-medium-low);
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+#user-profile-modal .scroller{
+   background: var(--theme-base-medium-low);
+}
+#user-profile-modal footer{                               /* Profile footer */
+  background: var(--theme-base-medium-low);
+  border-top: 1px solid var(--theme-base-border);
+}
+#user-profile-modal .guilds .guild:hover{                 /* Profile server list hover */
+  background: var(--theme-base-medium);
+  color: var(--theme-base-colour-primary);
+}
+#user-profile-modal .empty{                               /* Profile no friends listed */
+  background: var(--theme-base-medium-low);
+}
+#user-profile-modal .btn{
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: normal;
+}
+.create-guild-container{                                  /* Create server modal */
+  border-radius: 0;
+}
+.create-guild-container .create-or-join .form-inner{      /* Create server modal */
+  background: var(--theme-base-medium-low);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+}
+.create-guild-container .create-or-join .actions .or{     /* OR */
+  display: none;
+}
+.create-guild-container .action{                          /* Create and Join boxes */
+  background: var(--theme-base-medium);
+  border: 0;
+  border-radius: 0;
+}
+.create-guild-container .action .action-body{             /* Create and Join descriptions */
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.create-guild-container .create-or-join header{           /* Condescending header */
+  color: var(--theme-accent);
+  font-weight: normal;
+}
+.create-guild .form-inner,                                 /* Create server modal */
+.join-server .form-inner{                                  /* Join server modal */
+  background: var(--theme-base-medium);
+  border-radius: 0 !important;
+}
+.create-guild .form-actions,                              /* Create server modal footer */
+.join-server .form-actions{                               /* join server modal footer */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  border-radius: 0 !important;
+}
+.region-select-modal{                                     /* Region select modal */
+  background: var(--theme-base-medium);
+}
+.region-select-modal .region-select-modal-footer{         /* Region select modal footer */
+  color: var(--theme-base-colour-secondary);
+}
+.region-select-modal .region-select-modal-option{
+  background: var(--theme-base-medium-low);
+  border: 0;
+  border-radius: 0;
+}
+.region-select{
+  background: transparent;
+}
+.region-select .region-select-inner{
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border2);
+}
+.region-select button{
+  border: 1px solid var(--theme-base-border2);
+  border-radius: 0;
+  background: transparent;
 }
 
 /* BETTERDISCORD SETTINGS */

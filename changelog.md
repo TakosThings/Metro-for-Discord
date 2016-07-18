@@ -66,3 +66,12 @@
 #### 0.16.0
 * Style BetterDiscord settings
 * Monokai theme for Custom CSS editor
+
+#### 0.17.0
+* Styled the following modals
+  * Changelog
+  * Create voice channel
+  * Profile
+  * New server
+  * Join server
+  * Region select
