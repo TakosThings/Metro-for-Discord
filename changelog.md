@@ -62,3 +62,7 @@
 * Set correct colours on links within the user settings modal
 * Styled buttons
 * Some more touchups on the settings modals
+
+#### 0.16.0
+* Style BetterDiscord settings
+* Monokai theme for Custom CSS editor
