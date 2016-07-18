@@ -52,3 +52,6 @@
 
 #### 0.15.0
 * Styled Settings modal
+
+#### 0.15.1
+* Fixed style on Pinned Messages and Recent Mentions boxes... *again.*

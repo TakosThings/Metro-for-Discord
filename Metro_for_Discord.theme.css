@@ -480,16 +480,16 @@ header,                                                   /* header */
 }
 
 /* PINNED MESSAGES */
-.messages-popout-wrap{                                    /* Pinned and Recent Messages boxes */
+.popout .themed-popout{                                    /* Pinned and Recent Messages boxes */
   background: var(--theme-base-high);
   border: 1px solid var(--theme-base-border);
   border-radius: 0;
 }
-.messages-popout-wrap .header{                            /* Header box */
+.popout .themed-popout .header{                            /* Header box */
   box-shadow: none;
   border-bottom: 1px solid var(--theme-base-border);
 }
-.messages-popout-wrap .header .title{                     /* Header */
+.popout .themed-popout .header .title{                     /* Header */
   color: var(--theme-base-colour-primary);
   font-weight: normal;
   font-size: 13px;
@@ -511,7 +511,7 @@ header,                                                   /* header */
 .messages-popout .scrolling-footer-wrap{                  /* Hide "In the beginning there was nothing" message */
   display: none;
 }
-.messages-popout-wrap .footer{                            /* Protip footer */
+.popout .themed-popout .footer{                            /* Protip footer */
   background: transparent;
   border-top: 1px solid var(--theme-base-border2);
 }
