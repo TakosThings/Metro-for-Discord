@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.15.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.15.2"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -48,6 +48,7 @@
   --theme-button-hover:#515151;
   --theme-textbox-background:transparent;
   --theme-textbox-border:#353535;
+  --theme-textbox-border-hover:#515151;
   --theme-checkbox-background:#2d2d2d;
   --theme-checkbox-hover:#414141;
   --theme-radio-background:#2d2d2d;
@@ -597,6 +598,29 @@ img.emote{                                                /* Set max size for JT
   border: 0;
   border-radius: 0;
 }
+.user-settings-modal .account-warning{                    /* Keybinds warning */
+  background: var(--theme-accent);
+  font-weight: normal !important;
+  font-size: var(--theme-font-size-normal);
+  border-radius: 0;
+  border:none;
+  color: var(--theme-base-colour-primary);
+}
+#overlay-explanation{                                     /* The warning message in Overlay */
+  background: var(--theme-accent);
+  font-weight: normal;
+  font-size: var(--theme-font-size-normal);
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.settings-wrapper .now-playing{
+  background: var(--theme-accent);
+  border-radius: 0;
+  animation: none;
+}
+.protip .label{
+  color: var(--theme-accent);
+}
 
 /* DIRECT MESSAGES */
 .search-bar{                                              /* Search box background */
@@ -652,6 +676,13 @@ img.emote{                                                /* Set max size for JT
 .form .control-group label{                               /* Textbox labels */
   color: var(--theme-base-colour-secondary);
   font-weight: normal;
+  text-transform: none;
+  font-size: var(--theme-font-size-normal);
+}
+.user-settings-modal a,                                   /* Links in the user settings modal */
+.form .control-group label a{                             /* Change password link */
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
 }
 .form .control-group input[type=email],                   /* Email textbox */
 .form .control-group input[type=number],                  /* Number textbox */
@@ -663,6 +694,15 @@ img.emote{                                                /* Set max size for JT
   border: 1px solid var(--theme-textbox-border);
   padding-left: 5px;
   line-height: 20px;
+  margin-top: 5px;
+}
+.form .control-group input[type=email]:focus,
+.form .control-group input[type=number]:focus,
+.form .control-group input[type=password]:focus,
+.form .control-group input[type=text]:focus,
+.form .control-group textarea:focus{
+	border: 1px solid var(--theme-textbox-border-hover);
+	margin-bottom:1px;
 }
 .form .radio-group{
   line-height: 15px;
@@ -755,6 +795,38 @@ div.control-group .shortcut-recorder{
 .Select-value{
   padding-top: 0;
 }
+.form .btn{                                               /* Buttons! */
+  padding:10px 5px;
+  text-align: left;
+  min-width: 100px;
+  font-size: var(--theme-font-size-normal) !important;
+  font-weight: normal !important;
+}
+.form .btn-default,
+.form .btn-primary,
+.form .btn-add-keybind,
+.form .btn-ghost{                                       /* Default and Primary buttons */
+  border-radius: 0;
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+  border: 0;
+}
+.form .btn-default:hover,
+.form .btn-primary:hover,
+.form .btn-ghost:hover{                                 /* Buttons when hovered */
+  background: var(--theme-button-hover);
+  border: 0;
+}
+.form .btn-default:active,
+.form .btn-primary:active,
+.form .btn-ghost:active{                                /* Buttons when clicked */
+  background: var(--theme-accent);
+  border: 0;
+}
+
+.btn-confirm .btn:last-of-type:not(:first-of-type){       /* hack - Try to stop the logout button expanding because of my above styling */
+  max-width: 0 !important;
+}
 
 /* MODALS */
 .settings .settings-header{                               /* Sidebar in settings modal */
@@ -781,12 +853,13 @@ div.control-group .shortcut-recorder{
 }
 .settings .settings-inner{                                /* Modal body */
   background: var(--theme-base-medium-low);
-  border-radius: 0;
+  border-radius: 0 !important;
 }
 .settings .settings-actions{                              /* The bit where the save buttons go */
   background: var(--theme-base-medium-low);
   border-radius: 0;
   border-top: 1px solid var(--theme-base-border2);
+  padding: 10px;
 }
 .tab-bar.TOP{                                             /* Tab bars */
   border-bottom: 2px solid var(--theme-base-border2);

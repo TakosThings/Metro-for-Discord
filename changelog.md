@@ -55,3 +55,10 @@
 
 #### 0.15.1
 * Fixed style on Pinned Messages and Recent Mentions boxes... *again.*
+
+#### 0.15.2
+* Fix: Focused text boxes
+* Fix: A sneaky border-radius in the settings modal
+* Set correct colours on links within the user settings modal
+* Styled buttons
+* Some more touchups on the settings modals
