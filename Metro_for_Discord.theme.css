@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.15.2"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.16.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -901,4 +901,64 @@ input.game-input{
 .user-settings-modal-games .games-table .games-row .item-game,
 .user-settings-modal-games .games-table .games-row .item-overlay{
   border-bottom: 1px solid var(--theme-base-border2);
+}
+
+/* BETTERDISCORD SETTINGS */
+.bda-slist-top .btn{                                      /* Import/Export buttons */
+	padding: 0 5px;
+}
+#bd-customcss-attach-controls{                            /* Controls underneath CSS editor */
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+}
+.bda-slist li{                                            /* List of plugins or themes */
+  background: var(--theme-base-medium) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  border-top: 0 !important;
+}
+.bda-slist .bda-name{                                     /* Name of plugin or theme */
+  color: var(--theme-base-colour-primary);
+}
+.bda-slist .bda-description{                              /* Description of plugin or theme */
+  border-top: 1px solid var(--theme-base-border2);
+  color: var(--theme-base-colour-secondary);
+}
+
+/* MONOKAI THEME FOR CSS EDITOR IN BETTERDISCORD SETTINGS */
+/* Nicked from https://github.com/codemirror/CodeMirror/blob/master/theme/monokai.css */
+/* Based on Sublime Text's Monokai theme */
+.CodeMirror{background: #272822 !important;  color: #f8f8f2; }
+div.CodeMirror-selected { background: #49483E; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
+.CodeMirror-gutters { background: #272822; border-right: 0px; }
+.CodeMirror-guttermarker { color: white; }
+.CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.CodeMirror-linenumber { color: #d0d0d0; }
+.CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+
+span.cm-comment { color: #75715e; }
+span.cm-atom { color: #ae81ff; }
+span.cm-number { color: #ae81ff; }
+
+span.cm-property, span.cm-attribute { color: #a6e22e; }
+span.cm-keyword { color: #f92672; }
+span.cm-builtin { color: #66d9ef; }
+span.cm-string { color: #e6db74; }
+
+span.cm-variable { color: #f8f8f2 !important; }
+span.cm-variable-2 { color: #9effff; }
+span.cm-variable-3 { color: #66d9ef; }
+span.cm-def { color: #fd971f; }
+span.cm-bracket { color: #f8f8f2; }
+span.cm-tag { color: #f92672; }
+span.cm-header { color: #ae81ff; }
+span.cm-link { color: #ae81ff; }
+span.cm-error { background: #f92672; color: #f8f8f0; }
+
+.CodeMirror-activeline-background { background: #373831; }
+.CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
 }
