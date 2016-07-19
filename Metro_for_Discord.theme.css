@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.17.1"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.18.1"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -40,6 +40,7 @@
   --theme-base-high:#2C2C2C;
   --theme-base-border:#0F0F0F;
   --theme-base-border2:#353535;
+  --theme-tab-selected:#4C4C4C;
   --theme-base-colour-primary:#FFFFFF;
   --theme-base-colour-secondary:#898989;
 
@@ -687,6 +688,21 @@ img.emote{                                                /* Set max size for JT
 .checkbox .checkbox-inner+span{                           /* Checkbox label */
   color: var(--theme-base-colour-secondary);
 }
+#permissions .permission-actions>div{                     /* Permissions checkbox */
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background: var(--theme-checkbox-background);
+  border-radius: 0;
+}
+#permissions .permission-actions>div.PASSTHROUGH:after{
+  border: 0;
+}
+#permissions .permission-actions{                         /* Permissions checkbox labels */
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
 .form .control-group label{                               /* Textbox labels */
   color: var(--theme-base-colour-secondary);
   font-weight: normal;
@@ -876,6 +892,9 @@ div.control-group .shortcut-recorder{
 .tab-bar.SIDE .tab-bar-item:before{                       /* Selected tab */
   border-left:2px solid var(--theme-accent);
 }
+.tab-bar.SIDE .tab-bar-item.selected{
+  background: var(--theme-tab-selected);
+}
 .settings .settings-inner{                                /* Modal body */
   background: var(--theme-base-medium-low);
   border-radius: 0 !important;
@@ -1019,6 +1038,33 @@ input.game-input{
   border-radius: 0;
   background: transparent;
 }
+#settings-roles .roles header{                            /* Roles header */
+  border-bottom: none;
+}
+#settings-roles .roles{                                   /* Roles list */
+  border-right:1px solid var(--theme-base-border2);
+}
+#settings-roles .roles li.selected{                       /* Selected role tab */
+  background: var(--theme-tab-selected);
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--theme-base-colour-primary);
+}
+#settings-roles .roles li:before{                         /* Left bar to show selected tab */
+  width: 2px;
+}
+#settings-roles .roles li.selected:before{                /* Left bar to show selected tab */
+  background: var(--theme-accent);
+}
+#settings-roles .roles li:hover{
+  background: var(--theme-tab-selected);
+}
+#permissions .permissions-helpdesk{
+  text-transform: none;
+  color: var(--theme-accent);
+  font-weight: normal;
+}
+
 
 /* BETTERDISCORD SETTINGS */
 .bda-slist-top .btn{                                      /* Import/Export buttons */
