@@ -77,4 +77,7 @@
   * Region select
 
 #### 0.18.0
-* Rewrite the redundant modal CSS 
+* Rewrite the redundant modal CSS
+
+#### 0.18.1
+* Styled checkboxes in channel roles
