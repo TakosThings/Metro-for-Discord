@@ -81,3 +81,6 @@
 
 #### 0.18.1
 * Styled checkboxes in channel roles
+
+#### 0.18.2
+* Fix chat not autoscrolling correctly when JTV/BTTV emotes are used
