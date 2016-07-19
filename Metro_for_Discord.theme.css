@@ -594,7 +594,7 @@ header,                                                   /* header */
 
 /* OTHER */
 img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
-  height: 16px;
+  margin: -8px 0;                                         /* Fixes auto scrolling */
 }
 .channel-textarea-guard{                                  /* "You must be a member for..." chat box message */
   font-weight: normal;
