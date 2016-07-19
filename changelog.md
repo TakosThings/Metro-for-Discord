@@ -75,3 +75,6 @@
   * New server
   * Join server
   * Region select
+
+#### 0.18.0
+* Rewrite the redundant modal CSS 

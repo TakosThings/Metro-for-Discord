@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.17.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.17.1"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -841,6 +841,17 @@ div.control-group .shortcut-recorder{
 .btn-confirm .btn:last-of-type:not(:first-of-type){       /* hack - Try to stop the logout button expanding because of my above styling */
   max-width: 0 !important;
 }
+.form .btn-confirm{
+  background: var(--theme-button);
+  margin-left: 0;
+  border-radius: 0;
+}
+.btn-confirm .icon{                                       /* The logout icon */
+  background-position: 10px 50%;
+}
+.btn-confirm.active .btn:last-of-type:not(:first-of-type){ /* hack - make logout button the correct size when it's expanded */
+  padding-right: 66px;
+}
 
 /* MODALS */
 .settings .settings-header{                               /* Sidebar in settings modal */
@@ -937,21 +948,6 @@ input.game-input{
 .markdown-modal a{                                        /* Links in the modal */
   color: var(--theme-accent);
 }
-#create-channel-modal .form-header{                       /* Create channel modal header */
-  background: var(--theme-base-medium-low);
-  border-bottom: 1px solid var(--theme-base-border);
-  border-radius: 0;
-  color: var(--theme-base-colour-primary) !important;
-}
-#create-channel-modal .form-inner{                        /* Create channel modal body */
-  background: var(--theme-base-medium-low);
-}
-#create-channel-modal .form-actions{                      /* Create channel model footer */
-  background: var(--theme-base-medium-low);
-  border-top: 1px solid var(--theme-base-border);
-  border-radius: 0;
-  color: var(--theme-base-colour-primary);
-}
 #user-profile-modal{
   border-radius: 0;
 }
@@ -981,40 +977,21 @@ input.game-input{
   font-size: 13px;
   font-weight: normal;
 }
-.create-guild-container{                                  /* Create server modal */
-  border-radius: 0;
+.form-header{                                             /* Header of some common modals */
+  background: var(--theme-base-medium-low) !important;
+  border-radius: 0 !important;
+  font-weight: normal !important;
+  color: var(--theme-base-colour-primary) !important;
+  border-bottom: 1px solid var(--theme-base-border) !important;
 }
-.create-guild-container .create-or-join .form-inner{      /* Create server modal */
-  background: var(--theme-base-medium-low);
-  border: 1px solid var(--theme-base-border);
-  border-radius: 0;
-}
-.create-guild-container .create-or-join .actions .or{     /* OR */
-  display: none;
-}
-.create-guild-container .action{                          /* Create and Join boxes */
-  background: var(--theme-base-medium);
-  border: 0;
-  border-radius: 0;
-}
-.create-guild-container .action .action-body{             /* Create and Join descriptions */
-  font-weight: normal;
-  color: var(--theme-base-colour-secondary);
-}
-.create-guild-container .create-or-join header{           /* Condescending header */
-  color: var(--theme-accent);
-  font-weight: normal;
-}
-.create-guild .form-inner,                                 /* Create server modal */
-.join-server .form-inner{                                  /* Join server modal */
-  background: var(--theme-base-medium);
+.form-inner{                                              /* Inner of some common modals */
+  background: var(--theme-base-medium-low) !important;
   border-radius: 0 !important;
 }
-.create-guild .form-actions,                              /* Create server modal footer */
-.join-server .form-actions{                               /* join server modal footer */
-  background: var(--theme-base-medium);
-  border-top: 1px solid var(--theme-base-border);
+.form-actions{                                            /* footer of some common modals */
   border-radius: 0 !important;
+  background: var(--theme-base-medium-low) !important;
+  border-top: 1px solid var(--theme-base-border) !important;
 }
 .region-select-modal{                                     /* Region select modal */
   background: var(--theme-base-medium);
@@ -1027,7 +1004,10 @@ input.game-input{
   border: 0;
   border-radius: 0;
 }
-.region-select{
+.region-select-modal .region-select-modal-option:hover{
+  background: var(--theme-base-medium-high);
+}
+.region-select{                                           /* The region */
   background: transparent;
 }
 .region-select .region-select-inner{
