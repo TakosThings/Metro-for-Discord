@@ -8,8 +8,8 @@ Enable the theme in BetterDiscord settings and reload.
 You'll also need to go to Appearance settings and choose the light theme.
 
 # User settings
-There are a few settings you can change in the top of the css file.  
-A colour sheet is available in accent.md  
+There are some settings you can change in the top of the css file.  
+A colour sheet is available in [accent.md](https://github.com/TakosThings/Metro-for-Discord/blob/master/accent.md)  
 `--theme-accent:` This is your accent color, it appears on some places to show an option is toggled.  
 `--theme-accent-faded:` Same as above, but with 0.8 alpha. It's only used on the "X new messages since" bar.  
 Backgrounds  
@@ -22,8 +22,4 @@ Status Indicators
 Everything below `/* END CONFIG */` you should probably leave alone
 
 # Preview
-![Preview](http://i.imgur.com/5ry2Q4p.png)
-
-# Todo
-* Direct Messages page
-* Public servers list
+![Preview](https://i.imgur.com/5ry2Q4p.png)
