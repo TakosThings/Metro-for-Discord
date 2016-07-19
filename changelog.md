@@ -39,13 +39,13 @@
 
 #### 0.13.0
 * Re-worked chat box
-* X now typing shows in a seperate box below the chat box
+* X now typing shows in a separate box below the chat box
 * Styled the "You must be a member for 10 minutes" chat box blocker
 
 #### 0.14.0
 * Styled Direct Messages (Will be completed in next version)
 * Styled Pinned Messages (broken in [Dicord+20170711](https://blog.discordapp.com/2016-7-11-change-log/))
-* Styled Recent Mentions (added in [Discord+20170111](https://blog.discordapp.com/2016-7-11-change-log/))
+* Styled Recent Mentions (added in [Discord+20170711](https://blog.discordapp.com/2016-7-11-change-log/))
 
 #### 0.14.1
 * Some refinements in the Recent Messages box
@@ -61,7 +61,7 @@
 * Fix: A sneaky border-radius in the settings modal
 * Set correct colours on links within the user settings modal
 * Styled buttons
-* Some more touchups on the settings modals
+* Some more touch ups on the settings modals
 
 #### 0.16.0
 * Style BetterDiscord settings
