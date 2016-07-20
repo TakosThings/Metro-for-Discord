@@ -11,6 +11,7 @@
 * Tooltips
 * Add Roles/Members box is still default theme
 * Help modal
+* Server Notification Settings is unfinished
 * BetterDiscord: Emote menu is still default theme
 * BetterDiscord: Public Servers modal
 
