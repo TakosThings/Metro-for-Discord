@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.18.1"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -143,6 +143,10 @@ header,                                                   /* header */
 /* SERVER LIST */
 .guilds-wrapper{
   background: var(--theme-base-low);
+}
+.guilds-wrapper .guilds-add{                              /* New server button */
+  background: transparent;
+  font-size: 25px !important;
 }
 
 /* CHANNELS PANE */
@@ -342,6 +346,10 @@ header,                                                   /* header */
   border-right: 1px solid var(--theme-base-border2);
   margin: -16px 10px -16px -10px;
 }
+.channel-textarea-upload:hover{
+  background-color: var(--theme-base-border2);
+  border-right:1px solid var(--theme-base-border2);
+}
 .typing{                                                  /* X is typing text */
   height: 24px;
   left: 0;
@@ -386,6 +394,35 @@ header,                                                   /* header */
 }
 .emoji-item .sprite-item{                                 /* Unselected Emojis */
   -webkit-filter: grayscale(50%) !important;
+}
+.emoji-picker .categories .item{
+  border-bottom: 2px solid transparent;
+}
+.emoji-picker .categories .item.selected{
+  border-bottom-color: var(--theme-accent);
+}
+
+/* BTTV EMOTE PICKER */
+#bda-qem{
+  border-radius: 0;
+  background: var(--theme-base-medium);
+  border-bottom: 1px solid var(--theme-base-border);
+  
+}
+#bda-qem button{
+  box-shadow: none;
+  border-left: none;
+  color: var(--theme-base-colour-primary);
+}
+#bda-qem button:hover,
+#bda-qem button.active{
+  background: var(--theme-base-medium-high);
+  border-radius: 0;
+}
+#bda-qem-favourite-container,
+#bda-qem-twitch-container{
+  border-radius: 0;
+  background: var(--theme-base-medium);
 }
 
 /* MEMBERS LIST */
@@ -633,8 +670,40 @@ img.emote{                                                /* Set max size for JT
   border-radius: 0;
   animation: none;
 }
-.protip .label{
+.protip .label{                                           /* Literally the word "Protip" */
   color: var(--theme-accent);
+}
+.protip{                                                  /* The actual protip */
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.btn-help{                                                /* The question mark */
+  background: var(--theme-base-colour-secondary);
+}
+.btn-help:hover{
+  background: var(--theme-base-colour-primary);
+  color: var(--theme-base-colour-secondary);
+}
+
+/* TOOLTIPS */
+.tooltip{
+  background: var(--theme-base-high);
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border);
+  font-weight: normal;
+  box-shadow: none;
+}
+.tooltip.tooltip-top:after{
+  border-top-color: var(--theme-base-border);
+}
+.tooltip.tooltip-right:after{
+  border-right-color: var(--theme-base-border);
+}
+.tooltip.tooltip-bottom:after{
+  border-bottom-color: var(--theme-base-border);
+}
+.tooltip.tooltip-left:after{
+  border-left-color: var(--theme-base-border);
 }
 
 /* DIRECT MESSAGES */
@@ -855,7 +924,7 @@ div.control-group .shortcut-recorder{
 }
 
 .btn-confirm .btn:last-of-type:not(:first-of-type){       /* hack - Try to stop the logout button expanding because of my above styling */
-  max-width: 0 !important;
+  display: none;
 }
 .form .btn-confirm{
   background: var(--theme-button);
@@ -866,7 +935,23 @@ div.control-group .shortcut-recorder{
   background-position: 10px 50%;
 }
 .btn-confirm.active .btn:last-of-type:not(:first-of-type){ /* hack - make logout button the correct size when it's expanded */
-  padding-right: 66px;
+  display: block;
+}
+.clipboard-input-inner{
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+}
+.clipboard-input-inner input{
+  background: var(--theme-textbox-background) !important;
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.clipboard-input-inner button{
+  background-color: var(--theme-textbox-border);
+  border-left: 0;
+}
+.clipboard-input-inner button:first-of-type:before{
+  background: none;
 }
 
 /* MODALS */
@@ -904,6 +989,7 @@ div.control-group .shortcut-recorder{
   border-radius: 0;
   border-top: 1px solid var(--theme-base-border2);
   padding: 10px;
+  border-radius: 0 !important;
 }
 .tab-bar.TOP{                                             /* Tab bars */
   border-bottom: 2px solid var(--theme-base-border2);
@@ -1003,14 +1089,23 @@ input.game-input{
   color: var(--theme-base-colour-primary) !important;
   border-bottom: 1px solid var(--theme-base-border) !important;
 }
+.form header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--theme-base-colour-primary);
+}
 .form-inner{                                              /* Inner of some common modals */
   background: var(--theme-base-medium-low) !important;
   border-radius: 0 !important;
+}
+.modal-content .form-inner p{
+  color: var(--theme-base-colour-secondary);
 }
 .form-actions{                                            /* footer of some common modals */
   border-radius: 0 !important;
   background: var(--theme-base-medium-low) !important;
   border-top: 1px solid var(--theme-base-border) !important;
+  padding: 10px 10px !important;
 }
 .region-select-modal{                                     /* Region select modal */
   background: var(--theme-base-medium);
@@ -1064,7 +1159,58 @@ input.game-input{
   color: var(--theme-accent);
   font-weight: normal;
 }
-
+.guild-settings-modal-members{                            /* Server Settings > Members */
+  background: var(--theme-base-medium-low);
+}
+.guild-settings-modal-members .guild-settings-modal-members-header{ /* top bar border */
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.guild-settings-modal-members .guild-settings-modal-list .member+.member{ /* Top separator between members */
+  border-top: 1px solid var(--theme-base-border2);
+}
+.guild-settings-modal-members .guild-settings-modal-members-footer{ /* Top border above the prune members link */
+  border-top: 1px solid var(--theme-base-border2);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-transform: none;
+}
+.search-bar.search-bar-light{
+  background: transparent;
+}
+.search-bar input,
+.search-bar.search-bar-light input{
+  background: var(--theme-textbox-background);
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0 !important;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  height: 26px;
+  color: var(--theme-base-colour-primary);
+}
+.search-bar-clear{
+  top: 0px;
+}
+.form .control-groups.control-separator{
+  border-top: 1px solid var(--theme-base-border2);
+}
+.create-guild-container .action{                          /* Create or Join server boxes */
+  border: 1px solid var(--theme-base-border2);
+  background: transparent;
+  border-radius: 0;
+}
+.create-guild-container .action .action-body{
+  color: var(--theme-base-colour-primary);
+}
+.or{                                                      /* Hide the word OR between join or create server */
+  display: none;
+}
+.channel-notification-settings{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.notification-settings-modal .notification-settings-modal-channel-settings-list{
+  box-shadow: 0;
+}
 
 /* BETTERDISCORD SETTINGS */
 .bda-slist-top .btn{                                      /* Import/Export buttons */
