@@ -84,3 +84,17 @@
 
 #### 0.18.2
 * Fix chat not autoscrolling correctly when JTV/BTTV emotes are used
+
+#### 0.19.0
+* Finished styling in Server Settings Modal.
+* Fix: hover colour on the upload button in the chat box
+* Fix: colouring of Join or Create server button
+* Fix: colouring of Join or Create server boxes
+* Fix: Leave Server font color
+* Fix: Expanding delete buttons not sizing correctly
+* Styled: Tooltips
+* Styled: BTTV Emote menu
+* Adjusted size of modal header and footers
+* Finished server notification settings
+* Current Emoji section highlights with Accent colour
+* Fuck modals!
