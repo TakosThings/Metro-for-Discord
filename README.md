@@ -22,4 +22,4 @@ Status Indicators
 Everything below `/* END CONFIG */` you should probably leave alone
 
 # Preview
-![Preview](https://i.imgur.com/5ry2Q4p.png)
+![Preview](https://i.imgur.com/ZKaWcXd.png)
