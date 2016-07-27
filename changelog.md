@@ -103,3 +103,9 @@
 * Fix: mis-aligned pinned messages notifier
 * Fix: dark mode support
 * Styled: day and new message chat dividers
+
+#### 0.19.2
+* Fix: Debug modal text colours
+* Fix: Hover background in add roles popup
+* Fix: Help modal style. It's still a little broken, but I've lost patience with it.
+* Styled: Connection info popup

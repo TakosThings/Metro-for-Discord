@@ -1233,6 +1233,84 @@ input.game-input{
 .notification-settings-modal .notification-settings-modal-channel-settings-list{
   box-shadow: 0;
 }
+.form .control-group>div{
+  color: var(--theme-base-colour-secondary);
+}
+.scroller.settings-panel>div>h1{
+  color: var(--theme-base-colour-primary);
+}
+.need-help-modal .header{
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+.need-help-modal .footer{
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-top: 1px solid var(--theme-base-border);
+}
+.need-help-modal .header input[type=text]{
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+.need-help-modal .header input[type=text]:focus{
+  margin-top: 0;
+}
+.need-help-modal ul li{
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+}
+.need-help-modal .form-inner{
+  min-height: 0;
+  padding: 20px;
+}
+
+/* POPOUTS */
+#voice-connection-popout{
+  border: 1px solid var(--theme-base-border);
+}
+.popout.popout-top-right section:before,
+.popout.popout-top section:before{
+  border-top-color: var(--theme-base-border);
+}
+#voice-connection-popout hr{
+  border: 1px solid var(--theme-base-border2);
+}
+.popout header{
+  background: var(--theme-base-high);
+  font-weight: normal;
+  
+  border-radius: 0;
+}
+.popout section{                                          /* Voice connection pop */
+  background: var(--theme-base-high);
+  border-radius: 0;
+}
+#voice-connection-popout section p{
+  color: var(--theme-base-colour-primary);
+}
+#voice-connection-popout section a{
+  color: var(--theme-accent) !important;
+}
+#voice-connection-popout section a:hover{
+  color: var(--theme-base-colour-primary);
+}
+#autocomplete-popout .row{
+  line-height: 25px;
+}
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover{
+  background: var(--theme-base-medium);
+}
+#autocomplete-popout .scroller>.row>a>span>.avatar-small{
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  margin-top: 2px;
+}
 
 /* BETTERDISCORD SETTINGS */
 .bda-slist-top .btn{                                      /* Import/Export buttons */
