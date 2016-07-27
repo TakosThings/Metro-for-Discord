@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.1"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.3"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -93,7 +93,7 @@ header,                                                   /* header */
   background: var(--theme-base-low);
   min-height: 50px;
   padding:0 10px;
-  border-bottom: 1px solid var(--theme-base-border);
+  border-bottom: 0;
 }
 .chat>.title-wrap>.title .channel-name{                   /* Channel name in the title bar */
   color: var(--theme-base-colour-primary);
@@ -149,6 +149,11 @@ header,                                                   /* header */
   background: transparent;
   font-size: 25px !important;
 }
+.guild-inner:hover,
+.active .guild-inner,
+.selected .guild-inner{
+  background-color: var(--theme-accent) !important;
+}
 
 /* CHANNELS PANE */
 .channels-wrap{                                           /* Channels list */
@@ -159,7 +164,7 @@ header,                                                   /* header */
   height: 50px;
   padding: 0 10px;
   box-shadow: none;
-  border-bottom: 1px solid var(--theme-base-border);
+  border-bottom: none;
 }
 .guild-header header:hover{                               /* Server name hover */
   background: var(--theme-base-medium);
@@ -737,13 +742,67 @@ img.emote{                                                /* Set max size for JT
   background: var(--theme-base-low);
   height: 50px;
   box-shadow: none;
-  border: 1px solid var(--theme-base-border);
+  border: none;
 }
+#friends .btn{
+  line-height: 50px;
+  padding: 0 10px;
+  background: none;
+  color: var(--theme-base-colour-secondary);
+  border-radius: 0;
+  font-weight: normal;
+}
+#friends .btn:hover{
+  color: var(--theme-base-colour-primary);
+  background: var(--theme-base-medium);
+}
+#friends .friends-header .tab-bar .tab-bar-separator{
+  width: 0;
+}
+#friends .friends-header .tab-bar .tab-bar-item{
+  height: 48px;
+  line-height: 48px;
+  margin:0;
+  border-radius: 0;
+  padding: 0 10px;
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+#friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected){
+  background: var(--theme-base-medium);
+  border-bottom: 2px solid var(--theme-base-medium);
+}
+#friends .friends-header .tab-bar .tab-bar-item.selected{
+  background: var(--theme-base-medium);
+  border-bottom: 2px solid var(--theme-accent);
+}
+
+#friends .friends-table .friends-table-header{            /* Friends table header */
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+#friends .friends-table .friends-table-header .friends-column{  /* Friends column header */
+  text-transform: none;
+  color: var(--theme-base-colour-primary);
+}
+#friends .friends-table .friends-table-header .friends-column-separator{ /* Friends table header separators */
+  width: 0;
+}
+
 .private-channels{                                        /* Messages pane */
   background: var(--theme-base-medium);
 }
+.private-channels .search-bar{
+  height: 50px;
+  border-radius: 0;
+}
+.search-bar .search-bar-inner{
+  background: none;
+}
 .private-channels .no-private-channels{                   /* Hide shadow image if there are no messages */
   background: none;
+}
+.private-channels .channel.selected:before{
+  border-left-color: var(--theme-accent);
 }
 #friends{                                                 /* Friends list */
   background: var(--theme-base-medium-low);
