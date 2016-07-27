@@ -1,4 +1,4 @@
-//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.0"}*//{}
+//META{"name":"Metro For Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.1"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -88,6 +88,7 @@ header,                                                   /* header */
 
 
 /* TITLE BAR */
+.theme-dark .chat .title-wrap,
 .chat>.title-wrap{                                        /* Main title bar */
   background: var(--theme-base-low);
   min-height: 50px;
@@ -129,7 +130,7 @@ header,                                                   /* header */
   height: 2px;
   border: none;
   border-radius: 0;
-  top: 49px;
+  top: 48px;
   right: 0;
   animation: pulse 3s ease-out infinite;
   background: transparent;
@@ -282,8 +283,12 @@ header,                                                   /* header */
 }
 
 /* CHAT */
+.theme-dark .chat>.content,
 .chat .content{                                           /* Chat background */
   background:var(--theme-base-medium-low);
+}
+.theme-dark .messages-wrapper{                            /* Dark mode support for chat background */
+  background: transparent;
 }
 .message-group{                                           /* Border separating messages */
   border-bottom: 1px solid var(--theme-base-high);
@@ -296,8 +301,20 @@ header,                                                   /* header */
 .message-group.compact .timestamp{                        /* Timestamp colour */
   color: var(--theme-base-colour-secondary);
 }
+.chat .divider.divider-red>span{
+  color: #FFF;
+  background: #F04747;
+}
+.chat .divider.divider-red>div:last-of-type,
+.chat .divider>div:last-of-type{                          /* Hide second half of the divider */
+  display: none;
+}
+.chat .divider>div{                                       /* Day Divider line */
+  background: var(--theme-base-border2);
+}
 .chat .divider>span{                                      /* New messages divider */
-  background:none;
+  background: var(--theme-base-border2);
+  color: var(--theme-base-colour-primary);
 }
 .message-group .comment .markup pre,
 .message-group .comment .markup code.inline{              /* Code block */
@@ -331,6 +348,7 @@ header,                                                   /* header */
   min-height: 50px;
   margin: 0;
 }
+.theme-dark .channel-textarea-inner,
 .channel-textarea-inner{
   background: transparent;
   border: 0;
@@ -340,7 +358,7 @@ header,                                                   /* header */
 }
 .channel-textarea-inner textarea{                         /* The actual text box */
   background:var(--theme-base-medium-low);
-  color: var(--theme-base-colour-primary);
+  color: var(--theme-base-colour-primary) !important;
 }
 .channel-textarea-upload{                                 /* The upload button in the text box */
   border-right: 1px solid var(--theme-base-border2);
@@ -429,6 +447,7 @@ header,                                                   /* header */
 .channel-members-wrap{
   width: 230px;
 }
+.theme-dark .channel-members,
 .channel-members{                                         /* Members list */
   background: var(--theme-base-medium);
   width: 230px;
@@ -474,13 +493,13 @@ header,                                                   /* header */
   width: 10px
 }
 .scroller-wrap .scroller::-webkit-scrollbar-thumb {       /* Scrollbar handle */
-  background-color: var(--theme-base-high);
+  background-color: var(--theme-base-high) !important;
   background-clip: padding-box;
   border: 0;
   border-radius: 5px
 }
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece { /* Scrollbar track */
-  background-color: transparent;
+  background-color: transparent !important;
   background-clip: padding-box;
   border: 0;
   border-radius: 5px
@@ -683,6 +702,9 @@ img.emote{                                                /* Set max size for JT
 .btn-help:hover{
   background: var(--theme-base-colour-primary);
   color: var(--theme-base-colour-secondary);
+}
+.embed{
+  border-left:2px solid var(--theme-accent);
 }
 
 /* TOOLTIPS */

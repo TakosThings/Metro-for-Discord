@@ -98,3 +98,8 @@
 * Finished server notification settings
 * Current Emoji section highlights with Accent colour
 * Fuck modals!
+
+#### 0.19.1
+* Fix: mis-aligned pinned messages notifier
+* Fix: dark mode support
+* Styled: day and new message chat dividers
