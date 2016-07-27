@@ -1,5 +1,7 @@
 # To Do
 * Add Roles/Members box is still default theme
+* Connection info popup
+* Voice debug
 * Help modal
 * BetterDiscord: Public Servers modal
 
