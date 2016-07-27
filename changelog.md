@@ -109,3 +109,7 @@
 * Fix: Hover background in add roles popup
 * Fix: Help modal style. It's still a little broken, but I've lost patience with it.
 * Styled: Connection info popup
+
+#### 0.19.3
+* Finished styling for friends
+* Selected server without a custom icon will use the accent colour
