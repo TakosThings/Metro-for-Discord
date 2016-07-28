@@ -1,6 +1,6 @@
 # Metro for Discord
 A custom theme for Discord (BetterDiscord) inspired by Metro For Steam.  
-Currently: `v0.19.3`
+Currently: `v0.19.4`
 
 # Installation
 [Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css)  
@@ -22,4 +22,4 @@ Status Indicators
 Everything below `/* END CONFIG */` you should probably leave alone
 
 # Preview
-![Preview](https://i.imgur.com/ZKaWcXd.png)
+![Preview](https://i.imgur.com/5ry2Q4p.png)
