@@ -113,3 +113,6 @@
 #### 0.19.3
 * Finished styling for friends
 * Selected server without a custom icon will use the accent colour
+
+#### 0.19.4
+* Fix:Spaces aren't allowed in the theme name
