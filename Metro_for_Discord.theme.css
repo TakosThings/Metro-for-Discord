@@ -309,6 +309,8 @@ header,                                                   /* header */
 .chat .divider.divider-red>span{
   color: #FFF;
   background: #F04747;
+  text-transform: none;
+  font-weight: normal;
 }
 .chat .divider.divider-red>div:last-of-type,
 .chat .divider>div:last-of-type{                          /* Hide second half of the divider */
@@ -451,6 +453,9 @@ header,                                                   /* header */
 /* MEMBERS LIST */
 .channel-members-wrap{
   width: 230px;
+}
+.channel-members-loading{                                 /* Hide white background when loading the channel members */
+  display: none;
 }
 .theme-dark .channel-members,
 .channel-members{                                         /* Members list */
@@ -655,7 +660,7 @@ header,                                                   /* header */
 
 /* OTHER */
 img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
-  margin: -8px 0;                                         /* Fixes auto scrolling */
+  margin: -14px 0;                                         /* Fixes auto scrolling */
 }
 .channel-textarea-guard{                                  /* "You must be a member for..." chat box message */
   font-weight: normal;
@@ -690,9 +695,10 @@ img.emote{                                                /* Set max size for JT
   margin-bottom: 20px;
 }
 .settings-wrapper .now-playing{
-  background: var(--theme-accent);
+  background: transparent;
   border-radius: 0;
   animation: none;
+  border: 1px solid var(--theme-base-colour-secondary);
 }
 .protip .label{                                           /* Literally the word "Protip" */
   color: var(--theme-accent);
@@ -786,6 +792,36 @@ img.emote{                                                /* Set max size for JT
 }
 #friends .friends-table .friends-table-header .friends-column-separator{ /* Friends table header separators */
   width: 0;
+}
+.search-bar.search-bar-light .search-bar-inner{
+  background: none;
+  border: 0;
+}
+.popout .themed-popout .header .subtitle{
+  color: var(--theme-base-colour-secondary);
+}
+.search-bar input, .search-bar.search-bar-light input{
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+}
+.private-channel-recipients-invite .friend.selected{
+  background: transparent;
+  color: var(--theme-base-colour-primary);
+}
+.private-channel-recipients-invite .friend:hover{
+  background: var(--theme-base-medium-high);
+}
+.private-channel-recipients-invite .footer button,
+.private-channel-recipients-invite .footer button:disabled:hover{
+  background: var(--theme-button);
+  border-radius: 0;
+  font-weight: normal;
+}
+.private-channel-recipients-invite .footer button:hover{
+  background: var(--theme-button-hover);
+}
+.private-channel-recipients-invite .footer button:active{
+  background: var(--theme-accent);
 }
 
 .private-channels{                                        /* Messages pane */
@@ -1087,6 +1123,39 @@ div.control-group .shortcut-recorder{
   font-weight: normal;
   text-transform:none;
   font-size: 13px;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations{
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border2);
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations.no-integrations{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+  font-size: var(--theme-font-size-normal);
+}
+.settings-connections-wrapper .authed-app{
+  border-radius: 0;
+  background: none;
+  border:1px solid var(--theme-base-border2);
+}
+.settings-connections-wrapper .authed-app .details .header{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+}
+.settings-connections-wrapper .authed-app .details .body{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+}
+.settings-connections-wrapper .authed-app .header .app-name{
+  font-weight: normal;
+  color: var(--theme-accent);
+}
+.settings-connections-wrapper .authed-app .details .permissions .body{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
 }
 .form .control-group .help-text{                          /* Help text */
   color: var(--theme-base-colour-secondary);

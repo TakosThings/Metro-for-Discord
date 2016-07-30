@@ -119,3 +119,11 @@
 
 #### 0.19.5
 * Fix: Fallback fonts weren't working because I forgot quotes around Segoe UI. (Thanks, @Nirewan#6392)
+
+#### 0.20.0
+* Update: Add styling for latest [Discord update](https://blog.discordapp.com/2016-7-28-change-log/)
+* Fix: Make new messages divider text normal case
+* Fix: Broken style on New group DM pop
+* Fix: Members list no longer flashes white while loading
+* Fix: Some uncoloured text in Connections settings
+* Fix: poor readability for detected games in settings
