@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.19.5"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"0.21.0"}*//{}
 
 /* METRO FOR DISCORD by Tako */
 /* Report issues on Github or @Tako#6238 */
@@ -14,7 +14,7 @@
   /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
   --theme-userpop-bg:url(https://i.imgur.com/PlLrpy0.gif);
   --theme-userpop-bg-pos:-196px -541px;
-  --theme-userprofile-bg:url(https://i.imgur.com/PlLrpy0.gif);
+  --theme-userprofile-bg:url(https://i.imgur.com/KShQwCQ.png);
   --theme-userprofile-bg-pos:-93px -613px;
 
   /* The colours used to represent online/idle users */
@@ -1461,6 +1461,70 @@ input.game-input{
   border-top: 1px solid var(--theme-base-border2);
   color: var(--theme-base-colour-secondary);
 }
+/* BETTERDISCORD PUB SERVERS LIST */
+#pubs-header,
+#pubs-footer{
+  background: var(--theme-base-low);
+  font-weight: normal;
+}
+.server-row:not(.server-pinned){                          /* Server entry */
+  background: var(--theme-base-medium-low) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  padding: 0;
+}
+.server-row:nth-child(odd){
+  background: none;
+}
+.server-pinned{
+  background: var(--theme-base-medium-low) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  padding-right: 18px;
+}
+.server-official{
+  color: var(--theme-accent) !important;
+  text-shadow: none;
+  font-size: 13px !important;
+}
+.server-name-span{
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+  font-weight: normal;
+}
+.server-tags{
+  color: var(--theme-base-colour-secondary);
+}
+.server-info span{
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+  font-weight: normal;
+}
+.server-info button{
+  background: var(--theme-button);
+}
+.server-info button:hover{
+  background: var(--theme-button-hover);
+}
+.server-info button:active{
+  background: var(--theme-accent);
+}
+#pubs-header input{
+  background: none;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+  height: 25px;
+}
+#pubs-header button{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+  height: 29px;
+}
+#pubs-header button:hover{
+  background:var(--theme-button-hover);
+}
+#pubs-header button:active{
+  background: var(--theme-accent);
+}
+
 
 /* MONOKAI THEME FOR CSS EDITOR IN BETTERDISCORD SETTINGS */
 /* Nicked from https://github.com/codemirror/CodeMirror/blob/master/theme/monokai.css */
