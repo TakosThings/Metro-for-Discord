@@ -127,3 +127,6 @@
 * Fix: Members list no longer flashes white while loading
 * Fix: Some uncoloured text in Connections settings
 * Fix: poor readability for detected games in settings
+
+#### 0.21.0
+* Styled: Public Servers list

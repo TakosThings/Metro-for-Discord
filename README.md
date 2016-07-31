@@ -1,11 +1,14 @@
 # Metro for Discord
 A custom theme for Discord (BetterDiscord) inspired by Metro For Steam.  
-Currently: `v0.20.0`
+Currently: `v0.21.0`
 
 # Installation
 [Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css)  
 Follow [this guide](https://0mniscient.github.io/BetterDiscord/install_theme.html) to install the theme  
 You'll also need to go to Appearance settings and choose the light theme.
+
+# Preview
+![Preview](https://i.imgur.com/5ry2Q4p.png)
 
 # User settings
 There are some settings you can change in the top of the css file.  
@@ -21,5 +24,3 @@ Status Indicators
 `--theme-user-offline:` Grey for offline status  
 Everything below `/* END CONFIG */` you should probably leave alone
 
-# Preview
-![Preview](https://i.imgur.com/5ry2Q4p.png)
