@@ -130,3 +130,6 @@
 
 #### 0.21.0
 * Styled: Public Servers list
+
+#### 1.0.0
+Everything is done!
