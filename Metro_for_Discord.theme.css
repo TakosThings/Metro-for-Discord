@@ -1,14 +1,21 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.0.0"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.0.1"}*//{}
 
-/* METRO FOR DISCORD by Tako */
-/* Report issues on Github or @Tako#6238 */
+/* -------------------------------------------------- */
+/* Metro For Discord                                  */
+/* Author: @Tako#6238                                 */
+/* Report issues to @Tako#6238                        */
+/* https://github.com/TakosThings/Metro-for-Discord/  */
+/* -------------------------------------------------- */
+/* Monokai theme for CSS editor by Code Mirror        */
+/* https://github.com/codemirror/                     */
+/* -------------------------------------------------- */
 
 /* START CONFIG */
 /* See README.md if you need more info on this part */
 :root{
   /* A list of colours can be found in accent.md */
-  --theme-accent:rgb(0, 114, 198);
-  --theme-accent-faded:rgba(0, 114, 198,0.8);
+  --theme-accent:rgb(220, 79, 173);
+  --theme-accent-faded:rgba(220, 79, 173,0.8);
 
   /* Backgrounds*/
   /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
@@ -23,7 +30,6 @@
   --theme-user-offline:#848484;                           /* Grey for offline */
 
 /* END CONFIG */
-
   /* Font settings - no touch! */
   --theme-font:"Segoe UI", Arial, Helvetica, sans-serif;
   --theme-font-size-normal:13px;
@@ -31,7 +37,7 @@
   --theme-font-size-h2:14px;
   --theme-font-size-modal-header:18px;
 
-  /* This part is so I can easily convert between the dark and light versions - no touch! */
+  /* Colours - no touch! */
   /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
   --theme-base-low:#141414;
   --theme-base-medium-low:#1A1A1A;
@@ -81,7 +87,7 @@ header,                                                   /* header */
 .channel-name,                                            /* Channel name */
 .topic,                                                   /* Channel topic */
 .Select-placeholder{                                      /* Dropdown placeholder */
-  font-family:Segoe UI !important;
+  font-family:var(--theme-font) !important;
   font-size:13px !important;
   text-transform:none !important;
 }
@@ -188,7 +194,7 @@ header,                                                   /* header */
 }
 .guild-channels .channel-text:hover,
 .guild-channels .channel-text.selected{                   /* Selected and hovered channel background */
-	background: var(--theme-base-medium-high);
+  background: var(--theme-base-medium-high);
 }
 .guild-channels .channel-text.selected:before{            /* Indicates if the channel is selected */
   border-left:2px solid var(--theme-accent);
@@ -478,7 +484,7 @@ header,                                                   /* header */
 .channel-members .avatar-small{                           /* Make avatars squares */
   border-radius: 0;
 }
-.channel-members .member .member-activity{                                         /* Hide the words "Playing"/"Streaming" */
+.channel-members .member .member-activity{                /* Hide the words "Playing"/"Streaming" */
   font-size: 0;
 }
 .member-activity strong{                                  /* Name of the game/stream */
@@ -660,7 +666,7 @@ header,                                                   /* header */
 
 /* OTHER */
 img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
-  margin: -14px 0;                                         /* Fixes auto scrolling */
+  margin: -14px 0;                                        /* Fixes auto scrolling */
 }
 .channel-textarea-guard{                                  /* "You must be a member for..." chat box message */
   font-weight: normal;
@@ -917,8 +923,8 @@ img.emote{                                                /* Set max size for JT
 .form .control-group input[type=password]:focus,
 .form .control-group input[type=text]:focus,
 .form .control-group textarea:focus{
-	border: 1px solid var(--theme-textbox-border-hover);
-	margin-bottom:1px;
+  border: 1px solid var(--theme-textbox-border-hover);
+  margin-bottom:1px;
 }
 .form .radio-group{
   line-height: 15px;
@@ -1442,7 +1448,7 @@ input.game-input{
 
 /* BETTERDISCORD SETTINGS */
 .bda-slist-top .btn{                                      /* Import/Export buttons */
-	padding: 0 5px;
+  padding: 0 5px;
 }
 #bd-customcss-attach-controls{                            /* Controls underneath CSS editor */
   border: 0;
@@ -1524,7 +1530,6 @@ input.game-input{
 #pubs-header button:active{
   background: var(--theme-accent);
 }
-
 
 /* MONOKAI THEME FOR CSS EDITOR IN BETTERDISCORD SETTINGS */
 /* Nicked from https://github.com/codemirror/CodeMirror/blob/master/theme/monokai.css */
