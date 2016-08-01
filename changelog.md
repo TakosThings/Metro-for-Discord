@@ -139,3 +139,6 @@ Everything is done!
 * Add contact details at top of css
 * Attribution for Monokai theme added to top of css
 * Fix: Font applied in `GLOBALS` now uses `--theme-font`
+
+#### 1.0.2
+* Shipped with wrong default accent colour

@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.0.1"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.0.2"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -14,8 +14,8 @@
 /* See README.md if you need more info on this part */
 :root{
   /* A list of colours can be found in accent.md */
-  --theme-accent:rgb(220, 79, 173);
-  --theme-accent-faded:rgba(220, 79, 173,0.8);
+  --theme-accent:rgb(0, 114, 198);
+  --theme-accent-faded:rgba(0, 114, 198,0.8);
 
   /* Backgrounds*/
   /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
