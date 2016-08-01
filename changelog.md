@@ -133,3 +133,9 @@
 
 #### 1.0.0
 Everything is done!
+
+#### 1.0.1
+* Tidy some comments
+* Add contact details at top of css
+* Attribution for Monokai theme added to top of css
+* Fix: Font applied in `GLOBALS` now uses `--theme-font`
