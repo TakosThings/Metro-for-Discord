@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.0.2"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.1.0"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -1567,4 +1567,23 @@ span.cm-error { background: #f92672; color: #f8f8f0; }
 .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: white !important;
+}
+
+/* PLUGIN SUPPORT */
+/* Clock Plugin by Jiiks */
+/* https://github.com/Jiiks/BetterDiscordApp/blob/master/Plugins/clock.plugin.js */
+#clockPluginClock{
+    background: transparent;
+}
+
+/* CopyCode by Finicalmist */
+/* https://github.com/Finicalmist/CopyCode/blob/master/copyCode.plugin.js */
+button.copybutton{
+    background: var(--theme-base-high);
+    color: #CCC;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+button.copybutton:hover{
+    background: var(--theme-base-medium-high);
 }

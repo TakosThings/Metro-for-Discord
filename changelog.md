@@ -142,3 +142,7 @@ Everything is done!
 
 #### 1.0.2
 * Shipped with wrong default accent colour
+
+#### 1.1.0
+* Added plugin support for [Clock Plugin](https://github.com/Jiiks/BetterDiscordApp/blob/master/Plugins/clock.plugin.js) by Jiiks
+* Added plugin support for [CopyCode](https://github.com/Finicalmist/CopyCode/blob/master/copyCode.plugin.js) by Finicalmist
