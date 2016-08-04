@@ -149,3 +149,6 @@ Everything is done!
 
 #### 1.2.0
 * Added plugin support for [Even Better Repo](https://github.com/IRDeNial/BD-Even-Better-Repo) by DeNial
+
+#### 1.2.1
+* Fix: Hide header on Even Better Repo plugins page

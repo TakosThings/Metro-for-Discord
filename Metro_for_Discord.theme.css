@@ -1609,7 +1609,8 @@ button.copybutton:hover{
   border: none !important;
   border-radius: 0 !important;
 }
-h2.themes-header{                                         /* Hide the header */
+h2.themes-header,
+h2.plugins-header{                                         /* Hide the header */
   display: none;
 }
 .ebr-themes p.name,
