@@ -146,3 +146,6 @@ Everything is done!
 #### 1.1.0
 * Added plugin support for [Clock Plugin](https://github.com/Jiiks/BetterDiscordApp/blob/master/Plugins/clock.plugin.js) by Jiiks
 * Added plugin support for [CopyCode](https://github.com/Finicalmist/CopyCode/blob/master/copyCode.plugin.js) by Finicalmist
+
+#### 1.2.0
+* Added plugin support for [Even Better Repo](https://github.com/IRDeNial/BD-Even-Better-Repo) by DeNial

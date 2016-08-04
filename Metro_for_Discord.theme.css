@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.1.0"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.2.0"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -1586,4 +1586,57 @@ button.copybutton{
 }
 button.copybutton:hover{
     background: var(--theme-base-medium-high);
+}
+
+/* Even Better Repo by DeNial */
+#theme-search,
+#plugin-search{                                           /* Search box */
+  background: var(--theme-textbox-background);
+  border: 1px solid var(--theme-textbox-border) !important;
+  color: var(--theme-base-colour-primary);
+}
+#theme-search:hover,
+#plugin-search:hover{                                     /* Search box hovered */
+  border: 1px solid var(--theme-textbox-border-hover) !important;
+}
+#theme-search:focus,
+#plugin-search:focus{                                     /* Search box focused */
+  outline: none;
+  border: 1px solid var(--theme-textbox-border-hover) !important;
+}
+.ebr-plugin-item, .ebr-theme-item{                        /* Plugin/theme list */
+  background: var(--theme-base-medium) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+h2.themes-header{                                         /* Hide the header */
+  display: none;
+}
+.ebr-themes p.name,
+.ebr-plugins p.name{                                      /* Plugin/theme name */
+  color: var(--theme-base-colour-primary);
+}
+.ebr-themes p.author,
+.ebr-plugins p.author{                                    /* Plugin/theme author */
+  color: var(--theme-base-colour-secondary);
+}
+.ebr-themes p.description,
+.ebr-plugins p.description{                               /* Plugin/theme description */
+  color: var(--theme-base-colour-secondary);
+}
+.install-button,
+.view-source-button{                                      /* Install/View source/Update button */
+  background: var(--theme-button) !important;
+  border-radius: 0 !important;
+}
+.install-button:hover,
+.view-source-button:hover{                                /* Install/View source/Update button */
+  background: var(--theme-button-hover) !important;
+}
+.install-button:active,
+.view-source-button:active{                               /* Install/View source/Update button */
+  background: var(--theme-accent) !important;
+}
+.update-button{
+  border-radius: 0 !important;
 }
