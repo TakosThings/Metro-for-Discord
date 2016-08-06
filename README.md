@@ -8,7 +8,7 @@ Follow [this guide](https://0mniscient.github.io/BetterDiscord/install_theme.htm
 You'll also need to go to Appearance settings and choose the light theme.
 
 # Preview
-![Preview](https://i.imgur.com/5ry2Q4p.png)
+![Preview](https://i.imgur.com/40po35i.png)
 
 # User settings
 There are some settings you can change in the top of the css file.  
