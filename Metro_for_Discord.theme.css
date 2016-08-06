@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam.","author":"Tako","version":"1.2.0"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.3.0"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -10,18 +10,22 @@
 /* https://github.com/codemirror/                     */
 /* -------------------------------------------------- */
 
+/* Update notifier */
+@import url(https://rawgit.com/TakosThings/Metro-for-Discord/master/versions/1.3.0.css);
+
 /* START CONFIG */
 /* See README.md if you need more info on this part */
 :root{
   /* A list of colours can be found in accent.md */
   --theme-accent:rgb(0, 114, 198);
   --theme-accent-faded:rgba(0, 114, 198,0.8);
+  --theme-accent-faded2:rgba(0, 114, 198,0.3);
 
   /* Backgrounds*/
   /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
   --theme-userpop-bg:url(https://i.imgur.com/PlLrpy0.gif);
   --theme-userpop-bg-pos:-196px -541px;
-  --theme-userprofile-bg:url(https://i.imgur.com/KShQwCQ.png);
+  --theme-userprofile-bg:url(https://i.imgur.com/PlLrpy0.gif);
   --theme-userprofile-bg-pos:-93px -613px;
 
   /* The colours used to represent online/idle users */
@@ -67,6 +71,17 @@
 @keyframes pulse{
   50%{
     background: var(--theme-accent);
+  }
+}
+@keyframes channel-pulse{
+  0%{
+    background: transparent;
+  }
+  50%{
+    background: var(--theme-accent);
+  }
+  100%{
+    background: transparent;
   }
 }
 
@@ -206,6 +221,9 @@ header,                                                   /* header */
 .guild-channels .channel a,
 .guild-channels .channel-text.selected a{
   font-weight: normal;
+}
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted){ /* Pulses the channel when a new message is received */
+  animation: channel-pulse 1.5s ease-in-out;
 }
 .guild-channels header{                                   /* Top margin for channel Text/Voice Channel headers */
   margin-top: 10px;
@@ -1589,6 +1607,7 @@ button.copybutton:hover{
 }
 
 /* Even Better Repo by DeNial */
+/* https://github.com/IRDeNial/BD-Even-Better-Repo/blob/master/evenBetterRepo.plugin.js */
 #theme-search,
 #plugin-search{                                           /* Search box */
   background: var(--theme-textbox-background);

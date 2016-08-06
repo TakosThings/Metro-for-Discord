@@ -152,3 +152,10 @@ Everything is done!
 
 #### 1.2.1
 * Fix: Hide header on Even Better Repo plugins page
+
+#### 1.3.0
+* Added update notifier
+* Text channels now pulse when a new unread message it received
+* Added link for Even Better Repo's repo
+* Fix: Incorrect profile modal background
+* Fiddle: BTTV etc. emotes margins
