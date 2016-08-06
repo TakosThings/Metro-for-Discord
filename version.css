@@ -1,8 +1,8 @@
 .channels-wrap:after{
   width: 100%;
   height: 17px;
-  background: var(--theme-accent);
-  content: "A new version of Metro For Discord is available!";
+  background: transparent;
+  content: "Metro For Discord v1.2.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
