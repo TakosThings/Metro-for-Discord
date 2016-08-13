@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.4.0"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.5.0"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -11,7 +11,7 @@
 /* -------------------------------------------------- */
 
 /* Update notifier */
-@import url(https://cdn.rawgit.com/TakosThings/Metro-for-Discord/master/versions/1.4.0.css);
+@import url(https://cdn.rawgit.com/TakosThings/Metro-for-Discord/master/versions/1.5.0.css);
 
 /* START CONFIG */
 /* See README.md if you need more info on this part */
@@ -364,8 +364,14 @@ header,                                                   /* header */
   background: transparent;
   color: var(--theme-base-colour-primary);
 }
-.new-messages-bar{                                        /* New messages bar */
+.chat .new-messages-bar{                                  /* New messages bar */
   background: var(--theme-accent-faded) !important;
+  border-radius: 0;
+  left: 0;
+  right: 0;
+}
+.chat .new-messages-bar button{
+  font-weight: normal;
 }
 
 /* CHAT BOX */
@@ -385,7 +391,6 @@ header,                                                   /* header */
   border: 0;
   border-radius: 0;
   padding: 16px 10px;
-  border-bottom: 1px solid var(--theme-base-border2);
 }
 .channel-textarea-inner textarea{                         /* The actual text box */
   background:var(--theme-base-medium-low);
@@ -489,6 +494,8 @@ header,                                                   /* header */
 }
 .channel-members h2{                                      /* Member group headers */
   padding: 0 15px;
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
 }
 .channel-members .member+h2{                              /* Less border between groups */
   margin-top: 15px;
@@ -501,6 +508,10 @@ header,                                                   /* header */
 }
 .channel-members .avatar-small{                           /* Make avatars squares */
   border-radius: 0;
+}
+.channel-members .member .member-username{
+  font-weight: normal;
+  font-size: 13px;
 }
 .channel-members .member .member-activity{                /* Hide the words "Playing"/"Streaming" */
   font-size: 0;
@@ -543,6 +554,7 @@ header,                                                   /* header */
 /* MEMBER PROFILE */
 .user-popout{
   border-radius: 0;
+  border: 1px solid var(--theme-base-border);
 }
 .user-popout .header{                                     /* User popout header */
   background: var(--theme-userpop-bg);
@@ -1482,12 +1494,12 @@ input.game-input{
 }
 .bda-slist .bda-right .bda-plugin-reload,
 #bd-themes-pane .bda-plugin-reload{
-	margin-top: 5px;
+  margin-top: 5px;
   display: none;
 }
 .bd-settings .bd-pane .bda-slist-top{
-	margin-top: -50px;
-	padding-bottom: 10px;
+  margin-top: -50px;
+  padding-bottom: 10px;
 }
 .bda-slist .bda-name{                                     /* Name of plugin or theme */
   color: var(--theme-base-colour-primary);
