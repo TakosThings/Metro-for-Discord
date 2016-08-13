@@ -164,3 +164,10 @@ Everything is done!
 * Made themes/plugins boxes in BD settings slightly smaller
 * Hid the reload button, since it doesn't work
 * Fix: Text in day divider was too fat
+
+#### 1.5.0
+* Fix: Group headers in members list was wrong colour
+* Fix: Usernames were a bit too big
+* Fix: "X is typing" message would get pushed off screen if message text extended beyond one line
+* Fix: New messages bar still had b-rad on it
+* Add border to user profile popup
