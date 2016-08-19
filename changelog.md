@@ -171,3 +171,6 @@ Everything is done!
 * Fix: "X is typing" message would get pushed off screen if message text extended beyond one line
 * Fix: New messages bar still had b-rad on it
 * Add border to user profile popup
+
+#### 1.5.1
+* Fix: Remove border on file upload button

@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.5.0"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.5.1"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -397,11 +397,11 @@ header,                                                   /* header */
   color: var(--theme-base-colour-primary) !important;
 }
 .channel-textarea-upload{                                 /* The upload button in the text box */
-  border-right: 1px solid var(--theme-base-border2);
+  border-right: 0;
   margin: -16px 10px -16px -10px;
 }
 .channel-textarea-upload:hover{
-  background-color: var(--theme-base-border2);
+  background-color: 0;
   border-right:1px solid var(--theme-base-border2);
 }
 .typing{                                                  /* X is typing text */
