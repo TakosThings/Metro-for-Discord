@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. Github: git.io/v63Jp","author":"Tako","version":"1.5.1"}*//{}
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"<a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Tako</a>","version":"1.5.1"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -1107,7 +1107,7 @@ div.control-group .shortcut-recorder{
   background: none;
 }
 
-/* MODALS */
+/* SETTINGS MODALS */
 .settings .settings-header{                               /* Sidebar in settings modal */
   border-radius: 0;
   background: var(--theme-base-low);
@@ -1218,6 +1218,8 @@ input.game-input{
 .user-settings-modal-games .games-table .games-row .item-overlay{
   border-bottom: 1px solid var(--theme-base-border2);
 }
+
+/* MD MODAL */
 .markdown-modal{                                          /* Changelog modal */
   background: var(--theme-base-high);
   border: 1px solid var(--theme-base-border);
@@ -1239,6 +1241,8 @@ input.game-input{
 .markdown-modal a{                                        /* Links in the modal */
   color: var(--theme-accent);
 }
+
+/* USER PROFILE */
 #user-profile-modal{
   border-radius: 0;
 }
@@ -1268,31 +1272,35 @@ input.game-input{
   font-size: 13px;
   font-weight: normal;
 }
-.form-header{                                             /* Header of some common modals */
+
+/* VARIOUS MODALS */
+.modal .form-header{                                             /* Header of some common modals */
   background: var(--theme-base-medium-low) !important;
   border-radius: 0 !important;
   font-weight: normal !important;
   color: var(--theme-base-colour-primary) !important;
   border-bottom: 1px solid var(--theme-base-border) !important;
 }
-.form header{
+.modal header{
   padding-top: 20px;
   padding-bottom: 20px;
   color: var(--theme-base-colour-primary);
 }
-.form-inner{                                              /* Inner of some common modals */
+.modal .form-inner{                                              /* Inner of some common modals */
   background: var(--theme-base-medium-low) !important;
   border-radius: 0 !important;
 }
 .modal-content .form-inner p{
   color: var(--theme-base-colour-secondary);
 }
-.form-actions{                                            /* footer of some common modals */
+.modal .form-actions{                                            /* footer of some common modals */
   border-radius: 0 !important;
   background: var(--theme-base-medium-low) !important;
   border-top: 1px solid var(--theme-base-border) !important;
   padding: 10px 10px !important;
 }
+
+/* REGION SELECT */
 .region-select-modal{                                     /* Region select modal */
   background: var(--theme-base-medium);
 }
@@ -1403,6 +1411,8 @@ input.game-input{
 .scroller.settings-panel>div>h1{
   color: var(--theme-base-colour-primary);
 }
+
+/* NEED HELP MODAL */
 .need-help-modal .header{
   background: var(--theme-base-medium-low);
   border-radius: 0;
