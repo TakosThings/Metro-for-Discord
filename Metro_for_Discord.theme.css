@@ -10,8 +10,18 @@
 /* https://github.com/codemirror/                     */
 /* -------------------------------------------------- */
 
-/* Update notifier */
-@import url(https://cdn.rawgit.com/TakosThings/Metro-for-Discord/master/versions/1.5.0.css);
+.channels-wrap:after{
+  width: 100%;
+  height: 18px;
+  background: var(--theme-base-medium);
+  content: "Metro For Discord v1.5.0";
+  color: #FFF;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: -1px;
+  border-top: 1px solid var(--theme-base-border);
+}
 
 /* START CONFIG */
 /* See README.md if you need more info on this part */
