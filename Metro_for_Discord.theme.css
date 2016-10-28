@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.1.0 Beta"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.1.1 Beta"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.1.0 Beta";
+  content: "Metro For Discord v2.1.1 Beta";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -1287,6 +1287,10 @@ div[style*="#2E3136"]{
 }
 .bda-slist-top>.btn{
     height: auto;
+}
+.bd-psm{
+	background-color: #191919;
+	box-shadow: none;
 }
 
 /* POPOUT */
