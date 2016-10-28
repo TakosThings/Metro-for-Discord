@@ -1,0 +1,1708 @@
+//META{"name":"Metro_For_Discord","description":"Metro for Discord, inspired by Metro For Steam. <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"<a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Tako</a>","version":"1.5.1"}*//{}
+
+/* -------------------------------------------------- */
+/* Metro For Discord                                  */
+/* Author: @Tako#6238                                 */
+/* Report issues to @Tako#6238                        */
+/* https://github.com/TakosThings/Metro-for-Discord/  */
+/* -------------------------------------------------- */
+/* Monokai theme for CSS editor by Code Mirror        */
+/* https://github.com/codemirror/                     */
+/* -------------------------------------------------- */
+
+.channels-wrap:after{
+  width: 100%;
+  height: 18px;
+  background: var(--theme-base-medium);
+  content: "Metro For Discord v1.5.0";
+  color: #FFF;
+  font-size: 10px;
+  text-align: center;
+  padding-top: 6px;
+  margin-left: -1px;
+  border-top: 1px solid var(--theme-base-border);
+}
+
+/* START CONFIG */
+/* See README.md if you need more info on this part */
+:root{
+  /* A list of colours can be found in accent.md */
+  --theme-accent:rgb(0, 114, 198);
+  --theme-accent-faded:rgba(0, 114, 198,0.8);
+
+  /* Backgrounds*/
+  /* A huge collection of animated backgrounds: http://imgur.com/gallery/GPlx4 */
+  --theme-userpop-bg:url(https://i.imgur.com/PlLrpy0.gif);
+  --theme-userpop-bg-pos:-196px -541px;
+  --theme-userprofile-bg:url(https://i.imgur.com/PlLrpy0.gif);
+  --theme-userprofile-bg-pos:-93px -613px;
+
+  /* The colours used to represent online/idle users */
+  --theme-user-online:#72A300;                            /* Green for online */
+  --theme-user-idle:#FF8F32;                              /* Orange for idle */
+  --theme-user-offline:#848484;                           /* Grey for offline */
+
+/* END CONFIG */
+  /* Font settings - no touch! */
+  --theme-font:"Segoe UI", Arial, Helvetica, sans-serif;
+  --theme-font-size-normal:13px;
+  --theme-font-size-h1:15px;
+  --theme-font-size-h2:14px;
+  --theme-font-size-modal-header:18px;
+
+  /* Colours - no touch! */
+  /* https://msdn.microsoft.com/en-us/windows/uwp/style/color */
+  --theme-base-low:#141414;
+  --theme-base-medium-low:#1A1A1A;
+  --theme-base-medium:#202020;
+  --theme-base-medium-high:#252525;
+  --theme-base-high:#2C2C2C;
+  --theme-base-border:#0F0F0F;
+  --theme-base-border2:#353535;
+  --theme-tab-selected:#4C4C4C;
+  --theme-base-colour-primary:#FFFFFF;
+  --theme-base-colour-secondary:#898989;
+
+  /* Forms - no touch!*/
+  --theme-button:#353535;
+  --theme-button-hover:#515151;
+  --theme-textbox-background:transparent;
+  --theme-textbox-border:#353535;
+  --theme-textbox-border-hover:#515151;
+  --theme-checkbox-background:#2d2d2d;
+  --theme-checkbox-hover:#414141;
+  --theme-radio-background:#2d2d2d;
+  --theme-radio-hover:#414141;
+  --theme-radio-checked:#FFFFFF;
+}
+
+/* ANIMATION */
+@keyframes pulse{
+  50%{
+    background: var(--theme-accent);
+  }
+}
+@keyframes channel-pulse{
+  0%{
+    background: transparent;
+  }
+  50%{
+    background: var(--theme-accent);
+  }
+  100%{
+    background: transparent;
+  }
+}
+
+/* GLOBALS */
+body,                                                     /* Most elements */
+textarea,                                                 /* Chat box */
+strong,                                                   /* Game */
+input,                                                    /* Textbox */
+select,                                                   /* Dropdown */
+button,                                                   /* Button */
+h1,                                                       /* h1 */
+h2,                                                       /* h2 */
+header,                                                   /* header */
+.channel,                                                 /* Channel name */
+.settings-header,                                         /* Modal menus */
+.tab-bar-item,                                            /* Modal menus */
+.tab-bar-header,                                          /* Modal menu header */
+.channel-name,                                            /* Channel name */
+.topic,                                                   /* Channel topic */
+.Select-placeholder{                                      /* Dropdown placeholder */
+  font-family:var(--theme-font) !important;
+  font-size:13px !important;
+  text-transform:none !important;
+}
+
+
+/* TITLE BAR */
+.theme-dark .chat .title-wrap,
+.chat>.title-wrap{                                        /* Main title bar */
+  background: var(--theme-base-low);
+  min-height: 50px;
+  padding:0 10px;
+  border-bottom: 0;
+}
+.chat>.title-wrap>.title .channel-name{                   /* Channel name in the title bar */
+  color: var(--theme-base-colour-primary);
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize !important;
+}
+.chat>.title-wrap>.title .channel-name:before{            /* The # next to the channel name */
+  color: #FFF;
+  margin-right: 0;
+}
+.chat>.title-wrap>.topic:before{                          /* Separator between channel name and channel topic */
+  background: var(--theme-base-colour-secondary);
+}
+.header-toolbar button{                                   /* Alert/users toggle/pinned/help buttons */
+  height: 50px;
+  border-radius: 0;
+}
+.header-toolbar button+button{
+  margin: 0;
+}
+.header-toolbar button:hover{
+  background: var(--theme-base-medium);
+}
+.header-toolbar button.active{                            /* Active users toggle */
+  background: var(--theme-base-medium);
+  border-bottom: 2px solid var(--theme-accent);
+}
+.header-toolbar button.active > span{                     /* Fixes the icon bouncing when its active */
+  margin-bottom:-1px;
+}
+.header-toolbar .toolbar-badge{                           /* New pinned messages indicator */
+  width: 30px;
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  top: 48px;
+  right: 0;
+  animation: pulse 3s ease-out infinite;
+  background: transparent;
+}
+.header-toolbar .separator{                               /* Separator bewteen icons */
+  background: var(--theme-base-medium);
+  height: 50px;
+  margin: 0;
+}
+
+/* SERVER LIST */
+.guilds-wrapper{
+  background: var(--theme-base-low);
+}
+.guilds-wrapper .guilds-add{                              /* New server button */
+  background: transparent;
+  font-size: 25px !important;
+}
+.guild-inner:hover,
+.active .guild-inner,
+.selected .guild-inner{
+  background-color: var(--theme-accent) !important;
+}
+
+/* CHANNELS PANE */
+.channels-wrap{                                           /* Channels list */
+  width: 230px;
+}
+.guild-header header{                                     /* Server name */
+  background: var(--theme-base-low);
+  height: 50px;
+  padding: 0 10px;
+  box-shadow: none;
+  border-bottom: none;
+}
+.guild-header header:hover{                               /* Server name hover */
+  background: var(--theme-base-medium);
+}
+.guild-header header span{
+  line-height: 49px;
+}
+.guild-header ul{                                         /* Notification/privacy settings menu */
+  top: 49px;
+  background: var(--theme-base-medium);
+  border: 1px solid var(--theme-base-border);
+  box-shadow: none;
+}
+.guild-header ul a{                                       /* Notification/privacy settings menu items */
+  margin:0;
+  font-size: var(--theme-font-size-normal);
+  font-weight: normal;
+}
+.guild-channels{                                          /* Channel list background */
+  background:var(--theme-base-medium);
+}
+.guild-channels .channel-text:hover,
+.guild-channels .channel-text.selected{                   /* Selected and hovered channel background */
+  background: var(--theme-base-medium-high);
+}
+.guild-channels .channel-text.selected:before{            /* Indicates if the channel is selected */
+  border-left:2px solid var(--theme-accent);
+}
+.guild-channels .channel-text:hover.channel-muted:before,
+.guild-channels .channel-text:hover:not(.unread):before{  /* Left border when #channel is hovered */
+  border-left:2px solid var(--theme-accent);
+}
+.guild-channels .channel a,
+.guild-channels .channel-text.selected a{
+  font-weight: normal;
+}
+.guild-channels .channel-text.unread:not(.selected):not(.channel-muted){ /* Pulses the channel when a new message is received */
+  animation: channel-pulse 1.5s ease-in-out;
+}
+.guild-channels header{                                   /* Top margin for channel Text/Voice Channel headers */
+  margin-top: 10px;
+}
+.links{                                                   /* Changelog box */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  color:var(--theme-base-colour-secondary);
+}
+
+/* VOICE CONNECTION INFO */
+#voice-connection{                                        /* This only shows up when connected to a voice server */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  height: 50px;
+  padding: 0;
+}
+#voice-connection .voice-connection-inner{                /* Contains connection status and current channel */
+  padding: 0 10px;
+}
+#voice-connection .btn-group{                             /* Group of buttons (connection info/disconnect) */
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+}
+#voice-connection .btn{                                   /* Connection info and disconnect buttons */
+  box-shadow: none;
+  border:0;
+  border-radius: 0;
+  width: 30px;
+  height: 50px;
+  background: transparent;
+}
+#voice-connection .btn:hover{                             /* Connection info/disconnected buttons when hovered */
+  background: var(--theme-base-low);
+}
+
+/* ACCOUNT BOX */
+.account{                                                 /* Account box */
+  background: var(--theme-base-medium);
+  border-top: 1px solid var(--theme-base-border);
+  height: 50px;
+  padding: 0;
+}
+.account .account-details .username{                      /* Set max with of username, otherwise the button box gets pushed out of view */
+  max-width: 36px;
+}
+.account .account-details .discriminator{                 /* Unique ID */
+  font-weight: normal;
+}
+.account .avatar-small{                                   /* Your avatar */
+  width: 50px;
+  height: 50px;
+  border-radius: 0;
+  background-size: 50px 50px;
+}
+.account .btn-group{                                      /* Group of buttons (mute/deafen/settings) */
+  border: 0;
+  border-radius: 0;
+}
+.account .btn{                                            /* Mute/deafen/settings buttons */
+  box-shadow: none;
+  border:0;
+  border-radius: 0;
+  width: 30px;
+  height: 50px;
+  background: transparent;
+}
+.account .btn:hover{                                      /* Mute/deafen/settings buttons when hovered */
+  background: var(--theme-base-low);
+}
+.account .status{                                         /* Remove border around own status indicator */
+  border: 0;
+}
+.account > .avatar-small .status{                         /* Make the indicator look like a border on the right side of own avatar */
+  width: 2px;
+  height: 50px;
+  border-radius: 0;
+  right: 0;
+  bottom: 0;
+}
+.account .btn-mute.disabled,
+.account .btn-deafen.disabled{
+  border-top: 2px solid var(--theme-accent);
+  background: var(--theme-base-low);
+}
+
+/* CHAT */
+.theme-dark .chat>.content,
+.chat .content{                                           /* Chat background */
+  background:var(--theme-base-medium-low);
+}
+.theme-dark .messages-wrapper{                            /* Dark mode support for chat background */
+  background: transparent;
+}
+.message-group{                                           /* Border separating messages */
+  border-bottom: 1px solid var(--theme-base-high);
+}
+.message-group .comment .markup{                          /* Colour of text */
+  color: #FFF;
+  font-size: 13px;
+}
+.message-group.compact .message .markup .user-name,       /* Username colour */
+.message-group.compact .timestamp{                        /* Timestamp colour */
+  color: var(--theme-base-colour-secondary);
+}
+.chat .divider.divider-red>span{
+  color: #FFF;
+  background: #F04747;
+  text-transform: none;
+  font-weight: normal;
+}
+.chat .divider.divider-red>div:last-of-type,
+.chat .divider>div:last-of-type{                          /* Hide second half of the divider */
+  display: none;
+}
+.chat .divider>div{                                       /* Day Divider line */
+  background: var(--theme-base-border2);
+}
+.chat .divider>span{                                      /* New messages divider */
+  background: var(--theme-base-border2);
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+}
+.message-group .comment .markup pre,
+.message-group .comment .markup code.inline{              /* Code block */
+  background: var(--theme-base-medium);
+  border:1px solid var(--theme-base-low);
+}
+.message-group .comment .markup pre code,
+.theme-light .hljs{
+  background:none;
+}
+.highlight{                                               /* @mention and #channel */
+  background: transparent;
+  color: var(--theme-accent);
+}
+.highlight:hover{                                         /* @mention and #channel hover */
+  background: transparent;
+  color: var(--theme-base-colour-primary);
+}
+.chat .new-messages-bar{                                  /* New messages bar */
+  background: var(--theme-accent-faded) !important;
+  border-radius: 0;
+  left: 0;
+  right: 0;
+}
+.chat .new-messages-bar button{
+  font-weight: normal;
+}
+
+/* CHAT BOX */
+.chat form{                                               /* Chat box */
+  margin: 0;
+  box-shadow: none;
+  border-top: 1px solid var(--theme-base-border);
+  min-height: 75px;
+}
+.channel-textarea{
+  min-height: 50px;
+  margin: 0;
+}
+.theme-dark .channel-textarea-inner,
+.channel-textarea-inner{
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 16px 10px;
+}
+.channel-textarea-inner textarea{                         /* The actual text box */
+  background:var(--theme-base-medium-low);
+  color: var(--theme-base-colour-primary) !important;
+}
+.channel-textarea-upload{                                 /* The upload button in the text box */
+  border-right: 0;
+  margin: -16px 10px -16px -10px;
+}
+.channel-textarea-upload:hover{
+  background-color: 0;
+  border-right:1px solid var(--theme-base-border2);
+}
+.typing{                                                  /* X is typing text */
+  height: 24px;
+  left: 0;
+  bottom: 0;
+  padding-left: 10px;
+  font-size: 10px;
+  font-weight: normal;
+  background: transparent;
+  color: var(--theme-base-colour-secondary);
+}
+.typing strong{                                           /* The username of the person typing */
+  font-size: 10px !important;
+  font-weight: normal;
+}
+.typing .ellipsis{                                        /* Hide the animated circles when someone is typing */
+  display: none;
+}
+
+/* EMOJI PICKER */
+.emoji-picker{
+  background: var(--theme-base-medium);                   /* Emoji Picker background */
+  border-radius: 0;
+  border:1px solid var(--theme-base-border);
+}
+.emoji-picker .search-bar{                                /* Emoji search bar background */
+  background: var(--theme-base-medium);
+}
+.emoji-picker .search-bar input{                          /* Emoji search bar */
+  border-radius: 0 !important;
+  color:var(--theme-base-colour-primary);
+  background: var(--theme-base-medium-high);
+}
+.emoji-picker .sticky-header{                             /* Category headers */
+  background: var(--theme-base-medium);
+  color: var(--theme-base-colour-primary);
+}
+.emoji-item.selected{                                     /* When an emoji is hovered */
+  background: none !important;
+}
+.emoji-item.selected .sprite-item{                        /* turn off greyscale when hovered */
+  -webkit-filter: grayscale(0%) !important;
+}
+.emoji-item .sprite-item{                                 /* Unselected Emojis */
+  -webkit-filter: grayscale(50%) !important;
+}
+.emoji-picker .categories .item{
+  border-bottom: 2px solid transparent;
+}
+.emoji-picker .categories .item.selected{
+  border-bottom-color: var(--theme-accent);
+}
+
+/* BTTV EMOTE PICKER */
+#bda-qem{
+  border-radius: 0;
+  background: var(--theme-base-medium);
+  border-bottom: 1px solid var(--theme-base-border);
+  
+}
+#bda-qem button{
+  box-shadow: none;
+  border-left: none;
+  color: var(--theme-base-colour-primary);
+}
+#bda-qem button:hover,
+#bda-qem button.active{
+  background: var(--theme-base-medium-high);
+  border-radius: 0;
+}
+#bda-qem-favourite-container,
+#bda-qem-twitch-container{
+  border-radius: 0;
+  background: var(--theme-base-medium);
+}
+
+/* MEMBERS LIST */
+.channel-members-wrap{
+  width: 230px;
+}
+.channel-members-loading{                                 /* Hide white background when loading the channel members */
+  display: none;
+}
+.theme-dark .channel-members,
+.channel-members{                                         /* Members list */
+  background: var(--theme-base-medium);
+  width: 230px;
+  padding: 10px 0;
+}
+.channel-members h2{                                      /* Member group headers */
+  padding: 0 15px;
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+}
+.channel-members .member+h2{                              /* Less border between groups */
+  margin-top: 15px;
+}
+.channel-members .member{                                 /* Bring avatars closer to edges */
+  padding: 5px 15px;
+}
+.channel-members .member:hover{                           /* Hover member */
+  background: var(--theme-base-medium-high);
+}
+.channel-members .avatar-small{                           /* Make avatars squares */
+  border-radius: 0;
+}
+.channel-members .member .member-username{
+  font-weight: normal;
+  font-size: 13px;
+}
+.channel-members .member .member-activity{                /* Hide the words "Playing"/"Streaming" */
+  font-size: 0;
+}
+.member-activity strong{                                  /* Name of the game/stream */
+  font-weight: normal !important;
+}
+.member-status-online > .avatar-small{                    /* Use a green border to represent online members */
+  border: 1px solid var(--theme-user-online);
+}
+.member-status-idle > .avatar-small{                      /* Use an orange border to represent idle members */
+  border: 1px solid var(--theme-user-idle);
+}
+.member-status-offline > .avatar-small{                   /* Use a grey border to represent offline members */
+  border: 1px solid var(--theme-user-offline);
+}
+.channel-members .avatar-small .status{                   /* Hide default status indicators */
+  display: none;
+}
+
+
+/* SCROLLBARS */
+.scroller-wrap .scroller::-webkit-scrollbar {             /* Width of scrollbar */
+  width: 10px
+}
+.scroller-wrap .scroller::-webkit-scrollbar-thumb {       /* Scrollbar handle */
+  background-color: var(--theme-base-high) !important;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 5px
+}
+.scroller-wrap .scroller::-webkit-scrollbar-track-piece { /* Scrollbar track */
+  background-color: transparent !important;
+  background-clip: padding-box;
+  border: 0;
+  border-radius: 5px
+}
+
+
+/* MEMBER PROFILE */
+.user-popout{
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border);
+}
+.user-popout .header{                                     /* User popout header */
+  background: var(--theme-userpop-bg);
+  background-position: var(--theme-userpop-bg-pos);
+  border-radius: 0;
+}
+.user-popout .body{
+  background: var(--theme-base-high);
+}
+.user-popout .footer{
+  background: var(--theme-base-high);
+  border-top:1px solid var(--theme-base-border2);
+}
+.user-popout .body .section .label{
+  color: var(--theme-base-colour-secondary);
+}
+#user-profile-modal .header{                              /* User profile header */
+  background: var(--theme-userprofile-bg);
+  background-position: var(--theme-userprofile-bg-pos);
+}
+.user-popout .username-wrapper .activity{
+  font-size: 13px;
+  font-weight: normal;
+}
+.user-popout .username-wrapper .activity strong{          /* Now playing font */
+  font-weight: normal;
+}
+.protip .label{                                           /* Protip text */
+  font-variant: normal;
+  text-transform: none;
+}
+.user-popout .body .notes textarea:focus{                 /* Add a note textbox */
+  background: transparent;
+}
+
+/* PINNED MESSAGES */
+.popout .themed-popout{                                    /* Pinned and Recent Messages boxes */
+  background: var(--theme-base-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+}
+.popout .themed-popout .header{                            /* Header box */
+  box-shadow: none;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+.popout .themed-popout .header .title{                     /* Header */
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+  font-size: 13px;
+}
+.messages-popout{
+  padding: 0;
+}
+.messages-popout .message-group{                          /* Message box */
+  border: 0;
+  border-bottom: 1px solid var(--theme-base-border2);
+  border-radius: 0;
+}
+.messages-popout .message-group:hover{                    /* Messages when hovered */
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.messages-popout .message-group:last-of-type{             /* The last message in the list */
+  border: 0;
+}
+.messages-popout .scrolling-footer-wrap{                  /* Hide "In the beginning there was nothing" message */
+  display: none;
+}
+.popout .themed-popout .footer{                            /* Protip footer */
+  background: transparent;
+  border-top: 1px solid var(--theme-base-border2);
+}
+.protip.popout-footer .tip{                               /* Protip message */
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.messages-popout .message-group .action-buttons .jump-button{ /* Jump button */
+  background: none;
+  color: var(--theme-base-colour-primary);
+}
+.messages-popout .message-group .action-buttons .jump-button:hover{
+  color: var(--theme-base-colour-primary);
+}
+.messages-popout .message-group:hover .action-buttons{    /* Remove shitty glow around jump button */
+  box-shadow: none;
+  background: var(--theme-button);
+}
+.messages-popout .message-group:hover .action-buttons:hover{
+  background: var(--theme-button-hover);
+}
+.messages-popout .channel-separator{                      /* Server/channel name in Recent Mentions */
+  padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.messages-popout .channel-separator .channel-name,        /* #Channel name */
+.messages-popout .channel-separator .guild-name{          /* Server name */
+  color: var(--theme-base-colour-secondary);
+}
+.recent-mentions-popout .header .tab-bar-item.selected{   /* Selected tab in recent mentions */
+  color: var(--theme-accent);
+  border-bottom-color: var(--theme-accent);
+}
+.recent-mentions-popout .header .tab-bar-item,            /* Tab */
+.recent-mentions-popout .header .mention-filter,          /* Filter */
+.recent-mentions-popout .header .mention-filter .value{   /* Selected filter */
+  color: var(--theme-base-colour-secondary);
+}
+.context-menu{
+  background: var(--theme-base-medium-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-secondary);
+}
+.context-menu .item{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+.context-menu .item:hover{
+  background: var(--theme-base-medium-low);
+  color: var(--theme-base-colour-secondary);
+  border-radius: 0;
+}
+.context-menu .item-subMenu{
+  background-color: transparent;
+}
+.context-menu .item-group{
+  border: none;
+}
+
+/* QUICK MESSAGE */
+.user-popout .footer .quick-message-wrapper .input{       /* Quick message box */
+  height: 22px;
+  padding: 0 10px;
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+  background: var(--theme-textbox-background);
+  color: var(--theme-base-colour-primary);
+}
+
+/* OTHER */
+img.emote{                                                /* Set max size for JTV, FrankerZ emotes */
+  margin: -14px 0;                                        /* Fixes auto scrolling */
+}
+.channel-textarea-guard{                                  /* "You must be a member for..." chat box message */
+  font-weight: normal;
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+}
+.channel-textarea-guard .countdown{
+  background: var(--theme-base-medium);
+  font-size: 13px;
+  font-weight: normal;
+  color:var(--theme-base-colour-secondary);
+}
+.channel-textarea-guard .countdown .countdown-number{     /* Countdown timer if the server requires you to be a member for at least 10 mins */
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+}
+.user-settings-modal .account-warning{                    /* Keybinds warning */
+  background: var(--theme-accent);
+  font-weight: normal !important;
+  font-size: var(--theme-font-size-normal);
+  border-radius: 0;
+  border:none;
+  color: var(--theme-base-colour-primary);
+}
+#overlay-explanation{                                     /* The warning message in Overlay */
+  background: var(--theme-accent);
+  font-weight: normal;
+  font-size: var(--theme-font-size-normal);
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.settings-wrapper .now-playing{
+  background: transparent;
+  border-radius: 0;
+  animation: none;
+  border: 1px solid var(--theme-base-colour-secondary);
+}
+.protip .label{                                           /* Literally the word "Protip" */
+  color: var(--theme-accent);
+}
+.protip{                                                  /* The actual protip */
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.btn-help{                                                /* The question mark */
+  background: var(--theme-base-colour-secondary);
+}
+.btn-help:hover{
+  background: var(--theme-base-colour-primary);
+  color: var(--theme-base-colour-secondary);
+}
+.embed{
+  border-left:2px solid var(--theme-accent);
+}
+
+/* TOOLTIPS */
+.tooltip{
+  background: var(--theme-base-high);
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border);
+  font-weight: normal;
+  box-shadow: none;
+}
+.tooltip.tooltip-top:after{
+  border-top-color: var(--theme-base-border);
+}
+.tooltip.tooltip-right:after{
+  border-right-color: var(--theme-base-border);
+}
+.tooltip.tooltip-bottom:after{
+  border-bottom-color: var(--theme-base-border);
+}
+.tooltip.tooltip-left:after{
+  border-left-color: var(--theme-base-border);
+}
+
+/* DIRECT MESSAGES */
+.search-bar{                                              /* Search box background */
+  background: var(--theme-base-low);
+  height: 50px;
+}
+#friends .friends-header{                                 /* Main header */
+  background: var(--theme-base-low);
+  height: 50px;
+  box-shadow: none;
+  border: none;
+}
+#friends .btn{
+  line-height: 50px;
+  padding: 0 10px;
+  background: none;
+  color: var(--theme-base-colour-secondary);
+  border-radius: 0;
+  font-weight: normal;
+}
+#friends .btn:hover{
+  color: var(--theme-base-colour-primary);
+  background: var(--theme-base-medium);
+}
+#friends .friends-header .tab-bar .tab-bar-separator{
+  width: 0;
+}
+#friends .friends-header .tab-bar .tab-bar-item{
+  height: 48px;
+  line-height: 48px;
+  margin:0;
+  border-radius: 0;
+  padding: 0 10px;
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+#friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected){
+  background: var(--theme-base-medium);
+  border-bottom: 2px solid var(--theme-base-medium);
+}
+#friends .friends-header .tab-bar .tab-bar-item.selected{
+  background: var(--theme-base-medium);
+  border-bottom: 2px solid var(--theme-accent);
+}
+
+#friends .friends-table .friends-table-header{            /* Friends table header */
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+#friends .friends-table .friends-table-header .friends-column{  /* Friends column header */
+  text-transform: none;
+  color: var(--theme-base-colour-primary);
+}
+#friends .friends-table .friends-table-header .friends-column-separator{ /* Friends table header separators */
+  width: 0;
+}
+.search-bar.search-bar-light .search-bar-inner{
+  background: none;
+  border: 0;
+}
+.popout .themed-popout .header .subtitle{
+  color: var(--theme-base-colour-secondary);
+}
+.search-bar input, .search-bar.search-bar-light input{
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+}
+.private-channel-recipients-invite .friend.selected{
+  background: transparent;
+  color: var(--theme-base-colour-primary);
+}
+.private-channel-recipients-invite .friend:hover{
+  background: var(--theme-base-medium-high);
+}
+.private-channel-recipients-invite .footer button,
+.private-channel-recipients-invite .footer button:disabled:hover{
+  background: var(--theme-button);
+  border-radius: 0;
+  font-weight: normal;
+}
+.private-channel-recipients-invite .footer button:hover{
+  background: var(--theme-button-hover);
+}
+.private-channel-recipients-invite .footer button:active{
+  background: var(--theme-accent);
+}
+
+.private-channels{                                        /* Messages pane */
+  background: var(--theme-base-medium);
+}
+.private-channels .search-bar{
+  height: 50px;
+  border-radius: 0;
+}
+.search-bar .search-bar-inner{
+  background: none;
+}
+.private-channels .no-private-channels{                   /* Hide shadow image if there are no messages */
+  background: none;
+}
+.private-channels .channel.selected:before{
+  border-left-color: var(--theme-accent);
+}
+#friends{                                                 /* Friends list */
+  background: var(--theme-base-medium-low);
+}
+#friends .friends-empty p{                                /* "No one is playing with Wumpus" text if no friends are listed */
+  color:var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+
+/* FORMS */
+.checkbox .checkbox-inner{                                /* Checkbox */
+  width: 15px;
+  height: 15px;
+}
+.checkbox .checkbox-inner span{                           /* Unchecked checkbox */
+  border: 2px solid var(--theme-checkbox-background);
+  border-radius: 0;
+  background:var(--theme-checkbox-background);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span{ /* Checked checkbox */
+  background: var(--theme-checkbox-hover);
+  border: 2px solid var(--theme-checkbox-hover);
+}
+.checkbox .checkbox-inner input[type=checkbox]:checked+span:after{ /* The tick */
+  left: 3px;
+  width: 3px;
+  height: 7px;
+}
+.checkbox .checkbox-inner span:hover{                     /* Hovered Checkbox */
+  background: var(--theme-checkbox-hover);
+  border: 2px solid var(--theme-checkbox-hover);
+}
+.checkbox .checkbox-inner+span{                           /* Checkbox label */
+  color: var(--theme-base-colour-secondary);
+}
+#permissions .permission-actions>div{                     /* Permissions checkbox */
+  width: 15px;
+  height: 15px;
+  border: 0;
+  background: var(--theme-checkbox-background);
+  border-radius: 0;
+}
+#permissions .permission-actions>div.PASSTHROUGH:after{
+  border: 0;
+}
+#permissions .permission-actions{                         /* Permissions checkbox labels */
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.form .control-group label{                               /* Textbox labels */
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+  font-size: var(--theme-font-size-normal);
+}
+.user-settings-modal a,                                   /* Links in the user settings modal */
+.form .control-group label a{                             /* Change password link */
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+}
+.form .control-group input[type=email],                   /* Email textbox */
+.form .control-group input[type=number],                  /* Number textbox */
+.form .control-group input[type=password],                /* Password textbox */
+.form .control-group input[type=text],                    /* Text textbox */
+.form .control-group textarea{
+  background: var(--theme-textbox-background);
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+  padding-left: 5px;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.form .control-group input[type=email]:focus,
+.form .control-group input[type=number]:focus,
+.form .control-group input[type=password]:focus,
+.form .control-group input[type=text]:focus,
+.form .control-group textarea:focus{
+  border: 1px solid var(--theme-textbox-border-hover);
+  margin-bottom:1px;
+}
+.form .radio-group{
+  line-height: 15px;
+  color: var(--theme-base-colour-secondary);
+}
+.radio .radio-inner{                                      /* Radio button */
+  width: 15px;
+  height: 15px;
+  background: var(--theme-radio-background);
+  border: 0;
+}
+.radio .radio-inner span,
+.radio .radio-inner span:after{
+  width: 7px;
+  height: 7px;
+}
+.radio .radio-inner span{
+  top: 1px;
+  left: 1px;
+}
+.radio .radio-inner span:after{
+  background: var(--theme-radio-checked);
+}
+.slider-bar{                                              /* slider background */
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAFCAMAAAB7Npx7AAAABlBMVEX///9LS0vbjr+JAAAAAXRSTlMAQObYZgAAAA9JREFUCNdjYGRAA1QQAAABTwAGcCgaiAAAAABJRU5ErkJggg==);
+  background-color: transparent;
+}
+.slider-bar-fill{                                         /* Slider fill */
+  background: transparent;
+}
+.slider-handle{                                           /* Slider handle */
+  width: 8px;
+  height: 16px;
+  background: #4b4b4b;
+  border: 0;
+  border-radius: 0;
+  top: -4px;
+}
+.Select-control{                                          /* Drop down */
+  background: var(--theme-textbox-background);
+  border-radius: 0;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+}
+.form .Select-control{
+  height: 24px;
+  border: 1px solid var(--theme-button);
+}
+.Select-input{
+  height: 24px;
+}
+.Select-placeholder{
+  color: var(--theme-base-colour-primary) !important;
+  line-height: 24px !important;
+  padding-top: 0 !important;
+}
+.Select-menu-outer{
+  background: var(--theme-base-medium-low);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+}
+.is-open>.Select-control{                                 /* Dropdown open */
+  background: transparent;
+}
+.form .Select-option{
+  color: var(--theme-base-colour-primary);
+}
+.form .Select-option:hover{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+}
+.Select-option:last-child{
+  border-radius: 0;
+}
+.form .Select-option.is-focused{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+}
+div.control-group .shortcut-recorder input[type=text]{    /* Hotkey box */
+  background: var(--theme-textbox-background);
+  border-radius: 0;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+  font-weight: normal;
+  line-height: 24px;
+}
+div.control-group .shortcut-recorder{
+  margin-top: 4px;
+}
+.Select-value{
+  padding-top: 0;
+}
+.form .btn{                                               /* Buttons! */
+  padding:10px 5px;
+  text-align: left;
+  min-width: 100px;
+  font-size: var(--theme-font-size-normal) !important;
+  font-weight: normal !important;
+}
+.form .btn-default,
+.form .btn-primary,
+.form .btn-add-keybind,
+.form .btn-ghost{                                       /* Default and Primary buttons */
+  border-radius: 0;
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+  border: 0;
+}
+.form .btn-default:hover,
+.form .btn-primary:hover,
+.form .btn-ghost:hover{                                 /* Buttons when hovered */
+  background: var(--theme-button-hover);
+  border: 0;
+}
+.form .btn-default:active,
+.form .btn-primary:active,
+.form .btn-ghost:active{                                /* Buttons when clicked */
+  background: var(--theme-accent);
+  border: 0;
+}
+
+.btn-confirm .btn:last-of-type:not(:first-of-type){       /* hack - Try to stop the logout button expanding because of my above styling */
+  display: none;
+}
+.form .btn-confirm{
+  background: var(--theme-button);
+  margin-left: 0;
+  border-radius: 0;
+}
+.btn-confirm .icon{                                       /* The logout icon */
+  background-position: 10px 50%;
+}
+.btn-confirm.active .btn:last-of-type:not(:first-of-type){ /* hack - make logout button the correct size when it's expanded */
+  display: block;
+}
+.clipboard-input-inner{
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+}
+.clipboard-input-inner input{
+  background: var(--theme-textbox-background) !important;
+  font-weight: normal;
+  color: var(--theme-base-colour-secondary);
+}
+.clipboard-input-inner button{
+  background-color: var(--theme-textbox-border);
+  border-left: 0;
+}
+.clipboard-input-inner button:first-of-type:before{
+  background: none;
+}
+
+/* SETTINGS MODALS */
+.settings .settings-header{                               /* Sidebar in settings modal */
+  border-radius: 0;
+  background: var(--theme-base-low);
+}
+.tab-bar.SIDE .tab-bar-header{                            /* Sidebar header */
+  font-weight: normal;
+  font-size: var(--theme-font-size-modal-header) !important;
+  box-shadow: none;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+.tab-bar.SIDE{
+  margin-right: -17px;
+}
+.tab-bar.SIDE .tab-bar-item{                              /* Sidebar item */
+  font-weight: normal;
+}
+.tab-bar.SIDE .tab-bar-item:hover{                        /* Hovered sidebar item */
+  font-weight: normal;
+}
+.tab-bar.SIDE .tab-bar-item:before{                       /* Selected tab */
+  border-left:2px solid var(--theme-accent);
+}
+.tab-bar.SIDE .tab-bar-item.selected{
+  background: var(--theme-tab-selected);
+}
+.settings .settings-inner{                                /* Modal body */
+  background: var(--theme-base-medium-low);
+  border-radius: 0 !important;
+}
+.settings .settings-actions{                              /* The bit where the save buttons go */
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-top: 1px solid var(--theme-base-border2);
+  padding: 10px;
+  border-radius: 0 !important;
+}
+.tab-bar.TOP{                                             /* Tab bars */
+  border-bottom: 2px solid var(--theme-base-border2);
+}
+.tab-bar.TOP .tab-bar-item.selected{                      /* Selected tab bar item */
+  color: var(--theme-accent);
+  border-bottom:2px solid var(--theme-accent);
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list{
+  box-shadow: none;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list p{ /* No connections message */
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform:none;
+  font-size: 13px;
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations{
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border2);
+}
+.settings-connections-wrapper .user-settings-modal-connections .user-settings-modal-connections-list .connection .connection-integrations.no-integrations{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+  font-size: var(--theme-font-size-normal);
+}
+.settings-connections-wrapper .authed-app{
+  border-radius: 0;
+  background: none;
+  border:1px solid var(--theme-base-border2);
+}
+.settings-connections-wrapper .authed-app .details .header{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+}
+.settings-connections-wrapper .authed-app .details .body{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+  text-transform: none;
+}
+.settings-connections-wrapper .authed-app .header .app-name{
+  font-weight: normal;
+  color: var(--theme-accent);
+}
+.settings-connections-wrapper .authed-app .details .permissions .body{
+  color: var(--theme-base-colour-secondary);
+  font-weight: normal;
+}
+.form .control-group .help-text{                          /* Help text */
+  color: var(--theme-base-colour-secondary);
+}
+.user-settings-modal-keybinds .user-settings-modal-keybinds-header{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.form hr{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.user-settings-streamer-mode{                             /* Streamer mode background */
+  background: transparent;
+}
+.user-settings-modal-games{                               /* Games list */
+  background: transparent;
+  border-top: 1px solid var(--theme-base-border2);
+  color: var(--theme-base-colour-primary);
+}
+.user-settings-modal-games .games-table .games-row .item-game .last-played,
+input.game-input{
+  color: var(--theme-base-colour-secondary);
+}
+.user-settings-modal-games .games-table .games-row .item-game,
+.user-settings-modal-games .games-table .games-row .item-overlay{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+
+/* MD MODAL */
+.markdown-modal{                                          /* Changelog modal */
+  background: var(--theme-base-high);
+  border: 1px solid var(--theme-base-border);
+  border-radius: 0;
+  color: var(--theme-base-colour-primary);
+}
+.markdown-modal .markdown-modal-header{                   /* Changelog modal header */
+  color: var(--theme-base-colour-primary);
+  border-bottom: 1px solid var(--theme-base-border);
+  font-weight: normal;
+}
+.markdown-modal .markdown-modal-footer{                   /* Changelog modal footer */
+  background: var(--theme-base-high);
+  color: var(--theme-base-colour-primary);
+  border-top: 1px solid var(--theme-base-border);
+  font-weight: normal;
+  border-radius: 0;
+}
+.markdown-modal a{                                        /* Links in the modal */
+  color: var(--theme-accent);
+}
+
+/* USER PROFILE */
+#user-profile-modal{
+  border-radius: 0;
+}
+#user-profile-modal .sub-header{                          /* Profile subheader */
+  background: var(--theme-base-medium-low);
+}
+#user-profile-modal .tab-bar{                             /* Profile tab bar */
+  background: var(--theme-base-medium-low);
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+#user-profile-modal .scroller{
+   background: var(--theme-base-medium-low);
+}
+#user-profile-modal footer{                               /* Profile footer */
+  background: var(--theme-base-medium-low);
+  border-top: 1px solid var(--theme-base-border);
+}
+#user-profile-modal .guilds .guild:hover{                 /* Profile server list hover */
+  background: var(--theme-base-medium);
+  color: var(--theme-base-colour-primary);
+}
+#user-profile-modal .empty{                               /* Profile no friends listed */
+  background: var(--theme-base-medium-low);
+}
+#user-profile-modal .btn{
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* VARIOUS MODALS */
+.modal .form-header{                                             /* Header of some common modals */
+  background: var(--theme-base-medium-low) !important;
+  border-radius: 0 !important;
+  font-weight: normal !important;
+  color: var(--theme-base-colour-primary) !important;
+  border-bottom: 1px solid var(--theme-base-border) !important;
+}
+.modal header{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: var(--theme-base-colour-primary);
+}
+.modal .form-inner{                                              /* Inner of some common modals */
+  background: var(--theme-base-medium-low) !important;
+  border-radius: 0 !important;
+}
+.modal-content .form-inner p{
+  color: var(--theme-base-colour-secondary);
+}
+.modal .form-actions{                                            /* footer of some common modals */
+  border-radius: 0 !important;
+  background: var(--theme-base-medium-low) !important;
+  border-top: 1px solid var(--theme-base-border) !important;
+  padding: 10px 10px !important;
+}
+
+/* REGION SELECT */
+.region-select-modal{                                     /* Region select modal */
+  background: var(--theme-base-medium);
+}
+.region-select-modal .region-select-modal-footer{         /* Region select modal footer */
+  color: var(--theme-base-colour-secondary);
+}
+.region-select-modal .region-select-modal-option{
+  background: var(--theme-base-medium-low);
+  border: 0;
+  border-radius: 0;
+}
+.region-select-modal .region-select-modal-option:hover{
+  background: var(--theme-base-medium-high);
+}
+.region-select{                                           /* The region */
+  background: transparent;
+}
+.region-select .region-select-inner{
+  border-radius: 0;
+  border: 1px solid var(--theme-base-border2);
+}
+.region-select button{
+  border: 1px solid var(--theme-base-border2);
+  border-radius: 0;
+  background: transparent;
+}
+#settings-roles .roles header{                            /* Roles header */
+  border-bottom: none;
+}
+#settings-roles .roles{                                   /* Roles list */
+  border-right:1px solid var(--theme-base-border2);
+}
+#settings-roles .roles li.selected{                       /* Selected role tab */
+  background: var(--theme-tab-selected);
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--theme-base-colour-primary);
+}
+#settings-roles .roles li:before{                         /* Left bar to show selected tab */
+  width: 2px;
+}
+#settings-roles .roles li.selected:before{                /* Left bar to show selected tab */
+  background: var(--theme-accent);
+}
+#settings-roles .roles li:hover{
+  background: var(--theme-tab-selected);
+}
+#permissions .permissions-helpdesk{
+  text-transform: none;
+  color: var(--theme-accent);
+  font-weight: normal;
+}
+.guild-settings-modal-members{                            /* Server Settings > Members */
+  background: var(--theme-base-medium-low);
+}
+.guild-settings-modal-members .guild-settings-modal-members-header{ /* top bar border */
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.guild-settings-modal-members .guild-settings-modal-list .member+.member{ /* Top separator between members */
+  border-top: 1px solid var(--theme-base-border2);
+}
+.guild-settings-modal-members .guild-settings-modal-members-footer{ /* Top border above the prune members link */
+  border-top: 1px solid var(--theme-base-border2);
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  text-transform: none;
+}
+.search-bar.search-bar-light{
+  background: transparent;
+}
+.search-bar input,
+.search-bar.search-bar-light input{
+  background: var(--theme-textbox-background);
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0 !important;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 13px;
+  height: 26px;
+  color: var(--theme-base-colour-primary);
+}
+.search-bar-clear{
+  top: 0px;
+}
+.form .control-groups.control-separator{
+  border-top: 1px solid var(--theme-base-border2);
+}
+.create-guild-container .action{                          /* Create or Join server boxes */
+  border: 1px solid var(--theme-base-border2);
+  background: transparent;
+  border-radius: 0;
+}
+.create-guild-container .action .action-body{
+  color: var(--theme-base-colour-primary);
+}
+.or{                                                      /* Hide the word OR between join or create server */
+  display: none;
+}
+.channel-notification-settings{
+  border-bottom: 1px solid var(--theme-base-border2);
+}
+.notification-settings-modal .notification-settings-modal-channel-settings-list{
+  box-shadow: 0;
+}
+.form .control-group>div{
+  color: var(--theme-base-colour-secondary);
+}
+.scroller.settings-panel>div>h1{
+  color: var(--theme-base-colour-primary);
+}
+
+/* NEED HELP MODAL */
+.need-help-modal .header{
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-bottom: 1px solid var(--theme-base-border);
+}
+.need-help-modal .footer{
+  background: var(--theme-base-medium-low);
+  border-radius: 0;
+  border-top: 1px solid var(--theme-base-border);
+}
+.need-help-modal .header input[type=text]{
+  color: var(--theme-base-colour-primary);
+  border: 1px solid var(--theme-textbox-border);
+  border-radius: 0;
+  box-shadow: none;
+}
+.need-help-modal .header input[type=text]:focus{
+  margin-top: 0;
+}
+.need-help-modal ul li{
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+}
+.need-help-modal .form-inner{
+  min-height: 0;
+  padding: 20px;
+}
+
+/* POPOUTS */
+#voice-connection-popout{
+  border: 1px solid var(--theme-base-border);
+}
+.popout.popout-top-right section:before,
+.popout.popout-top section:before{
+  border-top-color: var(--theme-base-border);
+}
+#voice-connection-popout hr{
+  border: 1px solid var(--theme-base-border2);
+}
+.popout header{
+  background: var(--theme-base-high);
+  font-weight: normal;
+  
+  border-radius: 0;
+}
+.popout section{                                          /* Voice connection pop */
+  background: var(--theme-base-high);
+  border-radius: 0;
+}
+#voice-connection-popout section p{
+  color: var(--theme-base-colour-primary);
+}
+#voice-connection-popout section a{
+  color: var(--theme-accent) !important;
+}
+#voice-connection-popout section a:hover{
+  color: var(--theme-base-colour-primary);
+}
+#autocomplete-popout .row{
+  line-height: 25px;
+}
+#autocomplete-popout .row.selected,
+#autocomplete-popout .row:hover{
+  background: var(--theme-base-medium);
+}
+#autocomplete-popout .scroller>.row>a>span>.avatar-small{
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  margin-top: 2px;
+}
+
+/* BETTERDISCORD SETTINGS */
+.bda-slist-top .btn{                                      /* Import/Export buttons */
+  padding: 0 5px;
+}
+#bd-customcss-attach-controls{                            /* Controls underneath CSS editor */
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+}
+.bda-slist li{                                            /* List of plugins or themes */
+  background: var(--theme-base-medium) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  border-top: 0 !important;
+  min-height: 50px;
+  max-height: 70px;
+}
+.bda-slist .bda-right .bda-plugin-reload,
+#bd-themes-pane .bda-plugin-reload{
+  margin-top: 5px;
+  display: none;
+}
+.bd-settings .bd-pane .bda-slist-top{
+  margin-top: -50px;
+  padding-bottom: 10px;
+}
+.bda-slist .bda-name{                                     /* Name of plugin or theme */
+  color: var(--theme-base-colour-primary);
+}
+.bda-slist .bda-description{                              /* Description of plugin or theme */
+  border-top: 1px solid var(--theme-base-border2);
+  color: var(--theme-base-colour-secondary);
+  max-height: 70px;
+}
+
+
+/* BETTERDISCORD PUB SERVERS LIST */
+#pubs-header,
+#pubs-footer{
+  background: var(--theme-base-low);
+  font-weight: normal;
+}
+.server-row:not(.server-pinned){                          /* Server entry */
+  background: var(--theme-base-medium-low) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  padding: 0;
+}
+.server-row:nth-child(odd){
+  background: none;
+}
+.server-pinned{
+  background: var(--theme-base-medium-low) !important;
+  border-bottom: 1px solid var(--theme-base-border2);
+  padding-right: 18px;
+}
+.server-official{
+  color: var(--theme-accent) !important;
+  text-shadow: none;
+  font-size: 13px !important;
+}
+.server-name-span{
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+  font-weight: normal;
+}
+.server-tags{
+  color: var(--theme-base-colour-secondary);
+}
+.server-info span{
+  color: var(--theme-base-colour-primary);
+  font-size: 13px;
+  font-weight: normal;
+}
+.server-info button{
+  background: var(--theme-button);
+}
+.server-info button:hover{
+  background: var(--theme-button-hover);
+}
+.server-info button:active{
+  background: var(--theme-accent);
+}
+#pubs-header input{
+  background: none;
+  border: 1px solid var(--theme-textbox-border);
+  color: var(--theme-base-colour-primary);
+  height: 25px;
+}
+#pubs-header button{
+  background: var(--theme-button);
+  color: var(--theme-base-colour-primary);
+  height: 29px;
+}
+#pubs-header button:hover{
+  background:var(--theme-button-hover);
+}
+#pubs-header button:active{
+  background: var(--theme-accent);
+}
+
+/* MONOKAI THEME FOR CSS EDITOR IN BETTERDISCORD SETTINGS */
+/* Nicked from https://github.com/codemirror/CodeMirror/blob/master/theme/monokai.css */
+/* Based on Sublime Text's Monokai theme */
+.CodeMirror{background: #272822 !important;  color: #f8f8f2; }
+div.CodeMirror-selected { background: #49483E; }
+.CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: rgba(73, 72, 62, .99); }
+.CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: rgba(73, 72, 62, .99); }
+.CodeMirror-gutters { background: #272822; border-right: 0px; }
+.CodeMirror-guttermarker { color: white; }
+.CodeMirror-guttermarker-subtle { color: #d0d0d0; }
+.CodeMirror-linenumber { color: #d0d0d0; }
+.CodeMirror-cursor { border-left: 1px solid #f8f8f0; }
+
+span.cm-comment { color: #75715e; }
+span.cm-atom { color: #ae81ff; }
+span.cm-number { color: #ae81ff; }
+
+span.cm-property, span.cm-attribute { color: #a6e22e; }
+span.cm-keyword { color: #f92672; }
+span.cm-builtin { color: #66d9ef; }
+span.cm-string { color: #e6db74; }
+
+span.cm-variable { color: #f8f8f2 !important; }
+span.cm-variable-2 { color: #9effff; }
+span.cm-variable-3 { color: #66d9ef; }
+span.cm-def { color: #fd971f; }
+span.cm-bracket { color: #f8f8f2; }
+span.cm-tag { color: #f92672; }
+span.cm-header { color: #ae81ff; }
+span.cm-link { color: #ae81ff; }
+span.cm-error { background: #f92672; color: #f8f8f0; }
+
+.CodeMirror-activeline-background { background: #373831; }
+.CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+/* PLUGIN SUPPORT */
+/* Clock Plugin by Jiiks */
+/* https://github.com/Jiiks/BetterDiscordApp/blob/master/Plugins/clock.plugin.js */
+#clockPluginClock{
+    background: transparent;
+}
+
+/* CopyCode by Finicalmist */
+/* https://github.com/Finicalmist/CopyCode/blob/master/copyCode.plugin.js */
+button.copybutton{
+    background: var(--theme-base-high);
+    color: #CCC;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+button.copybutton:hover{
+    background: var(--theme-base-medium-high);
+}
+
+/* Even Better Repo by DeNial */
+/* https://github.com/IRDeNial/BD-Even-Better-Repo/blob/master/evenBetterRepo.plugin.js */
+#theme-search,
+#plugin-search{                                           /* Search box */
+  background: var(--theme-textbox-background);
+  border: 1px solid var(--theme-textbox-border) !important;
+  color: var(--theme-base-colour-primary);
+}
+#theme-search:hover,
+#plugin-search:hover{                                     /* Search box hovered */
+  border: 1px solid var(--theme-textbox-border-hover) !important;
+}
+#theme-search:focus,
+#plugin-search:focus{                                     /* Search box focused */
+  outline: none;
+  border: 1px solid var(--theme-textbox-border-hover) !important;
+}
+.ebr-plugin-item, .ebr-theme-item{                        /* Plugin/theme list */
+  background: var(--theme-base-medium) !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+h2.themes-header,
+h2.plugins-header{                                         /* Hide the header */
+  display: none;
+}
+.ebr-themes p.name,
+.ebr-plugins p.name{                                      /* Plugin/theme name */
+  color: var(--theme-base-colour-primary);
+}
+.ebr-themes p.author,
+.ebr-plugins p.author{                                    /* Plugin/theme author */
+  color: var(--theme-base-colour-secondary);
+}
+.ebr-themes p.description,
+.ebr-plugins p.description{                               /* Plugin/theme description */
+  color: var(--theme-base-colour-secondary);
+}
+.install-button,
+.view-source-button{                                      /* Install/View source/Update button */
+  background: var(--theme-button) !important;
+  border-radius: 0 !important;
+}
+.install-button:hover,
+.view-source-button:hover{                                /* Install/View source/Update button */
+  background: var(--theme-button-hover) !important;
+}
+.install-button:active,
+.view-source-button:active{                               /* Install/View source/Update button */
+  background: var(--theme-accent) !important;
+}
+.update-button{
+  border-radius: 0 !important;
+}
