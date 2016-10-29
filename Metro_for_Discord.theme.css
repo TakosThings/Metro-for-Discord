@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.1.1 Beta"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.2.0 Beta"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.1.1 Beta";
+  content: "Metro For Discord v2.2.0 Beta";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -585,6 +585,21 @@ button.btn.btn-settings{
     font-family: var(--font);
     border-radius: 0;
 }
+.message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea{
+    background-color: var(--b4);
+}
+.message-group .edit-message .channel-textarea-inner textarea{
+    overflow: auto !important;
+    margin-right: 0;
+}
+.message-group .edit-message .edit-operation{
+    color: #FFF;
+    font-family: var(--font);
+    font-weight: normal;
+}
+.message-group .edit-message .edit-operation>a{
+    color: var(--accent);
+}
 
 /* CHAT BOX */
 .chat form{
@@ -672,6 +687,7 @@ button.btn.btn-settings{
     border: 1px solid rgba(255,255,255,.3);
     border-bottom: 0 !important;
     border-radius: 0;
+    padding-right: 0 !important
 }
 #bda-qem button{
     border: 0;
