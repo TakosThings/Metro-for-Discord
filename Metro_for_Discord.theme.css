@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.2.0 Beta"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.2.1 Beta"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.2.0 Beta";
+  content: "Metro For Discord v2.2.1 Beta";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -894,12 +894,13 @@ button.btn.btn-settings{
     font-weight: normal;
 }
 .form .btn-primary{
-    background-color: #0078D7;
+    background-color: var(--accent);
+    border: 1px solid transparent
 }
 .form .btn-primary:hover{
     color: #FFF;
-    background-color: #006abe;
-    border-color: rgba(0,0,0,.4);
+    background-color: var(--accent);
+    border-color: #FFF;
 }
 .form .btn:disabled{
     background-color: rgba(255,255,255,.2);
@@ -943,8 +944,8 @@ button.btn.btn-settings{
     border-color: #FFF;
 }
 .checkbox .checkbox-inner input[type=checkbox]:checked+span{
-    background-color: #0078D7;
-    border: 1px solid #0078D7;
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
 }
 .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
     top: 0px;
@@ -1818,12 +1819,14 @@ div[style*="#2E3136"]{
 }
 .detected-platform-accounts-modal .btn-group .btn-primary{
     background-color: var(--accent);
+    border: 1px solid transparent;
     border-radius: 0;
     font-weight: normal;
     padding: 9px 12px 10px;
 }
 .detected-platform-accounts-modal .btn-group .btn-primary:hover:not(:disabled){
-    background-color: #006abe;
+    background-color: var(--accent);
+    border-color: #FFF;
 }
 .detected-platform-accounts-modal .btn-group .btn-default{
     background-color: transparent;
