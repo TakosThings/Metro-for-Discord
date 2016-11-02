@@ -1,4 +1,4 @@
-//META{"name":"Metro_For_Discord_Legacy","description":"Metro for Discord, inspired by Metro For Steam. <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"<a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Tako</a>","version":"1.5.1"}*//{}
+//META{"name":"Metro_For_Discord_Legacy","description":"This is the legacy version of Metro For Discord, and will not be updated past v1.5.1. You may still use and modify it for you own personal use, but please do not redistribute it. <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"<a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Tako</a>","version":"1.5.1"}*//{}
 
 /* -------------------------------------------------- */
 /* Metro For Discord                                  */
@@ -9,12 +9,17 @@
 /* Monokai theme for CSS editor by Code Mirror        */
 /* https://github.com/codemirror/                     */
 /* -------------------------------------------------- */
+/* This is the legacy version of Metro for Discord,   */
+/* and will not be updated past v1.5.1. You may still */
+/* use and modify it for your own personal use, but   */
+/* please do not distribute it.                       */
+/* -------------------------------------------------- */
 
 .channels-wrap:after{
   width: 100%;
   height: 18px;
   background: var(--theme-base-medium);
-  content: "Metro For Discord v1.5.0";
+  content: "Metro For Discord v1.5.1";
   color: #FFF;
   font-size: 10px;
   text-align: center;
