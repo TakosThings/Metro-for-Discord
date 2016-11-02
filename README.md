@@ -1,10 +1,10 @@
 # Metro for Discord
 A custom theme for Discord (BetterDiscord) based on Microsoft's Modern Design Language - 'Metro'.  
-Currently: `v2.2.1`  
+Currently: `v2.3.0`  
 
 # Installation
-[Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css)  
-Follow [this guide](https://betterdocs.net/install_theme.html) to install the theme  
+[Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css) (Right click->Save as)  
+Follow [this guide](http://i.imgur.com/lczPQxW.png) to install the theme.  
 You'll also need to go to Appearance settings and choose the light theme.
 
 # Preview

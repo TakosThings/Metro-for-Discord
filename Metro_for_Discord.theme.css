@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.2.1 Beta"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.3.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.2.1 Beta";
+  content: "Metro For Discord v2.3.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -714,6 +714,9 @@ button.btn.btn-settings{
     border: 1px solid rgba(255,255,255,.3);
     border-radius: 0;
 }
+.emoji-picker .header{
+    border-bottom: 0;
+}
 .emoji-picker .search-bar{
     background-color: transparent;
 }
@@ -729,7 +732,7 @@ button.btn.btn-settings{
     top: 0;
 }
 .emoji-picker .sticky-header{
-    background-color: var(--b4);
+    background-color: #191919;
     left: 0;
     width: 100%;
 }
@@ -738,6 +741,102 @@ button.btn.btn-settings{
     text-transform: none;
     font-weight: 400;
 }
+.emoji-picker .scroller .emoji-item.selected{
+    background-color: var(--b4);
+    border-radius: 0;
+}
+.emoji-picker .categories{
+    margin: 0;
+}
+.emoji-picker .categories .item{
+    margin: 0;
+    flex: 1;
+    width: auto;
+    border-bottom: 0;
+}
+.emoji-picker .categories .item.selected{
+    background-color: var(--b4);
+    border-bottom: 0;
+}
+.emoji-picker .dimmer{
+    border-radius: 0;
+    margin-top: -32px;
+}
+.diversity-selector .popout{
+    background-color: #191919;
+    border-color: #FFF;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.emote-container{
+    border-radius: 0;
+}
+.emote-container:hover{
+    background-color: var(--b4);
+}
+
+/* Frequently used category icon */
+.emoji-picker .categories .item.recent,
+.emoji-picker .categories .item.recent.selected,
+.emoji-picker .categories .item.recent:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAECAwUF9gb3CfoK+wz9Dv8E+teQUAAAC6SURBVHgBzZJbrqwwDAQbhwkmhEftf7NXoyuZh5HO79QXahcNhujHsGlZYV0mex/PBPOLMu7QapFKbbCPelChW5R1qI/7wfUF9MXh1mE7rqsgZx900ui6C+o0BQYWQs4kP21QVLjO65qFSg9ho2ShsCqn4j+R/i3EIxKFLb/klUrPawaxZv4o71ljyQXtqh+4bjjH8Pjd033OmA7MYlG4kPcaD5g/RSqfGY5RCWsEbdAb5n2Drbvpt/gH7QsK3Zug28sAAAAASUVORK5CYII=);
+}
+/* Custom category icon */
+.emoji-picker .categories .item.custom,
+.emoji-picker .categories .item.custom.selected,
+.emoji-picker .categories .item.custom:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAADFBMVEUAAAD///////////84wDuoAAAAA3RSTlMAz9Awx92LAAAAKklEQVQY02NgIAr8BwJUxgcGBn40xv//6Azy1BDDYHKAMRqI14XpC4IAAHUqLJmt+X9eAAAAAElFTkSuQmCC);
+}
+/* People category icon */
+.emoji-picker .categories .item.people,
+.emoji-picker .categories .item.people.selected,
+.emoji-picker .categories .item.people:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwP0BQX2BvcICQn6CvsMDP0O/wgn2RhQAAANlJREFUeAHNks2agyAMRTFMLf6AqeJ5/0edWvtlKLKYZc+KyM29EHRfhgzLCusySHs7YsSGpM+QgnfOhwS5dxUB1NpEIVT9MJb1CB8ekm3fFLkryoS6CiUVBmD5zW/jSz0xneW50CJVX2cGzvJchCJ2w18dPKsJwDWAfwososKzVYesCOjnNW+rt+b19ndNG8pEfit8ZqqGl1iOFuLP0ymCVqN2sh9+M2/mI3Xvqucenrr5AY9Z7LkLAixihgvXe/U7xPvxy90j7L27IAkjda6FjLrBpqO47+IXRvYPYkqXK5UAAAAASUVORK5CYII=);
+}
+/* Nature category icon */
+.emoji-picker .categories .item.nature,
+.emoji-picker .categories .item.nature.selected,
+.emoji-picker .categories .item.nature:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAECAwP0BPYG9wf4Cwv8DP0KfGXdsAAACNSURBVHjavY9JCsQwDASlxM7qJf3/z84IHXSQUQ4JaTAYqg4l+n7MN7x3jjnQOeTXJUbAmcUIOJEZY26G59iS/PI2LJ0b/pNIWZvJb9qhkdin9yONe8NzbyhHlSv1zgpnrAWwBqCsbzcYNyPg3pDCeixJI9NyVOl0R9hGZ3A+S1PWypmZhgP0yR4JH+8HMUMLvQT/JGgAAAAASUVORK5CYII=);
+}
+/* Food category icon */
+.emoji-picker .categories .item.food,
+.emoji-picker .categories .item.food.selected,
+.emoji-picker .categories .item.food:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAECA/QFBgb3CAoK+wwNDw0rNNlQAAAHJJREFUeAHVzdEKAiEQRuF/Nt0yyznv/7SxyZaCCHXTdkAY5ZPR/0SXVM9noJ8PAcocbC34HFy4zYCdITSgvG+h7odVTYm8j3fSBq6L2sz3DytudU1fhHySQoaoEVB0nnnUGMhSgZJMY9A9/wrw6ltw6B5vfAt7YGP5LAAAAABJRU5ErkJggg==);
+}
+/* Activites category icon */
+.emoji-picker .categories .item.activity,
+.emoji-picker .categories .item.activity.selected,
+.emoji-picker .categories .item.activity:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMAECAwQE9QYG9wf4CPkJ+gv8DP0N/g7/C9QDGoAAAA00lEQVR4Ab3S0XKCMBCF4ZMEqUiVhLTwv/+TdsYYN1UcvPK7PHNmA8nqs/wxzjDHo9eWLnIXg56cYZ16D76fVvjWfy7C6CSBJDdCdGolCFItSAHiw3zOVrDgpoMv6KxQgtAcMGokWsGCK8/q5FZ8LVhQDEySJoZasKBI9JJ6Ui1YUOTrrMBPLfzeglkFL71XsCPy4xH53Y/c/U3P4uSW9qIssKsuA6ENqrD3WLvPvbkwSS2X4GQrd4Lknpd2uRwChMNlaeabkLhLQVv8kDLkNHh91B/vGBqjQ4Y5aQAAAABJRU5ErkJggg==);
+}
+/* Travel category icon */
+.emoji-picker .categories .item.travel,
+.emoji-picker .categories .item.travel.selected,
+.emoji-picker .categories .item.travel:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMAECAwP0BPUG9wf4CQn6Cvv8DP0N/g7/AHmU+nAAAAuUlEQVR42t3R7QqDIACFYdPM1NV0lb73f6VrCMuxCgZjP3ZAUM6D+CF+nss8u9OeNf4EZJRiPgFQxl+Dpi+gb3Zr6RIsQiyQnHyr1QBE85iaCAzqpTYBGNVTj0Dotn6B7F92lT7DXB3eNm8ntlAB3fZuCLdyi1sYXN+2NdhSL2owxdFbrQvQ2voxTvD5S14LuDb7vUlkK4TNJHPwU1GKNTLCAehcSCm47ghsOQA5eiOl8THvA1lPv5g7688RZr5OSN8AAAAASUVORK5CYII=);
+}
+/* Objects category icon */
+.emoji-picker .categories .item.objects,
+.emoji-picker .categories .item.objects.selected,
+.emoji-picker .categories .item.objects:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwQFBgcH+AkKCwv8DP0N/g7/AnHWCcAAAAlklEQVR4AcWSSw7CMBQD7TZt+SeQ+P5XJeitUIMXSAhLT13MTFfBL7bOni+q1lhTsUbvjRF9GFxM/7qs1fT9+hbbl7Oq6wshuZ7YCXzvkfTA2IgeFx0xNoInNWJkRI+p7n8QRnB2D4PNNXh8x3wieJDh+X6t0gkfufpuyfAypwmOE/iK03NgczyEnNXMY2aT5QC3jfjTnruNDyiHAbtOAAAAAElFTkSuQmCC);
+}
+/* Symbols category icon */
+.emoji-picker .categories .item.symbols,
+.emoji-picker .categories .item.symbols.selected,
+.emoji-picker .categories .item.symbols:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwQFBgf4CQn6CvsL/Az9Dg7/Aoe9zoAAAAuElEQVR4Ad3S0W6DMAxG4T8kmKaMFhrO+7/qpmFpVgn3U7+rA1gCi+iTpGmFx5SOfsD604E1frVRGkPLGSxFKk8Yx9ByqWFH3WixkzxZ5J7EvnltFLlC7NULPK4akjoSxFecFTavyqyOmeo1wKCTeHfhSycLy9/wjumNsQ/xqmVFyg1TUMOEP6/vnxz/3tiYz0thckZv8Qr348DcoarDdtYs5ZXd1JU3mCbYsi6kClCTrpXXq+jf+QaoNAtV2EM7PwAAAABJRU5ErkJggg==);
+}
+/* Flags category icon */
+.emoji-picker .categories .item.flags,
+.emoji-picker .categories .item.flags.selected,
+.emoji-picker .categories .item.flags:hover{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAECBQb3CvsL/A7/DBo4JrAAAAeElEQVR4Ad2SzQrDIBAGv641Pzrv/7wtWNrtBwk55OSAoDiHZVjNAidcF1r5XMd5U1oSYoclshAL7PEVpNppz59QG71KSVCssMUQYoP1oX9BKh2GAL3kHzL2vCrogDPh1hm8rZWXt/Xy8rZeXt7Wy8vaWvkbNmoSXvQtEW2cMHUuAAAAAElFTkSuQmCC);
+}
+
 
 /* MEMBERS */
 .channel-members{

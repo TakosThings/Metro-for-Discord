@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.3.0
+* No longer beta
+* Added custom icons to emoji category selector
+* Fix: position of dimmer when diversity selector is open
+
 #### 2.2.1
 * Fix: Checkboxes and buttons weren't using the user defined accent colour
 
