@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.4.0
+* Reactions (even though they're fucking stupid)
+
 #### 2.3.0
 * No longer beta
 * Added custom icons to emoji category selector

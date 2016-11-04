@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.3.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.4.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.3.0";
+  content: "Metro For Discord v2.4.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -599,6 +599,18 @@ button.btn.btn-settings{
 }
 .message-group .edit-message .edit-operation>a{
     color: var(--accent);
+}
+.reaction{
+    background-color: var(--b4);
+    border-radius: 0;
+}
+.reaction .reaction-count,
+.reaction.reaction-me .reaction-count{
+    color: #FFF;
+    font-weight: normal;
+}
+.reaction.reaction-me{
+    background-color: var(--b1);
 }
 
 /* CHAT BOX */
