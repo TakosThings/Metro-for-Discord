@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.5.1
+* Fix: Accept/Ignore friend request buttons changing position when row was hovered
+* Fix: Pending button badge positioning
+
 #### 2.5.0
 * Make emote/emoji button in chat box a normal icon
 * Favourite emote context menu
