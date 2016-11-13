@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.5.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.5.1"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.5.0";
+  content: "Metro For Discord v2.5.1";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -1829,6 +1829,10 @@ div[style*="#2E3136"]{
 #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected){
     background-color: rgba(255,255,255,0.2);
 }
+#friends .friends-header .tab-bar .tab-bar-item .badge{
+    vertical-align: baseline;
+    color: #000;
+}
 #friends .friends-header .tab-bar .tab-bar-separator{
     height: 40px;
     background-color: rgba(255,255,255,0.2);
@@ -1952,6 +1956,12 @@ div[style*="#2E3136"]{
 }
 #friends .friends-table .friends-row .friends-column-actions .friends-action+div{
     margin-left: 0;
+}
+#friends .friends-table .friends-row:hover .friends-column-actions{
+    padding-right: 0;
+}
+#friends .friends-table .friends-row .friends-column-actions{
+    padding-right: 0;
 }
 #friends .friends-empty.section-add-friend-no-connection .empty-state-image,
 #friends .friends-empty.section-all .empty-state-image,
