@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.6.0
+* Update: New profile modal
+* Update: Embeds
+
 #### 2.5.1
 * Fix: Accept/Ignore friend request buttons changing position when row was hovered
 * Fix: Pending button badge positioning
