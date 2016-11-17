@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.5.1"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.6.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.5.1";
+  content: "Metro For Discord v2.6.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -624,6 +624,14 @@ button.btn.btn-settings:active{
 }
 .reaction.reaction-me{
     background-color: var(--b1);
+}
+.embed{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+}
+.embed-wrapper .embed-color-pill{
+    border-radius: 0;
 }
 .embed .embed-author{
     color: #FFF;
@@ -2797,65 +2805,118 @@ div[style*="#2E3136"]{
     border-radius: 0;
 }
 #user-profile-modal .header{
-    background-image: none;
     background-color: #000;
+    background-image: none;
+}
+#user-profile-modal .header:after{
+    background-image: none;
+}
+#user-profile-modal .avatar-wrapper{
+    background-color: transparent;
+}
+#user-profile-modal .header .header-info .header-info-inner .discord-tag{
+    color: #FFF;
+    line-height: 1.5625;
+}
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator{
+    color: #CCC;
+    font-size: 13px;
+}
+#user-profile-modal .header .header-info .header-info-inner .activity{
+    padding-top: 0;
+    color: #FFF;
+}
+#user-profile-modal .btn{
+    border-radius: 0;
+    font-weight: normal;
+}
+
+.avatar-profile .status{
+    border: 0;
 }
 #user-profile-modal .tab-bar-container{
     background-color: #000;
     border: 0;
+    box-shadow: none;
+}
+#user-profile-modal .tab-bar .tab-bar-item{
+    color: rgba(255,255,255,.6);
+}
+#user-profile-modal .tab-bar .tab-bar-item:hover{
+    color: rgba(255,255,255,.8);
+}
+#user-profile-modal .tab-bar .tab-bar-item.selected{
+    color: var(--accent);
 }
 #user-profile-modal .scroller{
     background-color: #000;
 }
-#user-profile-modal .empty{
-    background-color: #000;
+#user-profile-modal .guilds .section .section-header{
+    color: #FFF;
+    font-weight: normal;
+    text-transform: none;
+    padding-bottom: 4px;
 }
-#user-profile-modal footer{
-    background-color: #000;
-    border: 0;
+#user-profile-modal .guilds .section .note textarea{
+    min-height: 56px !important;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,.2);
+    color: #FFF;
+    margin: 0;
 }
-#user-profile-modal .avatar-profile{
-    border: 0;
+#user-profile-modal .guilds .section .note textarea:focus{
+    background-color: #FFF;
+    border: 1px solid var(--accent) !important;
+    color: #000;
 }
-#user-profile-modal .avatar-profile .status{
-    border: 0;
+#user-profile-modal .guilds .section+.section{
+    border-top: 0;
+}
+#user-profile-modal .guilds .section .connected-accounts:before{
+    content: "Connected Accounts";
+    position: absolute;
+    color: #FFF;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account{
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 0;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: normal;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account a .connected-account-open-icon{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAG1BMVEUAAAD////////////////////////////////rTT7CAAAACHRSTlMAEDBQYM/Q8HEAF3QAAABWSURBVHjazZDbCgAQEAXd7f9/MTqR4mxRyuRtJtuu+QUhnATbf+dgvONAH/F8iw8DAfdBxUYlgE80yPCWBdnBGxZ0TwN45Q7wPIAPsrB4EvjmVTz8KwqF/AgmwyCaKQAAAABJRU5ErkJggg==);
+    background-size: 100%;    
+}
+
+#user-profile-modal .guilds .avatar-large{
+    background-color: #FFF;
+    color: #FFF;
 }
 #user-profile-modal .guilds .guild{
     color: #FFF;
     font-weight: normal;
+    line-height: 1.5625;
+    padding: 8px;
+    margin: 0 12px;
 }
-#user-profile-modal .guilds .guild .guild-nick{
-    color: #FFF;
-    font-weight: normal;
+#user-profile-modal .guilds .guild .guild-name{
+    font-size: 15px;
 }
-#user-profile-modal .guilds .section .section-header{
-    color: #FFF;
-    font-size: 13px;
-    font-weight: normal;
-    text-transform: none;
-}
-#user-profile-modal .guilds .section .note textarea{
-    min-height: 38px !important;
-    padding: 10px;
-    border: 1px solid rgba(255,255,255,.2);
+#user-profile-modal .guilds .guild:hover{
+    background: #333;
     color: #FFF;
 }
-.note textarea:focus{
-    background-color: transparent;
-    border: 1px solid #FFF !important;
-}
-#user-profile-modal .btn{
-    font-weight: normal;
-    border-radius: 0;
-}
-#user-profile-modal .guilds .section+.section{
-    border: 0;
-    margin-top: 5px;
+
+#user-profile-modal .empty{
+    background-color: #000;
 }
 #user-profile-modal .empty .empty-text{
-    text-transform: none;
+    color: #FFF;
     font-weight: normal;
-    color: rgba(255,255,255,.2);
+    text-transform: none;
 }
 
 /* ICONS */
