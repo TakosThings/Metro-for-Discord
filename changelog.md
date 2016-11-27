@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.7.0
+* Added visual feedback to guilds hover/active state
+* Invited to server modal
+* Vanity text in my profile modal
+
 #### 2.6.0
 * Update: New profile modal
 * Update: Embeds
