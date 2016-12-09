@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.8.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.8.1"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.8.0";
+  content: "Metro For Discord v2.8.1";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -157,10 +157,10 @@ button.btn.btn-settings:active{
     border-radius: 0;
     font-size: 25px !important;
     font-weight: normal;
-    line-height: 52px;
+    line-height: 40px;
     color: #FFF;
     position: absolute !important;
-    bottom: 48px;
+    bottom: 56px;
     background-color: transparent;
 }
 .guilds-wrapper .guilds-add:hover{
@@ -2173,6 +2173,9 @@ div[style*="#2E3136"]{
     font-weight: normal;
     border-radius: 0;
     line-height: 1.5625;
+}
+.member-roles .member-role>*{
+    vertical-align: middle;
 }
 .user-popout .footer .quick-message-wrapper{
     margin: 0 10px 10px 10px;
