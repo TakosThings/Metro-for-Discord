@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.8.1
+* Fix: Vertical alignment on roles delete button
+* Fix: Vertical alignment on settings/New Server button
+
 #### 2.8.0
 * Monokai theme for CSS editor
 * Settings and create server buttons will now change background colour when hovered
