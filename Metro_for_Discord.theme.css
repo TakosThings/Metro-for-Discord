@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://github.com/takosthings/Metro-for-Discord' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.8.1"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.8.2"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.8.1";
+  content: "Metro For Discord v2.8.2";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -547,6 +547,9 @@ button.btn.btn-settings:active{
 .message-group.compact .message .markup .user-name,
 .message-group h2 strong{
     color: #BBBBBB;
+}
+.message-group.compact .message:hover .timestamp{
+    color: #FFF !important;
 }
 .message-group .mentioned .message-text{
     border-radius: 0;
