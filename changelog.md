@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.8.2
+* Fix: Miscoloured message timestamps when hovered
+* Minify META repo link
+
 #### 2.8.1
 * Fix: Vertical alignment on roles delete button
 * Fix: Vertical alignment on settings/New Server button
