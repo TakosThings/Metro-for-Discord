@@ -1,6 +1,18 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.9.0
+* Add program title in titlebar
+* Join server countdown timer
+* Set backface-visibility to hidden
+* Nitro settings
+* Fix: Mention text
+* Fix: "Playing" text in user popout was wrong colour
+* Fix: "View profile" circle on user popout didn't fill the entire avatar
+* Fix: Edit message box had no right margin in cozy mode
+* Fix: Guild error tile was too large
+* Fix: Padding on Notification Settings table header
+
 #### 2.8.2
 * Fix: Miscoloured message timestamps when hovered
 * Minify META repo link
