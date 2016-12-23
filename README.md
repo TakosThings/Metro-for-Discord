@@ -19,6 +19,3 @@ If you're on Linux or OSX you'll need [Selawik](https://github.com/winjs/winstra
 
 # Stylish Version
 Metro For Discord Stylish is for use in the Stylish extension for [Chrome](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/). Some minor features may be removed to comply with Userstyles' file size limits.  
-
-# Legacy Version
-Metro For Discord Legacy is the original version of the theme which was based on Metro for Steam by Dom Minischetti. It will not be updated past v1.5.1 (the latest version). You may still use it if you wish and update it for your own personal use, but please do not redistribute it.
