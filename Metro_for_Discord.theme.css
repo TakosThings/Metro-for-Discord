@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.8.2"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.9.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.8.2";
+  content: "Metro For Discord v2.9.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -42,6 +42,9 @@ header{
     font-family: var(--font) !important;
     font-size: 13px !important;
     text-transform:none !important;
+}
+*{
+    backface-visibility: hidden;
 }
 
 /* ANIMATION */
@@ -63,6 +66,16 @@ header{
 .titlebar{
     background-color: #000;
     height: 32px;
+}
+.titlebar:after{
+    content: "Discord";
+    color: #FFF;
+    top: 8px;
+    position: absolute;
+    margin-left: 12px;
+    padding-left: 24px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDElEQVQ4T62TgQ0BQRBFbytwKkAF6IAKuApQAaVQASpABXSACtDBqeD8x85lbSQiZ5Kfye7O/Pkzc+eSiuYq5idvBEVRpCIcCV1h7pw7UUD3HbmZcBTWus+tcEmgoLEuwYocYShAiJGwFYh/xoiEuJcCX/niA0myRCtkHiKQiqAeEsC6jKO/nCeoMAXIG/xIsBPB0AiQVfMEd/me0BQ2/i6TvwoMsWyHNpyfcPhw0gNbYDYMM9HZCrGVdkDSgoBq+0j+3CtgExgtooBVhtaPCRZ6nUZB8TGMeRKwsoOXhiegKVh1IzAVFED1GR9+B8gbCw0hU9sklKZCEDLUm7AS+FLz//4LX3r/+FxZwQPmal21LLflGAAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
 }
 .win-buttons{
     height: 32px;
@@ -170,6 +183,8 @@ button.btn.btn-settings:active{
     background-color: var(--alert);
     border: 0;
     border-radius: 0;
+    width: 48px;
+    height: 48px;
 }
 .guilds-wrapper .guilds-error:hover{
     border: 0
@@ -554,11 +569,11 @@ button.btn.btn-settings:active{
 .message-group .mentioned .message-text{
     border-radius: 0;
 }
-.highlight{
+.mention{
     background-color: transparent;
     color: var(--link);
 }
-.highlight:hover{
+.mention:hover{
     background-color: transparent;
     color: var(--accent);
 }
@@ -628,6 +643,9 @@ button.btn.btn-settings:active{
 .invite-button{
     font-family: var(--font);
     border-radius: 0;
+}
+.message-group .edit-message .edit-container-inner{
+    margin-right: 40px;
 }
 .message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea{
     background-color: var(--b4);
@@ -769,6 +787,24 @@ button.btn.btn-settings:active{
 .channel-textarea-emoji.hovered .sprite-item,
 .channel-textarea-emoji.popout-open .sprite-item{
     transform: scale(1);
+}
+
+.channel-textarea-guard{
+    background-image: none;
+    color: #FFF;
+    font-weight: normal;
+    margin: 8px 0;
+}
+.channel-textarea-guard .countdown{
+    color: #FFF;
+    font-weight: 300;
+}
+.channel-textarea-guard .countdown .countdown-number{
+    background-color: transparent;
+    max-width: auto;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
 }
 
 /* EMOTE/EMOJI PICKER */
@@ -1083,6 +1119,33 @@ button.btn.btn-settings:active{
 }
 .user-settings-security.show-art{
     background-image: none;
+}
+.premium-settings .premium-header.splash{
+    background: none;
+    border-bottom: 0;
+}
+.premium-settings .premium-header .premium-splash-wumpus{
+    display: none;
+}
+.premium-settings .premium-header .premium-description{
+    width: auto;
+}
+.premium-settings .premium-header .intro-subtitle{
+    color: #FFF;
+    line-height: 1.5625;
+    width: auto;
+}
+.premium-settings .premium-header .premium-options button{
+    border-radius: 0;
+    line-height: 1;
+}
+.premium-settings .premium-feature .premium-feature-title{
+    color: #FFF;
+}
+.premium-settings .premium-feature .premium-feature-description{
+    color: #FFF;
+    line-height: 1.5625;
+    font-size: 13px;
 }
 
 
@@ -1636,6 +1699,38 @@ div.control-group .shortcut-recorder input[type=text]{
     font-weight: normal;
 }
 
+/* NITRO PAYMENT MODAL */
+.premium-payment-modal{
+    background-color: #191919;
+    border-radius: 0;
+}
+.premium-payment-modal .premium-payment-form{
+    margin-top: 0;
+    padding: 0;
+}
+.premium-payment-modal .premium-animation{
+    display: none;
+}
+.premium-payment-modal .premium-payment-form .premium-payment-subtitle{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.premium-payment-modal .premium-payment-form .premium-payment-title{
+    text-align: left;
+    font-weight: normal;
+    margin: 50px 0 20px 20px;
+}
+.fancy-credit-input{
+    border-radius: 0;
+}
+.premium-payment-modal .premium-payment-button{
+    border-radius: 0;
+}
+
 /* BETTERDISCORD SETTINGS */
 div[style*="#2E3136"]{
     background-color: #000 !important;
@@ -1671,8 +1766,8 @@ div[style*="#2E3136"]{
     height: auto;
 }
 .bd-psm{
-	background-color: #191919;
-	box-shadow: none;
+    background-color: #191919;
+    box-shadow: none;
     color: #FFF;
 }
 
@@ -2136,6 +2231,12 @@ div[style*="#2E3136"]{
     background-color: #191919;
     border: 0;
 }
+.user-popout .avatar-wrapper .avatar-hint{
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: none;
+}
 .user-popout .avatar-wrapper .avatar-popout{
     border: 0;
 }
@@ -2145,7 +2246,7 @@ div[style*="#2E3136"]{
     right: 2px;
 }
 .user-popout .username-wrapper .nickname{
-    line-height: 1.5265;
+    line-height: 1.5625;
     margin-bottom: 0;
 }
 .user-popout .username-wrapper .discord-tag .username{
@@ -2158,6 +2259,15 @@ div[style*="#2E3136"]{
 .user-popout .username-wrapper.has-nickname .discriminator,
 .user-popout .username-wrapper.has-nickname .username{
     color: #FFF;
+}
+.user-popout .username-wrapper .activity{
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.5625;
+    padding: 0 8px;
+}
+.user-popout .username-wrapper .activity strong{
+    font-weight: normal;
 }
 .user-popout .body .section .label .icon{
     display: none;
@@ -2773,7 +2883,7 @@ div[style*="#2E3136"]{
 /* NOTIFICATION SETTINGS */
 .notification-settings-modal .notification-settings-modal-channel-settings-header{
     border-bottom: 1px solid #262626;
-    padding-top: 10px 20px;
+    padding: 10px 20px;
 }
 .notification-settings-modal .notification-settings-modal-channel-settings-header label{
     font-weight: normal;
