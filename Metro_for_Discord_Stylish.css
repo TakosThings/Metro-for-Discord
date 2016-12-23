@@ -21,7 +21,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.8.1s";
+  content: "Metro For Discord v2.9.0s";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -41,6 +41,9 @@ header{
     font-family: var(--font) !important;
     font-size: 13px !important;
     text-transform:none !important;
+}
+*{
+    backface-visibility: hidden;
 }
 
 /* ANIMATION */
@@ -141,6 +144,8 @@ button.btn.btn-settings:active{
     background-color: var(--alert);
     border: 0;
     border-radius: 0;
+    width: 48px;
+    height: 48px;
 }
 .guilds-wrapper .guilds-error:hover{
     border: 0
@@ -534,14 +539,17 @@ button.btn.btn-settings:active{
 .message-group h2 strong{
     color: #BBBBBB;
 }
+.message-group.compact .message:hover .timestamp{
+    color: #FFF !important;
+}
 .message-group .mentioned .message-text{
     border-radius: 0;
 }
-.highlight{
+.mention{
     background-color: transparent;
     color: var(--link);
 }
-.highlight:hover{
+.mention:hover{
     background-color: transparent;
     color: var(--accent);
 }
@@ -611,6 +619,9 @@ button.btn.btn-settings:active{
 .invite-button{
     font-family: var(--font);
     border-radius: 0;
+}
+.message-group .edit-message .edit-container-inner{
+    margin-right: 40px;
 }
 .message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea{
     background-color: var(--b4);
@@ -708,6 +719,14 @@ button.btn.btn-settings:active{
 .typing strong{
     font-weight: normal;
 }
+.emotewrapper{
+    vertical-align: middle;
+    height: 16px;
+    margin: -2px 0;
+}
+.emote{
+    max-height: 16px !important;
+}
 .channel-textarea-autocomplete-inner{
     background-color: #191919;
     border: 1px solid rgba(255,255,255,.3);
@@ -744,6 +763,24 @@ button.btn.btn-settings:active{
 .channel-textarea-emoji.hovered .sprite-item,
 .channel-textarea-emoji.popout-open .sprite-item{
     transform: scale(1);
+}
+
+.channel-textarea-guard{
+    background-image: none;
+    color: #FFF;
+    font-weight: normal;
+    margin: 8px 0;
+}
+.channel-textarea-guard .countdown{
+    color: #FFF;
+    font-weight: 300;
+}
+.channel-textarea-guard .countdown .countdown-number{
+    background-color: transparent;
+    max-width: auto;
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
 }
 
 /* EMOTE/EMOJI PICKER */
@@ -805,6 +842,13 @@ button.btn.btn-settings:active{
     border-color: #FFF;
     border-radius: 0;
     box-shadow: none;
+}
+
+.emote-container{
+    border-radius: 0;
+}
+.emote-container:hover{
+    background-color: var(--b4);
 }
 
 /* MEMBERS */
@@ -961,6 +1005,33 @@ button.btn.btn-settings:active{
 }
 .user-settings-security.show-art{
     background-image: none;
+}
+.premium-settings .premium-header.splash{
+    background: none;
+    border-bottom: 0;
+}
+.premium-settings .premium-header .premium-splash-wumpus{
+    display: none;
+}
+.premium-settings .premium-header .premium-description{
+    width: auto;
+}
+.premium-settings .premium-header .intro-subtitle{
+    color: #FFF;
+    line-height: 1.5625;
+    width: auto;
+}
+.premium-settings .premium-header .premium-options button{
+    border-radius: 0;
+    line-height: 1;
+}
+.premium-settings .premium-feature .premium-feature-title{
+    color: #FFF;
+}
+.premium-settings .premium-feature .premium-feature-description{
+    color: #FFF;
+    line-height: 1.5625;
+    font-size: 13px;
 }
 
 
@@ -1514,6 +1585,38 @@ div.control-group .shortcut-recorder input[type=text]{
     font-weight: normal;
 }
 
+/* NITRO PAYMENT MODAL */
+.premium-payment-modal{
+    background-color: #191919;
+    border-radius: 0;
+}
+.premium-payment-modal .premium-payment-form{
+    margin-top: 0;
+    padding: 0;
+}
+.premium-payment-modal .premium-animation{
+    display: none;
+}
+.premium-payment-modal .premium-payment-form .premium-payment-subtitle{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.premium-payment-modal .premium-payment-form .premium-payment-title{
+    text-align: left;
+    font-weight: normal;
+    margin: 50px 0 20px 20px;
+}
+.fancy-credit-input{
+    border-radius: 0;
+}
+.premium-payment-modal .premium-payment-button{
+    border-radius: 0;
+}
+
 /* POPOUT */
 .popout.popout-bottom-right.no-arrow{
     margin-top: 0;
@@ -1792,6 +1895,12 @@ div.control-group .shortcut-recorder input[type=text]{
     background-color: #191919;
     border: 0;
 }
+.user-popout .avatar-wrapper .avatar-hint{
+    margin: 0;
+    font-size: 13px;
+    font-weight: normal;
+    text-transform: none;
+}
 .user-popout .avatar-wrapper .avatar-popout{
     border: 0;
 }
@@ -1801,7 +1910,7 @@ div.control-group .shortcut-recorder input[type=text]{
     right: 2px;
 }
 .user-popout .username-wrapper .nickname{
-    line-height: 1.5265;
+    line-height: 1.5625;
     margin-bottom: 0;
 }
 .user-popout .username-wrapper .discord-tag .username{
@@ -1814,6 +1923,15 @@ div.control-group .shortcut-recorder input[type=text]{
 .user-popout .username-wrapper.has-nickname .discriminator,
 .user-popout .username-wrapper.has-nickname .username{
     color: #FFF;
+}
+.user-popout .username-wrapper .activity{
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.5625;
+    padding: 0 8px;
+}
+.user-popout .username-wrapper .activity strong{
+    font-weight: normal;
 }
 .user-popout .body .section .label .icon{
     display: none;
@@ -2429,7 +2547,7 @@ div.control-group .shortcut-recorder input[type=text]{
 /* NOTIFICATION SETTINGS */
 .notification-settings-modal .notification-settings-modal-channel-settings-header{
     border-bottom: 1px solid #262626;
-    padding-top: 10px 20px;
+    padding: 10px 20px;
 }
 .notification-settings-modal .notification-settings-modal-channel-settings-header label{
     font-weight: normal;
@@ -3006,7 +3124,7 @@ div.control-group .shortcut-recorder input[type=text]{
 }
 
 .avatar-profile[style*="124017508662378500"]:after {
-    content: "Metro For Steam Developer";
+    content: "Metro For Discord Developer";
     color: #FFF;
     font-size: 13px;
     text-align: left;
@@ -3016,10 +3134,7 @@ div.control-group .shortcut-recorder input[type=text]{
     width: 160px;
 }
 
-.guilds-wrapper .guilds .friends-icon{
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAEDA/QFBgcH+An6CvsL/Az9Df4O/w01YdrgAAAKNJREFUeNrdkssOgyAQRUeKoK1UsXD+/1ObNJmoOG66ajqrS+5J7jyQX6tuWGAZuis/FD5V+gsfkhfxCUyiKwQli5UyklTOjAaQ8So9iwHAXn8DzPuI2Wxy2thojVkJilZzmT1MNxH/1EVZBMC1vyqwmsQDcnQiLma4W36NqmM9Ez3VbS937uN1HD2ytn8ht6cLh3dqdxdJTYI7Aq7JAOO4f1RvmNsJwI5cU5wAAAAASUVORK5CYII=);
-}
-
+/* ICONS */
 /* Mic unmuted */
 .account .btn-mute:after,
 .account .btn-mute:hover:after{
