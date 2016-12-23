@@ -4,7 +4,7 @@ Currently: `v2.9.0`
 
 # Installation
 [Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css) (Right click->Save as)  
-Follow [this guide](http://i.imgur.com/lczPQxW.png) to install the theme.  
+Follow [this guide](https://i.imgur.com/DdIgnGl.png) to install the theme.  
 You'll also need to go to Appearance settings and choose the light theme.
 
 # Preview
