@@ -50,7 +50,7 @@ Newest changes are at the top
 * Fix: Muted channel toolbar icon wasn't being replaced
 * Fix: Giant gaps between messages in Recent Mentions popout
 * Fix: Miscoloured text on Recent Mentions filter
-* Fix: Add Friend buddon badge miscoloured text
+* Fix: Add Friend button badge miscoloured text
 * Fix: Friends channel badge positioning
 * Fix: Friends mutual server icon background colour (fixes jagged border if server uses an icon instead of text)
 * Fix: Ban list
