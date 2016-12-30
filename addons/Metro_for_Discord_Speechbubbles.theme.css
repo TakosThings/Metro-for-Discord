@@ -40,16 +40,16 @@ Installation:
     min-width: 100%;
 }
 
-.message-group .avatar-large[style*="124017508662378500"]{
+.message-group .avatar-large[style*="YOURIDHERE"]{
     position: absolute;
     right: 0;
 }
-.message-group .avatar-large[style*="124017508662378500"]+.comment{
+.message-group .avatar-large[style*="YOURIDHERE"]+.comment{
     background-color: var(--accent);
     display: block;
     margin: 0 60px 0 auto;
 }
-.message-group .avatar-large[style*="124017508662378500"]+.comment:after{
+.message-group .avatar-large[style*="YOURIDHERE"]+.comment:after{
     content: "";
     position: relative;
     border-width: 10px 0 0 10px;
