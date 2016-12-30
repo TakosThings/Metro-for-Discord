@@ -1,0 +1,62 @@
+//META{"name":"Metro_for_Discord_Speech_Bubbles","description":"Speech bubbles addon for Metro For Discord.<br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"1.1.0"}*//{}
+
+/* 
+The oh-so-original speech bubbles addon for Metro for Discord.
+Original idea by Uri, then nicked by everyone else.
+
+Installation:
+1. Place in your BetterDiscord themes folder as per-usual.
+2. In Discord, enable "Developer Mode" in appearance settings, and turn on "Cozy" mode while you're there.
+3. Right click your avatar in the members list and then click "Copy ID".
+4. Replace the text in this theme which says "YOURIDHERE" with your ID and save.
+5. In BetterDiscord settings, enable both this theme and the Metro For Discord theme. (Reload Discord if one of the files isn't present in the list).
+*/
+
+.message-group{
+    border-bottom: 0 !important;
+    width: auto;
+    position: relative;
+}
+.message-group .comment{
+    background-color: var(--b3);
+    padding: 8px;
+    margin-bottom: 8px;
+    flex: initial;
+}
+.message-group .comment:after {
+    content: "";
+    position: relative;
+    border-width: 10px 10px 0 0;
+    border-style: solid;
+    border-color: var(--b3) transparent;
+    display: inline-block;
+    bottom: -19px;
+    left: -8px;
+}
+.message-group .comment .markup{
+    overflow: hidden;
+}
+.message-group .comment .markup pre{
+    min-width: 100%;
+}
+
+.message-group .avatar-large[style*="124017508662378500"]{
+    position: absolute;
+    right: 0;
+}
+.message-group .avatar-large[style*="124017508662378500"]+.comment{
+    background-color: var(--accent);
+    display: block;
+    margin: 0 60px 0 auto;
+}
+.message-group .avatar-large[style*="124017508662378500"]+.comment:after{
+    content: "";
+    position: relative;
+    border-width: 10px 0 0 10px;
+    border-style: solid;
+    border-color: var(--accent) transparent;
+    display: inline-block;
+    bottom: -19px;
+    left: 100% !important;
+    margin-left: -2px;
+}
