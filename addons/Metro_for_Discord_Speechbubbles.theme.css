@@ -9,7 +9,8 @@ Installation:
 2. In Discord, enable "Developer Mode" in appearance settings, and turn on "Cozy" mode while you're there.
 3. Right click your avatar in the members list and then click "Copy ID".
 4. Replace the text in this theme which says "YOURIDHERE" with your ID and save.
-5. In BetterDiscord settings, enable both this theme and the Metro For Discord theme. (Reload Discord if one of the files isn't present in the list).
+5. In BetterDiscord settings, enable "Metro for Discord" and "Metro For Discord Speech Bubbles".
+6. Restart Discord.
 */
 
 .message-group{
