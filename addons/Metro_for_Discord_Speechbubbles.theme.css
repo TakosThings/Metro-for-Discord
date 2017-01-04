@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord_Speech_Bubbles","description":"Speech bubbles addon for Metro For Discord.<br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"1.1.0"}*//{}
+//META{"name":"Metro_for_Discord_Speech_Bubbles","description":"Speech bubbles addon for Metro For Discord.<br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"1.2.0"}*//{}
 
 /* 
 The oh-so-original speech bubbles addon for Metro for Discord.
@@ -13,18 +13,18 @@ Installation:
 6. Restart Discord.
 */
 
-.message-group{
+.message-group:not(.compact){
     border-bottom: 0 !important;
     width: auto;
     position: relative;
 }
-.message-group .comment{
+.message-group:not(.compact) .comment{
     background-color: var(--b3);
     padding: 8px;
     margin-bottom: 8px;
     flex: initial;
 }
-.message-group .comment:after {
+.message-group:not(.compact) .comment:after {
     content: "";
     position: relative;
     border-width: 10px 10px 0 0;
@@ -34,23 +34,24 @@ Installation:
     bottom: -19px;
     left: -8px;
 }
-.message-group .comment .markup{
+.message-group:not(.compact) .comment .markup{
     overflow: hidden;
+    line-height: 1.5625;
 }
-.message-group .comment .markup pre{
+.message-group:not(.compact) .comment .markup pre{
     min-width: 100%;
 }
 
-.message-group .avatar-large[style*="YOURIDHERE"]{
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]{
     position: absolute;
     right: 0;
 }
-.message-group .avatar-large[style*="YOURIDHERE"]+.comment{
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment{
     background-color: var(--accent);
     display: block;
     margin: 0 60px 0 auto;
 }
-.message-group .avatar-large[style*="YOURIDHERE"]+.comment:after{
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment:after{
     content: "";
     position: relative;
     border-width: 10px 0 0 10px;
@@ -60,4 +61,12 @@ Installation:
     bottom: -19px;
     left: 100% !important;
     margin-left: -2px;
+}
+
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment .mentioned .message-text .mention,
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment .mention{
+    color: #fff;
+}
+.message-group:not(.compact) .mentioned .message-text:after{
+    display: none;
 }
