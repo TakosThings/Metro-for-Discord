@@ -1,6 +1,20 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.10.0
+* Search
+* Added var for monospace font
+* Keyboard shortcuts modal
+* Change glyph for .gif files
+* Upload file progress bar
+* Upload file icon
+* Upload file error modal
+* Drag & drop file modal
+* Re-enabled modal/lightbox backdrop
+* Scrollbars now have hover and active states
+* Fix: line-height on BetterDiscord plugin/theme decriptions
+* Fix: Remove placeholder image if there are no previous DMs
+
 #### 2.9.0
 * Add program title in titlebar
 * Join server countdown timer
