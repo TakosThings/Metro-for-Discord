@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.10.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro' <br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"2.11.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 /* Modal animation was mostly nicked from BeardDesign */
@@ -23,7 +23,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.10.0";
+  content: "Metro For Discord v2.11.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -43,9 +43,6 @@ header{
     font-family: var(--font) !important;
     font-size: 13px !important;
     text-transform:none !important;
-}
-*{
-    backface-visibility: hidden;
 }
 
 /* ANIMATION */
@@ -130,7 +127,7 @@ button.btn.btn-settings:active{
     padding-bottom: 100px;
 }
 .guilds-wrapper .guilds{
-    padding-top: 0;
+    padding-top: 4px;
     padding-left: 4px;
 }
 .guilds-wrapper .guilds .guild{
@@ -221,18 +218,20 @@ button.btn.btn-settings:active{
     top: 0;
 }
 .guilds-wrapper .guilds .friends-online{
-    margin: 0;
+    margin: 4px 0 0 0;
     text-transform: none;
 }
-.guilds-wrapper .guild-separator{
-    height: 1px;
-    width: 100%;
-    margin: 0;
+.guilds-wrapper .dms{
+    margin: 4px 0;
 }
-.guilds-wrapper .guild-separator:after{
-    height: 1px;
-    left: 0;
-    right: 0;
+.guilds-wrapper .guilds .guild.active{
+    background-color: #FFF;
+}
+.guilds-wrapper .guilds .guild.active .friends-icon{
+    -webkit-filter: invert(100%);
+}
+.guilds-wrapper .guild-separator{
+    display: none;
 }
 .new-messages-indicator{
     width: 100%;
@@ -522,7 +521,7 @@ button.btn.btn-settings:active{
     border: 0;
 }
 .guild-channels .channel-text a, .guild-channels .channel-voice{
-    padding: 8px 4px 8px 32px;
+    padding: 8px 6px 10px 32px;
 }
 .guild-channels .channel-voice-states li.speaking .avatar-small{
     box-shadow: none;
@@ -575,7 +574,7 @@ button.btn.btn-settings:active{
 .search-popout .results-group .header{
     text-transform: none;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 300;
     color: #FFF;
 }
 .search-popout .search-query{
@@ -886,6 +885,9 @@ button.btn.btn-settings:active{
 .message-group.compact .message:hover .timestamp{
     color: #FFF !important;
 }
+.message-group.compact .message .message-text{
+    backface-visibility: hidden;
+}
 .message-group .mentioned .message-text{
     border-radius: 0;
 }
@@ -1156,100 +1158,171 @@ button.btn.btn-settings:active{
     border: 0;
     border-radius: 0;
 }
+.channel-textarea-guard button{
+    font-weight: normal;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.channel-textarea-guard button:hover{
+    background-color: var(--accent);
+    border-color: rgba(255,255,255,.2);
+}
 
 /* EMOTE/EMOJI PICKER */
 #bda-qem{
-    background-color: #191919;
-    border: 1px solid rgba(255,255,255,.3);
-    border-bottom: 0 !important;
+    background-color: var(--b1);
+    width: 40px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent) !important;
+    border-left: 1px solid var(--accent);
     border-radius: 0;
-    padding-right: 0 !important
+    padding-right: 0 !important;
 }
 #bda-qem button{
+    width: 40px;
+    height: 40px;
     border: 0;
     box-shadow: none;
-    color: #FFF;
+    padding: 0;
 }
 #bda-qem button:hover{
-    background-color: rgba(255,255,255,.3);
+    background-color: var(--b4);
 }
 #bda-qem button.active{
-    background-color: rgba(255,255,255,.3);
+    background-color: var(--accent);
 }
 #bda-qem-twitch,
+#bda-qem-favourite,
 #bda-qem-emojis{
     border-radius: 0;
+    font-size: 0px !important;
 }
-#bda-qem-favourite-container, #bda-qem-twitch-container{
-    background-color: #191919;
-    border: 1px solid rgba(255,255,255,.3);
-    border-radius: 0;
-}
+#bda-qem-favourite-container,
+#bda-qem-twitch-container,
 .emoji-picker{
-    background-color: #191919;
-    border: 1px solid rgba(255,255,255,.3);
+    margin-left: 40px;
+    margin-bottom: -2px;
+    background-color: var(--b2);
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-color: var(--accent);
     border-radius: 0;
 }
-.emoji-picker .header{
-    border-bottom: 0;
+#bda-qem-favourite-container,
+#bda-qem-twitch-container{
+    width: 446px;
+    height: 321px;
 }
-.emoji-picker .search-bar{
-    background-color: transparent;
+#bda-qem-twitch:before{
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAA8FBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9maKSpAAAAT3RSTlMAAwYKCwwODxESFBUWFxguLzM1OjxESVBVW2FiZ2hrbXByeXt/g4iSk5SVl5qbnaOmp7C4ucHCyMnMzs/S1NbZ3+Pp6u7v8fP09vj6/P3+vlW7FwAAAMNJREFUeNrVjUcSgkAQRduMOWHOCXNAxZzFiNr3v41AWQWDggtXvs3v7v9qBv4Jk0uLjRRy/Omq5sIz5AML3HJq5tgkhDBiiTgEsEHsDGKZOIQ0Qv2bUH0JNY4C67CjL0zQC477Sl8YPTxgP89+EKboAweu9YV43gLmbALA/1lQKGDbUMigENUKRaK/xUArLFmWjQDdE6Ov9IogkwwepXjvoYUy3Z0cwlsP4bTIRior4kDDZ8bSJ2DA4LBPgRGU2wn/yRNi/zKVvfflswAAAABJRU5ErkJggg==);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
 }
-.emoji-picker .search-bar .search-bar-inner{
-    background-color: transparent;
-    border: 1px solid #FFF;
-    border-radius: 0 !important;
+#bda-qem-favourite:before{
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwP0BQYG9wf4CPkKCvsL/Az9Df4O/wp86tKAAAAOxJREFUGBmtwduSgjAURcF9iAExGrlEkvX/PzqUUpTgyJPd+rmq0rEYdcjAdCRA0JECWQcahkSj7yaahoe+8kzShNc3A0EK9PqPP50vFJOscDmfTlpZuPcjL1GzyMvY3y+mWVOYpSGGYJpZCHFIzEqjJ1cYTTs2UpwWrjCaNmykOK2qRHZ64zKp0htLZKeVyyTThnXkWos605n2El4LT9InMC0M9MExaTXhtNcSJVV9X0nqaLUXaWVXZldTS9RewrcZbjfIZ8+oPXjAUEnVAA/QjgemWk/1BHhtBUrQKhSCtrpoemOx05Zpx/Qrf6RVEBLhn3UqAAAAAElFTkSuQmCC);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
 }
-.emoji-picker .search-bar input{
-    color: #FFF;
+#bda-qem-emojis:before{
+    content: "";
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwP0BQX2BvcICQn6CvsMDP0O/wgn2RhQAAANlJREFUeAHNks2agyAMRTFMLf6AqeJ5/0edWvtlKLKYZc+KyM29EHRfhgzLCusySHs7YsSGpM+QgnfOhwS5dxUB1NpEIVT9MJb1CB8ekm3fFLkryoS6CiUVBmD5zW/jSz0xneW50CJVX2cGzvJchCJ2w18dPKsJwDWAfwososKzVYesCOjnNW+rt+b19ndNG8pEfit8ZqqGl1iOFuLP0ymCVqN2sh9+M2/mI3Xvqucenrr5AY9Z7LkLAixihgvXe/U7xPvxy90j7L27IAkjda6FjLrBpqO47+IXRvYPYkqXK5UAAAAASUVORK5CYII=);
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
 }
-.emoji-picker .search-bar-clear{
-    top: 0;
+.emote-menu-inner{
+    padding: 4px 0 0 4px;
 }
-.emoji-picker .sticky-header{
-    background-color: #191919;
-    left: 0;
-    width: 100%;
-}
-.emoji-picker .category{
-    color: #FFF;
-    text-transform: none;
-    font-weight: 400;
-}
-.emoji-picker .scroller .emoji-item.selected{
-    background-color: var(--b4);
+.emote-container{
+    width: 40px;
+    height: 40px;
+    margin: 2px 0 2px 3px;
     border-radius: 0;
 }
+
 .emoji-picker .categories{
+    background-color: var(--b1);
     margin: 0;
+    height: 40px;
+    border-top: 0;
 }
 .emoji-picker .categories .item{
+    width: 40px;
+    height: 40px;
     margin: 0;
-    flex: 1;
-    width: auto;
-    border-bottom: 0;
+}
+.emoji-picker .categories .item:hover{
+    background-color: var(--b4);
 }
 .emoji-picker .categories .item.selected{
-    background-color: var(--b4);
     border-bottom: 0;
+    background-color: var(--accent);
+}
+.emoji-picker .scroller .row{
+    height: 48px;
+    padding-top: 4px;
+}
+.emoji-picker .sticky-header{
+    width: 100%;
+    left: 4px;
+    background-color: var(--b4);
+}
+.emoji-picker .category{
+    background-color: var(--b4);
+    margin: 0 -3px;
+    padding: 0 8px;
+    color: #FFF;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 300;
+}
+.emoji-picker .scroller{
+    margin: 0;
+    padding: 0 0 0 4px;
+}
+.emoji-picker .scroller .emoji-item{
+    width: 40px;
+    height: 40px;
+    line-height: 1;
+}
+.emoji-picker .scroller .emoji-item:first-of-type{
+    margin-left: 0;
+}
+.emoji-picker .scroller .emoji-item.selected{
+    background-color: var(--b3);
+    border-radius: 0;
+}
+.emoji-picker .scroller .emoji-item>.sprite-item{
+    margin: 9px;
 }
 .emoji-picker .dimmer{
     border-radius: 0;
-    margin-top: -32px;
+    width: calc(100% - 42px);
+    margin-left: 1px;
+    z-index: 2;
+}
+.emoji-picker .dimmer.visible{
+    background-color: rgba(0,0,0,.6);
 }
 .diversity-selector .popout{
     background-color: #191919;
-    border-color: #FFF;
+    border: 1px solid rgba(255,255,255,.4);
     border-radius: 0;
     box-shadow: none;
-}
-
-.emote-container{
-    border-radius: 0;
-}
-.emote-container:hover{
-    background-color: var(--b4);
 }
 
 /* Frequently used category icon */
@@ -1345,7 +1418,7 @@ button.btn.btn-settings:active{
     color: rgba(255,255,255,0.5);
     font-size: 13px;
     font-weight: normal;
-    line-height: 16px;
+    line-height: 1.5625;
 }
 .channel-members .member .member-activity strong{
     font-size: 13px;
@@ -1394,6 +1467,9 @@ button.btn.btn-settings:active{
     background-color: #000;
     margin-top: 30px;
     border-radius: 0;
+}
+.tab-bar.SIDE{
+    margin-right: -17px;
 }
 .tab-bar.SIDE .tab-bar-header{
     font-size: 24px;
@@ -1468,6 +1544,24 @@ button.btn.btn-settings:active{
 }
 .user-settings-streamer-mode .user-settings-streamer-mode-image{
     display: none;
+}
+.streamer-mode-enabled .streamer-mode-enabled-image{
+    display: none;
+}
+.streamer-mode-enabled .streamer-mode-enabled-btn{
+    border-radius: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1;
+    padding: 9px 12px 10px;
+    margin-top: 0;
+    border: 1px solid transparent;
+}
+.streamer-mode-enabled .streamer-mode-enabled-btn:hover{
+    background-color: #643da7;
+    border-color: rgba(255,255,255,.4);
 }
 .user-settings-security.show-art{
     background-image: none;
@@ -2723,7 +2817,7 @@ div[style*="#2E3136"]{
     display: none;
 }
 .quick-message{
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.6);
     border-radius: 0;
     background-color: transparent;
     color: #FFF;
@@ -2744,7 +2838,7 @@ div[style*="#2E3136"]{
     min-height: 36px;
     max-height: 120px;
     line-height: normal;
-    border: 1px solid rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.6);
     padding: 8px 10px;
     color: #FFF;
 }
@@ -2755,6 +2849,11 @@ div[style*="#2E3136"]{
 }
 .user-popout-banned-video{
     display: none;
+}
+.quick-message.isBlocked{
+    background-color: transparent;
+    border-color: rgba(255,255,255,.2);
+    cursor: not-allowed;
 }
 
 
@@ -3156,6 +3255,20 @@ div[style*="#2E3136"]{
 }
 .need-help-modal .form-inner.loading{
     align-items: baseline;
+}
+.need-help-modal .form-inner .failed .poop{
+    display: none;
+}
+.need-help-modal .form-inner .failed p{
+    color: #FFF;
+    font-weight: normal;
+    text-transform: lowercase;
+}
+.need-help-modal .form-inner .failed p:first-letter{
+    text-transform: uppercase;
+}
+.need-help-modal .form-inner .failed p:first-of-type{
+    display: none;
 }
 .need-help-modal ul li{
     font-size: 13px;
@@ -3766,6 +3879,12 @@ div[style*="#2E3136"]{
 }
 .context-menu .item-subMenu{
     background-color: transparent;
+}
+.context-menu .item:first-of-type{
+    margin-top: 8px;
+}
+.context-menu .item:last-of-type{
+    margin-bottom: 8px;
 }
 
 /* REMOVE FAVOURITE EMOTE CONTEXT MENU */
