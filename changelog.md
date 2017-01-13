@@ -1,6 +1,20 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.11.0
+* Re-worked emote/emoji picker
+* Friends button will now highlight when selected
+* Added 8px gap to first and last context menu items
+* Blocked user DM textbox in user popout
+* Blocked user unblock button in DM message area
+* Remove shit meme from help modal
+* "Streamer mode enabled" button
+* Fix: Message context and Add Reaction menu buttons on chat messages were exceptionally hard to click on (caused by backface-visibility)
+* Fix: Some incorrect font-weights
+* Fix: Channels not displaying correctly if the list was longer than the window
+* Fix: White vertical line appearing in settings modal menu
+* Fix: "Playing" and game text in members list were slightly offset
+
 #### 2.10.0
 * Search
 * Added var for monospace font
