@@ -5,8 +5,8 @@ Newest changes are at the top
 * Re-worked emote/emoji picker
 * Friends button will now highlight when selected
 * Added 8px gap to first and last context menu items
-* Blocked user DM textbox in user popout
-* Blocked user unblock button in DM message area
+* "Cannot message blocked users" textbox in user popout
+* Unblock button in DM message area
 * Remove shit meme from help modal
 * "Streamer mode enabled" button
 * Fix: Message context and Add Reaction menu buttons on chat messages were exceptionally hard to click on (caused by backface-visibility)
