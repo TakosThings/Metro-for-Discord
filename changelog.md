@@ -1,6 +1,24 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.12.0
+* Clickable links to the Github repo have been removed from META
+* Muted microphone and speaker icons in voice channels now match the theme
+* Added an animation for Recent and Pinned messages
+* Added horizontal scrollbar to `/giphy` search
+* Adjust height of roles section in user popout
+* Clyde bot local message
+* Fix: Left/Right padding on textbox guard if window was too narrow
+* Fix: Change nickname modal input box was too wide
+* Fix: Incorrect border colour on search popout
+* Fix: Incorrect border colour on various modals
+* Fix: CodeMirror CSS highlighting `!important`s in blue making it impossible to read
+* Fix: Code background in markdown modal
+* Fix: Positioning of unread messages (up/down) indicators
+* Fix: Bad text colour for invite buttons
+* Fix: Checkboxes in create channel modal stacking height
+* Fix: Scrollbar track colour
+
 #### 2.11.0
 * Re-worked emote/emoji picker
 * Friends button will now highlight when selected
