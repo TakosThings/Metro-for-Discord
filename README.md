@@ -8,7 +8,7 @@ Follow [this guide](https://i.imgur.com/lczPQxW.png) to install the theme.
 You'll also need to go to Appearance settings and choose the light theme.
 
 # Preview
-![Preview](http://i.imgur.com/UBqoqmJ.png)
+![Preview](https://i.imgur.com/nLlFA4H.png)
 
 # User settings
 You can change the accent colour by editing `--accent` in the `:root` section of the theme. By default it is dark blue.  
