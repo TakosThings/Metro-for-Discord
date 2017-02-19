@@ -15,7 +15,7 @@ You can change the accent colour by editing `--accent` in the `:root` section of
 A colour sheet is available in [accent.md](https://github.com/TakosThings/Metro-for-Discord/blob/master/accent.md)  
 
 # Dependencies (non-Windows)
-If you're on Linux or OSX you'll need [Selawik](https://github.com/winjs/winstrap/blob/master/src/fonts/selawk.ttf), an open-source font which will be used instead of Segoe UI.  
+If you're on Linux or OSX you'll need [Selawk](https://github.com/winjs/winstrap/blob/master/src/fonts/selawk.ttf), an open-source font which will be used instead of Segoe UI.  
 
 # Stylish Version
 Metro For Discord is also available as a [Userstyle](https://userstyles.org/styles/136340/metro-for-discord). The Stylish extension for [Chrome](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/) is required.
