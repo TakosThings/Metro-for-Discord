@@ -1,6 +1,15 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.12.1
+* Fix: Flickering usernames when hovering on messages or avatars in cozy mode
+* Fix: Use accent colour for border of voice connection info popout
+* Fix: Bad text colours of bot embeds
+* Fix: Incorrect top margins of settings modal, overlapping the windows titlebar
+* Fix: Tipsy tooltips positioning
+* Fix: Double border on markdown modals
+* Fix: Make profile popout avatar background transparent
+
 #### 2.12.0
 * Clickable links to the Github repo have been removed from META
 * Muted microphone and speaker icons in voice channels now match the theme
