@@ -1,6 +1,29 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.13.0
+* Rewrite Guilds style
+* Change channel section header style
+* Change unread channel indicator style
+* Change some styling for dropdown boxes
+* Change Now Playing settings style
+* Some styling for forms in BD plugin settings
+* Hide the "TEMPDISABLED" checkbox under Custom CSS editor
+* Remove commented out backdrop code
+* Authorised Applications
+* Make mute icons in notification settings brighter
+* Loading animaiton
+* Fixes
+  * Updated Nitro style
+  * Alt theme checkboxes
+  * Font used in dropdowns
+  * Long broken locale dropdown
+  * Streamer mode settings tab had white background
+  * BD theme/plugin enable checkbox font colour
+  * BD theme/plugin enable checkbox positioning
+  * BD plugin settings modal border colour
+  * Disabled button style
+
 #### 2.12.1
 * Fix: Flickering usernames when hovering on messages or avatars in cozy mode
 * Fix: Use accent colour for border of voice connection info popout
