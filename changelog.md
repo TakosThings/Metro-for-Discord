@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.13.1
+* Fixes
+  * Loading gif showing up in the members list when people were typing
+
 #### 2.13.0
 * Rewrite Guilds style
 * Change channel section header style
