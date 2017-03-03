@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.13.3
+* Fixes
+  * Emote picker not highlighting selected tab when using BetterDiscord's Dark Mode
+
 #### 2.13.2
 * Fixes
   * BetterDiscord's Dark Mode fiddling with the emote/emoji menu CSS

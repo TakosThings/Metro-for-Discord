@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.13.2"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.13.3"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 
@@ -22,7 +22,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.13.2";
+  content: "Metro For Discord v2.13.3";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -1417,6 +1417,9 @@ button.btn.btn-settings:active{
     background-color: transparent;
     border-left: 0;
     box-shadow: none;
+}
+.bda-dark #bda-qem button.active{
+    background-color: var(--accent);
 }
 .bda-dark #bda-qem-favourite-container,
 .bda-dark #bda-qem-twitch-container,
