@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.13.2
+* Fix for BetterDiscord's Dark Mode fiddling with the emote/emoji menu CSS
+
 #### 2.13.1
 * Fixes
   * Loading gif showing up in the members list when people were typing
