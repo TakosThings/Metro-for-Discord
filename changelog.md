@@ -2,7 +2,8 @@
 Newest changes are at the top
 
 #### 2.13.2
-* Fix for BetterDiscord's Dark Mode fiddling with the emote/emoji menu CSS
+* Fixes
+  * BetterDiscord's Dark Mode fiddling with the emote/emoji menu CSS
 
 #### 2.13.1
 * Fixes
