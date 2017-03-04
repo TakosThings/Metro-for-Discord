@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.13.4
+* Fixes
+  * No left border on emoji popout if user didn't have BD emote menus enabled
+  * Sizing fix for offline server tile
+
 #### 2.13.3
 * Fixes
   * Emote picker not highlighting selected tab when using BetterDiscord's Dark Mode
