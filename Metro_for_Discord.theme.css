@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.13.4"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.14.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 
@@ -15,6 +15,9 @@
     --b3: #333333;
     --b4: #404040;
 
+    --formbd: rgba(255,255,255,.6);
+    --formbdh: rgba(255,255,255,.8);
+
     --link: #0078D7;
 }
 
@@ -22,7 +25,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.13.4";
+  content: "Metro For Discord v2.14.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -176,19 +179,19 @@ button.btn.btn-settings:active{
     color: #000;
 }
 .guilds-wrapper .guilds .guild.selected .guild-inner a:hover{
-    border-color: rgba(0,0,0,.4);
+    border-color: rgba(0,0,0,.4) !important;
 }
 .guilds-wrapper .guilds-add{
     background-color: transparent;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABpJREFUCNdjYMAJGBtIJNj//38AIUjXiwsAAO67D98UrrLcAAAAAElFTkSuQmCC);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
     border: 0;
     border-radius: 0;
     position: absolute !important;
     bottom: 56px;
-    color: #FFF;
-    font-size: 25px !important;
-    font-weight: normal;
-    line-height: 40px;
-    vertical-align: middle;
+    font-size: 0px !important;
     transition: none;
 }
 .guilds-wrapper .guilds-add:hover{
@@ -343,6 +346,10 @@ button.btn.btn-settings:active{
 #voice-connection .btn-info:hover,
 #voice-connection .btn-disconnect:hover{
     background-color: var(--b3);
+}
+#voice-connection .btn-info:hover:after,
+#voice-connection .btn-disconnect:hover:after{
+    opacity: 1;
 }
 #voice-connection .btn-info:after{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAECCvsL/A3+Dv8NZYMh8AAABeSURBVHjazZE7DkAhCARZxO/e/77PwsRKCiyeU0DBBLJBnkNTrUmdeeeknw1jAQrtKAxCBKy+oGzOiQxk54QOTgacGNaaQcJwcSOs6m2ICZvnhZ2CjAu7u78ICD/zAe+MBVc6o3cPAAAAAElFTkSuQmCC);
@@ -1098,6 +1105,17 @@ button.btn.btn-settings:active{
     color: #FFF;
     font-weight: normal;
 }
+.chat .has-more button{
+    background-color: rgba(255,255,255,.1);
+    margin: 8px;
+    border: 0;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: normal;
+}
+.chat .has-more button:hover{
+    box-shadow: none;
+}
 
 /* ROBOT EMBEDS */
 .embed .embed-author-name{
@@ -1127,11 +1145,12 @@ button.btn.btn-settings:active{
 .channel-textarea-inner textarea{
     background-color: transparent;
     color: #FFF;
-    padding-left: 10px;
+    padding-left: 20px;
     overflow-y: auto !important;
     margin-right: 0;
 }
 .channel-textarea-upload{
+    margin-right: -10px;
     margin-left: 0;
     border: 0;
 }
@@ -1514,7 +1533,7 @@ button.btn.btn-settings:active{
 }
 .channel-members h2{
     color: #FFF;
-    font-size: 13px !important;
+    font-size: 15px !important;
     letter-spacing: normal;
     font-weight: normal;
     padding: 0 10px;
@@ -1524,6 +1543,7 @@ button.btn.btn-settings:active{
 }
 .channel-members .member{
     padding-left: 10px;
+    color: #aaa;
 }
 .channel-members .member .member-inner{
     width: 180px;
@@ -1767,10 +1787,17 @@ button.btn.btn-settings:active{
 .form .control-group textarea{
     background-color: transparent;
     color: #FFFFFF;
-    border: 1px solid rgba(255,255,255,.6);
+    border: 1px solid var(--formbd);
     margin-bottom: 0;
     padding-left: 11px;
     font-size: 15px !important;
+}
+.form .control-group input[type=text]:hover,
+.form .control-group input[type=email]:hover,
+.form .control-group input[type=password]:hover,
+.form .control-group input[type=number]:hover,
+.form .control-group textarea:hover{
+    border-color: var(--formbdh);
 }
 .form .control-group input[type=text]:focus,
 .form .control-group input[type=email]:focus,
@@ -1779,7 +1806,7 @@ button.btn.btn-settings:active{
 .form .control-group textarea:focus{
     background-color: #FFFFFF;
     color: #000000;
-    border: 1px solid #0078D7;
+    border: 1px solid var(--accent);
 }
 .form .checkbox-group{
     line-height: 1.5625;
@@ -1970,9 +1997,10 @@ div.control-group .shortcut-recorder input[type=text]{
 .guild-settings-modal-integrations .guild-settings-modal-integrations-header{
     color: #FFF;
     font-weight: normal;
-    font-size: 13px;
+    font-size: 15px;
     border-bottom: 0;
     box-shadow: none;
+    text-transform: none;
 }
 .guild-settings-modal-integrations .guild-settings-modal-integrations-body.no-integrations .integration-logos{
     -webkit-filter: invert(100%);
@@ -2002,6 +2030,9 @@ div.control-group .shortcut-recorder input[type=text]{
 .guild-settings-modal-members .guild-settings-modal-list .member .member-username{
     color: #FFF;
 }
+.guild-settings-modal-members .member-buttons{
+    visibility: visible;
+}
 .guild-settings-modal .emoji-row .btn,
 .guild-settings-modal .member-buttons .btn{
     border: 1px solid transparent;
@@ -2012,7 +2043,7 @@ div.control-group .shortcut-recorder input[type=text]{
 .guild-settings-modal .emoji-row .btn:hover,
 .guild-settings-modal .member-buttons .btn:hover{
     background-color: #262626;
-    border: 1px solid transparent;
+    border-color: var(--formbdh);
 }
 .guild-settings-modal .emoji-row .btn.btn-danger,
 .guild-settings-modal .member-buttons .btn.btn-danger{
@@ -2022,7 +2053,7 @@ div.control-group .shortcut-recorder input[type=text]{
 .guild-settings-modal .emoji-row .btn.btn-danger:hover,
 .guild-settings-modal .member-buttons .btn.btn-danger:hover{
     background-color: #262626;
-    border: 1px solid #FFF;
+    border-color: var(--formbdh);
 }
 .guild-settings-modal-members .guild-settings-modal-members-header .form .Select .Select-value{
     color: #FFF;
@@ -2031,15 +2062,18 @@ div.control-group .shortcut-recorder input[type=text]{
     background-color: transparent;
 }
 .search-bar.search-bar-light .search-bar-inner{
-    border: 1px solid #FFF;
+    border: 1px solid var(--formbd);
     border-radius: 0 !important;
     background-color: transparent;
+}
+.search-bar.search-bar-light .search-bar-inner:hover{
+    border-color: var(--formbdh);
 }
 .search-bar.search-bar-light input{
     color: #FFF;
 }
-.search-bar.search-bar-light input:placeholder{
-    color: #FFF;
+.search-bar.search-bar-light input::-webkit-input-placeholder{
+    color: #FFF !important;
 }
 .guild-settings-modal-members h6{
     color: #FFF;
@@ -2129,19 +2163,31 @@ div.control-group .shortcut-recorder input[type=text]{
     color: #FFF;
     font-weight: 300;
 }
+#settings-roles .roles li{
+    font-size: 15px;
+    font-weight: normal;
+}
+#settings-roles .roles li:before{
+    display: none;
+}
 #settings-roles .roles li.selected,
 #settings-roles .roles li:hover{
-    background: rgba(255,255,255,.3);
+    background: rgba(255,255,255,.1);
 }
 #settings-roles .roles li.selected:before{
     display: none;
 }
 #autocomplete-popout{
-    border: 1px solid rgba(255,255,255,.3);
+    border: 1px solid var(--accent);
 }
 .popout.popout-bottom header:before,
 .popout.popout-bottom-right header:before{
-    border-bottom-color: rgba(255,255,255,.3); 
+    display: none; 
+}
+#autocomplete-popout .empty,
+#autocomplete-popout .row,
+#autocomplete-popout .section{
+    line-height: 36px;
 }
 #autocomplete-popout header{
     background-color: #191919;
@@ -2167,9 +2213,15 @@ div.control-group .shortcut-recorder input[type=text]{
     font-weight: 300;
     text-transform: none;
 }
+#autocomplete-popout .row,
+#autocomplete-popout .row.selected a,
+#autocomplete-popout .row:hover a{
+    color: #AAA;
+}
 #autocomplete-popout .row.selected,
 #autocomplete-popout .row:hover{
-    background-color: #191919;
+    background-color: var(--accent);
+    background-image: none;
 }
 
 .instant-invites .instant-invites-list .instant-invite{
@@ -2375,6 +2427,98 @@ div.control-group .shortcut-recorder input[type=text]{
 }
 .premium-payment-modal .premium-payment-button{
     border-radius: 0;
+}
+
+.instant-invites .instant-invites-header{
+    color: rgba(255,255,255,.6);
+    font-size: 11px;
+    font-weight: normal;
+    text-transform: none;
+}
+.instant-invites .instant-invites-list .instant-invite .channel{
+    color: #FFF;
+    font-weight: normal;
+}
+.instant-invites .instant-invites-list .instant-invite .member{
+    color: #FFF;
+    font-weight: normal;
+}
+#permissions .permissions-helpdesk{
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+#permissions .permissions-helpdesk:hover{
+    color: #FFF;
+}
+#permissions .permission-actions{
+    font-size: 15px;
+    font-weight: normal;
+}
+#permissions .permission-actions>div{
+    background-color: transparent;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    transition: none;
+}
+#permissions .permission-actions>div.PASSTHROUGH:hover,
+#permissions .permission-actions>div.ALLOW:hover,
+#permissions .permission-actions>div.DENY:hover{
+    border-color: #FFF;
+}
+#permissions .permission-actions>div.PASSTHROUGH:after{
+    height: 15px;
+    left: 9px;
+    border: 1px solid #FFF;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+#permissions .permission-actions>div.ALLOW:after{
+    height: 15px;
+    left: 7px;
+    border: 1px solid #fff;
+    border-top-width: 0;
+    border-left-width: 0;
+}
+#permissions .permission-actions>div.DENY:after,
+#permissions .permission-actions>div.DENY:before{
+    height: 15px;
+    top: 2px;
+    left: 8px;
+    border: 1px solid #FFF;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+}
+#permissions .permission-actions.disabled>div{
+    background-color: #43b581;
+}
+
+.member-roles .member-role{
+    background-color: transparent;
+    border: 1px solid #FFF;
+    padding: 0 4px 3px 4px;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: normal;
+    line-height: 1;
+}
+.member-roles .member-role .member-role-remove,
+.member-roles .member-role.member-role-add button{
+    filter: brightness(200%);
+}
+.guild-settings-modal-members .guild-settings-modal-members-footer a{
+    color: var(--accent);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+.guild-settings-modal-members .guild-settings-modal-members-footer a:hover{
+    color: #FFF;
 }
 
 /* UPLOAD FILE MODAL */
@@ -2840,7 +2984,7 @@ div[style*="#2E3136"]{
 .scroller-wrap .scroller.messages::-webkit-scrollbar-button,
 .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-button{
     height: 12px;
-    background-color: #171717;
+    background-color: #171717 !important;
 }
 .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment,
 .message-group .edit-message .channel-textarea-inner textarea::-webkit-scrollbar-button:vertical:increment,
@@ -2884,7 +3028,7 @@ div[style*="#2E3136"]{
 .message-group .edit-message .channel-textarea-inner textarea::-webkit-scrollbar-track-piece,
 .scroller-wrap .scroller.messages::-webkit-scrollbar-track-piece,
 .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece{
-    background-color: #171717;
+    background-color: #171717 !important;
     border: 0;
     border-radius: 0;
 }
@@ -2949,12 +3093,13 @@ div[style*="#2E3136"]{
 
 /* BOT TAG */
 .bot-tag{
+    background-color: rgba(255,255,255,0.2);
     padding: .2em .6em .3em;
     border-radius: 0;
     font-size: 75%;
     font-weight: normal;
     text-transform: lowercase;
-    background-color: rgba(255,255,255,0.2);
+    vertical-align: middle;
 }
 .bot-tag:first-letter {
     text-transform: uppercase;
@@ -3024,7 +3169,7 @@ div[style*="#2E3136"]{
     text-transform: none;
 }
 .user-popout .avatar-wrapper .avatar-popout{
-    border: 0;
+    border: 2px solid #FFF;
     background-color: transparent;
 }
 .user-popout .avatar-wrapper .avatar-popout .status{
@@ -3032,16 +3177,33 @@ div[style*="#2E3136"]{
     bottom: 2px;
     right: 2px;
 }
+.user-popout .username-wrapper{
+    text-align: left;
+}
 .user-popout .username-wrapper .nickname{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 10px;
+}
+.user-popout .username-wrapper .discord-tag,
+.user-popout .username-wrapper .nickname,
+.user-popout .username-wrapper .username{
     line-height: 1.5625;
-    margin-bottom: 0;
+}
+.user-popout .username-wrapper .discord-tag{
+    margin: 0 10px;
 }
 .user-popout .username-wrapper .discord-tag .username{
-    font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 300;
 }
 .user-popout .username-wrapper .discord-tag .discriminator{
+    margin-left: 5px;
     font-weight: normal;
+}
+.bot-tag.bot-tag-invert{
+    background-color: var(--b2);
+    color: #FFF !important;
 }
 .user-popout .username-wrapper.has-nickname .discriminator,
 .user-popout .username-wrapper.has-nickname .username{
@@ -3049,9 +3211,9 @@ div[style*="#2E3136"]{
 }
 .user-popout .username-wrapper .activity{
     color: #FFF;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.5625;
-    padding: 0 8px;
+    padding: 0 10px;
 }
 .user-popout .username-wrapper .activity strong{
     font-weight: normal;
@@ -3069,9 +3231,12 @@ div[style*="#2E3136"]{
     overflow-y: auto;
 }
 .user-popout .body .roles .member-role{
+    background-color: transparent;
+    border: 1px solid #FFF;
+    border-radius: 0;
+    color: #FFF;
     font-size: 13px;
     font-weight: normal;
-    border-radius: 0;
     line-height: 1.5625;
 }
 .member-roles .member-role>*{
@@ -3506,14 +3671,20 @@ div[style*="#2E3136"]{
 }
 .need-help-modal .header input[type=text]{
     height: 32px;
-    border: 1px solid #FFF !important;
     box-shadow: none;
     border-radius: 0;
     margin: 20px 20px 0 20px;
     width: 480px;
 }
+.need-help-modal .header input[type=text]:hover{
+    border-color: rgba(255,255,255,.8);
+}
 .need-help-modal .header input[type=text]:focus{
     margin: 20px 20px 0 20px;
+    border-color: var(--accent);
+}
+.need-help-modal .header input[type=text]:-webkit-placeholder{
+    color: #F00;
 }
 .need-help-modal .form-inner{
     padding: 20px;
@@ -3789,7 +3960,7 @@ div[style*="#2E3136"]{
     border: 1px solid var(--accent);
 }
 #nickname{
-    width: calc(100% - 12px;)
+    width: calc(100% - 12px);
 }
 #create-channel-modal .checkbox-group li{
     margin-top: 8px;
@@ -3800,6 +3971,13 @@ div[style*="#2E3136"]{
     font-size: 15px;
     padding-left: 12px;
     opacity: 1;
+}
+.change-nickname-warning{
+    background-color: transparent;
+    padding: 0;
+    color: #FF0;
+    font-weight: normal;
+    line-height: 1.5625;
 }
 
 /* KICK MODAL */
@@ -4002,8 +4180,9 @@ div[style*="#2E3136"]{
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 0;
 }
-.region-select-modal .region-select-modal-option .region-select-name{
+.region-select-name{
     color: #FFF;
+    font-size: 15px;
     font-weight: normal;
 }
 .region-select-modal .region-select-modal-option:hover{
@@ -4203,11 +4382,12 @@ div[style*="#2E3136"]{
 
 /* Loading animation */
 .spinner-inner.spinner-wandering-cubes{
-    background-image: url(https://i.imgur.com/RoOkgHF.gif);
+    background-image: url(https://i.imgur.com/MfeQkLJ.gif);
     background-repeat: no-repeat;
-    background-size: 470px 40px;
-    width: 470px;
-    height: 40px;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    -webkit-filter: invert(100%);
 }
 .spinner-wandering-cubes .spinner-item{
     display: none;
@@ -4225,6 +4405,7 @@ div[style*="#2E3136"]{
 
 /* Creation Date */
 .creation-date-wrapper{
+    margin: 0 10px;
     font-weight: normal;
 }
 
@@ -4342,6 +4523,64 @@ div[style*="#2E3136"]{
 .ebr-theme-item .view-source-button:active,
 .ebr-plugin-item .view-source-button:active{
     background-color: rgba(255,255,255,.4);
+}
+
+/* Clock */
+#clockPluginClock{
+    background-color: transparent;
+    max-width: 56px;
+    top: 32px;
+    left: 3px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CopyCode */
+.copybutton{
+    background-color: var(--b4) !important;
+    border: 0 !important;
+    color: #FFF !important;
+}
+.copybutton:hover{
+    background-color: var(--b3) !important;
+}
+
+/* Owner Tag */
+.kawaii-tag{
+    padding: .2em .6em .3em;
+    border-radius: 0;
+    font-size: 75%;
+    font-weight: normal;
+    text-transform: lowercase;
+    vertical-align: middle;
+}
+.kawaii-tag:first-letter {
+    text-transform: uppercase;
+}
+.kawaii-tag-invert{
+    background-color: rgba(255,255,255,0.2);
+    color: #FFF !important;
+    vertical-align: middle;
+}
+
+/* Renamer */
+.renamer-tag{
+    padding: .2em .6em .3em;
+    border-radius: 0;
+    font-size: 75%;
+    font-weight: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.renamer-tag:first-letter{
+    text-transform: uppercase;
+}
+.renamer-tag[style*="background-color: rgb(114, 137, 218);"]{
+    background-color: rgba(255,255,255,0.2) !important;
+}
+.messages .renamer-tag{
+    margin-left: 0;
+    margin-right: 4px;
 }
 
 /* BD minimal mode warning*/
@@ -4462,12 +4701,8 @@ div[style*="#2E3136"]{
 #user-profile-modal .guilds .section+.section{
     border-top: 0;
 }
-#user-profile-modal .guilds .section .connected-accounts:before{
-    content: "Connected Accounts";
-    position: absolute;
-    color: #FFF;
-}
 #user-profile-modal .guilds .section .connected-accounts .connected-account{
+    margin-top: 8px;
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 0;
 }
@@ -4518,6 +4753,35 @@ div[style*="#2E3136"]{
     position: absolute;
     margin: 11px 0 0 175px;
     width: 170px;
+}
+
+/* Connecting */
+.connecting{
+    background-color: #191919;
+}
+.connecting .connecting-inner{
+    background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    -webkit-filter: invert(100%);
+}
+.connecting video,
+.connecting img{
+    display: none;
+}
+.connecting .quote,
+.connecting .attribution{
+    display: none;
+}
+.connecting .connection-status{
+    margin-top: 64px;
+    margin-left: 0;
+    color: #000;
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: none;
 }
 
 /* ICONS */

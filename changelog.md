@@ -1,6 +1,31 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.14.0
+* Load more messages chat button
+* Change user popout style
+* Change font size of member group
+* Change loading icon to Windows 8/10 circles
+* Theme connecting screen (also remove maymays)
+* Adjust margins of chat box
+* Various minor improvments to some elements in server/channel settings modals
+* Plugin support for Clock
+* Plugin support for CopyCode
+* Plugin support for OwnerTags (CSS provided by @supersmilers)
+* Plugin support for Renamer
+* Fixes
+  * Speculative fix for an issue causing the plus symbol in add guild button to move out of bounds
+  * Correct default user colour in members list
+  * Default user tag style in user popout
+  * Bot tag text alignment
+  * Bot tag colours in user popout
+  * Nickname textbox width
+  * Incorrect scrollbar track background colour in profile popout
+  * Need help modal textbox focus and hover border color
+  * Voice info/disconnect icons dimming when hovered
+  * Search members textbox placeholder
+  * Currently selected guild not showing border when hovered
+
 #### 2.13.4
 * Fixes
   * No left border on emoji popout if user didn't have BD emote menus enabled
