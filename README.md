@@ -14,8 +14,8 @@ You'll also need to go to Appearance settings and choose the light theme.
 You can change the accent colour by editing `--accent` in the `:root` section of the theme. By default it is dark blue.  
 A colour sheet is available in [accent.md](https://github.com/TakosThings/Metro-for-Discord/blob/master/accent.md)  
 
-# Dependencies (non-Windows)
-If you're on Linux or OSX you'll need [Selawk](https://github.com/winjs/winstrap/blob/master/src/fonts/selawk.ttf), an open-source font which will be used instead of Segoe UI.  
+# Userstyle
+Metro For Discord is also available as a [Userstyle](https://userstyles.org/styles/136340/metro-for-discord) for Discord in the browser. Use [Stylus for Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [StylRRR for Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/).
 
-# Stylish Version
-Metro For Discord is also available as a [Userstyle](https://userstyles.org/styles/136340/metro-for-discord). The Stylish extension for [Chrome](https://chrome.google.com/webstore/detail/fjnbnpbmkenffdnngjfgmeleoegfcffe) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylish/) is required.
+# Notes
+If you're using the theme on OSX or Linux, you'll need to download and install the [Selawk](https://github.com/winjs/winstrap/blob/master/src/fonts/selawk.ttf) font which will be used instead of Segoe UI.
