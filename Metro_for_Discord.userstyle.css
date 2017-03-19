@@ -2,7 +2,7 @@
 /* Icons used in this theme by https://icons8.com */
 
 :root{
-    --accent: #0072C6;
+    --accent: /*[[accentcolour]]*/;
 
     --font: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
     --mono: Consolas, Menlo, Monaco, "Courier New", monospace;
