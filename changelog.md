@@ -1,6 +1,13 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.15.0
+* New Settings
+* Fixes
+  * Timestamp text colour
+  * Slider handles glitching when panning
+
+
 #### 2.14.0
 * Load more messages chat button
 * Change user popout style
