@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.14.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.15.0"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 
@@ -25,7 +25,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.14.0";
+  content: "Metro For Discord v2.15.0";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -887,7 +887,8 @@ button.btn.btn-settings:active{
     margin: 0;
     padding: 10px 20px;
 }
-.message-group h2 .timestamp{
+.message-group h2 .timestamp,
+.message-group.compact .timestamp{
     color: #AAA;
 }
 .message-group .comment{
@@ -1572,7 +1573,8 @@ button.btn.btn-settings:active{
     width: 12px;
     height: 12px;
 }
-.channel-members .member.popout-open, .channel-members .member:hover{
+.channel-members .member:not(.disabled).popout-open,
+.channel-members .member:not(.disabled):hover{
     background: var(--b4);
 }
 
@@ -1731,7 +1733,14 @@ button.btn.btn-settings:active{
 }
 .premium-settings .premium-header .premium-options button{
     border-radius: 0;
+    color: #FFF;
     line-height: 1;
+}
+.premium-settings .premium-header .premium-options .ui-button.outlined{
+    border: 1px solid var(--formbd);
+}
+.premium-settings .premium-header .premium-options .ui-button.outlined:hover{
+    border-color: var(--formbdh);
 }
 .premium-settings.v1 .premium-features .premium-feature .ui-form-text.style-default{
     color: #FFF;
@@ -1923,7 +1932,12 @@ div.control-group .shortcut-recorder input[type=text]{
 .slider-bar-fill{
     background-color: var(--accent);
 }
+.slider-handle-track{
+    left: 0;
+    right: 0;
+}
 .slider-handle{
+    margin-left: -10px;
     background-color: #FFF;
     border: 0;
     width: 10px;
@@ -4940,4 +4954,510 @@ span.cm-error { background: #f92672; color: #f8f8f0; }
 .CodeMirror-matchingbracket {
   text-decoration: underline;
   color: white !important;
+}
+
+
+/* New DiscordCanary Settings */
+.theme-light .layers,
+.theme-light .ui-standard-sidebar-view,
+.theme-light .ui-standard-sidebar-view .sidebar-region,
+.theme-light .ui-standard-sidebar-view .sidebar-region .scrollbar,
+.theme-light .ui-standard-sidebar-view .content-region,
+.theme-light .ui-standard-sidebar-view .content-region .scrollbar{
+    background: #000;
+}
+
+.ui-tab-bar.SIDE .ui-tab-bar-header{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: none;
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item{
+    border-radius: 0;
+    color: #FFF;
+    font-size: 15px;
+    font-weight: normal;
+}
+.theme-light .ui-tab-bar-item:hover,
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected:hover{
+    background-color: rgba(255,255,255,.15);
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected{
+    background-color: transparent;
+    color: var(--accent);
+}
+.ui-tab-bar.SIDE .ui-tab-bar-item.selected:before{
+    content: "";
+    width: 4px;
+    height: 20px;
+    position: absolute;
+    margin-top: -2px;
+    margin-left: -10px;
+    background-color: var(--accent);
+}
+
+.theme-light .ui-form-text{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 15px;
+}
+.ui-form-title.h2{
+    color: #FFF;
+    font-size: 24px !important;
+    font-weight: 300;
+}
+.ui-form-title.h3{
+    font-weight: normal;
+}
+.ui-form-title.h5{
+    font-family: var(--font);
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+}
+.theme-light .ui-form-title{
+    color: #FFF;
+}
+.ui-card .ui-form-text a:link,
+.ui-card .ui-form-text a:visited{
+    font-weight: normal;
+}
+
+.theme-light .ui-card-primary{
+    background-color: var(--b2);
+    border: 0;
+    border-radius: 0;
+}
+.theme-light .ui-card-primary .ui-form-title.h5{
+    color: #FFF;
+}
+.theme-light .ui-card-primary.editable{
+    background-color: var(--b2);
+}
+.theme-light .ui-card-primary.editable .ui-form-title.h5{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+.ui-card-warning{
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+.ui-card-warning .ui-form-text{
+    color: #FF0;
+}
+.theme-light .ui-form-text.style-description,
+.theme-light .ui-form-text.style-label-descriptor{
+    color: #FFF;
+    font-weight: normal;
+}
+
+.theme-light .ui-form-title.h5{
+    color: #FFF;
+}
+.theme-light .ui-form-divider{
+    display: none;
+}
+
+.ui-text-input .input{
+    height: 36px;
+    padding: 4px 8px;
+    border-radius: 0;
+}
+.theme-light .ui-text-input .input{
+    background-color: transparent;
+    border: 1px solid var(--formbd);
+    color: #FFF;
+}
+.theme-light .ui-text-input .input:hover{
+    border-color: var(--formbdh);
+}
+.theme-light .ui-text-input .input:focus{
+    background-color: #FFF;
+    color: #000;
+    border-color: var(--accent);
+}
+
+.ui-key-recorder{
+    height: 36px;
+    border-radius: 0;
+}
+.theme-light .ui-key-recorder{
+    background-color: transparent;
+    border-color: var(--formbd);
+}
+.theme-light .ui-key-recorder:hover{
+    border-color: var(--formbdh);
+}
+.ui-key-recorder .input{
+    font-weight: normal;
+}
+.theme-light .ui-key-recorder .input{
+    padding: 8px 0 10px 10px;
+    color: #FFF;
+}
+.theme-light .ui-key-recorder .input::-webkit-input-placeholder{
+    color: #FFF;
+}
+.theme-light .ui-key-recorder:not(.disabled):hover{
+    border-color: var(--alert);
+}
+.ui-key-recorder .ui-button{
+    border-radius: 0;
+}
+.ui-button.grey.ghost{
+    background-color: #191919;
+    color: #FFF;
+}
+
+.user-settings-keybinds .ghost-pill{
+    background-color: transparent;
+    padding: 6px 0;
+    color: #FF0;
+    font-size: 15px;
+}
+.theme-light .user-settings-keybinds .keybind-group:before{
+    background-color: transparent;
+    border: 0;
+}
+
+.user-settings-games .not-detected,
+.user-settings-games .now-playing{
+    border-radius: 0;
+}
+.theme-light .user-settings-games .not-detected{
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+.theme-light .user-settings-games .now-playing{
+    background-color: var(--accent);
+}
+.user-settings-games .game-name{
+    height: 36px;
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: normal;
+}
+.theme-light .user-settings-games .not-detected .last-played{
+    color: #FFF;
+}
+.user-settings-games .game-name-input{
+    margin-left: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--formbd);
+    border-radius: 0;
+    font-size: 15px !important;
+}
+.theme-light .user-settings-games .now-playing .game-name{
+    color: #FFF;
+}
+.theme-light .user-settings-games .now-playing .game-name-input:hover{
+    background-color: transparent;
+    border-color: var(--formbdh);
+}
+.theme-light .user-settings-games .now-playing .game-name-input:focus{
+    background-color: #FFF;
+}
+.user-settings-games .last-played{
+    font-size: 15px;
+    line-height: 1.5625;
+}
+.user-settings-games .overlay-status-text{
+    font-size: 15px;
+    text-transform: none;
+}
+.theme-light .user-settings-games .now-playing .overlay-status-text{
+    color: #FFF;
+}
+.theme-light .user-settings-games .now-playing .overlay-toggle-icon-off .fill{
+    fill: #FFF;
+}
+.theme-light .user-settings-games .now-playing-add{
+    color: #FFF;
+}
+.user-settings-games .game{
+    padding: 16px;
+}
+.theme-light .user-settings-games .game-name{
+    color: #FFF;
+    line-height: 36px;
+    vertical-align: middle;
+}
+.theme-light .user-settings-games .last-played{
+    color: #FFF;
+}
+.user-settings-games .game-verified-icon{
+    margin-top: 10px;
+}
+.user-settings-games .overlay-toggle-icon-off .fill{
+    fill: var(--alert);
+}
+.theme-light .user-settings-games .game{
+    box-shadow: none;
+}
+.user-settings-games .game:before,
+.theme-light .user-settings-games .game:hover:before{
+    background-color: #191919;
+    left: 0;
+    right: 0;
+    margin-bottom: 8px;
+    border: 0;
+    border-radius: 0;
+}
+.theme-light .user-settings-games .game-name-input:hover{
+    background-color: transparent;
+    border-color: var(--formbdh);
+}
+.theme-light .user-settings-games .game-name-input:focus{
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000;
+}
+.user-settings-games .game .remove-game{
+    right: -12px;
+}
+.theme-light .user-settings-games .game .remove-game{
+    box-shadow: none;
+}
+
+.ui-button{
+    padding: 9px 12px 10px;
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: 15px !important;
+    font-weight: normal;
+    line-height: 1;
+}
+.theme-light .ui-button.primary.link{
+    color: var(--accent);
+}
+.theme-light .ui-button.primary.link:hover{
+    text-decoration: underline;
+}
+.ui-button.xlarge{
+    padding: 9px 12px 10px;
+}
+.ui-button.xlarge.grow{
+    min-width: auto;
+    min-height: auto;
+}
+.ui-button.brand.filled{
+    background-color: transparent;
+    border-color: var(--formbd);
+}
+.ui-button.brand.filled:not(.disabled):active,
+.ui-button.brand.filled:active,
+.ui-button.brand.filled:hover{
+    background-color: transparent;
+    border-color: var(--formbdh);
+}
+.ui-button.green.filled{
+    background-color: var(--accent);
+}
+.ui-button.green.filled:active,
+.ui-button.green.filled:hover{
+    background-color: var(--accent);
+    border-color: var(--formbdh);
+}
+.theme-light .ui-button.primary.outlined{
+    color: #FFF;
+    border-color: var(--formbd);
+}
+.theme-light .ui-button.primary.outlined.active,
+.theme-light .ui-button.primary.outlined:hover{
+    border-color: var(--formbdh)
+}
+
+.ui-switch-wrapper{
+    height: 20px;
+}
+.ui-switch{
+    background-color: transparent;
+    border: 2px solid var(--formbd);
+    transition: none;
+}
+.ui-switch-wrapper:hover .ui-switch{
+    border-color: var(--formbdh);
+}
+.ui-switch:before{
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: 5px;
+    background-color: #FFF;
+    box-shadow: none;
+}
+.ui-switch-checkbox:focus+.ui-switch{
+    background-color: transparent;
+    box-shadow: none;
+}
+.ui-switch-checkbox:checked:focus+.ui-switch{
+    background-color: var(--accent);
+    box-shadow: none;
+}
+.ui-switch-checkbox:focus+.ui-switch:before,
+.ui-switch-checkbox:hover+.ui-switch:before{
+    width: 10px;
+}
+.ui-switch-checkbox:checked:focus+.ui-switch:before,
+.ui-switch-checkbox:checked:hover+.ui-switch:before{
+    left: 5px;
+}
+.ui-switch-checkbox:checked+.ui-switch{
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+.ui-switch-wrapper:not(.disabled):not(.clear):hover .ui-switch-checkbox+.ui-switch{
+    background-color: transparent;
+}
+.ui-switch-wrapper:not(.disabled):not(.clear):hover .ui-switch-checkbox:checked+.ui-switch{
+    background-color: var(--accent);
+}
+
+.ui-slider .slider-bar{
+    height: 2px;
+}
+.ui-slider .slider-bar-fill{
+    background-color: var(--accent);
+}
+.ui-slider .slider-handle-track{
+    right: 0;
+    left: 0;
+}
+.ui-slider .slider-grabber{
+    width: 8px;
+    margin-top: -15px;
+    background-color: var(--accent);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+}
+.ui-slider .slider-grabber:hover{
+    background-color: #FFF;
+}
+
+.ui-select{
+    font-size: 15px;
+}
+.ui-select .Select-control{
+    min-height: 36px;
+    border-radius: 0;
+}
+.theme-light .ui-select .Select-control{
+    background-color: transparent;
+    border: 1px solid var(--formbd);
+}
+.theme-light .ui-select .Select-control:hover{
+    border-color: var(--formbdh);
+}
+.theme-light .ui-select .Select-value-label{
+    color: #FFF;
+}
+.ui-select .Select-value-label{
+    font-weight: normal;
+}
+.theme-light .ui-select .Select-control:hover .Select-arrow{
+    border-color: #FFF transparent transparent;
+}
+.ui-select.is-open .Select-control{
+    border-radius: 0;
+}
+.theme-light .ui-select.is-open .Select-control{
+    background-color: rgba(255,255,255,.3);
+}
+.Select-menu-outer{
+    width: calc(100% - 1px);
+}
+.theme-light .ui-select .Select-menu-outer{
+    border-color: transparent;
+    box-shadow: none;
+}
+.ui-select .Select-menu{
+    background-color: #191919;
+    border-radius: 0;
+}
+.ui-select .Select-option{
+    min-height: 44px;
+    padding-top: 14px;
+}
+.theme-light .ui-select .Select-option.is-focused,
+.theme-light .ui-select .Select-option:hover{
+    background-color: var(--accent);
+    color: #FFF;
+}
+.theme-light .ui-select .Select-option{
+    background-color: transparent;
+    color: #FFF;
+}
+.theme-light .ui-select .Select-option.is-selected{
+    background-color: transparent;
+}
+.theme-light .ui-select .Select-option.is-selected:hover{
+    background-color: var(--accent);
+}
+
+.theme-light .ui-radiogroup .ui-card-primary.editable{
+    background-color: transparent !important;
+}
+.theme-light .ui-radiogroup{
+    color: #FFF;
+}
+.ui-radiogroup .title{
+    font-weight: normal;
+}
+.theme-light .ui-checkbox{
+    border-color: var(--formbd);
+}
+.theme-light .ui-radiogroup .ui-card:hover .theme-light .ui-checkbox{
+    border-color: var(--formbdh);
+}
+.ui-checkbox-wrapper .ui-checkbox{
+    width: 20px;
+    height: 20px;
+    border-width: 2px;
+    border-radius: 50%;
+}
+.theme-light .ui-checkbox.checked{
+    background-color: transparent;
+}
+.theme-light .ui-radiogroup .checked{
+    border-color: var(--accent);
+}
+.ui-checkbox-wrapper .ui-checkbox svg,
+.theme-light .ui-radiogroup .checked svg{
+    display: none;
+}
+.theme-light .ui-checkbox.checked:before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+.ui-empty-state-image{
+    display: none;
+}
+.theme-light .ui-empty-state-title{
+    color: #FFF;
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.connect-account-btn .connect-account-btn-inner{
+    width: 48px;
+    height: 48px;
+}
+.theme-light .user-settings-connections .connect-account-btn .connect-account-btn-inner{
+    background-color: var(--accent);
+    border: 0;
+}
+.theme-light .user-settings-connections .connect-account-btn .connect-account-btn-inner:hover{
+    border: 0;
 }
