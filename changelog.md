@@ -1,6 +1,15 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.16.0
+* Quick switcher
+* Quick switcher channel notice
+* Make search bar appear as a button
+* Make search popout display like recent mentions and pinned messages
+* Fixes
+  * Channel members list scrolling bug
+  * Font colour for safety level tips
+
 #### 2.15.0
 * New Settings
 * Fixes
