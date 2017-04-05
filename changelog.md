@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.16.1
+* Fixes
+  * Toolbar button icons dimming when hovered
+
 #### 2.16.0
 * Quick switcher
 * Quick switcher channel notice
