@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.16.2
+* Fixes
+  * Updated toolbar icons not displaying after stealth Discord update
+
 #### 2.16.1
 * Fixes
   * Toolbar button icons dimming when hovered
