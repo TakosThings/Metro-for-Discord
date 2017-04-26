@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 1.17.0
+* Update `#voice-connection` to `#rtc-connection`
+* Fixes
+  * Fix line-height of clipboard box
+
 #### 2.16.2
 * Fixes
   * Updated toolbar icons not displaying after stealth Discord update
