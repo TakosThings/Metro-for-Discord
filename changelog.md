@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.16.5
+* Fixes
+  * Fix 'Open Original' button in image lightbox
+
 #### 2.16.4
 * Update `#voice-connection` to `#rtc-connection`
 * Fixes
