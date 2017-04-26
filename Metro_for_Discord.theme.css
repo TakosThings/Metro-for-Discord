@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.16.3"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.16.4"}*//{}
 
 /* Icons used in this theme by https://icons8.com */
 
@@ -25,7 +25,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.16.3";
+  content: "Metro For Discord v2.16.4";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -328,71 +328,71 @@ button.btn.btn-settings:active{
 }
 
 /* VOICE CONNECTED */
-#voice-connection{
+#rtc-connection{
     background-color: var(--b1);
     padding: 0 0 0 5px;
     border: 0;
 }
-#voice-connection .voice-connection-status,
-#voice-connection .voice-connection-channel{
+#rtc-connection .voice-connection-status,
+#rtc-connection .voice-connection-channel{
     font-weight: normal;
 }
-#voice-connection .btn-group{
+#rtc-connection .btn-group{
     border: 0;
     border-radius: 0;
 }
-#voice-connection .btn{
+#rtc-connection .btn{
     background-color: transparent;
     width: 50px;
     height: 50px;
 }
-#voice-connection .btn-info{
+#rtc-connection .btn-info{
     border: 0;
 }
-#voice-connection .btn-disconnect{
+#rtc-connection .btn-disconnect{
     box-shadow: none;
 }
-#voice-connection .btn-info:hover,
-#voice-connection .btn-disconnect:hover{
+#rtc-connection .btn-info:hover,
+#rtc-connection .btn-disconnect:hover{
     background-color: var(--b3);
 }
-#voice-connection .btn-info:hover:after,
-#voice-connection .btn-disconnect:hover:after{
+#rtc-connection .btn-info:hover:after,
+#rtc-connection .btn-disconnect:hover:after{
     opacity: 1;
 }
-#voice-connection .btn-info:after{
+#rtc-connection .btn-info:after{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAJFBMVEUAAAD///////////////////////////////////////////+0CY3pAAAAC3RSTlMAECCvsL/A3+Dv8NZYMh8AAABeSURBVHjazZE7DkAhCARZxO/e/77PwsRKCiyeU0DBBLJBnkNTrUmdeeeknw1jAQrtKAxCBKy+oGzOiQxk54QOTgacGNaaQcJwcSOs6m2ICZvnhZ2CjAu7u78ICD/zAe+MBVc6o3cPAAAAAElFTkSuQmCC);
     background-size: 20px;
     opacity: 1;
 }
-#voice-connection .btn-disconnect:after{
+#rtc-connection .btn-disconnect:after{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECAwQFBwf4CfoK+wwM/Q3+Dv8JnWEvoAAAC9SURBVHjaxZLNDoQgDIRpERdRW3/m/Z91o3EbyFavzoFDZwIfA+FV0eduvmAbOJAgu77g0NYJlP7txII1hTgBvm/zAnTe/gpwOFWwkZ+Qaz6heIyMXyJC/DtYAnB95euUhLnhp3OF0sVBC/rah5DlDg4WzD6bdankshkHOFSajc04mpfqsZ6zioNyu0GyFh1ZJfcJRXxOFIzhMUE7hroP96MM1ke+ecMxhrRA2fe1263fVtYdlx2aHd+6e09fDtYMiY3H4msAAAAASUVORK5CYII=);
     background-size: 20px;
     opacity: 1;
 }
 
 /* VOICE CONNECTION POPOUT */
-#voice-connection-popout{
+#rtc-connection-popout{
     border: 1px solid var(--accent);
 }
-#voice-connection-popout header{
+#rtc-connection-popout header{
     background-color: #191919;
     border-radius: 0;
     font-weight: normal;
     font-size: 15px;
 }
-#voice-connection-popout section{
+#rtc-connection-popout section{
     border-radius: 0;
     background-color: #191919
 }
-#voice-connection-popout section p{
+#rtc-connection-popout section p{
     color: #FFF;
     font-size: 13px;
 }
-#voice-connection-popout hr{
+#rtc-connection-popout hr{
     border-color: transparent;
 }
-#voice-connection-popout .debug-button{
+#rtc-connection-popout .debug-button{
     color: #FFF;
     font-weight: normal;
 }
@@ -4119,6 +4119,7 @@ div[style*="#2E3136"]{
 }
 #instant-invite-modal .clipboard-input-inner input{
     color: #FFF;
+    line-height: 1 !important;
 }
 #instant-invite-modal .copy{
     height: 32px;
