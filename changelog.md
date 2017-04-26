@@ -1,6 +1,13 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.17.0
+* Canary NSFW channel warning
+* Canary Server Settings
+* Fixes
+  * Update ready button not using theme icon
+  * Pinned message chat notification not using theme icon
+
 #### 2.16.5
 * Fixes
   * 'Open Original' button in image lightbox
@@ -32,7 +39,6 @@ Newest changes are at the top
 * Fixes
   * Timestamp text colour
   * Slider handles glitching when panning
-
 
 #### 2.14.0
 * Load more messages chat button
