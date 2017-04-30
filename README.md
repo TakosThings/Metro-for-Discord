@@ -5,7 +5,7 @@ Currently: `v2.17.0`
 # Installation
 [Download](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/Metro_for_Discord.theme.css) (Right click->Save as)  
 Follow [this guide](https://i.imgur.com/lczPQxW.png) to install the theme.  
-You'll also need to go to Appearance settings and choose the light theme.
+You'll need to select Light Theme from Appearance settings and disable BetterDiscord's Blue setting.
 
 # Preview
 ![Preview](https://i.imgur.com/nLlFA4H.png)
