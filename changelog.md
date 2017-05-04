@@ -1,6 +1,34 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.18.0
+* Rewrite New settings
+* Beginning of channel history header
+* Increase font-size of chatbox to 15px
+* Adjust sizing of chatbox upload and emoji buttons
+* Remove Wumpus' from user profile modal
+* Titlebar is now visible while connecting screen is shown
+* Move Twitter and StatusPage links on connecting screen to lower right
+* BetterDiscord
+  * Remove Public servers style
+  * Update CodeMirror style
+  * Add warning to disable BD Blue mode
+* Updated icons
+  * Instant invite
+  * Channel collapse
+  * Modal close button
+* Fixes
+  * Recent mentions tabs had no hover state
+  * Toolbar buttons wrong hover background-color
+  * Search bar width should match width of search poput
+  * Members list roles header font-weight
+  * Help modal placeholder text colour
+  * Chatbox placeholder text colour
+  * Account mic/speaker controls had wrong hover background-colour
+  * 'Change to lightmode' warning appearing in context menu
+  * Jagged 'Connecting' text in connecting screen
+  * Markdown modal body padding
+
 #### 2.17.0
 * Canary NSFW channel warning
 * Canary Server Settings
