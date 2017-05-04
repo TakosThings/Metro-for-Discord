@@ -9,15 +9,15 @@ Newest changes are at the top
 * Remove Wumpus' from user profile modal
 * Titlebar is now visible while connecting screen is shown
 * Move Twitter and StatusPage links on connecting screen to lower right
-* BetterDiscord
+* **BetterDiscord**
   * Remove Public servers style
   * Update CodeMirror style
   * Add warning to disable BD Blue mode
-* Updated icons
+* **Updated icons**
   * Instant invite
   * Channel collapse
   * Modal close button
-* Fixes
+* **Fixes**
   * Recent mentions tabs had no hover state
   * Toolbar buttons wrong hover background-color
   * Search bar width should match width of search poput
@@ -32,25 +32,25 @@ Newest changes are at the top
 #### 2.17.0
 * Canary NSFW channel warning
 * Canary Server Settings
-* Fixes
+* **Fixes**
   * Update ready button not using theme icon
   * Pinned message chat notification not using theme icon
 
 #### 2.16.5
-* Fixes
+* **Fixes**
   * 'Open Original' button in image lightbox
 
 #### 2.16.4
 * Update `#voice-connection` to `#rtc-connection`
-* Fixes
+* **Fixes**
   * line-height of clipboard box
 
 #### 2.16.3
-* Fixes
+* **Fixes**
   * Updated toolbar icons not displaying after stealth Discord update
 
 #### 2.16.1
-* Fixes
+* **Fixes**
   * Toolbar button icons dimming when hovered
 
 #### 2.16.0
@@ -58,13 +58,13 @@ Newest changes are at the top
 * Quick switcher channel notice
 * Make search bar appear as a button
 * Make search popout display like recent mentions and pinned messages
-* Fixes
+* **Fixes**
   * Channel members list scrolling bug
   * Font colour for safety level tips
 
 #### 2.15.0
 * New Settings
-* Fixes
+* **Fixes**
   * Timestamp text colour
   * Slider handles glitching when panning
 
@@ -80,7 +80,7 @@ Newest changes are at the top
 * Plugin support for CopyCode
 * Plugin support for OwnerTags (CSS provided by @supersmilers)
 * Plugin support for Renamer
-* Fixes
+* **Fixes**
   * Speculative fix for an issue causing the plus symbol in add guild button to move out of bounds
   * Correct default user colour in members list
   * Default user tag style in user popout
@@ -94,20 +94,20 @@ Newest changes are at the top
   * Currently selected guild not showing border when hovered
 
 #### 2.13.4
-* Fixes
+* **Fixes**
   * No left border on emoji popout if user didn't have BD emote menus enabled
   * Sizing fix for offline server tile
 
 #### 2.13.3
-* Fixes
+* **Fixes**
   * Emote picker not highlighting selected tab when using BetterDiscord's Dark Mode
 
 #### 2.13.2
-* Fixes
+* **Fixes**
   * BetterDiscord's Dark Mode fiddling with the emote/emoji menu CSS
 
 #### 2.13.1
-* Fixes
+* **Fixes**
   * Loading gif showing up in the members list when people were typing
 
 #### 2.13.0
@@ -122,7 +122,7 @@ Newest changes are at the top
 * Authorised Applications
 * Make mute icons in notification settings brighter
 * Loading animaiton
-* Fixes
+* **Fixes**
   * Updated Nitro style
   * Alt theme checkboxes
   * Font used in dropdowns
@@ -134,7 +134,7 @@ Newest changes are at the top
   * Disabled button style
 
 #### 2.12.1
-* Fixes
+* **Fixes**
   * Flickering usernames when hovering on messages or avatars in cozy mode
   * Use accent colour for border of voice connection info popout
   * Bad text colours of bot embeds
@@ -150,7 +150,7 @@ Newest changes are at the top
 * Added horizontal scrollbar to `/giphy` search
 * Adjust height of roles section in user popout
 * Clyde bot local message
-* Fixes
+* **Fixes**
   * Left/Right padding on textbox guard if window was too narrow
   * Change nickname modal input box was too wide
   * Incorrect border colour on search popout
@@ -170,7 +170,7 @@ Newest changes are at the top
 * Unblock button in DM message area
 * Remove shit meme from help modal
 * "Streamer mode enabled" button
-* Fixes
+* **Fixes**
   * Message context and Add Reaction menu buttons on chat messages were exceptionally hard to click on (caused by backface-visibility)
   * Some incorrect font-weights
   * Channels not displaying correctly if the list was longer than the window
@@ -188,7 +188,7 @@ Newest changes are at the top
 * Drag & drop file modal
 * Re-enabled modal/lightbox backdrop
 * Scrollbars now have hover and active states
-* Fixes
+* **Fixes**
   * line-height on BetterDiscord plugin/theme decriptions
   * Remove placeholder image if there are no previous DMs
 
@@ -197,7 +197,7 @@ Newest changes are at the top
 * Join server countdown timer
 * Set backface-visibility to hidden
 * Nitro settings
-* Fixes
+* **Fixes**
   * Mention text
   * "Playing" text in user popout was wrong colour
   * "View profile" circle on user popout didn't fill the entire avatar
@@ -207,11 +207,11 @@ Newest changes are at the top
 
 #### 2.8.2
 * Minify META repo link
-* Fixes
+* **Fixes**
   * Miscoloured message timestamps when hovered
 
 #### 2.8.1
-* Fixes
+* **Fixes**
   * Vertical alignment on roles delete button
   * Vertical alignment on settings/New Server button
 
@@ -233,7 +233,7 @@ Newest changes are at the top
 * Themed scrollbar for edit message box
 * Public servers list button
 * Public servers list
-* Fixes
+* **Fixes**
   * Upload modal emoji button now won't overflow when hovered
   * Create group DM button was hidden
   * Guild unread messages indicator bottom positioning
@@ -261,7 +261,7 @@ Newest changes are at the top
 * Update: Embeds
 
 #### 2.5.1
-* Fixes
+* **Fixes**
   * Accept/Ignore friend request buttons changing position when row was hovered
   * Pending button badge positioning
 
@@ -272,7 +272,7 @@ Newest changes are at the top
 * Pass over BetterDiscord theme/plugin settings
 * Plugin support: Even Better Repo
 * Plugin support: Creation Date
-* Fixes
+* **Fixes**
   * Settings button had a background when state was active
   * Text boxes in settings modals were slightly too tall
   * Change password text was wrong colour
@@ -296,20 +296,20 @@ Newest changes are at the top
 #### 2.3.0
 * No longer beta
 * Added custom icons to emoji category selector
-* Fixes
+* **Fixes**
   * position of dimmer when diversity selector is open
 
 #### 2.2.1
-* Fixes
+* **Fixes**
   * Checkboxes and buttons weren't using the user defined accent colour
 
 #### 2.2.0
 * Add background colour to edit message field, and scrollbar to make editing long messages easier
-* Fixes
+* **Fixes**
   * 1px gap on emote/emoji tabs
 
 #### 2.1.1
-* Fixes
+* **Fixes**
   * BetterDiscord plugin settings popup was white, making text unreadable
 
 #### 2.1.0
