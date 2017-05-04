@@ -75,7 +75,7 @@ Newest changes are at the top
 * Change loading icon to Windows 8/10 circles
 * Theme connecting screen (also remove maymays)
 * Adjust margins of chat box
-* Various minor improvments to some elements in server/channel settings modals
+* Various minor improvements to some elements in server/channel settings modals
 * Plugin support for Clock
 * Plugin support for CopyCode
 * Plugin support for OwnerTags (CSS provided by @supersmilers)
@@ -121,7 +121,7 @@ Newest changes are at the top
 * Remove commented out backdrop code
 * Authorised Applications
 * Make mute icons in notification settings brighter
-* Loading animaiton
+* Loading animation
 * **Fixes**
   * Updated Nitro style
   * Alt theme checkboxes
@@ -189,7 +189,7 @@ Newest changes are at the top
 * Re-enabled modal/lightbox backdrop
 * Scrollbars now have hover and active states
 * **Fixes**
-  * line-height on BetterDiscord plugin/theme decriptions
+  * line-height on BetterDiscord plugin/theme descriptions
   * Remove placeholder image if there are no previous DMs
 
 #### 2.9.0
@@ -208,7 +208,7 @@ Newest changes are at the top
 #### 2.8.2
 * Minify META repo link
 * **Fixes**
-  * Miscoloured message timestamps when hovered
+  * Discoloured message timestamps when hovered
 
 #### 2.8.1
 * **Fixes**
@@ -244,8 +244,8 @@ Newest changes are at the top
   * Background on edit message field will now appear when using cozy mode
   * Muted channel toolbar icon wasn't being replaced
   * Giant gaps between messages in Recent Mentions popout
-  * Miscoloured text on Recent Mentions filter
-  * Add Friend button badge miscoloured text
+  * Discoloured text on Recent Mentions filter
+  * Add Friend button badge discoloured text
   * Friends channel badge positioning
   * Friends mutual server icon background colour (fixes jagged border if server uses an icon instead of text)
   * Ban list
