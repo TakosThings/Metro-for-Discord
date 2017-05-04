@@ -11,7 +11,7 @@ Newest changes are at the top
 * Move Twitter and StatusPage links on connecting screen to lower right
 * **BetterDiscord**
   * Remove Public servers style
-  * Update CodeMirror style
+  * Remove Monokai CodeMirror theme
   * Add warning to disable BD Blue mode
 * **Updated icons**
   * Instant invite
