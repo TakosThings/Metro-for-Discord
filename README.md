@@ -8,7 +8,7 @@ Follow [this guide](https://i.imgur.com/lczPQxW.png) to install the theme.
 You'll need to select Light Theme from Appearance settings and disable BetterDiscord's Blue setting.
 
 # Preview
-![Preview](https://i.imgur.com/nLlFA4H.png)
+![Preview](https://i.imgur.com/BLwPC8h.png)
 
 # User settings
 You can change the accent colour by editing `--accent` in the `:root` section of the theme. By default it is dark blue.  
