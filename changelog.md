@@ -1,6 +1,19 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.19.0
+* Icons for new settings menu items
+* **Fixes**
+  * Notification settings modal wasn't styled
+  * Instant invite copy box wasn't styled
+  * Input boxes in user popout had no hover state
+  * Some icons would display inside the roles list in server settings
+  * Service logos in Connections weren't styled
+  * Password confirmation and 2FA input boxes stretched out-of-bounds
+  * Horizontal tab bars in Profile modal and Recent Mentions popout weren't styled
+  * Add friends to DM search box wasn't styled
+  * Collapse voice channel icon needlessly loaded another icon, identical to collapse text channel
+
 #### 2.18.0
 * Rewrite New settings
 * Beginning of channel history header
