@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord_Speech_Bubbles","description":"Speech bubbles addon for Metro For Discord.<br><a href='https://git.io/v63Jp' target='_BLANK'>Github Repo</a>","author":"Tako","version":"1.2.0"}*//{}
+//META{"name":"Metro_for_Discord_Speech_Bubbles","description":"Speech bubbles addon for Metro For Discord. Github: https://github.com/TakosThings","author":"Tako","version":"1.3.0"}*//{}
 
 /* 
 The oh-so-original speech bubbles addon for Metro for Discord.
@@ -32,7 +32,7 @@ Installation:
     border-color: var(--b3) transparent;
     display: inline-block;
     bottom: -19px;
-    left: -8px;
+    left: 2px;
 }
 .message-group:not(.compact) .comment .markup{
     overflow: hidden;
@@ -45,6 +45,11 @@ Installation:
 .message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]{
     position: absolute;
     right: 0;
+}
+.message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment h2 .timestamp{
+    color: #FFF;
+    font-size: 13px;
+    font-weight: normal;
 }
 .message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment{
     background-color: var(--accent);
@@ -60,7 +65,7 @@ Installation:
     display: inline-block;
     bottom: -19px;
     left: 100% !important;
-    margin-left: -2px;
+    margin-left: -12px;
 }
 
 .message-group:not(.compact) .avatar-large[style*="YOURIDHERE"]+.comment .mentioned .message-text .mention,
