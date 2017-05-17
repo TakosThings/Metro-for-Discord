@@ -1,6 +1,38 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.20.0
+* Show code language in code blocks (May be removed in future)
+* Adjust some colours of codeblocks
+* Monokai syntax highlighting for codeblocks
+* New badges style
+* Added variables to change the status colours
+* Some style changes to '/' commands box
+* Restyle status changer
+* Rewrite Emoji picker (also fixes various bugs the picker had previously)
+* Remove duplicated icon (was used in search date picker)
+* Remove shit maymay from emoji selector
+* Remove EvenBetterRepo support
+* Remove unused log off icon
+* Remove unused channel settings icon
+* **Fixes**
+  * Search date picker stealth update
+  * Search history query text colour
+  * Instant Invite modal header would overflow if server name was too long
+  * Help text in Instant Invite modal was wrong colour
+  * Nitro info width
+  * Keybinds warning was still default style
+  * Game name input boxes had incorrect hover and focus states
+  * Textbox headers in user account info
+  * 'AKA' tag style
+  * Search bar showing a scrollbar if query was too long
+  * Search bar text was bold
+  * Some neglected CSS relating to scrollbars
+  * Context menu sub menu arrow
+  * Private channels search icon positioning
+  * "(edited)" chat text colour
+  * Direct messages Now playing text
+
 #### 2.19.0
 * Icons for new settings menu items
 * **Fixes**
