@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.20.1
+* **Fixes**
+  * Friends pending tab badge background when tab selected
+  * Chat box emoji button position
+
 #### 2.20.0
 * Show code language in code blocks (May be removed in future)
 * Adjust some colours of codeblocks
