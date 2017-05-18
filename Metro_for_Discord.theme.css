@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.20.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.20.1"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -37,7 +37,7 @@
   width: 100%;
   height: 18px;
   background: var(--b1);
-  content: "Metro For Discord v2.20.0";
+  content: "Metro For Discord v2.20.1";
   color: #FFF;
   font-size: 10px;
   text-align: center;
@@ -1384,7 +1384,7 @@ button.btn.btn-settings:active{
 .channel-textarea-emoji{
     min-width: 48px;
     height: 48px;
-    margin: -12px 0 -18px 10px;
+    margin: 0 0 -18px 10px;
 }
 .typing{
     height: 24px;
@@ -2890,6 +2890,10 @@ div.control-group .shortcut-recorder input[type=text]{
     vertical-align: baseline;
     color: #FFF;
     font-weight: normal;
+}
+#friends .friends-header .tab-bar .tab-bar-item.selected .badge{
+    background-color: #003b67;
+    color: #FFF;
 }
 #friends .friends-header .tab-bar .tab-bar-separator{
     height: 40px;
