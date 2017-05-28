@@ -1,10 +1,36 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.21.0
+* **Discord has started to obfuscate some elements. The following have been updated, but could potentially break again without warning :(**
+  * Buttons
+  * NSFW channel warning
+* Cleaning
+* Add status text to members list while it is loading. An error message will be shown after 60 seconds.
+* Many fixes and adjustments to upload file modals
+* New icons for uploaded files
+* Add background to emoji picker header to hide section headers appearing behind search box
+* Remove background fade from under Quickswitcher input
+* Update Quickswitcher scrollbar
+* Update private calling
+* Remove old user settings animations
+* Move all icons into same area of CSS
+* Optimise and substitute some icon files
+* **Fixes**
+  * BetterDiscord Open Theme/Plugins folder button
+  * Server settings member name colour
+  * White gap at the botton of some generic modals
+  * Upload modal chat box emoji button positioning
+  * System message chat icon position
+  * System message timestamp colour
+  * Audit logs username text colour
+  * Search not opening when search button clicked
+
 #### 2.20.1
 * **Fixes**
   * Friends pending tab badge background when tab selected
   * Chat box emoji button position
+  * Quick select search box sizing
 
 #### 2.20.0
 * Show code language in code blocks (May be removed in future)
