@@ -1,6 +1,18 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.0
+* The Selawik font will be imported and used automatically if Segoe UI is not present
+* Remove chevron icon and use CSS to make one instead
+* Change appearance of settings menu separators
+* Move BetterDiscord version number next to the section header
+* Use a variable to change version info and move the pseudo to where it should belong in the code
+* Logout option in settings menu will now use the colour defined in the `--alert` variable
+* Added `@font-face` to import the Selawik font if Segoe isn't available
+* Some more code organising
+* **Fixes**
+  * Cludge for the the new channels bar
+
 #### 2.21.0
 * **Discord has started to obfuscate some elements. The following have been updated, but could potentially break again without warning :(**
   * Buttons
