@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.21.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.0"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,10 @@
 /* ####################################################### */
 
 :root{
+    --version: "Metro for Discord 2.22.0";
+
     --accent: #0072C6;
+    --link: #0078D7;
 
     --statusonline: #10893E;
     --statusidle: #FFB900;
@@ -19,7 +22,6 @@
     --font: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
     --mono: Consolas, Menlo, Monaco, "Courier New", monospace;
 
-    /* MDL colours */
     --alert: #D02E00;
     --safe: #43B581;
     --b1: #191919;
@@ -29,31 +31,17 @@
 
     --formbd: rgba(255,255,255,.6);
     --formbdh: rgba(255,255,255,.8);
-
-    --link: #0078D7;
 }
 
-.channels-wrap:after{
-  width: 100%;
-  height: 18px;
-  background: var(--b1);
-  content: "Metro For Discord v2.21.0";
-  color: #FFF;
-  font-size: 10px;
-  text-align: center;
-  padding-top: 6px;
+@font-face {
+  font-family: "Selawik";
+  src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.eot");
+  src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.ttf#iefix") format("embedded-opentype"),
+       url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.ttf") format("truetype");
 }
 
 /* RESET */
-body,
-textarea,
-strong,
-input,
-select,
-button,
-h1,
-h2,
-header{
+body,textarea,strong,input,select,button,h1,h2,header{
     font-family: var(--font) !important;
     font-size: 13px !important;
     text-transform:none !important;
@@ -68,13 +56,7 @@ header{
     0%{content: "Loading...";}
     100%{content: ":( \a There seems to be a problem loading the members list. \a There may be a outage.";}
 }
-.popout.popout-bottom-right.no-arrow{
-    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
-}
 
-.app{
-    margin-top: 32px;
-}
 /* Windows Titlebar */
 .titlebar{
     background-color: #000;
@@ -107,6 +89,9 @@ header{
 }
 .win-close:hover{
     background-color: #e81123;
+}
+.app{
+    margin-top: 32px;
 }
 
 /* Settings button */
@@ -194,7 +179,7 @@ button.btn.btn-settings:active{
     border: 0;
     border-radius: 0;
     position: absolute !important;
-    bottom: 56px;
+    bottom: 4px;
     font-size: 0px !important;
     transition: none;
 }
@@ -255,14 +240,14 @@ button.btn.btn-settings:active{
 }
 
 /* CHANNELS */
-.guild-header header{
+.header-1tSljs{
     background-color: var(--b1);
     height: 40px;
     padding: 10px 20px;
     border: 0;
     box-shadow: none;
 }
-.guild-header header span{
+.header-1tSljs span{
     font-size: 20px;
     font-weight: 300;
 }
@@ -300,7 +285,7 @@ button.btn.btn-settings:active{
 .channel-notices .channel-notice.quickswitcher-notice .btn{
     font-weight: normal;
 }
-.guild-channels{
+.container-RYiLUQ{
     background-color: var(--b1);
 }
 .badge{
@@ -327,11 +312,31 @@ button.btn.btn-settings:active{
     background-color: var(--b4);
 }
 .guild-channels .channel-voice .channel-arrow{
-    background-size: 100%;
-    transform: rotate(0deg);
+    background-image: none;
+    transform: rotate(45deg);
+}
+.guild-channels .channel-voice .channel-arrow::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
 }
 .guild-channels .channel-voice.collapsed .channel-arrow{
-    transform: rotate(-90deg);
+    transform: rotate(-45deg);
+}
+.guild-channels .channel-voice.locked .channel-arrow{
+    transform: rotate(0deg);
+}
+.guild-channels .channel-voice.locked .channel-arrow::before{
+    content: "";
+    width: 10px;
+    height: 8px;
+    border-right: 0;
+    border-bottom: 1px solid #FFF;
 }
 .guild-channels .channel-voice .channel-arrow:hover{
     background-color: transparent;
@@ -341,6 +346,40 @@ button.btn.btn-settings:active{
     font-weight: normal;
     text-transform: none;
     text-decoration: none;
+}
+.guild-channels .toggle-muted-text-channels a:before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin-right: 8px;
+    background-image: none;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: rotate(-135deg);
+    vertical-align: bottom;
+}
+.guild-channels .toggle-muted-text-channels.collapse a:before{
+    transform: rotate(45deg);
+    vertical-align: top;
+}
+.channels-wrap::after{
+  content: var(--version);
+  width: 100%;
+  height: 18px;
+  padding-top: 6px;
+  background: var(--b1);
+  color: #FFF;
+  font-size: 10px;
+  text-align: center;
+}
+.contentSelectedText-3j5CXt{
+    background-color: var(--b4);
+}
+.name-2SL4ev{
+    font-weight: normal;
+}
+.nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa{
+    color: rgba(255,255,255,.5);
 }
 
 /* VOICE CONNECTED */
@@ -416,51 +455,41 @@ button.btn.btn-settings:active{
 }
 
 /* ACCOUNT BOX */
-.account{
+.container-iksrDt{
     background-color: var(--b1);
     height: 48px;
+    margin-bottom: 0;
     border: 0;
     padding-right: 0;
     padding-left: 5px;
 }
-.account .avatar-small{
+.container-iksrDt .avatar-small{
     width: 40px;
     height: 40px;
     background-size: 40px 40px;
 }
-.account .status{
+.container-iksrDt .status{
     border: 0;
     right: 0;
     bottom: 0;
     width: 12px;
     height: 12px;
 }
-.account .account-details .username{
+.accountDetails-15i-_e .username .username{
     font-size: 13px;
     font-weight: normal;
     max-width: 75px;
     line-height: 1.5625;
 }
-.account .account-details .discriminator{
+.accountDetails-15i-_e .username .discriminator{
     font-weight: normal;
 }
-.account .btn-group{
-    border: 0;
-    border-radius: 0;
-}
-.account .btn{
+.button-1aU9q1{
     background-color: transparent;
     width: 48px;
     height: 48px;
     border: 0;
     box-shadow: none;
-}
-.account .btn-mute{
-    border-radius: 0;
-}
-.account .btn-mute:hover,
-.account .btn-deafen:hover{
-    background-color: var(--b4);
 }
 
 /* TITLE BAR */
@@ -756,6 +785,33 @@ button.btn.btn-settings:active{
     left: initial;
     width: 40px;
     height: 40px;
+}
+.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--next,
+.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--previous{
+    background-image: none;
+    transform: rotate(0deg);
+}
+.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--next::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: rotate(45deg);
+}
+.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--previous::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    transform: rotate(45deg);
 }
 .ui-calendar-picker .react-datepicker__day-name{
     font-size: 13px;
@@ -2209,6 +2265,7 @@ div.control-group .shortcut-recorder input[type=text]{
     right: 0;
     left: initial !important;
     transform: translateX(0) !important;
+    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
 }
 .popout .themed-popout{
     background-color: #2d2d2d;
@@ -4517,15 +4574,6 @@ div.control-group .shortcut-recorder input[type=text]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAJ1BMVEUAAAD///////////////////////////////////////////////+uPUo5AAAADHRSTlMAEEBQYH+AsMDP0O8kAIODAAAAUElEQVQoz2NgIBeIzjkZiMxn3nPmzGkDJAGb4wpMPYcRfMY9DgwMbKcF4AJsx0FkTwJcgOsQiNSZABfgOYAgyRQ4Awc4BRjQGENZgKBvSQQARfpGEak5SDQAAAAASUVORK5CYII=);
 }
 
-/* Chevron */
-.Select-arrow,
-.guild-channels .toggle-muted-text-channels a:before,
-.guild-channels .channel-voice .channel-arrow,
-.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--next,
-.theme-light .react-datepicker .react-datepicker__navigation.react-datepicker__navigation--previous{
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAFVBMVEUAAAD///////////////////////9Iz20EAAAABnRSTlMAEGCfz9AJnoGIAAAATUlEQVR42u3KMQoAIAwEQaMm/3+yCMoVa1oL8aqD2fJ3YbZP7Xb03tbzmAU93NZVAWdBV0FHQWdBZyFnAUcBRyFPCnlSyJNCnhTylzYADDwBqu31SkwAAAAASUVORK5CYII=);
-}
-
 /* Add guild */
 .guilds-wrapper .guilds-add{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABpJREFUCNdjYMAJGBtIJNj//38AIUjXiwsAAO67D98UrrLcAAAAAElFTkSuQmCC);
@@ -4741,10 +4789,14 @@ div.control-group .shortcut-recorder input[type=text]{
 /* Huge alert */
 .theme-light ._2XJctUDg,
 .theme-light .ui-guild-nsfw .image{
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAC9FBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9JxXEjAAAA+3RSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU9QUVJTVFVWV1hZWltc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);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAVFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////8wXzyWAAAAG3RSTlMAECAwP0BPUF9gb3B/gJCfoK+wv8DP0N/g7/Bjas6/AAACiUlEQVR4Ae2Z3XLyOgxFZRsXaH5Ik0Bi6/3f8xzMoCn+QM02cMNk3daZZW1Jvii0srKy8vGYza7+n93GvEuwO0wsTIfd60X+wP9w8K9VDHyXwb9e8T6NHVhlsM8r8l7M4zjGrDfPadyNYu62hi74dr7RuOIivo/8izFL34/8i+O3BTdus/mqfya+Udy5qxVNYvqpvzabJXvqOSOvQqlGaFCJKAANLuk9qfj+WclcLeinrWa+wS+XxH5vaSF230dY0lbeEIjxVQtJHpYwJNyjggCJckz/s/80iaM/4ERVJmk4QcskzQdILm9RVybpLm/dQslYJhkXSi5LG8okgc+0JOixmhKJkYbii6JL9G/V52dfItnLwwfMMCqRCcbHS5fon+rjxbAEGC4J1uESp7fzztEKl1Ta9TIin+lxSc9nIilkZwMuCdrtkKpFAuSsrGOLSlp9FTNOfGZCJROfmUknu5LDJE4LQD+uS/Sr6cySFyDB0pKHziMSj6Ul8zUgkh6aLf0LnzCP7jXScrac6GgxrfI46q0PhhZigtZ2/b1vwVFpCMFEqI/2Ukg0BNFAXemkkKJS8mGtEzYfLSmkqJTjkj0ZpBCU+eZLTVJxYjYE4/mC+0tig+wITi+B6ZJBX3YdG2VZNEnD8KuVZ53nMCZcnqr0DmfkRHD6GgJhKcsymYcnjpyIlkqRLI5Gd/CWnqDRLQPLbDxDp1jM1dHTc5jTQ4tkdTL0Mks2Y1Z3FFqCp1+4wKVvr2rhmoSarw5HKrjl6PIfCU6W6NUWrg2RqZmxfgCTnAh1HfhKjzp0Kvzf5QX4yBnR08sxPQtoVADbyELc05sw7dXRGXoftksKS+/Ftq0oPpmVlZWV/wBk952DE/v68QAAAABJRU5ErkJggg==);
 }
 
 /* NSFW channel warning */
+._2XJctUDg{
+    width: 100px;
+    height: 100px;
+}
 .theme-light ._2mmhgH4d,
 .theme-light .ui-guild-nsfw .title{
     color: #FFF;
@@ -4794,6 +4846,8 @@ div.control-group .shortcut-recorder input[type=text]{
     font-weight: 300;
     text-transform: none;
     line-height: 1;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    padding-bottom: 12px;
 }
 .theme-light .ui-tab-bar-header{
     padding: 10px 12px;
@@ -4827,8 +4881,11 @@ div.control-group .shortcut-recorder input[type=text]{
 .ui-tab-bar.SIDE .ui-tab-bar-item.brand{
     color: #FFF;
 }
+.ui-tab-bar.SIDE .ui-tab-bar-item.danger{
+    color: var(--alert);
+}
 .theme-light .ui-tab-bar-separator{
-    margin: 8px 0;
+    display: none;
 }
 /* ESC */
 .theme-light .ui-standard-sidebar-view .btn-close{
@@ -5249,6 +5306,16 @@ img[src="/assets/f8696a3854655998a24c219403420867.svg"]{
     height: 16px;
     background-size: 16px;
     border: 0;
+}
+.Select-arrow::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: 3px;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: rotate(45deg);
 }
 /* Keybinds */
 .user-settings-keybinds .ghost-pill{
@@ -5716,6 +5783,16 @@ img[src="/assets/9ad4d437577c5569dc231a787a5377f6.svg"]{
 }
 
 /* BetterDiscord settings */
+#bd-settings-sidebar{
+    position: relative;
+}
+#bd-settings-sidebar span[style*="color:#72767d"]{
+    position: absolute;
+    top: 7px;
+    right: 0;
+    color: #FFF !important;
+    font-weight: normal !important;
+}
 .ui-standard-sidebar-view .content-column.default[style="padding:60px 40px 0px;"]{
     padding: 0 !important;
 }
