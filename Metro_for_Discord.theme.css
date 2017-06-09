@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.1"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.2"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.1";
+    --version: "Metro for Discord 2.22.2";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -384,7 +384,7 @@ button.btn.btn-settings:active{
 }
 
 /* VOICE CONNECTED */
-#rtc-connection{
+.container-3lnMWU{
     background-color: var(--b1);
     padding: 0 0 0 5px;
     border: 0;
