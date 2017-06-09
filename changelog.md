@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.1
+* **Fixes**
+  * Fix #2
+  * Channel font sizes
+
 #### 2.22.0
 * The Selawik font will be imported and used automatically if Segoe UI is not present
 * Remove chevron icon and use CSS to make one instead
