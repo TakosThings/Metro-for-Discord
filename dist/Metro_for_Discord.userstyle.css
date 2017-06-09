@@ -17,3 +17,6 @@ body, input, textarea, button {
 .markdown-modal pre,
 .markdown-modal code.inline {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
+
+.channels-wrap header {
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
