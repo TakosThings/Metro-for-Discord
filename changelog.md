@@ -1,9 +1,13 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.2
+* **Fixes**
+  * Fix issue #3
+
 #### 2.22.1
 * **Fixes**
-  * Fix #2
+  * Fix issue #2
   * Channel font sizes
 
 #### 2.22.0
