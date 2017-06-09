@@ -1,0 +1,12 @@
+// Everything
+body, input, textarea, button{
+    font-family: $font;
+}
+
+// Code block and inline code
+.message-group .comment .markup pre,
+.message-group .comment .markup code.inline,
+.markdown-modal pre,
+.markdown-modal code.inline{
+    font-family: $mono;
+}

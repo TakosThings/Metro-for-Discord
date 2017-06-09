@@ -9,3 +9,11 @@
   font-family: "winjs-symbols";
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.eot");
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.ttf#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.ttf") format("truetype"); }
+body, input, textarea, button {
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+
+.message-group .comment .markup pre,
+.message-group .comment .markup code.inline,
+.markdown-modal pre,
+.markdown-modal code.inline {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
