@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.1"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.0";
+    --version: "Metro for Discord 2.22.1";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -376,6 +376,7 @@ button.btn.btn-settings:active{
     background-color: var(--b4);
 }
 .name-2SL4ev{
+    font-size: 15px;
     font-weight: normal;
 }
 .nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa{
@@ -475,10 +476,10 @@ button.btn.btn-settings:active{
     width: 12px;
     height: 12px;
 }
-.accountDetails-15i-_e .username .username{
+.accountDetails-15i-_e .username{
     font-size: 13px;
     font-weight: normal;
-    max-width: 75px;
+    max-width: 41px;
     line-height: 1.5625;
 }
 .accountDetails-15i-_e .username .discriminator{
