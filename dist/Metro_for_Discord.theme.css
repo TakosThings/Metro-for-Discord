@@ -17,3 +17,45 @@ body, input, textarea, button {
 .markdown-modal pre,
 .markdown-modal code.inline {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
+
+.titlebar {
+  height: 32px;
+  background-color: #000; }
+
+.titlebar:after {
+  content: "Discord";
+  position: absolute;
+  top: 10px;
+  margin-left: 12px;
+  padding-left: 8px;
+  color: #FFF;
+  font-size: 13px; }
+
+.win-buttons {
+  height: 32px;
+  right: 0; }
+
+.win-buttons button {
+  width: 45px;
+  height: 32px;
+  background-size: 100%;
+  opacity: 1; }
+
+.win-minimize:hover,
+.win-maximize:hover {
+  background-color: #111; }
+
+.win-close:hover {
+  background-color: #e81123; }
+
+.app {
+  margin-top: 32px; }
+
+.win-close {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
+
+.win-maximize {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAACZJREFUeAFjGN5gFDBCAZGqoRRJJjOSYPKQVc1IkmoS42Y4g1EAAIDKAC48udQFAAAAAElFTkSuQmCC) !important; }
+
+.win-minimize {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAABdJREFUeAFjGOpgFIwCRjgYdE4bBaMAAB9tAAsTJ4TUAAAAAElFTkSuQmCC) !important; }
