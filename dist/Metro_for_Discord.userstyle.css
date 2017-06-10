@@ -29,3 +29,31 @@ body, input, textarea, button {
   font-weight: 300; }
   .channels-wrap header:hover {
     background-color: #404040; }
+
+.channel-notices .channel-notice {
+  box-shadow: none; }
+
+.channel-notices .channel-notice .message {
+  color: #FFF; }
+
+.channel-notices .channel-notice .message .btn {
+  padding: 9px 12px 10px;
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 1; }
+  .channel-notices .channel-notice .message .btn:hover {
+    border-color: rgba(255, 255, 255, 0.6); }
+  .channel-notices .channel-notice .message .btn:focus {
+    background-color: var(--accent);
+    border-color: rgba(255, 255, 255, 0.8); }
+
+.channel-notices .channel-notice.quickswitcher-notice {
+  background-color: #191919;
+  background-image: none;
+  padding: 20px; }
+
+.channel-notices .channel-notice.quickswitcher-notice .btn {
+  font-weight: normal;
+  text-transform: none; }
