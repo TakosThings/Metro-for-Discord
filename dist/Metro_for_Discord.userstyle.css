@@ -19,4 +19,13 @@ body, input, textarea, button {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
 
 .channels-wrap header {
-  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+  height: 40px;
+  background-color: #191919;
+  padding: 0 8px;
+  border: 0;
+  box-shadow: none;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300; }
+  .channels-wrap header:hover {
+    background-color: #404040; }
