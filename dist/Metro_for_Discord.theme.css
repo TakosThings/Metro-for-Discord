@@ -52,7 +52,16 @@ body, input, textarea, button {
   margin-top: 32px; }
 
 .channels-wrap header {
-  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+  height: 40px;
+  background-color: #191919;
+  padding: 0 8px;
+  border: 0;
+  box-shadow: none;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300; }
+  .channels-wrap header:hover {
+    background-color: #404040; }
 
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
