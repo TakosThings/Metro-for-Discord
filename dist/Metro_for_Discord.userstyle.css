@@ -104,17 +104,6 @@ body, input, textarea, button {
   color: #D02E00;
   opacity: .5; }
 
-.channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-.channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-.channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
-  background-color: #003b67;
-  border: 2px solid #1a4e76;
-  z-index: 2;
-  text-shadow: none;
-  border-radius: 11px;
-  box-shadow: none;
-  font-weight: normal; }
-
 .channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
 .channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
 .channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg {
@@ -169,3 +158,15 @@ body, input, textarea, button {
   margin-bottom: 0;
   background-color: #191919;
   border-top: 1px solid #262626; }
+
+.badge,
+.channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
+  background-color: #003b67;
+  border: 2px solid #1a4e76;
+  z-index: 2;
+  text-shadow: none;
+  border-radius: 11px;
+  box-shadow: none;
+  font-weight: normal; }

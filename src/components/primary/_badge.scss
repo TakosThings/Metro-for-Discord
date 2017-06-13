@@ -1,0 +1,12 @@
+.badge,
+.channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"]{
+    background-color: #003b67;
+    border: 2px solid #1a4e76;
+    z-index: 2;
+    text-shadow: none;
+    border-radius: 11px;
+    box-shadow: none;
+    font-weight: normal;
+}
