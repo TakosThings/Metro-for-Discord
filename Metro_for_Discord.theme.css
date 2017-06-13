@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.2"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.3"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.2";
+    --version: "Metro for Discord 2.22.3";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -240,155 +240,159 @@ button.btn.btn-settings:active{
 }
 
 /* CHANNELS */
-.header-1tSljs{
-    background-color: var(--b1);
-    height: 40px;
-    padding: 10px 20px;
-    border: 0;
-    box-shadow: none;
-}
-.header-1tSljs span{
-    font-size: 20px;
-    font-weight: 300;
-}
-.guild-header header:hover,
-.guild-header.popout-open header{
-    background-color: var(--b2);
-}
-.guild-header ul{
-    top: 40px;
-}
-.channel-notices .channel-notice.invite{
-    background-color: var(--b1);
-    border-bottom: 1px solid var(--b4);
-}
-.channel-notices .channel-notice.quickswitcher-notice{
-    background-color: var(--b1);
-    border-bottom: 1px solid var(--b4);
-    box-shadow: none;
-}
-.channel-notices .channel-notice .message{
-    font-size: 13px;
-    color: #FFF;
-}
-.channel-notices .channel-notice .message .btn{
-    background-color: rgba(255,255,255,.2);
-    border: 1px solid transparent;
-    border-radius: 0;
-}
-.channel-notices .channel-notice .message .btn:hover{
-    border-color: rgba(255,255,255,.4);
-}
-.channel-notices .channel-notice .message .btn:active{
-    background-color: rgba(255,255,255,.4);
-}
-.channel-notices .channel-notice.quickswitcher-notice .btn{
-    font-weight: normal;
-}
-.container-RYiLUQ{
-    background-color: var(--b1);
-}
-.badge{
-    background-color: #003b67;
-    border: 2px solid #1a4e76;
-    z-index: 2;
-    text-shadow: none;
-    border-radius: 11px;
-    box-shadow: none;
-    font-weight: normal;
-}
-.guilds-wrapper .guilds .guild .badge{
-    right: 3px;
-    bottom: 3px;
-}
-.guilds-wrapper .guilds .guild.audio .guild-inner:after{
-    z-index: 1;
-    top: 0;
-    right: 0;
-    border-radius: 0;
-    width: 20px;
-    height: 20px;
-    background-size: 20px;
-    background-color: var(--b4);
-}
-.guild-channels .channel-voice .channel-arrow{
-    background-image: none;
-    transform: rotate(45deg);
-}
-.guild-channels .channel-voice .channel-arrow::before{
-    content: "";
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 1px;
-    left: 3px;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-}
-.guild-channels .channel-voice.collapsed .channel-arrow{
-    transform: rotate(-45deg);
-}
-.guild-channels .channel-voice.locked .channel-arrow{
-    transform: rotate(0deg);
-}
-.guild-channels .channel-voice.locked .channel-arrow::before{
-    content: "";
-    width: 10px;
-    height: 8px;
-    border-right: 0;
-    border-bottom: 1px solid #FFF;
-}
-.guild-channels .channel-voice .channel-arrow:hover{
-    background-color: transparent;
-}
-.guild-channels .toggle-muted-text-channels a{
-    font-size: 13px;
-    font-weight: normal;
-    text-transform: none;
-    text-decoration: none;
-}
-.guild-channels .toggle-muted-text-channels a:before{
-    content: "";
-    width: 8px;
-    height: 8px;
-    margin-right: 8px;
-    background-image: none;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    transform: rotate(-135deg);
-    vertical-align: bottom;
-}
-.guild-channels .toggle-muted-text-channels.collapse a:before{
-    transform: rotate(45deg);
-    vertical-align: top;
-}
-.channels-wrap::after{
-  content: var(--version);
-  width: 100%;
-  height: 18px;
-  padding-top: 6px;
-  background: var(--b1);
-  color: #FFF;
-  font-size: 10px;
-  text-align: center;
-}
-.contentSelectedText-3j5CXt{
-    background-color: var(--b4);
-}
-.name-2SL4ev{
-    font-size: 15px;
-    font-weight: normal;
-}
-.nameDefaultText-QoumjC, .nameDefaultVoice-1swZoh, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa{
-    color: rgba(255,255,255,.5);
-}
+.channels-wrap header {
+  height: 40px;
+  background-color: #191919;
+  padding: 0 8px;
+  border: 0;
+  box-shadow: none;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-weight: 300; }
+  .channels-wrap header:hover {
+    background-color: #404040; }
 
-/* VOICE CONNECTED */
-.container-3lnMWU{
-    background-color: var(--b1);
-    padding: 0 0 0 5px;
-    border: 0;
-}
+.channels-wrap header span {
+  font-size: 20px; }
+
+.channels-wrap > div[class*="noWrap"] {
+  background-color: #191919; }
+
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"] > div[class*="nameDefault"],
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"] > div[class*="nameHovered"] {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"],
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"] {
+  padding-left: 8px; }
+
+.channels-wrap div[class*="containerDefault"] div[class*="name-"] {
+  font-size: 15px;
+  font-weight: 400; }
+
+.channels-wrap div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"] {
+  color: #999; }
+
+.channels-wrap div[class*="contentSelectedText"] {
+  background-color: transparent; }
+
+.channels-wrap div[class*="contentHoveredText"] > div[class*="nameHoveredText"] {
+  color: #FFF; }
+
+.channels-wrap div[class*="wrapperHoveredText"] > div[class*="unread"] {
+  width: 4px;
+  height: 17px;
+  margin-top: -9px;
+  background-color: #FFF;
+  border-radius: 0; }
+
+.channels-wrap div[class*="contentHoveredText"] {
+  background-color: transparent; }
+
+.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
+  opacity: 1; }
+
+.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg > path[class*="colorSelectedText"] {
+  fill: var(--accent); }
+
+.channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
+  color: var(--accent); }
+
+.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg {
+  opacity: 1; }
+
+.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg > path[class*="colorUnreadText"] {
+  fill: #fff; }
+
+.channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
+  color: #FFF; }
+
+.channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"] {
+  width: 4px;
+  height: 17px;
+  margin-top: -9px;
+  background-color: #FFF;
+  border-radius: 0; }
+
+.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg {
+  opacity: .5; }
+
+.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg > path[class*="colorMutedText"] {
+  fill: #D02E00; }
+
+.channels-wrap div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"] {
+  color: #D02E00;
+  opacity: .5; }
+
+.channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+.channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
+  background-color: #003b67;
+  border: 2px solid #1a4e76;
+  z-index: 2;
+  text-shadow: none;
+  border-radius: 11px;
+  box-shadow: none;
+  font-weight: normal; }
+
+.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
+.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
+.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg {
+  opacity: 1; }
+
+.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
+.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
+.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"] {
+  fill: #FFF; }
+
+.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"] {
+  color: #FFF; }
+
+.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
+.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active {
+  background-color: transparent; }
+
+.channel-notices .channel-notice {
+  box-shadow: none; }
+
+.channel-notices .channel-notice .message {
+  color: #FFF; }
+
+.channel-notices .channel-notice .message .btn {
+  padding: 9px 12px 10px;
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 1; }
+  .channel-notices .channel-notice .message .btn:hover {
+    border-color: rgba(255, 255, 255, 0.6); }
+  .channel-notices .channel-notice .message .btn:focus {
+    background-color: var(--accent);
+    border-color: rgba(255, 255, 255, 0.8); }
+
+.channel-notices .channel-notice.quickswitcher-notice {
+  background-color: #191919;
+  background-image: none;
+  padding: 20px; }
+
+.channel-notices .channel-notice.quickswitcher-notice .btn {
+  font-weight: normal;
+  text-transform: none; }
+
+.channels-wrap .container-3lnMWU {
+  background-color: #191919;
+  border-top: 1px solid #262626;
+  border-bottom: 0; }
+
+.channels-wrap .container-iksrDt {
+  margin-bottom: 0;
+  background-color: #191919;
+  border-top: 1px solid #262626; }
+
+/* RTC Connection */
 #rtc-connection .voice-connection-status,
 #rtc-connection .voice-connection-channel{
     font-weight: normal;
