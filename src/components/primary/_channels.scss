@@ -1,3 +1,4 @@
+// Channel header
 .channels-wrap header{
     height: 40px;
     background-color: $b1;
@@ -5,9 +6,111 @@
     border: 0;
     box-shadow: none;
     font-family: $font;
-    font-size: $fsheader;
     font-weight: $fwheader;
     &:hover{
         background-color: $b4;
     }
+}
+.channels-wrap header span{
+    font-size: $fsheader;
+}
+
+// Channels bg
+.channels-wrap > div[class*="noWrap"]{
+    background-color: $b1;
+}
+// Text/Voice channel header
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"] > div[class*="nameDefault"],
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"] > div[class*="nameHovered"]{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+}
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"],
+.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"]{
+    padding-left: 8px;
+}
+
+// All channels
+.channels-wrap div[class*="containerDefault"] div[class*="name-"]{
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+// Normal channel state
+.channels-wrap div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"]{
+    color: #999;   
+}
+//Hovered channel
+.channels-wrap div[class*="contentSelectedText"]{
+    background-color: transparent;
+}
+.channels-wrap div[class*="contentHoveredText"] > div[class*="nameHoveredText"]{
+    color: #FFF;   
+}
+.channels-wrap div[class*="wrapperHoveredText"] > div[class*="unread"]{
+    width: 4px;
+    height: 17px;
+    margin-top: -9px;
+    background-color: #FFF;
+    border-radius: 0;
+}
+// Selected channel
+.channels-wrap div[class*="contentHoveredText"]{
+    background-color: transparent;
+}
+.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg{
+    opacity: 1;
+}
+.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg > path[class*="colorSelectedText"]{
+    fill: var(--accent);
+}
+.channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"]{
+    color: var(--accent);
+}
+// Unread channel
+.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg{
+    opacity: 1;
+}
+.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg > path[class*="colorUnreadText"]{
+    fill: #fff;
+}
+.channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"]{
+    color: #FFF;   
+}
+.channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"]{
+    width: 4px;
+    height: 17px;
+    margin-top: -9px;
+    background-color: #FFF;
+    border-radius: 0;
+}
+// Muted channel
+.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg{
+    opacity: .5;
+}
+.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg > path[class*="colorMutedText"]{
+    fill: $alert;
+}
+.channels-wrap div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"]{
+    color: $alert;
+    opacity: .5;
+}
+
+//Voice Channel
+.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
+.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
+.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg{
+    opacity: 1;
+}
+.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
+.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
+.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"]{
+    fill: #FFF;
+}
+.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"]{
+    color: #FFF;
+}
+.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active{
+    background-color: transparent;
 }
