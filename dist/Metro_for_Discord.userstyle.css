@@ -147,3 +147,8 @@ body, input, textarea, button {
 .channel-notices .channel-notice.quickswitcher-notice .btn {
   font-weight: normal;
   text-transform: none; }
+
+.channels-wrap div[class*="container"]:nth-of-type(2) {
+  background-color: #191919;
+  border-top: 1px solid #262626;
+  border-bottom: 1px solid #262626; }
