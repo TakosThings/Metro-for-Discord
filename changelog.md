@@ -1,6 +1,10 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.4
+* **Fixes**
+  * Fix badges
+
 #### 2.22.3a
 * Re-add version info under account
 
