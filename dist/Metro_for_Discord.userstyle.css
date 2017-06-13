@@ -148,7 +148,12 @@ body, input, textarea, button {
   font-weight: normal;
   text-transform: none; }
 
-.channels-wrap div[class*="container"]:nth-of-type(2) {
+.channels-wrap .container-3lnMWU {
   background-color: #191919;
   border-top: 1px solid #262626;
-  border-bottom: 1px solid #262626; }
+  border-bottom: 0; }
+
+.channels-wrap .container-iksrDt {
+  margin-bottom: 0;
+  background-color: #191919;
+  border-top: 1px solid #262626; }
