@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.3";
+    --version: "Metro for Discord 2.22.3a";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -391,6 +391,17 @@ button.btn.btn-settings:active{
   margin-bottom: 0;
   background-color: #191919;
   border-top: 1px solid #262626; }
+
+.channels-wrap::after{
+  content: var(--version);
+  width: 100%;
+  height: 18px;
+  padding-top: 6px;
+  background: var(--b1);
+  color: #FFF;
+  font-size: 10px;
+  text-align: center;
+}
 
 /* RTC Connection */
 #rtc-connection .voice-connection-status,

@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.3a
+* Re-add version info under account
+
 #### 2.22.3
 * Port new channels style from v3 branch
 
