@@ -117,7 +117,8 @@ body, input, textarea, button {
 .channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"] {
   color: #FFF; }
 
-.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active {
+.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
+.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active {
   background-color: transparent; }
 
 .channel-notices .channel-notice {
