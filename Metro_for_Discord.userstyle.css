@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.3a";
+    --version: "Metro for Discord 2.22.4";
 
     --accent: /*[[accentcolour]]*/;
     --link: #0078D7;
@@ -282,6 +282,7 @@ button.btn.btn-settings:active{
   color: #D02E00;
   opacity: .5; }
 
+.badge,
 .channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
 .channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
 .channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
