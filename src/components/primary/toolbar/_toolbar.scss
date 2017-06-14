@@ -58,3 +58,20 @@
 .header-toolbar button+button{
     margin-left: 0;
 }
+
+// Toolbar button badge
+.header-toolbar .toolbar-badge{
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $alert;
+    border: 0;
+    border-radius: 0;
+}
+
+// Toolbar button active
+.header-toolbar button.active{
+    background-color: var(--accent);
+}
