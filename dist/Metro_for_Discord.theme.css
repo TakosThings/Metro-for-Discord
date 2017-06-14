@@ -74,7 +74,7 @@ body.bd-blue .app::before {
 .channels-wrap header {
   height: 40px;
   background-color: #191919;
-  padding: 0 8px;
+  padding: 0 18px;
   border: 0;
   box-shadow: none;
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
@@ -97,7 +97,7 @@ body.bd-blue .app::before {
 
 .channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"],
 .channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"] {
-  padding-left: 8px; }
+  padding-left: 18px; }
 
 .channels-wrap div[class*="containerDefault"] div[class*="name-"] {
   font-size: 15px;
