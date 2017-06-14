@@ -229,6 +229,12 @@ body.bd-blue .app::before {
 .channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active {
   background-color: transparent; }
 
+.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"] {
+  background-color: #333333;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  border-radius: 0;
+  color: #FFF; }
+
 .channel-notices .channel-notice {
   box-shadow: none; }
 
