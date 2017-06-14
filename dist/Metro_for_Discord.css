@@ -130,6 +130,11 @@ body, input, textarea, button {
     background-color: #D02E00;
     border-color: rgba(255, 255, 255, 0.5); }
 
+.guilds-wrapper .guilds-error {
+  width: 48px;
+  height: 48px;
+  background-size: 24px; }
+
 .guilds-wrapper .guilds-add {
   position: absolute !important;
   bottom: 60px;
