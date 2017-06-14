@@ -1,16 +1,21 @@
+// Core
 @import 'components/core/variables';
 @import 'components/core/font';
 @import 'components/core/reset';
 
+// Windows Titlebar
 @import 'components/ui/titlebar';
 
+// Notices
 @import 'components/notices/light_mode';
 @import 'components/notices/bd_blue';
 
+// Channels
 @import 'components/primary/channels';
 @import 'components/primary/channel_notices';
 @import 'components/primary/rtc';
 @import 'components/primary/account';
 @import 'components/primary/badge';
 
+// Icons
 @import 'components/icons/titlebar';
