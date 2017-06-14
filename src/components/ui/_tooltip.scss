@@ -1,0 +1,17 @@
+.tooltip{
+    padding: 7px 8px 8px;
+    background-color: #191919;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 0;
+    font-size: $fschat;
+    font-weight: $fwui;
+    line-height: $lh;
+}
+.tooltip::after{
+    display: none;
+}
+
+// Hide settings button tooltip
+.tooltip[style*="left: -15px;"]{
+    display: none;
+}
