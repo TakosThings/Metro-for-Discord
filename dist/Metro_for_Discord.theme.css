@@ -71,6 +71,61 @@ body.bd-blue .app::before {
   text-align: center;
   vertical-align: middle; }
 
+.guilds-wrapper {
+  width: 64px;
+  background-color: #262626; }
+
+.guilds-wrapper .guilds {
+  padding: 8px; }
+
+.guilds-wrapper .guilds .guild {
+  width: 48px;
+  height: 48px; }
+
+.guilds-wrapper .guilds .guild + .guild {
+  margin-top: 4px; }
+
+.guilds-wrapper .guilds .guild .guild-inner {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  font-size: 20px;
+  font-weight: 400; }
+
+.guilds-wrapper .guilds .guild .guild-inner a {
+  width: 48px;
+  height: 48px;
+  background-size: 24px;
+  border: 2px solid transparent;
+  box-sizing: border-box; }
+  .guilds-wrapper .guilds .guild .guild-inner a:hover {
+    border-color: rgba(255, 255, 255, 0.5); }
+
+.guilds-wrapper .guilds .guild::before {
+  display: none; }
+
+.guilds-wrapper .guilds .guild.selected .guild-inner {
+  background-color: #FFF !important; }
+
+.guilds-wrapper .guilds .guild.selected .guild-inner a {
+  color: #000; }
+  .guilds-wrapper .guilds .guild.selected .guild-inner a:hover {
+    border-color: rgba(0, 0, 0, 0.5); }
+
+.guilds-wrapper .guilds .guild.unread .guild-inner {
+  background-color: var(--accent) !important; }
+
+.guilds-wrapper .guilds-add {
+  position: absolute !important;
+  bottom: 8px;
+  left: 8px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 24px; }
+  .guilds-wrapper .guilds-add:hover {
+    background-color: #333333; }
+
 .channels-wrap header {
   height: 40px;
   background-color: #191919;
