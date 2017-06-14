@@ -129,6 +129,17 @@ body.bd-blue .app::before {
 .guilds-wrapper .guilds .guild.unread .guild-inner {
   background-color: var(--accent) !important; }
 
+.guilds-wrapper .guilds-error {
+  width: 48px;
+  height: 48px;
+  background-color: #D02E00;
+  border: 2px solid transparent;
+  border-radius: 0;
+  font-weight: normal; }
+  .guilds-wrapper .guilds-error:hover {
+    background-color: #D02E00;
+    border-color: rgba(255, 255, 255, 0.5); }
+
 .guilds-wrapper .guilds-add {
   position: absolute !important;
   bottom: 60px;
