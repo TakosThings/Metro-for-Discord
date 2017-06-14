@@ -116,7 +116,7 @@ body.bd-blue .app::before {
 
 .guilds-wrapper .guilds-add {
   position: absolute !important;
-  bottom: 8px;
+  bottom: 60px;
   left: 8px;
   background-color: transparent;
   border: 0;
@@ -124,6 +124,16 @@ body.bd-blue .app::before {
   color: #FFF;
   font-size: 24px; }
   .guilds-wrapper .guilds-add:hover {
+    background-color: #333333; }
+
+.channels-wrap .container-iksrDt > div[class*="noWrap"] > .button-1aU9q1 {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  border-radius: 0; }
+  .channels-wrap .container-iksrDt > div[class*="noWrap"] > .button-1aU9q1:hover {
     background-color: #333333; }
 
 .channels-wrap header {
