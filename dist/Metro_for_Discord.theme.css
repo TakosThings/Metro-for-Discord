@@ -224,6 +224,59 @@ body.bd-blue .app::before {
   box-shadow: none;
   font-weight: normal; }
 
+.chat > .title-wrap {
+  min-height: 40px;
+  padding-right: 0;
+  background-color: #191919; }
+
+.chat > .title-wrap.title-wrap-dark {
+  border-bottom: 0;
+  box-shadow: none; }
+
+.chat > .title-wrap > .title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: normal;
+  line-height: 40px; }
+
+.chat > .title-wrap > .title .channel-name:before {
+  color: #FFF; }
+
+.chat > .title-wrap > .topic:before {
+  display: none; }
+
+.chat > .title-wrap > .topic {
+  padding-left: 0;
+  font-size: 15px;
+  font-weight: 400; }
+
+.chat > .title-wrap.title-wrap-dark .topic {
+  color: #FFF; }
+
+.header-toolbar {
+  margin-right: 0;
+  margin-left: 12px; }
+
+.header-toolbar .separator {
+  display: none; }
+
+.header-toolbar button {
+  width: 40px;
+  height: 40px;
+  border-radius: 0; }
+  .header-toolbar button:hover {
+    background-color: #404040; }
+
+.header-toolbar button span {
+  width: 40px;
+  height: 40px;
+  background-size: 24px;
+  opacity: 1; }
+
+.header-toolbar button + button {
+  margin-left: 0; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
