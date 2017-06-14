@@ -116,14 +116,14 @@ body, input, textarea, button {
   .guilds-wrapper .guilds-add:hover {
     background-color: #333333; }
 
-.channels-wrap .container-iksrDt > div[class*="noWrap"] > .button-1aU9q1 {
+.channels-wrap div[class*="container"] > div[class*="noWrap"] > div[class*="button"] {
   width: 48px;
   height: 48px;
   position: absolute;
   bottom: 8px;
   left: 8px;
   border-radius: 0; }
-  .channels-wrap .container-iksrDt > div[class*="noWrap"] > .button-1aU9q1:hover {
+  .channels-wrap div[class*="container"] > div[class*="noWrap"] > div[class*="button"]:hover {
     background-color: #333333; }
 
 .channels-wrap header {
