@@ -277,6 +277,29 @@ body.bd-blue .app::before {
 .header-toolbar button + button {
   margin-left: 0; }
 
+.header-toolbar .search {
+  margin-left: 0; }
+
+.header-toolbar .search .search-bar {
+  height: 40px;
+  border-radius: 0; }
+
+.theme-dark .header-toolbar .search .search-bar {
+  background-color: #333333; }
+
+.header-toolbar .search .DraftEditor-root {
+  font-size: 15px;
+  font-weight: 400; }
+
+.header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
+  padding: 8px 10px 10px; }
+
+.theme-dark .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
+  color: #FFF; }
+
+.header-toolbar .search .search-bar .icon {
+  top: 12px; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
