@@ -18,6 +18,21 @@ body, input, textarea, button {
 .markdown-modal code.inline {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
 
+.tooltip {
+  padding: 7px 8px 8px;
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5625; }
+
+.tooltip::after {
+  display: none; }
+
+.tooltip[style*="left: -15px;"] {
+  display: none; }
+
 .app.theme-light::before {
   content: "Please enable the Dark Theme in your Appearance settings.";
   height: 32px;

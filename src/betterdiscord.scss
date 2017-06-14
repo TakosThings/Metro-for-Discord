@@ -3,8 +3,9 @@
 @import 'components/core/font';
 @import 'components/core/reset';
 
-// Windows Titlebar
+// UI
 @import 'components/ui/titlebar';
+@import 'components/ui/tooltip';
 
 // Notices
 @import 'components/notices/light_mode';
