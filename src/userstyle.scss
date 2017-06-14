@@ -1,9 +1,12 @@
+// Core
 @import 'components/core/variables';
 @import 'components/core/font';
 @import 'components/core/reset';
 
+// Notices
 @import 'components/notices/light_mode';
 
+// Channels
 @import 'components/primary/channels';
 @import 'components/primary/channel_notices';
 @import 'components/primary/rtc';
