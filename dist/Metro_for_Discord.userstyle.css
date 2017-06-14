@@ -289,6 +289,19 @@ body, input, textarea, button {
 .header-toolbar button + button {
   margin-left: 0; }
 
+.header-toolbar .toolbar-badge {
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #D02E00;
+  border: 0;
+  border-radius: 0; }
+
+.header-toolbar button.active {
+  background-color: var(--accent); }
+
 .header-toolbar .search {
   margin-left: 0; }
 
