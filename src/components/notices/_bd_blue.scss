@@ -1,0 +1,10 @@
+body.bd-blue .app::before{
+    content: "Please Disable the BD Blue option in BetterDiscord settings.";
+    height: 32px;
+    background-color: $alert;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
