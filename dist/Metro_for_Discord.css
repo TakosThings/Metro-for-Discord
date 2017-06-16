@@ -544,6 +544,42 @@ body, input, textarea, button {
 .typing strong {
   font-weight: normal; }
 
+.chat .welcome-message {
+  background-color: #232323;
+  align-items: baseline; }
+
+.chat .welcome-message h1 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+.chat .welcome-message p {
+  width: 100%;
+  margin: 0 0 0 10px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  vertical-align: middle; }
+
+.chat .welcome-message p strong {
+  font-weight: 500; }
+
+.chat .welcome-message .item-container .icon {
+  width: 32px;
+  height: 32px; }
+
+.chat .welcome-message .item-container .icon.exclamation,
+.chat .welcome-message .item-container .icon.share,
+.chat .welcome-message .item-container .icon.mobile,
+.chat .welcome-message .item-container .icon.twitter {
+  background-size: 32px;
+  filter: grayscale(100%) brightness(200%); }
+
+.chat .welcome-message > .empty-message {
+  display: none; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
