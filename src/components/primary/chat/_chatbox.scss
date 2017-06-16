@@ -104,6 +104,26 @@
     margin-left: -10px;
 }
 
+// Countdown chatbox
+.channel-textarea-guard{
+    font-weight: normal;
+}
+.theme-dark .channel-textarea-guard{
+    background-image: none;
+    color: #FFF;
+}
+.channel-textarea-guard .countdown{
+    font-size: $fsheader;
+    font-weight: $fwheader;
+}
+.channel-textarea-guard .countdown .countdown-number{
+    min-width: auto;
+    border: 0;
+}
+.theme-dark .channel-textarea-guard .countdown-number{
+    background-color: transparent;
+}
+
 // Typing
 .typing{
     height: 20px;
