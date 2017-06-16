@@ -376,6 +376,8 @@ body, input, textarea, button {
 .header-toolbar .search .search-bar .icon {
   top: 12px; }
 
+.theme-dark .chat,
+.theme-dark .chat > .content,
 .theme-dark .messages-wrapper {
   background-color: #262626; }
 
@@ -406,3 +408,105 @@ body, input, textarea, button {
 .message-group.compact .message .message-text .markup .user-name {
   font-size: 15px;
   font-weight: 400; }
+
+.channel-textarea-emoji {
+  width: 32px;
+  height: 32px;
+  left: 0; }
+
+.theme-dark .channel-textarea-emoji {
+  opacity: 1; }
+
+.channel-textarea-emoji > .sprite-item {
+  width: 32px;
+  height: 32px;
+  background-image: none !important;
+  opacity: .7;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle; }
+
+.channel-textarea-emoji > .sprite-item::before {
+  content: "\E170";
+  font-family: winjs-symbols; }
+
+.channel-textarea-emoji.hovered .sprite-item,
+.channel-textarea-emoji.popout-open .sprite-item {
+  transform: none; }
+
+.channel-textarea-upload {
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  margin: 0;
+  opacity: .7;
+  border: 0;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle; }
+  .channel-textarea-upload:hover {
+    background-color: transparent;
+    opacity: 1;
+    border: 0; }
+
+.channel-textarea-upload::before {
+  content: "\E11C";
+  font-family: winjs-symbols; }
+
+.theme-dark .channel-textarea-inner .channel-textarea-upload:hover {
+  background-color: transparent; }
+
+.theme-dark .channel-textarea-upload {
+  background-image: none; }
+  .theme-dark .channel-textarea-upload:hover {
+    background-image: none; }
+
+.channel-textarea-upload ~ textarea {
+  padding-left: 32px; }
+
+.chat form {
+  margin: 0;
+  padding: 0 20px;
+  background-color: #232323;
+  box-shadow: none; }
+
+.theme-dark .chat form {
+  border: 0; }
+
+.channel-textarea {
+  margin: 10px 0 20px; }
+
+.channel-textarea-inner {
+  padding: 6px 10px;
+  border: 0;
+  border-radius: 0; }
+
+.theme-dark .channel-textarea-inner {
+  background-color: transparent; }
+
+.channel-textarea-inner textarea {
+  margin-right: 0;
+  margin-left: 32px;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+.theme-dark .channel-textarea-inner textarea,
+.theme-dark .channel-textarea-inner textarea::-webkit-input-placeholder {
+  color: #FFF; }
+
+.typing {
+  height: 20px;
+  line-height: 1; }
+
+.theme-dark .chat form .typing {
+  padding: 0 20px;
+  background-color: transparent; }
+
+.typing .ellipsis {
+  display: none; }
+
+.typing strong {
+  font-weight: normal; }
