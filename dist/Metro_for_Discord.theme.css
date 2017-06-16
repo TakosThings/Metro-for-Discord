@@ -540,6 +540,13 @@ body.bd-blue .app::before {
 .theme-dark .channel-textarea-inner textarea::-webkit-input-placeholder {
   color: #FFF; }
 
+.channel-textarea.channel-textarea-disabled {
+  opacity: 1;
+  font-weight: normal; }
+
+.channel-textarea.channel-textarea-disabled textarea {
+  margin-left: -10px; }
+
 .typing {
   height: 20px;
   line-height: 1; }

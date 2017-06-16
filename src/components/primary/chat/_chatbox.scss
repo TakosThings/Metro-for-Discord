@@ -95,6 +95,15 @@
     color: #FFF;
 }
 
+// Disabled chatbox
+.channel-textarea.channel-textarea-disabled{
+    opacity: 1;
+    font-weight: normal;
+}
+.channel-textarea.channel-textarea-disabled textarea{
+    margin-left: -10px;
+}
+
 // Typing
 .typing{
     height: 20px;
