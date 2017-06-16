@@ -1,0 +1,36 @@
+.theme-dark .messages-wrapper{
+    background-color: $b2;
+}
+
+.theme-dark .message-group:not(.has-divider){
+    border-bottom-color: rgba(255,255,255,0.05);
+}
+.theme-dark .message-group .comment .markup{
+    color: #FFF;
+}
+
+// Cozy
+.message-group{
+    margin-left: 0;
+    padding: 15px 20px;
+}
+.message-group h2 strong{
+    font-size: $fsui;
+    font-weight: 400;
+}
+
+// Compact
+.message-group.compact{
+    margin-left: 0;
+    padding: 3px 20px;
+}
+.theme-dark .message-group.compact .timestamp{
+    color: rgba(255,255,255,0.5);
+}
+.message-group.compact .message:hover .timestamp{
+    color: #FFF !important;
+}
+.message-group.compact .message .message-text .markup .user-name{
+    font-size: $fsui;
+    font-weight: 400;
+}

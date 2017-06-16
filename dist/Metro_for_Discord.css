@@ -409,6 +409,37 @@ body, input, textarea, button {
 .header-toolbar .search .search-bar .icon {
   top: 12px; }
 
+.theme-dark .messages-wrapper {
+  background-color: #262626; }
+
+.theme-dark .message-group:not(.has-divider) {
+  border-bottom-color: rgba(255, 255, 255, 0.05); }
+
+.theme-dark .message-group .comment .markup {
+  color: #FFF; }
+
+.message-group {
+  margin-left: 0;
+  padding: 15px 20px; }
+
+.message-group h2 strong {
+  font-size: 15px;
+  font-weight: 400; }
+
+.message-group.compact {
+  margin-left: 0;
+  padding: 3px 20px; }
+
+.theme-dark .message-group.compact .timestamp {
+  color: rgba(255, 255, 255, 0.5); }
+
+.message-group.compact .message:hover .timestamp {
+  color: #FFF !important; }
+
+.message-group.compact .message .message-text .markup .user-name {
+  font-size: 15px;
+  font-weight: 400; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
