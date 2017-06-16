@@ -304,9 +304,9 @@ body, input, textarea, button {
   border-bottom: 0; }
 
 .channels-wrap .container-iksrDt {
+  height: 60px;
   margin-bottom: 0;
-  background-color: #191919;
-  border-top: 1px solid #262626; }
+  background-color: #191919; }
 
 .badge,
 .channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
