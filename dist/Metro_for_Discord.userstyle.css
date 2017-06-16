@@ -72,7 +72,10 @@ body, input, textarea, button {
   height: 48px;
   background-size: 24px;
   border: 2px solid transparent;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 15px !important;
+  font-weight: normal;
+  line-height: 48px; }
   .guilds-wrapper .guilds .guild .guild-inner a:hover {
     border-color: rgba(255, 255, 255, 0.5); }
 
@@ -86,6 +89,9 @@ body, input, textarea, button {
   color: #000; }
   .guilds-wrapper .guilds .guild.selected .guild-inner a:hover {
     border-color: rgba(0, 0, 0, 0.5); }
+
+.guilds-wrapper .guilds .guild.selected.unread .guild-inner {
+  background-color: #FFF !important; }
 
 .guilds-wrapper .guilds .guild.unread .guild-inner {
   background-color: var(--accent) !important; }
