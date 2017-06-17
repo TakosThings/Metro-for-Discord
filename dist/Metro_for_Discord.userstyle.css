@@ -194,6 +194,9 @@ body, input, textarea, button {
   background-color: #FFF;
   transform: rotate(45deg); }
 
+.channels-wrap div[class*="contentSelectedText"]:active {
+  transform: initial; }
+
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
   opacity: 1; }
 
