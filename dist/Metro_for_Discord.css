@@ -2,6 +2,10 @@
 /* ## License: CC-BY-NC-SA                              ## */
 /* ## https://github.com/TakosThings                    ## */
 /* ####################################################### */
+/* ##################### Third Party ##################### */
+/* ## Monokai code highlighting from highlight.js       ## */
+/* ## https://highlightjs.org                           ## */
+/* ####################################################### */
 :root {
   --accent: #0072C6; }
 
@@ -679,3 +683,69 @@ body, input, textarea, button {
 
 .win-minimize {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAABdJREFUeAFjGOpgFIwCRjgYdE4bBaMAAB9tAAsTJ4TUAAAAAElFTkSuQmCC) !important; }
+
+.theme-dark .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f; }
+
+.theme-dark .hljs,
+.theme-dark .hljs-tag,
+.theme-dark .hljs-subst {
+  color: #f8f8f2; }
+
+.theme-dark .hljs-strong,
+.theme-dark .hljs-emphasis {
+  color: #a8a8a2; }
+
+.theme-dark .hljs-bullet,
+.theme-dark .hljs-quote,
+.theme-dark .hljs-number,
+.theme-dark .hljs-regexp,
+.theme-dark .hljs-literal,
+.theme-dark .hljs-link {
+  color: #ae81ff; }
+
+.theme-dark .hljs-code,
+.theme-dark .hljs-title,
+.theme-dark .hljs-section,
+.theme-dark .hljs-selector-class {
+  color: #a6e22e; }
+
+.theme-dark .hljs-strong {
+  font-weight: bold; }
+
+.theme-dark .hljs-emphasis {
+  font-style: italic; }
+
+.theme-dark .hljs-keyword,
+.theme-dark .hljs-selector-tag,
+.theme-dark .hljs-name,
+.theme-dark .hljs-attr {
+  color: #f92672; }
+
+.theme-dark .hljs-symbol,
+.theme-dark .hljs-attribute {
+  color: #66d9ef; }
+
+.theme-dark .hljs-params,
+.theme-dark .hljs-class .theme-dark .hljs-title {
+  color: #f8f8f2; }
+
+.theme-dark .hljs-string,
+.theme-dark .hljs-type,
+.theme-dark .hljs-built_in,
+.theme-dark .hljs-builtin-name,
+.theme-dark .hljs-selector-id,
+.theme-dark .hljs-selector-attr,
+.theme-dark .hljs-selector-pseudo,
+.theme-dark .hljs-addition,
+.theme-dark .hljs-variable,
+.theme-dark .hljs-template-variable {
+  color: #e6db74; }
+
+.theme-dark .hljs-comment,
+.theme-dark .hljs-deletion,
+.theme-dark .hljs-meta {
+  color: #75715e; }
