@@ -106,6 +106,26 @@
     opacity: .5;
 }
 
+// Show/hide * muted text channels
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"]{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span{
+    background-image: none;
+}
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: rotate(45deg);
+}
+
 //Voice Channel
 .channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
 .channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,

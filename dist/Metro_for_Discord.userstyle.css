@@ -229,6 +229,24 @@ body, input, textarea, button {
   color: #D02E00;
   opacity: .5; }
 
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span {
+  background-image: none; }
+
+.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border-right: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  transform: rotate(45deg); }
+
 .channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
 .channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
 .channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg {
