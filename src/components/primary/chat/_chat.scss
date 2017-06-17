@@ -20,6 +20,9 @@
     font-size: $fsui;
     font-weight: 400;
 }
+.theme-dark .message-group h2 strong{
+    color: #ACACAC;
+}
 
 // Compact
 .message-group.compact{
@@ -35,4 +38,7 @@
 .message-group.compact .message .message-text .markup .user-name{
     font-size: $fsui;
     font-weight: 400;
+}
+.theme-dark .message-group.compact .message .markup .user-name{
+    color: #ACACAC;
 }
