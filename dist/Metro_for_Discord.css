@@ -434,6 +434,9 @@ body, input, textarea, button {
   font-size: 15px;
   font-weight: 400; }
 
+.theme-dark .message-group h2 strong {
+  color: #ACACAC; }
+
 .message-group.compact {
   margin-left: 0;
   padding: 3px 20px; }
@@ -447,6 +450,9 @@ body, input, textarea, button {
 .message-group.compact .message .message-text .markup .user-name {
   font-size: 15px;
   font-weight: 400; }
+
+.theme-dark .message-group.compact .message .markup .user-name {
+  color: #ACACAC; }
 
 .channel-textarea-emoji {
   width: 32px;
