@@ -212,7 +212,7 @@ body.bd-blue .app::before {
 .channels-wrap div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"] {
   color: #999; }
 
-.channels-wrap div[class*="contentSelectedText"] {
+.channels-wrap div[class*="contentHoveredText"] {
   background-color: transparent; }
 
 .channels-wrap div[class*="contentHoveredText"] > div[class*="nameHoveredText"] {
@@ -222,35 +222,44 @@ body.bd-blue .app::before {
   width: 4px;
   height: 17px;
   margin-top: -9px;
-  background-color: #FFF;
+  background-color: var(--accent);
   border-radius: 0; }
 
-.channels-wrap div[class*="contentHoveredText"] {
+.channels-wrap div[class*="contentSelectedText"] {
   background-color: transparent; }
+
+.channels-wrap div[class*="contentSelectedText"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -5px;
+  background-color: #FFF;
+  transform: rotate(45deg); }
 
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
   opacity: 1; }
 
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg > path[class*="colorSelectedText"] {
-  fill: var(--accent); }
+  fill: #FFF; }
 
 .channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
-  color: var(--accent); }
+  color: #FFF; }
 
 .channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg {
   opacity: 1; }
 
 .channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg > path[class*="colorUnreadText"] {
-  fill: #fff; }
+  fill: var(--accent); }
 
 .channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
-  color: #FFF; }
+  color: var(--accent); }
 
 .channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"] {
   width: 4px;
   height: 17px;
   margin-top: -9px;
-  background-color: #FFF;
+  background-color: var(--accent);
   border-radius: 0; }
 
 .channels-wrap div[class*="contentMutedText"] > .margin-reset > svg {
