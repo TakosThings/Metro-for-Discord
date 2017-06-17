@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.5
+* Changed channels selected/unread colours so they match the guilds
+  * Unread channels will be highlighted with your `--accent` colour
+  * The selected channel will be highlighted white
+
 #### 2.22.4
 * **Fixes**
   * Fix badges

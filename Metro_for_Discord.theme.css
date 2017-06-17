@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.4"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.5"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.4";
+    --version: "Metro for Discord 2.22.5";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -285,7 +285,7 @@ button.btn.btn-settings:active{
   width: 4px;
   height: 17px;
   margin-top: -9px;
-  background-color: #FFF;
+  background-color: var(--accent);
   border-radius: 0; }
 
 .channels-wrap div[class*="contentHoveredText"] {
@@ -295,25 +295,25 @@ button.btn.btn-settings:active{
   opacity: 1; }
 
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg > path[class*="colorSelectedText"] {
-  fill: var(--accent); }
+  fill: #FFF; }
 
 .channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
-  color: var(--accent); }
+  color: #FFF; }
 
 .channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg {
   opacity: 1; }
 
 .channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg > path[class*="colorUnreadText"] {
-  fill: #fff; }
+  fill: var(--accent); }
 
 .channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
-  color: #FFF; }
+  color: var(--accent); }
 
 .channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"] {
   width: 4px;
   height: 17px;
   margin-top: -9px;
-  background-color: #FFF;
+  background-color: var(--accent);
   border-radius: 0; }
 
 .channels-wrap div[class*="contentMutedText"] > .margin-reset > svg {
