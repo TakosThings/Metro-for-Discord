@@ -437,6 +437,7 @@ body.bd-blue .app::before {
   color: #FFF; }
 
 .message-group {
+  margin-right: 0;
   margin-left: 0;
   padding: 15px 20px; }
 
