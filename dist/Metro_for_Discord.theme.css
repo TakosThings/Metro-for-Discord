@@ -237,6 +237,9 @@ body.bd-blue .app::before {
   background-color: #FFF;
   transform: rotate(45deg); }
 
+.channels-wrap div[class*="contentSelectedText"]:active {
+  transform: initial; }
+
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
   opacity: 1; }
 
