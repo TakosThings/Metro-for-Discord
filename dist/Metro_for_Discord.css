@@ -864,6 +864,49 @@ body, input, textarea, button {
   font-size: 25px;
   font-weight: 300; }
 
+#friends .friends-header {
+  height: 40px;
+  padding: 0; }
+
+.theme-dark #friends .friends-header {
+  background-color: #191919;
+  border: 0;
+  box-shadow: none; }
+
+#friends .friends-header .tab-bar {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: normal; }
+
+#friends .friends-header .tab-bar .tab-bar-item {
+  margin: 0;
+  padding: 0 12px;
+  border-radius: 0;
+  line-height: 40px; }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item {
+  color: #FFF; }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected {
+  background-color: var(--accent);
+  color: #FFF; }
+
+#friends .friends-header .tab-bar .tab-bar-separator {
+  display: none; }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+  background-color: transparent; }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+  background-color: rgba(255, 255, 255, 0.1); }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+  background-color: var(--accent);
+  color: #FFF; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
