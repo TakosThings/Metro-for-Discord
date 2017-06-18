@@ -353,7 +353,8 @@ body, input, textarea, button {
 .chat > .title-wrap > .topic {
   padding-left: 0;
   font-size: 15px;
-  font-weight: 400; }
+  font-weight: 400;
+  line-height: 27px; }
 
 .chat > .title-wrap.title-wrap-dark .topic {
   color: #FFF; }
