@@ -897,6 +897,14 @@ body, input, textarea, button {
 #friends .friends-header .tab-bar .tab-bar-separator {
   display: none; }
 
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item .badge {
+  background-color: #003b67;
+  color: #FFF;
+  vertical-align: middle; }
+
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) .badge {
+  color: #FFF; }
+
 .theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
   background-color: transparent; }
 
