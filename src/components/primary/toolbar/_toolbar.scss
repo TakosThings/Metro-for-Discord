@@ -34,6 +34,19 @@
     color: #FFF;
 }
 
+// Topic link
+.chat>.title-wrap.title-wrap-dark .topic a{
+    color: $a;
+}
+
+// Mention
+.chat>.title-wrap.title-wrap-dark .topic .mention{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
 // Toolbar
 .header-toolbar{
     margin-right: 0;
