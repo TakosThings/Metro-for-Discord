@@ -292,6 +292,11 @@ body, input, textarea, button {
     background-color: var(--accent);
     border-color: rgba(255, 255, 255, 0.8); }
 
+.channel-notices .channel-notice.invite {
+  background-color: #191919;
+  background-image: none;
+  padding: 20px; }
+
 .channel-notices .channel-notice.quickswitcher-notice {
   background-color: #191919;
   background-image: none;

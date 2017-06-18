@@ -20,6 +20,14 @@
     }
 }
 
+// Invite friends
+.channel-notices .channel-notice.invite{
+    background-color: $b1;
+    background-image: none;
+    padding: 20px;
+}
+
+// Quickswitch
 .channel-notices .channel-notice.quickswitcher-notice{
     background-color: $b1;
     background-image: none;
