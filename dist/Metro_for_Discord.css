@@ -907,6 +907,75 @@ body, input, textarea, button {
   background-color: var(--accent);
   color: #FFF; }
 
+#friends .friends-table {
+  margin-top: 0; }
+
+.theme-dark .friends-table {
+  background-color: #262626; }
+
+#friends .friends-table .friends-table-header {
+  padding: 8px 20px; }
+
+#friends .friends-table .friends-table-header .friends-column {
+  font-weight: normal;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.theme-dark #friends .friends-table .friends-table-header .friends-column {
+  color: #FFF; }
+
+#friends .friends-table .friends-row {
+  height: 50px !important;
+  margin: 0;
+  padding: 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal; }
+  #friends .friends-table .friends-row:hover {
+    margin: 0;
+    padding: 0 20px;
+    border-radius: 0; }
+
+.theme-dark #friends .friends-table .friends-row .friends-column-name,
+.theme-dark #friends .friends-table .friends-row .friends-column-status {
+  color: #FFF; }
+
+.theme-dark #friends .friends-table .friends-row .friends-column-status .status-text strong {
+  font-weight: 400; }
+
+#friends .friends-table .friends-row .friends-column-actions .friends-action {
+  border-radius: 0; }
+
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call {
+  background-color: #43B581; }
+  #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept:hover,
+  #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call:hover {
+    background-color: #359066 !important; }
+
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove {
+  background-color: #D02E00; }
+  #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel:hover,
+  #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore:hover,
+  #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove:hover {
+    background-color: #9d2300 !important; }
+
+#friends .friends-table .friends-row .friends-column-actions,
+#friends .friends-table .friends-row:hover .friends-column-actions {
+  padding-right: 20px; }
+
+.theme-dark #friends .friends-empty.section-pending .empty-state-image {
+  display: none; }
+
+#friends .friends-empty p {
+  font-size: 15px;
+  font-weight: 400; }
+
+.theme-dark #friends .friends-empty p {
+  color: #FFF; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
