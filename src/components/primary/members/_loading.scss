@@ -1,0 +1,26 @@
+@keyframes membersloading{
+    0%{content: "Loading...";}
+    100%{content: ":( \a There seems to be a problem loading the members list. \a There may be a outage.";}
+}
+
+.theme-dark .channel-members-loading{
+    background-color: $b1;
+}
+.channel-members-loading > *{
+    display: none;
+}
+.channel-members-loading::before{
+    content: "";
+    width: 200px;
+    display: block;
+    margin: 24px;
+    font-size: 15px;
+    line-height: 1.5625;
+    white-space: pre-wrap;
+    animation: membersloading 3s steps(1, end);
+    -webkit-animation-fill-mode: forwards;
+}
+.channel-members-loading::first-line{
+    font-size: 25px;
+    font-weight: 300;
+}

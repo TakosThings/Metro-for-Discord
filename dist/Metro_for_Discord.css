@@ -713,6 +713,32 @@ body, input, textarea, button {
   font-size: 12px;
   font-weight: normal; }
 
+@keyframes membersloading {
+  0% {
+    content: "Loading..."; }
+  100% {
+    content: ":( \a There seems to be a problem loading the members list. \a There may be a outage."; } }
+.theme-dark .channel-members-loading {
+  background-color: #191919; }
+
+.channel-members-loading > * {
+  display: none; }
+
+.channel-members-loading::before {
+  content: "";
+  width: 200px;
+  display: block;
+  margin: 24px;
+  font-size: 15px;
+  line-height: 1.5625;
+  white-space: pre-wrap;
+  animation: membersloading 3s steps(1, end);
+  -webkit-animation-fill-mode: forwards; }
+
+.channel-members-loading::first-line {
+  font-size: 25px;
+  font-weight: 300; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
