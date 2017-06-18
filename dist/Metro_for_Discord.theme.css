@@ -483,6 +483,10 @@ body.bd-blue .app::before {
 .header-toolbar button.active {
   background-color: var(--accent); }
 
+.private-channel-call-btns-wrapper {
+  height: 40px;
+  margin-right: 0; }
+
 .header-toolbar .search {
   margin-left: 0; }
 
