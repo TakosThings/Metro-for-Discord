@@ -686,6 +686,42 @@ body.bd-blue .app::before {
   text-transform: uppercase;
   word-spacing: 10px; }
 
+.theme-dark .channel-members {
+  background-color: #191919; }
+
+.channel-members h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.theme-dark .channel-members h2 {
+  color: #FFF; }
+
+.theme-dark .channel-members .member {
+  color: #ACACAC; }
+
+.theme-dark .channel-members .member.popout-open,
+.theme-dark .channel-members .member:hover {
+  background: rgba(255, 255, 255, 0.1); }
+
+.channel-members .member .member-username {
+  font-size: 15px;
+  font-weight: 400; }
+
+.channel-members .avatar-small .status {
+  bottom: 0;
+  right: 0;
+  border: 0; }
+
+.channel-members .member .member-activity {
+  color: #FFF;
+  font-size: 0; }
+
+.channel-members .member .member-activity strong {
+  font-size: 12px;
+  font-weight: normal; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
