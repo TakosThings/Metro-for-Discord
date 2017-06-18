@@ -554,6 +554,64 @@ body, input, textarea, button {
 .theme-dark .system-message {
   color: #FFF; }
 
+.chat .divider {
+  margin: 8px 0; }
+
+.chat .divider > span {
+  padding: 0 8px;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5625; }
+
+.chat .divider.divider-red > span {
+  text-transform: none;
+  line-height: 1.5625; }
+
+.divider + .divider {
+  margin-top: 25px; }
+
+.chat .divider:before {
+  display: none; }
+
+.theme-dark .friends-table .messages .divider:not(.red) div,
+.theme-dark .messages-wrapper .messages .divider:not(.red) div {
+  background-color: #FFF; }
+
+.theme-dark .friends-table .messages .divider:not(.red) span,
+.theme-dark .messages-wrapper .messages .divider:not(.red) span {
+  background-color: #FFF;
+  color: #000; }
+
+.theme-dark .friends-table .messages .divider.divider-red > span,
+.theme-dark .messages-wrapper .messages .divider.divider-red > span {
+  background-color: #D02E00;
+  color: #FFF; }
+
+.theme-dark .friends-table .messages .divider.divider-red > div,
+.theme-dark .messages-wrapper .messages .divider.divider-red > div {
+  background-color: #D02E00;
+  opacity: 1; }
+
+.theme-light .friends-table .messages .divider:not(.red) div,
+.theme-light .messages-wrapper .messages .divider:not(.red) div {
+  background-color: #000; }
+
+.theme-light .friends-table .messages .divider:not(.red) span,
+.theme-light .messages-wrapper .messages .divider:not(.red) span {
+  background-color: #000;
+  color: #FFF; }
+
+.theme-light .friends-table .messages .divider.divider-red > span,
+.theme-light .messages-wrapper .messages .divider.divider-red > span {
+  background-color: #D02E00;
+  color: #FFF; }
+
+.theme-light .friends-table .messages .divider.divider-red > div,
+.theme-light .messages-wrapper .messages .divider.divider-red > div {
+  background-color: #D02E00;
+  opacity: 1; }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;
