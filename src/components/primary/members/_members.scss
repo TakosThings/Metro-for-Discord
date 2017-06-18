@@ -1,0 +1,44 @@
+.theme-dark .channel-members{
+    background-color: $b1;
+}
+
+// Header
+.channel-members h2{
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    letter-spacing: normal;
+    text-transform: none;
+}
+.theme-dark .channel-members h2{
+    color: #FFF;
+}
+
+// Member
+.theme-dark .channel-members .member{
+    color: #ACACAC;
+}
+.theme-dark .channel-members .member.popout-open,
+.theme-dark .channel-members .member:hover{
+    background: rgba(255,255,255,0.1);
+}
+.channel-members .member .member-username{
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+// Avatar
+.channel-members .avatar-small .status{
+    bottom: 0;
+    right: 0;
+    border: 0;
+}
+
+// Playing status
+.channel-members .member .member-activity{
+    color: #FFF;
+    font-size: 0;
+}
+.channel-members .member .member-activity strong{
+    font-size: 12px;
+    font-weight: normal;
+}
