@@ -915,6 +915,35 @@ body, input, textarea, button {
   background-color: var(--accent);
   color: #FFF; }
 
+.private-channels .search-bar {
+  height: 40px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #262626;
+  box-shadow: none; }
+
+.private-channels .search-bar .search-bar-inner {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0; }
+
+.private-channels .search-bar .search-bar-inner::before {
+  content: "\E094";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: #FFF;
+  font-family: winjs-symbols; }
+
+.private-channels .search-bar input {
+  height: 40px;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 15px; }
+
+.private-channels .search-bar input::-webkit-input-placeholder {
+  color: #FFF; }
+
 #friends .friends-table {
   margin-top: 0; }
 
