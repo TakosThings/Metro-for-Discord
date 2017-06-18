@@ -458,6 +458,17 @@ body, input, textarea, button {
 .theme-dark .message-group.compact .message .markup .user-name {
   color: #ACACAC; }
 
+.theme-dark .message-group a {
+  color: #0078D7; }
+
+.mention {
+  color: var(--accent); }
+
+.theme-dark .message-group .comment .markup .mention {
+  background-color: transparent; }
+  .theme-dark .message-group .comment .markup .mention:hover {
+    background-color: transparent; }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;

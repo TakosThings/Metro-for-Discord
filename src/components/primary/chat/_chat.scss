@@ -43,3 +43,19 @@
 .theme-dark .message-group.compact .message .markup .user-name{
     color: #ACACAC;
 }
+
+// Links
+.theme-dark .message-group a{
+    color: $a;
+}
+
+// Mentions
+.mention{
+    color: var(--accent);
+}
+.theme-dark .message-group .comment .markup .mention{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
