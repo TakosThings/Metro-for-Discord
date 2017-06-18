@@ -1,0 +1,41 @@
+.theme-dark{
+    & .scroller-wrap .scroller.messages,
+      #friends .scroller{
+        &::-webkit-scrollbar{
+            width: 12px;
+        }
+        &::-webkit-scrollbar-button{
+            height: 13px;
+            background-color: #171717;
+        }
+        &::-webkit-scrollbar-button:vertical:increment{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
+            background-size: 12px 12px;
+            border-top: 1px solid #171717;
+            &:hover{
+                background-color: #747474;
+            }
+        }
+        &::-webkit-scrollbar-button:vertical:decrement{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
+            background-size: 12px 12px;
+            border-bottom: 1px solid #171717;
+            &:hover{
+                background-color: #747474;
+            }
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: #454545;
+            border: 0;
+            border-radius: 0;
+            &:hover{
+                background-color: #747474;
+            }
+        }
+        &::-webkit-scrollbar-track-piece{
+            background-color: #171717;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+}
