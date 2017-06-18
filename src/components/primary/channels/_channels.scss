@@ -20,16 +20,12 @@
     background-color: $b1;
 }
 // Text/Voice channel header
-.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"] > div[class*="nameDefault"],
-.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"] > div[class*="nameHovered"]{
+.channels-wrap > div[class*="noWrap"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="wrapperDefault"] > div[class*="nameDefault"],
+.channels-wrap > div[class*="noWrap"] > div[class*="scrollerWrap"] > div[class*="scroller"]> div[class*="wrapperHovered"] > div[class*="nameHovered"]{
     color: #FFF;
     font-size: $fsheader;
     font-weight: $fwheader;
     text-transform: none;
-}
-.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperDefault"],
-.channels-wrap > div[class*="noWrap"] > .ui-scroller-wrap > .scroller > div[class*="wrapperHovered"]{
-    padding-left: 18px;
 }
 
 // All channels
