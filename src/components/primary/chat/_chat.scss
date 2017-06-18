@@ -59,3 +59,12 @@
         background-color: transparent;
     }
 }
+
+// System message
+.system-message{
+    padding-left: 10px;
+    font-size: $fsui;
+}
+.theme-dark .system-message{
+    color: #FFF;
+}
