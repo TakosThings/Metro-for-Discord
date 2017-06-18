@@ -885,6 +885,7 @@ body, input, textarea, button {
 .private-channels .search-bar {
   height: 40px;
   padding: 0;
+  background-color: #191919;
   border: 0;
   border-bottom: 1px solid #262626;
   box-shadow: none; }
@@ -910,6 +911,58 @@ body, input, textarea, button {
 
 .private-channels .search-bar input::-webkit-input-placeholder {
   color: #FFF; }
+
+.private-channels {
+  background-color: #191919; }
+
+.private-channels header {
+  height: 30px;
+  opacity: 1;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+  .private-channels header:hover {
+    background-color: transparent; }
+
+.private-channels .channel a {
+  border-radius: 0; }
+
+.private-channels .channel .channel-name {
+  opacity: 1;
+  color: #FFF;
+  font-weight: normal; }
+
+.private-channels .channel .icon-friends {
+  width: auto;
+  height: auto;
+  margin-left: 8px;
+  background-image: none; }
+
+.private-channels .channel .icon-friends::before {
+  content: "\E136";
+  color: #FFF;
+  font-family: winjs-symbols;
+  font-size: 21px;
+  line-height: 30px;
+  vertical-align: middle; }
+
+.private-channels .channel:hover a {
+  background-color: #262626; }
+
+.private-channels .channel.selected a {
+  background-color: transparent; }
+
+.private-channels .channel.selected::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  margin-top: -5px;
+  background-color: #FFF;
+  transform: rotate(45deg); }
 
 #friends .friends-table {
   margin-top: 0; }
