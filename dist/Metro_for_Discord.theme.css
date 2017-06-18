@@ -402,6 +402,14 @@ body.bd-blue .app::before {
 .chat > .title-wrap.title-wrap-dark .topic {
   color: #FFF; }
 
+.chat > .title-wrap.title-wrap-dark .topic a {
+  color: #0078D7; }
+
+.chat > .title-wrap.title-wrap-dark .topic .mention {
+  background-color: transparent; }
+  .chat > .title-wrap.title-wrap-dark .topic .mention:hover {
+    background-color: transparent; }
+
 .header-toolbar {
   margin-right: 0;
   margin-left: 12px; }
