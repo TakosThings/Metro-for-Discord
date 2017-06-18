@@ -477,6 +477,13 @@ body, input, textarea, button {
   .theme-dark .message-group .comment .markup .mention:hover {
     background-color: transparent; }
 
+.system-message {
+  padding-left: 10px;
+  font-size: 15px; }
+
+.theme-dark .system-message {
+  color: #FFF; }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;
