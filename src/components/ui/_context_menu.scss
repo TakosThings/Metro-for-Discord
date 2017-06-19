@@ -1,0 +1,74 @@
+.context-menu{
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 0;
+    box-shadow: none;
+}
+.theme-dark.context-menu{
+    background-color: $b1;
+}
+.context-menu .item-group{
+    border-color: rgba(255,255,255,.2);
+}
+.context-menu .item{
+    color: #FFF;
+    font-weight: normal;
+    padding: 6px 10px;
+    border-radius: 0;
+    margin: 0;
+    line-height: $lh;
+    text-align: left;
+}
+.theme-dark.context-menu .item{
+    color: #FFF;
+}
+.theme-dark.context-menu .item:hover{
+    background-color: $b3;
+    color: #FFF;
+}
+.context-menu .item:first-of-type{
+    margin-top: 8px;
+}
+.context-menu .item:last-of-type{
+    margin-bottom: 8px;
+}
+
+// Sub menu
+.context-menu .item-subMenu{
+    background-color: transparent;
+    background-image: none;
+}
+.theme-dark.context-menu .item-subMenu{
+    background-color: transparent;
+    background-image: none;
+}
+.theme-dark.context-menu .item-subMenu:hover,
+.context-menu .item-subMenu:hover{
+    background-image: none;
+}
+.context-menu .item-subMenu::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    position: absolute;
+    right: 10px;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+    transform: rotate(40deg);
+}
+.context-menu .context-menu{
+    margin-left: 166px;
+}
+.theme-dark.context-menu .context-menu{
+    background-color: $b1;
+    border-color: rgba(255,255,255,.2);
+    box-shadow: none;
+}
+
+// Red item
+.context-menu .item.danger{
+    color: $alert;
+    &:hover{
+        color: $alert !important;
+    }
+}
