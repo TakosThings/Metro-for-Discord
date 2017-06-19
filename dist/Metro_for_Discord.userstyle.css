@@ -475,6 +475,9 @@ body, input, textarea, button {
 .theme-dark .message-group:not(.has-divider) {
   border-bottom-color: rgba(255, 255, 255, 0.05); }
 
+.message-group .comment .markup {
+  font-size: 13px; }
+
 .theme-dark .message-group .comment .markup {
   color: #FFF; }
 
@@ -501,7 +504,7 @@ body, input, textarea, button {
   color: #FFF !important; }
 
 .message-group.compact .message .message-text .markup .user-name {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400; }
 
 .theme-dark .message-group.compact .message .markup .user-name {
