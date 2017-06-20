@@ -673,25 +673,6 @@ body, input, textarea, button {
   background-color: #D02E00;
   opacity: 1; }
 
-.theme-light .friends-table .messages .divider:not(.red) div,
-.theme-light .messages-wrapper .messages .divider:not(.red) div {
-  background-color: #000; }
-
-.theme-light .friends-table .messages .divider:not(.red) span,
-.theme-light .messages-wrapper .messages .divider:not(.red) span {
-  background-color: #000;
-  color: #FFF; }
-
-.theme-light .friends-table .messages .divider.divider-red > span,
-.theme-light .messages-wrapper .messages .divider.divider-red > span {
-  background-color: #D02E00;
-  color: #FFF; }
-
-.theme-light .friends-table .messages .divider.divider-red > div,
-.theme-light .messages-wrapper .messages .divider.divider-red > div {
-  background-color: #D02E00;
-  opacity: 1; }
-
 .chat .new-messages-bar {
   left: 0;
   right: 12px;
