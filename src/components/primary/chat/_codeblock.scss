@@ -4,8 +4,11 @@
     border-radius: 0;
 }
 .theme-dark .message-group .comment .markup pre{
-    background-color: #2F2F2F;
     border-color: #5E5E5E;
+}
+.theme-dark .message-group .comment .markup code.inline,
+.theme-dark .message-group .comment .markup pre code{
+    background-color: #2F2F2F;
 }
 
 // Language
