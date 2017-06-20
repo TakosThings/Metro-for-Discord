@@ -26,3 +26,9 @@
     text-transform: uppercase;
     word-spacing: 10px;
 }
+
+// Inline code
+.message-group .comment .markup code.inline{
+    padding: 2px 4px;
+    border-radius: 0;
+}
