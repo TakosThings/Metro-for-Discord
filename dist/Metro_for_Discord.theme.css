@@ -591,7 +591,11 @@ body.bd-blue .app::before {
   font-size: 13px; }
 
 .theme-dark .message-group .comment .markup {
-  color: #FFF; }
+  color: #FFF;
+  padding-right: 20px; }
+
+.message-group .comment {
+  margin-right: 0; }
 
 .message-group {
   margin-right: 0;
