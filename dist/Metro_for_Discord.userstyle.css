@@ -507,6 +507,8 @@ body, input, textarea, button {
   height: 40px;
   background-size: 24px;
   opacity: 1; }
+  .header-toolbar button span:hover {
+    opacity: 1; }
 
 .header-toolbar button + button {
   margin-left: 0; }
