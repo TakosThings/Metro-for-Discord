@@ -688,6 +688,34 @@ body, input, textarea, button {
   background-color: #D02E00;
   opacity: 1; }
 
+.chat .new-messages-bar {
+  left: 0;
+  right: 12px;
+  background-color: var(--accent);
+  border-radius: 0; }
+
+.chat .new-messages-bar button:first-child,
+.chat .new-messages-bar button:last-child {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
+.chat .jump-to-present-bar {
+  left: 0;
+  right: 12px;
+  border-radius: 0; }
+
+.theme-dark .chat .jump-to-present-bar {
+  background-color: var(--accent); }
+
+.chat .jump-to-present-bar button:first-child,
+.chat .jump-to-present-bar button:last-child {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;
