@@ -131,3 +131,35 @@
     background-color: $alert;
     opacity: 1;
 }
+
+// New messages
+.chat .new-messages-bar{
+    left: 0;
+    right: 12px;
+    background-color: var(--accent);
+    border-radius: 0;
+}
+.chat .new-messages-bar button:first-child,
+.chat .new-messages-bar button:last-child{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// Jump to present
+.chat .jump-to-present-bar{
+    left: 0;
+    right: 12px;
+    border-radius: 0;
+}
+.theme-dark .chat .jump-to-present-bar{
+    background-color: var(--accent);
+}
+.chat .jump-to-present-bar button:first-child,
+.chat .jump-to-present-bar button:last-child{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
