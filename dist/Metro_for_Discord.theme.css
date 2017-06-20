@@ -1174,6 +1174,137 @@ body.bd-blue .app::before {
 .theme-dark #friends .friends-empty p {
   color: #FFF; }
 
+.user-popout {
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+.user-popout .header {
+  padding: 0 20px;
+  background-color: #191919;
+  background-image: none;
+  border-radius: 0;
+  align-items: baseline; }
+
+.user-popout .avatar-wrapper {
+  margin: 20px 0 10px; }
+
+.user-popout .avatar-wrapper .avatar-popout {
+  background-color: transparent;
+  border: 0; }
+
+.user-popout .avatar-wrapper .avatar-hint {
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none; }
+
+.user-popout .avatar-wrapper .avatar-popout .status {
+  box-shadow: none; }
+
+.user-popout .username-wrapper {
+  text-align: left; }
+
+.user-popout .username-wrapper .discord-tag,
+.user-popout .username-wrapper .nickname,
+.user-popout .username-wrapper .username {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5625; }
+
+.user-popout .username-wrapper.has-nickname .discriminator,
+.user-popout .username-wrapper.has-nickname .username {
+  color: #FFF; }
+
+.user-popout .bot-tag {
+  padding: .2em .6em .3em;
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: lowercase;
+  vertical-align: middle; }
+
+.user-popout .bot-tag.bot-tag-invert {
+  background-color: #000;
+  color: #FFF !important; }
+
+.user-popout .username-wrapper .activity {
+  color: #FFF;
+  line-height: 1.5625; }
+
+.user-popout .username-wrapper .activity strong {
+  font-weight: 400; }
+
+.user-popout .body {
+  background-color: #191919; }
+
+.user-popout .body .section .label {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: none;
+  line-height: 1.5625; }
+
+.user-popout .body .roles .icon,
+.user-popout .body .section .label .icon {
+  display: none; }
+
+.user-popout .body .section.roles {
+  max-height: 160px;
+  overflow-y: auto; }
+
+.user-popout .member-roles .member-role {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  border-radius: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5625; }
+
+.user-popout .note {
+  padding: 0 10px; }
+
+.user-popout .note textarea {
+  min-height: 36px;
+  padding: 4px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #FFF;
+  font-size: 15px;
+  line-height: 1.5625; }
+  .user-popout .note textarea:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .user-popout .note textarea:focus {
+    background-color: #FFF;
+    color: #000;
+    border-color: var(--accent); }
+
+.user-popout .note textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+.user-popout .footer .quick-message-wrapper {
+  margin: 0 10px 10px 10px; }
+
+.user-popout .quick-message {
+  height: 36px;
+  padding: 4px 8px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  font-size: 15px;
+  line-height: 1.5625; }
+
+.user-popout .quick-message::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+.user-popout .footer {
+  background-color: #191919;
+  border: 0; }
+
+.user-popout .footer .update-notice {
+  display: none; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
