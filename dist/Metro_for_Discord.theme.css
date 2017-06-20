@@ -919,6 +919,10 @@ body.bd-blue .app::before {
   text-transform: uppercase;
   word-spacing: 10px; }
 
+.message-group .comment .markup code.inline {
+  padding: 2px 4px;
+  border-radius: 0; }
+
 .theme-dark .channel-members {
   background-color: #191919; }
 
