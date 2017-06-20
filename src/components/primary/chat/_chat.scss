@@ -138,6 +138,9 @@
     right: 12px;
     background-color: var(--accent);
     border-radius: 0;
+    &:hover{
+        background-color: var(--accent);
+    }
 }
 .chat .new-messages-bar button:first-child,
 .chat .new-messages-bar button:last-child{
@@ -155,6 +158,9 @@
 }
 .theme-dark .chat .jump-to-present-bar{
     background-color: var(--accent);
+    &:hover{
+        background-color: var(--accent);
+    }
 }
 .chat .jump-to-present-bar button:first-child,
 .chat .jump-to-present-bar button:last-child{
