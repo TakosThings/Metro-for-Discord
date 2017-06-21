@@ -1216,6 +1216,61 @@ body.bd-blue .app::before {
 .theme-dark #friends .friends-empty p {
   color: #FFF; }
 
+#friends .friends-table .friend-table-add-wrapper h2 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+#friends .friends-table .friend-table-add-wrapper .friend-table-add-description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5625; }
+
+.theme-dark #friends .friends-table .friend-table-add-description {
+  color: #FFF; }
+
+.add-friend-input-wrapper {
+  padding: 0;
+  background-color: transparent;
+  border: 0; }
+
+.add-friend-input-wrapper .add-friend-hint {
+  display: none; }
+
+.add-friend-input-wrapper .add-friend-input {
+  min-height: 36px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: normal; }
+
+.add-friend-input-wrapper .add-friend-input {
+  border: 1px solid rgba(255, 255, 255, 0.6); }
+  .add-friend-input-wrapper .add-friend-input:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .add-friend-input-wrapper .add-friend-input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+#friends .btn {
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 400; }
+  #friends .btn:hover {
+    background-color: var(--accent);
+    border-color: rgba(255, 255, 255, 0.6); }
+  #friends .btn:active {
+    filter: brightness(80%); }
+
+#friends .friends-empty.section-add-friend-no-connection .empty-state-image {
+  display: none; }
+
 .user-popout {
   border: 1px solid var(--accent);
   border-radius: 0; }
