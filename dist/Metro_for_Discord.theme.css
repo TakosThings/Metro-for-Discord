@@ -1305,6 +1305,15 @@ body.bd-blue .app::before {
 .user-popout .footer .update-notice {
   display: none; }
 
+.bot-tag {
+  background-color: #000;
+  padding: .2em .6em .3em;
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: normal;
+  text-transform: lowercase;
+  vertical-align: middle; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
