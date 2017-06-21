@@ -900,6 +900,30 @@ body, input, textarea, button {
   padding: 2px 4px;
   border-radius: 0; }
 
+.embed-wrapper .embed-color-pill {
+  border-radius: 0; }
+
+.theme-dark .message-group .embed-wrapper .embed-color-pill {
+  background-color: #000; }
+
+.message-group .embed {
+  border: 0;
+  border-radius: 0; }
+
+.theme-dark .message-group .embed {
+  background-color: #191919; }
+
+.theme-dark .message-group .embed .embed-footer,
+.theme-dark .message-group .embed .embed-provider {
+  color: #FFF; }
+
+.theme-dark .message-group .embed .embed-description,
+.theme-dark .message-group .embed .embed-fields {
+  color: #FFF; }
+
+.message-group .embed .embed-thumbnail:not(.embed-thumbnail-video) img {
+  border-radius: 50%; }
+
 .theme-dark .channel-members {
   background-color: #191919; }
 

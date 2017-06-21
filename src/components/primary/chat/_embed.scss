@@ -1,0 +1,28 @@
+// Pill
+.embed-wrapper .embed-color-pill{
+    border-radius: 0;
+}
+.theme-dark .message-group .embed-wrapper .embed-color-pill{
+    background-color: #000;
+}
+
+// Embed body
+.message-group .embed{
+    border: 0;
+    border-radius: 0;
+}
+.theme-dark .message-group .embed{
+    background-color: $b1;
+}
+
+.theme-dark .message-group .embed .embed-footer,
+.theme-dark .message-group .embed .embed-provider{
+    color: #FFF;
+}
+.theme-dark .message-group .embed .embed-description,
+.theme-dark .message-group .embed .embed-fields{
+    color: #FFF;
+}
+.message-group .embed .embed-thumbnail:not(.embed-thumbnail-video) img{
+    border-radius: 50%;
+}
