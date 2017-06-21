@@ -717,6 +717,19 @@ body.bd-blue .app::before {
   font-weight: 400;
   text-transform: none; }
 
+.message-group .edit-message .edit-container-inner {
+  margin-right: 64px; }
+
+.message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea {
+  background-color: #191919;
+  padding: 8px; }
+
+.theme-dark .message-group .edit-message .edit-operation {
+  color: #FFF; }
+
+.message-group .edit-message .edit-operation > a {
+  color: var(--accent); }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;
