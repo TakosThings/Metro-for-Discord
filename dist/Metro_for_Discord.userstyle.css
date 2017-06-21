@@ -437,6 +437,11 @@ body, input, textarea, button {
   margin-bottom: 0;
   background-color: #191919; }
 
+.container-iksrDt .status {
+  border: 0;
+  right: 0;
+  bottom: 0; }
+
 .badge,
 .channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
 .channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
