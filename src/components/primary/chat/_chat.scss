@@ -154,3 +154,18 @@
     font-weight: $fwui;
     text-transform: none;
 }
+
+// Editing message
+.message-group .edit-message .edit-container-inner{
+    margin-right: 64px;
+}
+.message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea{
+    background-color: $b1;
+    padding: 8px;
+}
+.theme-dark .message-group .edit-message .edit-operation{
+    color: #FFF;
+}
+.message-group .edit-message .edit-operation>a{
+    color: var(--accent);
+}
