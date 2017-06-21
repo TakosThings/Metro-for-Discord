@@ -707,6 +707,9 @@ body, input, textarea, button {
 .message-group .edit-message .edit-operation > a {
   color: var(--accent); }
 
+.message-group-blocked {
+  display: none; }
+
 .channel-textarea-emoji {
   width: 32px;
   height: 32px;

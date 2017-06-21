@@ -169,3 +169,8 @@
 .message-group .edit-message .edit-operation>a{
     color: var(--accent);
 }
+
+// Blocked messages
+.message-group-blocked{
+    display: none;
+}
