@@ -907,8 +907,8 @@ body, input, textarea, button {
   content: attr(class);
   width: 100%;
   display: block;
-  margin: -7px 0 .5em -35px;
-  padding: 2px 42px 2px 0;
+  margin: -7px 0 .5em -280px;
+  padding: 2px 287px 2px 0;
   background-color: #5E5E5E;
   color: #FFF;
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
