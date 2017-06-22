@@ -956,16 +956,29 @@ body.bd-blue .app::before {
   background-color: #191919; }
 
 .channel-members h2 {
+  margin: 0 15px 10px 15px;
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
   font-size: 20px;
   font-weight: 300;
+  line-height: 1.5625;
   letter-spacing: normal;
-  text-transform: none; }
+  text-transform: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
 
 .theme-dark .channel-members h2 {
   color: #FFF; }
 
+.channel-members .member {
+  padding: 5px 20px; }
+
 .theme-dark .channel-members .member {
   color: #ACACAC; }
+
+.channel-members .member .member-inner {
+  width: 150px; }
 
 .theme-dark .channel-members .member.popout-open,
 .theme-dark .channel-members .member:hover {
