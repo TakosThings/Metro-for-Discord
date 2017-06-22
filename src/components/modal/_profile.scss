@@ -1,0 +1,147 @@
+#user-profile-modal{
+    border: 1px solid var(--accent);
+    border-radius: 0;
+}
+#user-profile-modal .header{
+    background-color: $b1;
+    background-image: none;
+}
+#user-profile-modal .header::after{
+    display: none;
+}
+
+// Avatar
+#user-profile-modal .avatar-wrapper{
+    background-color: transparent;
+}
+#user-profile-modal .avatar-profile{
+    width: 90px;
+    height: 90px;
+    background-size: 90px;
+}
+#user-profile-modal .avatar-profile .status{
+    border: 0;
+}
+
+// Username
+#user-profile-modal .header .header-info .header-info-inner .discord-tag{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+}
+#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator{
+    color: #FFF;
+    font-size: $fsui;
+}
+
+// Tabs
+#user-profile-modal .tab-bar-container{
+    background-color: $b1;
+    padding-left: 20px;
+    border: 0;
+    box-shadow: none;
+}
+#user-profile-modal .tab-bar .tab-bar-item{
+    color: rgba(255,255,255,.7);
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    border: 0;
+    &:hover{
+        color: #FFF;
+    }
+}
+#user-profile-modal .tab-bar .tab-bar-item.selected{
+    color: var(--accent);
+}
+
+// Body
+#user-profile-modal .scroller{
+    background-color: $b1;
+}
+#user-profile-modal .guilds .section .section-header{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+#user-profile-modal .guilds .section+.section{
+    border: 0;
+}
+
+// Notes
+#user-profile-modal .guilds .section .note textarea{
+    min-height: 36px;
+    margin: 0;
+    padding: 4px 8px;
+    border: 1px solid $inputborder;
+    color: #FFF;
+    font-size: $fsui;
+    line-height: $lh;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        color: #000;
+        border-color: var(--accent);
+    }
+}
+
+// Connected account
+#user-profile-modal .guilds .section .connected-accounts .connected-account{
+    width: 210px;
+    background-color: #000;
+    border: 0;
+    border-radius: 0;
+    position: relative;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name{
+    color: #FFF;
+    font-size: $fwui;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account a{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#user-profile-modal .guilds .section .connected-accounts .connected-account a .connected-account-open-icon{
+    width: 100%;
+    height: 100%;
+    background-position: 200px center;
+}
+
+// Mutual Server
+#user-profile-modal .guilds .guild{
+    color: #FFF;
+    &:hover{
+        background: transparent;
+        color: #FFF;
+    }
+}
+#user-profile-modal .guilds .guild .guild-name{
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: $lh;
+}
+#user-profile-modal .guilds .guild .guild-nick{
+    color: #FFF;
+    font-size: $fschat;
+    line-height: $lh;
+}
+
+// Empty
+#user-profile-modal .empty{
+    background-color: $b1;
+}
+#user-profile-modal .empty .empty-icon-friends{
+    display: none;
+}
+#user-profile-modal .empty .empty-text{
+    margin-top: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
