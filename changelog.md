@@ -1,6 +1,11 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.7
+* Port updated channels CSS from v3
+* **Fixes**
+  * Fix full class name showing in codeblock language bar
+
 #### 2.22.6
 * **Temporary fix**: Remove all Settings panels style until new settings CSS is written
 
