@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.6
+* **Temporary fix**: Remove all Settings panels style until new settings CSS is written
+
 #### 2.22.5
 * Changed channels selected/unread colours so they match the guilds
   * Unread channels will be highlighted with your `--accent` colour
