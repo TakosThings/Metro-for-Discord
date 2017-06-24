@@ -1284,6 +1284,58 @@ body.bd-blue .app::before {
 #friends .friends-empty.section-add-friend-no-connection .empty-state-image {
   display: none; }
 
+.theme-dark .layer,
+.theme-dark .layers {
+  background-color: #000; }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar {
+  width: 320px;
+  padding: 15px 0 0 0; }
+
+.theme-dark .ui-standard-sidebar-view .sidebar-region {
+  background-color: #000; }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="header"] {
+  padding: 0 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 42px;
+  text-transform: none; }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"] {
+  margin-bottom: 0;
+  padding: 14px 16px;
+  border-radius: 0;
+  color: #FFF;
+  font-style: 15px;
+  font-weight: 400; }
+  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"]:hover {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"],
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"] {
+  background-color: transparent;
+  color: var(--accent); }
+  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]:hover,
+  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]:hover {
+    background-color: rgba(255, 255, 255, 0.15); }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]::before,
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]::before {
+  content: "";
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: var(--accent);
+  margin-top: -10px; }
+
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="separator"] {
+  display: none; }
+
 .user-popout {
   border: 1px solid var(--accent);
   border-radius: 0; }

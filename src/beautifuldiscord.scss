@@ -46,6 +46,10 @@
 @import 'components/friends/table';
 @import 'components/friends/add_friend';
 
+// Settings
+@import 'components/settings/core';
+@import 'components/settings/sidebar';
+
 // Popouts
 @import 'components/popout/user';
 @import 'components/popout/chat_options';
