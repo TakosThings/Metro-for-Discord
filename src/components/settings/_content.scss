@@ -1,0 +1,151 @@
+.ui-standard-sidebar-view .content-column.default{
+    padding: 26px 15px 0 0;
+}
+.theme-dark .ui-standard-sidebar-view .content-region{
+    background-color: #000;
+}
+
+// Headers
+// This gets most headers, but some others need to be targetted manually
+.user-settings-account > h2,
+.ui-standard-sidebar-view .content-column.default > div > h2{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: none;
+}
+// User security
+.user-settings-security > h5{
+    color: #FFF !important;
+    font-size: 27px;
+    font-weight: 300;
+    text-transform: none;
+}
+
+// Descriptions
+.theme-dark div[class^="description-"]{
+    color: #FFF;
+    font-weight: normal;
+}
+
+// 2FA status text (ie. "Two-Factor Authentication enabled")
+.user-settings-security div[class^="flexChild"] > div > h5{
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// NITRO
+.premium-settings .premium-header .premium-logo{
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 300;
+    line-height: 1;
+    text-indent: 0;
+}
+
+// Sub headers
+.user-settings-security > h5,
+.ui-standard-sidebar-view .content-column.default .margin-bottom-40 > h5{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+}
+.user-settings-security > h5{
+    color: #FFF !important;
+}
+
+// NITRO
+.premium-settings .premium-header .premium-logo{
+    width: auto;
+    height: auto;
+    background-image: none;
+}
+.theme-dark .premium-settings .premium-header.splash{
+    height: auto;
+    background-image: none;
+    border: 0;
+}
+.premium-settings .premium-header .premium-splash-wumpus{
+    display: none;
+}
+
+// Warnings
+// Overlay warning
+div[class*="cardWarning-"]{
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+.theme-dark div[class*="cardWarning-"] > div > div > div{
+    color: #FF0;
+}
+.theme-dark div[class*="cardWarning-"] > div > div > div a{
+    font-weight: normal;
+}
+// Keybinds warning
+.user-settings-keybinds .ghost-pill{
+    background-color: transparent;
+    padding: 0;
+    color: #FF0;
+    font-size: $fsui;
+    line-height: 1;
+}
+
+// Cards
+// Main Cards
+.theme-dark div[class*="cardPrimary"]{
+    background-color: #101010;
+    border: 0;
+    border-radius: 0;
+}
+.theme-dark .ui-hover-card:before{
+    background-color: #191919;
+    border: 0;
+}
+.theme-dark div[class*="cardPrimary"] h5{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+// Keybind card
+.user-settings-keybinds .keybind-group{
+    padding-left: 8px;
+    padding-right: 8px;
+}
+// Now playing
+.theme-dark .user-settings-games .not-detected,
+.theme-light .user-settings-games .not-detected{
+    background-color: $b4;
+}
+// Game
+.user-settings-games .game{
+    padding: 20px;
+}
+// Remove icon
+.user-settings-keybinds .remove-keybind,
+.user-settings-games .game .remove-game{
+    right: -12px;
+}
+// Hovered card
+.ui-hover-card:before{
+    right: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+// Images removal
+// User security
+.user-settings-security-image{
+    display: none;
+}
+// Streamer Mode
+img[src="/assets/616e078b351d0df460971441949c53a3.svg"]{
+    display: none;
+}
+// Keybinds
+div[style*="/assets/f3bb89a27e9d102f748da035cd7e5df7.svg"]{
+    display: none;
+}

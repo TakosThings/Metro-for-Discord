@@ -1,0 +1,255 @@
+// Form labels
+.theme-dark .ui-form-item > h5{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// Text boxes
+.theme-dark div[class^="inputWrapper"] > input[type="text"],
+.theme-dark div[class^="inputWrapper"] > input[type="password"]{
+    height: 36px;
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000;
+    }
+}
+
+// Dropdown
+.ui-select{
+    font-size: 15px;
+}
+.ui-select .Select-control,
+.ui-select .Select-option{
+    min-height: 36px;
+}
+.theme-dark .ui-select .Select-control{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+.theme-dark .ui-select .is-open .Select-control{
+    border-color: $inputborderhover;
+}
+.Select-value{
+    top: -2px;
+}
+// Down arrow
+.Select-arrow-zone{
+    padding-right: 8px;
+}
+.theme-dark .ui-select .is-focused .Select-control .Select-arrow,
+.theme-dark .ui-select .Select-control .Select-arrow{
+    width: 8px;
+    height: 8px;
+    border: 0;
+    border-right: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    transform: rotate(45deg) translateY(-5px);
+}
+// Dropdown menu
+.Select-menu-outer{
+    background-color: $b1;
+    margin-top: 0;
+    border-radius: 0;
+}
+.ui-select .Select-menu{
+    border-radius: 0;
+}
+.theme-dark .ui-select .Select-menu-outer{
+    border: 0;
+    box-shadow: none;
+}
+.Select-option:last-child{
+    border-radius: 0;
+}
+.theme-dark .ui-select .Select-option.is-selected{
+    background-color: transparent;
+}
+.theme-dark .ui-select .Select-option.is-focused,
+.theme-dark .ui-select .Select-option:hover{
+    background-color: var(--accent);
+}
+
+// Buttons
+button[class*="button-"]{
+    padding: 9px 12px 10px;
+    font-size: 15px;
+    line-height: 1;
+}
+// Branded button (eg. View Backup Codes or account deatils Edit)
+button[class^="buttonBrandFilledDefault"]{
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-weight: normal;
+    &:hover{
+        background-color: var(--accent);
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
+// Green button (eg. account deatils Save)
+button[class^="buttonGreenFilledDefault"]{
+    background-color: $safe;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-weight: normal;
+    &:hover{
+        background-color: $safe;
+        border-color: $inputborder;
+    }
+    &:focus{
+        background-color: darken($safe, 10%);
+        border-color: $inputborderhover;
+    }
+}
+
+// Red outlined button (eg. Remove 2FA button)
+button[class^="buttonRedOutlined"]{
+    border-color: $alert;
+    border-radius: 0;
+    color: $alert;
+    font-weight: normal;
+    &:hover{
+        border-color: $inputborder;
+    }
+}
+
+// Link button (eg. account details Cancel)
+button[class^="buttonPrimaryLinkDefault"]{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    font-weight: normal;
+    &:hover{
+        background-color: rgba(255,255,255,.3);
+        border-color: $inputborder;
+    }
+    &:hover div[class^="contentsDefault"]{
+        background-image: none !important;
+    }
+    &:focus{
+        background-color: #FFF;
+        color: #000;
+        border-color: $inputborderhover;
+    }
+}
+
+// Checkboxes
+.theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"]{
+    border-color: $inputborder;
+    border-radius: 0;
+}
+.theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class*="checked"]{
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+// Checkmark
+.theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class*="checked"] > svg > g > polyline{
+    stroke: #FFF;
+    stroke-width: 2px;
+}
+
+// Toggle switch
+div[class*="switchWrapper-"]{
+    height: 20px;
+    width: 44px;
+}
+div[class^="switch-"]{
+    background-color: transparent;
+    border: 2px solid $inputborder;
+}
+div[class^="switchWrapperDefaultActive"]:hover div[class^="switch"]{
+    background-color: transparent;
+    border-color: $inputborderhover;
+}
+// Dot
+div[class^="switchWrapperDefaultActive"] div[class^="switch"]::before{
+    width: 10px;
+    height: 10px;
+    top: 3px;
+    left: 5px;
+    box-shadow: none;
+}
+// Toggled on dot
+div[class^="switchWrapperDefaultActive"] div[class*="checked-"]::before{
+    transform: translateX(20px);
+}
+
+// Toggled on background
+div[class^="switchWrapperDefaultActive"] div[class*="checked"]{
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+// Toggled on hover background
+div[class^="switchWrapperDefaultActive"]:hover div[class*="checked-"]{
+    background-color: var(--accent) !important;
+}
+// :active switch
+input[class*="checkbox-"]:active+div[class^="switch"]::before{
+    width: 10px;
+    left: 5px;
+    box-shadow: none;
+}
+// :checked:active switch
+input[class*="checkbox-"]:checked:active+div[class^="switch"]::before{
+    left: 3px;
+}
+
+// Radio
+div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"]{
+    background-color: #101010 !important;
+    border: 1px solid var(--accent) !important;
+}
+label[class^="checkboxWrapper"] ~ div[class^="info"] div[class^="title"]{
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+// Slider
+div[class^="slider"] div[class^="track"] div[class^="grabber"]{
+    width: 8px;
+    height: 24px;
+    margin-top: -15px;
+    background-color: var(--accent);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: none;
+}
+div[class^="slider"]:hover div[class^="track"] div[class^="grabber"]{
+    background-color: #FFF;
+}
+div[class^="slider"] div[class^="bar"]{
+    height: 2px;
+    background-color: #666;
+}
+div[class^="slider"]:hover div[class^="bar"]{
+    background-color: #999;
+}
+div[class^="slider"] div[class^="bar"] div[class^="barFill"]{
+    background-color: var(--accent);
+}
+div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]{
+    height: auto;
+    top: -42px;
+    padding: 7px 8px 8px;
+    background-color: $b1;
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 0;
+    line-height: 1;
+}
+div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]::before{
+    display: none;
+}
