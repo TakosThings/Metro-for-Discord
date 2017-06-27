@@ -207,6 +207,11 @@ input[class*="checkbox-"]:active+div[class^="switch"]::before{
 input[class*="checkbox-"]:checked:active+div[class^="switch"]::before{
     left: 3px;
 }
+// Disabled checkbox dot
+input[class*="checkbox-"]:disabled+div[class^="switch"]::before{
+    width: 10px;
+    height: 10px;
+}
 
 // Radio
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"]{
