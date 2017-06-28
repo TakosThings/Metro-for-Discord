@@ -138,7 +138,7 @@ div[class*="cardWarning-"]{
 
 // Images removal
 // US = User settings, CS = Channel settings, SS = Server Settings
-div[style*="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"], // US: 2FA
+img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"], // US: 2FA
 div[style*="/assets/b47564b3086d0d8d941aae95a4b7b78c.svg"], // US: Authorised Apps
 div[style*="/assets/e9aaf1824f17126a7992e5ad98752389.svg"], // US: Connections
 div[style*="/assets/f3bb89a27e9d102f748da035cd7e5df7.svg"], // US: Keybinds
