@@ -265,6 +265,15 @@ body, input, textarea, button {
   .guilds-wrapper .guilds-add:hover {
     background-color: #333333; }
 
+.new-messages-indicator {
+  width: 48px;
+  left: 8px;
+  margin-bottom: 108px;
+  border-radius: 0; }
+
+.new-messages-indicator.bottom {
+  border-radius: 0; }
+
 .channels-wrap div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"] {
   width: 48px;
   height: 48px;
