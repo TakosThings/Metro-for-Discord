@@ -1587,6 +1587,14 @@ button[class^="buttonRedOutlined"] {
   button[class^="buttonRedOutlined"]:hover {
     border-color: rgba(255, 255, 255, 0.6); }
 
+button[class^="buttonRedFilledDefault"] {
+  background-color: #D02E00;
+  border-radius: 0;
+  color: #FFF;
+  font-weight: normal; }
+  button[class^="buttonRedFilledDefault"]:hover {
+    background-color: #9d2300; }
+
 button[class^="buttonPrimaryLinkDefault"] {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0;
@@ -2108,6 +2116,32 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   font-size: 15px;
   font-weight: 400;
   text-transform: none; }
+
+div[class^="modal-"] {
+  border-radius: 0; }
+
+.theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"],
+.theme-dark div[class^="modal-"] > div[class^="inner"] > form[class^="modal"] {
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+div[class^="modal"] div[class*="header"] h4 {
+  padding: 36px 0 4px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5625;
+  text-transform: none; }
+
+.theme-dark div[class^="modal"] div[class*="footer"] {
+  background-color: transparent;
+  box-shadow: none; }
+
+.theme-dark div[class^="modal"] div[class*="footer"] button {
+  min-height: 36px; }
+
+.theme-dark div[class^="modal"] div[class*="footer"] button + button {
+  margin-right: 8px; }
 
 .bot-tag {
   background-color: #000;
