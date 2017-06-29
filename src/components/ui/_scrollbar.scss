@@ -1,6 +1,7 @@
 .theme-dark{
     & .scroller-wrap .scroller.messages,
-      #friends .scroller{
+      #friends .scroller,
+      .emoji-picker .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
@@ -37,5 +38,15 @@
             border: 0;
             border-radius: 0;
         }
+    }
+}
+
+// Special snowflakes
+// Emoji picker
+.emoji-picker .scroller::-webkit-scrollbar-thumb{
+    visibility: visible;
+    background-color: #454545 !important;
+    &:hover{
+        background-color: #747474 !important;
     }
 }
