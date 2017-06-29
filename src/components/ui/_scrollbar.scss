@@ -2,7 +2,8 @@
     & .scroller-wrap .scroller.messages,
       #friends .scroller,
       .emoji-picker .scroller,
-      .user-popout .body .section.roles{
+      .user-popout .body .section.roles,
+      #user-profile-modal .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
@@ -50,4 +51,8 @@
     &:hover{
         background-color: #747474 !important;
     }
+}
+// User profile modal
+#user-profile-modal .scroller::-webkit-scrollbar-track-piece{
+    visibility: visible;
 }
