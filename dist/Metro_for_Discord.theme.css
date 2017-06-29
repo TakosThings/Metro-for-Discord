@@ -2047,6 +2047,14 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   color: #FFF;
   font-size: 15px; }
 
+#user-profile-modal .header .header-info .header-info-inner .activity {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400; }
+
+#user-profile-modal .header .header-info .header-info-inner .activity strong {
+  font-weight: 400; }
+
 #user-profile-modal .tab-bar-container {
   background-color: #191919;
   padding-left: 20px;

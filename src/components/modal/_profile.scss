@@ -37,6 +37,16 @@
     font-size: $fsui;
 }
 
+// Activity
+#user-profile-modal .header .header-info .header-info-inner .activity{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+#user-profile-modal .header .header-info .header-info-inner .activity strong{
+    font-weight: $fwui;
+}
+
 // Tabs
 #user-profile-modal .tab-bar-container{
     background-color: $b1;
