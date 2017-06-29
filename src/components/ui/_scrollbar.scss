@@ -1,7 +1,8 @@
 .theme-dark{
     & .scroller-wrap .scroller.messages,
       #friends .scroller,
-      .emoji-picker .scroller{
+      .emoji-picker .scroller,
+      .user-popout .body .section.roles{
         &::-webkit-scrollbar{
             width: 12px;
         }
