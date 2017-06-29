@@ -1691,14 +1691,14 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   border-radius: 0; }
 
 .user-popout .header {
-  padding: 0 20px;
+  padding: 0 10px;
   background-color: #191919;
   background-image: none;
   border-radius: 0;
   align-items: baseline; }
 
 .user-popout .avatar-wrapper {
-  margin: 20px 0 10px; }
+  margin: 10px 0 10px; }
 
 .user-popout .avatar-wrapper .avatar-popout {
   background-color: transparent;
