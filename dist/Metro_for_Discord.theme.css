@@ -285,6 +285,10 @@ body.bd-blue .app::before {
     background-color: #D02E00;
     border-color: rgba(255, 255, 255, 0.5); }
 
+.guilds-wrapper .guilds .guild .badge {
+  right: 2px;
+  bottom: 2px; }
+
 .guilds-wrapper .guilds-error {
   width: 48px;
   height: 48px;
