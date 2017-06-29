@@ -165,3 +165,19 @@
     font-weight: $fwui;
     text-transform: none;
 }
+
+// Developer
+#user-profile-modal .avatar-profile[style*="65dae679df1db100d1054178e338c4f5.webp"]::before{
+    content: "";
+    width: 540px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: -40px;
+    margin-left: -40px;
+    background-image: url("https://i.imgur.com/wfDZHlK.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 200px auto;
+}
