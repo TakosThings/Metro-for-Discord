@@ -2007,6 +2007,9 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 #user-profile-modal .avatar-profile .status {
   border: 0; }
 
+#user-profile-modal .header {
+  padding-left: 180px; }
+
 #user-profile-modal .header .header-info .header-info-inner .discord-tag {
   color: #FFF;
   font-size: 20px;
