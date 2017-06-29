@@ -192,6 +192,7 @@ body, input, textarea, button {
   background-color: #262626; }
 
 .guilds-wrapper .guilds {
+  margin-bottom: 112px;
   padding: 8px; }
 
 .guilds-wrapper .guilds .guild {
