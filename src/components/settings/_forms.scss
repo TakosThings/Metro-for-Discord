@@ -128,6 +128,17 @@ button[class^="buttonRedOutlined"]{
     }
 }
 
+// Red filled (eg. Logout modal logout button)
+button[class^="buttonRedFilledDefault"]{
+    background-color: $alert;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: normal;
+    &:hover{
+        background-color: darken($alert, 10%);
+    }
+}
+
 // Link button (eg. account details Cancel)
 button[class^="buttonPrimaryLinkDefault"]{
     border: 1px solid $inputborder;
