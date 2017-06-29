@@ -2110,6 +2110,11 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   font-size: 13px;
   line-height: 1.5625; }
 
+#user-profile-modal .guilds .guild .status {
+  bottom: 0;
+  right: 0;
+  border: 0; }
+
 #user-profile-modal .empty {
   background-color: #191919; }
 
