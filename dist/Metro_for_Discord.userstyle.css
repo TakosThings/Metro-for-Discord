@@ -13,10 +13,12 @@
   font-family: "Selawik";
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.eot");
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.ttf#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/selawk.ttf") format("truetype"); }
+
 @font-face {
   font-family: "winjs-symbols";
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.eot");
   src: url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.ttf#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/winjs/winstrap/718845a4/src/fonts/glyphs/winjs-symbols.ttf") format("truetype"); }
+
 body, input, textarea, button {
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
 
@@ -47,6 +49,7 @@ body, input, textarea, button {
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar,
 .theme-dark #user-profile-modal .scroller::-webkit-scrollbar {
   width: 12px; }
+
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button,
 .theme-dark #friends .scroller::-webkit-scrollbar-button,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button,
@@ -54,6 +57,7 @@ body, input, textarea, button {
 .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button {
   height: 13px;
   background-color: #171717; }
+
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:increment,
 .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:increment,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:increment,
@@ -68,6 +72,7 @@ body, input, textarea, button {
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment:hover,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment:hover {
     background-color: #747474; }
+
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:decrement,
 .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:decrement,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:decrement,
@@ -82,6 +87,7 @@ body, input, textarea, button {
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:decrement:hover,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement:hover {
     background-color: #747474; }
+
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-thumb,
 .theme-dark #friends .scroller::-webkit-scrollbar-thumb,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
@@ -96,6 +102,7 @@ body, input, textarea, button {
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-thumb:hover,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb:hover {
     background-color: #747474; }
+
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-track-piece,
 .theme-dark #friends .scroller::-webkit-scrollbar-track-piece,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
@@ -1028,6 +1035,7 @@ body, input, textarea, button {
     content: "Loading..."; }
   100% {
     content: ":( \a There seems to be a problem loading the members list. \a There may be a outage."; } }
+
 .theme-dark .channel-members-loading {
   background-color: #191919; }
 
