@@ -3,7 +3,8 @@
       #friends .scroller,
       .emoji-picker .scroller,
       .user-popout .body .section.roles,
-      #user-profile-modal .scroller{
+      #user-profile-modal .scroller,
+      .quickswitcher .results-scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }

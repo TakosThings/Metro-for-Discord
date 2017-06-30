@@ -1,0 +1,80 @@
+// Hide tutorial
+.qs-tutorial{
+    display: none;
+}
+
+.quickswitcher.dark{
+    background-color: $b1;
+    border: 1px solid var(--accent);
+    border-radius: 0;
+}
+
+// Search
+.quickswitcher .big-input{
+    height: 36px;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 1;
+}
+.quickswitcher.dark .big-input{
+    background-color: transparent;
+    border: 1px solid $inputborder;
+    &::-webkit-input-placeholder{
+        color: #FFF;
+    }
+    &:focus::-webkit-input-placeholder{
+        color: #000;
+    }
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000;
+    }
+}
+
+// Results
+.quickswitcher .results-scroller-outer{
+    margin-top: 0;
+    margin-right: 0;
+}
+.quickswitcher .results-scroller-outer:before{
+    display: none;
+}
+.quickswitcher.dark .result .section-title{
+    color: #FFF;
+}
+.quickswitcher .result .section-title{
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    letter-spacing: normal;
+    text-transform: none;
+}
+
+// Selected Result
+.quickswitcher .result{
+    border-radius: 0;
+    font-family: $font;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+.quickswitcher.dark .result.selected{
+    background-color: var(--accent);
+}
+.quickswitcher.dark .result.selected:after{
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+}
+.quickswitcher.dark .result>div .result-match,
+.quickswitcher.dark .result>div .result-type-icon{
+    opacity: 1;
+}
+
+// Tips
+.quickswitcher.dark .tips{
+    color: #FFF;
+}

@@ -65,14 +65,16 @@ body, input, textarea, button {
 .theme-dark #friends .scroller::-webkit-scrollbar,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar {
   width: 12px; }
 
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button,
 .theme-dark #friends .scroller::-webkit-scrollbar-button,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button {
   height: 13px;
   background-color: #171717; }
 
@@ -80,7 +82,8 @@ body, input, textarea, button {
 .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:increment,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:increment,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:increment {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
   background-size: 12px 12px;
   border-top: 1px solid #171717; }
@@ -88,14 +91,16 @@ body, input, textarea, button {
   .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:increment:hover,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:increment:hover,
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment:hover,
-  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment:hover {
+  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment:hover,
+  .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:increment:hover {
     background-color: #747474; }
 
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:decrement,
 .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:decrement,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:decrement,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:decrement,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:decrement {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
   background-size: 12px 12px;
   border-bottom: 1px solid #171717; }
@@ -103,14 +108,16 @@ body, input, textarea, button {
   .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:decrement:hover,
-  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement:hover {
+  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
+  .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:decrement:hover {
     background-color: #747474; }
 
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-thumb,
 .theme-dark #friends .scroller::-webkit-scrollbar-thumb,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-thumb,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-thumb {
   background-color: #454545;
   border: 0;
   border-radius: 0; }
@@ -118,14 +125,16 @@ body, input, textarea, button {
   .theme-dark #friends .scroller::-webkit-scrollbar-thumb:hover,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:hover,
   .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-thumb:hover,
-  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb:hover {
+  .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb:hover,
+  .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-thumb:hover {
     background-color: #747474; }
 
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-track-piece,
 .theme-dark #friends .scroller::-webkit-scrollbar-track-piece,
 .theme-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
 .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-track-piece,
-.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-track-piece {
+.theme-dark #user-profile-modal .scroller::-webkit-scrollbar-track-piece,
+.theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-track-piece {
   background-color: #171717;
   border: 0;
   border-radius: 0; }
@@ -2205,6 +2214,72 @@ div[class^="modal"] div[class*="header"] h4 {
 
 .theme-dark div[class^="modal"] div[class*="footer"] button + button {
   margin-right: 8px; }
+
+.qs-tutorial {
+  display: none; }
+
+.quickswitcher.dark {
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+.quickswitcher .big-input {
+  height: 36px;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1; }
+
+.quickswitcher.dark .big-input {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6); }
+  .quickswitcher.dark .big-input::-webkit-input-placeholder {
+    color: #FFF; }
+  .quickswitcher.dark .big-input:focus::-webkit-input-placeholder {
+    color: #000; }
+  .quickswitcher.dark .big-input:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .quickswitcher.dark .big-input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+.quickswitcher .results-scroller-outer {
+  margin-top: 0;
+  margin-right: 0; }
+
+.quickswitcher .results-scroller-outer:before {
+  display: none; }
+
+.quickswitcher.dark .result .section-title {
+  color: #FFF; }
+
+.quickswitcher .result .section-title {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-transform: none; }
+
+.quickswitcher .result {
+  border-radius: 0;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400; }
+
+.quickswitcher.dark .result.selected {
+  background-color: var(--accent); }
+
+.quickswitcher.dark .result.selected:after {
+  background-color: transparent;
+  box-shadow: none;
+  opacity: 1; }
+
+.quickswitcher.dark .result > div .result-match,
+.quickswitcher.dark .result > div .result-type-icon {
+  opacity: 1; }
+
+.quickswitcher.dark .tips {
+  color: #FFF; }
 
 .bot-tag {
   background-color: #000;
