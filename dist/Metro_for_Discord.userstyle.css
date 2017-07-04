@@ -2069,6 +2069,34 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 .status-picker .popout-menu-separator {
   display: none; }
 
+.popout.popout-bottom > .popout-menu {
+  background-color: #333333;
+  border-radius: 0; }
+
+.popout-menu .popout-menu-separator {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+
+.popout-menu .popout-menu-item {
+  color: #FFF;
+  line-height: 1.5625; }
+  .popout-menu .popout-menu-item:hover {
+    background-color: var(--accent);
+    color: #FFF; }
+
+.popout-menu .popout-menu-icon {
+  display: none; }
+
+.popout-menu .popout-menu-item.invite {
+  color: #FFF; }
+  .popout-menu .popout-menu-item.invite:hover {
+    color: #FFF; }
+
+.popout-menu .popout-menu-item.leave {
+  color: #D02E00; }
+  .popout-menu .popout-menu-item.leave:hover {
+    background-color: #D02E00;
+    color: #FFF; }
+
 #user-profile-modal {
   border: 1px solid var(--accent);
   border-radius: 0; }
