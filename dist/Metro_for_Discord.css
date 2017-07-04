@@ -2436,7 +2436,8 @@ div[class^="modal"] div[class*="header"] h4 {
   line-height: 20px; }
 
 .checkbox .checkbox-inner + span {
-  color: #FFF; }
+  color: #FFF;
+  font-size: 15px; }
 
 .notification-settings-modal .notification-settings-modal-channel-settings-header {
   padding: 0;
@@ -2510,6 +2511,91 @@ div[class^="modal"] div[class*="header"] h4 {
   .form.deprecated .btn-primary:active {
     background-color: var(--accent);
     border-color: rgba(255, 255, 255, 0.8); }
+
+.instant-invite-modal {
+  height: 271px;
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+#instant-invite-modal .form-header {
+  padding: 0 20px;
+  background-color: #191919;
+  text-align: left; }
+
+#instant-invite-modal .form-header header {
+  padding-top: 56px;
+  padding-bottom: 4px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5625; }
+
+#instant-invite-modal .blurb {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5625;
+  opacity: 1; }
+
+#instant-invite-modal .form-inner {
+  padding: 20px;
+  background-color: #191919; }
+
+#instant-invite-modal .clipboard-input-inner {
+  height: auto;
+  background: transparent;
+  border: 0;
+  border-radius: 0; }
+
+#instant-invite-modal .clipboard-input-inner input {
+  margin-right: 8px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1 !important; }
+  #instant-invite-modal .clipboard-input-inner input::selection {
+    background-color: #0078D7; }
+  #instant-invite-modal .clipboard-input-inner input:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  #instant-invite-modal .clipboard-input-inner input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+#instant-invite-modal .copy {
+  height: 36px;
+  padding: 9px 12px 10px;
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  font-size: 15px;
+  line-height: 1;
+  text-transform: none; }
+  #instant-invite-modal .copy:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
+.clipboard-input-inner button:first-of-type:before {
+  display: none; }
+
+#instant-invite-modal .expire-text {
+  margin-top: 8px;
+  color: #FFF;
+  font-size: 15px;
+  text-align: left; }
+
+#instant-invite-modal .form-actions {
+  background-color: #191919;
+  border-radius: 0; }
+
+#instant-invite-modal-advanced .form-inner {
+  padding: 20px;
+  background-color: #191919; }
+
+#instant-invite-modal-advanced .form-actions {
+  padding: 0 20px 20px 20px;
+  background-color: #191919; }
 
 .bot-tag {
   background-color: #000;
