@@ -4,7 +4,8 @@
       .emoji-picker .scroller,
       .user-popout .body .section.roles,
       #user-profile-modal .scroller,
-      .quickswitcher .results-scroller{
+      .quickswitcher .results-scroller,
+      .notification-settings-modal .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
