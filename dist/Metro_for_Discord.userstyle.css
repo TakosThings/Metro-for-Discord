@@ -2775,3 +2775,28 @@ div[class^="modal"] div[class*="header"] h4 {
 .theme-dark .hljs-deletion,
 .theme-dark .hljs-meta {
   color: #75715e; }
+
+.guilds-wrapper .btn-download-apps {
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 0 8px;
+  position: absolute;
+  bottom: 112px;
+  left: 0;
+  font-size: 0 !important;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+  .guilds-wrapper .btn-download-apps:hover {
+    background-color: #404040; }
+
+.guilds-wrapper .btn-download-apps svg,
+.guilds-wrapper .btn-download-apps::after {
+  display: none; }
+
+.guilds-wrapper .btn-download-apps::before {
+  content: "\E118";
+  color: #FFF;
+  font-family: winjs-symbols;
+  font-size: 21px; }
