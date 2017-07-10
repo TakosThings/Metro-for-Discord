@@ -1799,6 +1799,20 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   border-radius: 0;
   align-items: baseline; }
 
+.user-popout .header.streaming {
+  padding: 0 10px; }
+
+.user-popout .header.streaming .discord-tag .username {
+  font-weight: 300; }
+
+.user-popout .header.streaming .activity {
+  padding: 0;
+  color: #FFF;
+  font-size: 15px; }
+
+.user-popout .header.streaming .activity strong {
+  font-weight: 400; }
+
 .user-popout .avatar-wrapper {
   margin: 20px 0 10px; }
 

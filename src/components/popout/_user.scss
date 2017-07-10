@@ -12,6 +12,22 @@
     align-items: baseline;
 }
 
+// User streaming header
+.user-popout .header.streaming{
+    padding: 0 10px;
+}
+.user-popout .header.streaming .discord-tag .username{
+    font-weight: $fwheader;
+}
+.user-popout .header.streaming .activity{
+    padding: 0;
+    color: #FFF;
+    font-size: $fsui;
+}
+.user-popout .header.streaming .activity strong{
+    font-weight: $fwui;
+}
+
 // Avatar
 .user-popout .avatar-wrapper{
     margin: 20px 0 10px;
