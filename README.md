@@ -18,3 +18,5 @@ You can change the accent colour by changing the `--accent` variable at the top 
 
 # Screenshots
 2 441x248 previews
+
+This project is not associated with Microsoft, nor Discord.
