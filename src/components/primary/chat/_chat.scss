@@ -43,6 +43,9 @@
 .message-group.compact .message:hover .timestamp{
     color: #FFF !important;
 }
+.message-group.compact .message .message-text .markup{
+    padding-left: 80px;
+}
 .message-group.compact .message .message-text .markup .user-name{
     font-size: $fschat;
     font-weight: 400;

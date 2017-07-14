@@ -4,6 +4,7 @@
 @import 'components/core/options';
 @import 'components/core/font';
 @import 'components/core/reset';
+@import 'components/core/animation';
 
 // UI
 @import 'components/ui/titlebar';
@@ -59,6 +60,7 @@
 @import 'components/popout/emoji_picker';
 @import 'components/popout/status_changer';
 @import 'components/popout/server_dropdown';
+@import 'components/popout/recent_mentions';
 
 // Modals
 @import 'components/modal/profile';

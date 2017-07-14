@@ -62,6 +62,9 @@
     &:hover{
         background-color: $b4;
     }
+    &.popout-open{
+        background-color: var(--accent);
+    }
 }
 .header-toolbar button span{
     width: 40px;

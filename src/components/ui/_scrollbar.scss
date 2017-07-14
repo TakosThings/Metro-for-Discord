@@ -5,7 +5,8 @@
       .user-popout .body .section.roles,
       #user-profile-modal .scroller,
       .quickswitcher .results-scroller,
-      .notification-settings-modal .scroller{
+      .notification-settings-modal .scroller,
+      .messages-popout-wrap .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
