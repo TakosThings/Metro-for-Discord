@@ -1,0 +1,77 @@
+.popout.popout-bottom.no-shadow{
+    margin-top: 0;
+    right: 0 !important;
+    left: initial !important;
+    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
+}
+.search-popout{
+    max-height: calc(100vh - 72px) !important;
+    min-height: calc(100vh - 72px);
+    position: absolute;
+    right: 0 !important;
+    left: initial !important;
+    background-color: $b1;
+    border-radius: 0;
+}
+
+// Header
+.search-popout .results-group .header{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+}
+
+// Options
+.search-popout .option{
+    border-radius: 0;
+    font-size: $fsui;
+    &.selected{
+        background-color: var(--accent);
+    }
+    &.selected::after{
+        background-image: none;
+    }
+}
+.search-popout .search-option .filter{
+    color: #FFF;
+    font-weight: $fwui;
+}
+.search-popout .search-option .answer{
+    color: rgba(255,255,255,.8);
+    font-weight: $fwui;
+}
+.search-popout .option strong{
+    color: rgba(255,255,255,.8);
+    font-weight: $fwui;
+}
+.search-popout .option::after{
+    background-image: none;
+}
+
+// History
+.search-popout .option .non-text{
+    color: #FFF;
+}
+
+// Results
+.search-popout .search-query{
+    border-bottom: 0;
+}
+.search-popout .results-group::before{
+    display: none;
+}
+
+// Search for
+.search-popout .search-query .search-for{
+    font-size: $fsui;
+    text-transform: none;
+}
+.search-popout .search-query .search-for strong{
+    color: #FFF;
+    font-size: $fsui;
+}
+.search-popout .search-query .search-for strong::before,
+.search-popout .search-query .search-for strong::after{
+    content: "'";
+}
