@@ -511,7 +511,8 @@ body, input, textarea, button {
 .channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"] {
   fill: #FFF; }
 
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"] {
+.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
+.channels-wrap div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"] {
   color: #FFF; }
 
 .channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
