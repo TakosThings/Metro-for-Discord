@@ -5,26 +5,15 @@
 /* ## Monokai code highlighting from highlight.js       ## */
 /* ## https://highlightjs.org                           ## */
 /* ####################################################### */
-/*                                                         */
-/* #################### User Options ##################### */
-/* ## This is a list of features which are commonly     ## */
-/* ## changed. Read the descriptions and directions for ## */
-/* ## each option before changing it.                   ## */
-/* ####################################################### */
 /* Accent Colour */
-/* This affects almost all elements of the theme in some way. */
-/* This value must be a six (or three) character HEX or RGB() value. */
-/* A list of the Windows 10 colours and their values is available in accent.md */
 :root {
   --accent: #0072C6; }
 
-/* X Messages From Blocked User */
-/* REMOVE this line if you want to see the "X blocked messages" notification. */
+/* REMOVE this if you want to see the "X blocked messages" notification. */
 .message-group-blocked {
   display: none; }
 
-/* Chat Welcome Message */
-/* REMOVE this line if you want to see the "Welcome to the server" tutorial. */
+/* REMOVE this if you want to see the "Welcome to the server" tutorial. */
 .chat .welcome-message {
   display: none; }
 
