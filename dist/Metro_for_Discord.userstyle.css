@@ -685,7 +685,10 @@ body, input, textarea, button {
   line-height: 35px; }
 
 .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
-  padding: 8px 10px 10px; }
+  padding: 3px 11px 10px; }
+
+.search .DraftEditor-root .public-DraftEditor-content {
+  padding: 3px 11px 10px; }
 
 .theme-dark .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
   color: #FFF; }
