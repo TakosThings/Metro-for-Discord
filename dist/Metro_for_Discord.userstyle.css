@@ -229,6 +229,56 @@
     color: #D02E00; }
     .context-menu .item.danger:hover {
       color: #D02E00 !important; }
+  .connecting {
+    background-color: #191919;
+    margin-top: 32px; }
+  .connecting .connecting-inner {
+    background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 32px;
+    -webkit-filter: invert(100%); }
+  .connecting video,
+  .connecting img {
+    display: none; }
+  .connecting .quote,
+  .connecting .attribution {
+    display: none; }
+  .connecting .connecting-problems {
+    align-items: flex-end;
+    padding-right: 20px;
+    padding-bottom: 20px; }
+  .connecting .connection-status {
+    margin-top: 64px;
+    margin-left: 0;
+    color: #000;
+    font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: none; }
+  .connecting .connecting-problems .connecting-problems-text {
+    display: none; }
+  .connecting-problems-buttons {
+    height: 48px; }
+  .connecting .connecting-problems .statuspage,
+  .connecting .connecting-problems .twitter {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    font-size: 0;
+    transition: background .3s; }
+  .connecting .connecting-problems .statuspage:hover,
+  .connecting .connecting-problems .twitter:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background .3s; }
+  .connecting .connecting-problems .statuspage:before,
+  .connecting .connecting-problems .twitter:before {
+    width: 48px;
+    height: 48px;
+    -webkit-background-size: 20px;
+    background-size: 20px; }
+  .connecting .connecting-problems .statuspage {
+    margin-left: 4px; }
   .app.theme-light::before {
     content: "Please enable the Dark Theme in your Appearance settings.";
     height: 32px;
