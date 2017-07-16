@@ -2702,6 +2702,37 @@ div[class^="modal"] div[class*="header"] h4 {
 .quickswitcher.dark .tips {
   color: #FFF; }
 
+.keyboard-shortcuts-modal {
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+.keyboard-shortcuts-modal .modal-title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300; }
+
+.keyboard-shortcuts-modal .modal-subtitle {
+  border: 0;
+  color: #FFF;
+  font-size: 15px; }
+
+.keyboard-shortcuts-modal .ddr-arrows {
+  display: none; }
+
+.keyboard-shortcuts-modal .keyboard-shortcut-list {
+  padding: 20px; }
+
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group.group-end {
+  margin-bottom: 20px; }
+
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .keybind-description {
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5625;
+  text-transform: none; }
+
 .need-help-modal.deprecated .header {
   padding: 20px 20px 0 20px;
   align-items: baseline;
