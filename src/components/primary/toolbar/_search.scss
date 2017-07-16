@@ -27,3 +27,10 @@
 .header-toolbar .search .search-bar .icon{
     top: 12px;
 }
+
+// Search in use
+.header-toolbar .search.focused .search-bar,
+.header-toolbar .search.open .search-bar,
+.header-toolbar .search.popout-open .search-bar{
+    width: 240px;
+}
