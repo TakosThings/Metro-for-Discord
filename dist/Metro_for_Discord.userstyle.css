@@ -2414,7 +2414,10 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 
 .search-popout .search-query .search-for {
   font-size: 15px;
-  text-transform: none; }
+  text-transform: none;
+  text-transform: lowercase; }
+  .search-popout .search-query .search-for:first-letter {
+    text-transform: uppercase; }
 
 .search-popout .search-query .search-for strong {
   color: #FFF;

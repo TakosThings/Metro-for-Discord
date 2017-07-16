@@ -67,6 +67,10 @@
 .search-popout .search-query .search-for{
     font-size: $fsui;
     text-transform: none;
+    text-transform: lowercase;
+    &:first-letter{
+        text-transform: uppercase;
+    }
 }
 .search-popout .search-query .search-for strong{
     color: #FFF;
