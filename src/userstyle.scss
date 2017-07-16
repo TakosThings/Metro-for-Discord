@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://discordapp.com/channels/") {
 // Core
 @import 'components/core/info';
 @import 'components/core/variables';
@@ -88,3 +89,4 @@
 
 // Userstyle Specific
 @import 'components/userstyle/downloadapp';
+}
