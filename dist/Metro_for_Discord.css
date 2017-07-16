@@ -1088,6 +1088,25 @@ body, input, textarea, button {
 .theme-dark .message-group .embed .embed-fields {
   color: #FFF; }
 
+.chat div[class^="title-"] {
+  font-size: 20px;
+  font-weight: 300; }
+
+.chat div[class^="description-"] {
+  font-size: 15px;
+  font-weight: 400; }
+
+.chat div[class^="separator-"] {
+  display: none; }
+
+.chat button[class^="buttonPrimaryOutlinedDefault"] {
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  color: #FFF;
+  font-weight: 400; }
+  .chat button[class^="buttonPrimaryOutlinedDefault"]:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
 .theme-dark .channel-members {
   background-color: #191919; }
 
