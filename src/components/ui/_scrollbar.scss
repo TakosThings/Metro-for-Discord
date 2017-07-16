@@ -6,7 +6,8 @@
       #user-profile-modal .scroller,
       .quickswitcher .results-scroller,
       .notification-settings-modal .scroller,
-      .messages-popout-wrap .scroller{
+      .messages-popout-wrap .scroller,
+      .search-results-wrap .scroller-wrap .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
@@ -58,4 +59,15 @@
 // User profile modal
 #user-profile-modal .scroller::-webkit-scrollbar-track-piece{
     visibility: visible;
+}
+// Search results pane
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb{
+    background-color: #454545 !important;
+    border: 0 !important;
+    &:hover{
+        background-color: #747474 !important;
+    }
+}
+.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece{
+    background-color: #171717 !important;
 }
