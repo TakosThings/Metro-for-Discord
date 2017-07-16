@@ -1,0 +1,20 @@
+.keybind-shortcut{
+    color: #FFF;
+    font-family: $mono;
+    font-weight: normal;
+}
+.keybind-shortcut span{
+    border: 1px solid #FFF;
+    border-bottom: 4px solid #FFF;
+    box-shadow: none;
+}
+// SVG
+.keybind-shortcut span g{
+    fill: #FFF;
+}
+
+// Dimmed shortcut
+.keybind-shortcut.dim span{
+    background-color: transparent;
+    color: #FFF;
+}

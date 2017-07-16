@@ -3017,6 +3017,23 @@ div[class^="modal"] div[class*="header"] h4 {
   text-transform: lowercase;
   vertical-align: middle; }
 
+.keybind-shortcut {
+  color: #FFF;
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+  font-weight: normal; }
+
+.keybind-shortcut span {
+  border: 1px solid #FFF;
+  border-bottom: 4px solid #FFF;
+  box-shadow: none; }
+
+.keybind-shortcut span g {
+  fill: #FFF; }
+
+.keybind-shortcut.dim span {
+  background-color: transparent;
+  color: #FFF; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
