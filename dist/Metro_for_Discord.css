@@ -347,6 +347,79 @@ body, input, textarea, button {
 .connecting .connecting-problems .statuspage {
   margin-left: 4px; }
 
+.auth-inner {
+  -webkit-box-orient: vertical;
+  flex-direction: column; }
+
+.auth-blur {
+  display: none; }
+
+.auth-inner .auth-brand {
+  background-color: transparent; }
+
+.auth-inner .auth-logo {
+  width: 190px;
+  height: 190px;
+  background-color: #5671ac;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAMAAAD04JH5AAAAV1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////+ORg7oAAAAHHRSTlMAECAwP0BPUF9gb3B/gI+Qn6CvsL/Az9Df4O/wQqu59AAAA7tJREFUeAHt2tGaojgQBeBKYkQMEVECAc77P+fu9rdImzFdlj3SfcF/MxfKcIBUKqGlzWaz2Ww2m83zzKFqOyAWlFVEoGurw47+MrU/tZiNijLUiFl72iv6S/SxxZ2SMkrcaY+avk0dOySCowwXkOiOir7DnHFnaJxhjnDNgDtnS6+ybXLl5snYyZ1oX4tg7k4fSkUCqgx3EQxJqRMWg9f0J73b7Q5Vdfj3n4cf+wGLkyIREz9ffPrhvrq0SLSXap9e5+fbEC0JONwEm50QFtnyt4GpXq6eh4IWpurAQ1cZWhSDPIHBzCua6VPE0+JJ00x5zAw953adjmaHDkLd4c8H2kkHgKIPqhrxgljNx2ceAt9RNHd6xljRfzTTxxIeN5f/O+zrPnr3BTdedAOA2Hb4pq6NgOQWeLyVJ86It4r8HPRmJTsHvFnLTYJvp+krDd6uZmrw7cb1h6BgGF6xgitlaaxC8X3wp55Bh1VcBU9g3WdQYiWloAbWfAYKq6GHCqymkPeBNfpBxGqivBOv0JMdVlS+VoRD7QrfTMiaGm9dPbxWiCMYU7Fs9hLJVrKYwBhfGAK9Wr47PQxoaKZ6MIx4CPSKS2tooQbxIGi4yFxcJ7qhDaWi7IABiUF2QZESSli4jrunWtiSLVOAlNDs1MKMAkv3vHTyHpiEVMt2qVfppjbgTqCUl01Fce0Ake5h7QAQjUHU3Aq6k44BWNF6tJNXQSeaC720gZf8PMDwsl7suUEbhU8AV9meaNSyXqBHMEK+CPhRYMYHEY1wlycMgFblz58mUB14gipM/uRwHPHQeJz/uwjwLB8g1VW73f4UkRVP+92u6gBpAIcf4NJpYG3+NwW44gc0aWtbW/j1AaYfDlCKqpOpt5ILkFmCmAHf1pvMNiF83TocsxEVFptj7kC+SPQV39Do/EYpMCuy461RvBzheuuPx4eDjBmFl1v/1c0Esel29aQu7IJEPzrDWNBMuR4ifaloVoyP8ulnXhK2mm708xl69/m49rlXhSUeOmta6LIZwBiaUtFCn5lFOZtgXCJ80NZf+8yFX71NvnwemfMzCbK/BNLWeu+b8KHx3lurKWXPwtfldkJGrDQJ6SoiYzKUoQKyuqOhp5ljh6ygKM9N3I8BWMxPDqaSvqRqZA2KGPw7uloRRzf8mzqG4VoDIzPzOmIwi9yp1vQsVfbM3M0ISIVSkYh24T6/6Hg14bPgNL1AFXWPmSWRArO+LhS9TllXhx59SUJljz7UzirabDabzWaz2Ww2v9w/bj4B2tAEE2IAAAAASUVORK5CYII=);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 128px 128px;
+  border-radius: 95px; }
+
+.auth-inner .auth-name {
+  display: none; }
+
+.auth-inner .auth-name::after {
+  display: none; }
+
+form.deprecated.auth-form {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+form.deprecated.auth-form h1 {
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+.form.deprecated .control-group input[type=email],
+.form.deprecated .control-group input[type=number],
+.form.deprecated .control-group input[type=password],
+.form.deprecated .control-group input[type=text],
+.form.deprecated .control-group textarea {
+  padding-left: 11px;
+  margin-bottom: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: normal; }
+
+form.deprecated.auth-form .control-group input[type=email],
+form.deprecated.auth-form .control-group input[type=password],
+form.deprecated.auth-form .control-group input[type=text] {
+  border: 1px solid rgba(255, 255, 255, 0.6); }
+  form.deprecated.auth-form .control-group input[type=email]:hover,
+  form.deprecated.auth-form .control-group input[type=password]:hover,
+  form.deprecated.auth-form .control-group input[type=text]:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  form.deprecated.auth-form .control-group input[type=email]:focus,
+  form.deprecated.auth-form .control-group input[type=password]:focus,
+  form.deprecated.auth-form .control-group input[type=text]:focus {
+    border-bottom: 1px solid #0072C6;
+    border-color: #0072C6; }
+
+form.deprecated.auth-form .btn-forgot-password {
+  opacity: 1;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: none; }
+
+form.deprecated.auth-form .btn-primary {
+  line-height: 36px; }
+
+form.deprecated.auth-form p.token-tip {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: normal; }
+
 .app.theme-light::before {
   content: "Please enable the Dark Theme in your Appearance settings.";
   height: 32px;

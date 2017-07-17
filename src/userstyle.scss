@@ -93,3 +93,8 @@
 // Userstyle Specific
 @import 'components/userstyle/downloadapp';
 }
+
+@-moz-document url("https://discordapp.com/login"), url("https://discordapp.com/register") {
+// Login
+@import 'components/login/login';
+}
