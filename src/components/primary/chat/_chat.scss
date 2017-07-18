@@ -158,6 +158,23 @@
     text-transform: none;
 }
 
+// Load More
+.theme-dark .chat .has-more button{
+    background-color: $b3;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+    &:hover{
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
 // Editing message
 .message-group .edit-message .edit-container-inner{
     margin-right: 64px;
