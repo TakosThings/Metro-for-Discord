@@ -982,6 +982,19 @@ form.deprecated.auth-form p.token-tip {
   font-weight: 400;
   text-transform: none; }
 
+.theme-dark .chat .has-more button {
+  background-color: #333333;
+  border: 1px solid transparent;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+  .theme-dark .chat .has-more button:hover {
+    border-color: rgba(255, 255, 255, 0.6); }
+  .theme-dark .chat .has-more button:focus {
+    border-color: rgba(255, 255, 255, 0.8); }
+
 .message-group .edit-message .edit-container-inner {
   margin-right: 64px; }
 
