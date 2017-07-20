@@ -2542,12 +2542,16 @@
     color: #FFF;
     font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
     font-weight: normal; }
-  .keybind-shortcut span {
+  .keybind-shortcut span,
+  .keybind-shortcut.dark span {
+    background-color: transparent;
     border: 1px solid #FFF;
     border-bottom: 4px solid #FFF;
-    box-shadow: none; }
-  .keybind-shortcut span g {
-    fill: #FFF; }
+    box-shadow: none;
+    color: #FFF; }
+  .keybind-shortcut span g,
+  .keybind-shortcut.dark span g {
+    fill: #FFF !important; }
   .keybind-shortcut.dim span {
     background-color: transparent;
     color: #FFF; }

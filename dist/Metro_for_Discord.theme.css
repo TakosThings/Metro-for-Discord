@@ -3186,13 +3186,17 @@ div[class^="modal-"] div[class^="tip"] {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
   font-weight: normal; }
 
-.keybind-shortcut span {
+.keybind-shortcut span,
+.keybind-shortcut.dark span {
+  background-color: transparent;
   border: 1px solid #FFF;
   border-bottom: 4px solid #FFF;
-  box-shadow: none; }
+  box-shadow: none;
+  color: #FFF; }
 
-.keybind-shortcut span g {
-  fill: #FFF; }
+.keybind-shortcut span g,
+.keybind-shortcut.dark span g {
+  fill: #FFF !important; }
 
 .keybind-shortcut.dim span {
   background-color: transparent;
