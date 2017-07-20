@@ -2742,6 +2742,7 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 #user-profile-modal .empty {
   background-color: #191919; }
 
+#user-profile-modal .empty .empty-icon-guilds,
 #user-profile-modal .empty .empty-icon-friends {
   display: none; }
 
