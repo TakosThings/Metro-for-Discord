@@ -2129,6 +2129,7 @@
     border: 0; }
   #user-profile-modal .empty {
     background-color: #191919; }
+  #user-profile-modal .empty .empty-icon-guilds,
   #user-profile-modal .empty .empty-icon-friends {
     display: none; }
   #user-profile-modal .empty .empty-text {
