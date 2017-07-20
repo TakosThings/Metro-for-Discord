@@ -3,14 +3,19 @@
     font-family: $mono;
     font-weight: normal;
 }
-.keybind-shortcut span{
+.keybind-shortcut span,
+.keybind-shortcut.dark span{
+    background-color: transparent;
     border: 1px solid #FFF;
     border-bottom: 4px solid #FFF;
     box-shadow: none;
+    color: #FFF;
 }
+
 // SVG
-.keybind-shortcut span g{
-    fill: #FFF;
+.keybind-shortcut span g,
+.keybind-shortcut.dark span g{
+    fill: #FFF !important;
 }
 
 // Dimmed shortcut
