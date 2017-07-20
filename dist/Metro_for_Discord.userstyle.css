@@ -156,6 +156,8 @@
       background-color: #747474 !important; }
   #user-profile-modal .scroller::-webkit-scrollbar-track-piece {
     visibility: visible; }
+  #user-profile-modal .scroller::-webkit-scrollbar-thumb {
+    visibility: visible; }
   .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
     background-color: #454545 !important;
     border: 0 !important; }
