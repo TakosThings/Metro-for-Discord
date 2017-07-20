@@ -45,6 +45,19 @@ body, input, textarea, button {
   100% {
     right: 0; } }
 
+.status-online {
+  background-color: #10893E; }
+
+.status-idle {
+  background-color: #FFB900; }
+
+.status-dnd {
+  background-color: #E81123; }
+
+.status-invisible,
+.status-offline {
+  background-color: #767676; }
+
 .titlebar {
   height: 32px;
   background-color: #000; }

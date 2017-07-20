@@ -38,6 +38,15 @@
       right: -420px; }
     100% {
       right: 0; } }
+  .status-online {
+    background-color: #10893E; }
+  .status-idle {
+    background-color: #FFB900; }
+  .status-dnd {
+    background-color: #E81123; }
+  .status-invisible,
+  .status-offline {
+    background-color: #767676; }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
