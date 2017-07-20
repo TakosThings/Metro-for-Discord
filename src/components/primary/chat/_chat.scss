@@ -31,6 +31,9 @@
 .theme-dark .message-group h2 strong{
     color: #ACACAC;
 }
+.message-group .mentioned .message-text::after{
+    display: none;
+}
 
 // Compact
 .message-group.compact{
