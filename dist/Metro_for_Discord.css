@@ -2669,7 +2669,8 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   color: var(--accent); }
 
 #user-profile-modal .scroller {
-  background-color: #191919; }
+  background-color: #191919;
+  overflow-y: auto; }
 
 #user-profile-modal .guilds .section .section-header {
   color: #FFF;
