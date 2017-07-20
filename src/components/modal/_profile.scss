@@ -70,6 +70,7 @@
 // Body
 #user-profile-modal .scroller{
     background-color: $b1;
+    overflow-y: auto;
 }
 #user-profile-modal .guilds .section .section-header{
     color: #FFF;

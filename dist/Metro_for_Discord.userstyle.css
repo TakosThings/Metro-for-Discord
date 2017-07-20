@@ -2069,7 +2069,8 @@
   #user-profile-modal .tab-bar .tab-bar-item.selected {
     color: var(--accent); }
   #user-profile-modal .scroller {
-    background-color: #191919; }
+    background-color: #191919;
+    overflow-y: auto; }
   #user-profile-modal .guilds .section .section-header {
     color: #FFF;
     font-size: 15px;
