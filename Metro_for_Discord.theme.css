@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.7"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.8"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.7";
+    --version: "Metro for Discord 2.22.8";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -4905,4 +4905,56 @@ div.control-group .shortcut-recorder input[type=text]{
 }
 .deprecated-settings-modal .tab-bar.SIDE .tab-bar-item.selected{
     color: var(--accent);
+}
+
+/* New chat box */
+.chat .channel-text-area-default{
+    margin: 0 0 30px;
+}
+.theme-light .chat .channel-text-area-default div[class^="inner"]{
+    background-color: transparent;
+}
+.theme-light .chat .channel-text-area-default textarea{
+    color: #FFF;
+    font-size: 15px !important;
+    letter-spacing: normal;
+}
+.theme-light .chat .channel-text-area-default textarea::-webkit-input-placeholder{
+    color: #FFF;
+}
+/*svg*/
+svg[class^="attachButton-"]{
+    opacity: 1;
+}
+svg[class^="attachButton-"] path[class*="attachButtonForeground"]{
+    fill: #FFF;
+}
+div[class^="attachButtonDivider"]{
+    width: 0;
+    margin: 0 6px;
+}
+
+/* slash command list */
+.theme-light div[class^="autocomplete"]{
+    background-color: var(--b3);
+    border-radius: 0;
+}
+div[class^="autocomplete"] div[class^="contentTitle"]{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
+div[class^="autocomplete"] div[class^="selector"]{
+    border-radius: 0;
+}
+div[class^="autocomplete"] div[class^="selectorSelected"]{
+    background-color: var(--accent);
+}
+.theme-light div[class^="autocomplete"] div[class*="selector-"] div[class*="content"],
+.theme-light div[class^="autocomplete"] div[class*="selector-"] div[class*="description"]{
+    color: #FFF;
+}
+.theme-light div[class^="autocomplete"] svg polygon{
+    fill: #FFF;
 }

@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.8
+* Quick fix for new channel chat box
+
 #### 2.22.7
 * Port updated channels CSS from v3
 * **Fixes**
