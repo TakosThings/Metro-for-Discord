@@ -74,3 +74,15 @@
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece{
     background-color: #171717 !important;
 }
+// Chatbox autocomplete horizontal scrollbar
+div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
+    &::-webkit-scrollbar-track{
+        margin: 8px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #454545;
+        &:hover{
+            background-color: #747474;
+        }
+    }
+}

@@ -1,141 +1,123 @@
-// Emoji
-.channel-textarea-emoji{
-    width: 32px;
-    height: 32px;
-    left: 0;
-}
-.theme-dark .channel-textarea-emoji{
-    opacity: 1;
-}
-.channel-textarea-emoji>.sprite-item{
-    width: 32px;
-    height: 32px;
-    background-image: none !important;
-    opacity: .7;
-    line-height: 32px;
-    text-align: center;
-    vertical-align: middle;
-}
-.channel-textarea-emoji>.sprite-item::before{
-    content: "\E170";
-    font-family: $icon;
-    
-}
-.channel-textarea-emoji.hovered .sprite-item,
-.channel-textarea-emoji.popout-open .sprite-item{
-    transform: none;
-}
-
-// Upload
-.channel-textarea-upload{
-    width: 32px;
-    min-width: 32px;
-    height: 32px;
-    position: absolute;
-    top: 0;
-    left: 32px;
-    margin: 0;
-    opacity: .7;
-    border: 0;
-    line-height: 32px;
-    text-align: center;
-    vertical-align: middle;
-    &:hover{
-        background-color: transparent;
-        opacity: 1;
-        border: 0;
-    }
-}
-.channel-textarea-upload::before{
-    content: "\E11C";
-    font-family: $icon;
-}
-.theme-dark .channel-textarea-inner .channel-textarea-upload:hover{
-    background-color: transparent;
-}
-.theme-dark .channel-textarea-upload{
-    background-image: none;
-    &:hover{
-        background-image: none;
-    }
-}
-.channel-textarea-upload ~ textarea{
-    padding-left: 32px;
-}
-
 // Chatbox
 .chat form{
-    margin: 0;
-    padding: 0 20px;
-    background-color: darken($b2, 1%);
-    box-shadow: none
+    margin: 0 20px;
 }
 .theme-dark .chat form{
     border: 0;
 }
-.channel-textarea{
-    margin: 10px 0 20px;
+.channel-text-area-default{
+    margin: 0 0 20px;
 }
-.channel-textarea-inner{
-    padding: 6px 10px;
-    border: 0;
+.channel-text-area-default div[class^="inner"]{
+    //background-color: transparent;
+    background-color: $b1;
+}
+.channel-text-area-default textarea{
+    margin: 0;
+    font-size: $fsui;
+    letter-spacing: normal;
+}
+.theme-dark .channel-text-area-default textarea{
+    margin-left: 28px;
+    color: #FFF;
+    &::-webkit-input-placeholder{
+        color: rgba(255,255,255,.5);
+    }
+}
+.channel-text-area-default div[class*="innerAutocomplete"],
+.channel-text-area-default div[class*="innerNoAutocomplete"]{
     border-radius: 0;
 }
-.theme-dark .channel-textarea-inner{
+.channel-text-area-default div[class*="inner-"] div[class^="flex"]~textarea{
+    margin-left: 0;
+}
+
+// Upload button
+.channel-text-area-default svg[class^="attachButton-"]{
+    margin-left: 40px;
+    padding: 10px;
+    &:hover{
+        transform: none;
+    }
+    &:active path[class^="attachButtonForeground"]{
+        fill: var(--accent);
+    }
+}
+
+// Divider
+.channel-text-area-default div[class^="attachButtonDivider-"]{
+    width: 10px;
+    margin: 0;
     background-color: transparent;
 }
-.channel-textarea-inner textarea{
-    margin-right: 0;
-    margin-left: 32px;
-    font-family: $font;
-    font-size: $fsui;
-}
-.theme-dark .channel-textarea-inner textarea,
-.theme-dark .channel-textarea-inner textarea::-webkit-input-placeholder{
-    color: #FFF;
-}
 
-// Disabled chatbox
-.channel-textarea.channel-textarea-disabled{
-    opacity: 1;
-    font-weight: normal;
+// Emoji button
+.channel-text-area-default div[class*="emojiButton-"]{
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: initial;
+    left: 0;
 }
-.channel-textarea.channel-textarea-disabled textarea{
-    margin-left: -10px;
-}
-
-// Countdown chatbox
-.channel-textarea-guard{
-    font-weight: normal;
-}
-.theme-dark .channel-textarea-guard{
+.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]{
+    transition: none;
     background-image: none;
-    color: #FFF;
+    &:active{
+        color: var(--accent);
+    }
 }
-.channel-textarea-guard .countdown{
-    font-size: $fsheader;
-    font-weight: $fwheader;
+.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before{
+    content: "\E11D";
+    font-family: $icon;
+    font-size: 21px;
+    text-align: center;
 }
-.channel-textarea-guard .countdown .countdown-number{
-    min-width: auto;
-    border: 0;
-}
-.theme-dark .channel-textarea-guard .countdown-number{
-    background-color: transparent;
+.channel-text-area-default div[class*="emojiButton-"] div[class*="spriteHovered"]{
+    transform: none;
 }
 
 // Typing
 .typing{
     height: 20px;
-    line-height: 1;
+    color: #FFF;
+    font-size: 11px;
+    line-height: 20px;
 }
 .theme-dark .chat form .typing{
-    padding: 0 20px;
     background-color: transparent;
+}
+.typing strong{
+    font-weight: normal;
 }
 .typing .ellipsis{
     display: none;
 }
-.typing strong{
+
+// Auto complete
+.theme-dark div[class^="autocomplete-"]{
+    background-color: $b1;
+    border-bottom: 1px solid $b2;
+    border-radius: 0;
+}
+div[class^="autocomplete-"] div[class^="contentTitle"]{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+div[class^="autocomplete-"] div[class^="contentTitle"] strong{
     font-weight: normal;
+}
+div[class^="autocomplete-"] div[class^="contentTitle"] strong::before,
+div[class^="autocomplete-"] div[class^="contentTitle"] strong::after{
+    content: "'";
+}
+div[class^="autocomplete-"] div[class*="selector-"]{
+    border-radius: 0;
+}
+.theme-dark div[class^="autocomplete-"] div[class^="selectorSelected"]{
+    background-color: var(--accent);
+}
+.theme-dark div[class^="autocomplete-"] polygon{
+    fill: #FFF;
 }
