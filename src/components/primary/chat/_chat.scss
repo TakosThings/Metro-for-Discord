@@ -125,8 +125,8 @@
 
 // New messages
 .chat .new-messages-bar{
-    left: 0;
-    right: 12px;
+    left: 20px;
+    right: 20px;
     background-color: var(--accent);
     border-radius: 0;
     &:hover{
@@ -143,8 +143,9 @@
 
 // Jump to present
 .chat .jump-to-present-bar{
-    left: 0;
-    right: 12px;
+    left: 20px;
+    right: 20px;
+    border-bottom: 1px solid $b2;
     border-radius: 0;
 }
 .theme-dark .chat .jump-to-present-bar{

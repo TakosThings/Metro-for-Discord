@@ -915,8 +915,8 @@ body.bd-blue .app::before {
   opacity: 1; }
 
 .chat .new-messages-bar {
-  left: 0;
-  right: 12px;
+  left: 20px;
+  right: 20px;
   background-color: var(--accent);
   border-radius: 0; }
   .chat .new-messages-bar:hover {
@@ -930,8 +930,9 @@ body.bd-blue .app::before {
   text-transform: none; }
 
 .chat .jump-to-present-bar {
-  left: 0;
-  right: 12px;
+  left: 20px;
+  right: 20px;
+  border-bottom: 1px solid #262626;
   border-radius: 0; }
 
 .theme-dark .chat .jump-to-present-bar {
