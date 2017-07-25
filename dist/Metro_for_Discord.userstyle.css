@@ -246,6 +246,11 @@
     color: #D02E00; }
     .context-menu .item.danger:hover {
       color: #D02E00 !important; }
+  .context-menu .checkbox .checkbox-inner span {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0; }
+    .context-menu .checkbox .checkbox-inner span:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
   .connecting {
     background-color: #191919;
     margin-top: 32px; }
