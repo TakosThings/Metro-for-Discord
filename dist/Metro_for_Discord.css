@@ -2031,6 +2031,18 @@ input[class*="checkbox-"]:disabled + div[class^="switch"]::before {
   width: 10px;
   height: 10px; }
 
+div[class*="switchWrapperClear-"] div[class*="switch-"] {
+  box-shadow: none; }
+
+div[class*="switchWrapperClear-"]:hover div[class*="switch-"] {
+  box-shadow: none; }
+
+div[class*="switchWrapperClear-"] div[class*="switch-"]::before {
+  width: 10px;
+  height: 10px;
+  top: 3px;
+  left: 5px; }
+
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"] {
   background-color: #101010 !important;
   border: 1px solid var(--accent) !important; }
