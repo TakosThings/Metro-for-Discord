@@ -101,6 +101,14 @@ button[class^="buttonBrandFilledDefault"]{
     }
 }
 
+// Branded buttons disabled (eg. Prune members modal)
+button[class^="buttonBrandFilledDisabled"]{
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-weight: normal;
+}
+
 // Green button (eg. account deatils Save)
 button[class^="buttonGreenFilledDefault"]{
     background-color: $safe;
