@@ -2466,7 +2466,7 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
   background-color: #191919;
   border: 0;
   border-radius: 0;
-  box-shadow: none; }
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2); }
 
 .popout .themed-popout .header {
   border-radius: 0; }
