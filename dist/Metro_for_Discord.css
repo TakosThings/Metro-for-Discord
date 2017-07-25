@@ -1905,6 +1905,19 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
     border-color: var(--accent);
     color: #000; }
 
+.theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > textarea {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0; }
+  .theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > textarea:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > textarea:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+.theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > div[class^="maxLength"] {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
+
 .ui-select {
   font-size: 15px; }
 
