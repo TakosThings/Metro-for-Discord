@@ -2626,6 +2626,115 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 .search-popout .search-query .search-for strong::after {
   content: "'"; }
 
+.search-popout .date-picker {
+  border: 0; }
+
+.ui-calendar-picker .react-datepicker {
+  padding: 14px;
+  border-radius: 0;
+  color: #FFF;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: 400; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker {
+  background-color: transparent; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__header {
+  background-color: transparent;
+  border: 0; }
+
+.ui-calendar-picker .react-datepicker__current-month {
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__current-month {
+  border: 0;
+  color: #FFF; }
+
+.ui-calendar-picker .react-datepicker__day-name {
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day-name {
+  color: #FFF; }
+
+.ui-calendar-picker .react-datepicker__day,
+.ui-calendar-picker .react-datepicker__week:last-of-type > .react-datepicker__day,
+.ui-calendar-picker .react-datepicker__week > .react-datepicker__day:last-of-type {
+  border: 0; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day {
+  margin: 0 2px 2px 0;
+  border: 2px solid transparent;
+  color: #FFF;
+  font-weight: 400; }
+  .theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.4); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day {
+  border: 2px solid transparent; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:last-of-type {
+  margin: 0 0 2px 0; }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled:hover {
+  color: rgba(255, 255, 255, 0.4); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--today {
+  background-color: var(--accent); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected {
+  border: 2px solid var(--accent); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected::after {
+  display: none; }
+
+.search-popout .date-picker .date-picker-hint .hint-value {
+  padding: 0;
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 400; }
+  .search-popout .date-picker .date-picker-hint .hint-value:hover {
+    background-color: transparent;
+    color: var(--accent); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous {
+  width: 10px;
+  height: 10px;
+  top: 23px;
+  right: 60px;
+  left: initial;
+  background-image: none;
+  border: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.6);
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(-45deg); }
+  .theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next {
+  width: 10px;
+  height: 10px;
+  top: 16px;
+  right: 30px;
+  background-image: none;
+  border: 0;
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  transform: rotate(45deg); }
+  .theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
 #rtc-connection-popout {
   border: 1px solid var(--accent); }
 

@@ -80,3 +80,130 @@
 .search-popout .search-query .search-for strong::after{
     content: "'";
 }
+
+//Date picker
+.search-popout .date-picker{
+    border: 0;
+}
+.ui-calendar-picker .react-datepicker{
+    padding: 14px;
+    border-radius: 0;
+    color: #FFF;
+    font-family: $font;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker{
+    background-color: transparent;
+}
+// Header
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__header{
+    background-color: transparent;
+    border: 0;
+}
+.ui-calendar-picker .react-datepicker__current-month{
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__current-month{
+    border: 0;
+    color: #FFF;
+}
+// Day headers
+.ui-calendar-picker .react-datepicker__day-name{
+    font-size: 13px;
+    font-weight: $fwui;
+    text-transform: none;
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day-name{
+    color: #FFF;
+}
+// Calendar
+// Who ever wrote this shit is a numpty
+.ui-calendar-picker .react-datepicker__day,
+.ui-calendar-picker .react-datepicker__week:last-of-type>.react-datepicker__day,
+.ui-calendar-picker .react-datepicker__week>.react-datepicker__day:last-of-type{
+    border: 0;
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day{
+    margin: 0 2px 2px 0;
+    border: 2px solid transparent;
+    color: #FFF;
+    font-weight: $fwui;
+    &:hover{
+        background-color: transparent;
+        border-color: rgba(255,255,255,.4);
+    }
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day{
+    border: 2px solid transparent;
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:last-of-type{
+    margin: 0 0 2px 0;
+}
+// Outside of month, to the past
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month{
+    background-color: transparent;
+    color: rgba(255,255,255,.3);
+}
+// Outside of month, to the future
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled:hover{
+    color: rgba(255,255,255,.4);
+}
+// Today
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--today{
+    background-color: var(--accent);
+}
+// Selected
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected{
+    border: 2px solid var(--accent);
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected::after{
+    display: none;
+}
+
+// You can also do X
+.search-popout .date-picker .date-picker-hint .hint-value{
+    padding: 0;
+    background-color: transparent;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: transparent;
+        color: var(--accent);
+    }
+}
+
+// Incr button
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous{
+    width: 10px;
+    height: 10px;
+    top: 23px;
+    right: 60px;
+    left: initial;
+    background-image: none;
+    border: 0;
+    border-top: 2px solid $inputborder;
+    border-right: 2px solid $inputborder;
+    transform: rotate(-45deg);
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next{
+    width: 10px;
+    height: 10px;
+    top: 16px;
+    right: 30px;
+    background-image: none;
+    border: 0;
+    border-right: 2px solid $inputborder;
+    border-bottom: 2px solid $inputborder;
+    transform: rotate(45deg);
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
