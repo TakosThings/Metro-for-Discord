@@ -924,7 +924,10 @@ form.deprecated.auth-form p.token-tip {
   color: #0078D7; }
 
 .mention {
+  background-color: transparent;
   color: var(--accent); }
+  .mention:hover {
+    background-color: transparent; }
 
 .theme-dark .message-group .comment .markup .mention {
   background-color: transparent; }

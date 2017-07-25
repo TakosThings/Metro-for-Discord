@@ -64,7 +64,11 @@
 
 // Mentions
 .mention{
+    background-color: transparent;
     color: var(--accent);
+    &:hover{
+        background-color: transparent;
+    }
 }
 .theme-dark .message-group .comment .markup .mention{
     background-color: transparent;
