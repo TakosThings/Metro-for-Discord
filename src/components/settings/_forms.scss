@@ -22,6 +22,23 @@
     }
 }
 
+// Textarea (channel settings motd)
+.theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > textarea{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000;
+    }
+}
+.theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > div[class^="maxLength"]{
+    font-family: $mono;
+}
+
 // Dropdown
 .ui-select{
     font-size: 15px;
