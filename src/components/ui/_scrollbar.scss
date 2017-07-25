@@ -7,7 +7,8 @@
       .quickswitcher .results-scroller,
       .notification-settings-modal .scroller,
       .messages-popout-wrap .scroller,
-      .search-results-wrap .scroller-wrap .scroller{
+      .search-results-wrap .scroller-wrap .scroller,
+      .private-channel-recipients-invite .body .scroller{
         &::-webkit-scrollbar{
             width: 12px;
         }
