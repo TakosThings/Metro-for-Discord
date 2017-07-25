@@ -146,7 +146,8 @@
 }
 
 // Voice channel capacity
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"]{
+.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
+.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"]{
     background-color: $b3;
     font-family: $mono;
     border-radius: 0;
