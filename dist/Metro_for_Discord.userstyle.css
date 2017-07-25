@@ -2026,6 +2026,35 @@
   .search-popout .search-query .search-for strong::before,
   .search-popout .search-query .search-for strong::after {
     content: "'"; }
+  #rtc-connection-popout {
+    border: 1px solid var(--accent); }
+  #rtc-connection-popout header {
+    background-color: #191919;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none; }
+  #rtc-connection-popout section {
+    background-color: #191919;
+    border-radius: 0; }
+  #rtc-connection-popout section p {
+    color: #FFF;
+    font-size: 15px; }
+  #rtc-connection-popout section p strong {
+    color: var(--accent);
+    font-weight: normal; }
+  #rtc-connection-popout hr {
+    border: 0; }
+  #rtc-connection-popout section::after {
+    display: none; }
+  #rtc-connection-popout .sparkline svg g polyline:first-of-type {
+    fill: #FFF !important; }
+  #rtc-connection-popout .sparkline svg g polyline:last-of-type {
+    stroke: #FFF !important; }
+  #rtc-connection-popout .debug-button {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400; }
   #user-profile-modal {
     border: 1px solid var(--accent);
     border-radius: 0; }
