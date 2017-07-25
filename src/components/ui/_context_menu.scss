@@ -72,3 +72,12 @@
         color: $alert !important;
     }
 }
+
+// Checkbox
+.context-menu .checkbox .checkbox-inner span{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
