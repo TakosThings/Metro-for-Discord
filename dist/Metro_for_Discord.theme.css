@@ -554,17 +554,16 @@ body.bd-blue .app::before {
 .channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
   opacity: 1; }
 
-.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg > path[class*="colorSelectedText"] {
-  fill: #FFF; }
+.channels-wrap div[class*="contentSelectedText"] > div[class^="marginReset"] > svg {
+  opacity: 1;
+  color: #FFF; }
 
 .channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
   color: #FFF; }
 
-.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg {
-  opacity: 1; }
-
-.channels-wrap div[class*="contentUnreadText"] > .margin-reset > svg > path[class*="colorUnreadText"] {
-  fill: var(--accent); }
+.channels-wrap div[class*="contentUnreadText"] > div[class^="marginReset"] > svg {
+  opacity: 1;
+  color: var(--accent); }
 
 .channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
   color: var(--accent); }
@@ -576,11 +575,9 @@ body.bd-blue .app::before {
   background-color: var(--accent);
   border-radius: 0; }
 
-.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg {
-  opacity: .5; }
-
-.channels-wrap div[class*="contentMutedText"] > .margin-reset > svg > path[class*="colorMutedText"] {
-  fill: #D02E00; }
+.channels-wrap div[class*="contentMutedText"] > div[class^="marginReset"] > svg {
+  opacity: .5;
+  color: #D02E00; }
 
 .channels-wrap div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"] {
   color: #D02E00;
