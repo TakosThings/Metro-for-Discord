@@ -3056,6 +3056,48 @@ div[class^="modal"] div[class*="header"] h4 {
   line-height: 1.5625;
   text-transform: none; }
 
+.region-select-modal {
+  padding: 20px;
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+.region-select-modal .region-select-modal-header {
+  padding-top: 36px;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: left;
+  text-transform: none; }
+
+.region-select-modal .region-select-modal-option {
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  margin: 0 0 8px 0;
+  justify-content: flex-start;
+  flex-direction: row;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0; }
+  .region-select-modal .region-select-modal-option:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
+.region-select-modal .region-select-modal-option .region-select-name {
+  padding: 0 8px;
+  margin: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  display: inline; }
+
+.region-select-modal .region-select-modal-footer {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left; }
+
 .theme-dark div[class^="modal-"] div[class^="message-"] {
   background-color: #333333;
   border-radius: 0;
