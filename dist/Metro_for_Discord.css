@@ -315,6 +315,46 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
   .context-menu .checkbox .checkbox-inner span:hover {
     border-color: rgba(255, 255, 255, 0.8); }
 
+.context-menu .slider .slider-bar {
+  height: 2px;
+  background-color: #666;
+  border-radius: 0; }
+
+.context-menu .slider:hover .slider-bar {
+  background-color: #999; }
+
+.context-menu .slider-bar-fill {
+  background-color: var(--accent); }
+
+.context-menu .slider .slider-handle {
+  width: 8px;
+  height: 24px;
+  top: -11px;
+  background-color: var(--accent);
+  border: 0; }
+
+.context-menu .slider:hover .slider-handle {
+  background-color: #FFF; }
+
+.context-menu .slider .slider-handle span {
+  width: auto;
+  height: auto;
+  top: -31px;
+  left: -20px;
+  padding: 7px 8px 8px;
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1; }
+
+.context-menu .slider .slider-handle span::before,
+.context-menu .slider .slider-handle span::after {
+  display: none; }
+
 .connecting {
   background-color: #191919;
   margin-top: 32px; }
