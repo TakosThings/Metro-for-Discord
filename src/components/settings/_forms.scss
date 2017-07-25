@@ -279,3 +279,24 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]::before{
     display: none;
 }
+
+// Allow/Passthrough/Deny permissions button group
+div[class^="group"] button[class^="item"]{
+    border-color: $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+div[class^="group"] button[class*="denySelected"]{
+    background-color: $alert;
+    border-color: $alert;
+}
+div[class^="group"] button[class*="passthroughSelected"]{
+    background-color: #505050;
+    border-color: #505050;
+}
+div[class^="group"] button[class*="allowSelected"]{
+    background-color: $safe;
+    border-color: $safe;
+}

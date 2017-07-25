@@ -2073,6 +2073,24 @@ div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubb
 div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]::before {
   display: none; }
 
+div[class^="group"] button[class^="item"] {
+  border-color: rgba(255, 255, 255, 0.6);
+  border-radius: 0; }
+  div[class^="group"] button[class^="item"]:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+
+div[class^="group"] button[class*="denySelected"] {
+  background-color: #D02E00;
+  border-color: #D02E00; }
+
+div[class^="group"] button[class*="passthroughSelected"] {
+  background-color: #505050;
+  border-color: #505050; }
+
+div[class^="group"] button[class*="allowSelected"] {
+  background-color: #43B581;
+  border-color: #43B581; }
+
 .user-popout {
   border: 1px solid var(--accent);
   border-radius: 0; }
