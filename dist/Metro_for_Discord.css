@@ -1866,10 +1866,10 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .ui-select .Select-option {
   min-height: 36px; }
 
-.theme-dark .ui-select .Select-control {
+.theme-dark .ui-select .Select:not(.is-disabled) .Select-control {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0; }
-  .theme-dark .ui-select .Select-control:hover {
+  .theme-dark .ui-select .Select:not(.is-disabled) .Select-control:hover {
     border-color: rgba(255, 255, 255, 0.8); }
 
 .theme-dark .ui-select .is-open .Select-control {
@@ -1881,6 +1881,7 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .Select-arrow-zone {
   padding-right: 8px; }
 
+.theme-dark .ui-select .is-disabled .Select-control:hover .Select-arrow,
 .theme-dark .ui-select .Select-control:hover .Select-arrow,
 .theme-dark .ui-select .is-focused .Select-control .Select-arrow,
 .theme-dark .ui-select .Select-control .Select-arrow {
