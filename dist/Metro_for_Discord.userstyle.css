@@ -1478,6 +1478,11 @@
       border-color: rgba(255, 255, 255, 0.6); }
     button[class^="buttonBrandFilledDefault"]:focus {
       border-color: rgba(255, 255, 255, 0.8); }
+  button[class^="buttonBrandFilledDisabled"] {
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-weight: normal; }
   button[class^="buttonGreenFilledDefault"] {
     background-color: #43B581;
     border: 1px solid transparent;
