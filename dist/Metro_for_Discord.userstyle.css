@@ -1440,6 +1440,7 @@
     top: -2px; }
   .Select-arrow-zone {
     padding-right: 8px; }
+  .theme-dark .ui-select .Select-control:hover .Select-arrow,
   .theme-dark .ui-select .is-focused .Select-control .Select-arrow,
   .theme-dark .ui-select .Select-control .Select-arrow {
     width: 8px;
