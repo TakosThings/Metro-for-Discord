@@ -675,7 +675,10 @@
   .theme-dark .message-group a {
     color: #0078D7; }
   .mention {
+    background-color: transparent;
     color: var(--accent); }
+    .mention:hover {
+      background-color: transparent; }
   .theme-dark .message-group .comment .markup .mention {
     background-color: transparent; }
     .theme-dark .message-group .comment .markup .mention:hover {
