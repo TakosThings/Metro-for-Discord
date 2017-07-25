@@ -30,7 +30,7 @@
 .ui-select .Select-option{
     min-height: 36px;
 }
-.theme-dark .ui-select .Select-control{
+.theme-dark .ui-select .Select:not(.is-disabled) .Select-control{
     border: 1px solid $inputborder;
     border-radius: 0;
     &:hover{
@@ -47,6 +47,7 @@
 .Select-arrow-zone{
     padding-right: 8px;
 }
+.theme-dark .ui-select .is-disabled .Select-control:hover .Select-arrow,
 .theme-dark .ui-select .Select-control:hover .Select-arrow,
 .theme-dark .ui-select .is-focused .Select-control .Select-arrow,
 .theme-dark .ui-select .Select-control .Select-arrow{
