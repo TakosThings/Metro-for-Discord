@@ -1,0 +1,47 @@
+#rtc-connection-popout{
+    border: 1px solid var(--accent);
+}
+
+// Header
+#rtc-connection-popout header{
+    background-color: $b1;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// Section
+#rtc-connection-popout section{
+    background-color: $b1;
+    border-radius: 0;
+}
+#rtc-connection-popout section p{
+    color: #FFF;
+    font-size: $fsui;
+}
+#rtc-connection-popout section p strong{
+    color: var(--accent);
+    font-weight: normal;
+}
+#rtc-connection-popout hr{
+    border: 0;
+}
+#rtc-connection-popout section::after{
+    display: none;
+}
+
+// Polyline
+#rtc-connection-popout .sparkline svg g polyline:first-of-type{
+    fill: #FFF !important;
+}
+#rtc-connection-popout .sparkline svg g polyline:last-of-type{
+    stroke: #FFF !important;
+}
+
+// Debug
+#rtc-connection-popout .debug-button{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
