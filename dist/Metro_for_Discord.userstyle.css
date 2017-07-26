@@ -2392,6 +2392,43 @@
     height: 25px; }
   .theme-dark .ui-popout-list .ui-selectable-item[style*="background: rgb(114, 137, 218)"] {
     background-color: var(--accent) !important; }
+  #autocomplete-popout {
+    border: 1px solid var(--accent);
+    border-radius: 0; }
+  #autocomplete-popout header::before {
+    display: none; }
+  #autocomplete-popout header {
+    background-color: #191919;
+    padding: 0 10px; }
+  #autocomplete-popout header h3 {
+    display: none; }
+  #autocomplete-popout input[type=text] {
+    height: 36px;
+    padding: 9px 12px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400; }
+    #autocomplete-popout input[type=text]::-webkit-input-placeholder {
+      color: rgba(255, 255, 255, 0.5); }
+    #autocomplete-popout input[type=text]:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
+    #autocomplete-popout input[type=text]:focus {
+      background-color: #FFF;
+      border-color: var(--accent);
+      color: #000; }
+      #autocomplete-popout input[type=text]:focus::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 0.5); }
+  #autocomplete-popout section {
+    background-color: #191919;
+    border-radius: 0; }
+  #autocomplete-popout .row {
+    padding: 8px;
+    color: #FFF;
+    line-height: 1; }
+  #autocomplete-popout .row.selected {
+    background-color: var(--accent);
+    background-image: none; }
   #user-profile-modal {
     border: 1px solid var(--accent);
     border-radius: 0; }
