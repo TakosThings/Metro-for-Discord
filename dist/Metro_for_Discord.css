@@ -2986,6 +2986,54 @@ div[class^="group"] button[class*="allowSelected"] {
     background-color: var(--accent);
     border-color: transparent; }
 
+.ui-popout-list {
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
+.theme-dark .ui-popout-list {
+  background-color: #191919; }
+
+.theme-dark .ui-popout-list .ui-search-bar {
+  height: auto;
+  position: relative;
+  background-color: transparent; }
+
+.theme-dark .ui-popout-list .ui-search-bar input {
+  height: 36px;
+  padding: 9px 12px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  box-sizing: border-box;
+  font-size: 15px; }
+  .theme-dark .ui-popout-list .ui-search-bar input:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .theme-dark .ui-popout-list .ui-search-bar input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+.ui-popout-list .ui-search-bar .ui-search-bar-icon {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
+
+.ui-popout-list .ui-selectable-item {
+  padding: 8px;
+  border: 0;
+  border-radius: 0; }
+  .ui-popout-list .ui-selectable-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+
+.ui-popout-list .ui-selectable-item .ui-selectable-item-label {
+  font-size: 15px; }
+
+.ui-popout-list .ui-selectable-item .ui-selectable-item-label div[class^="avatar-"] {
+  width: 25px;
+  height: 25px; }
+
+.theme-dark .ui-popout-list .ui-selectable-item[style*="background: rgb(114, 137, 218)"] {
+  background-color: var(--accent) !important; }
+
 #user-profile-modal {
   border: 1px solid var(--accent);
   border-radius: 0; }
