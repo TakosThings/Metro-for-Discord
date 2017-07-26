@@ -216,6 +216,19 @@ button[class^="buttonPrimaryLinkDefault"]{
     }
 }
 
+// Primary outlined (eg. Nitro $4.99/month button)
+.theme-dark button[class^="buttonPrimaryOutlinedDefault"]{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    font-weight: normal;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
 // Checkboxes
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"]{
     border-color: $inputborder;
