@@ -2124,6 +2124,9 @@ input[class*="checkbox-"]:disabled + div[class^="switch"]::before {
   width: 10px;
   height: 10px; }
 
+div[class^="switchWrapperDefaultDisabled"] div[class*="checked"] {
+  background-color: var(--accent); }
+
 div[class*="switchWrapperClear-"] div[class*="switch-"] {
   box-shadow: none; }
 

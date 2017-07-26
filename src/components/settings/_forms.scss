@@ -281,6 +281,10 @@ input[class*="checkbox-"]:disabled+div[class^="switch"]::before{
     width: 10px;
     height: 10px;
 }
+// Disabled toggled on switch background
+div[class^="switchWrapperDefaultDisabled"] div[class*="checked"]{
+    background-color: var(--accent);
+}
 
 // Toggle switch (alternate style)
 div[class*="switchWrapperClear-"] div[class*="switch-"]{
