@@ -1864,6 +1864,31 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .theme-dark div[class^="inputWrapper"] > div[class^="inputMaxLength"] > div[class^="maxLength"] {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
 
+.theme-dark .role-filter ~ .ui-search-bar {
+  position: relative;
+  background-color: transparent; }
+
+.theme-dark .role-filter ~ .ui-search-bar input {
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  font-size: 15px; }
+  .theme-dark .role-filter ~ .ui-search-bar input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.5); }
+  .theme-dark .role-filter ~ .ui-search-bar input:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  .theme-dark .role-filter ~ .ui-search-bar input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+    .theme-dark .role-filter ~ .ui-search-bar input:focus::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.5); }
+
+.theme-dark .role-filter ~ .ui-search-bar .ui-search-bar-icon {
+  position: absolute;
+  top: 4px;
+  right: 4px; }
+
 .ui-select {
   font-size: 15px; }
 
