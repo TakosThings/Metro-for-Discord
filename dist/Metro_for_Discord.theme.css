@@ -2072,6 +2072,21 @@ button[class^="buttonPrimaryLinkDefault"] {
   .theme-dark button[class^="buttonPrimaryFilledDefault"]:focus {
     border-color: rgba(255, 255, 255, 0.8); }
 
+.ui-input-button {
+  height: 36px;
+  border-radius: 0; }
+
+.theme-dark .ui-input-button {
+  border-color: rgba(255, 255, 255, 0.6); }
+
+.ui-key-recorder .input::-webkit-input-placeholder {
+  font-weight: normal; }
+
+.ui-input-button .ui-input-button-ui-button {
+  padding: 2px 0;
+  border-radius: 0;
+  font-weight: normal; }
+
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"] {
   border-color: rgba(255, 255, 255, 0.6);
   border-radius: 0; }

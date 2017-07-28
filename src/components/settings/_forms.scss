@@ -244,6 +244,25 @@ button[class^="buttonPrimaryLinkDefault"]{
     }
 }
 
+// Keybind box
+.ui-input-button{
+    height: 36px;
+    border-radius: 0;
+}
+.theme-dark .ui-input-button{
+    border-color: $inputborder;
+}
+.ui-key-recorder .input::-webkit-input-placeholder{
+    font-weight: normal;
+}
+
+// Keybind box button ('Record Keybind')
+.ui-input-button .ui-input-button-ui-button{
+    padding: 2px 0;
+    border-radius: 0;
+    font-weight: normal;
+}
+
 // Checkboxes
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"]{
     border-color: $inputborder;
