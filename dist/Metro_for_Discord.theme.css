@@ -1859,6 +1859,15 @@ div[class*="cardWarning-"] {
   left: 0;
   border-radius: 0; }
 
+.theme-dark div[class^="side"] div[class^="header"] {
+  color: #FFF;
+  font-size: 15px;
+  text-transform: none; }
+
+div[class^="side"] div[class*="item"] {
+  border-radius: 0;
+  font-weight: normal; }
+
 img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"],
 div[style*="/assets/b47564b3086d0d8d941aae95a4b7b78c.svg"],
 div[style*="/assets/e9aaf1824f17126a7992e5ad98752389.svg"],
