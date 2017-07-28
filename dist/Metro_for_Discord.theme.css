@@ -1051,6 +1051,9 @@ body.bd-blue .app::before {
 .theme-dark .reaction.reaction-me {
   background-color: var(--accent); }
 
+.theme-dark .message-group.is-local-bot-message {
+  background-image: none; }
+
 .chat form {
   margin: 0 20px; }
 
