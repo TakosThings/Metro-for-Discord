@@ -202,3 +202,25 @@
 .message-group-blocked{
     display: none;
 }
+
+// Reactions
+.reaction{
+    border-radius: 0;
+}
+.theme-dark .reaction{
+    border: 1px solid transparent;
+    &:hover{
+        border-color: $inputborder;
+    }
+}
+.theme-dark .reaction .reaction-count{
+    color: rgba(255,255,255,.5);
+    font-weight: normal;
+}
+.theme-dark .reaction.reaction-me .reaction-count{
+    color: #FFF;
+    font-weight: normal;
+}
+.theme-dark .reaction.reaction-me{
+    background-color: var(--accent);
+}
