@@ -261,8 +261,9 @@ button[class^="buttonPrimaryLinkDefault"]{
 
 // Keybind box button ('Record Keybind')
 .ui-input-button .ui-input-button-ui-button{
-    padding: 2px 0;
+    padding: 2px 20px;
     border-radius: 0;
+    font-size: 13px;
     font-weight: normal;
 }
 
