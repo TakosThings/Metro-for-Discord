@@ -2178,7 +2178,7 @@ button[class^="buttonWhiteOutlined"],
   .theme-dark .user-settings-games .game-name-input:focus {
     background-color: #FFF;
     border-color: var(--accent);
-    color: #FFF; }
+    color: #000; }
 
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"] {
   border-color: rgba(255, 255, 255, 0.6);
