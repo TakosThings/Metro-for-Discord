@@ -136,6 +136,17 @@ div[class*="cardWarning-"]{
     border-radius: 0;
 }
 
+// Roles list
+.theme-dark div[class^="side"] div[class^="header"]{
+    color: #FFF;
+    font-size: $fsui;
+    text-transform: none;
+}
+div[class^="side"] div[class*="item"]{
+    border-radius: 0;
+    font-weight: normal;
+}
+
 // Images removal
 // US = User settings, CS = Channel settings, SS = Server Settings
 img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"], // US: 2FA
