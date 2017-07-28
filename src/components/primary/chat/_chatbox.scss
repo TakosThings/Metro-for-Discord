@@ -121,3 +121,28 @@ div[class^="autocomplete-"] div[class*="selector-"]{
 .theme-dark div[class^="autocomplete-"] polygon{
     fill: #FFF;
 }
+
+// Countdown timer
+.theme-dark .channel-textarea-guard{
+    background-color: $b1;
+    background-image: none;
+}
+.theme-dark .channel-textarea-guard > div{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+.channel-textarea-guard .countdown{
+    margin: 0;
+    font-family: $mono;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+.channel-textarea-guard .countdown .countdown-number{
+    min-width: auto;
+}
+.theme-dark .channel-textarea-guard .countdown-number{
+    background-color: transparent;
+    border: 0;
+}
