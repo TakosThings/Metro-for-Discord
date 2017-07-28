@@ -1095,6 +1095,25 @@ form.deprecated.auth-form p.token-tip {
 .message-group-blocked {
   display: none; }
 
+.reaction {
+  border-radius: 0; }
+
+.theme-dark .reaction {
+  border: 1px solid transparent; }
+  .theme-dark .reaction:hover {
+    border-color: rgba(255, 255, 255, 0.6); }
+
+.theme-dark .reaction .reaction-count {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: normal; }
+
+.theme-dark .reaction.reaction-me .reaction-count {
+  color: #FFF;
+  font-weight: normal; }
+
+.theme-dark .reaction.reaction-me {
+  background-color: var(--accent); }
+
 .chat form {
   margin: 0 20px; }
 
