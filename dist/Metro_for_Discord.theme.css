@@ -3743,6 +3743,17 @@ div[class^="modal-"] div[class^="tip"] {
   background-color: transparent;
   color: #FFF; }
 
+.spinner-inner.spinner-wandering-cubes {
+  background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+  background-repeat: no-repeat;
+  background-size: 32px;
+  width: 32px;
+  height: 32px;
+  -webkit-filter: invert(100%); }
+
+.spinner-wandering-cubes .spinner-item {
+  display: none; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
