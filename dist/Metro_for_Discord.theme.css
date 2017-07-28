@@ -2052,12 +2052,15 @@ button[class^="buttonPrimaryLinkDefault"] {
     color: #000;
     border-color: rgba(255, 255, 255, 0.8); }
 
+button[class^="buttonWhiteOutlined"],
 .theme-dark button[class^="buttonPrimaryOutlinedDefault"] {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0;
   font-weight: normal; }
+  button[class^="buttonWhiteOutlined"]:hover,
   .theme-dark button[class^="buttonPrimaryOutlinedDefault"]:hover {
     border-color: rgba(255, 255, 255, 0.8); }
+  button[class^="buttonWhiteOutlined"]:focus,
   .theme-dark button[class^="buttonPrimaryOutlinedDefault"]:focus {
     border-color: rgba(255, 255, 255, 0.8); }
 
