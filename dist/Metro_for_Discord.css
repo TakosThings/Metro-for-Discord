@@ -3219,6 +3219,11 @@ div[class^="group"] button[class*="allowSelected"] {
   background-color: var(--accent);
   background-image: none; }
 
+.theme-dark .add-game-popout {
+  background-color: #191919;
+  border: 1px solid var(--accent);
+  border-radius: 0; }
+
 #user-profile-modal {
   border: 1px solid var(--accent);
   border-radius: 0; }
