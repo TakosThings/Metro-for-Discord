@@ -2078,6 +2078,8 @@ button[class^="buttonPrimaryLinkDefault"] {
 
 .theme-dark .ui-input-button {
   border-color: rgba(255, 255, 255, 0.6); }
+  .theme-dark .ui-input-button:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
 
 .ui-key-recorder .input::-webkit-input-placeholder {
   font-weight: normal; }
