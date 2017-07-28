@@ -1089,7 +1089,7 @@ body.bd-blue .app::before {
     color: var(--accent); }
 
 .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before {
-  content: "\E11D";
+  content: "\E170";
   font-family: winjs-symbols;
   font-size: 21px;
   text-align: center; }
