@@ -1847,6 +1847,9 @@ div[class*="cardWarning-"] {
 .theme-light .user-settings-games .not-detected {
   background-color: #404040; }
 
+.user-settings-games .now-playing {
+  border-radius: 0; }
+
 .user-settings-games .game {
   padding: 20px; }
 

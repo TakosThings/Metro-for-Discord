@@ -120,6 +120,9 @@ div[class*="cardWarning-"]{
 .theme-light .user-settings-games .not-detected{
     background-color: $b4;
 }
+.user-settings-games .now-playing{
+    border-radius: 0;
+}
 // Game
 .user-settings-games .game{
     padding: 20px;
