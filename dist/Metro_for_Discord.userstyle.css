@@ -1696,6 +1696,8 @@
   div[class^="switchWrapperDefaultActive"]:hover div[class^="switch"] {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.8); }
+  div[class^="switch-"][style*="background-color: rgb(67, 181, 129)"] {
+    background-color: var(--accent) !important; }
   div[class^="switchWrapperDefaultActive"] div[class^="switch"]::before {
     width: 10px;
     height: 10px;
