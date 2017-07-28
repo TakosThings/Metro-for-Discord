@@ -224,3 +224,8 @@
 .theme-dark .reaction.reaction-me{
     background-color: var(--accent);
 }
+
+// Local bot message
+.theme-dark .message-group.is-local-bot-message{
+    background-image: none;
+}
