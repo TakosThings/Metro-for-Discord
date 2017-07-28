@@ -2168,6 +2168,18 @@ button[class^="buttonWhiteOutlined"],
   font-size: 13px;
   font-weight: normal; }
 
+.theme-dark .user-settings-games .game-name-input {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  font-weight: normal; }
+  .theme-dark .user-settings-games .game-name-input:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.8); }
+  .theme-dark .user-settings-games .game-name-input:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #FFF; }
+
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"] {
   border-color: rgba(255, 255, 255, 0.6);
   border-radius: 0; }
