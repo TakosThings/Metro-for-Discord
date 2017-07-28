@@ -229,6 +229,21 @@ button[class^="buttonPrimaryLinkDefault"]{
     }
 }
 
+// Primary filled button (eg. Trust this domain cancel button)
+.theme-dark button[class^="buttonPrimaryFilledDefault"]{
+    background-color: transparent;
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    font-weight: normal;
+    &:hover{
+        background-color: transparent;
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
 // Checkboxes
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"]{
     border-color: $inputborder;

@@ -2080,6 +2080,17 @@ button[class^="buttonPrimaryLinkDefault"] {
   .theme-dark button[class^="buttonPrimaryOutlinedDefault"]:focus {
     border-color: rgba(255, 255, 255, 0.8); }
 
+.theme-dark button[class^="buttonPrimaryFilledDefault"] {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  font-weight: normal; }
+  .theme-dark button[class^="buttonPrimaryFilledDefault"]:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.8); }
+  .theme-dark button[class^="buttonPrimaryFilledDefault"]:focus {
+    border-color: rgba(255, 255, 255, 0.8); }
+
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkboxBox"] {
   border-color: rgba(255, 255, 255, 0.6);
   border-radius: 0; }
