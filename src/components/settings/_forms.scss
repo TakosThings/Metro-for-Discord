@@ -251,6 +251,9 @@ button[class^="buttonPrimaryLinkDefault"]{
 }
 .theme-dark .ui-input-button{
     border-color: $inputborder;
+    &:hover{
+        border-color: $inputborderhover;
+    }
 }
 .ui-key-recorder .input::-webkit-input-placeholder{
     font-weight: normal;
