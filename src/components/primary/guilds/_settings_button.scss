@@ -4,6 +4,8 @@
     position: absolute;
     bottom: 8px;
     left: 8px;
+    background-size: 24px;
+    opacity: 1;
     border-radius: 0;
     &:hover{
         background-color: $b3;

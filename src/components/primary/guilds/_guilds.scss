@@ -79,6 +79,13 @@
 }
 
 // Friends
+.guilds-wrapper .guilds .friends-icon{
+    width: 44px;
+    height: 44px;
+    background-size: auto;
+}
+
+// Error
 .guilds-wrapper .guilds-error{
     width: 48px;
     height: 48px;
@@ -91,10 +98,14 @@
     bottom: 60px;
     left: 8px;
     background-color: transparent;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
     border: 0;
     border-radius: 0;
     color: #FFF;
-    font-size: 24px;
+    font-size: 0;
     &:hover{
         background-color: $b3;
     }
