@@ -36,6 +36,11 @@
     line-height: 30px;
     vertical-align: middle;
 }
+.private-channels .status{
+    right: 0;
+    bottom: 0;
+    border: 0;
+}
 
 // Hovered channel
 .private-channels .channel:hover a{
