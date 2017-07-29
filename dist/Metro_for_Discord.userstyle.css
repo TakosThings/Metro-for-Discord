@@ -1236,6 +1236,10 @@
     font-size: 21px;
     line-height: 30px;
     vertical-align: middle; }
+  .private-channels .status {
+    right: 0;
+    bottom: 0;
+    border: 0; }
   .private-channels .channel:hover a {
     background-color: #262626; }
   .private-channels .channel.selected a {
