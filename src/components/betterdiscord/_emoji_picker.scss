@@ -1,0 +1,157 @@
+#bda-qem{
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    display: block;
+    margin-left: 1px;
+    padding-right: 0 !important;
+    background-color: $b1;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent) !important;
+    border-left: 1px solid var(--accent);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+#bda-qem button{
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+#bda-qem button:hover{
+    background-color: $b2;
+}
+#bda-qem button.active{
+    background-color: var(--accent);
+}
+#bda-qem-twitch,
+#bda-qem-favourite,
+#bda-qem-emojis{
+    border-radius: 0;
+    font-size: 0px !important;
+}
+#bda-qem-favourite-container,
+#bda-qem-twitch-container,
+.emoji-picker{
+    margin-right: 20px;
+    margin-left: 40px;
+}
+#bda-qem-twitch:before{
+    content: "";
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
+}
+#bda-qem-favourite:before{
+    content: "";
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
+}
+#bda-qem-emojis:before{
+    content: "";
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    height: 39px;
+}
+#bda-qem-twitch-container,
+#bda-qem-favourite-container{
+    width: 462px;
+    height: 321px;
+    background-color: $b2;
+    border: 1px solid var(--accent);
+    border-radius: 0;
+    box-sizing: border-box;
+}
+.emote-menu-inner{
+    padding: 8px;
+}
+.emote-menu-inner .emote-container{
+    width: 40px;
+    height: 40px;
+    margin: 0 4px 4px 0;
+    border-radius: 0;
+}
+.emote-menu-inner .emote-container:hover{
+    background-color: $b3;
+}
+#bda-qem ~ .emoji-picker .dimmer{
+    width: calc(100% - 62px);
+}
+.bda-dark #bda-qem{
+    background-color: $b1;
+    border-bottom-color: var(--accent) !important;
+}
+.bda-dark #bda-qem button{
+    background-color: transparent;
+    border-left: 0;
+    box-shadow: none;
+}
+.bda-dark .emoji-picker{
+    background-color: $b2;
+}
+.bda-dark .emoji-picker .header .search-bar{
+    background-color: transparent;
+}
+.bda-dark .emoji-picker .category{
+    background-color: transparent;
+}
+.bda-dark .emoji-picker .scroller .emoji-item.selected{
+    background-color: $b3;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bda-dark #bda-qem-favourite-container,
+.bda-dark #bda-qem-twitch-container{
+    background-color: $b2;
+}
+
+#bda-qem-twitch-container .scroller,
+#bda-qem-favourite-container .scroller{
+    &::-webkit-scrollbar{
+        width: 12px;
+    }
+    &::-webkit-scrollbar-button{
+        height: 13px;
+        background-color: #171717;
+    }
+    &::-webkit-scrollbar-button:vertical:increment{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
+        background-size: 12px 12px;
+        border-top: 1px solid #171717;
+        &:hover{
+            background-color: #747474;
+        }
+    }
+    &::-webkit-scrollbar-button:vertical:decrement{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
+        background-size: 12px 12px;
+        border-bottom: 1px solid #171717;
+        &:hover{
+            background-color: #747474;
+        }
+    }
+    &::-webkit-scrollbar-thumb{
+        visibility: visible;
+        background-color: #454545;
+        border: 0;
+        border-radius: 0;
+        &:hover{
+            background-color: #747474;
+        }
+    }
+    &::-webkit-scrollbar-track-piece{
+        visibility: visible;
+        background-color: #171717;
+        border: 0;
+        border-radius: 0;
+    }
+}
