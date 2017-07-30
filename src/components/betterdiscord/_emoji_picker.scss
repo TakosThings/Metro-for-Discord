@@ -37,7 +37,7 @@
     margin-right: 20px;
     margin-left: 40px;
 }
-#bda-qem-twitch:before{
+#bda-qem-twitch::before{
     content: "";
     background-size: 22px;
     background-position: center;
@@ -45,7 +45,7 @@
     display: block;
     height: 39px;
 }
-#bda-qem-favourite:before{
+#bda-qem-favourite::before{
     content: "";
     background-size: 22px;
     background-position: center;
@@ -53,7 +53,7 @@
     display: block;
     height: 39px;
 }
-#bda-qem-emojis:before{
+#bda-qem-emojis::before{
     content: "";
     background-size: 22px;
     background-position: center;
