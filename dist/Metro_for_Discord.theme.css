@@ -1281,6 +1281,54 @@ div[class^="autocomplete-"] div[class*="selector-"] {
 .theme-dark .message-group .embed .embed-fields {
   color: #FFF; }
 
+.invite-button {
+  border: 0;
+  border-radius: 0;
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+
+.theme-dark .invite-button {
+  background-color: #191919; }
+
+.invite-button-icon {
+  background-color: transparent;
+  border: 1px solid #43B581;
+  border-radius: 0; }
+
+.invite-button-icon:before {
+  opacity: 1;
+  border-color: #43B581; }
+
+.invite-button-icon.accepted {
+  background-color: #43B581;
+  border-color: #43B581; }
+
+.invite-button-icon.expired {
+  background-color: #D02E00;
+  border-color: #D02E00; }
+
+.invite-button.expired .invite-button-header {
+  text-transform: none; }
+
+.invite-button-header {
+  font-weight: 400;
+  line-height: 1.5625; }
+  .invite-button-header:first-letter {
+    text-transform: uppercase; }
+
+.invite-button-header strong {
+  font-weight: 400; }
+
+.theme-dark .invite-button .invite-button-header {
+  color: #FFF; }
+
+.invite-button-body {
+  margin-top: 0;
+  font-size: 13px;
+  font-weight: 400; }
+
+.theme-dark .invite-button .invite-button-body {
+  color: #FFF; }
+
 .chat div[class^="title-"] {
   font-size: 20px;
   font-weight: 300; }
