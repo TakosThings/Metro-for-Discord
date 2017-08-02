@@ -1,0 +1,58 @@
+.invite-button{
+    border: 0;
+    border-radius: 0;
+    font-family: $font;
+}
+.theme-dark .invite-button{
+    background-color: $b1;
+}
+
+// Icon
+.invite-button-icon{
+    background-color: transparent;
+    border: 1px solid $safe;
+    border-radius: 0;
+}
+.invite-button-icon:before{
+    opacity: 1;
+    border-color: $safe;
+}
+
+// Accepted
+.invite-button-icon.accepted{
+    background-color: $safe;
+    border-color: $safe;
+}
+
+// Expired
+.invite-button-icon.expired{
+    background-color: $alert;
+    border-color: $alert;
+}
+.invite-button.expired .invite-button-header{
+    text-transform: none;
+}
+
+// Content
+.invite-button-header{
+    font-weight: $fwui;
+    line-height: $lh;
+    &:first-letter{
+        text-transform: uppercase;
+    }
+}
+.invite-button-header strong{
+    font-weight: $fwui;
+}
+.theme-dark .invite-button .invite-button-header{
+    color: #FFF;
+}
+
+.invite-button-body{
+    margin-top: 0;
+    font-size: $fschat;
+    font-weight: $fwui;
+}
+.theme-dark .invite-button .invite-button-body{
+    color: #FFF;
+}
