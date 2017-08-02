@@ -4029,6 +4029,16 @@ form[class^="modal-"] video {
   border: 0;
   border-radius: 0; }
 
+.tipsy {
+  margin-top: -42px;
+  opacity: 1 !important; }
+
+.tipsy-inner {
+  background-color: #191919;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 7px 8px 8px;
+  font-size: 13px; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
