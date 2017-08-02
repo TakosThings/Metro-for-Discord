@@ -1,0 +1,12 @@
+// BetterDiscord's remove favourite emote context menu
+#rmenu{
+    background-color: $b1;
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 8px 10px;
+    box-shadow: none;
+    line-height: 1.5625;
+    width: 150px;
+}
+#rmenu:hover{
+    background-color: $b3;
+}
