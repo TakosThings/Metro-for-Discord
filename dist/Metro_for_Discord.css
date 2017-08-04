@@ -3634,6 +3634,13 @@ div[class^="modal-"] div[class^="tip"] {
 form[class^="modal-"] video {
   display: none; }
 
+.modal-image .download-button {
+  opacity: 1;
+  font-size: 15px;
+  font-weight: 400; }
+  .modal-image .download-button:hover {
+    text-decoration: underline; }
+
 .need-help-modal.deprecated .header {
   padding: 20px 20px 0 20px;
   align-items: baseline;
