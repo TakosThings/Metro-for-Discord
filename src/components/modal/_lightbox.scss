@@ -1,0 +1,8 @@
+.modal-image .download-button{
+    opacity: 1;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        text-decoration: underline;
+    }
+}
