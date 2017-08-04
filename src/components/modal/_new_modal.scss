@@ -1,7 +1,7 @@
 div[class^="modal-"]{
     border-radius: 0;
 }
-.theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"],
+.theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"]:not(.modal-image),
 .theme-dark div[class^="modal-"] > div[class^="inner"] > form[class^="modal"]{
     background-color: $b1;
     border: 1px solid var(--accent);
