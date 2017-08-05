@@ -1814,7 +1814,7 @@ div[class^="autocomplete-"] div[class*="selector-"] {
   padding: 14px 16px;
   border-radius: 0;
   color: #FFF;
-  font-style: 15px;
+  font-size: 15px;
   font-weight: 400; }
   .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"]:hover {
     background-color: rgba(255, 255, 255, 0.15); }
