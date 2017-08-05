@@ -4168,6 +4168,18 @@ form[class^="modal-"] video {
   background-color: var(--accent);
   margin-top: -10px; }
 
+#bd-settingspane-container .content-column.default {
+  padding: 26px 15px 0 0 !important; }
+
+#bd-settingspane-container h2.ui-form-title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+#bd-customcss-detach-container {
+  padding-top: 32px; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
