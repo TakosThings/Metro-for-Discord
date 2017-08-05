@@ -4134,6 +4134,40 @@ form[class^="modal-"] video {
 #rmenu:hover {
   background-color: #333333; }
 
+#bd-settings-sidebar .ui-tab-bar-separator {
+  display: none; }
+
+#bd-settings-sidebar .ui-tab-bar-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: none; }
+
+#bd-settings-sidebar .ui-tab-bar-item {
+  padding: 14px 16px;
+  margin-bottom: 0;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400; }
+  #bd-settings-sidebar .ui-tab-bar-item:hover {
+    background-color: #262626; }
+
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+  background-color: transparent;
+  color: var(--accent); }
+
+#bd-settings-sidebar .ui-tab-bar-item.selected::before {
+  content: "";
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background-color: var(--accent);
+  margin-top: -10px; }
+
 .win-close {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
 
