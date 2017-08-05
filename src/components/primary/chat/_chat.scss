@@ -185,17 +185,48 @@
 
 // Editing message
 .message-group .edit-message .edit-container-inner{
-    margin-right: 64px;
+    margin-right: 40px;
 }
-.message-group.compact .edit-message .edit-container-outer .edit-container-inner .channel-textarea{
+.theme-dark .message-group .edit-container-inner div[class^="innerEnabled"]{
     background-color: $b1;
-    padding: 8px;
+    border-radius: 0;
+}
+.message-group .edit-message .edit-container-inner textarea{
+    margin: 0 0 0 30px;
+}
+.message-group .edit-message .edit-operation{
+    font-family: $font;
+    font-weight: normal;
 }
 .theme-dark .message-group .edit-message .edit-operation{
     color: #FFF;
 }
 .message-group .edit-message .edit-operation>a{
     color: var(--accent);
+}
+// Editing message emoji button
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"]{
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: initial;
+    left: 0;
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]{
+    transition: none;
+    background-image: none;
+    &:active{
+        color: var(--accent);
+    }
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]::before{
+    content: "\E170";
+    font-family: $icon;
+    font-size: 21px;
+    text-align: center;
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="spriteHovered"]{
+    transform: none;
 }
 
 // Blocked messages
