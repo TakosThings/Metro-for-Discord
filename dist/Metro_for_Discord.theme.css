@@ -4157,6 +4157,8 @@ form[class^="modal-"] video {
 #bd-settings-sidebar .ui-tab-bar-item.selected {
   background-color: transparent;
   color: var(--accent); }
+  #bd-settings-sidebar .ui-tab-bar-item.selected:hover {
+    background-color: #262626; }
 
 #bd-settings-sidebar .ui-tab-bar-item.selected::before {
   content: "";

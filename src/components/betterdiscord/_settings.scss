@@ -26,6 +26,9 @@
 #bd-settings-sidebar .ui-tab-bar-item.selected{
     background-color: transparent;
     color: var(--accent);
+    &:hover{
+        background-color: $b2;
+    }
 }
 #bd-settings-sidebar .ui-tab-bar-item.selected::before{
     content: "";
