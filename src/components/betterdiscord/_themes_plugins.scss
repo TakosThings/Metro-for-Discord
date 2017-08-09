@@ -1,0 +1,51 @@
+// Open folder button
+.bd-pfbtn{
+    top: -50px;
+    height: 36px;
+    padding: 9px 12px 10px;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
+.ui-standard-sidebar-view .bda-slist li,
+.ui-standard-sidebar-view .bda-slist li:nth-child(odd){
+    background-color: $b1;
+    border: 0;
+}
+.ui-standard-sidebar-view .bda-slist li{
+    margin-bottom: 4px;
+    padding: 8px;
+}
+
+.bda-slist .bda-name{
+    max-height: initial;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+.ui-standard-sidebar-view .bda-slist .bda-description{
+    border: 0;
+    color: #FFF;
+}
+
+.ui-standard-sidebar-view .bda-slist .bda-right button{
+    height: 36px;
+    margin: 0;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
