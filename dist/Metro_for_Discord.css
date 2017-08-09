@@ -88,6 +88,9 @@ body, input, textarea, button {
 .win-close:hover {
   background-color: #e81123; }
 
+.win-buttons.win-buttons-notice {
+  top: 0; }
+
 .app {
   margin-top: 32px; }
 
