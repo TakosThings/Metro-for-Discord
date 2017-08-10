@@ -641,8 +641,8 @@ form.deprecated.auth-form p.token-tip {
 .channels-wrap > div[class*="noWrap"] {
   background-color: #191919; }
 
-.channels-wrap > div[class*="noWrap"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="wrapperDefault"] > div[class*="nameDefault"],
-.channels-wrap > div[class*="noWrap"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="wrapperHovered"] > div[class*="nameHovered"] {
+.channels-wrap div[class*="nameDefault"],
+.channels-wrap div[class*="nameHovered"] {
   color: #FFF;
   font-size: 20px;
   font-weight: 300;
@@ -715,16 +715,16 @@ form.deprecated.auth-form p.token-tip {
   color: #D02E00;
   opacity: .5; }
 
-.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] {
+.channels-wrap div[class*="container-1"] > div[class*="container-"] {
   color: #FFF;
   font-size: 15px;
   font-weight: 400;
   text-transform: none; }
 
-.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span {
+.channels-wrap div[class*="container-1"] > div[class*="container-"] span {
   background-image: none; }
 
-.channels-wrap div[class*="containerDefault"] ~ div[class*="container-"] span::before {
+.channels-wrap div[class*="container-1"] > div[class*="container-"] span::before {
   content: "";
   width: 10px;
   height: 10px;
