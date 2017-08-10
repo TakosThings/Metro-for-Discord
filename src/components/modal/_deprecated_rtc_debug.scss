@@ -1,0 +1,51 @@
+#rtc-debug-modal{
+    color: #FFF;
+}
+// Sidebar
+.deprecated-settings-modal .settings-header{
+    margin-right: -1px;
+    background-color: $b1;
+    border-top: 1px solid var(--accent);
+    border-bottom: 1px solid var(--accent);
+    border-left: 1px solid var(--accent);
+    border-radius: 0;
+    box-shadow: none;
+    font-family: $font;
+}
+.deprecated-settings-modal .tab-bar.SIDE{
+    margin-right: -17px;
+}
+.deprecated-settings-modal .tab-bar.SIDE .tab-bar-header{
+    box-shadow: none;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+}
+.deprecated-settings-modal .tab-bar.SIDE .tab-bar-item{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: $b3;
+    }
+}
+.deprecated-settings-modal .tab-bar.SIDE .tab-bar-item:hover::before{
+    display: none;
+}
+.deprecated-settings-modal .tab-bar.SIDE .tab-bar-item.selected{
+    color: var(--accent);
+}
+.deprecated-settings-modal .tab-bar.SIDE .tab-bar-item.selected::before{
+    border: 0;
+    width: 4px;
+    height: 50%;
+    top: 50%;
+    margin-top: -12px;
+    background-color: var(--accent);
+}
+
+// Right side
+#rtc-debug-modal .settings-inner,
+#rtc-debug-modal .settings-actions{
+    border-left: 0;
+}
