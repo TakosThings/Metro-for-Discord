@@ -20,8 +20,10 @@
     background-color: $b1;
 }
 // Text/Voice channel header
-.channels-wrap div[class*="nameDefault"],
-.channels-wrap div[class*="nameHovered"]{
+.channels-wrap .container-0 > div > div[class*="nameDefault"],
+.channels-wrap .container-0 > div > div[class*="nameHovered"],
+.channels-wrap .container-2 > div > div[class*="nameDefault"],
+.channels-wrap .container-2 > div > div[class*="nameHovered"]{
     color: #FFF;
     font-size: $fsheader;
     font-weight: $fwheader;

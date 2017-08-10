@@ -578,8 +578,10 @@ body.bd-blue .app::before {
 .channels-wrap > div[class*="noWrap"] {
   background-color: #191919; }
 
-.channels-wrap div[class*="nameDefault"],
-.channels-wrap div[class*="nameHovered"] {
+.channels-wrap .container-0 > div > div[class*="nameDefault"],
+.channels-wrap .container-0 > div > div[class*="nameHovered"],
+.channels-wrap .container-2 > div > div[class*="nameDefault"],
+.channels-wrap .container-2 > div > div[class*="nameHovered"] {
   color: #FFF;
   font-size: 20px;
   font-weight: 300;
