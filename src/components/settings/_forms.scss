@@ -300,76 +300,30 @@ button[class^="buttonWhiteOutlined"],
 }
 
 // Toggle switch
-div[class*="switchWrapper-"]{
+div[class*="switchEnabled-"]{
+    width: 40px;
     height: 20px;
-    width: 44px;
-}
-div[class^="switch-"]{
     background-color: transparent;
     border: 2px solid $inputborder;
+    &:hover{
+        border-color: $inputborderhover;
+    }
 }
-div[class^="switchWrapperDefaultActive"]:hover div[class^="switch"]{
-    background-color: transparent;
-    border-color: $inputborderhover;
+div[class*="switchEnabled-"]::after{
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
 }
-// Toggled on green switch
-div[class^="switch-"][style*="background-color: rgb(67, 181, 129)"]{
+div[class*="switchEnabled-"]:active::after{
+    width: 10px !important;
+    left: 0 !important;
+}
+div[class*="valueChecked"]{
     background-color: var(--accent) !important;
-}
-// Dot
-div[class^="switchWrapperDefaultActive"] div[class^="switch"]::before{
-    width: 10px;
-    height: 10px;
-    top: 3px;
-    left: 5px;
-    box-shadow: none;
-}
-// Toggled on dot
-div[class^="switchWrapperDefaultActive"] div[class*="checked-"]::before{
-    transform: translateX(20px);
-}
-
-// Toggled on background
-div[class^="switchWrapperDefaultActive"] div[class*="checked"]{
-    background-color: var(--accent);
-    border-color: var(--accent);
-}
-// Toggled on hover background
-div[class^="switchWrapperDefaultActive"]:hover div[class*="checked-"]{
-    background-color: var(--accent) !important;
-}
-// :active switch
-input[class*="checkbox-"]:active+div[class^="switch"]::before{
-    width: 10px;
-    left: 5px;
-    box-shadow: none;
-}
-// :checked:active switch
-input[class*="checkbox-"]:checked:active+div[class^="switch"]::before{
-    left: 3px;
-}
-// Disabled checkbox dot
-input[class*="checkbox-"]:disabled+div[class^="switch"]::before{
-    width: 10px;
-    height: 10px;
-}
-// Disabled toggled on switch background
-div[class^="switchWrapperDefaultDisabled"] div[class*="checked"]{
-    background-color: var(--accent);
-}
-
-// Toggle switch (alternate style)
-div[class*="switchWrapperClear-"] div[class*="switch-"]{
-    box-shadow: none;
-}
-div[class*="switchWrapperClear-"]:hover div[class*="switch-"]{
-    box-shadow: none;
-}
-div[class*="switchWrapperClear-"] div[class*="switch-"]::before{
-    width: 10px;
-    height: 10px;
-    top: 3px;
-    left: 5px;
+    border: 2px solid transparent;
+    &:hover{
+        border-color: $inputborderhover;
+    }
 }
 
 // Radio
