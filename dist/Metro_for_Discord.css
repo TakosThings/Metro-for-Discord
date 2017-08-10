@@ -1998,6 +1998,9 @@ div[class*="cardWarning-"] {
   font-weight: 400;
   text-transform: none; }
 
+.theme-dark div[class*="cardPrimary"] div[class*="desc"] {
+  color: #FFF; }
+
 .user-settings-keybinds .keybind-group {
   padding-left: 8px;
   padding-right: 8px; }
