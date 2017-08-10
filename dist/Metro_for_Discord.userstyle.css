@@ -1773,50 +1773,25 @@
   .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class*="checked"] > svg > g > polyline {
     stroke: #FFF;
     stroke-width: 2px; }
-  div[class*="switchWrapper-"] {
+  div[class*="switchEnabled-"] {
+    width: 40px;
     height: 20px;
-    width: 44px; }
-  div[class^="switch-"] {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.6); }
-  div[class^="switchWrapperDefaultActive"]:hover div[class^="switch"] {
-    background-color: transparent;
-    border-color: rgba(255, 255, 255, 0.8); }
-  div[class^="switch-"][style*="background-color: rgb(67, 181, 129)"] {
-    background-color: var(--accent) !important; }
-  div[class^="switchWrapperDefaultActive"] div[class^="switch"]::before {
+    div[class*="switchEnabled-"]:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
+  div[class*="switchEnabled-"]::after {
     width: 10px;
     height: 10px;
-    top: 3px;
-    left: 5px;
     box-shadow: none; }
-  div[class^="switchWrapperDefaultActive"] div[class*="checked-"]::before {
-    transform: translateX(20px); }
-  div[class^="switchWrapperDefaultActive"] div[class*="checked"] {
-    background-color: var(--accent);
-    border-color: var(--accent); }
-  div[class^="switchWrapperDefaultActive"]:hover div[class*="checked-"] {
-    background-color: var(--accent) !important; }
-  input[class*="checkbox-"]:active + div[class^="switch"]::before {
-    width: 10px;
-    left: 5px;
-    box-shadow: none; }
-  input[class*="checkbox-"]:checked:active + div[class^="switch"]::before {
-    left: 3px; }
-  input[class*="checkbox-"]:disabled + div[class^="switch"]::before {
-    width: 10px;
-    height: 10px; }
-  div[class^="switchWrapperDefaultDisabled"] div[class*="checked"] {
-    background-color: var(--accent); }
-  div[class*="switchWrapperClear-"] div[class*="switch-"] {
-    box-shadow: none; }
-  div[class*="switchWrapperClear-"]:hover div[class*="switch-"] {
-    box-shadow: none; }
-  div[class*="switchWrapperClear-"] div[class*="switch-"]::before {
-    width: 10px;
-    height: 10px;
-    top: 3px;
-    left: 5px; }
+  div[class*="switchEnabled-"]:active::after {
+    width: 10px !important;
+    left: 0 !important; }
+  div[class*="valueChecked"] {
+    background-color: var(--accent) !important;
+    border: 2px solid transparent; }
+    div[class*="valueChecked"]:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
   div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"] {
     background-color: #101010 !important;
     border: 1px solid var(--accent) !important; }
