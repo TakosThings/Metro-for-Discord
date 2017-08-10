@@ -110,6 +110,9 @@ div[class*="cardWarning-"]{
     font-weight: $fwui;
     text-transform: none;
 }
+.theme-dark div[class*="cardPrimary"] div[class*="desc"]{
+    color: #FFF;
+}
 // Keybind card
 .user-settings-keybinds .keybind-group{
     padding-left: 8px;
