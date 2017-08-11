@@ -890,7 +890,7 @@
   .channel-text-area-default div[class*="inner-"] div[class^="flex"] ~ textarea {
     margin-left: 0; }
   .channel-text-area-default svg[class^="attachButton-"] {
-    margin-left: 40px;
+    margin: 0 0 0 40px;
     padding: 10px; }
     .channel-text-area-default svg[class^="attachButton-"]:hover {
       transform: none; }
