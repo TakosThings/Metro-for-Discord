@@ -7,3 +7,16 @@
     text-transform: lowercase;
     vertical-align: middle;
 }
+
+span[class*="botTag-"]{
+    padding: .2em .6em .3em;
+    background-color: #000;
+    border-radius: 0;
+    font-weight: normal;
+    text-transform: lowercase;
+    vertical-align: middle;
+}
+span[class*="botTagInvert-"]{
+    background-color: #000;
+    color: #FFF;
+}

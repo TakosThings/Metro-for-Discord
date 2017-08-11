@@ -2,7 +2,7 @@
     & .scroller-wrap .scroller.messages,
       #friends .scroller,
       .emoji-picker .scroller,
-      .user-popout .body .section.roles,
+      div[class^="userPopout-"] .member-roles,
       #user-profile-modal .scroller,
       .quickswitcher .results-scroller,
       .notification-settings-modal .scroller,
