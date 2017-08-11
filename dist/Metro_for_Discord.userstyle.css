@@ -62,7 +62,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar,
   .theme-dark #friends .scroller::-webkit-scrollbar,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar,
@@ -73,7 +73,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button,
   .theme-dark #friends .scroller::-webkit-scrollbar-button,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-button,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-button,
@@ -85,7 +85,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:increment,
   .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:increment,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:increment,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-button:vertical:increment,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:increment,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-button:vertical:increment,
@@ -98,7 +98,7 @@
     .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:increment:hover,
     .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:increment:hover,
     .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:increment:hover,
-    .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:increment:hover,
+    .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-button:vertical:increment:hover,
     .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:increment:hover,
     .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:increment:hover,
     .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-button:vertical:increment:hover,
@@ -109,7 +109,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:decrement,
   .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:decrement,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:decrement,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:decrement,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-button:vertical:decrement,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:decrement,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-button:vertical:decrement,
@@ -122,7 +122,7 @@
     .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-button:vertical:decrement:hover,
     .theme-dark #friends .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
     .theme-dark .emoji-picker .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
-    .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-button:vertical:decrement:hover,
+    .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-button:vertical:decrement:hover,
     .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
     .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-button:vertical:decrement:hover,
     .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-button:vertical:decrement:hover,
@@ -133,7 +133,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-thumb,
   .theme-dark #friends .scroller::-webkit-scrollbar-thumb,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-thumb,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-thumb,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-thumb,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-thumb,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-thumb,
@@ -146,7 +146,7 @@
     .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-thumb:hover,
     .theme-dark #friends .scroller::-webkit-scrollbar-thumb:hover,
     .theme-dark .emoji-picker .scroller::-webkit-scrollbar-thumb:hover,
-    .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-thumb:hover,
+    .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-thumb:hover,
     .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-thumb:hover,
     .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-thumb:hover,
     .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-thumb:hover,
@@ -157,7 +157,7 @@
   .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar-track-piece,
   .theme-dark #friends .scroller::-webkit-scrollbar-track-piece,
   .theme-dark .emoji-picker .scroller::-webkit-scrollbar-track-piece,
-  .theme-dark .user-popout .body .section.roles::-webkit-scrollbar-track-piece,
+  .theme-dark div[class^="userPopout-"] .member-roles::-webkit-scrollbar-track-piece,
   .theme-dark #user-profile-modal .scroller::-webkit-scrollbar-track-piece,
   .theme-dark .quickswitcher .results-scroller::-webkit-scrollbar-track-piece,
   .theme-dark .notification-settings-modal .scroller::-webkit-scrollbar-track-piece,
@@ -1843,121 +1843,95 @@
   div[class^="group"] button[class*="allowSelected"] {
     background-color: #43B581;
     border-color: #43B581; }
-  .user-popout {
+  div[class^="userPopout-"] {
     border: 1px solid var(--accent);
     border-radius: 0; }
-  .user-popout .header {
-    padding: 0 10px;
+  div[class^="userPopout-"] div[class*="header-"] {
+    padding: 10px 10px 0; }
+  div[class^="userPopout-"] div[class^="headerNormal-"] {
     background-color: #191919;
-    background-image: none;
-    border-radius: 0;
-    align-items: baseline; }
-  .user-popout .header.streaming {
-    padding: 0 10px; }
-  .user-popout .header.streaming .discord-tag .username {
-    font-weight: 300; }
-  .user-popout .header.streaming .activity {
-    padding: 0;
-    color: #FFF;
-    font-size: 15px; }
-  .user-popout .header.streaming .activity strong {
-    font-weight: 400; }
-  .user-popout .avatar-wrapper {
-    margin: 20px 0 10px; }
-  .user-popout .avatar-wrapper .avatar-popout {
-    background-color: transparent;
+    background-image: none; }
+  div[class^="userPopout-"] div[class^="avatar-"] {
     border: 0; }
-  .user-popout .avatar-wrapper .avatar-hint {
+  div[class^="userPopout-"] div[class^="avatarStatusNormal-"] {
+    border: 0; }
+  div[class^="userPopout-"] div[class*="avatarHint-"] {
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: none;
     font-size: 12px;
-    font-weight: 400;
-    text-transform: none; }
-  .user-popout .avatar-wrapper .avatar-popout .status {
-    box-shadow: none; }
-  .user-popout .username-wrapper {
-    text-align: left; }
-  .user-popout .username-wrapper .discord-tag,
-  .user-popout .username-wrapper .nickname,
-  .user-popout .username-wrapper .username {
-    margin-bottom: 0;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 1.5625; }
-  .user-popout .username-wrapper.has-nickname .discriminator,
-  .user-popout .username-wrapper.has-nickname .username {
-    color: #FFF; }
-  .user-popout .bot-tag {
-    padding: .2em .6em .3em;
-    border-radius: 0;
-    font-size: 10px;
     font-weight: normal;
-    text-transform: lowercase;
-    vertical-align: middle; }
-  .user-popout .bot-tag.bot-tag-invert {
-    background-color: #000;
-    color: #FFF !important; }
-  .user-popout .username-wrapper .activity {
+    text-transform: none; }
+  div[class^="userPopout-"] span[class^="headerUsername"],
+  div[class^="userPopout-"] div[class^="headerName-"] {
+    font-size: 20px;
+    font-weight: 300; }
+  div[class^="userPopout-"] span[class^="headerDiscriminator"],
+  div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="headerDiscriminator"] {
+    margin-left: 4px;
     color: #FFF;
-    line-height: 1.5625; }
-  .user-popout .username-wrapper .activity strong {
+    font-size: 13px;
     font-weight: 400; }
-  .user-popout .body {
-    background-color: #191919; }
-  .user-popout .body .section .label {
+  div[class^="userPopout-"] div[class^="headerTagNormal"] span {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300; }
+  div[class^="userPopout-"] div[class^="body-"] {
+    padding: 10px;
+    background-color: #191919;
+    border: 0; }
+  div[class^="userPopout-"] div[class*="bodyTitle-"] svg {
+    display: none; }
+  div[class^="userPopout-"] div[class^="bodyTitleText-"] {
     color: #FFF;
     font-size: 15px;
-    font-weight: normal;
-    text-transform: none;
-    line-height: 1.5625; }
-  .user-popout .body .roles .icon,
-  .user-popout .body .section .label .icon {
-    display: none; }
-  .user-popout .body .section.roles {
-    max-height: 160px;
-    overflow-y: auto; }
-  .user-popout .member-roles .member-role {
+    font-weight: 400;
+    text-transform: none; }
+  div[class^="userPopout-"] .member-roles {
+    max-height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 -10px 10px;
+    padding: 0 10px; }
+  div[class^="userPopout-"] .member-roles component {
     background-color: transparent;
-    border: 1px solid #FFF;
     border-radius: 0;
     color: #FFF;
     font-size: 13px;
     font-weight: 400;
     line-height: 1.5625; }
-  .user-popout .note {
-    padding: 0 10px; }
-  .user-popout .note textarea {
-    min-height: 36px;
-    padding: 4px 8px;
+  div[class^="userPopout-"] .note textarea {
+    padding: 9px 12px 10px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #FFF;
     font-size: 15px;
-    line-height: 1.5625; }
-    .user-popout .note textarea:hover {
+    font-weight: 400;
+    line-height: 1; }
+    div[class^="userPopout-"] .note textarea:hover {
       border-color: rgba(255, 255, 255, 0.8); }
-    .user-popout .note textarea:focus {
+    div[class^="userPopout-"] .note textarea:focus {
       background-color: #FFF;
-      color: #000;
-      border-color: var(--accent); }
-  .user-popout .note textarea::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.6); }
-  .user-popout .footer .quick-message-wrapper {
-    margin: 0 10px 10px 10px; }
-  .user-popout .quick-message {
+      border-color: var(--accent);
+      color: #000; }
+  div[class^="userPopout-"] div[class^="footer-"] {
+    padding: 10px;
+    background-color: #191919; }
+  div[class^="userPopout-"] .quick-message {
     height: 36px;
-    padding: 4px 8px;
+    margin-top: -10px;
+    padding: 8px 12px 10px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0;
+    color: #FFF;
     font-size: 15px;
-    line-height: 1.5625; }
-  .user-popout .quick-message::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.6); }
-  .user-popout .footer {
-    background-color: #191919;
-    border: 0; }
-  .user-popout .footer .update-notice {
+    font-weight: 400;
+    line-height: 1; }
+    div[class^="userPopout-"] .quick-message:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
+    div[class^="userPopout-"] .quick-message:focus {
+      background-color: #FFF;
+      border-color: var(--accent);
+      color: #000; }
+  div[class^="userPopout-"] .protip {
     display: none; }
   .option-popout {
     width: 74px;
@@ -3256,6 +3230,16 @@
     font-weight: normal;
     text-transform: lowercase;
     vertical-align: middle; }
+  span[class*="botTag-"] {
+    padding: .2em .6em .3em;
+    background-color: #000;
+    border-radius: 0;
+    font-weight: normal;
+    text-transform: lowercase;
+    vertical-align: middle; }
+  span[class*="botTagInvert-"] {
+    background-color: #000;
+    color: #FFF; }
   .keybind-shortcut {
     color: #FFF;
     font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
