@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.8"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"2.22.9"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,7 @@
 /* ####################################################### */
 
 :root{
-    --version: "Metro for Discord 2.22.8";
+    --version: "Metro for Discord 2.22.9";
 
     --accent: #0072C6;
     --link: #0078D7;
@@ -2737,153 +2737,113 @@ div.control-group .shortcut-recorder input[type=text]{
 }
 
 /* USER POPOUT */
-.user-popout{
-    border: 1px solid var(--accent);
-    border-radius: 0;
-}
-.user-popout .header{
-    background: #191919;
-    border-radius: 0;
-}
-.user-popout .body{
-    background-color: #191919;
-}
-.user-popout .footer{
-    background-color: #191919;
-    border: 0;
-}
-.user-popout .avatar-wrapper .avatar-hint{
-    margin: 0;
-    font-size: 13px;
-    font-weight: normal;
-    text-transform: none;
-}
-.user-popout .avatar-wrapper .avatar-popout{
-    border: 0;
-    background-color: transparent;
-}
-.user-popout .avatar-wrapper .avatar-popout .status{
-    box-shadow: none;
-    bottom: 2px;
-    right: 2px;
-}
-.user-popout .username-wrapper{
-    text-align: left;
-}
-.user-popout .username-wrapper .nickname{
-    font-size: 20px;
-    font-weight: 300;
-    margin: 0 10px;
-}
-.user-popout .username-wrapper .discord-tag,
-.user-popout .username-wrapper .nickname,
-.user-popout .username-wrapper .username{
-    line-height: 1.5625;
-}
-.user-popout .username-wrapper .discord-tag{
-    margin: 0 10px;
-}
-.user-popout .username-wrapper .discord-tag .username{
-    font-size: 20px;
-    font-weight: 300;
-}
-.user-popout .username-wrapper .discord-tag .discriminator{
-    margin-left: 5px;
-    font-weight: normal;
-}
-.bot-tag.bot-tag-invert{
-    background-color: var(--b2);
-    color: #FFF !important;
-}
-.user-popout .username-wrapper.has-nickname .discriminator,
-.user-popout .username-wrapper.has-nickname .username{
-    color: #FFF;
-}
-.user-popout .username-wrapper .activity{
-    color: #FFF;
-    font-size: 15px;
-    line-height: 1.5625;
-    padding: 0 10px;
-}
-.user-popout .username-wrapper .activity strong{
-    font-weight: normal;
-}
-.user-popout .body .section .label .icon{
-    display: none;
-}
-.user-popout .body .section .label{
-    color: #FFF;
-    font-weight: normal;
-    text-transform: none;
-}
-.user-popout .body .section.roles{
-    max-height: 160px;
-    overflow-y: auto;
-}
-.user-popout .body .roles .member-role{
-    background-color: transparent;
-    border: 1px solid #FFF;
-    border-radius: 0;
-    color: #FFF;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 1.5625;
-}
-.member-roles .member-role>*{
-    vertical-align: middle;
-}
-.user-popout .footer .quick-message-wrapper{
-    margin: 0 10px 10px 10px;
-}
-.user-popout .footer .update-notice{
-    display: none;
-}
-.quick-message{
-    border: 1px solid rgba(255,255,255,0.6);
-    border-radius: 0;
-    background-color: transparent;
-    color: #FFF;
-}
-.quick-message:hover{
-    border-color: var(--formbdh);
-}
-.quick-message:focus{
-    border-color: var(--accent);
-    background-color: #FFF;
-    color: #000;
-}
-.user-popout .streaming .creation-date-wrapper {
-    margin-bottom: 10px;
-    margin-top: 5px;
-}
-.user-popout .note{
-    margin: 10px;
-}
-.user-popout .note textarea{
-    min-height: 36px;
-    max-height: 120px;
-    line-height: normal;
-    border: 1px solid var(--formbd);
-    padding: 8px 10px;
-    color: #FFF;
-}
-.user-popout .note textarea:hover{
-    border-color: var(--formbdh);
-}
-.user-popout .note textarea:focus{
-    border-color: var(--accent) !important;
-    background-color: #FFF;
-    color: #000;
-}
-.user-popout-banned-video{
-    display: none;
-}
-.quick-message.isBlocked{
-    background-color: transparent;
-    border-color: rgba(255,255,255,.2);
-    cursor: not-allowed;
-}
+div[class^="userPopout-"] {
+  border: 1px solid var(--accent);
+  border-radius: 0; }
 
+div[class^="userPopout-"] div[class*="header-"] {
+  padding: 10px 10px 0; }
+
+div[class^="userPopout-"] div[class^="headerNormal-"] {
+  background-color: #191919;
+  background-image: none; }
+
+div[class^="userPopout-"] div[class^="avatar-"] {
+  border: 0; }
+
+div[class^="userPopout-"] div[class^="avatarStatusNormal-"] {
+  border: 0; }
+
+div[class^="userPopout-"] div[class*="avatarHint-"] {
+  margin: 0;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: none; }
+
+div[class^="userPopout-"] span[class^="headerUsername"],
+div[class^="userPopout-"] div[class^="headerName-"] {
+  font-size: 20px;
+  font-weight: 300; }
+
+div[class^="userPopout-"] span[class^="headerDiscriminator"],
+div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="headerDiscriminator"] {
+  margin-left: 4px;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400; }
+
+div[class^="userPopout-"] div[class^="headerTagNormal"] span {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 300; }
+
+div[class^="userPopout-"] div[class^="body-"] {
+  padding: 10px;
+  background-color: #191919;
+  border: 0; }
+
+div[class^="userPopout-"] div[class*="bodyTitle-"] svg {
+  display: none; }
+
+div[class^="userPopout-"] div[class^="bodyTitleText-"] {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
+div[class^="userPopout-"] .member-roles {
+  max-height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 -10px 10px;
+  padding: 0 10px; }
+
+div[class^="userPopout-"] .member-roles component {
+  background-color: transparent;
+  border-radius: 0;
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5625; }
+
+div[class^="userPopout-"] .note textarea {
+  padding: 9px 12px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1; }
+  div[class^="userPopout-"] .note textarea:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  div[class^="userPopout-"] .note textarea:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+div[class^="userPopout-"] div[class^="footer-"] {
+  padding: 10px;
+  background-color: #191919; }
+
+div[class^="userPopout-"] .quick-message {
+  height: 36px;
+  margin-top: -10px;
+  padding: 8px 12px 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1; }
+  div[class^="userPopout-"] .quick-message:hover {
+    border-color: rgba(255, 255, 255, 0.8); }
+  div[class^="userPopout-"] .quick-message:focus {
+    background-color: #FFF;
+    border-color: var(--accent);
+    color: #000; }
+
+div[class^="userPopout-"] .protip {
+  display: none; }
 
 /* FRIENDS */
 #friends .friends-header{
