@@ -1,6 +1,9 @@
 # Changelog
 Newest changes are at the top
 
+#### 2.22.9
+* Update user profile popout
+
 #### 2.22.8
 * Quick fix for new channel chat box
 
