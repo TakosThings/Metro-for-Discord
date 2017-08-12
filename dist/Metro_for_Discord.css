@@ -1197,8 +1197,6 @@ form.deprecated.auth-form p.token-tip {
   padding: 10px; }
   .channel-text-area-default svg[class^="attachButton-"]:hover {
     transform: none; }
-  .channel-text-area-default svg[class^="attachButton-"]:active path[class^="attachButtonForeground"] {
-    fill: var(--accent); }
 
 .channel-text-area-default div[class^="attachButtonDivider-"] {
   width: 10px;
@@ -1215,8 +1213,6 @@ form.deprecated.auth-form p.token-tip {
 .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"] {
   transition: none;
   background-image: none; }
-  .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]:active {
-    color: var(--accent); }
 
 .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before {
   content: "\E170";
