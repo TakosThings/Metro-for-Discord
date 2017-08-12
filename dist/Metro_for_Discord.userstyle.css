@@ -2835,6 +2835,142 @@
     font-weight: 400; }
     .modal-image .download-button:hover {
       text-decoration: underline; }
+  .upload-modal {
+    background-color: #191919;
+    border: 1px solid var(--accent);
+    border-radius: 0; }
+  .upload-modal .inner {
+    margin: 20px;
+    border: 0;
+    border-radius: 0; }
+  .upload-modal .inner .file {
+    padding-bottom: 20px; }
+  .upload-modal .inner .file .icon.image {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none; }
+  .upload-modal .inner .file .description {
+    height: auto;
+    padding: 0 0 0 8px; }
+  .upload-modal .inner .file .description .filename {
+    height: auto;
+    font-size: 20px;
+    font-weight: 300; }
+  .upload-modal .inner .comment {
+    margin: 0; }
+  .upload-modal .inner .comment .label {
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none; }
+  .upload-modal .inner .channel-text-area-upload {
+    margin-bottom: 0; }
+  .upload-modal.theme-brand .channel-text-area-upload div[class*="inner-"] {
+    background-color: #000;
+    border-radius: 0; }
+  .upload-modal.theme-brand .channel-text-area-upload textarea {
+    margin: 0;
+    padding-left: 40px;
+    color: #FFF; }
+  .upload-modal .channel-text-area-upload div[class*="emojiButton-"] {
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: initial;
+    left: 0; }
+  .upload-modal .channel-text-area-upload div[class*="emojiButton-"] div[class*="sprite-"] {
+    transition: none;
+    background-image: none; }
+  .upload-modal .channel-text-area-upload div[class*="emojiButton-"] div[class*="sprite-"]::before {
+    content: "\E170";
+    font-family: winjs-symbols;
+    font-size: 21px;
+    text-align: center; }
+  .upload-modal .channel-text-area-upload div[class*="emojiButton-"] div[class*="spriteHovered"] {
+    transform: none; }
+  .upload-modal .footer {
+    padding: 20px;
+    border-radius: 0; }
+  .upload-modal .footer .button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400; }
+    .upload-modal .footer .button:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      text-decoration: none; }
+  .upload-modal .footer .button + button {
+    margin-left: 8px !important; }
+  .upload-modal .footer .button.button-primary {
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    color: #FFF; }
+    .upload-modal .footer .button.button-primary:hover {
+      opacity: 1;
+      border-color: rgba(255, 255, 255, 0.8); }
+  .upload-drop-modal {
+    width: 548px;
+    height: auto;
+    border-radius: 0 !important;
+    background-color: #191919 !important;
+    padding: 20px 24px !important;
+    border: 1px solid var(--accent); }
+  .upload-modal-in .upload-drop-modal .instructions,
+  .upload-modal-in .upload-drop-modal .title {
+    animation: none;
+    opacity: 1; }
+  .upload-drop-modal .inner .icons {
+    display: none; }
+  .upload-drop-modal .inner {
+    border: 0;
+    border-radius: 0;
+    -webkit-box-pack: initial;
+    align-items: baseline; }
+  .upload-drop-modal .inner .title {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 26px 0 8px; }
+  .upload-drop-modal .inner .instructions {
+    color: #FFF;
+    font-size: 15px;
+    margin-top: 8px;
+    line-height: 1.5625; }
+  .upload-drop-modal .inner .instructions pre {
+    white-space: normal; }
+  .premium-promo {
+    padding: 0;
+    align-items: flex-end;
+    text-align-last: auto; }
+  .premium-promo .premium-promo-content {
+    min-width: 120px;
+    height: 36px;
+    padding: 9px 12px 10px;
+    background-color: var(--accent);
+    opacity: 1;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    font-size: 0; }
+    .premium-promo .premium-promo-content:hover {
+      border-color: rgba(255, 255, 255, 0.8); }
+    .premium-promo .premium-promo-content:focus {
+      border-color: rgba(255, 255, 255, 0.8); }
+  .premium-promo .premium-promo-content::before {
+    content: "Upgrade to Nitro";
+    font-size: 15px; }
+  .premium-promo .premium-promo-content .premium-promo-nav-arrow {
+    display: none; }
+  .upload-drop-modal .bgScale {
+    background-color: transparent; }
+  .upload-drop-modal .sprite,
+  .upload-drop-modal .sparkle.one,
+  .upload-drop-modal .sparkle.two,
+  .upload-drop-modal .light.one,
+  .upload-drop-modal .light.two,
+  .upload-drop-modal .cross.one,
+  .upload-drop-modal .cross.two,
+  .upload-drop-modal .pop.one {
+    display: none; }
   .need-help-modal.deprecated .header {
     padding: 20px 20px 0 20px;
     align-items: baseline;
