@@ -39,9 +39,6 @@
     &:hover{
         transform: none;
     }
-    &:active path[class^="attachButtonForeground"]{
-        fill: var(--accent);
-    }
 }
 
 // Divider
@@ -62,9 +59,6 @@
 .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]{
     transition: none;
     background-image: none;
-    &:active{
-        color: var(--accent);
-    }
 }
 .channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before{
     content: "\E170";
