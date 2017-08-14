@@ -305,6 +305,7 @@ div[class*="switchEnabled-"]{
     height: 20px;
     background-color: transparent;
     border: 2px solid $inputborder;
+    box-sizing: border-box;
     &:hover{
         border-color: $inputborderhover;
     }
