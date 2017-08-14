@@ -3317,7 +3317,8 @@ div[class^="userPopout-"] .protip {
 #user-profile-modal .header .header-info .header-info-inner .discord-tag {
   color: #FFF;
   font-size: 20px;
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 1.5625; }
 
 #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
   color: #FFF;
