@@ -3747,6 +3747,10 @@ form[class^="modal-"] video {
 .upload-drop-modal .pop.one {
   display: none; }
 
+div[class^="modal-"] div[class^="guildName-"] {
+  color: #FFF;
+  font-size: 15px; }
+
 .need-help-modal.deprecated .header {
   padding: 20px 20px 0 20px;
   align-items: baseline;
