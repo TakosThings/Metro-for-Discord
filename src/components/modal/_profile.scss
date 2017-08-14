@@ -48,6 +48,25 @@
     font-weight: $fwui;
 }
 
+// Send friend request
+#user-profile-modal .actions .btn.add-friend{
+    height: auto;
+    padding: 9px 12px 10px;
+    background-color: $safe;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 1;
+    &:hover{
+        background-color: $safe;
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
 // Tabs
 #user-profile-modal .tab-bar-container{
     background-color: $b1;
