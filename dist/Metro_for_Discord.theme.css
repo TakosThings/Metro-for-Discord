@@ -1104,6 +1104,19 @@ body.bd-blue .app::before {
 .theme-dark .message-group.is-local-bot-message {
   background-image: none; }
 
+.chat .empty-message {
+  height: auto;
+  margin: 0;
+  padding: 20px; }
+
+.theme-dark .chat .empty-message {
+  background-image: none; }
+
+.chat .empty-message h1 {
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400; }
+
 .chat form {
   margin: 0 20px; }
 
