@@ -260,3 +260,18 @@
 .theme-dark .message-group.is-local-bot-message{
     background-image: none;
 }
+
+// Start of channel history
+.chat .empty-message{
+    height: auto;
+    margin: 0;
+    padding: 20px;
+}
+.theme-dark .chat .empty-message{
+    background-image: none;
+}
+.chat .empty-message h1{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwchat;
+}
