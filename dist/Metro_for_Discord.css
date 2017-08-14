@@ -512,6 +512,18 @@ form.deprecated.auth-form p.token-tip {
   text-align: center;
   vertical-align: middle; }
 
+.user-settings-appearance .font-scale-sample-small {
+  position: relative; }
+
+.user-settings-appearance .font-scale-sample-small::before {
+  content: "This option is not compatible with this theme. Leave the setting at '100'.";
+  position: absolute;
+  min-width: 480px;
+  margin-top: -37px;
+  margin-left: 130px;
+  color: #FF0;
+  font-size: 15px; }
+
 .guilds-wrapper {
   width: 64px;
   background-color: #262626; }
