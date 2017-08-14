@@ -108,9 +108,11 @@
 }
 // Dropdown menu
 .Select-menu-outer{
-    background-color: $b1;
     margin-top: 0;
     border-radius: 0;
+}
+.theme-dark .ui-select .Select-menu-outer{
+    background-color: $b1;
 }
 .ui-select .Select-menu{
     border-radius: 0;
