@@ -3380,11 +3380,11 @@ div[class^="userPopout-"] .protip {
 #user-profile-modal .guilds .section .note textarea {
   min-height: 36px;
   margin: 0;
-  padding: 4px 8px;
+  padding: 9px 12px 10px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   color: #FFF;
   font-size: 15px;
-  line-height: 1.5625; }
+  line-height: 1; }
   #user-profile-modal .guilds .section .note textarea:hover {
     border-color: rgba(255, 255, 255, 0.8); }
   #user-profile-modal .guilds .section .note textarea:focus {

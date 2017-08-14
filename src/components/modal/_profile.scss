@@ -106,11 +106,11 @@
 #user-profile-modal .guilds .section .note textarea{
     min-height: 36px;
     margin: 0;
-    padding: 4px 8px;
+    padding: 9px 12px 10px;
     border: 1px solid $inputborder;
     color: #FFF;
     font-size: $fsui;
-    line-height: $lh;
+    line-height: 1;
     &:hover{
         border-color: $inputborderhover;
     }
