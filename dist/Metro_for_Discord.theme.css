@@ -2402,6 +2402,10 @@ div[class^="userPopout-"] div[class^="headerTagNormal"] span {
   font-size: 20px;
   font-weight: 300; }
 
+div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="botTag"] {
+  font-size: 10px;
+  font-weight: 400; }
+
 div[class^="userPopout-"] div[class^="body-"] {
   padding: 10px;
   background-color: #191919;

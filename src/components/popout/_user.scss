@@ -42,6 +42,11 @@ div[class^="userPopout-"] div[class^="headerTagNormal"] span{
     font-size: $fsheader;
     font-weight: $fwheader;
 }
+// Bot tag
+div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="botTag"]{
+    font-size: 10px;
+    font-weight: $fwui;
+}
 
 // Body
 div[class^="userPopout-"] div[class^="body-"]{
