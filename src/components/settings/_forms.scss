@@ -129,6 +129,12 @@
 .theme-dark .ui-select .Select-option:hover{
     background-color: var(--accent);
 }
+.ui-select .Select-placeholder{
+    line-height: 36px;
+}
+.theme-dark .ui-select .Select-control .Select-placeholder{
+    color: #FFF;
+}
 
 // Buttons
 button[class*="button-"]{

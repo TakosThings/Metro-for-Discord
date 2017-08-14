@@ -2115,6 +2115,12 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
 .theme-dark .ui-select .Select-option:hover {
   background-color: var(--accent); }
 
+.ui-select .Select-placeholder {
+  line-height: 36px; }
+
+.theme-dark .ui-select .Select-control .Select-placeholder {
+  color: #FFF; }
+
 button[class*="button-"] {
   padding: 9px 12px 10px;
   font-size: 15px;
