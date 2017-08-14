@@ -85,6 +85,13 @@
     background-size: auto;
 }
 
+// Online friend count
+.guilds-wrapper .guilds .friends-online{
+    color: #FFF;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
 // Error
 .guilds-wrapper .guilds-error{
     width: 48px;

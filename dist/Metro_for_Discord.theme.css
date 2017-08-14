@@ -519,6 +519,11 @@ body.bd-blue .app::before {
   height: 44px;
   background-size: auto; }
 
+.guilds-wrapper .guilds .friends-online {
+  color: #FFF;
+  font-weight: 400;
+  text-transform: none; }
+
 .guilds-wrapper .guilds-error {
   width: 48px;
   height: 48px;
