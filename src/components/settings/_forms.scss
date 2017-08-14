@@ -326,6 +326,22 @@ div[class*="valueChecked"]{
         border-color: $inputborderhover;
     }
 }
+// Toggle switch (disabled)
+div[class*="switchDisabled-"]{
+    width: 40px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    box-sizing: border-box;
+    &:hover{
+        border-color: rgba(255,255,255,.2);
+    }
+}
+div[class*="switchDisabled-"]::after{
+    width: 10px;
+    height: 10px;
+    box-shadow: none;
+}
 
 // Radio
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"]{
