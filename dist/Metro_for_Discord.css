@@ -2313,6 +2313,20 @@ div[class*="valueChecked"] {
   div[class*="valueChecked"]:hover {
     border-color: rgba(255, 255, 255, 0.8); }
 
+div[class*="switchDisabled-"] {
+  width: 40px;
+  height: 20px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box; }
+  div[class*="switchDisabled-"]:hover {
+    border-color: rgba(255, 255, 255, 0.2); }
+
+div[class*="switchDisabled-"]::after {
+  width: 10px;
+  height: 10px;
+  box-shadow: none; }
+
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"] {
   background-color: #101010 !important;
   border: 1px solid var(--accent) !important; }
