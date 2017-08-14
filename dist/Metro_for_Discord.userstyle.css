@@ -1660,9 +1660,10 @@
     border-bottom: 1px solid #FFF;
     transform: rotate(45deg) translateY(-5px); }
   .Select-menu-outer {
-    background-color: #191919;
     margin-top: 0;
     border-radius: 0; }
+  .theme-dark .ui-select .Select-menu-outer {
+    background-color: #191919; }
   .ui-select .Select-menu {
     border-radius: 0; }
   .theme-dark .ui-select .Select-menu-outer {
