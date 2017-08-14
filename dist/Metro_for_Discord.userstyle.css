@@ -1777,7 +1777,8 @@
     width: 40px;
     height: 20px;
     background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.6); }
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-sizing: border-box; }
     div[class*="switchEnabled-"]:hover {
       border-color: rgba(255, 255, 255, 0.8); }
   div[class*="switchEnabled-"]::after {
