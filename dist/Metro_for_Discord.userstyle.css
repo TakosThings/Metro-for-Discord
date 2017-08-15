@@ -47,6 +47,15 @@
   .status-invisible,
   .status-offline {
     background-color: #767676; }
+  .channels-wrap::after {
+    content: "Metro for Discord 3.0.0";
+    width: 100%;
+    height: auto;
+    padding: 0 0 6px;
+    background: #191919;
+    color: #FFF;
+    font-size: 10px;
+    text-align: center; }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
