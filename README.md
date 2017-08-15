@@ -17,7 +17,7 @@ A browser plugin such as [Stylus](https://chrome.google.com/webstore/detail/clng
 Discord's dark theme must be selected from the Appearance tab in User Settings.  
 You can change the accent colour by changing the `--accent` variable at the top of the CSS file.  
 
-# Screenshots
-2 441x248 previews
+# Screenshot
+![Preview](https://i.imgur.com/5PzfgwK.jpg)
 
 This project is not associated with Microsoft, nor Discord.
