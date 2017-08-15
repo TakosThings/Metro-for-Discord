@@ -1957,6 +1957,7 @@
     line-height: 1.5625; }
     .member-roles .member-role:hover {
       border-color: rgba(255, 255, 255, 0.8); }
+  .member-roles .member-role .member-role-remove,
   .member-roles .member-role.member-role-add button {
     height: 20px; }
   div[class^="userPopout-"] .note textarea {
