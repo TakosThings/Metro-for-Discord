@@ -18,8 +18,14 @@ You should follow the relevant install instructions for your platform.
 A browser plugin such as [Stylus](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [StylRRR](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/) for Chrome and Firefox respectively is required for the Userstyle.
 
 # Configure
-Discord's dark theme must be selected from the Appearance tab in User Settings.  
-You can change the accent colour by changing the `--accent` variable at the top of the CSS file.  
+**Required**
+Discord's dark theme must be selected from the Appearance tab in User Settings.
+
+**Accent Colour**
+You can change the accent colour by changing the `--accent` variable at the top of the CSS file.
+
+**BetterDiscord**
+If you're a BetterDiscord user, you must disable 'Dark Mode' and 'Blue Mode' in BetterDiscord settings.
 
 # Screenshot
 ![Preview](https://i.imgur.com/5PzfgwK.jpg)
