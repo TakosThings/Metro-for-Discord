@@ -79,6 +79,21 @@ div[class^="userPopout-"] .member-roles component{
     font-weight: $fwui;
     line-height: $lh;
 }
+// Add role
+.member-roles .member-role{
+    background-color: transparent;
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    color: #FFF;
+    font-size: 13px;
+    line-height: $lh;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+.member-roles .member-role.member-role-add button{
+    height: 20px;
+}
 // Notes
 div[class^="userPopout-"] .note textarea{
     padding: 9px 12px 10px;
