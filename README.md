@@ -11,6 +11,9 @@ BetterDiscord users must add the `//META` line to the top of the theme. Don't pa
 
 # Install
 You should follow the relevant install instructions for your platform.  
+* [BetterDiscord](https://i.imgur.com/H7VyWea.png)
+* [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
+* [Stylus](https://add0n.com/stylus.html#faq)/[StylRRR](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/)
 A browser plugin such as [Stylus](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [StylRRR](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/) for Chrome and Firefox respectively is required for the Userstyle.
 
 # Configure
