@@ -1,6 +1,16 @@
 # Metro for Discord
+<<<<<<< HEAD
 A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'.  
 Latest version: `3.0.0`
+=======
+A custom theme for Discord (BetterDiscord) based on Microsoft's Modern Design Language - 'Metro'.  
+Currently: `v2.22.9`  
+
+#### A quick note on updates
+I'm currently working on re-writing Metro for Discord from scratch. For the time being v2 will only receive updates for major changes. The CSS for the new settings pages has been removed intentionally as doing a complete update would take too much time away from working on v3. Sorry!
+
+You can track progress on the [v3 project board](https://github.com/TakosThings/Metro-for-Discord/projects/3) or, if you want to be on the cutting edge you can [change to the v3 branch](https://github.com/TakosThings/Metro-for-Discord/tree/v3) and download the latest version. BetterDiscord users will have to add the `//META` line themselves.
+>>>>>>> master
 
 # Download
 * [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/dist/Metro_for_Discord.theme.css)
@@ -19,6 +29,7 @@ A browser plugin such as [Stylus](https://chrome.google.com/webstore/detail/clng
 **Required**  
 Discord's dark theme must be selected from the Appearance tab in User Settings.
 
+<<<<<<< HEAD
 **Accent Colour**  
 You can change the accent colour by changing the `--accent` variable at the top of the CSS file.
 
@@ -28,4 +39,8 @@ If you're a BetterDiscord user, you must disable 'Dark Mode' and 'Blue Mode' in 
 # Screenshot
 ![Preview](https://i.imgur.com/5PzfgwK.jpg)
 
+=======
+# Notes
+Icons used in this theme by [Icons8](https://icons8.com/)  
+>>>>>>> master
 This project is not associated with Microsoft, nor Discord.
