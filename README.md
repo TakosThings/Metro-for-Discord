@@ -7,8 +7,6 @@ Latest version: `3.0.0`
 * [Download for BeautifulDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/dist/Metro_for_Discord.css)
 * [Download as userstyle](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/dist/Metro_for_Discord.userstyle.css)
 
-BetterDiscord users must add the `//META` line to the top of the theme. Don't paste the entire file into your CustomCSS!
-
 # Install
 You should follow the relevant install instructions for your platform.  
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
