@@ -1492,6 +1492,8 @@
     display: none; }
   .ui-standard-sidebar-view .content-column.default {
     padding: 26px 15px 0 0; }
+  .theme-light .ui-standard-sidebar-view .sidebar-region,
+  .theme-light .ui-standard-sidebar-view .content-region,
   .theme-dark .ui-standard-sidebar-view .content-region {
     background-color: #000; }
   .user-settings-account > h2,
