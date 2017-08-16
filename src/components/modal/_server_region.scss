@@ -1,0 +1,49 @@
+.region-select-modal{
+    padding: 20px;
+    background-color: $b1;
+    border: 1px solid var(--accent);
+    border-radius: 0;
+}
+
+//Header
+.region-select-modal .region-select-modal-header{
+    padding-top: 36px;
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-align: left;
+    text-transform: none;
+}
+
+// Region
+.region-select-modal .region-select-modal-option{
+    width: 100%;
+    height: auto;
+    padding: 4px;
+    margin: 0 0 8px 0;
+    justify-content: flex-start;
+    flex-direction: row;
+    background-color: transparent;
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+.region-select-modal .region-select-modal-option .region-select-name{
+    padding: 0 8px;
+    margin: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-align: left;
+    display: inline;
+}
+
+// Footer
+.region-select-modal .region-select-modal-footer{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-align: left;
+}

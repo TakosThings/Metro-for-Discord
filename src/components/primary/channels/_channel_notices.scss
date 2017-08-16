@@ -1,0 +1,39 @@
+.channel-notices .channel-notice{
+    box-shadow: none;
+}
+.channel-notices .channel-notice .message{
+    color: #FFF;
+}
+.channel-notices .channel-notice .message .btn{
+    padding: 9px 12px 10px;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 15px;
+    line-height: 1;
+    &:hover{
+        border-color: $inputborder;
+    }
+    &:focus{
+        background-color: var(--accent);
+        border-color: $inputborderhover;
+    }
+}
+
+// Invite friends
+.channel-notices .channel-notice.invite{
+    background-color: $b1;
+    background-image: none;
+    padding: 20px;
+}
+
+// Quickswitch
+.channel-notices .channel-notice.quickswitcher-notice{
+    background-color: $b1;
+    background-image: none;
+    padding: 20px;
+}
+.channel-notices .channel-notice.quickswitcher-notice .btn{
+    font-weight: normal;
+    text-transform: none;
+}

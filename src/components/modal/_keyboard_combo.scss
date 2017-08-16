@@ -1,0 +1,41 @@
+.keyboard-shortcuts-modal{
+    background-color: $b1;
+    border: 1px solid var(--accent);
+    border-radius: 0;
+}
+
+// Header
+.keyboard-shortcuts-modal .modal-title{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+}
+.keyboard-shortcuts-modal .modal-subtitle{
+    border: 0;
+    color: #FFF;
+    font-size: $fsui;
+}
+
+// DDR
+.keyboard-shortcuts-modal .ddr-arrows{
+    display: none;
+}
+
+// Body
+.keyboard-shortcuts-modal .keyboard-shortcut-list{
+    padding: 20px;
+}
+
+// Group
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group.group-end{
+    margin-bottom: 20px;
+}
+
+// Keybind description
+.keyboard-shortcuts-modal .keyboard-shortcut-list .keybind-group .keybind-description{
+    color: #FFF;
+    font-size: $fschat;
+    font-weight: $fwui;
+    line-height: $lh;
+    text-transform: none;
+}

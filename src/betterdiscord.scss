@@ -1,0 +1,118 @@
+// Core
+@import 'components/core/info';
+@import 'components/core/variables';
+@import 'components/core/options';
+@import 'components/core/font';
+@import 'components/core/reset';
+@import 'components/core/animation';
+@import 'components/core/status_circle';
+@import 'components/core/version_info';
+
+// UI
+@import 'components/ui/titlebar';
+@import 'components/ui/scrollbar';
+@import 'components/ui/tooltip';
+@import 'components/ui/context_menu';
+
+// Loadscreens
+@import 'components/loadscreen/connecting';
+
+// Notices
+@import 'components/notices/light_mode';
+@import 'components/notices/font_scaling';
+@import 'components/notices/bd_blue';
+
+// Guilds
+@import 'components/primary/guilds/guilds';
+@import 'components/primary/guilds/settings_button';
+
+// Channels
+@import 'components/primary/channels/channels';
+@import 'components/primary/channels/channel_notices';
+@import 'components/primary/channels/rtc';
+@import 'components/primary/channels/account';
+@import 'components/primary/channels/badge';
+
+// Toolbar
+@import 'components/primary/toolbar/toolbar';
+@import 'components/primary/toolbar/search';
+
+// Chat
+@import 'components/primary/chat/chat';
+@import 'components/primary/chat/chatbox';
+@import 'components/primary/chat/welcome';
+@import 'components/primary/chat/codeblock';
+@import 'components/primary/chat/embed';
+@import 'components/primary/chat/invite';
+@import 'components/primary/chat/nsfw';
+
+// Members
+@import 'components/primary/members/members';
+@import 'components/primary/members/loading';
+
+// Search results pane
+@import 'components/primary/search/search';
+
+// Friends
+@import 'components/friends/toolbar';
+@import 'components/friends/search';
+@import 'components/friends/conversation_list';
+@import 'components/friends/table';
+@import 'components/friends/add_friend';
+
+// Settings
+@import 'components/settings/core';
+@import 'components/settings/sidebar';
+@import 'components/settings/content';
+@import 'components/settings/forms';
+
+// Popouts
+@import 'components/popout/user';
+@import 'components/popout/chat_options';
+@import 'components/popout/emoji_picker';
+@import 'components/popout/status_changer';
+@import 'components/popout/server_dropdown';
+@import 'components/popout/recent_mentions';
+@import 'components/popout/search';
+@import 'components/popout/rtc';
+@import 'components/popout/group_dm';
+@import 'components/popout/quick_select';
+@import 'components/popout/autocomplete';
+@import 'components/popout/add_game';
+
+// Modals
+@import 'components/modal/profile';
+@import 'components/modal/new_modal';
+@import 'components/modal/quickswitcher';
+@import 'components/modal/keyboard_combo';
+@import 'components/modal/server_region';
+@import 'components/modal/delete_message';
+@import 'components/modal/ban_user';
+@import 'components/modal/lightbox';
+@import 'components/modal/upload';
+@import 'components/modal/notification_settings';
+@import 'components/modal/deprecated_help';
+@import 'components/modal/deprecated_invite';
+@import 'components/modal/deprecated_new_server';
+@import 'components/modal/deprecated_rtc_debug';
+
+// Misc
+@import 'components/misc/bot_tag';
+@import 'components/misc/keyboard_shortcut';
+@import 'components/misc/loading';
+
+// BetterDiscord
+@import 'components/betterdiscord/emoji_picker';
+@import 'components/betterdiscord/tipsy';
+@import 'components/betterdiscord/rmenu';
+@import 'components/betterdiscord/settings';
+@import 'components/betterdiscord/ccss';
+@import 'components/betterdiscord/themes_plugins';
+
+// Icons
+@import 'components/icons/titlebar';
+@import 'components/icons/core';
+@import 'components/icons/betterdiscord';
+
+// Third party
+@import 'components/thirdparty/hljs_monokai';

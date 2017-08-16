@@ -1,0 +1,11 @@
+.spinner-inner.spinner-wandering-cubes{
+    background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    width: 32px;
+    height: 32px;
+    -webkit-filter: invert(100%);
+}
+.spinner-wandering-cubes .spinner-item{
+    display: none;
+}

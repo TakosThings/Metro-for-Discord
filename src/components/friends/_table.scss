@@ -1,0 +1,77 @@
+#friends .friends-table{
+    margin-top: 0;
+}
+.theme-dark .friends-table{
+    background-color: $b2;
+}
+
+// Header
+#friends .friends-table .friends-table-header{
+    padding: 8px 20px;
+}
+#friends .friends-table .friends-table-header .friends-column{
+    font-weight: normal;
+    letter-spacing: normal;
+    text-transform: none;
+}
+.theme-dark #friends .friends-table .friends-table-header .friends-column{
+    color: #FFF;
+}
+
+// Row
+#friends .friends-table .friends-row{
+    height: 50px !important;
+    margin: 0;
+    padding: 0 20px;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: normal;
+    &:hover{
+        margin: 0;
+        padding: 0 20px;
+        border-radius: 0;
+    }
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-name,
+.theme-dark #friends .friends-table .friends-row .friends-column-status{
+    color: #FFF;
+}
+.theme-dark #friends .friends-table .friends-row .friends-column-status .status-text strong{
+    font-weight: $fwui;
+}
+
+// Action buttons
+#friends .friends-table .friends-row .friends-column-actions .friends-action{
+    border-radius: 0;
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-accept,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call{
+    background-color: $safe;
+    &:hover{
+        background-color: darken($safe, 10%) !important;
+    }
+}
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-cancel,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-ignore,
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-remove{
+    background-color: $alert;
+    &:hover{
+        background-color: darken($alert, 10%) !important;
+    }
+}
+#friends .friends-table .friends-row .friends-column-actions,
+#friends .friends-table .friends-row:hover .friends-column-actions{
+    padding-right: 20px;
+}
+
+// Empty image
+.theme-dark #friends .friends-empty.section-pending .empty-state-image{
+    display: none;
+}
+#friends .friends-empty p{
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+.theme-dark #friends .friends-empty p{
+    color: #FFF;
+}

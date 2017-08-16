@@ -1,0 +1,34 @@
+.message-group .comment .markup pre{
+    border: 0;
+    border-left: 4px solid #FFF;
+    border-radius: 0;
+}
+.theme-dark .message-group .comment .markup pre{
+    border-color: #5E5E5E;
+}
+.theme-dark .message-group .comment .markup code.inline,
+.theme-dark .message-group .comment .markup pre code{
+    background-color: #2F2F2F;
+}
+
+// Language
+.message-group .comment .markup pre code::before{
+    content: attr(class);
+    width: 100%;
+    display: block;
+    margin: -7px 0 .5em -280px;
+    padding: 2px 287px 2px 0;
+    background-color: #5E5E5E;
+    color: #FFF;
+    font-family: $font;
+    font-size: 10px;
+    line-height: 1.5625;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+// Inline code
+.message-group .comment .markup code.inline{
+    padding: 2px 4px;
+    border-radius: 0;
+}

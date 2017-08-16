@@ -1,0 +1,64 @@
+.private-channels{
+    background-color: $b1;
+}
+.private-channels header{
+    height: 30px;
+    opacity: 1;
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+// Channel
+.private-channels .channel a{
+    border-radius: 0;
+}
+.private-channels .channel .channel-name{
+    opacity: 1;
+    color: #FFF;
+    font-weight: normal;
+}
+.private-channels .channel .icon-friends{
+    width: auto;
+    height: auto;
+    margin-left: 8px;
+    background-image: none;
+}
+.private-channels .channel .icon-friends::before{
+    content: "\E136";
+    color: #FFF;
+    font-family: $icon;
+    font-size: 21px;
+    line-height: 30px;
+    vertical-align: middle;
+}
+.private-channels .status{
+    right: 0;
+    bottom: 0;
+    border: 0;
+}
+
+// Hovered channel
+.private-channels .channel:hover a{
+    background-color: $b2;
+}
+
+// Selected channel
+.private-channels .channel.selected a{
+    background-color: transparent;
+}
+.private-channels .channel.selected::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    margin-top: -5px;
+    background-color: #FFF;
+    transform: rotate(45deg);
+}

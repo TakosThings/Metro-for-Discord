@@ -1,0 +1,55 @@
+#friends .friends-header{
+    height: 40px;
+    padding: 0;
+}
+.theme-dark #friends .friends-header{
+    background-color: $b1;
+    border: 0;
+    box-shadow: none;
+}
+
+// Tabs
+#friends .friends-header .tab-bar{
+    font-size: $fsui;
+    font-weight: $fwui;
+    letter-spacing: normal;
+}
+#friends .friends-header .tab-bar .tab-bar-item{
+    margin: 0;
+    padding: 0 12px;
+    border-radius: 0;
+    line-height: 40px;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item{
+    color: #FFF;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected){
+    background-color: rgba(255,255,255,0.1);
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected{
+    background-color: var(--accent);
+    color: #FFF;
+}
+#friends .friends-header .tab-bar .tab-bar-separator{
+    display: none;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item .badge{
+    background-color: #003b67;
+    color: #FFF;
+    vertical-align: middle;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) .badge{
+    color: #FFF;
+}
+
+// Add friend
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary{
+    background-color: transparent;
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected){
+    background-color: rgba(255,255,255,0.1);
+}
+.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected{
+    background-color: var(--accent);
+    color: #FFF;
+}

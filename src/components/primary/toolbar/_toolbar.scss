@@ -1,0 +1,103 @@
+.chat>.title-wrap{
+    min-height: 40px;
+    padding-right: 0;
+    background-color: $b1;
+}
+.chat>.title-wrap.title-wrap-dark{
+    border-bottom: 0;
+    box-shadow: none;
+}
+
+// Channel title
+.chat>.title-wrap>.title{
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    letter-spacing: normal;
+    line-height: 40px;
+}
+.chat>.title-wrap>.title .channel-name:before{
+    color: #FFF;
+}
+.chat>.title-wrap>.topic:before{
+    display: none;
+}
+
+// Channel topic
+.chat>.title-wrap>.topic{
+    padding-left: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 27px;
+}
+.chat>.title-wrap.title-wrap-dark .topic{
+    color: #FFF;
+}
+
+// Topic link
+.chat>.title-wrap.title-wrap-dark .topic a{
+    color: $a;
+}
+
+// Mention
+.chat>.title-wrap.title-wrap-dark .topic .mention{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+// Toolbar
+.header-toolbar{
+    margin-right: 0;
+    margin-left: 12px;
+}
+.header-toolbar .separator{
+    display: none;
+}
+.header-toolbar button{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+    &:hover{
+        background-color: $b4;
+    }
+    &.popout-open{
+        background-color: var(--accent);
+    }
+}
+.header-toolbar button span{
+    width: 40px;
+    height: 40px;
+    background-size: 24px;
+    opacity: 1;
+    &:hover{
+        opacity: 1;
+    }
+}
+.header-toolbar button+button{
+    margin-left: 0;
+}
+
+// Toolbar button badge
+.header-toolbar .toolbar-badge{
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: $alert;
+    border: 0;
+    border-radius: 0;
+}
+
+// Toolbar button active
+.header-toolbar button.active{
+    background-color: var(--accent);
+}
+
+// Private call
+.private-channel-call-btns-wrapper{
+    height: 40px;
+    margin-right: 0;
+}
