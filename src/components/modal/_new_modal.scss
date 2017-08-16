@@ -30,3 +30,10 @@ div[class^="modal"] div[class*="header"] h4{
 .theme-dark div[class^="modal"] div[class*="footer"] button+button{
     margin-right: 8px;
 }
+
+// Fixes Change log font size
+div[class^="modal"] div[class*="content"] ul li{
+    margin-bottom: 8px;
+    color: #FFF;
+    font-size: $fsui;
+}
