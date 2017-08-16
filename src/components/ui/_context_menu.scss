@@ -3,6 +3,7 @@
     border-radius: 0;
     box-shadow: none;
 }
+.theme-light.context-menu,
 .theme-dark.context-menu{
     background-color: $b1;
 }
@@ -59,6 +60,7 @@
 .context-menu .context-menu{
     margin-left: 166px;
 }
+.theme-light.context-menu .context-menu,
 .theme-dark.context-menu .context-menu{
     background-color: $b1;
     border-color: rgba(255,255,255,.2);

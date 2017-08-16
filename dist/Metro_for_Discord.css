@@ -267,6 +267,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
   border-radius: 0;
   box-shadow: none; }
 
+.theme-light.context-menu,
 .theme-dark.context-menu {
   background-color: #191919; }
 
@@ -321,6 +322,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
 .context-menu .context-menu {
   margin-left: 166px; }
 
+.theme-light.context-menu .context-menu,
 .theme-dark.context-menu .context-menu {
   background-color: #191919;
   border-color: rgba(255, 255, 255, 0.2);
