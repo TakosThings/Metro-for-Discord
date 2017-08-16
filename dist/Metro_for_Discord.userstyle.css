@@ -214,6 +214,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0;
     box-shadow: none; }
+  .theme-light.context-menu,
   .theme-dark.context-menu {
     background-color: #191919; }
   .context-menu .item-group {
@@ -256,6 +257,7 @@
     transform: rotate(40deg); }
   .context-menu .context-menu {
     margin-left: 166px; }
+  .theme-light.context-menu .context-menu,
   .theme-dark.context-menu .context-menu {
     background-color: #191919;
     border-color: rgba(255, 255, 255, 0.2);
