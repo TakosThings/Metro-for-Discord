@@ -1,0 +1,14 @@
+/* Accent Colour */
+:root{
+    --accent: #0072C6;
+}
+
+/* REMOVE this if you want to see the "X blocked messages" notification. */
+.message-group-blocked { display: none; }
+
+/* REMOVE this if you want to see the "Welcome to the server" tutorial. */
+.chat .welcome-message{ display: none; }
+
+/* ####################################################### */
+/* ##                End of user options.               ## */
+/* ####################################################### */

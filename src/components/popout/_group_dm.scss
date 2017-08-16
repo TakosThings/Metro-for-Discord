@@ -1,0 +1,139 @@
+.private-channel-recipients-invite{
+    height: calc(100vh - 72px);
+}
+
+
+// Header
+.private-channel-recipients-invite .header .title{
+    text-align: left;
+}
+.private-channel-recipients-invite .header .subtitle{
+    text-align: left;
+}
+.theme-dark .private-channel-recipients-invite .header .subtitle{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+// Search
+.private-channel-recipients-invite .search-bar{
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+}
+.private-channel-recipients-invite .search-bar-inner{
+    background-color: transparent;
+    border: 0;
+}
+.private-channel-recipients-invite .search-bar-inner .search-bar-tag{
+    margin: 6px 2px;
+}
+.private-channel-recipients-invite .search-bar input{
+    height: 36px;
+    border: 1px solid $inputborder;
+    color: #FFF;
+    font-family: $font;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000;
+    }
+}
+.private-channel-recipients-invite .search-bar input::-webkit-input-placeholder{
+    color: rgba(255,255,255,.5);
+}
+
+// Friends
+.private-channel-recipients-invite .body .scroller{
+    height: auto;
+    overflow-y: auto;
+}
+.theme-dark .private-channel-recipients-invite .friend{
+    background-color: transparent;
+    &:hover{
+        background-color: var(--accent);
+        background-image: none;
+    }
+    &.selected{
+        background-color: transparent;
+        background-image: none;
+    }
+}
+.theme-dark .private-channel-recipients-invite .friend .discord-tag{
+    font-size: $fsui;
+}
+
+// Checkbox
+.private-channel-recipients-invite .checkbox .checkbox-inner span{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}
+
+// Create button
+.private-channel-recipients-invite .footer button{
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: var(--accent);
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+    &:disabled:hover{
+        background-color: var(--accent);
+        border-color: transparent;
+    }
+}
+
+// No results/Not friends
+.private-channel-recipients-invite .error-state.search-results{
+    height: auto;
+}
+.theme-dark .private-channel-recipients-invite .error-state.not-friends .icon,
+.private-channel-recipients-invite .error-state.search-results .icon{
+    display: none;
+}
+.theme-dark .private-channel-recipients-invite .error-state.not-friends .text,
+.private-channel-recipients-invite .error-state.search-results .text{
+    padding: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 1;
+}
+
+// Add friend
+.private-channel-recipients-invite .error-state.not-friends .btn{
+    width: auto;
+    padding: 9px 12px 10px;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: var(--accent);
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+    &:disabled:hover{
+        background-color: var(--accent);
+        border-color: transparent;
+    }
+}

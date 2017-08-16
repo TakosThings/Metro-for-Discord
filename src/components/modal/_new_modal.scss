@@ -1,0 +1,39 @@
+div[class^="modal-"]{
+    border-radius: 0;
+}
+.theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"]:not(.modal-image),
+.theme-dark div[class^="modal-"] > div[class^="inner"] > form[class^="modal"]{
+    background-color: $b1;
+    border: 1px solid var(--accent);
+    border-radius: 0;
+}
+
+// Header
+div[class^="modal"] div[class*="header"] h4{
+    padding: 36px 0 4px;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    line-height: $lh;
+    text-transform: none;
+}
+
+// Footer
+.theme-dark div[class^="modal"] div[class*="footer"]{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+// Buttons
+.theme-dark div[class^="modal"] div[class*="footer"] button{
+    min-height: 36px;
+}
+.theme-dark div[class^="modal"] div[class*="footer"] button+button{
+    margin-right: 8px;
+}
+
+// Fixes Change log font size
+div[class^="modal"] div[class*="content"] ul li{
+    margin-bottom: 8px;
+    color: #FFF;
+    font-size: $fsui;
+}

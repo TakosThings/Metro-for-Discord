@@ -1,0 +1,36 @@
+.header-toolbar .search{
+    margin-left: 0;
+}
+.header-toolbar .search .search-bar{
+    height: 40px;
+    border-radius: 0;
+}
+.theme-dark .header-toolbar .search .search-bar{
+    background-color: $b3;
+}
+.header-toolbar .search .DraftEditor-root{
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 35px;
+}
+.header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root{
+    padding: 3px 11px 10px;
+}
+.search .DraftEditor-root .public-DraftEditor-content{
+    padding: 3px 11px 10px;
+}
+.theme-dark .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root{
+    color: #FFF;
+}
+
+// Eyeglass icon
+.header-toolbar .search .search-bar .icon{
+    top: 12px;
+}
+
+// Search in use
+.header-toolbar .search.focused .search-bar,
+.header-toolbar .search.open .search-bar,
+.header-toolbar .search.popout-open .search-bar{
+    width: 240px;
+}

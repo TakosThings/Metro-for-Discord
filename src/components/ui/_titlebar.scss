@@ -1,0 +1,39 @@
+.titlebar{
+    height: 32px;
+    background-color: #000;
+}
+.titlebar:after{
+    content: "Discord";
+    position: absolute;
+    top: 10px;
+    margin-left: 12px;
+    padding-left: 8px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+.win-buttons{
+    height: 32px;
+    right: 0;
+}
+.win-buttons button{
+    width: 45px;
+    height: 32px;
+    background-size: 100%;
+    opacity: 1;
+}
+.win-minimize:hover,
+.win-maximize:hover{
+    background-color: #111;
+}
+.win-close:hover{
+    background-color: #e81123;
+}
+
+.win-buttons.win-buttons-notice{
+    top: 0;
+}
+
+.app{
+    margin-top: 32px;
+}

@@ -1,0 +1,60 @@
+// Sidebar
+.ui-standard-sidebar-view .sidebar-region .sidebar{
+    width: 320px;
+    padding: 15px 0 0 0;
+}
+
+// Left sidebar
+.theme-dark .ui-standard-sidebar-view .sidebar-region{
+    background-color: #000;
+}
+
+// Header
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="header"]{
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+    color: #FFF;
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    line-height: 42px;
+    text-transform: none;
+}
+
+// Sidebar item
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"]{
+    margin-bottom: 0;
+    padding: 14px 16px;
+    border-radius: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: rgba(255,255,255,0.15);
+    }
+}
+
+// Selected item
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"],
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]{
+    background-color: transparent;
+    color: var(--accent);
+    &:hover{
+        background-color: rgba(255,255,255,0.15);
+    }
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]::before,
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]::before{
+    content: "";
+    width: 4px;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: var(--accent);
+    margin-top: -10px;
+}
+
+// Remove separators
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="separator"]{
+    display: none;
+}

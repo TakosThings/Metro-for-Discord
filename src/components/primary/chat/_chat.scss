@@ -1,0 +1,277 @@
+.theme-dark .chat,
+.theme-dark .chat>.content,
+.theme-dark .messages-wrapper{
+    background-color: $b2;
+}
+
+.theme-dark .message-group:not(.has-divider){
+    border-bottom-color: rgba(255,255,255,0.05);
+}
+.message-group .comment .markup{
+    font-size: $fschat;
+}
+.theme-dark .message-group .comment .markup{
+    color: #FFF;
+    padding-right: 20px;
+}
+.message-group .comment{
+    margin-right: 0;
+}
+
+// Cozy
+.message-group{
+    margin-right: 0;
+    margin-left: 0;
+    padding: 15px 20px;
+}
+.message-group h2 strong{
+    font-size: $fsui;
+    font-weight: 400;
+}
+.theme-dark .message-group h2 strong{
+    color: #ACACAC;
+}
+.message-group .mentioned .message-text::after{
+    display: none;
+}
+
+// Compact
+.message-group.compact{
+    margin-left: 0;
+    padding: 3px 20px;
+}
+.theme-dark .message-group.compact .timestamp{
+    color: rgba(255,255,255,0.5);
+}
+.message-group.compact .message:hover .timestamp{
+    color: #FFF !important;
+}
+.message-group.compact .message .message-text .markup{
+    padding-left: 80px;
+}
+.message-group.compact .message .message-text .markup .user-name{
+    font-size: $fschat;
+    font-weight: 400;
+}
+.theme-dark .message-group.compact .message .markup .user-name{
+    color: #ACACAC;
+}
+
+// Links
+.theme-dark .message-group a{
+    color: $a;
+}
+
+// Mentions
+.mention{
+    background-color: transparent;
+    color: var(--accent);
+    &:hover{
+        background-color: transparent;
+    }
+}
+.theme-dark .message-group .comment .markup .mention{
+    background-color: transparent;
+    &:hover{
+        background-color: transparent;
+    }
+}
+
+// System message
+.system-message{
+    padding-left: 10px;
+    font-size: $fsui;
+}
+.theme-dark .system-message{
+    color: #FFF;
+}
+
+// Divider
+.chat .divider{
+    margin: 8px 0;
+}
+.chat .divider>span{
+    padding: 0 8px;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: $lh;
+}
+.chat .divider.divider-red>span{
+    text-transform: none;
+    line-height: $lh;
+}
+.divider + .divider{
+    margin-top: 25px;
+}
+.chat .divider:before{
+    display: none;
+}
+.theme-dark .friends-table .messages .divider:not(.red) div,
+.theme-dark .messages-wrapper .messages .divider:not(.red) div{
+    background-color: #FFF;
+}
+.theme-dark .friends-table .messages .divider:not(.red) span,
+.theme-dark .messages-wrapper .messages .divider:not(.red) span{
+    background-color: #FFF;
+    color: #000;
+}
+.theme-dark .friends-table .messages .divider.divider-red>span,
+.theme-dark .messages-wrapper .messages .divider.divider-red>span{
+    background-color: $alert;
+    color: #FFF;
+}
+.theme-dark .friends-table .messages .divider.divider-red>div,
+.theme-dark .messages-wrapper .messages .divider.divider-red>div{
+    background-color: $alert;
+    opacity: 1;
+}
+
+// New messages
+.chat .new-messages-bar{
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent);
+    border-radius: 0;
+    &:hover{
+        background-color: var(--accent);
+    }
+}
+.chat .new-messages-bar button:first-child,
+.chat .new-messages-bar button:last-child{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// Jump to present
+.chat .jump-to-present-bar{
+    left: 20px;
+    right: 20px;
+    border-bottom: 1px solid $b2;
+    border-radius: 0;
+}
+.theme-dark .chat .jump-to-present-bar{
+    background-color: var(--accent);
+    &:hover{
+        background-color: var(--accent);
+    }
+}
+.chat .jump-to-present-bar button:first-child,
+.chat .jump-to-present-bar button:last-child{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+
+// Load More
+.theme-dark .chat .has-more button{
+    background-color: $b3;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+    &:hover{
+        border-color: $inputborder;
+    }
+    &:focus{
+        border-color: $inputborderhover;
+    }
+}
+
+// Editing message
+.message-group .edit-message .edit-container-inner{
+    margin-right: 40px;
+}
+.theme-dark .message-group .edit-container-inner div[class^="innerEnabled"]{
+    background-color: $b1;
+    border-radius: 0;
+}
+.message-group .edit-message .edit-container-inner textarea{
+    margin: 0 0 0 30px;
+}
+.message-group .edit-message .edit-operation{
+    font-family: $font;
+    font-weight: normal;
+}
+.theme-dark .message-group .edit-message .edit-operation{
+    color: #FFF;
+}
+.message-group .edit-message .edit-operation>a{
+    color: var(--accent);
+}
+// Editing message emoji button
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"]{
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: initial;
+    left: 0;
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]{
+    transition: none;
+    background-image: none;
+    &:active{
+        color: var(--accent);
+    }
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]::before{
+    content: "\E170";
+    font-family: $icon;
+    font-size: 21px;
+    text-align: center;
+}
+.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="spriteHovered"]{
+    transform: none;
+}
+
+// Blocked messages
+.message-group-blocked{
+    display: none;
+}
+
+// Reactions
+.reaction{
+    border-radius: 0;
+}
+.theme-dark .reaction{
+    border: 1px solid transparent;
+    &:hover{
+        border-color: $inputborder;
+    }
+}
+.theme-dark .reaction .reaction-count{
+    color: rgba(255,255,255,.5);
+    font-weight: normal;
+}
+.theme-dark .reaction.reaction-me .reaction-count{
+    color: #FFF;
+    font-weight: normal;
+}
+.theme-dark .reaction.reaction-me{
+    background-color: var(--accent);
+}
+
+// Local bot message
+.theme-dark .message-group.is-local-bot-message{
+    background-image: none;
+}
+
+// Start of channel history
+.chat .empty-message{
+    height: auto;
+    margin: 0;
+    padding: 20px;
+}
+.theme-dark .chat .empty-message{
+    background-image: none;
+}
+.chat .empty-message h1{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwchat;
+}

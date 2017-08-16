@@ -1,0 +1,35 @@
+.popout.popout-bottom > .popout-menu{
+    background-color: $b3;
+    border-radius: 0;
+}
+.popout-menu .popout-menu-separator{
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+// Item
+.popout-menu .popout-menu-item{
+    color: #FFF;
+    line-height: $lh;
+    &:hover{
+        background-color: var(--accent);
+        color: #FFF;
+    }
+}
+.popout-menu .popout-menu-icon{
+    display: none;
+}
+
+// Special items
+.popout-menu .popout-menu-item.invite{
+    color: #FFF;
+    &:hover{
+        color: #FFF;
+    }
+}
+.popout-menu .popout-menu-item.leave{
+    color: $alert;
+    &:hover{
+        background-color: $alert;
+        color: #FFF;
+    }
+}

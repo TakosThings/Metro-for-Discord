@@ -1,0 +1,65 @@
+#friends .friends-table .friend-table-add-wrapper h2{
+    font-size: $fsheader;
+    font-weight: $fwheader;
+    text-transform: none;
+}
+#friends .friends-table .friend-table-add-wrapper .friend-table-add-description{
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: $lh;
+}
+.theme-dark #friends .friends-table .friend-table-add-description{
+    color: #FFF;
+}
+
+// Add input
+.add-friend-input-wrapper{
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+}
+.add-friend-input-wrapper .add-friend-hint{
+    display: none;
+}
+.add-friend-input-wrapper .add-friend-input{
+    min-height: 36px;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    font-family: $font;
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: 1;
+    letter-spacing: normal;
+}
+.add-friend-input-wrapper .add-friend-input{
+    border: 1px solid $inputborder;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+    &:focus{
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000;
+    }
+}
+
+// Sends request button
+#friends .btn{
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: var(--accent);
+        border-color: $inputborder;
+    }
+    &:active{
+        filter: brightness(80%);
+    }
+}
+
+// Empty
+#friends .friends-empty.section-add-friend-no-connection .empty-state-image{
+    display: none;
+}

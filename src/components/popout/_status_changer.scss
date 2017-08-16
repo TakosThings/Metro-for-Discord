@@ -1,0 +1,51 @@
+.popout.popout-top{
+    width: 240px !important;
+    height: auto !important;
+    box-shadow: none;
+    margin-top: 0;
+}
+.status-picker.popout-menu{
+    width: auto;
+    background-color: transparent;
+}
+.status-picker .popout-menu-item{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    padding: 0;
+    margin: 4px 0 4px 4px;
+    &:hover{
+        background-color: transparent;
+    }
+}
+.status-picker .status{
+    width: 55px;
+    height: 55px;
+    margin-right: 0 !important;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    &:hover{
+        border-color: rgba(255,255,255,.5);
+    }
+}
+.status-picker .popout-menu-item .status::before{
+    content: "";
+    width: 51px;
+    height: 51px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+}
+
+// Remove text
+.status-picker .popout-menu-item .helper,
+.status-picker .popout-menu-item .status-icon-text .status-text{
+    display: none;
+}
+
+// Remove separators
+.status-picker .popout-menu-separator{
+    display: none;
+}

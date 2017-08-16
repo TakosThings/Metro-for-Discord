@@ -1,0 +1,27 @@
+// Title
+.chat div[class^="title-"]{
+    font-size: $fsheader;
+    font-weight: $fwheader;
+}
+
+// Description
+.chat div[class^="description-"]{
+    font-size: $fsui;
+    font-weight: $fwui;
+}
+
+// Separator
+.chat div[class^="separator-"]{
+    display: none;
+}
+
+// Outlined button
+.chat button[class^="buttonPrimaryOutlinedDefault"]{
+    border-color: $inputborder;
+    border-radius: 0;
+    color: #FFF;
+    font-weight: $fwui;
+    &:hover{
+        border-color: $inputborderhover;
+    }
+}

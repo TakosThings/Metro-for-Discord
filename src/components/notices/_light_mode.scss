@@ -1,0 +1,10 @@
+.app.theme-light::before{
+    content: "Please enable the Dark Theme in your Appearance settings.";
+    height: 32px;
+    background-color: $alert;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    vertical-align: middle;
+}
