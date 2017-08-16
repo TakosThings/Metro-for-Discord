@@ -3467,6 +3467,11 @@ div[class^="modal"] div[class*="header"] h4 {
 .theme-dark div[class^="modal"] div[class*="footer"] button + button {
   margin-right: 8px; }
 
+div[class^="modal"] div[class*="content"] ul li {
+  margin-bottom: 8px;
+  color: #FFF;
+  font-size: 15px; }
+
 .qs-tutorial {
   display: none; }
 
