@@ -3264,6 +3264,7 @@
       border-color: var(--accent) !important;
       color: #000; }
   .create-guild-container.deprecated .form-actions .btn-default {
+    padding: 0 12px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     color: #FFF;
