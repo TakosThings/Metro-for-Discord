@@ -8,7 +8,8 @@
       .notification-settings-modal .scroller,
       .messages-popout-wrap .scroller,
       .search-results-wrap .scroller-wrap .scroller,
-      .private-channel-recipients-invite .body .scroller{
+      .private-channel-recipients-invite .body .scroller,
+      #autocomplete-popout div[class^="scroller-"]{
         &::-webkit-scrollbar{
             width: 12px;
         }
@@ -86,4 +87,8 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
             background-color: #747474;
         }
     }
+}
+// Autocomplete popout
+#autocomplete-popout div[class^="scroller-"]::-webkit-scrollbar-thumb{
+    visibility: visible;
 }
