@@ -154,6 +154,9 @@ div[class^="side"] div[class*="item"]{
     border-radius: 0;
     font-weight: normal;
 }
+div[class^="side"] div[class*="itemDefaultSelected"]{
+    background-color: var(--accent);
+}
 
 // Images removal
 // US = User settings, CS = Channel settings, SS = Server Settings
