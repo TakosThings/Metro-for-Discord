@@ -10,6 +10,9 @@
 .tooltip::after{
     display: none;
 }
+.tooltip.tooltip-brand{
+    background-color: #191919;
+}
 
 // Hide settings button tooltip
 .tooltip[style*="left: -15px;"]{
