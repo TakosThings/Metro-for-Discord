@@ -44,6 +44,13 @@
 #autocomplete-popout .row{
     color: #FFF;
 }
+#autocomplete-popout .row a{
+    color: #FFF;
+}
+#autocomplete-popout .row.selected a,
+#autocomplete-popout .row:hover a{
+    color: #FFF;
+}
 #autocomplete-popout .row.selected{
     background-color: var(--accent);
     background-image: none;
