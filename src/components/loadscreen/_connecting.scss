@@ -1,5 +1,7 @@
 .connecting{
     background-color: $b1;
+}
+.titlebar ~ .connecting{
     margin-top: 32px;
 }
 .connecting .connecting-inner{
