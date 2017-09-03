@@ -4,6 +4,8 @@
 
 // Header
 #rtc-connection-popout header{
+    justify-content: flex-start;
+    padding: 30px 20px 10px;
     background-color: $b1;
     border-radius: 0;
     font-size: $fsui;
