@@ -230,7 +230,23 @@
 }
 
 // Blocked messages
-
+.message-group-blocked{
+    border: 1px solid transparent;
+    border-radius: 0;
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn{
+    background: $b3;
+    color: #fff;
+    font-size: $fschat;
+    font-weight: $fwchat;
+    text-transform: none;
+    &:hover{
+        background-color: $b3;
+    }
+}
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed{
+    background-color: $b3;
+}
 
 // Reactions
 .reaction{
