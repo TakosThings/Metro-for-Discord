@@ -59,7 +59,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 .channels-wrap::after {
-  content: "Metro for Discord 3.0.1";
+  content: "Metro for Discord 3.1.0";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -395,7 +395,9 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
   display: none; }
 
 .connecting {
-  background-color: #191919;
+  background-color: #191919; }
+
+.titlebar ~ .connecting {
   margin-top: 32px; }
 
 .connecting .connecting-inner {
@@ -988,9 +990,6 @@ form.deprecated.auth-form p.token-tip {
 .theme-dark .message-group:not(.has-divider) {
   border-bottom-color: rgba(255, 255, 255, 0.05); }
 
-.message-group .comment .markup {
-  font-size: 13px; }
-
 .theme-dark .message-group .comment .markup {
   color: #FFF;
   padding-right: 20px; }
@@ -1027,7 +1026,6 @@ form.deprecated.auth-form p.token-tip {
   padding-left: 80px; }
 
 .message-group.compact .message .message-text .markup .user-name {
-  font-size: 13px;
   font-weight: 400; }
 
 .theme-dark .message-group.compact .message .markup .user-name {
@@ -1182,7 +1180,20 @@ form.deprecated.auth-form p.token-tip {
   transform: none; }
 
 .message-group-blocked {
-  display: none; }
+  border: 1px solid transparent;
+  border-radius: 0; }
+
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+  background: #333333;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: none; }
+  .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn:hover {
+    background-color: #333333; }
+
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+  background-color: #333333; }
 
 .reaction {
   border-radius: 0; }
@@ -3106,6 +3117,8 @@ div[class^="userPopout-"] .protip {
   border: 1px solid var(--accent); }
 
 #rtc-connection-popout header {
+  justify-content: flex-start;
+  padding: 30px 20px 10px;
   background-color: #191919;
   border-radius: 0;
   font-size: 15px;

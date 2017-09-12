@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.1.0
+* **Enhancement** (3)
+* Chat font will now scale correctly above or below the default value [Closes #12](https://github.com/TakosThings/Metro-for-Discord/issues/12)
+* Userstyle users will now be able to configure the theme on the userstyles.org page
+* Theme x Blocked Message bars
+* **Adjustments** (1)
+  * Change padding and positioning of header in RTC popout
+* **Fixes** (2)
+  * Top margin appearing on connecting screen when no titlebar is present (Userstyle)
+  * Hide blocked messages was declared twice
+
 #### 3.0.1
 * **Fixes** (7)
   * Tooltip background colours
