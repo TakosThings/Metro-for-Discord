@@ -287,3 +287,11 @@
     font-size: $fsui;
     font-weight: $fwchat;
 }
+
+// Font scaling bodges
+html[style*="font-size: 150%"] .message-group.compact .message .message-text .markup{
+    padding-left: 95px;
+}
+html[style*="font-size: 125%"] .message-group.compact .message .message-text .markup{
+    padding-left: 85px;
+}
