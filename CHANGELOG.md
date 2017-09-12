@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.1.1
+* **Fixes** (2)
+  * Left chat padding when font scaling is increased
+  * Chatbox font scaling
+
 #### 3.1.0b
 * **Fixes**
   * Remove font scaling warning

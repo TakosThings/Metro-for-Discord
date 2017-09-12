@@ -59,7 +59,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 .channels-wrap::after {
-  content: "Metro for Discord 3.1.0b";
+  content: "Metro for Discord 3.1.1";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -1218,6 +1218,12 @@ form.deprecated.auth-form p.token-tip {
   font-size: 15px;
   font-weight: 400; }
 
+html[style*="font-size: 150%"] .message-group.compact .message .message-text .markup {
+  padding-left: 95px; }
+
+html[style*="font-size: 125%"] .message-group.compact .message .message-text .markup {
+  padding-left: 85px; }
+
 .chat form {
   margin: 0 20px; }
 
@@ -1232,7 +1238,6 @@ form.deprecated.auth-form p.token-tip {
 
 .channel-text-area-default textarea {
   margin: 0;
-  font-size: 15px;
   letter-spacing: normal; }
 
 .theme-dark .channel-text-area-default textarea {
