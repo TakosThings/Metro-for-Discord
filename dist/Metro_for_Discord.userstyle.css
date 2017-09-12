@@ -44,7 +44,7 @@
   .status-offline {
     background-color: #767676; }
   .channels-wrap::after {
-    content: "Metro for Discord 3.1.0";
+    content: "Metro for Discord 3.1.0b";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -375,16 +375,6 @@
     line-height: 32px;
     text-align: center;
     vertical-align: middle; }
-  .user-settings-appearance .font-scale-sample-small {
-    position: relative; }
-  .user-settings-appearance .font-scale-sample-small::before {
-    content: "This option is not compatible with this theme. Leave the setting at '100'.";
-    position: absolute;
-    min-width: 480px;
-    margin-top: -37px;
-    margin-left: 130px;
-    color: #FF0;
-    font-size: 15px; }
   .guilds-wrapper {
     width: 64px;
     background-color: #262626; }

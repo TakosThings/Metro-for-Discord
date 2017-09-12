@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.1.0b
+* **Fixes**
+  * Remove font scaling warning
+
 #### 3.1.0
 * **Enhancement** (3)
 * Chat font will now scale correctly above or below the default value [Closes #12](https://github.com/TakosThings/Metro-for-Discord/issues/12)
