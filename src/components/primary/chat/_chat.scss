@@ -8,7 +8,6 @@
     border-bottom-color: rgba(255,255,255,0.05);
 }
 .message-group .comment .markup{
-    font-size: $fschat;
 }
 .theme-dark .message-group .comment .markup{
     color: #FFF;
@@ -50,7 +49,6 @@
     padding-left: 80px;
 }
 .message-group.compact .message .message-text .markup .user-name{
-    font-size: $fschat;
     font-weight: 400;
 }
 .theme-dark .message-group.compact .message .markup .user-name{
