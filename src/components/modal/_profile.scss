@@ -102,6 +102,34 @@
     border: 0;
 }
 
+// Rich now playing
+#user-profile-modal .section svg[name="Gamepad"]{
+    display: none;
+}
+#user-profile-modal .section svg[name="Gamepad"] ~ div[class^="headerText"]{
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
+// Game image
+#user-profile-modal .section div[class^="assetsLarge"] img{
+    width: 128px;
+    height: 128px;
+    border-radius: 0;
+}
+// Game info
+#user-profile-modal .section div[class^="contentImages"] div[class^="nameLarge"]{
+    color: #FFF;
+    font-weight: normal;
+}
+#user-profile-modal .section div[class^="contentImages"] div[class^="details"]{
+    color: #FFF;
+}
+#user-profile-modal .section div[class^="contentImages"] div span{
+    color: #FFF;
+}
+
 // Notes
 #user-profile-modal .guilds .section .note textarea{
     min-height: 36px;
