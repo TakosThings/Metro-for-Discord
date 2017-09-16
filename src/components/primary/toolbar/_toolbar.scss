@@ -16,10 +16,12 @@
     letter-spacing: normal;
     line-height: 40px;
 }
-.chat>.title-wrap>.title .channel-name:before{
+.chat>.title-wrap>.title .channel-name.channel-private:before,
+.chat>.title-wrap>.title .channel-name::before,
+.chat>.title-wrap>.title .channel-name .channel-icon{
     color: #FFF;
 }
-.chat>.title-wrap>.topic:before{
+.chat>.title-wrap>.topic::before{
     display: none;
 }
 
