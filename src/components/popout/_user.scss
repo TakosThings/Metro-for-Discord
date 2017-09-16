@@ -51,6 +51,14 @@ div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="botTag"]{
     font-size: 10px;
     font-weight: $fwui;
 }
+// Now playing text
+div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"]{
+    color: #FFF;
+    font-size: $fsui;
+}
+div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"] strong{
+    font-weight: $fwui;
+}
 
 // Body
 div[class^="userPopout-"] div[class^="body-"]{
