@@ -139,3 +139,20 @@ div[class^="autocomplete-"] div[class*="selector-"]{
     background-color: transparent;
     border: 0;
 }
+
+// Unblock user
+.channel-textarea-guard > div{
+    margin-top: 8px;
+}
+.channel-textarea-guard button{
+    margin: 8px 0;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: $fsui;
+    font-weight: $fwui;
+    &:hover{
+        background-color: var(--accent);
+        border-color: $inputborder;
+    }
+}
