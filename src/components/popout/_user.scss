@@ -24,6 +24,10 @@ div[class^="userPopout-"] div[class*="avatarHint-"]{
     font-weight: normal;
     text-transform: none;
 }
+// Status circle
+div[class^="userPopout-"] div[class^="avatar-"] div[class*="avatarStatus-"]{
+    border: 0;
+}
 // Username
 div[class^="userPopout-"] span[class^="headerUsername"],
 div[class^="userPopout-"] div[class^="headerName-"]{
