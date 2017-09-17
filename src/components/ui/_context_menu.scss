@@ -83,6 +83,18 @@
         border-color: $inputborderhover;
     }
 }
+.context-menu .checkbox .checkbox-inner input[type=checkbox]:checked+span{
+    background-color: var(--accent);
+    border-color: var(--accent);
+    &:hover{
+        border-color: $inputborder;
+    }
+}
+.context-menu .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
+    top: 1px;
+    left: 5px;
+    border-width: 0 1px 1px 0;
+}
 
 // Slider
 .context-menu .slider .slider-bar{
