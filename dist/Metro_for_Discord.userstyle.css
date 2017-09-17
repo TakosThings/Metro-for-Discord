@@ -44,7 +44,7 @@
   .status-offline {
     background-color: #767676; }
   .channels-wrap::after {
-    content: "Metro for Discord 3.1.1";
+    content: "Metro for Discord 3.1.2";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -282,6 +282,15 @@
     border-radius: 0; }
     .context-menu .checkbox .checkbox-inner span:hover {
       border-color: rgba(255, 255, 255, 0.8); }
+  .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span {
+    background-color: var(--accent);
+    border-color: var(--accent); }
+    .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span:hover {
+      border-color: rgba(255, 255, 255, 0.6); }
+  .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span:after {
+    top: 1px;
+    left: 5px;
+    border-width: 0 1px 1px 0; }
   .context-menu .slider .slider-bar {
     height: 2px;
     background-color: #666;
@@ -486,10 +495,10 @@
     font-size: 20px; }
   .channels-wrap > div[class*="noWrap"] {
     background-color: #191919; }
-  .channels-wrap .container-0 > div > div[class*="nameDefault"],
-  .channels-wrap .container-0 > div > div[class*="nameHovered"],
-  .channels-wrap .container-2 > div > div[class*="nameDefault"],
-  .channels-wrap .container-2 > div > div[class*="nameHovered"] {
+  .channels-wrap .container-0 > div > div > div[class*="nameDefault"],
+  .channels-wrap .container-0 > div > div > div[class*="nameHovered"],
+  .channels-wrap .container-2 > div > div > div[class*="nameDefault"],
+  .channels-wrap .container-2 > div > div > div[class*="nameHovered"] {
     color: #FFF;
     font-size: 20px;
     font-weight: 300;
@@ -644,9 +653,11 @@
     font-weight: 300;
     letter-spacing: normal;
     line-height: 40px; }
-  .chat > .title-wrap > .title .channel-name:before {
+  .chat > .title-wrap > .title .channel-name.channel-private:before,
+  .chat > .title-wrap > .title .channel-name::before,
+  .chat > .title-wrap > .title .channel-name .channel-icon {
     color: #FFF; }
-  .chat > .title-wrap > .topic:before {
+  .chat > .title-wrap > .topic::before {
     display: none; }
   .chat > .title-wrap > .topic {
     padding-left: 0;
@@ -1010,6 +1021,18 @@
   .theme-dark .channel-textarea-guard .countdown-number {
     background-color: transparent;
     border: 0; }
+  .channel-textarea-guard > div {
+    margin-top: 8px; }
+  .channel-textarea-guard button {
+    margin: 8px 0;
+    background-color: var(--accent);
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400; }
+    .channel-textarea-guard button:hover {
+      background-color: var(--accent);
+      border-color: rgba(255, 255, 255, 0.6); }
   .chat .welcome-message {
     background-color: #232323;
     align-items: baseline; }
@@ -1926,6 +1949,8 @@
     font-size: 12px;
     font-weight: normal;
     text-transform: none; }
+  div[class^="userPopout-"] div[class^="avatar-"] div[class*="avatarStatus-"] {
+    border: 0; }
   div[class^="userPopout-"] span[class^="headerUsername"],
   div[class^="userPopout-"] div[class^="headerName-"] {
     font-size: 20px;
@@ -1942,6 +1967,11 @@
     font-weight: 300; }
   div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="botTag"] {
     font-size: 10px;
+    font-weight: 400; }
+  div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"] {
+    color: #FFF;
+    font-size: 15px; }
+  div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"] strong {
     font-weight: 400; }
   div[class^="userPopout-"] div[class^="body-"] {
     padding: 10px;
@@ -2709,6 +2739,24 @@
     text-transform: none; }
   #user-profile-modal .guilds .section + .section {
     border: 0; }
+  #user-profile-modal .section svg[name="Gamepad"] {
+    display: none; }
+  #user-profile-modal .section svg[name="Gamepad"] ~ div[class^="headerText"] {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none; }
+  #user-profile-modal .section div[class^="assetsLarge"] img {
+    width: 128px;
+    height: 128px;
+    border-radius: 0; }
+  #user-profile-modal .section div[class^="contentImages"] div[class^="nameLarge"] {
+    color: #FFF;
+    font-weight: normal; }
+  #user-profile-modal .section div[class^="contentImages"] div[class^="details"] {
+    color: #FFF; }
+  #user-profile-modal .section div[class^="contentImages"] div span {
+    color: #FFF; }
   #user-profile-modal .guilds .section .note textarea {
     min-height: 36px;
     margin: 0;

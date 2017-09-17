@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.1.2
+* **Enhancements** (2)
+  * Profile modal rich now playing
+  * Chatbox unblock user
+* **Fixes** (5)
+  * Text/Voice channel section headers
+  * Remove border on profile popout status circle
+  * Profile popout now playing text
+  * Toolbar #/@ symbol colour
+  * Context menu checkbox background
+
 #### 3.1.1
 * **Fixes** (2)
   * Left chat padding when font scaling is increased
