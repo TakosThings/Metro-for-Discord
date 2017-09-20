@@ -119,12 +119,12 @@
 }
 
 // New messages indicator
-.new-messages-indicator{
+.guilds-wrapper .new-messages-indicator{
     width: 48px;
     left: 8px;
     margin-bottom: 108px;
     border-radius: 0;
 }
-.new-messages-indicator.bottom{
+.guilds-wrapper .new-messages-indicator.bottom{
     border-radius: 0;
 }
