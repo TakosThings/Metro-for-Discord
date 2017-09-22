@@ -7,7 +7,7 @@ Newest Changes are at the top
 * **Cleanup** (2)
   * Delete `/notices/_font_scaling.scss` (was supposed to be removed in 3.1.0)
   * Delete `/modal/_deprecated_rtc_debug.scss` (was superseded)
-* **Fixes** (1)
+* **Fixes** (3)
   * Chatbox attach button sizing
   * Channels new mentions bar
   * Guilds new mentions bar text case
