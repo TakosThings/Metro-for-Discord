@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.2.0
+* **Enhancements** (1)
+  * Channel categories
+* **Cleanup** (2)
+  * Delete `/notices/_font_scaling.scss` (was supposed to be removed in 3.1.0)
+  * Delete `/modal/_deprecated_rtc_debug.scss` (was superseded)
+* **Fixes** (1)
+  * Chatbox attach button sizing
+  * Channels new mentions bar
+  * Guilds new mentions bar text case
+
 #### 3.1.2
 * **Enhancements** (2)
   * Profile modal rich now playing
