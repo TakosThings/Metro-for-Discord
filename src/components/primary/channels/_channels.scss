@@ -40,14 +40,16 @@
     }
 }
 
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameDefault"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameHovered"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameCollapsed"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"]{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: 400;
-    text-transform: none;
+.channels-wrap div[class^="container-"] > div > div >{
+    & div[class*="nameDefault"],
+      div[class*="nameHovered"],
+      div[class*="nameCollapsed"],
+      div[class*="nameMuted"]{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: 400;
+        text-transform: none;
+    }
 }
 .channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"]{
     color: $alert;
@@ -62,22 +64,26 @@
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC);
 }
 // Arrow (pointing right)
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="closed-"]{
-    width: 16px;
-    height: 16px;
-    left: 11px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAEJ+gz9D4rCXUAAAAH0lEQVR4AWMgEjAyMaKJMLPQSISZlZGqfEZmOJ8wAAAxcABf9SknGQAAAABJRU5ErkJggg==);
-    transform: none;
+.channels-wrap div[class^="container-"] > div > div >{
+    & svg[class^="iconCollapsed-"],
+      svg[class^="iconHoveredCollapsed-"],
+      svg[class^="closed-"]{
+        width: 16px;
+        height: 16px;
+        left: 11px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAEJ+gz9D4rCXUAAAAH0lEQVR4AWMgEjAyMaKJMLPQSISZlZGqfEZmOJ8wAAAxcABf9SknGQAAAABJRU5ErkJggg==);
+        transform: none;
+    }
 }
 // Hide default arrow
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconMuted-"] path{
-    display: none;
+.channels-wrap div[class^="container-"] > div > div >{
+    & svg[class^="iconDefault-"] path,
+      svg[class^="iconHovered-"] path,
+      svg[class^="iconCollapsed-"] path,
+      svg[class^="iconHoveredCollapsed-"] path,
+      svg[class^="iconMuted-"] path{
+        display: none;
+    }
 }
 
 // All channels
