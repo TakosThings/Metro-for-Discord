@@ -288,6 +288,42 @@
     font-weight: $fwchat;
 }
 
+// File attachments
+.message-group .comment .attachment{
+    min-width: 256px;
+    padding: 10px;
+    background-color: $b1;
+}
+.message-group .comment .attachment .icon{
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4px;
+}
+.message-group .comment .attachment a{
+    font-weight: $fwui;
+}
+.message-group .comment .attachment .metadata{
+    color: #FFF;
+}
+// Uploading
+.message-group .comment .attachment .upload>.filename{
+    color: var(--accent);
+}
+.message-group .comment .attachment .upload>.speed{
+    color: #FFF;
+}
+.message-group .comment .attachment .upload>.progress{
+    background-color: rgba(255,255,255,.2);
+    border-radius: 0;
+}
+.message-group .comment .attachment .upload>.progress .progress-bar{
+    background-color: var(--accent);
+    border-radius: 0;
+}
+
 // Font scaling bodges
 html[style*="font-size: 150%"] .message-group.compact .message .message-text .markup{
     padding-left: 95px;
