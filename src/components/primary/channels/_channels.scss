@@ -20,6 +20,10 @@
     background-color: $b1;
 }
 // Tree root
+// Decrease padding between categories
+.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type{
+    padding-top: 19px;
+}
 .channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type >,
 .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type >{
     & div[class*="wrapperDefault"],
