@@ -20,6 +20,7 @@
     background-color: $b1;
 }
 // Tree root
+.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type >,
 .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type >{
     & div[class*="wrapperDefault"],
       div[class*="wrapperHovered"],
@@ -29,6 +30,7 @@
     }
 }
 
+.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] >,
 .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] >{
     & div[class*="wrapperDefault"],
       div[class*="wrapperSelected"],
@@ -40,7 +42,8 @@
     }
 }
 
-.channels-wrap div[class^="container-"] > div > div >{
+.channels-wrap div[class^="container-"] > div > div >,
+.channels-wrap div[class^="container-"] > div > div > div >{
     & div[class*="nameDefault"],
       div[class*="nameHovered"],
       div[class*="nameCollapsed"],
@@ -55,15 +58,20 @@
     color: $alert;
 }
 // Arrow (pointing down)
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"],
-.channels-wrap div[class^="container-"] > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"]{
-    width: 16px;
-    height: 16px;
-    left: 11px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC);
+.channels-wrap div[class^="container-"] > div > div > div >,
+.channels-wrap div[class^="container-"] > div > div >,
+.channels-wrap div[class^="container-"] > div >{
+    & svg[class^="iconDefault-"],
+      svg[class^="iconHovered-"],
+      div[class*="wrapperMuted"] > svg[class^="iconMuted-"]{
+        width: 16px;
+        height: 16px;
+        left: 11px;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC);
+    }
 }
 // Arrow (pointing right)
+.channels-wrap div[class^="container-"] > div > div > div >,
 .channels-wrap div[class^="container-"] > div > div >{
     & svg[class^="iconCollapsed-"],
       svg[class^="iconHoveredCollapsed-"],
@@ -76,6 +84,7 @@
     }
 }
 // Hide default arrow
+.channels-wrap div[class^="container-"] > div > div > div >,
 .channels-wrap div[class^="container-"] > div > div >{
     & svg[class^="iconDefault-"] path,
       svg[class^="iconHovered-"] path,
