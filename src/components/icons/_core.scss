@@ -194,3 +194,23 @@ button[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmc
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
     background-size: 24px;    
 }
+
+// Upload modal
+.upload-modal .inner .file .icon{
+    &.acrobat,
+    &.ae,
+    &.ai,
+    &.archive,
+    &.code,
+    &.document,
+    &.photoshop,
+    &.ps,
+    &.sketch,
+    &.spreadsheet,
+    &.unknown,
+    &.video,
+    &.webcode{
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMABQ4PECAkKC0wMjc9QGB1f4Cgv8DHyczN4OLm5+rt8PP192v0xVYAAADJSURBVHja7dPbDsFQEIXhoYqi2GznQ4v3f0cJ6XLRpGk3KyrWfz3Jl5lkTCnV2mJXt1k4kt5qt46ICNp2qQgUKgKFi0AJR3x12UvphSNWnS/twkKgUBEoVAQKBVk+hhb7Qol4yDw+YBfauZz1T1B4iA3OUHiIDTMoPMRGORQeYuMLFB5ikysUArLzz47FV26izyPlVh0iglIh30KmrlQI0jghQoQIESJEiBAhQoQIESJEiBAhQv4ccY1rhgQm5LeRxL9VYkqptnYHdgDuPCcIJAIAAAAASUVORK5CYII=);    
+        background-size: 100px;
+    }
+}
