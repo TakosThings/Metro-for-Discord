@@ -12,9 +12,9 @@ Right click, then select Save As
 You should follow the relevant install instructions for your platform.  
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 * [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
-* [Stylus](https://userstyles.org/help/stylish_chrome) / [StylRRR](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/)
+* [Stylus](https://userstyles.org/help/stylish)
 
-A browser plugin such as [Stylus](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [StylRRR](https://addons.mozilla.org/en-US/firefox/addon/stylrrr/) for Chrome and Firefox respectively is required for the Userstyle.
+A browser plugin such as Stylus for [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) is required for the Userstyle.
 
 # Configure
 **Required**  
