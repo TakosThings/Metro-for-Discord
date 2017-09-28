@@ -21,7 +21,7 @@ A browser plugin such as Stylus for [Chrome](https://chrome.google.com/webstore/
 Discord's dark theme must be selected from the Appearance tab in User Settings.
 
 **Accent Colour**  
-You can change the accent colour by changing the `--accent` variable at the top of the CSS file.
+You can change the accent colour by changing the `--accent` variable at the top of the CSS file. A list of the default colour swatches from the Windows 10 personalisation settings is available on the [Microsoft Docs](https://docs.microsoft.com/en-us/windows/uwp/style/color#accent-color) website.
 
 **BetterDiscord**  
 If you're a BetterDiscord user, you must disable 'Dark Mode' and 'Blue Mode' in BetterDiscord settings.
