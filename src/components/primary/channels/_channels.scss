@@ -34,6 +34,7 @@
     }
 }
 
+.channels-wrap .container-1 > div ~ div[class^="containerDefault"] >,
 .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] >,
 .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] >{
     & div[class*="wrapperDefault"],
