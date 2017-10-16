@@ -44,7 +44,7 @@
   .status-offline {
     background-color: #767676; }
   .channels-wrap::after {
-    content: "Metro for Discord 3.2.0";
+    content: "Metro for Discord 3.2.1";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -500,11 +500,29 @@
     font-size: 20px; }
   .channels-wrap > div[class*="noWrap"] {
     background-color: #191919; }
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type {
+    padding-top: 19px; }
+  .channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"] {
     padding-left: 38px; }
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
+  .channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
+  .channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
   .channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
@@ -515,20 +533,33 @@
   .channels-wrap div[class^="container-"] > div > div > div[class*="nameDefault"],
   .channels-wrap div[class^="container-"] > div > div > div[class*="nameHovered"],
   .channels-wrap div[class^="container-"] > div > div > div[class*="nameCollapsed"],
-  .channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"] {
+  .channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"],
+  .channels-wrap div[class^="container-"] > div > div > div > div[class*="nameDefault"],
+  .channels-wrap div[class^="container-"] > div > div > div > div[class*="nameHovered"],
+  .channels-wrap div[class^="container-"] > div > div > div > div[class*="nameCollapsed"],
+  .channels-wrap div[class^="container-"] > div > div > div > div[class*="nameMuted"] {
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
     text-transform: none; }
   .channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"] {
     color: #D02E00; }
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconDefault-"],
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHovered-"],
+  .channels-wrap div[class^="container-"] > div > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"],
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"],
+  .channels-wrap div[class^="container-"] > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
+  .channels-wrap div[class^="container-"] > div > svg[class^="iconDefault-"],
+  .channels-wrap div[class^="container-"] > div > svg[class^="iconHovered-"],
   .channels-wrap div[class^="container-"] > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"] {
     width: 16px;
     height: 16px;
     left: 11px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC); }
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"],
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"],
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="closed-"],
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"],
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"],
   .channels-wrap div[class^="container-"] > div > div > svg[class^="closed-"] {
@@ -537,6 +568,11 @@
     left: 11px;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAEJ+gz9D4rCXUAAAAH0lEQVR4AWMgEjAyMaKJMLPQSISZlZGqfEZmOJ8wAAAxcABf9SknGQAAAABJRU5ErkJggg==);
     transform: none; }
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconDefault-"] path,
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHovered-"] path,
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"] path,
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"] path,
+  .channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconMuted-"] path,
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"] path,
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"] path,
   .channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"] path,
@@ -955,6 +991,31 @@
     color: #FFF;
     font-size: 15px;
     font-weight: 400; }
+  .message-group .comment .attachment {
+    min-width: 256px;
+    padding: 10px;
+    background-color: #191919; }
+  .message-group .comment .attachment .icon {
+    width: 32px;
+    height: 32px;
+    background-color: var(--accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4px; }
+  .message-group .comment .attachment a {
+    font-weight: 400; }
+  .message-group .comment .attachment .metadata {
+    color: #FFF; }
+  .message-group .comment .attachment .upload > .filename {
+    color: var(--accent); }
+  .message-group .comment .attachment .upload > .speed {
+    color: #FFF; }
+  .message-group .comment .attachment .upload > .progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 0; }
+  .message-group .comment .attachment .upload > .progress .progress-bar {
+    background-color: var(--accent);
+    border-radius: 0; }
   html[style*="font-size: 150%"] .message-group.compact .message .message-text .markup {
     padding-left: 95px; }
   html[style*="font-size: 125%"] .message-group.compact .message .message-text .markup {
@@ -1170,20 +1231,33 @@
     font-weight: 400; }
   .theme-dark .invite-button .invite-button-body {
     color: #FFF; }
-  .chat div[class^="title-"] {
-    font-size: 20px;
-    font-weight: 300; }
-  .chat div[class^="description-"] {
-    font-size: 15px;
-    font-weight: 400; }
-  .chat div[class^="separator-"] {
+  .chat div[class*="nsfw-"] {
+    align-items: baseline; }
+  .chat div[class*="nsfw-"] div[class^="image-"] {
     display: none; }
-  .chat button[class^="buttonPrimaryOutlinedDefault"] {
+  .chat div[class*="nsfw-"] div[class^="title-"] {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5625;
+    text-align: left; }
+  .chat div[class*="nsfw-"] div[class^="description-"] {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5625;
+    text-align: left; }
+  .chat div[class*="nsfw-"] div[class^="separator-"] {
+    display: none; }
+  .chat div[class*="nsfw-"] button {
+    min-width: 120px;
+    min-height: 36px; }
+  .chat div[class*="nsfw-"] button:first-of-type {
+    margin-left: 0; }
+  .chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"] {
     border-color: rgba(255, 255, 255, 0.6);
     border-radius: 0;
     color: #FFF;
     font-weight: 400; }
-    .chat button[class^="buttonPrimaryOutlinedDefault"]:hover {
+    .chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"]:hover {
       border-color: rgba(255, 255, 255, 0.8); }
   .theme-dark .channel-members {
     background-color: #191919; }
@@ -2850,19 +2924,6 @@
     font-size: 15px;
     font-weight: 400;
     text-transform: none; }
-  #user-profile-modal .avatar-profile[style*="65dae679df1db100d1054178e338c4f5.webp"]::before {
-    content: "";
-    width: 540px;
-    height: 150px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: -40px;
-    margin-left: -40px;
-    background-image: url("https://i.imgur.com/wfDZHlK.png");
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 200px auto; }
   div[class^="modal-"] {
     border-radius: 0; }
   .theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"]:not(.modal-image),
@@ -3035,6 +3096,10 @@
     border-radius: 0; }
   .upload-modal .inner .file {
     padding-bottom: 20px; }
+  .upload-modal .inner .file .icon {
+    height: 104px;
+    margin: 0;
+    background-size: 90px; }
   .upload-modal .inner .file .icon.image {
     margin: 0;
     border: 0;
@@ -3046,7 +3111,8 @@
   .upload-modal .inner .file .description .filename {
     height: auto;
     font-size: 20px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1.5625; }
   .upload-modal .inner .comment {
     margin: 0; }
   .upload-modal .inner .comment .label {
@@ -3526,6 +3592,28 @@
   .emoji-picker .categories .item.flags.selected,
   .emoji-picker .categories .item.flags:hover {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAEDA/QGBvcH+AkJ+gv8DP0N/g7/BSiOJEAAAAhklEQVR42rWPMRLDIAwED0JiiB0Q2Pf/rwZZmjSelN5Gmi1OOtzK83PhPXUhe5lw26hzkFW1FLYIMCUCsbHIqSuiMAfVIVMiqmtgObrqfiyAaxqqDc9ORgi+WHZ7GCH40v6H+Ml9qB7763eyns/ag1rBteizXuesIJ7d84TrSp2dNH2h4k6+duAM8RnREYgAAAAASUVORK5CYII=); }
+  .message-group .comment .attachment .icon.icon-file {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAECA/QGCAn6+/wM/gXsrHPAAAAENJREFUeNrtybcNACAQBEHc4+m/XTzidRkxG6004i0KOy8Z2BJnuSTJ4cwSBJqCoN0QhJ5FUKYFsPswIFxdQJFF4qkK/5UFDCBIJhwAAAAASUVORK5CYII=);
+    background-size: 24px; }
+  .message-group .comment .attachment .icon.icon-file.acrobat {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwP0BQYHCAkJ+gr7C/wNDf4O/wwoURfwAAAGZJREFUKM+t0UsOgCAMRdECakVRQeXtf6nOTPlNCHd6QpsUoq74SuIfLLwIVoB8PwLmBqzY6mDh62BwNnYE24DnroNG2Cddgj4ARJgcHLAQI+oMDF5HREoVo/ypxhxRfqAA9klMXX1AMAnmxAT5tQAAAABJRU5ErkJggg==);
+    background-size: 24px; }
+  .message-group .comment .attachment .icon.icon-file.archive {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAEDBAYICQoL/A3+/wqFikVQAAAFlJREFUGNNjYMADPDrAoAXMiZ05c87JmTOvQjgMDCwODAxwDlsCLg6KMs4JSBwmBVwyWosQHMY9pwXgHOYrvgYImdN7kPSoFyFxQIA0DsSnEI7nTDCYgi9oAL96LW59nOxjAAAAAElFTkSuQmCC);
+    background-size: 24px; }
+  .message-group .comment .attachment .icon.icon-file.code,
+  .message-group .comment .attachment .icon.icon-file.webcode {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAECAwP0BgcICfoK+wv8DP0ODw1NYJ5wAAAH9JREFUeNqdzksSxCAIRVGEFs1Pk7z977Vjme6K4ih3AFSdCfQu3X4troGIVDuQXQv/4xYLWsXCZ6pioBQtsL8agOcyLTB0BEIeXizM4AjG1ENAoPm4rtDBDqGUSLB3wGd2iC6f3AHJKlC3iv2qPFWWBU00gJqF7dEDNDUpveoLjZQJU569iEUAAAAASUVORK5CYII=);
+    background-size: 24px; }
+  .message-group .comment .attachment .icon.icon-file.document {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAECAwP0BggJ+vv8DP4BeyhTYAAABXSURBVHja1cxBDoAgDETRYqEo1d7/uGpRQunGsPOvJnnJwFxU3rZgIAvXDtmDhTYe8UBVPMRVxcNd9rCkqwEwaggwAIvGDjBpCPCHq9ZXKF0dEJsIpjoBsMwHmfe95SIAAAAASUVORK5CYII=);
+    background-size: 24px; }
+  .message-group .comment .attachment .icon.icon-file.video {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
+    background-size: 24px; }
+  .upload-modal .inner .file .icon.acrobat, .upload-modal .inner .file .icon.ae, .upload-modal .inner .file .icon.ai, .upload-modal .inner .file .icon.archive, .upload-modal .inner .file .icon.code, .upload-modal .inner .file .icon.document, .upload-modal .inner .file .icon.photoshop, .upload-modal .inner .file .icon.ps, .upload-modal .inner .file .icon.sketch, .upload-modal .inner .file .icon.spreadsheet, .upload-modal .inner .file .icon.unknown, .upload-modal .inner .file .icon.video, .upload-modal .inner .file .icon.webcode {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMABQ4PECAkKC0wMjc9QGB1f4Cgv8DHyczN4OLm5+rt8PP192v0xVYAAADJSURBVHja7dPbDsFQEIXhoYqi2GznQ4v3f0cJ6XLRpGk3KyrWfz3Jl5lkTCnV2mJXt1k4kt5qt46ICNp2qQgUKgKFi0AJR3x12UvphSNWnS/twkKgUBEoVAQKBVk+hhb7Qol4yDw+YBfauZz1T1B4iA3OUHiIDTMoPMRGORQeYuMLFB5ikysUArLzz47FV26izyPlVh0iglIh30KmrlQI0jghQoQIESJEiBAhQoQIESJEiBAhQv4ccY1rhgQm5LeRxL9VYkqptnYHdgDuPCcIJAIAAAAASUVORK5CYII=);
+    background-size: 100px; }
   .theme-dark .hljs {
     display: block;
     overflow-x: auto;
