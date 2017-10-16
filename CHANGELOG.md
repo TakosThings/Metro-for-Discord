@@ -1,6 +1,19 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.2.1
+* **Enhancements**
+  * Decrease padding between channel categories
+  * Some changes to NSFW channel warning
+  * Chat attachments (and icons)
+  * Upload file modal icons
+* **Fixes**
+  * Style not being correctly applied to first channel category in some cases
+  * Upload file modal icon position/sizing
+  * Upload file modal header
+* **Other**
+  * Remove novelty feature from user profile modal
+
 #### 3.2.0
 * **Enhancements** (1)
   * Channel categories
