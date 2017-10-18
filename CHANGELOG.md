@@ -2,16 +2,16 @@
 Newest Changes are at the top
 
 #### 3.2.1
-* **Enhancements**
+* **Enhancements** (4)
   * Decrease padding between channel categories
   * Some changes to NSFW channel warning
   * Chat attachments (and icons)
   * Upload file modal icons
-* **Fixes**
+* **Fixes** (3)
   * Style not being correctly applied to first channel category in some cases
   * Upload file modal icon position/sizing
   * Upload file modal header
-* **Other**
+* **Other** (1)
   * Remove novelty feature from user profile modal
 
 #### 3.2.0
@@ -42,14 +42,14 @@ Newest Changes are at the top
   * Chatbox font scaling
 
 #### 3.1.0b
-* **Fixes**
+* **Fixes** (1)
   * Remove font scaling warning
 
 #### 3.1.0
 * **Enhancement** (3)
-* Chat font will now scale correctly above or below the default value [Closes #12](https://github.com/TakosThings/Metro-for-Discord/issues/12)
-* Userstyle users will now be able to configure the theme on the userstyles.org page
-* Theme x Blocked Message bars
+  * Chat font will now scale correctly above or below the default value [Closes #12](https://github.com/TakosThings/Metro-for-Discord/issues/12)
+  * Userstyle users will now be able to configure the theme on the userstyles.org page
+  * Theme x Blocked Message bars
 * **Adjustments** (1)
   * Change padding and positioning of header in RTC popout
 * **Fixes** (2)
