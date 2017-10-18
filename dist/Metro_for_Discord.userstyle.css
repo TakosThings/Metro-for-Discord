@@ -44,7 +44,7 @@
   .status-offline {
     background-color: #767676; }
   .channels-wrap::after {
-    content: "Metro for Discord 3.2.1";
+    content: "Metro for Discord 3.2.2";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -59,7 +59,8 @@
     border-radius: 0;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1.5625; }
+    line-height: 1.5625;
+    transform: translateY(-32px); }
   .tooltip::after {
     display: none; }
   .tooltip.tooltip-brand {
@@ -214,7 +215,8 @@
     border-radius: 0;
     font-size: 13px;
     font-weight: 400;
-    line-height: 1.5625; }
+    line-height: 1.5625;
+    transform: translateY(-32px); }
   .tooltip::after {
     display: none; }
   .tooltip.tooltip-brand {

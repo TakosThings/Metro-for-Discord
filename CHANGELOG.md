@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.2.2
+* **Fixes** (1)
+  * Tooltip vertical mis-alignment
+
 #### 3.2.1
 * **Enhancements** (4)
   * Decrease padding between channel categories
