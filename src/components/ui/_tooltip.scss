@@ -6,6 +6,7 @@
     font-size: $fschat;
     font-weight: $fwui;
     line-height: $lh;
+    transform: translateY(-32px);
 }
 .tooltip::after{
     display: none;
