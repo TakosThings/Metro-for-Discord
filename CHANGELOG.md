@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.2.3
+This Update reverts changes made in 3.2.2
+* **Fixes** (1)
+  * Tooltips and some popouts such as emoji picker, recent mentions and pinned messages displaying much lower than they should
+
 #### 3.2.2
 * **Fixes** (1)
   * Tooltip vertical mis-alignment
