@@ -2,6 +2,9 @@
 body, input, textarea, button{
     font-family: $font;
 }
+#app-mount{
+    background-color: #000;
+}
 
 // Code block and inline code
 .message-group .comment .markup pre,
