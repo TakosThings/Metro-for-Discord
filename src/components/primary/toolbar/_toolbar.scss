@@ -24,6 +24,9 @@
 .chat div[class^="titleWrapper"] svg[class*="icon-"]{
     width: 40px;
     height: 40px;
+    &:hover{
+        background-color: rgba(255,255,255,.1);
+    }
 }
 .chat div[class^="titleWrapper"] svg[class*="iconMargin-"]{
     margin: 0;
