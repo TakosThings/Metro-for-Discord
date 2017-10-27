@@ -12,3 +12,9 @@ div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > 
     box-shadow: none;
     font-weight: normal;
 }
+
+.guilds .badge{
+    max-width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
