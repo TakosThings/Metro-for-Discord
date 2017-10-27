@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.3.1
+* **Fixes** (4)
+  * Channel notification badge
+  * Channel name in toolbar clipping the bottom of some letters
+  * Truncate long server names in guilds list
+  * Truncate long notification badge in guilds list
+
 #### 3.3.0
 This update contains primarily fixes for 'that titlebar update that broke everything else'.
 * **Enhancements** (2)
