@@ -46,7 +46,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.3.0";
+    content: "Metro for Discord 3.3.1";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -406,13 +406,17 @@
     font-weight: 400; }
   .guilds-wrapper .guilds .guild .guild-inner a {
     width: 48px;
+    max-width: 48px;
     height: 48px;
+    overflow: hidden;
     background-size: 24px;
     border: 2px solid transparent;
     box-sizing: border-box;
     font-size: 15px !important;
     font-weight: normal;
-    line-height: 48px; }
+    line-height: 48px;
+    text-overflow: ellipsis;
+    transition: none; }
     .guilds-wrapper .guilds .guild .guild-inner a:hover {
       border-color: rgba(255, 255, 255, 0.5); }
   .guilds-wrapper .guilds .guild::before {
@@ -700,11 +704,11 @@
     right: 0;
     bottom: 0; }
   .badge,
-  .channels-wrap div[class*="contentDefaultText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-  .channels-wrap div[class*="contentSelectedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-  .channels-wrap div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-  .channels-wrap div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-  .channels-wrap div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
+  div[class^="channels-"] div[class*="contentDefaultText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+  div[class^="channels-"] div[class*="contentSelectedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+  div[class^="channels-"] div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+  div[class^="channels-"] div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
+  div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"] {
     background-color: #003b67;
     border: 2px solid #1a4e76;
     z-index: 2;
@@ -712,6 +716,10 @@
     border-radius: 11px;
     box-shadow: none;
     font-weight: normal; }
+  .guilds .badge {
+    max-width: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .chat div[class^="titleWrapper"] div[class*="title-"] {
     height: 40px;
     background-color: #191919;
@@ -720,6 +728,8 @@
     color: #FFF;
     font-size: 20px;
     font-weight: 300; }
+  .chat div[class^="titleWrapper"] div[class*="title-"] div[class^="titleText"] div[class^="channelName"] {
+    height: 24px; }
   .chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"] {
     padding-left: 0;
     color: #FFF;
