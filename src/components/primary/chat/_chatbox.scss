@@ -1,38 +1,30 @@
-// Chatbox
-.chat form{
-    margin: 0 20px;
-}
 .theme-dark .chat form{
-    border: 0;
+    background-color: transparent;
+    box-shadow: none;
 }
-.channel-text-area-default{
+div[class*="channelTextArea"]{
     margin: 0 0 20px;
 }
-.channel-text-area-default div[class^="inner"]{
-    //background-color: transparent;
+.theme-dark div[class*="channelTextArea"] div[class*="inner-"]{
     background-color: $b1;
-}
-.channel-text-area-default textarea{
-    margin: 0;
-    letter-spacing: normal;
-}
-.theme-dark .channel-text-area-default textarea{
-    margin-left: 40px;
-    color: #FFF;
-    &::-webkit-input-placeholder{
-        color: rgba(255,255,255,.5);
-    }
-}
-.channel-text-area-default div[class*="innerAutocomplete"],
-.channel-text-area-default div[class*="innerNoAutocomplete"]{
     border-radius: 0;
 }
-.channel-text-area-default div[class*="inner-"] div[class^="flex"]~textarea{
+
+// Textarea
+.theme-dark div[class*="channelTextArea"] textarea{
+    margin-left: 40px;
+    color: #FFF;
+    letter-spacing: normal;
+}
+.theme-dark div[class*="channelTextArea"] textarea::-webkit-input-placeholder{
+    color: #FFF;
+}
+div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"]~textarea{
     margin-left: 0;
 }
 
 // Upload button
-.channel-text-area-default svg[class^="attachButton-"]{
+div[class*="channelTextArea"] svg[class^="attachButton-"]{
     margin: 0 0 0 40px;
     padding: 8px;
     &:hover{
@@ -41,31 +33,31 @@
 }
 
 // Divider
-.channel-text-area-default div[class^="attachButtonDivider-"]{
+div[class*="channelTextArea"] div[class^="attachButtonDivider-"]{
     width: 10px;
     margin: 0;
     background-color: transparent;
 }
 
 // Emoji button
-.channel-text-area-default div[class*="emojiButton-"]{
+div[class*="channelTextArea"] div[class*="emojiButton-"]{
     width: 40px;
     height: 40px;
     top: 0;
     right: initial;
     left: 0;
 }
-.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]{
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]{
     transition: none;
     background-image: none;
 }
-.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before{
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]::before{
     content: "\E170";
     font-family: $icon;
     font-size: 21px;
     text-align: center;
 }
-.channel-text-area-default div[class*="emojiButton-"] div[class*="spriteHovered"]{
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHovered"]{
     transform: none;
 }
 
