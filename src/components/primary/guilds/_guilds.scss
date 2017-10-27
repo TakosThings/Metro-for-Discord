@@ -22,13 +22,16 @@
 }
 .guilds-wrapper .guilds .guild .guild-inner a{
     width: 48px;
+    max-width: 48px;
     height: 48px;
+    overflow: hidden;
     background-size: 24px;
     border: 2px solid transparent;
     box-sizing: border-box;
     font-size: 15px !important;
     font-weight: normal;
     line-height: 48px;
+    text-overflow: ellipsis;
     &:hover{
         border-color: rgba(255,255,255,.5);
     }
