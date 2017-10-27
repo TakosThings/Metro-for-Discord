@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.2.3"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.3.0"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -9,7 +9,8 @@
 /* ####################################################### */
 /* Accent Colour */
 :root {
-  --accent: #0072C6; }
+  --accent: #0072C6;
+  --link: #0078D7; }
 
 /* REMOVE this if you want to see the "X blocked messages" notification. */
 .message-group-blocked {
@@ -34,6 +35,9 @@
 
 body, input, textarea, button {
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+
+#app-mount {
+  background-color: #000; }
 
 .message-group .comment .markup pre,
 .message-group .comment .markup code.inline,
@@ -60,8 +64,8 @@ body, input, textarea, button {
 .status-offline {
   background-color: #767676; }
 
-.channels-wrap::after {
-  content: "Metro for Discord 3.2.3";
+div[class^="channels-"]::after {
+  content: "Metro for Discord 3.3.0";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -70,41 +74,28 @@ body, input, textarea, button {
   font-size: 10px;
   text-align: center; }
 
-.titlebar {
-  height: 32px;
+div[class^="typeWindows-"] {
+  height: 28px;
   background-color: #000; }
 
-.titlebar:after {
-  content: "Discord";
-  position: absolute;
-  top: 10px;
-  margin-left: 12px;
-  padding-left: 8px;
-  color: #FFF;
-  font-size: 13px; }
-
-.win-buttons {
-  height: 32px;
-  right: 0; }
-
-.win-buttons button {
-  width: 45px;
-  height: 32px;
-  background-size: 100%;
+div[class^="typeWindows-"] div[class^="wordmark"] {
   opacity: 1; }
 
-.win-minimize:hover,
-.win-maximize:hover {
-  background-color: #111; }
+div[class^="typeWindows-"] div[class^="wordmark"] svg {
+  display: none; }
 
-.win-close:hover {
-  background-color: #e81123; }
+div[class^="typeWindows-"] div[class^="wordmark"]::after {
+  content: "Discord";
+  color: #FFF;
+  font-size: 15px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  display: block; }
 
-.win-buttons.win-buttons-notice {
-  top: 0; }
-
-.app {
-  padding-top: 32px; }
+div[class*="titleBar-"] div[class*="winButton-"] {
+  width: 45px;
+  height: 32px; }
 
 .theme-dark .scroller-wrap .scroller.messages::-webkit-scrollbar,
 .theme-dark #friends .scroller::-webkit-scrollbar,
@@ -266,6 +257,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
   background-color: #191919;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0;
+  color: #FFF;
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5625; }
@@ -493,7 +485,7 @@ body.bd-blue .app::before {
 
 .guilds-wrapper {
   width: 64px;
-  background-color: #262626; }
+  background-color: #191919; }
 
 .guilds-wrapper .guilds {
   margin-bottom: 112px;
@@ -602,7 +594,7 @@ body.bd-blue .app::before {
 .guilds-wrapper .new-messages-indicator.bottom {
   border-radius: 0; }
 
-.channels-wrap div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"] {
+div[class^="channels-"] div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"] {
   width: 48px;
   height: 48px;
   position: absolute;
@@ -611,10 +603,10 @@ body.bd-blue .app::before {
   background-size: 24px;
   opacity: 1;
   border-radius: 0; }
-  .channels-wrap div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"]:hover {
+  div[class^="channels-"] div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"]:hover {
     background-color: #333333; }
 
-.channels-wrap header {
+div[class^="channels-"] header {
   height: 40px;
   background-color: #191919;
   padding: 0 18px;
@@ -622,126 +614,126 @@ body.bd-blue .app::before {
   box-shadow: none;
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
   font-weight: 300; }
-  .channels-wrap header:hover {
+  div[class^="channels-"] header:hover {
     background-color: #404040; }
 
-.channels-wrap header span {
+div[class^="channels-"] header span {
   font-size: 20px; }
 
-.channels-wrap > div[class*="noWrap"] {
+div[class^="channels-"] > div[class*="noWrap"] {
   background-color: #191919; }
 
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type {
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type {
   padding-top: 19px; }
 
-.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"] {
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperDefault"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperHovered"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperCollapsed"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type > div[class*="wrapperMuted"] {
   padding-left: 38px; }
 
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperMuted"] {
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] > div[class*="wrapperMuted"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperDefault"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperSelected"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperUnread"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperHovered"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperCollapsed"],
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] > div[class*="wrapperMuted"] {
   padding-left: 14px; }
 
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameDefault"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameHovered"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameCollapsed"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"],
-.channels-wrap div[class^="container-"] > div > div > div > div[class*="nameDefault"],
-.channels-wrap div[class^="container-"] > div > div > div > div[class*="nameHovered"],
-.channels-wrap div[class^="container-"] > div > div > div > div[class*="nameCollapsed"],
-.channels-wrap div[class^="container-"] > div > div > div > div[class*="nameMuted"] {
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameDefault"],
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameHovered"],
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameCollapsed"],
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameMuted"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > div[class*="nameDefault"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > div[class*="nameHovered"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > div[class*="nameCollapsed"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > div[class*="nameMuted"] {
   color: #FFF;
   font-size: 15px;
   font-weight: 400;
   text-transform: none; }
 
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"] {
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameMuted"] {
   color: #D02E00; }
 
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconDefault-"],
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHovered-"],
-.channels-wrap div[class^="container-"] > div > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"],
-.channels-wrap div[class^="container-"] > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
-.channels-wrap div[class^="container-"] > div > svg[class^="iconDefault-"],
-.channels-wrap div[class^="container-"] > div > svg[class^="iconHovered-"],
-.channels-wrap div[class^="container-"] > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"] {
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconDefault-"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconHovered-"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconDefault-"],
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconHovered-"],
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"],
+div[class^="channels-"] div[class^="container-"] > div > svg[class^="iconDefault-"],
+div[class^="channels-"] div[class^="container-"] > div > svg[class^="iconHovered-"],
+div[class^="channels-"] div[class^="container-"] > div > div[class*="wrapperMuted"] > svg[class^="iconMuted-"] {
   width: 16px;
   height: 16px;
   left: 11px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC); }
 
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="closed-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"],
-.channels-wrap div[class^="container-"] > div > div > svg[class^="closed-"] {
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"],
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="closed-"],
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconCollapsed-"],
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"],
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="closed-"] {
   width: 16px;
   height: 16px;
   left: 11px;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAEJ+gz9D4rCXUAAAAH0lEQVR4AWMgEjAyMaKJMLPQSISZlZGqfEZmOJ8wAAAxcABf9SknGQAAAABJRU5ErkJggg==);
   transform: none; }
 
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconDefault-"] path,
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHovered-"] path,
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > div > svg[class^="iconMuted-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconDefault-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHovered-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"] path,
-.channels-wrap div[class^="container-"] > div > div > svg[class^="iconMuted-"] path {
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconDefault-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconHovered-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconCollapsed-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconHoveredCollapsed-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > div > svg[class^="iconMuted-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconDefault-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconHovered-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconCollapsed-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconHoveredCollapsed-"] path,
+div[class^="channels-"] div[class^="container-"] > div > div > svg[class^="iconMuted-"] path {
   display: none; }
 
-.channels-wrap div[class*="containerDefault"] div[class*="name-"] {
+div[class^="channels-"] div[class*="containerDefault"] div[class*="name-"] {
   font-size: 15px;
   font-weight: 400; }
 
-.channels-wrap div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"] {
+div[class^="channels-"] div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"] {
   color: #999; }
 
-.channels-wrap div[class*="contentHoveredText"] {
+div[class^="channels-"] div[class*="contentHoveredText"] {
   background-color: transparent; }
 
-.channels-wrap div[class*="contentHoveredText"] > div[class*="nameHoveredText"] {
+div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="nameHoveredText"] {
   color: #FFF; }
 
-.channels-wrap div[class*="wrapperHoveredText"] > div[class*="unread"] {
+div[class^="channels-"] div[class*="wrapperHoveredText"] > div[class*="unread"] {
   width: 4px;
   height: 17px;
   margin-top: -9px;
   background-color: var(--accent);
   border-radius: 0; }
 
-.channels-wrap div[class*="contentSelectedText"] {
+div[class^="channels-"] div[class*="contentSelectedText"] {
   background-color: transparent; }
 
-.channels-wrap div[class*="contentSelectedText"]::before {
+div[class^="channels-"] div[class*="contentSelectedText"]::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -750,72 +742,72 @@ body.bd-blue .app::before {
   background-color: #FFF;
   transform: rotate(45deg); }
 
-.channels-wrap div[class*="contentSelectedText"]:active {
+div[class^="channels-"] div[class*="contentSelectedText"]:active {
   transform: initial; }
 
-.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg {
+div[class^="channels-"] div[class*="contentSelectedText"] > .margin-reset > svg {
   opacity: 1; }
 
-.channels-wrap div[class*="contentSelectedText"] > div[class^="marginReset"] > svg {
+div[class^="channels-"] div[class*="contentSelectedText"] > div[class^="marginReset"] > svg {
   opacity: 1;
   color: #FFF; }
 
-.channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
+div[class^="channels-"] div[class*="contentSelectedText"] div[class*="nameSelectedText"] {
   color: #FFF; }
 
-.channels-wrap div[class*="contentUnreadText"] > div[class^="marginReset"] > svg {
+div[class^="channels-"] div[class*="contentUnreadText"] > div[class^="marginReset"] > svg {
   opacity: 1;
   color: var(--accent); }
 
-.channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
+div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"] {
   color: var(--accent); }
 
-.channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"] {
+div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="unread"] {
   width: 4px;
   height: 17px;
   margin-top: -9px;
   background-color: var(--accent);
   border-radius: 0; }
 
-.channels-wrap div[class*="contentMutedText"] > div[class^="marginReset"] > svg {
+div[class^="channels-"] div[class*="contentMutedText"] > div[class^="marginReset"] > svg {
   opacity: .5;
   color: #D02E00; }
 
-.channels-wrap div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"] {
+div[class^="channels-"] div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"] {
   color: #D02E00;
   opacity: .5; }
 
-.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
-.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
-.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg {
+div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg,
+div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg,
+div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg {
   opacity: 1; }
 
-.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
-.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
-.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"] {
+div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
+div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
+div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"] {
   fill: #FFF; }
 
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
-.channels-wrap div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"] {
+div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
+div[class^="channels-"] div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"] {
   color: #FFF; }
 
-.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
-.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active {
+div[class^="channels-"] div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
+div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active {
   background-color: transparent; }
 
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
-.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"] {
+div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
+div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"] {
   background-color: #333333;
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
   border-radius: 0;
   color: #FFF; }
 
-.channels-wrap .new-messages-indicator {
+div[class^="channels-"] .new-messages-indicator {
   left: 8px;
   border-radius: 0;
   text-transform: none; }
 
-.channels-wrap .new-messages-indicator.bottom {
+div[class^="channels-"] .new-messages-indicator.bottom {
   border-radius: 0; }
 
 .channel-notices .channel-notice {
@@ -856,7 +848,7 @@ body.bd-blue .app::before {
   border-top: 1px solid #262626;
   border-bottom: 0; }
 
-.channels-wrap .container-iksrDt {
+div[class^="channels-"] .container-iksrDt {
   height: 60px;
   margin-bottom: 0;
   background-color: #191919; }
@@ -880,121 +872,85 @@ body.bd-blue .app::before {
   box-shadow: none;
   font-weight: normal; }
 
-.chat > .title-wrap {
-  min-height: 40px;
-  padding-right: 0;
-  background-color: #191919; }
-
-.chat > .title-wrap.title-wrap-dark {
-  border-bottom: 0;
+.chat div[class^="titleWrapper"] div[class*="title-"] {
+  height: 40px;
+  background-color: #191919;
   box-shadow: none; }
 
-.chat > .title-wrap > .title {
+.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="titleText"] {
   color: #FFF;
   font-size: 20px;
-  font-weight: 300;
-  letter-spacing: normal;
-  line-height: 40px; }
+  font-weight: 300; }
 
-.chat > .title-wrap > .title .channel-name.channel-private:before,
-.chat > .title-wrap > .title .channel-name::before,
-.chat > .title-wrap > .title .channel-name .channel-icon {
-  color: #FFF; }
-
-.chat > .title-wrap > .topic::before {
-  display: none; }
-
-.chat > .title-wrap > .topic {
+.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"] {
   padding-left: 0;
+  color: #FFF;
   font-size: 15px;
-  font-weight: 400;
-  line-height: 27px; }
+  font-weight: 400; }
 
-.chat > .title-wrap.title-wrap-dark .topic {
-  color: #FFF; }
-
-.chat > .title-wrap.title-wrap-dark .topic a {
-  color: #0078D7; }
-
-.chat > .title-wrap.title-wrap-dark .topic .mention {
-  background-color: transparent; }
-  .chat > .title-wrap.title-wrap-dark .topic .mention:hover {
-    background-color: transparent; }
-
-.header-toolbar {
-  margin-right: 0;
-  margin-left: 12px; }
-
-.header-toolbar .separator {
+.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"]::before {
   display: none; }
 
-.header-toolbar button {
+.chat div[class^="titleWrapper"] svg[class*="icon-"] {
   width: 40px;
-  height: 40px;
-  border-radius: 0; }
-  .header-toolbar button:hover {
-    background-color: #404040; }
-  .header-toolbar button.popout-open {
-    background-color: var(--accent); }
+  height: 40px; }
+  .chat div[class^="titleWrapper"] svg[class*="icon-"]:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
 
-.header-toolbar button span {
-  width: 40px;
-  height: 40px;
-  background-size: 24px;
-  opacity: 1; }
-  .header-toolbar button span:hover {
-    opacity: 1; }
+.chat div[class^="titleWrapper"] svg[class*="iconMargin-"] {
+  margin: 0; }
 
-.header-toolbar button + button {
-  margin-left: 0; }
-
-.header-toolbar .toolbar-badge {
-  width: 40px;
-  height: 40px;
-  top: 0;
-  right: 0;
-  z-index: -1;
-  background-color: #D02E00;
-  border: 0;
-  border-radius: 0; }
-
-.header-toolbar button.active {
+.chat div[class^="titleWrapper"] svg[class*="iconActive-"] {
   background-color: var(--accent); }
 
-.private-channel-call-btns-wrapper {
-  height: 40px;
-  margin-right: 0; }
+.chat div[class^="titleWrapper"] svg[class*="iconInactive-"] {
+  opacity: 1; }
 
-.header-toolbar .search {
-  margin-left: 0; }
+.chat div[class^="titleWrapper"] svg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px; }
 
-.header-toolbar .search .search-bar {
+.chat div[class^="titleWrapper"] svg[class*="icon-"] path {
+  display: none; }
+
+.chat div[class^="titleWrapper"] svg[class*="icon-"] ~ span[class^="iconBadge"] {
+  background-color: #D02E00;
+  border: 0; }
+
+.chat div[class^="titleWrapper"] div[class*="divider-"] {
+  display: none; }
+
+.chat div[class^="titleWrapper"] div[class^="search-"] {
+  margin: 0; }
+
+.chat div[class^="titleWrapper"] .search .search-bar {
   height: 40px;
   border-radius: 0; }
 
-.theme-dark .header-toolbar .search .search-bar {
+.theme-dark .chat div[class^="titleWrapper"] .search .search-bar {
   background-color: #333333; }
 
-.header-toolbar .search .DraftEditor-root {
+.chat div[class^="titleWrapper"] .search .DraftEditor-root {
   font-size: 15px;
   font-weight: 400;
   line-height: 35px; }
 
-.header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
+.chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root {
   padding: 3px 11px 10px; }
 
 .search .DraftEditor-root .public-DraftEditor-content {
   padding: 3px 11px 10px; }
 
-.theme-dark .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root {
+.theme-dark .chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root {
   color: #FFF; }
 
-.header-toolbar .search .search-bar .icon {
+.chat div[class^="titleWrapper"] .search .search-bar .icon {
   top: 12px; }
 
-.header-toolbar .search.focused .search-bar,
-.header-toolbar .search.open .search-bar,
-.header-toolbar .search.popout-open .search-bar {
+.chat div[class^="titleWrapper"] .search.focused .search-bar,
+.chat div[class^="titleWrapper"] .search.open .search-bar,
+.chat div[class^="titleWrapper"] .search.popout-open .search-bar {
   width: 240px; }
 
 .theme-dark .chat,
@@ -1047,7 +1003,7 @@ body.bd-blue .app::before {
   color: #ACACAC; }
 
 .theme-dark .message-group a {
-  color: #0078D7; }
+  color: var(--link); }
 
 .mention {
   background-color: transparent;
@@ -1284,64 +1240,57 @@ html[style*="font-size: 150%"] .message-group.compact .message .message-text .ma
 html[style*="font-size: 125%"] .message-group.compact .message .message-text .markup {
   padding-left: 85px; }
 
-.chat form {
-  margin: 0 20px; }
-
 .theme-dark .chat form {
-  border: 0; }
+  background-color: transparent;
+  box-shadow: none; }
 
-.channel-text-area-default {
+div[class*="channelTextArea"] {
   margin: 0 0 20px; }
 
-.channel-text-area-default div[class^="inner"] {
-  background-color: #191919; }
-
-.channel-text-area-default textarea {
-  margin: 0;
-  letter-spacing: normal; }
-
-.theme-dark .channel-text-area-default textarea {
-  margin-left: 40px;
-  color: #FFF; }
-  .theme-dark .channel-text-area-default textarea::-webkit-input-placeholder {
-    color: rgba(255, 255, 255, 0.5); }
-
-.channel-text-area-default div[class*="innerAutocomplete"],
-.channel-text-area-default div[class*="innerNoAutocomplete"] {
+.theme-dark div[class*="channelTextArea"] div[class*="inner-"] {
+  background-color: #191919;
   border-radius: 0; }
 
-.channel-text-area-default div[class*="inner-"] div[class^="flex"] ~ textarea {
+.theme-dark div[class*="channelTextArea"] textarea {
+  margin-left: 40px;
+  color: #FFF;
+  letter-spacing: normal; }
+
+.theme-dark div[class*="channelTextArea"] textarea::-webkit-input-placeholder {
+  color: #FFF; }
+
+div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"] ~ textarea {
   margin-left: 0; }
 
-.channel-text-area-default svg[class^="attachButton-"] {
+div[class*="channelTextArea"] svg[class^="attachButton-"] {
   margin: 0 0 0 40px;
   padding: 8px; }
-  .channel-text-area-default svg[class^="attachButton-"]:hover {
+  div[class*="channelTextArea"] svg[class^="attachButton-"]:hover {
     transform: none; }
 
-.channel-text-area-default div[class^="attachButtonDivider-"] {
+div[class*="channelTextArea"] div[class^="attachButtonDivider-"] {
   width: 10px;
   margin: 0;
   background-color: transparent; }
 
-.channel-text-area-default div[class*="emojiButton-"] {
+div[class*="channelTextArea"] div[class*="emojiButton-"] {
   width: 40px;
   height: 40px;
   top: 0;
   right: initial;
   left: 0; }
 
-.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"] {
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"] {
   transition: none;
   background-image: none; }
 
-.channel-text-area-default div[class*="emojiButton-"] div[class*="sprite-"]::before {
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]::before {
   content: "\E170";
   font-family: winjs-symbols;
   font-size: 21px;
   text-align: center; }
 
-.channel-text-area-default div[class*="emojiButton-"] div[class*="spriteHovered"] {
+div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHovered"] {
   transform: none; }
 
 .typing {
@@ -1743,54 +1692,54 @@ div[class^="autocomplete-"] div[class*="selector-"] {
     transform: none;
     border-color: rgba(255, 255, 255, 0.8); }
 
-#friends .friends-header {
+#friends div[class*="headerBar"] {
   height: 40px;
   padding: 0; }
 
-.theme-dark #friends .friends-header {
+.theme-dark #friends div[class*="headerBar"] {
   background-color: #191919;
   border: 0;
   box-shadow: none; }
 
-#friends .friends-header .tab-bar {
+#friends div[class*="headerBar"] .tab-bar {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: normal; }
 
-#friends .friends-header .tab-bar .tab-bar-item {
+#friends div[class*="headerBar"] .tab-bar .tab-bar-item {
   margin: 0;
   padding: 0 12px;
   border-radius: 0;
   line-height: 40px; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item {
   color: #FFF; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item:hover:not(.selected) {
   background-color: rgba(255, 255, 255, 0.1); }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.selected {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.selected {
   background-color: var(--accent);
   color: #FFF; }
 
-#friends .friends-header .tab-bar .tab-bar-separator {
+#friends div[class*="headerBar"] .tab-bar .tab-bar-separator {
   display: none; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item .badge {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item .badge {
   background-color: #003b67;
   color: #FFF;
   vertical-align: middle; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item:hover:not(.selected) .badge {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item:hover:not(.selected) .badge {
   color: #FFF; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary {
   background-color: transparent; }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected) {
   background-color: rgba(255, 255, 255, 0.1); }
 
-.theme-dark #friends .friends-header .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
+.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary.selected {
   background-color: var(--accent);
   color: #FFF; }
 
@@ -4637,38 +4586,33 @@ span[class*="botTagInvert-"] {
   .ui-standard-sidebar-view .bda-slist .bda-right button:focus {
     border-color: rgba(255, 255, 255, 0.8); }
 
-.win-close {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAAG1BMVEX///////////////////////////////////8HBRbfAAAACXRSTlMAQ0R1dqyt6/3h1ErQAAAAR0lEQVR42u3RMQ4AIAhD0YKg3v/ELqZzGTX8QR1eCInonir9PjwF7ct5a5ynxoklHsRCsQdQmW1AZW/TMcgVLPPJv5zo/u0AYfIA2v+Kf0cAAAAASUVORK5CYII=) !important; }
-
-.win-maximize {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAACZJREFUeAFjGN5gFDBCAZGqoRRJJjOSYPKQVc1IkmoS42Y4g1EAAIDKAC48udQFAAAAAElFTkSuQmCC) !important; }
-
-.win-minimize {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAeCAMAAACPKmerAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAABdJREFUeAFjGOpgFIwCRjgYdE4bBaMAAB9tAAsTJ4TUAAAAAElFTkSuQmCC) !important; }
-
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMTMuMDA2Mjg2NjIgMjJjMSAwIDEuNzE0Mjg1NzItLjQwMTk1MzEgMS45OTk5OTk5OC0xLjAwNDg4MjhoLTMuOTk5OTk5OThjLjI4NTcxNDMuNjAyOTI5NyAxIDEuMDA0ODgyOCAyIDEuMDA0ODgyOHptNi45ODA1Mjk3OC0zLjk2MzQzOTlWMTBjMC0yLjY0LTIuMzAyODY2OC00Ljk3NTAzNjYyLTUuMDEwNTU5MDgtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1MTctMS4wMjk4NDYyLTEuOTczMTE0LTEuMDI5ODQ2Mi0xLjYyOTA1ODg1IDAtMS45NjU4NTA4NC"] {
+.chat div[class^="titleWrapper"] svg[name="NotificationBell"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAM1BMVEUAAAD///////////////////////////////////////////////////////////////+3leKCAAAAEHRSTlMAIDBAUICPkJ+gz9Df4O/wfXhpIAAAAHZJREFUeAHtj8EOwiAQRJdFwCor7/+/1oNGjI4kvfTknPoyb6fBDk/uPS+FgL6oUwWo6VffeKbq/grNzfIGZ30//PHlgyL+D/56CyQx0CZsYiLwCScuXwII2i/8BWe848A/7kX2CXPZuU3WQiyEAlBsZUQUOzp3uvAI2kP+1PMAAAAASUVORK5CYII=) !important; }
 
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMy4wMDYyODY2MiAyMmMuOTk5OTk5OTggMCAxLjcxNDI4NTY4LS40MDE5NTMxIDEuOTk5OTk5OTgtMS4wMDQ4ODI4aC0zLjk5OTk5OTk4Yy4yODU3MTQzLjYwMjkyOTcgMSAxLjAwNDg4MjggMiAxLjAwNDg4Mjh6bTYuOTgwNTI5NzgtMy45NjM0Mzk5VjEwYzAtMi42NC0yLjMwMjg2NjgtNC45NzUwMzY2Mi01LjAxMDU1OTEtNC45NzUwMzY2MiAwLS43Mi0uMzQ0MDU1Mi0xLjAyOTg0NjItMS45NzMxMTQtMS4wMjk4ND"] {
+.chat div[class^="titleWrapper"] svg[name="NotificationBellOff"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECAwQFBgcH+Aj5CfoM/Q3+Dv8Dc90YoAAACfSURBVHgBrc/daoUwEEXhnZ9jG63WmPX+z1ooZagkk3Pjup2Pga1HeoU3dw4T+TxzB8I3Jiqc8kVcAdboiY2/PociHrAlKe/wNRIXLem31CgjQbYtEKdbtPOhqXhxdPflJqADmPAAMuEBEx4w4QETLjDhAhMeMOEBEz1INN1E0i3+twx+MBBBfY2UuGyLA6p8UQCKZqLWIpkomhaKnugHHAQOvhtqyZ0AAAAASUVORK5CYII=) !important; }
 
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMSIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE1IDE1VjZoLTR2OWgtLjUwODk5NDgyQzEwLjIyNzg4MDQ4IDE1IDEwIDE1LjIyMzg1NzYgMTAgMTUuNWMwIC4yNjgwNjY0LjIxOTgzMDUuNS40OTEwMDUxOC41aDUuMDE3OTg5NjRDMTUuNzcyMTE5NTIgMTYgMTYgMTUuNzc2MTQyNCAxNiAxNS41YzAtLjI2ODA2NjQtLjIxOTgzMDUtLjUtLjQ5MTAwNTE4LS41SDE1em0yLTloMVY0SDh2MmgxdjhsLTIgMnYyaDUuMn"] {
+.chat div[class^="titleWrapper"] svg[name="Pin"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMAECAwQE9QX2CAj5CfoK+wv8DP0N/g7/C5W3gDAAAAnUlEQVR4AcXO2w6CQAyE4S4otq6oHBbn/Z/UZIK4MbZcGeeOfP+Gym/W7LhC4/cL4iKjxMWATqOiXSDCwvVJ/IKeZCs8/1o0p/P9svkhHWegqdzArd7zQ9+cRqCYdvbyxzDkj/c3WUdvK9xOirwuMj0oephIVJgXpJmFG6QRhUWGOT4l/qWg85x3XFF8ZwH1nUUfOAvf3U07LvQ/7gmnsg0Gx8Y93QAAAABJRU5ErkJggg==) !important; }
 
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0xIDFoMjR2MjRIMVYxeiIvPgogICAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTE2Ljc3MjA3NTQgMTQuNjc5MTc3OGMtLjIyNDkwOTctLjIyNTY4ODYtLjQ3NDE1NzMtLjQzNTE2ODEtLjc0MjA3NTQtLjYyOTE3NzguMzUtLjAzLjY4LS4wNS45Ny0uMDUgMi4zMyAwIDcgMS4xNyA3IDMuNVYyMGgtNHYtMWMwLTEuODgxNjkxNC0xLjQwNzcwNTYtMy4zMjMwMTQzLTMuMjI3OTI0Ni00LjMyMDgyMjJ6bS0xLjQzODU3MzUtOC4xNzU4NTM0QzE1Lj"] {
+.chat div[class^="titleWrapper"] svg[name="People"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwT1BfYHB/gJCgr7DAz9Df4O/w2y78+wAAAJJJREFUeAHl0G1OAzEMhOFx3BAgQPPBvvc/KiKtygq84gD7/B7NWNaplAbtSUessTRTrDOzWZ40hQrTVtGkHBRkLflWwY6+gWlJ8H8gcv2ZuCryzLgdOSjhhDrjktJl0BUHrLN0U+yVuxeFPqC65BXeo4nK5lp8o/4NJHDdOST9Vql6eKMGb3I9ePCqDe3wqVP6AjwMDh1E1dLiAAAAAElFTkSuQmCC) !important; }
 
-.header-toolbar button span[style*="/assets/567632a2702aed0296e15d68d6cae738.svg"] {
+.chat div[class^="titleWrapper"] svg[name="Mention"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwQE9QX2BvcH+An6CvsL/Az9Df4O/wqrhjWwAAAOBJREFUeAHNkNGOqzAMBY1J21xuCS7QJvP/P7q7tZQNAqF97LwcKTmaOJYPo7s9Flimf3p8PVIZO9kRM1jsRfpokMPuHqya1SDKhivbkztsHF1mENk2cjtHwvz4wfIf5JuZ1Ajg/f6K854DfhUD5toSJBQviDWvGlcXBJ/X/8VcCy/6nwBpomepBdiH51mhg/Mnrqy1MBObIf1/3ZPYrC155CAhw0P18mwEoptFrcWjXbUxuWrmdRdNsEZp0UKUUyJ/aExahdNy0CgwXlREbyOUIDs0UUkqR+hgBVYbVD6LLy2bEtQK3TtvAAAAAElFTkSuQmCC) !important; }
 
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNOCA5LjMyNTg0MjdjMCAuNzQxNTczMDMuNjE2NDM4MzYgMS4zNTk1NTA1NiAxLjM1NjE2NDM4IDEuMzU5NTUwNTYuNzM5NzI2MDMgMCAxLjM1NjE2NDQtLjYxNzk3NzUzIDEuMzU2MTY0NC0xLjM1OTU1MDU2IDAtMS40ODMxNDYwNyAxLjYwMjczOTctMS41NDQ5NDM4MiAxLjc4NzY3MTIyLTEuNTQ0OTQzODIuMTg0OTMxNSAwIDEuNzg3NjcxMjMuMDYxNzk3NzUgMS43ODc2NzEyMyAxLjU0NDk0Mzgydi4zMDg5ODg3NmMwIC42MTc5Nzc1My0uMzA4MjE5MT"] {
+.chat div[class^="titleWrapper"] svg[name="QuestionMark"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwUF9gb3CAkJ+gr7DAz9Df7/BoqbnNAAAA1ElEQVR4Ac2SYXaEIAyEIbhoK2RF+O5/1b52ebxUPIDzR5kMk4TEPQyy5gOOvMp9eGdgv5EsFVIMzoWYoC7XeASVYaYQL/dhs+cN/nlI7XGjqN4cE/oR5vPMn0xKMgYg3QioYrnul/qtt/fv7qYmq/aaG945z9n70iEoBJuv/X0Dx+DADYSDNLHm9xuKn1iTAr56PFBskbNZRKc2LWyb9lHAcgOJfBUo1lXaPKzmL+Ne53FbRMgyDDPEaeUa7K/flXvt0BY3QRIDyd/v9aYFim7inoUff8gNmEG/8z4AAAAASUVORK5CYII=) !important; }
 
+#friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-video-call,
+.chat div[class^="titleWrapper"] svg[name="VideoCamera"] {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAAElBMVEUAAAD///////////////////8+Uq06AAAABXRSTlMAX2Df4L946c0AAABESURBVCjPY2AYLCAUARgYmNAEmExBAgi1TKahqAKmIWgCIQpoAgoMaAIMVBAQQBcIFkATcA1GE2ByDUX3nCs27w8OAACERB25/6c1FQAAAABJRU5ErkJggg==); }
+
 #friends .friends-table .friends-row .friends-column-actions .friends-action.friends-action-voice-call,
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHBvbHlnb24gcG9pbnRzPSIwIDAgMjQgMCAyNCAyNCAwIDI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNy41LDEwLjUgQzguOTQsMTMuMzMgMTAuNjY5MTI4MSwxNS4wNSAxMy40OTkxMjgxLDE2LjUgTDE1LjQxLDE1LjE4IEMxNS42OCwxNC45MSAxNi4wOCwxNC44MiAxNi40MywxNC45NCBDMTcuNTUsMTUuMzEgMTguNzYsMTUuNTEgMjAsMTUuNTEgQzIwLjU1LDE1LjUxIDIxLDE1Ljk2IDIxLDE2LjUxIE"] {
+.chat div[class^="titleWrapper"] svg[name="Phone"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////+DmQsHAAAAGHRSTlMAECAwQFBfYG9wgJCfoK+wv8DP0N/g7/BwLBAmAAAA00lEQVR4Ab3SwY6DMAyE4TFhFyhkobCQ//2ftMiq1AMOx86lUuZTsZzoa7GJJd31K3DciI2S8o3IZ3+qqnh4LzuFhaDQSi6YQwAmT0sJwUznv+lgDEHH+u6z4uw+RKn2Gvwvch1oZ5AaqG7qxzcwsqqWJ4tkO1MNWGGQUmEyH2r5ay4foXWxJilHd/vwo7TBNMEQ3Fz2IxsBOlksWklN9s3Hgt4nllywXB8Gy2f6Bq4LKxz9550+g33M8P/77jdTkHY/SW9N3Hu6HaDaO5kpo+lbeQEHeg4J1nEeCwAAAABJRU5ErkJggg==) !important; }
 
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNiIgaGVpZ2h0PSIyNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0xMSAxM2MyLjIxIDAgNC0xLjc5IDQtNHMtMS43OS00LTQtNC00IDEuNzktNCA0IDEuNzkgNCA0IDR6bTAgMmMtMi42NyAwLTggMS4zNC04IDR2MmgxNnYtMmMwLTIuNjYtNS4zMy00LTgtNHptOS4wNjgxMTA2LTQuMDczNzMzODhWOC41NjEwODkzNmMwLS4xNzYyMDU0NSAwLS41NjEwODkzNi0uNTY2Nzc0Ny0uNTYxMDg5MzYtLjU2Njc3NDggMC0uNTcyMzk4MS4zODQ4ODM5LS41NzIzOTgxLjU2MTA4OTM2djIuMzY1MT"] {
+.chat div[class^="titleWrapper"] svg[name="PersonPlus"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwT1BfYHB/gI+Qn6CvsL/Az9Df4O/w2EeWdgAAAOFJREFUeAHl0FFygzAMhOHFhJI2Lm2xIPz3v2gHywyJJj1Bv7fVyBJI/8pYoLyFdOoKVeliaox16LphpRwpJU9uZPWnK6N0fUzOGFQNlJActG0JYnrZoAbk5nPoLNmxesTkriz+WQtjTM5YLildFqylWwE8VZ1RmT/daN7VfNDc2iFzL/UZvlR9n5UfaWLrVfUbWZLyUyXDnmDPkKTkFe8AyOcNpj1kr7iJ1g7+YJZmr5wjJBqJu7ShB7EBRfa8whRN8SOjRPzNKHM/znL3AdEMt/2wn2B6KdNk/SFlA8t1/y+cEhhYXTZk4AAAAABJRU5ErkJggg==) !important; }
 
 .header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxkZWZzPgogICAgPHBhdGggaWQ9ImEiIGQ9Ik04IDJWMEgxLjc3Nzc3Nzc4Qy43OTU5MzgyMiAwIDAgLjc5NTkzODIyIDAgMS43Nzc3Nzc3OFYxNC4yMjIyMjIyQzAgMTUuMjA0MDYxOC43OTU5MzgyMiAxNiAxLjc3Nzc3Nzc4IDE2SDE0LjIyMjIyMjJDMTUuMiAxNiAxNiAxNS4yMDg4ODg5IDE2IDE0LjIyMjIyMjJWOGgtMnY2SDJWMmg2eiIvPgogICAgPG1hc2sgaWQ9ImIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iMCIgeT0iMCIgZmlsbD0iI2"] {
@@ -4680,10 +4624,10 @@ span[class*="botTagInvert-"] {
 .guilds-wrapper .guilds-add {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAQMAAABJtOi3AAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABpJREFUCNdjYMAJGBtIJNj//38AIUjXiwsAAO67D98UrrLcAAAAAElFTkSuQmCC); }
 
-.channels-wrap > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] {
+div[class^="channels-"] > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwQE9QX2BvcICQn6CvsL/Az9Df4O/wITct0AAAAPhJREFUeAG9ktGunDAMRMcJpUu4bZckkJz//9FKluCyRUirPux5QPLI4MEefZoO0HRLwAm6YyRLmVF3fDFLM1+6EMoUFBcYpRGWqDCV86QnUGBLJtlj84I/OhjovzukvU64MGinMktj1EEcpZmylw8wOcMCyyDH4LH3bxR/fcaZXSxsxzet0oJbSWbJh4dGNR1YJ0gZt5nIUqSZToA/XAuwK+83WHsZ8fx3hBW6m2yT2YSb7JSjI67U629W1nhdVIZ8XtTtqn9IM/V0rParwfR9LBeG13NXWH+aZNPqBU99E2oKinkPTI4KqYb3I3cN7X/HXh2g68P8BQr+FVnA8tYVAAAAAElFTkSuQmCC); }
 
-.channels-wrap > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] > svg {
+div[class^="channels-"] > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] > svg {
   display: none; }
 
 button[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0Ii8+CiAgICA8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNyw0LjQ0MDg5MjFlLTE2IEM4LjY1Njg1NDI1LDAgMTAsMS4zNDMxNDU3NSAxMCwzIEwxMCw5IEMxMCwxMC42NTY4NTQyIDguNjU2ODU0MjUsMTIgNywxMiBDNS4zNDMxNDU3NSwxMiA0LDEwLjY1Njg1NDIgNCw5IEw0LDMgQzQsMS4zNDMxNDU3NSA1LjM0MzE0NTc1LDQuNDQwODkyMWUtMTYgNywwIEw3LDQuNDQwOD"] {

@@ -1,6 +1,23 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.3.0
+This update contains primarily fixes for 'that titlebar update that broke everything else'.
+* **Enhancements** (2)
+  * A variable to change the colour of links in chat is now available in the user options section.
+  * Change background colour of guilds list
+* **Update** (5)
+  * New titlebar
+  * Settings icon
+  * Channels list
+  * Toolbar
+  * Chatbox
+* **Cleanup** (1)
+  * Remove `/icons/_titlebar.scss` (Icons not required anymore)
+* **Fixes** (1)
+  * Video calling icon was default
+  * Tooltips text colour
+
 #### 3.2.3
 This Update reverts changes made in 3.2.2
 * **Fixes** (1)
