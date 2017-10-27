@@ -1,36 +1,36 @@
-.header-toolbar .search{
-    margin-left: 0;
+.chat div[class^="titleWrapper"] div[class^="search-"]{
+    margin: 0;
 }
-.header-toolbar .search .search-bar{
+.chat div[class^="titleWrapper"] .search .search-bar{
     height: 40px;
     border-radius: 0;
 }
-.theme-dark .header-toolbar .search .search-bar{
+.theme-dark .chat div[class^="titleWrapper"] .search .search-bar{
     background-color: $b3;
 }
-.header-toolbar .search .DraftEditor-root{
+.chat div[class^="titleWrapper"] .search .DraftEditor-root{
     font-size: $fsui;
     font-weight: $fwui;
     line-height: 35px;
 }
-.header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root{
+.chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root{
     padding: 3px 11px 10px;
 }
 .search .DraftEditor-root .public-DraftEditor-content{
     padding: 3px 11px 10px;
 }
-.theme-dark .header-toolbar .search .search-bar .public-DraftEditorPlaceholder-root{
+.theme-dark .chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root{
     color: #FFF;
 }
 
 // Eyeglass icon
-.header-toolbar .search .search-bar .icon{
+.chat div[class^="titleWrapper"] .search .search-bar .icon{
     top: 12px;
 }
 
 // Search in use
-.header-toolbar .search.focused .search-bar,
-.header-toolbar .search.open .search-bar,
-.header-toolbar .search.popout-open .search-bar{
+.chat div[class^="titleWrapper"] .search.focused .search-bar,
+.chat div[class^="titleWrapper"] .search.open .search-bar,
+.chat div[class^="titleWrapper"] .search.popout-open .search-bar{
     width: 240px;
 }
