@@ -43,7 +43,7 @@
     background-size: 24px;
 }
 // Hide original SVGs
-.chat div[class^="titleWrapper"] svg path{
+.chat div[class^="titleWrapper"] svg[class*="icon-"] path{
     display: none;
 }
 // Notification dot
