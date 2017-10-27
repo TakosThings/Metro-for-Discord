@@ -1,5 +1,5 @@
 // Channel header
-.channels-wrap header{
+div[class^="channels-"] header{
     height: 40px;
     background-color: $b1;
     padding: 0 18px;
@@ -11,21 +11,21 @@
         background-color: $b4;
     }
 }
-.channels-wrap header span{
+div[class^="channels-"] header span{
     font-size: $fsheader;
 }
 
 // Channels bg
-.channels-wrap > div[class*="noWrap"]{
+div[class^="channels-"] > div[class*="noWrap"]{
     background-color: $b1;
 }
 // Tree root
 // Decrease padding between categories
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type{
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type{
     padding-top: 19px;
 }
-.channels-wrap div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type >,
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type >{
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type >,
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type >{
     & div[class*="wrapperDefault"],
       div[class*="wrapperHovered"],
       div[class*="wrapperCollapsed"],
@@ -34,9 +34,9 @@
     }
 }
 
-.channels-wrap .container-1 > div ~ div[class^="containerDefault"] >,
-.channels-wrap div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] >,
-.channels-wrap div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] >{
+div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] >,
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] >,
+div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] >{
     & div[class*="wrapperDefault"],
       div[class*="wrapperSelected"],
       div[class*="wrapperUnread"],
@@ -47,8 +47,8 @@
     }
 }
 
-.channels-wrap div[class^="container-"] > div > div >,
-.channels-wrap div[class^="container-"] > div > div > div >{
+div[class^="channels-"] div[class^="container-"] > div > div >,
+div[class^="channels-"] div[class^="container-"] > div > div > div >{
     & div[class*="nameDefault"],
       div[class*="nameHovered"],
       div[class*="nameCollapsed"],
@@ -59,13 +59,13 @@
         text-transform: none;
     }
 }
-.channels-wrap div[class^="container-"] > div > div > div[class*="nameMuted"]{
+div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameMuted"]{
     color: $alert;
 }
 // Arrow (pointing down)
-.channels-wrap div[class^="container-"] > div > div > div >,
-.channels-wrap div[class^="container-"] > div > div >,
-.channels-wrap div[class^="container-"] > div >{
+div[class^="channels-"] div[class^="container-"] > div > div > div >,
+div[class^="channels-"] div[class^="container-"] > div > div >,
+div[class^="channels-"] div[class^="container-"] > div >{
     & svg[class^="iconDefault-"],
       svg[class^="iconHovered-"],
       div[class*="wrapperMuted"] > svg[class^="iconMuted-"]{
@@ -76,8 +76,8 @@
     }
 }
 // Arrow (pointing right)
-.channels-wrap div[class^="container-"] > div > div > div >,
-.channels-wrap div[class^="container-"] > div > div >{
+div[class^="channels-"] div[class^="container-"] > div > div > div >,
+div[class^="channels-"] div[class^="container-"] > div > div >{
     & svg[class^="iconCollapsed-"],
       svg[class^="iconHoveredCollapsed-"],
       svg[class^="closed-"]{
@@ -89,8 +89,8 @@
     }
 }
 // Hide default arrow
-.channels-wrap div[class^="container-"] > div > div > div >,
-.channels-wrap div[class^="container-"] > div > div >{
+div[class^="channels-"] div[class^="container-"] > div > div > div >,
+div[class^="channels-"] div[class^="container-"] > div > div >{
     & svg[class^="iconDefault-"] path,
       svg[class^="iconHovered-"] path,
       svg[class^="iconCollapsed-"] path,
@@ -101,22 +101,22 @@
 }
 
 // All channels
-.channels-wrap div[class*="containerDefault"] div[class*="name-"]{
+div[class^="channels-"] div[class*="containerDefault"] div[class*="name-"]{
     font-size: $fsui;
     font-weight: $fwui;
 }
 // Normal channel state
-.channels-wrap div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"]{
+div[class^="channels-"] div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"]{
     color: #999;   
 }
 //Hovered channel
-.channels-wrap div[class*="contentHoveredText"]{
+div[class^="channels-"] div[class*="contentHoveredText"]{
     background-color: transparent;
 }
-.channels-wrap div[class*="contentHoveredText"] > div[class*="nameHoveredText"]{
+div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="nameHoveredText"]{
     color: #FFF;
 }
-.channels-wrap div[class*="wrapperHoveredText"] > div[class*="unread"]{
+div[class^="channels-"] div[class*="wrapperHoveredText"] > div[class*="unread"]{
     width: 4px;
     height: 17px;
     margin-top: -9px;
@@ -124,10 +124,10 @@
     border-radius: 0;
 }
 // Selected channel
-.channels-wrap div[class*="contentSelectedText"]{
+div[class^="channels-"] div[class*="contentSelectedText"]{
     background-color: transparent;
 }
-.channels-wrap div[class*="contentSelectedText"]::before{
+div[class^="channels-"] div[class*="contentSelectedText"]::before{
     content: "";
     width: 10px;
     height: 10px;
@@ -136,28 +136,28 @@
     background-color: #FFF;
     transform: rotate(45deg);
 }
-.channels-wrap div[class*="contentSelectedText"]:active{
+div[class^="channels-"] div[class*="contentSelectedText"]:active{
     transform: initial;
 }
-.channels-wrap div[class*="contentSelectedText"] > .margin-reset > svg{
+div[class^="channels-"] div[class*="contentSelectedText"] > .margin-reset > svg{
     opacity: 1;
 }
-.channels-wrap div[class*="contentSelectedText"] > div[class^="marginReset"] > svg{
+div[class^="channels-"] div[class*="contentSelectedText"] > div[class^="marginReset"] > svg{
     opacity: 1;
     color: #FFF;
 }
-.channels-wrap div[class*="contentSelectedText"] div[class*="nameSelectedText"]{
+div[class^="channels-"] div[class*="contentSelectedText"] div[class*="nameSelectedText"]{
     color: #FFF;
 }
 // Unread channel
-.channels-wrap div[class*="contentUnreadText"] > div[class^="marginReset"] > svg{
+div[class^="channels-"] div[class*="contentUnreadText"] > div[class^="marginReset"] > svg{
     opacity: 1;
     color: var(--accent);
 }
-.channels-wrap div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"]{
+div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"]{
     color: var(--accent);   
 }
-.channels-wrap div[class*="wrapperUnreadText"] > div[class*="unread"]{
+div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="unread"]{
     width: 4px;
     height: 17px;
     margin-top: -9px;
@@ -165,38 +165,38 @@
     border-radius: 0;
 }
 // Muted channel
-.channels-wrap div[class*="contentMutedText"] > div[class^="marginReset"] > svg{
+div[class^="channels-"] div[class*="contentMutedText"] > div[class^="marginReset"] > svg{
     opacity: .5;
     color: $alert;
 }
-.channels-wrap div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"]{
+div[class^="channels-"] div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"]{
     color: $alert;
     opacity: .5;
 }
 
 //Voice Channel
-.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg,
-.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg,
-.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg{
+div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg,
+div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg,
+div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg{
     opacity: 1;
 }
-.channels-wrap div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
-.channels-wrap div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
-.channels-wrap div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"]{
+div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
+div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
+div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"]{
     fill: #FFF;
 }
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
-.channels-wrap div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"]{
+div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
+div[class^="channels-"] div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"]{
     color: #FFF;
 }
-.channels-wrap div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
-.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active{
+div[class^="channels-"] div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
+div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active{
     background-color: transparent;
 }
 
 // Voice channel capacity
-.channels-wrap div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
-.channels-wrap div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"]{
+div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
+div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"]{
     background-color: $b3;
     font-family: $mono;
     border-radius: 0;
@@ -204,11 +204,11 @@
 }
 
 // New messages indicator
-.channels-wrap .new-messages-indicator{
+div[class^="channels-"] .new-messages-indicator{
     left: 8px;
     border-radius: 0;
     text-transform: none;
 }
-.channels-wrap .new-messages-indicator.bottom{
+div[class^="channels-"] .new-messages-indicator.bottom{
     border-radius: 0;
 }
