@@ -60,10 +60,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMA
 }
 
 // Settings
-.channels-wrap > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"]{
+div[class^="channels-"] > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwQE9QX2BvcICQn6CvsL/Az9Df4O/wITct0AAAAPhJREFUeAG9ktGunDAMRMcJpUu4bZckkJz//9FKluCyRUirPux5QPLI4MEefZoO0HRLwAm6YyRLmVF3fDFLM1+6EMoUFBcYpRGWqDCV86QnUGBLJtlj84I/OhjovzukvU64MGinMktj1EEcpZmylw8wOcMCyyDH4LH3bxR/fcaZXSxsxzet0oJbSWbJh4dGNR1YJ0gZt5nIUqSZToA/XAuwK+83WHsZ8fx3hBW6m2yT2YSb7JSjI67U629W1nhdVIZ8XtTtqn9IM/V0rParwfR9LBeG13NXWH+aZNPqBU99E2oKinkPTI4KqYb3I3cN7X/HXh2g68P8BQr+FVnA8tYVAAAAAElFTkSuQmCC);
 }
-.channels-wrap > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] > svg{
+div[class^="channels-"] > div[class^="container"]:last-of-type > div[class^="flex-"] > div[class^="button-"] > svg{
     display: none;
 }
 

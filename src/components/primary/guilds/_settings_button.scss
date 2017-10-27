@@ -1,4 +1,4 @@
-.channels-wrap div[class*="container"] > div[class*="noWrap"] > div~div~div[class*="button"]{
+div[class^="channels-"] div[class*="container"] > div[class*="noWrap"] > div~div~div[class*="button"]{
     width: 48px;
     height: 48px;
     position: absolute;
