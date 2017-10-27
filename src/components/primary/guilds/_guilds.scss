@@ -32,6 +32,7 @@
     font-weight: normal;
     line-height: 48px;
     text-overflow: ellipsis;
+    transition: none;
     &:hover{
         border-color: rgba(255,255,255,.5);
     }
