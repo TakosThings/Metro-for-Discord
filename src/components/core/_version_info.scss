@@ -1,4 +1,4 @@
-.channels-wrap::after{
+div[class^="channels-"]::after{
   content: "Metro for Discord 3.2.3";
   width: 100%;
   height: auto;
