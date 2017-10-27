@@ -9,6 +9,9 @@
     font-size: $fsheader;
     font-weight: $fwheader;
 }
+.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="titleText"] div[class^="channelName"]{
+    height: 24px;
+}
 // Channel topic
 .chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"]{
     padding-left: 0;
