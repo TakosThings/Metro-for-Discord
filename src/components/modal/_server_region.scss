@@ -30,6 +30,11 @@
         border-color: $inputborderhover;
     }
 }
+// Square corners on flags
+.region-select-flag,
+.ui-region-flag {
+    clip-path: inset(1px 1px 1px 1px);
+}
 .region-select-modal .region-select-modal-option .region-select-name{
     padding: 0 8px;
     margin: 0;
