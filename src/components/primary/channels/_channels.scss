@@ -1,3 +1,8 @@
+// Remove rounded corners on top-left and bottom-left
+.guilds-wrapper ~ div[class*="base-"]{
+    border-radius: 0;
+}
+
 // Channel header
 div[class^="channels-"] header{
     height: 40px;
