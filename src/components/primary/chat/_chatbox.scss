@@ -20,7 +20,7 @@ div[class*="channelTextArea"]{
     color: #FFF;
 }
 div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"]~textarea{
-    margin-left: 0;
+    margin: 0;
 }
 
 // Upload button
