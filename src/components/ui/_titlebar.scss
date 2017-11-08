@@ -26,3 +26,7 @@ div[class*="titleBar-"] div[class*="winButton-"]{
     height: 32px;
     opacity: 1;
 }
+
+div[class*="titleBar-"] div[class*="winButtonClose-"]:hover{
+    background-color: #E81123;
+}
