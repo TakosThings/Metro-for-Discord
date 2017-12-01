@@ -1,6 +1,21 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.4.0
+* **Enhancements**
+  * Make corners of flag icons square
+  * Change the titlebar close button hover background colour
+* **Update**
+  * New user profile
+  * New user popout
+  * New invites
+* **Fixes**
+  * Channel name in toolbar clipping the bottom of some letters
+  * Remove border radius on left side of channels pane
+  * Remove top/bottom margins from chatbox
+  * Account box mic/speaker control icons
+  * RTC box
+
 #### 3.3.1
 * **Fixes** (4)
   * Channel notification badge
