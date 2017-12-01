@@ -1,58 +1,75 @@
-.invite-button{
+.theme-dark .wrapper-uAa07y{
+    background-color: #000;
     border: 0;
     border-radius: 0;
-    font-family: $font;
-}
-.theme-dark .invite-button{
-    background-color: $b1;
-}
 
-// Icon
-.invite-button-icon{
-    background-color: transparent;
-    border: 1px solid $safe;
-    border-radius: 0;
-}
-.invite-button-icon:before{
-    opacity: 1;
-    border-color: $safe;
-}
-
-// Accepted
-.invite-button-icon.accepted{
-    background-color: $safe;
-    border-color: $safe;
-}
-
-// Expired
-.invite-button-icon.expired{
-    background-color: $alert;
-    border-color: $alert;
-}
-.invite-button.expired .invite-button-header{
-    text-transform: none;
-}
-
-// Content
-.invite-button-header{
-    font-weight: $fwui;
-    line-height: $lh;
-    &:first-letter{
-        text-transform: uppercase;
+    // YOU'VE BEEN INVITED header
+    h5[class*="header-"]{
+        display: none;
     }
-}
-.invite-button-header strong{
-    font-weight: $fwui;
-}
-.theme-dark .invite-button .invite-button-header{
-    color: #FFF;
-}
 
-.invite-button-body{
-    margin-top: 0;
-    font-size: $fschat;
-    font-weight: $fwui;
-}
-.theme-dark .invite-button .invite-button-body{
-    color: #FFF;
+    // Server icon
+    div[class^="icon-"]{
+        background-color: transparent;
+        border: 0;
+        border-radius: 50%;
+    }
+    div[class^="guildIconExpired"]{
+        position: relative;
+        background-color: $alert;
+        background-image: none;
+        border-radius: 50%;
+    }
+    div[class^="guildIconExpired"]::before{
+        content: "";
+        width: 36px;
+        height: 8px;
+        top: 50%;
+        left: 50%;
+        margin: -4px 0 0 -18px;
+        position: absolute;
+        background-color: #FFF;
+    }
+
+    // Server name
+    div[class^="guildName"]{
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    div[class^="guildNameExpired"]{
+        color: $alert;
+    }
+
+    // Details
+    div[class^="guildDetail"]{
+        color: #FFF;
+        font-weight: normal;
+    }
+
+    // Member counts
+    div[class^="guildDetail"]{
+        span{
+            color: #FFF;
+            font-size: 12px;
+            font-weight: normal;
+        }
+        i[class^="statusOnline"]{
+            width: 12px;
+            height: 12px;
+            background-color: $statusonline;
+        }
+        i[class^="statusOffline"]{
+            width: 12px;
+            height: 12px;
+            background-color: $statusoffline;
+        }
+    }
+
+    //Button
+    button{
+        height: 36px;
+    }
+    button svg{
+        display: none;
+    }
 }
