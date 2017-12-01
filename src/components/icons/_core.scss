@@ -219,3 +219,8 @@ div[class^="channels-"] > div[class^="container"] > div[class^="inner"]~div[clas
         background-size: 100px;
     }
 }
+
+// New Window (profile modal)
+div[class^="connectedAccountOpenIcon"]{
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAUVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////8IN+deAAAAGnRSTlMAAjk8PT5AQkRGR0lQWF5wd3yDiLe+6+z7/KCu9CEAAABRSURBVHgBYyAGSCEBiAAHhzAHB4QJIZmZBZiZIUwcWhDG4RJgFBYWZkcREBCREkQSkGDgFBdFFuDlEmcTQhbgEWNCMZRbnJVPEtkd/Cz4vQoAxvYG4VoiZdMAAAAASUVORK5CYII=);    
+}
