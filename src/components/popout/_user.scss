@@ -1,157 +1,115 @@
 div[class^="userPopout-"]{
     border: 1px solid var(--accent);
     border-radius: 0;
-}
+    box-shadow: none;
 
-// Header
-div[class^="userPopout-"] div[class*="header-"]{
-    padding: 10px 10px 0;
-}
-div[class^="userPopout-"] div[class^="headerNormal-"]{
-    background-color: $b1;
-    background-image: none;
-}
-// Avatar
-div[class^="userPopout-"] div[class^="avatar-"]{
-    border: 0;
-}
-div[class^="userPopout-"] div[class^="avatarStatusNormal-"]{
-    border: 0;
-}
-div[class^="userPopout-"] div[class*="avatarHint-"]{
-    margin: 0;
-    font-size: 12px;
-    font-weight: normal;
-    text-transform: none;
-}
-// Status circle
-div[class^="userPopout-"] div[class^="avatar-"] div[class*="avatarStatus-"]{
-    border: 0;
-}
-// Username
-div[class^="userPopout-"] span[class^="headerUsername"],
-div[class^="userPopout-"] div[class^="headerName-"]{
-    font-size: $fsheader;
-    font-weight: $fwheader;
-}
-div[class^="userPopout-"] span[class^="headerDiscriminator"],
-div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="headerDiscriminator"]{
-    margin-left: 4px;
-    color: #FFF;
-    font-size: $fschat;
-    font-weight: $fwui;
-}
-div[class^="userPopout-"] div[class^="headerTagNormal"] span{
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-}
-// Bot tag
-div[class^="userPopout-"] div[class^="headerTagNormal"] span[class^="botTag"]{
-    font-size: 10px;
-    font-weight: $fwui;
-}
-// Now playing text
-div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"]{
-    color: #FFF;
-    font-size: $fsui;
-}
-div[class^="userPopout-"] div[class^="headerText"] div[class^="headerActivityText"] strong{
-    font-weight: $fwui;
-}
+    div[class^="headerNormal"],
+    div[class^="headerPlaying"]{
+        background-color: $b1;
+    }
+    div[class*="headerTop"]{
+        background-color: var(--accent);
+    }
+    div[class*="mask"]{
+        mask: none;
+        -webkit-mask: none;
+    }
+    span.username{
+        font-size: $fsheader;
+        font-weight: $fwheader;
+    }
+    span.discriminator{
+        padding-left: 4px;
+        font-size: $fschat;
+    }
 
-// Body
-div[class^="userPopout-"] div[class^="body-"]{
-    padding: 10px;
-    background-color: $b1;
-    border: 0;
-}
-div[class^="userPopout-"] div[class*="bodyTitle-"] svg{
-    display: none;
-}
-div[class^="userPopout-"] div[class^="bodyTitleText-"]{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-// Role Tags
-div[class^="userPopout-"] .member-roles{
-    max-height: 200px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    margin: 0 -10px 10px;
-    padding: 0 10px;
-}
-div[class^="userPopout-"] .member-roles component{
-    background-color: transparent;
-    border-radius: 0;
-    color: #FFF;
-    font-size: $fschat;
-    font-weight: $fwui;
-    line-height: $lh;
-}
-// Add role
-.member-roles .member-role{
-    background-color: transparent;
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    color: #FFF;
-    font-size: 13px;
-    line-height: $lh;
-    &:hover{
-        border-color: $inputborderhover;
+    // Now Playing
+    div[class^="activityUserPopout"]{
+        div[class^="headerText"]{
+            margin-bottom: 12px;
+            font-size: $fsui;
+            font-weight: $fwheader;
+            text-transform: none;
+        }
+        div[class^="name-"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: normal;
+            line-height: 1.33333;
+        }
+        span[class^="playTime"]{
+            font-size: 13px;
+        }
     }
-}
-.member-roles .member-role .member-role-remove,
-.member-roles .member-role.member-role-add button{
-    height: 20px;
-}
-// Notes
-div[class^="userPopout-"] .note textarea{
-    padding: 9px 12px 10px;
-    border: 1px solid $inputborder;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 1;
-    &:hover{
-        border-color: $inputborderhover;
-    }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
-    }
-}
 
-// Footer
-div[class^="userPopout-"] div[class^="footer-"]{
-    padding: 10px;
-    background-color: $b1;
-}
-// Quick message
-div[class^="userPopout-"] .quick-message{
-    height: 36px;
-    margin-top: -10px;
-    padding: 8px 12px 10px;
-    background-color: transparent;
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 1;
-    &:hover{
-        border-color: $inputborderhover;
+    //Bottom half
+    div[class*="body-"]{
+        background-color: $b1;
     }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
+
+    div[class^="bodyTitle"]{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: normal;
+        text-transform: none;
     }
-}
-// Protip
-div[class^="userPopout-"] .protip{
-    display: none;
+
+    // Roles
+    .member-roles .member-role{
+        background-color: transparent;
+        border-color: #FFF;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: normal;
+        line-height: $lh;
+    }
+    .member-roles .member-role .member-role-remove,
+    .member-roles .member-role.member-role-add button{
+        height: 20px;
+    }
+
+    // Note
+    .note textarea{
+        min-height: 36px;
+        padding: 9px 12px 10px;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        line-height: 1;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: transparent !important;
+            border-color: var(--accent);
+        }
+    }
+
+    // Footer
+    div[class^="footer"]{
+        padding: 6px;
+        background-color: $b1;
+        border: 0;
+    }
+    input[class^="quick-message"]{
+        margin-bottom: 0;
+        padding: 9px 12px 10px;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        line-height: 1;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: transparent !important;
+            border-color: var(--accent);
+        }
+    }
+    .protip{
+        display: none;
+    }
 }
