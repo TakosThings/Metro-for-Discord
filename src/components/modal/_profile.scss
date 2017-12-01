@@ -1,217 +1,180 @@
-#user-profile-modal{
-    border: 1px solid var(--accent);
-    border-radius: 0;
-}
-#user-profile-modal .header{
-    background-color: $b1;
-    background-image: none;
-}
-#user-profile-modal .header::after{
-    display: none;
-}
-
-// Avatar
-#user-profile-modal .avatar-wrapper{
-    background-color: transparent;
-}
-#user-profile-modal .avatar-profile{
-    width: 90px;
-    height: 90px;
-    background-size: 90px;
-}
-#user-profile-modal .avatar-profile .status{
-    border: 0;
-}
-
-// Username
-#user-profile-modal .header{
-    padding-left: 180px;
-}
-#user-profile-modal .header .header-info .header-info-inner .discord-tag{
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: $lh;
-}
-#user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator{
-    color: #FFF;
-    font-size: $fsui;
-}
-
-// Activity
-#user-profile-modal .header .header-info .header-info-inner .activity{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-#user-profile-modal .header .header-info .header-info-inner .activity strong{
-    font-weight: $fwui;
-}
-
-// Send friend request
-#user-profile-modal .actions .btn.add-friend{
-    height: auto;
-    padding: 9px 12px 10px;
-    background-color: $safe;
-    border: 1px solid transparent;
-    border-radius: 0;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 1;
-    &:hover{
-        background-color: $safe;
-        border-color: $inputborder;
+.inner-1_1f7b{
+    // Main body
+    div[class*="root-"]{
+        border: 1px solid var(--accent);
+        border-radius: 0;
     }
-    &:focus{
-        border-color: $inputborderhover;
-    }
-}
 
-// Tabs
-#user-profile-modal .tab-bar-container{
-    background-color: $b1;
-    padding-left: 20px;
-    border: 0;
-    box-shadow: none;
-}
-#user-profile-modal .tab-bar .tab-bar-item{
-    color: rgba(255,255,255,.7);
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    border: 0;
-    &:hover{
+    // Top half
+    div[class*="topSection"]{
+        background-color: $b1;
+    }
+
+    // Header
+    div[class*="topSection"] header{
+        background-color: var(--accent);
+    }
+    // Avatar
+    div[class^="avatar-"] div[class*="mask"]{
+        mask: none;
+        -webkit-mask: none;
+    }
+    // Username
+    div[class^="headerInfo"] span.username{
+        font-size: 24px;
+        font-weight: normal;
+    }
+    // Badge
+    div[class^="headerInfo"] div[class^="profileBadgeText"]{
+        font-size: 14px;
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    // Send friend req
+    button[class^="buttonGreenFilledDefault"],
+    button[class^="buttonBrandInvertedDefault"]{
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-weight: normal;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:active{
+            background-color: $inputborder;
+        }
+    }
+
+    // Additional actions
+    div[class^="additionalActionsIcon"]{
+        height: 14px;
+        position: relative;
+        background: none;
+        border-top: 2px solid $inputborder;
+        border-bottom: 2px solid $inputborder;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            margin-top: -1px;
+            border-top: 2px solid $inputborder;
+        }
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:hover::before{
+            border-color: $inputborderhover;
+        }
+    }
+
+    // Playing game
+    div[class^="activityProfile"]{
+        div[class^="headerText"]{
+            margin-bottom: 24px;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            text-transform: none;
+        }
+        img[class*="assetsLargeImageProfile"]{
+            border-radius: 0;
+            mask: none;
+            -webkit-mask: none;
+        }
+        div[class^="name-"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: normal;
+            line-height: 1.33333;
+        }
+        span[class^="playTime"]{
+            color: #FFF;
+            font-size: $fschat;
+        }
+    }
+
+    // Horizontal tabs
+    div[class^="tabBarContainer"]{
+        padding-left: 20px;
+        border: 0;
+    }
+    .tab-bar .tab-bar-item{
+        color: rgba(255,255,255,.7);
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        border: 0;
+        &:hover{
+            color: #FFF;
+            border: none;
+        }
+    }
+    .tab-bar .tab-bar-item.selected{
+        color: var(--accent);
+        border: 0;
+    }
+
+    // Bottom Half
+    div[class*="body-"]{
+        background-color: $b1;
+    }
+
+    // Note textarea
+    div[class^="userInfoSectionHeader"]{
+        color: #FFF;
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: none;
+    }
+    .note textarea{
+        min-height: 36px;
+        padding: 9px 12px 10px;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        line-height: 1;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: transparent !important;
+            border-color: var(--accent);
+        }
+    }
+
+    // Connected accounts
+    div[class*="connectedAccount-"]{
+        background-color: #000;
+        border: 0;
+        border-radius: 0;
+    }
+    div[class*="connectedAccountName"]{
         color: #FFF;
     }
-}
-#user-profile-modal .tab-bar .tab-bar-item.selected{
-    color: var(--accent);
-}
 
-// Body
-#user-profile-modal .scroller{
-    background-color: $b1;
-    overflow-y: auto;
-}
-#user-profile-modal .guilds .section .section-header{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-#user-profile-modal .guilds .section+.section{
-    border: 0;
-}
-
-// Rich now playing
-#user-profile-modal .section svg[name="Gamepad"]{
-    display: none;
-}
-#user-profile-modal .section svg[name="Gamepad"] ~ div[class^="headerText"]{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-// Game image
-#user-profile-modal .section div[class^="assetsLarge"] img{
-    width: 128px;
-    height: 128px;
-    border-radius: 0;
-}
-// Game info
-#user-profile-modal .section div[class^="contentImages"] div[class^="nameLarge"]{
-    color: #FFF;
-    font-weight: normal;
-}
-#user-profile-modal .section div[class^="contentImages"] div[class^="details"]{
-    color: #FFF;
-}
-#user-profile-modal .section div[class^="contentImages"] div span{
-    color: #FFF;
-}
-
-// Notes
-#user-profile-modal .guilds .section .note textarea{
-    min-height: 36px;
-    margin: 0;
-    padding: 9px 12px 10px;
-    border: 1px solid $inputborder;
-    color: #FFF;
-    font-size: $fsui;
-    line-height: 1;
-    &:hover{
-        border-color: $inputborderhover;
-    }
-    &:focus{
-        background-color: #FFF;
-        color: #000;
-        border-color: var(--accent);
-    }
-}
-
-// Connected account
-#user-profile-modal .guilds .section .connected-accounts .connected-account{
-    width: 210px;
-    background-color: #000;
-    border: 0;
-    border-radius: 0;
-    position: relative;
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account .connected-account-name-inner .connected-account-name{
-    color: #FFF;
-    font-size: $fwui;
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account a{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-#user-profile-modal .guilds .section .connected-accounts .connected-account a .connected-account-open-icon{
-    width: 100%;
-    height: 100%;
-    background-position: 200px center;
-}
-
-// Mutual Server
-#user-profile-modal .guilds .guild{
-    color: #FFF;
-    &:hover{
-        background: transparent;
+    // Common server list
+    div[class*=listRow]{
         color: #FFF;
+        font-weight: normal;
+        &:hover{
+            background-color: $b2;
+            background-image: none;
+        }
     }
-}
-#user-profile-modal .guilds .guild .guild-name{
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-}
-#user-profile-modal .guilds .guild .guild-nick{
-    color: #FFF;
-    font-size: $fschat;
-    line-height: $lh;
-}
 
-// Mutual friend
-#user-profile-modal .guilds .guild .status{
-    bottom: 0;
-    right: 0;
-    border: 0;
-}
-
-// Empty
-#user-profile-modal .empty{
-    background-color: $b1;
-}
-#user-profile-modal .empty .empty-icon-guilds,
-#user-profile-modal .empty .empty-icon-friends{
-    display: none;
-}
-#user-profile-modal .empty .empty-text{
-    margin-top: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
+    // No common friends
+    div[class^="emptyIconGuilds"],
+    div[class^="emptyIconFriends"]{
+        display: none;
+    }
+    div[class^="emptyText"]{
+        margin: 0;
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        text-transform: none;
+    }
 }
