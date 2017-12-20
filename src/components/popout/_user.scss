@@ -54,21 +54,6 @@ div[class^="userPopout-"]{
         text-transform: none;
     }
 
-    // Roles
-    .member-roles .member-role{
-        background-color: transparent;
-        border-color: #FFF;
-        border-radius: 0;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: normal;
-        line-height: $lh;
-    }
-    .member-roles .member-role .member-role-remove,
-    .member-roles .member-role.member-role-add button{
-        height: 20px;
-    }
-
     // Note
     .note textarea{
         min-height: 36px;
