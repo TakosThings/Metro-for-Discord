@@ -355,6 +355,7 @@ div[class*="switchDisabled-"]::after{
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"]{
     background-color: #101010 !important;
     border: 1px solid var(--accent) !important;
+    border-radius: 0;
 }
 label[class^="checkboxWrapper"] ~ div[class^="info"] div[class^="title"]{
     font-size: $fsui;
