@@ -209,11 +209,6 @@ div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentH
 }
 
 // New messages indicator
-div[class^="channels-"] .new-messages-indicator{
-    left: 8px;
-    border-radius: 0;
-    text-transform: none;
-}
-div[class^="channels-"] .new-messages-indicator.bottom{
+div[class^="channels-"] div[class^="bar-"]{
     border-radius: 0;
 }
