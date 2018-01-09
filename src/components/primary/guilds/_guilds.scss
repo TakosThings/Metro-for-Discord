@@ -123,18 +123,16 @@
 }
 
 // New messages indicator
-.guilds-wrapper .new-messages-indicator{
-    width: 48px;
-    left: 8px;
-    margin-bottom: 108px;
+.guilds-wrapper .unread-mentions-indicator-top > div[class^="bar-"],
+.guilds-wrapper .unread-mentions-indicator-bottom > div[class^="bar-"]{
+    background-color: $alert;
     border-radius: 0;
-    font-size: 0;
+    box-shadow: none;
 }
-.guilds-wrapper .new-messages-indicator::before{
-    content: "New";
-    font-size: 11px;
-    text-transform: none;
+.guilds-wrapper .unread-mentions-indicator-top,
+.guilds-wrapper .unread-mentions-indicator-bottom{
+    padding: 8px;
 }
-.guilds-wrapper .new-messages-indicator.bottom{
-    border-radius: 0;
+.guilds-wrapper .unread-mentions-indicator-bottom{
+    bottom: 104px;
 }
