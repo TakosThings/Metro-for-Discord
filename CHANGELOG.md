@@ -1,15 +1,27 @@
 # Changelog
 Newest Changes are at the top
 
-#### 3.4.0
+#### 3.4.1
 * **Enhancements**
+  * User popout roles
+* **Fixes**
+  * Settings sidebar regression
+  * Rounded edges on settings checkboxes
+  * Loading animations
+  * New unread notification bar in guilds pane
+  * New unread notification bar in channels pane
+* **Cleanup**
+  * Remove roles CSS from `/popout/_user.scss` (Old code)
+
+#### 3.4.0
+* **Enhancements** (2)
   * Make corners of flag icons square
   * Change the titlebar close button hover background colour
-* **Update**
+* **Update** (3)
   * New user profile
   * New user popout
   * New invites
-* **Fixes**
+* **Fixes** (5)
   * Channel name in toolbar clipping the bottom of some letters
   * Remove border radius on left side of channels pane
   * Remove top/bottom margins from chatbox
