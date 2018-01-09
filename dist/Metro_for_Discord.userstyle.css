@@ -46,7 +46,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.4.0";
+    content: "Metro for Discord 3.4.1";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -477,18 +477,16 @@
     font-size: 0; }
     .guilds-wrapper .guilds-add:hover {
       background-color: #333333; }
-  .guilds-wrapper .new-messages-indicator {
-    width: 48px;
-    left: 8px;
-    margin-bottom: 108px;
+  .guilds-wrapper .unread-mentions-indicator-top > div[class^="bar-"],
+  .guilds-wrapper .unread-mentions-indicator-bottom > div[class^="bar-"] {
+    background-color: #D02E00;
     border-radius: 0;
-    font-size: 0; }
-  .guilds-wrapper .new-messages-indicator::before {
-    content: "New";
-    font-size: 11px;
-    text-transform: none; }
-  .guilds-wrapper .new-messages-indicator.bottom {
-    border-radius: 0; }
+    box-shadow: none; }
+  .guilds-wrapper .unread-mentions-indicator-top,
+  .guilds-wrapper .unread-mentions-indicator-bottom {
+    padding: 8px; }
+  .guilds-wrapper .unread-mentions-indicator-bottom {
+    bottom: 104px; }
   div[class^="channels-"] div[class*="container"] > div[class*="noWrap"] > div ~ div ~ div[class*="button"] {
     width: 48px;
     height: 48px;
@@ -666,11 +664,7 @@
     font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
     border-radius: 0;
     color: #FFF; }
-  div[class^="channels-"] .new-messages-indicator {
-    left: 8px;
-    border-radius: 0;
-    text-transform: none; }
-  div[class^="channels-"] .new-messages-indicator.bottom {
+  div[class^="channels-"] div[class^="bar-"] {
     border-radius: 0; }
   .channel-notices .channel-notice {
     box-shadow: none; }
@@ -1593,6 +1587,7 @@
     width: 320px;
     padding: 15px 0 0 0; }
   .theme-dark .ui-standard-sidebar-view .sidebar-region {
+    flex: 0;
     background-color: #000; }
   .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="header"] {
     padding: 0 8px;
@@ -1612,14 +1607,14 @@
     .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"]:hover {
       background-color: rgba(255, 255, 255, 0.15); }
   .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"],
-  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"] {
+  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemSelected"] {
     background-color: transparent;
     color: var(--accent); }
     .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]:hover,
-    .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]:hover {
+    .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemSelected"]:hover {
       background-color: rgba(255, 255, 255, 0.15); }
   .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]::before,
-  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemDefaultSelected"]::before {
+  .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemSelected"]::before {
     content: "";
     width: 4px;
     height: 50%;
@@ -1991,7 +1986,8 @@
     box-shadow: none; }
   div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"] {
     background-color: #101010 !important;
-    border: 1px solid var(--accent) !important; }
+    border: 1px solid var(--accent) !important;
+    border-radius: 0; }
   label[class^="checkboxWrapper"] ~ div[class^="info"] div[class^="title"] {
     font-size: 15px;
     font-weight: 400; }
@@ -2073,17 +2069,14 @@
       font-size: 15px;
       font-weight: normal;
       text-transform: none; }
-    div[class^="userPopout-"] .member-roles .member-role {
-      background-color: transparent;
-      border-color: #FFF;
-      border-radius: 0;
+    div[class^="userPopout-"] li[class^="role-"] {
+      border-width: 2px;
       color: #FFF;
-      font-size: 15px;
-      font-weight: normal;
-      line-height: 1.5625; }
-    div[class^="userPopout-"] .member-roles .member-role .member-role-remove,
-    div[class^="userPopout-"] .member-roles .member-role.member-role-add button {
-      height: 20px; }
+      font-weight: normal; }
+    div[class^="userPopout-"] button[class^="addButton"] {
+      color: #FFF;
+      border-color: rgba(255, 255, 255, 0.6);
+      border-width: 2px; }
     div[class^="userPopout-"] .note textarea {
       min-height: 36px;
       padding: 9px 12px 10px;
@@ -3430,13 +3423,15 @@
   .keybind-shortcut.dim span {
     background-color: transparent;
     color: #FFF; }
-  .spinner-inner.spinner-wandering-cubes {
+  .spinner {
     background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: 32px;
     width: 32px;
     height: 32px;
-    -webkit-filter: invert(100%); }
+    -webkit-filter: invert(100%);
+    margin: 0 auto; }
   .spinner-wandering-cubes .spinner-item {
     display: none; }
   .chat div[class^="titleWrapper"] svg[name="NotificationBell"] {
