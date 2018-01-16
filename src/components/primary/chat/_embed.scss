@@ -23,3 +23,16 @@
 .theme-dark .message-group .embed .embed-fields{
     color: #FFF;
 }
+
+// GIFV (eg. from giphy)
+.embed .embed-thumbnail-gifv:after{
+    content: "GIF";
+    width: auto;
+    height: auto;
+    background-image: none;
+    color: #FFF;
+    top: auto;
+    bottom: 8px;
+    left: 8px;
+    font-size: 18px;
+}
