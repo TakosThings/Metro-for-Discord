@@ -46,7 +46,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.4.1";
+    content: "Metro for Discord 3.4.2";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -202,14 +202,15 @@
       background-color: #747474 !important; }
   .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
     background-color: #171717 !important; }
+  div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scrollbar {
+    height: 12px; }
   div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scrollbar-track {
     margin: 8px; }
   div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scrollbar-thumb {
-    background-color: #454545; }
+    background-color: #454545;
+    border-radius: 0; }
     div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scrollbar-thumb:hover {
       background-color: #747474; }
-  #autocomplete-popout div[class^="scroller-"]::-webkit-scrollbar-thumb {
-    visibility: visible; }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
@@ -225,109 +226,52 @@
     background-color: #191919; }
   .tooltip[style*="left: -15px;"] {
     display: none; }
-  .context-menu {
+  .theme-dark div[class^="contextMenu-"] {
+    background-color: #191919;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0;
     box-shadow: none; }
-  .theme-light.context-menu,
-  .theme-dark.context-menu {
-    background-color: #191919; }
-  .context-menu .item-group {
-    border-color: rgba(255, 255, 255, 0.2); }
-  .context-menu .item {
-    color: #FFF;
-    font-weight: normal;
-    padding: 6px 10px;
-    border-radius: 0;
-    margin: 0;
-    line-height: 1.5625;
-    text-align: left; }
-  .theme-dark.context-menu .item {
-    color: #FFF; }
-  .theme-dark.context-menu .item:hover {
-    background-color: #333333;
-    color: #FFF; }
-  .context-menu .item:first-of-type {
-    margin-top: 8px; }
-  .context-menu .item:last-of-type {
-    margin-bottom: 8px; }
-  .context-menu .item-subMenu {
-    background-color: transparent;
-    background-image: none; }
-  .theme-dark.context-menu .item-subMenu {
-    background-color: transparent;
-    background-image: none; }
-  .theme-dark.context-menu .item-subMenu:hover,
-  .context-menu .item-subMenu:hover {
-    background-image: none; }
-  .context-menu .item-subMenu::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    margin-top: 5px;
-    position: absolute;
-    right: 10px;
-    border-top: 1px solid #FFF;
-    border-right: 1px solid #FFF;
-    transform: rotate(40deg); }
-  .context-menu .context-menu {
-    margin-left: 166px; }
-  .theme-light.context-menu .context-menu,
-  .theme-dark.context-menu .context-menu {
-    background-color: #191919;
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: none; }
-  .context-menu .item.danger {
-    color: #D02E00; }
-    .context-menu .item.danger:hover {
+    .theme-dark div[class^="contextMenu-"] div[class^="item-"] {
+      max-height: 32px;
+      margin: 0;
+      padding: 8px 10px;
+      border-radius: 0;
+      color: #FFF;
+      font-size: 13px;
+      font-weight: 400; }
+      .theme-dark div[class^="contextMenu-"] div[class^="item-"]:hover {
+        background-color: #333333; }
+    .theme-dark div[class^="contextMenu-"] div[class*="danger-"] {
       color: #D02E00 !important; }
-  .context-menu .checkbox .checkbox-inner span {
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 0; }
-    .context-menu .checkbox .checkbox-inner span:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
-  .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span {
-    background-color: var(--accent);
-    border-color: var(--accent); }
-    .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span:hover {
+    .theme-dark div[class^="contextMenu-"] div[class*="itemSubMenu"] {
+      position: relative;
+      background-color: transparent;
+      background-image: none; }
+      .theme-dark div[class^="contextMenu-"] div[class*="itemSubMenu"]::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        right: 12px;
+        top: 50%;
+        margin-top: -6px;
+        border-top: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+        transform: rotate(45deg); }
+    .theme-dark div[class^="contextMenu-"] div[class^="item-"]:first-of-type {
+      margin-top: 8px; }
+    .theme-dark div[class^="contextMenu-"] div[class^="item-"]:last-of-type {
+      margin-bottom: 8px; }
+    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner span {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 0; }
+      .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner span:hover {
+        border-color: rgba(255, 255, 255, 0.8); }
+    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner input[type=checkbox]:checked + span {
+      background-color: var(--accent);
       border-color: rgba(255, 255, 255, 0.6); }
-  .context-menu .checkbox .checkbox-inner input[type=checkbox]:checked + span:after {
-    top: 1px;
-    left: 5px;
-    border-width: 0 1px 1px 0; }
-  .context-menu .slider .slider-bar {
-    height: 2px;
-    background-color: #666;
-    border-radius: 0; }
-  .context-menu .slider:hover .slider-bar {
-    background-color: #999; }
-  .context-menu .slider-bar-fill {
-    background-color: var(--accent); }
-  .context-menu .slider .slider-handle {
-    width: 8px;
-    height: 24px;
-    top: -11px;
-    background-color: var(--accent);
-    border: 0; }
-  .context-menu .slider:hover .slider-handle {
-    background-color: #FFF; }
-  .context-menu .slider .slider-handle span {
-    width: auto;
-    height: auto;
-    top: -31px;
-    left: -20px;
-    padding: 7px 8px 8px;
-    background-color: #191919;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 0;
-    box-sizing: border-box;
-    color: #FFF;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1; }
-  .context-menu .slider .slider-handle span::before,
-  .context-menu .slider .slider-handle span::after {
-    display: none; }
+    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner input[type=checkbox]:checked + span:after {
+      border-width: 0 1px 1px 0; }
   .connecting {
     background-color: #191919; }
   .titlebar ~ .connecting {
@@ -1046,17 +990,17 @@
     text-align: center; }
   div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHovered"] {
     transform: none; }
-  .typing {
+  .theme-dark div[class^="typing-"] {
     height: 20px;
-    color: #FFF;
+    background-color: transparent;
     font-size: 11px;
     line-height: 20px; }
-  .theme-dark .chat form .typing {
-    background-color: transparent; }
-  .typing strong {
-    font-weight: normal; }
-  .typing .ellipsis {
-    display: none; }
+    .theme-dark div[class^="typing-"] span[class^="ellipsis"] {
+      display: none; }
+    .theme-dark div[class^="typing-"] span[class^="text-"] {
+      color: #FFF; }
+      .theme-dark div[class^="typing-"] span[class^="text-"] strong {
+        font-weight: 400; }
   .theme-dark div[class^="autocomplete-"] {
     background-color: #191919;
     border-bottom: 1px solid #262626;
@@ -1106,35 +1050,30 @@
     .channel-textarea-guard button:hover {
       background-color: var(--accent);
       border-color: rgba(255, 255, 255, 0.6); }
-  .chat .welcome-message {
+  div[class^="welcomeMessage"] {
     background-color: #232323;
     align-items: baseline; }
-  .chat .welcome-message h1 {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: none; }
-  .chat .welcome-message p {
-    width: 100%;
-    margin: 0 0 0 10px;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 32px;
-    vertical-align: middle; }
-  .chat .welcome-message p strong {
-    font-weight: 500; }
-  .chat .welcome-message .item-container .icon {
-    width: 32px;
-    height: 32px; }
-  .chat .welcome-message .item-container .icon.exclamation,
-  .chat .welcome-message .item-container .icon.share,
-  .chat .welcome-message .item-container .icon.mobile,
-  .chat .welcome-message .item-container .icon.twitter {
-    background-size: 32px;
-    filter: grayscale(100%) brightness(200%); }
-  .chat .welcome-message > .empty-message {
-    display: none; }
+    div[class^="welcomeMessage"] h1[class^="h1-"] {
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: none; }
+    div[class^="welcomeMessage"] div[class^="icon-"] {
+      display: none; }
+    div[class^="welcomeMessage"] p {
+      width: auto;
+      margin: 0;
+      padding: 0 0 10px;
+      color: #FFF;
+      line-height: 1.3333; }
+    div[class^="welcomeMessage"] strong {
+      font-weight: normal; }
+    div[class^="welcomeMessage"] a {
+      color: #0078D7; }
+      div[class^="welcomeMessage"] a:hover {
+        color: #FFF; }
+    div[class^="welcomeMessage"] div[class^="emptyMessage"] {
+      display: none; }
   .message-group .comment .markup pre {
     border: 0;
     border-left: 4px solid #FFF;
@@ -1160,21 +1099,25 @@
   .message-group .comment .markup code.inline {
     padding: 2px 4px;
     border-radius: 0; }
-  .embed-wrapper .embed-color-pill {
+  .theme-dark div[class^="embed-"] div[class^="embedPill-"] {
+    background-color: #000;
     border-radius: 0; }
-  .theme-dark .message-group .embed-wrapper .embed-color-pill {
-    background-color: #000; }
-  .message-group .embed {
+  .theme-dark div[class^="embed-"] div[class^="embedInner"] {
+    background-color: #232323;
     border: 0;
     border-radius: 0; }
-  .theme-dark .message-group .embed {
-    background-color: #191919; }
-  .theme-dark .message-group .embed .embed-footer,
-  .theme-dark .message-group .embed .embed-provider {
-    color: #FFF; }
-  .theme-dark .message-group .embed .embed-description,
-  .theme-dark .message-group .embed .embed-fields {
-    color: #FFF; }
+  .theme-dark div[class^="embed-"] a[class*="embedImage"] {
+    border-radius: 0; }
+  .embed .embed-thumbnail-gifv:after {
+    content: "GIF";
+    width: auto;
+    height: auto;
+    background-image: none;
+    color: #FFF;
+    top: auto;
+    bottom: 8px;
+    left: 8px;
+    font-size: 18px; }
   .theme-dark .wrapper-uAa07y {
     background-color: #000;
     border: 0;
