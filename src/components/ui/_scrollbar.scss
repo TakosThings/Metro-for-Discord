@@ -78,17 +78,17 @@
 }
 // Chatbox autocomplete horizontal scrollbar
 div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
+    &::-webkit-scrollbar{
+        height: 12px;
+    }
     &::-webkit-scrollbar-track{
         margin: 8px;
     }
     &::-webkit-scrollbar-thumb{
         background-color: #454545;
+        border-radius: 0;
         &:hover{
             background-color: #747474;
         }
     }
-}
-// Autocomplete popout
-#autocomplete-popout div[class^="scroller-"]::-webkit-scrollbar-thumb{
-    visibility: visible;
 }
