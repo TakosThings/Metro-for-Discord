@@ -62,20 +62,24 @@ div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHover
 }
 
 // Typing
-.typing{
+.theme-dark div[class^="typing-"]{
     height: 20px;
-    color: #FFF;
+    background-color: transparent;
     font-size: 11px;
     line-height: 20px;
-}
-.theme-dark .chat form .typing{
-    background-color: transparent;
-}
-.typing strong{
-    font-weight: normal;
-}
-.typing .ellipsis{
-    display: none;
+
+    // Hide dots animation
+    & span[class^="ellipsis"]{
+        display: none;
+    }
+
+    // X is typing...
+    & span[class^="text-"]{
+        color: #FFF;
+        & strong{
+            font-weight: $fwchat;
+        }
+    }
 }
 
 // Auto complete
