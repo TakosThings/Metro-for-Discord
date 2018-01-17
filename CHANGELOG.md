@@ -1,16 +1,26 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.4.2
+* **Enhancements** (2)
+  * Made scrollbar in autocomplete easier to use when searching Giphy
+  * Change appearance of "GIF" text in embedded gifs
+* **Update** (4)
+  * Context menu
+  * "X is typing..." message
+  * Server welcome message
+  * Embeds
+
 #### 3.4.1
-* **Enhancements**
+* **Enhancements** (1)
   * User popout roles
-* **Fixes**
+* **Fixes** (5)
   * Settings sidebar regression
   * Rounded edges on settings checkboxes
   * Loading animations
   * New unread notification bar in guilds pane
   * New unread notification bar in channels pane
-* **Cleanup**
+* **Cleanup** (1)
   * Remove roles CSS from `/popout/_user.scss` (Old code)
 
 #### 3.4.0
