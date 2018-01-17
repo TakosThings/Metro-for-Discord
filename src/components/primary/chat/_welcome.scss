@@ -1,36 +1,38 @@
-.chat .welcome-message{
+div[class^="welcomeMessage"]{
     background-color: darken($b2, 1%);
     align-items: baseline;
-}
-.chat .welcome-message h1{
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    text-transform: none;
-}
-.chat .welcome-message p{
-    width: 100%;
-    margin: 0 0 0 10px;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 32px;
-    vertical-align: middle;
-}
-.chat .welcome-message p strong{
-    font-weight: 500;
-}
-.chat .welcome-message .item-container .icon{
-    width: 32px;
-    height: 32px;
-}
-.chat .welcome-message .item-container .icon.exclamation,
-.chat .welcome-message .item-container .icon.share,
-.chat .welcome-message .item-container .icon.mobile,
-.chat .welcome-message .item-container .icon.twitter{
-    background-size: 32px;
-    filter: grayscale(100%) brightness(200%);
-}
-.chat .welcome-message>.empty-message{
-    display: none;
+
+    // Header
+    & h1[class^="h1-"]{
+        color: #FFF;
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        text-transform: none;
+    }
+
+    // Remove icons
+    div[class^="icon-"]{
+        display: none;
+    }
+    p{
+        width: auto;
+        margin: 0;
+        padding: 0 0 10px;
+        color: #FFF;
+        line-height: 1.3333;
+    }
+    strong{
+        font-weight: normal;
+    }
+    a{
+        color: $a;
+        &:hover{
+            color: #FFF;
+        }
+    }
+
+    // Remove footer watermark
+    div[class^="emptyMessage"]{
+        display: none;
+    }
 }
