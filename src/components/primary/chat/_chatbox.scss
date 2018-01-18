@@ -60,6 +60,9 @@ div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]::
 div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHovered"]{
     transform: none;
 }
+div[class*="channelTextArea"] div[class*="emojiButton-"].popout-open{
+    background-color: var(--accent);
+}
 
 // Typing
 .theme-dark div[class^="typing-"]{
