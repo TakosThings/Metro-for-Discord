@@ -1,7 +1,7 @@
 .theme-dark{
     & .scroller-wrap .scroller.messages,
       #friends .scroller,
-      .emoji-picker .scroller,
+      div[class^="emojiPicker"] div[class*="scroller-"],
       div[class^="userPopout-"] .member-roles,
       #user-profile-modal .scroller,
       .quickswitcher .results-scroller,
@@ -51,7 +51,7 @@
 
 // Special snowflakes
 // Emoji picker
-.emoji-picker .scroller::-webkit-scrollbar-thumb{
+div[class^="emojiPicker"] div[class*="scroller-"]::-webkit-scrollbar-thumb{
     visibility: visible;
     background-color: #454545 !important;
     &:hover{
