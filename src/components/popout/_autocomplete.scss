@@ -1,57 +1,44 @@
-#autocomplete-popout{
+.theme-dark #autocomplete-popout{
     border: 1px solid var(--accent);
     border-radius: 0;
-}
-
-#autocomplete-popout header::before{
-    display: none;
-}
-#autocomplete-popout header{
-    background-color: $b1;
-    padding: 0 10px;
-}
-#autocomplete-popout header h3{
-    display: none;
-}
-#autocomplete-popout input[type=text]{
-    height: 36px;
-    padding: 9px 12px 10px;
-    border: 1px solid $inputborder;
-    box-sizing: border-box;
-    font-size: $fsui;
-    font-weight: $fwui;
-    &::-webkit-input-placeholder{
-        color: rgba(255,255,255,.5);
+    .autocomplete-shadow{
+        border-radius: 0;
     }
-    &:hover{
-        border-color: $inputborderhover;
+    .autocomplete-arrow{
+        background-color: var(--accent);
     }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
-        &::-webkit-input-placeholder{
-            color: rgba(0,0,0,.5);
+    header{
+        height: auto;
+        padding: 8px;
+        .autocomplete-header-background{
+            background-color: $b1;
+        }
+        h3{
+            display: none;
+        }
+        input{
+            height: 36px;
+            padding: 9px 12px 10px;
+            box-sizing: border-box;
+            border: 1px solid $inputborder;
+            color: #FFF !important;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+            &:focus{
+                border-color: var(--accent);
+            }
+            &::-webkit-input-placeholder{
+                color: #FFF !important;
+            }
         }
     }
-}
-
-#autocomplete-popout section{
-    background-color: $b1;
-    border-radius: 0;
-}
-
-#autocomplete-popout .row{
-    color: #FFF;
-}
-#autocomplete-popout .row a{
-    color: #FFF;
-}
-#autocomplete-popout .row.selected a,
-#autocomplete-popout .row:hover a{
-    color: #FFF;
-}
-#autocomplete-popout .row.selected{
-    background-color: var(--accent);
-    background-image: none;
+    section{
+        background-color: $b1;
+        color: #FFF;
+        .row.selected{
+            background-color: $b2;
+            background-image: none;
+        }
+    }
 }
