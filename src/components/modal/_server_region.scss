@@ -1,54 +1,50 @@
-.region-select-modal{
-    padding: 20px;
+div[class^="regionSelectModal-"]{
     background-color: $b1;
     border: 1px solid var(--accent);
     border-radius: 0;
-}
 
-//Header
-.region-select-modal .region-select-modal-header{
-    padding-top: 36px;
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    text-align: left;
-    text-transform: none;
-}
-
-// Region
-.region-select-modal .region-select-modal-option{
-    width: 100%;
-    height: auto;
-    padding: 4px;
-    margin: 0 0 8px 0;
-    justify-content: flex-start;
-    flex-direction: row;
-    background-color: transparent;
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    &:hover{
-        border-color: $inputborderhover;
+    //Header
+    div[class^="regionSelectModalHeader-"]{
+        padding: 36px 0 0;
+        color: #FFF;
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        text-align: left;
+        text-transform: none;
     }
-}
-// Square corners on flags
-.region-select-flag,
-.ui-region-flag {
-    clip-path: inset(1px 1px 1px 1px);
-}
-.region-select-modal .region-select-modal-option .region-select-name{
-    padding: 0 8px;
-    margin: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-align: left;
-    display: inline;
-}
-
-// Footer
-.region-select-modal .region-select-modal-footer{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-align: left;
+    div[class^="regionSelectModalOptions-"]{
+        div[class^="regionSelectModalOption-"]{
+            width: 100%;
+            height: auto;
+            padding: 4px;
+            margin: 0 0 8px 0;
+            justify-content: flex-start;
+            flex-direction: row;
+            background-color: transparent;
+            border: 1px solid $inputborder;
+            border-radius: 0;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+            div[class^="regionSelectFlag"]{
+                clip-path: inset(1px 1px 1px 1px);
+            }
+            div[class^="regionSelectName"]{
+                padding: 0 8px;
+                margin: 0;
+                color: #FFF;
+                font-size: $fsui;
+                font-weight: $fwui;
+                text-align: left;
+                display: inline;
+            }
+        }
+        
+    }
+    // Footer
+    div[class^="regionSelectModalFooter-"]{
+        color: #FFF;
+        font-size: $fsui;
+        text-align: left;
+    }
 }
