@@ -1,49 +1,40 @@
-#rtc-connection-popout{
+div[class^="container-"][popoutkey]{
     border: 1px solid var(--accent);
-}
+    header{
+        background-color: $b1;
+        border-radius: 0;
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        text-transform: none;
+        justify-content: initial;
+        padding: 36px 12px 12px;
+    }
 
-// Header
-#rtc-connection-popout header{
-    justify-content: flex-start;
-    padding: 30px 20px 10px;
-    background-color: $b1;
-    border-radius: 0;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
+    // Latency graph
+    div[class^="sparkline"] svg g polyline:first-of-type{
+        fill: #FFF !important;
+    }
+    div[class^="sparkline"] svg g polyline:last-of-type{
+        stroke: #FFF !important;
+    }
 
-// Section
-#rtc-connection-popout section{
-    background-color: $b1;
-    border-radius: 0;
-}
-#rtc-connection-popout section p{
-    color: #FFF;
-    font-size: $fsui;
-}
-#rtc-connection-popout section p strong{
-    color: var(--accent);
-    font-weight: normal;
-}
-#rtc-connection-popout hr{
-    border: 0;
-}
-#rtc-connection-popout section::after{
-    display: none;
-}
-
-// Polyline
-#rtc-connection-popout .sparkline svg g polyline:first-of-type{
-    fill: #FFF !important;
-}
-#rtc-connection-popout .sparkline svg g polyline:last-of-type{
-    stroke: #FFF !important;
-}
-
-// Debug
-#rtc-connection-popout .debug-button{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
+    // Section
+    section{
+        background-color: $b1;
+        border-radius: 0;
+        p{
+            color: #FFF;
+            font-size: $fschat;
+        }
+        hr{
+            border: 0;
+            border-top: 1px solid $b2;
+        }
+    }
+    
+    // Debug button
+    a[class^="debugButton-"]{
+        color: #FFF;
+        font-weight: $fwui;
+    }
 }
