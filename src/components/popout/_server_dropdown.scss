@@ -1,35 +1,34 @@
-.popout.popout-bottom > .popout-menu{
-    background-color: $b3;
+// Gonna have to use the actual class, so we don't interfere with some other popout menus of similar types
+.menu-3BZuDT{
+    background-color: $b2;
+    border: 1px solid var(--accent);
     border-radius: 0;
-}
-.popout-menu .popout-menu-separator{
-    border-bottom: 1px solid rgba(255,255,255,.05);
-}
-
-// Item
-.popout-menu .popout-menu-item{
-    color: #FFF;
-    line-height: $lh;
-    &:hover{
-        background-color: var(--accent);
+    div[class^="item-"]{
         color: #FFF;
+        &:hover{
+            background-color: $b3;
+        }
+        div[class^="icon-"]{
+            display: none;
+        }
     }
-}
-.popout-menu .popout-menu-icon{
-    display: none;
-}
-
-// Special items
-.popout-menu .popout-menu-item.invite{
-    color: #FFF;
-    &:hover{
-        color: #FFF;
+    div[class^="separator-"]{
+        border-bottom: 1px solid $b3;
     }
-}
-.popout-menu .popout-menu-item.leave{
-    color: $alert;
-    &:hover{
-        background-color: $alert;
-        color: #FFF;
+
+    // Special types
+    // Leave server
+    div[class*="leave-"]{
+        color: $alert;
+        &:hover{
+            background-color: $alert;
+            color: #FFF;
+        }
+    }
+    // Invite
+    div[class*="invite-"]{
+        &:hover{
+            color: #FFF;
+        }
     }
 }
