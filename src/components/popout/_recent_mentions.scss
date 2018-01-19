@@ -89,7 +89,8 @@
     background-color: transparent;
 }
 // Protip
-.protip.popout-footer{
+.popout .footer div[class^="pro-"],
+.popout .footer div[class^="tip-"]{
     display: none;
 }
 
