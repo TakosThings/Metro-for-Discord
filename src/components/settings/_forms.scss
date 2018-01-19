@@ -71,71 +71,44 @@
 }
 
 // Dropdown
-.ui-select{
-    font-size: 15px;
-}
-.ui-select .Select-control,
-.ui-select .Select-option{
-    min-height: 36px;
-}
-.theme-dark .ui-select .Select:not(.is-disabled) .Select-control{
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    &:hover{
+.theme-dark div[class^="select-"]{
+    .Select{
+        font-size: $fsui;
+    }
+    .Select-control{
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+    }
+    .is-open .Select-control{
+        background-color: var(--accent);
         border-color: $inputborderhover;
     }
-}
-.theme-dark .ui-select .is-open .Select-control{
-    border-color: $inputborderhover;
-}
-.Select-value{
-    top: -2px;
-}
-// Down arrow
-.Select-arrow-zone{
-    padding-right: 8px;
-}
-.theme-dark .ui-select .is-disabled .Select-control:hover .Select-arrow,
-.theme-dark .ui-select .Select-control:hover .Select-arrow,
-.theme-dark .ui-select .is-focused .Select-control .Select-arrow,
-.theme-dark .ui-select .Select-control .Select-arrow{
-    width: 8px;
-    height: 8px;
-    border: 0;
-    border-right: 1px solid #FFF;
-    border-bottom: 1px solid #FFF;
-    transform: rotate(45deg) translateY(-5px);
-}
-// Dropdown menu
-.Select-menu-outer{
-    margin-top: 0;
-    border-radius: 0;
-}
-.theme-dark .ui-select .Select-menu-outer{
-    background-color: $b1;
-}
-.ui-select .Select-menu{
-    border-radius: 0;
-}
-.theme-dark .ui-select .Select-menu-outer{
-    border: 0;
-    box-shadow: none;
-}
-.Select-option:last-child{
-    border-radius: 0;
-}
-.theme-dark .ui-select .Select-option.is-selected{
-    background-color: transparent;
-}
-.theme-dark .ui-select .Select-option.is-focused,
-.theme-dark .ui-select .Select-option:hover{
-    background-color: var(--accent);
-}
-.ui-select .Select-placeholder{
-    line-height: 36px;
-}
-.theme-dark .ui-select .Select-control .Select-placeholder{
-    color: #FFF;
+    .Select-menu-outer{
+        margin: 0;
+        background-color: $b1;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        .Select-menu{
+            border-radius: 0;
+            .Select-option{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                &.is-selected{
+                    background-color: transparent;
+                }
+                &.is-focused{
+                    background-color: var(--accent);
+                }
+            }
+        }
+    }
 }
 
 // Buttons
