@@ -33,6 +33,10 @@
         background-color: rgba(255,255,255,0.15);
     }
 }
+// Nitro item
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
+    color: #FFF !important;
+}
 
 // Selected item
 .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"],
