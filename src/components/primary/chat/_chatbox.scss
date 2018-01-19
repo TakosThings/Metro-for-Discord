@@ -86,7 +86,8 @@ div[class*="channelTextArea"] div[class*="emojiButton-"].popout-open{
 }
 
 // Auto complete
-.theme-dark div[class^="autocomplete-"]{
+// Hack to stop the autocomplete popout being selected
+.theme-dark div[class^="emojiButton"] ~ div[class^="autocomplete-"]{
     background-color: $b1;
     border-bottom: 1px solid $b2;
     border-radius: 0;
