@@ -92,3 +92,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
         }
     }
 }
+// Autocomplete popout
+#autocomplete-popout div[class^="scroller-"]::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
