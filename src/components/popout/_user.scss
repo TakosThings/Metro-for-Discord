@@ -67,7 +67,7 @@ div[class^="userPopout-"]{
     }
 
     // Note
-    .note textarea{
+    div[class^="note-"] textarea{
         min-height: 36px;
         padding: 9px 12px 10px;
         border: 1px solid $inputborder;
@@ -90,7 +90,8 @@ div[class^="userPopout-"]{
         background-color: $b1;
         border: 0;
     }
-    input[class^="quick-message"]{
+    input[class^="quickMessage"]{
+        height: 36px;
         margin-bottom: 0;
         padding: 9px 12px 10px;
         border: 1px solid $inputborder;
@@ -106,7 +107,7 @@ div[class^="userPopout-"]{
             border-color: var(--accent);
         }
     }
-    .protip{
+    div[class^="protip"]{
         display: none;
     }
 }
