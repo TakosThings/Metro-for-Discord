@@ -16,6 +16,16 @@
             background-color: $b3;
         }
     }
+    div[class*="itemSlider-"]{
+        max-height: 128px;
+        div[class^="slider"] div[class^="track"] div[class^="grabber"]{
+            margin-top: -4px;
+        }
+        div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]{
+            top: -29px;
+            box-sizing: border-box;
+        }
+    }
 
     // Danger Six
     div[class*="danger-"]{
