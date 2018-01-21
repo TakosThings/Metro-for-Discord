@@ -1,13 +1,35 @@
-.spinner{
-    background-image: url(https://i.imgur.com/MfeQkLJ.gif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 32px;
-    width: 32px;
-    height: 32px;
-    -webkit-filter: invert(100%);
-    margin: 0 auto;
+// Legacy spinner animation (eg. Loading chat, members list)
+.spinner .spinner-wandering-cubes{
+    span:first-of-type{
+        width: 32px;
+            height: 32px;
+            background-color: transparent;
+            background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+            background-position: center center;
+            background-size: 32px 32px;
+            filter: invert(100%);
+            animation: none;
+    }
+    span:last-of-type{
+        display: none;
+    }
 }
-.spinner-wandering-cubes .spinner-item{
-    display: none;
+
+// Loading embedded image
+span[class^="spinner-"]{
+    span[class^="inner-"]{
+        span[class^="wanderingCubesItem"]:first-of-type{
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+            background-position: center center;
+            background-size: 32px 32px;
+            filter: invert(100%);
+            animation: none;
+        }
+        span[class^="wanderingCubesItem"]:last-of-type{
+            display: none;
+        }
+    }
 }
