@@ -46,6 +46,26 @@
     border: 0;
 }
 
+// Is typing
+.status.status-typing{
+    width: 10px !important;
+    height: 10px;
+    right: 0 !important;
+    .spinner{
+        .spinner-item{
+            width: 10px;
+            height: 10px;
+            margin-right: 0px;
+            border-radius: 50%;
+            opacity: 1;
+            animation: memberstypingpulse 1s infinite ease-in-out;
+        }
+        .spinner-item:not(:first-of-type){
+            display: none;
+        }
+    }
+}
+
 // Playing status
 .channel-members .member .member-activity{
     color: #FFF;
