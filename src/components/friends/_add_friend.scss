@@ -12,37 +12,6 @@
     color: #FFF;
 }
 
-// Add input
-.add-friend-input-wrapper{
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-}
-.add-friend-input-wrapper .add-friend-hint{
-    display: none;
-}
-.add-friend-input-wrapper .add-friend-input{
-    min-height: 36px;
-    padding: 4px 8px;
-    box-sizing: border-box;
-    font-family: $font;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 1;
-    letter-spacing: normal;
-}
-.add-friend-input-wrapper .add-friend-input{
-    border: 1px solid $inputborder;
-    &:hover{
-        border-color: $inputborderhover;
-    }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
-    }
-}
-
 // Sends request button
 #friends .btn{
     background-color: var(--accent);
