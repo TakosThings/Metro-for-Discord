@@ -85,7 +85,7 @@
 .search-popout .date-picker{
     border: 0;
 }
-.ui-calendar-picker .react-datepicker{
+div[class^="calendarPicker"] .react-datepicker{
     padding: 14px;
     border-radius: 0;
     color: #FFF;
@@ -93,40 +93,40 @@
     font-size: $fsui;
     font-weight: $fwui;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker{
     background-color: transparent;
 }
 // Header
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__header{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__header{
     background-color: transparent;
     border: 0;
 }
-.ui-calendar-picker .react-datepicker__current-month{
+div[class^="calendarPicker"] .react-datepicker__current-month{
     font-size: $fsui;
     font-weight: $fwui;
     text-transform: none;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__current-month{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__current-month{
     border: 0;
     color: #FFF;
 }
 // Day headers
-.ui-calendar-picker .react-datepicker__day-name{
+div[class^="calendarPicker"] .react-datepicker__day-name{
     font-size: 13px;
     font-weight: $fwui;
     text-transform: none;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day-name{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day-name{
     color: #FFF;
 }
 // Calendar
 // Who ever wrote this shit is a numpty
-.ui-calendar-picker .react-datepicker__day,
-.ui-calendar-picker .react-datepicker__week:last-of-type>.react-datepicker__day,
-.ui-calendar-picker .react-datepicker__week>.react-datepicker__day:last-of-type{
+div[class^="calendarPicker"] .react-datepicker__day,
+div[class^="calendarPicker"] .react-datepicker__week:last-of-type>.react-datepicker__day,
+div[class^="calendarPicker"] .react-datepicker__week>.react-datepicker__day:last-of-type{
     border: 0;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day{
     margin: 0 2px 2px 0;
     border: 2px solid transparent;
     color: #FFF;
@@ -136,32 +136,35 @@
         border-color: rgba(255,255,255,.4);
     }
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week .react-datepicker__day:last-of-type,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__week:last-of-type .react-datepicker__day{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__week .react-datepicker__day:last-of-type,
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__week:last-of-type .react-datepicker__day{
     border: 2px solid transparent;
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day:last-of-type{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day:last-of-type{
     margin: 0 0 2px 0;
 }
 // Outside of month, to the past
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--outside-month{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--outside-month{
     background-color: transparent;
     color: rgba(255,255,255,.3);
 }
 // Outside of month, to the future
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled,
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day.react-datepicker__day--disabled:hover{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day.react-datepicker__day--disabled,
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day.react-datepicker__day--disabled:hover{
     color: rgba(255,255,255,.4);
 }
 // Today
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--today{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--today{
     background-color: var(--accent);
+    &:hover{
+        background-color: var(--accent) !important;
+    }
 }
 // Selected
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--selected{
     border: 2px solid var(--accent);
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__day--selected::after{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--selected::after{
     display: none;
 }
 
@@ -178,7 +181,7 @@
 }
 
 // Incr button
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--previous{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--previous{
     width: 10px;
     height: 10px;
     top: 23px;
@@ -193,7 +196,7 @@
         border-color: $inputborderhover;
     }
 }
-.theme-dark .theme-light .ui-calendar-picker .react-datepicker__navigation.react-datepicker__navigation--next{
+.theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--next{
     width: 10px;
     height: 10px;
     top: 16px;
