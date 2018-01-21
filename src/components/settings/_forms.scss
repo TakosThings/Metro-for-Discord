@@ -262,6 +262,10 @@ button[class^="buttonWhiteOutlined"],
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class*="checked"]{
     background-color: var(--accent);
     border-color: var(--accent);
+    border-radius: 0;
+}
+.theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class^="checkbox"][class*="box-"]{
+    border-radius: 0;
 }
 // Checkmark
 .theme-dark label[class^="checkboxWrapper"] input[type="checkbox"] ~ div[class*="checked"] > svg > g > polyline{
