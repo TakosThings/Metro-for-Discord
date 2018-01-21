@@ -172,22 +172,22 @@ div[class^="emojiPicker-"] div[class^="categories"] div[class*="flags"]{
 }
 
 // Upload modal
-.upload-modal .inner .file .icon{
-    &.acrobat,
-    &.ae,
-    &.ai,
-    &.archive,
-    &.code,
-    &.document,
-    &.photoshop,
-    &.ps,
-    &.sketch,
-    &.spreadsheet,
-    &.unknown,
-    &.video,
-    &.webcode{
+div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"] {
+    &[class*="acrobat"],
+    &[class*="ae"],
+    &[class*="ai"],
+    &[class*="archive"],
+    &[class*="code"],
+    &[class*="document"],
+    &[class*="photoshop"],
+    &[class*="ps"],
+    &[class*="sketch"],
+    &[class*="spreadsheet"],
+    &[class*="unknown"],
+    &[class*="video"],
+    &[class*="webcode"]{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMABQ4PECAkKC0wMjc9QGB1f4Cgv8DHyczN4OLm5+rt8PP192v0xVYAAADJSURBVHja7dPbDsFQEIXhoYqi2GznQ4v3f0cJ6XLRpGk3KyrWfz3Jl5lkTCnV2mJXt1k4kt5qt46ICNp2qQgUKgKFi0AJR3x12UvphSNWnS/twkKgUBEoVAQKBVk+hhb7Qol4yDw+YBfauZz1T1B4iA3OUHiIDTMoPMRGORQeYuMLFB5ikysUArLzz47FV26izyPlVh0iglIh30KmrlQI0jghQoQIESJEiBAhQoQIESJEiBAhQv4ccY1rhgQm5LeRxL9VYkqptnYHdgDuPCcIJAIAAAAASUVORK5CYII=);    
-        background-size: 100px;
+        background-size: 64px;
     }
 }
 
