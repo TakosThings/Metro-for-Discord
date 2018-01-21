@@ -226,29 +226,6 @@ button[class^="buttonWhiteOutlined"],
     }
 }
 
-// Keybind box
-.ui-input-button{
-    height: 36px;
-    border-radius: 0;
-}
-.theme-dark .ui-input-button{
-    border-color: $inputborder;
-    &:hover{
-        border-color: $inputborderhover;
-    }
-}
-.ui-key-recorder .input::-webkit-input-placeholder{
-    font-weight: normal;
-}
-
-// Keybind box button ('Record Keybind')
-.ui-input-button .ui-input-button-ui-button{
-    padding: 2px 20px;
-    border-radius: 0;
-    font-size: 13px;
-    font-weight: normal;
-}
-
 // Game list - Unverified game textbox
 .theme-dark .user-settings-games .game-name-input{
     height: 36px;
