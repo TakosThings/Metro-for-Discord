@@ -1,6 +1,37 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.4.3
+* **Update** (9)
+  * Emoji picker
+  * Lightbox
+  * Server dropdown menu
+  * Status change menu
+  * RTC popout
+  * Server region select
+  * Dropdown inputs
+  * Nitro settings sidebar option text colour
+  * Upload modal
+* **Fixes** (12)
+  * Context menu checkmark position
+  * Some user popout selectors for inputs
+  * Chatbox autocomplete applying style to another unrelated element (autocomplete popout)
+  * Search popout applying style to autocomplete popout (animation and positioning)
+  * Remove protip from pinned messages
+  * Unread guilds notification no disappearing even if guilds were scrolled to the bottom of the list
+  * Loading animations
+  * Typing animation in members list was playing the loading spinner GIF
+  * Update search datepicker classes
+  * Game name input boxes should now be uniform with other inputs
+  * Some checkboxes in Privacy and Safety settings had rounded edges
+  * Start of channel history message
+* **Cleanup** (1)
+  * Remove some unused code from `/friends/_add_friend.scss` (Not worth updating )
+* **Known issues** (3)
+  * Instant invite modal has been reverted back to default style. It's currently marked as deprecated, therefore will not be fixed until it's revamped.
+  * Add game popout is having animation and positioning CSS applied to it from pinned/recent messages.
+  * Attachments embedded in chat (eg. zip, text files etc.) have reverted back to the default icons. A fix is being researched.
+
 #### 3.4.2
 * **Enhancements** (2)
   * Made scrollbar in autocomplete easier to use when searching Giphy
