@@ -274,18 +274,17 @@
 }
 
 // Start of channel history
-.chat .empty-message{
+.theme-dark .chat .messages div[class^="default-"]{
     height: auto;
     margin: 0;
     padding: 20px;
-}
-.theme-dark .chat .empty-message{
+    background-color: #232323;
     background-image: none;
-}
-.chat .empty-message h1{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwchat;
+    h1.old-h1{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwchat;
+    }
 }
 
 // File attachments
