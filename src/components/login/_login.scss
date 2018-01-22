@@ -37,6 +37,12 @@ form.deprecated.auth-form h1{
     font-weight: 300;
     text-transform: none;
 }
+.form-deprecated .control-group label, .form.deprecated .control-group label{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: normal;
+    text-transform: none;
+}
 .form.deprecated .control-group input[type=email],
 .form.deprecated .control-group input[type=number],
 .form.deprecated .control-group input[type=password],
@@ -44,7 +50,7 @@ form.deprecated.auth-form h1{
 .form.deprecated .control-group textarea{
     padding-left: 11px;
     margin-bottom: 0;
-    color: #FFF;
+    color: #000;
     font-size: 15px;
     font-weight: normal;
 }
@@ -52,11 +58,15 @@ form.deprecated.auth-form h1{
 form.deprecated.auth-form .control-group input[type=email],
 form.deprecated.auth-form .control-group input[type=password],
 form.deprecated.auth-form .control-group input[type=text]{
-    border: 1px solid rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,.6);
+    border: 1px solid #FFF;
+    color: #000;
     &:hover{
-        border-color: rgba(255,255,255,0.8);
+        background-color: rgba(255,255,255,.8);
+        border-color: #FFF;
     }
     &:focus{
+        background-color: #FFF;
         border-bottom: 1px solid #0072C6;
         border-color: #0072C6;
     }
@@ -72,7 +82,16 @@ form.deprecated.auth-form .btn-forgot-password{
 
 // Button
 form.deprecated.auth-form .btn-primary{
+    background-color: #0072C6;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: normal;
     line-height: 36px;
+    &:hover{
+        background-color: #0072C6;
+        border-color: rgba(255,255,255,0.6);
+    }
 }
 
 // 2FA code
