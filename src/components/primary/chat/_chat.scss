@@ -288,25 +288,44 @@
 }
 
 // File attachments
-.message-group .comment .attachment{
-    min-width: 256px;
-    padding: 10px;
+.message-group .comment div[class^="attachment-"]{
+    height: 56px;
+    padding: 8px;
     background-color: $b1;
 }
-.message-group .comment .attachment .icon{
-    width: 32px;
-    height: 32px;
+.message-group .comment div[class^="attachment-"] img[class^="icon-"]{
+    display: none;
+}
+.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"]{
+    height: 40px;
+    position: relative;
+    padding-left: 48px;
+}
+.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"] a[class^="filename-"]{
+    font-size: $fsui;
+    font-weight: $fwui;
+    line-height: $lh;
+}
+.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"] div[class^="metadata-"]{
+    color: #FFF;
+    font-weight: normal;
+}
+.message-group .comment div[class^="attachment-"] img[class^="icon-"]~div::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: var(--accent);
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4px;
+    background-size: 24px;
+    box-sizing: border-box;
 }
-.message-group .comment .attachment a{
-    font-weight: $fwui;
-}
-.message-group .comment .attachment .metadata{
-    color: #FFF;
-}
+
+
 // Uploading
 .message-group .comment .attachment .upload>.filename{
     color: var(--accent);
