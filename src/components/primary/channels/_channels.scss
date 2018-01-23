@@ -4,7 +4,7 @@
 }
 
 // Channel header
-div[class^="channels-"] header{
+div[class^="channels-"] div[class^="container-"] header{
     height: 40px;
     background-color: $b1;
     padding: 0 18px;
