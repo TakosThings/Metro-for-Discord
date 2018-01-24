@@ -14,15 +14,19 @@
     }
 }
 
-// GIFV (eg. from giphy)
-.embed .embed-thumbnail-gifv:after{
-    content: "GIF";
+// GIF (eg. from giphy)
+div[class^="embed-"] div[class^="gifTag-"],
+div[class^="imageAccessory"]{
     width: auto;
     height: auto;
-    background-image: none;
-    color: #FFF;
-    top: auto;
+    top: initial;
+    right: initial;
     bottom: 8px;
     left: 8px;
+    background-image: none;
+}
+div[class^="embed-"] div[class^="gifTag-"]::before{
+    content: "GIF";
+    color: #FFF;
     font-size: 18px;
 }
