@@ -5,7 +5,6 @@
       div[class^="userPopout-"] .member-roles,
       .inner-1_1f7b div[class^="scroller-"], // User profile modal
       div[class^="quickswitcher-"] div[class*="scroller-"],
-      .notification-settings-modal .scroller,
       .messages-popout-wrap .scroller,
       .search-results-wrap .scroller-wrap .scroller,
       .private-channel-recipients-invite .body .scroller,
@@ -57,24 +56,6 @@ div[class^="emojiPicker"] div[class*="scroller-"]::-webkit-scrollbar-thumb{
     &:hover{
         background-color: #747474 !important;
     }
-}
-// User profile modal
-#user-profile-modal .scroller::-webkit-scrollbar-track-piece{
-    visibility: visible;
-}
-#user-profile-modal .scroller::-webkit-scrollbar-thumb{
-    visibility: visible;
-}
-// Search results pane
-.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb{
-    background-color: #454545 !important;
-    border: 0 !important;
-    &:hover{
-        background-color: #747474 !important;
-    }
-}
-.theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece{
-    background-color: #171717 !important;
 }
 // Chatbox autocomplete horizontal scrollbar
 div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
