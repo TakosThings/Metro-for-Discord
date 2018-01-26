@@ -84,3 +84,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
         visibility: visible;
     }
 }
+// Friends list - only show scrollbar when we need it
+#friends .scroller{
+    overflow-y: auto;
+}
