@@ -22,7 +22,8 @@
     // Username
     div[class^="headerInfo"] span.username{
         font-size: 24px;
-        font-weight: normal;
+        font-weight: 300;
+        line-height: $lh;
     }
     // Badge
     div[class^="headerInfo"] div[class^="profileBadgeText"]{
@@ -153,6 +154,7 @@
     }
     div[class*="connectedAccountName"]{
         color: #FFF;
+        line-height: $lh;
     }
 
     // Common server list
@@ -162,6 +164,12 @@
         &:hover{
             background-color: $b2;
             background-image: none;
+        }
+        div[class^="listName"]{
+            line-height: $lh;
+        }
+        div[class^="guildNick"]{
+            color: #FFF;
         }
     }
 
