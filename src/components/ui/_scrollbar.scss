@@ -80,4 +80,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
 // User profile modal - only show scrollbar when we need it
 .inner-1_1f7b div[class^="scroller-"]{
     overflow-y: auto;
+    &::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
 }
