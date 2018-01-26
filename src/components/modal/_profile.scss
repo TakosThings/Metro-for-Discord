@@ -129,7 +129,7 @@
         font-weight: normal;
         text-transform: none;
     }
-    .note textarea{
+    div[class^="note-"] textarea{
         min-height: 36px;
         padding: 9px 12px 10px;
         border: 1px solid $inputborder;
@@ -141,7 +141,7 @@
             border-color: $inputborderhover;
         }
         &:focus{
-            background-color: transparent !important;
+            background-color: #FFF !important;
             border-color: var(--accent);
         }
     }
