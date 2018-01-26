@@ -6,7 +6,7 @@
       .inner-1_1f7b div[class^="scroller-"], // User profile modal
       div[class^="quickswitcher-"] div[class*="scroller-"],
       .messages-popout-wrap .scroller,
-      .search-results-wrap .scroller-wrap .scroller,
+      .search-results-wrap div[class^="scroller-"],
       .private-channel-recipients-invite .body .scroller,
       #autocomplete-popout div[class^="scroller-"]{
         &::-webkit-scrollbar{
