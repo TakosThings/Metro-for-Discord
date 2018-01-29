@@ -97,22 +97,21 @@
     // Row
     div[class^="row-"]{
         height: 40px;
-    }
-    // Emoji
-    div[class^="emojiItem-"]{
-        width: 40px;
-        height: 40px;
-        margin: 0 0 0 2px;
-        border: 0;
-        line-height: 40px;
-        div[class^="spriteItem"]{
-            margin: 9px;
+        div[class^="emojiItem-"]{
+            width: 40px;
+            height: 40px;
+            margin: 0 0 0 2px;
+            border: 0;
+            line-height: 40px;
+            div[class^="spriteItem"]{
+                margin: 9px;
+            }
         }
-    }
-    div[class*="selected-"]{
-        background-color: $b3 !important;
-        border-radius: 0 !important;
-    }
+        div[class*="selected-"]{
+            background-color: $b3 !important;
+            border-radius: 0 !important;
+        }
+    }    
 
     // Categories
     div[class^="categories-"]{
