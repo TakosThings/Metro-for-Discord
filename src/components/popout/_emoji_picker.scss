@@ -146,4 +146,47 @@
             display: none;
         }
     }
+
+    // Discord Nitro promotion
+    div[class^="premiumPromo-"]{
+        align-items: baseline;
+        padding: 20px;
+        background-color: $b1;
+        border: 1px solid var(--accent);
+        border-radius: 0;
+        box-sizing: border-box;
+        img[class*="Image-"]{
+            display: none;
+        }
+        div[class*="Title-"]{
+            margin-bottom: 20px;
+            color: #FFF;
+            font-family: $font;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            line-height: $lh;
+        }
+        div[class*="Description"]{
+            margin: 0 0 20px 0;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            line-height: 1.33333;
+            text-align: left;
+        }
+        .btn{
+            height: 36px;
+            background-color: var(--accent);
+            border: 1px solid transparent;
+            border-radius: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+            &:hover{
+                border-color: $inputborder;
+            }
+            &:active{
+                border-color: $inputborderhover;
+            }
+        }
+    }
 }
