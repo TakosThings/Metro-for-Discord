@@ -15,8 +15,12 @@
 }
 
 // GIF (eg. from giphy)
+a[class^="imageWrapper"]{
+    border-radius: 0;
+}
 div[class^="embed-"] div[class^="gifTag-"],
-div[class^="imageAccessory"]{
+div[class^="imageAccessory"],
+div[class^="imageAccessory"] div[class^="gifTag-"]{
     width: auto;
     height: auto;
     top: initial;
@@ -25,7 +29,8 @@ div[class^="imageAccessory"]{
     left: 8px;
     background-image: none;
 }
-div[class^="embed-"] div[class^="gifTag-"]::before{
+div[class^="embed-"] div[class^="gifTag-"]::before,
+div[class^="imageAccessory"] div[class^="gifTag-"]::before{
     content: "GIF";
     color: #FFF;
     font-size: 18px;
