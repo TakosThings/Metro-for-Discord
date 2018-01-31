@@ -59,6 +59,9 @@ div[class^="userPopout-"]{
         border-width: 2px;
         color: #FFF;
         font-weight: normal;
+        div[class^="roleName"]{
+            line-height: 1.3;
+        }
     }
     button[class^="addButton"]{
         color: #FFF;
