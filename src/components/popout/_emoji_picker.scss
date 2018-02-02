@@ -66,6 +66,10 @@
             height: 36px;
             border: 1px solid $inputborder;
             box-sizing: border-box;
+            div[class^="item-"]{
+                width: 26px;
+                height: 26px;
+            }
             &:hover{
                 border-color: $inputborderhover;
             }
@@ -75,8 +79,8 @@
                 border: 1px solid var(--accent);
                 border-radius: 0;
                 div[class^="item"]{
-                    width: 28px;
-                    height: 28px;
+                    width: 26px;
+                    height: 26px;
                 }
             }
         }
