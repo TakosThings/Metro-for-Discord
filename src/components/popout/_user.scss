@@ -35,6 +35,9 @@ div[class^="userPopout-"]{
             mask: none;
             -webkit-mask: none;
         }
+        img[class^="assetsLargeImageUserPopout-"]{
+            border-radius: 0;
+        }
         div[class^="name-"]{
             color: #FFF;
             font-size: $fsui;
