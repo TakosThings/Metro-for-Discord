@@ -10,7 +10,7 @@ div[class^="userPopout-"]{
     div[class*="headerTop"]{
         background-color: var(--accent);
     }
-    div[class*="mask"]{
+    div[class^="mask"]{
         mask: none;
         -webkit-mask: none;
     }
@@ -30,6 +30,10 @@ div[class^="userPopout-"]{
             font-size: $fsui;
             font-weight: $fwheader;
             text-transform: none;
+        }
+        div[class^="assetsLargeMaskUserPopout-"]{
+            mask: none;
+            -webkit-mask: none;
         }
         div[class^="name-"]{
             color: #FFF;
