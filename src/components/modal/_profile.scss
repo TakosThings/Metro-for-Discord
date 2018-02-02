@@ -34,7 +34,8 @@
 
     // Send friend req
     button[class^="buttonGreenFilledDefault"],
-    button[class^="buttonBrandInvertedDefault"]{
+    button[class^="buttonBrandInvertedDefault"],
+    button[class^="buttonGreenInvertedDefault"]{
         background-color: transparent;
         border: 1px solid $inputborder;
         border-radius: 0;
@@ -94,6 +95,32 @@
         span[class^="playTime"]{
             color: #FFF;
             font-size: $fschat;
+        }
+        // Spotify
+        div[class^="contentImagesProfile"]{
+            color: #FFF;
+            a[class^="bodyLink"]{
+                color: #FFF;
+                font-weight: $fwui;
+            }
+            div[class^="details-"]{
+                color: #FFF;
+                font-weight: $fwui;
+            }
+        }
+        // Song progress bar
+        div[class^="bar-"]{
+            background-color: rgba($color: #FFF, $alpha: 0.3);
+            border-radius: 0;
+            ~ div div[class^="textLeft"],
+            ~ div div[class^="textRight"]{
+                color: #FFF;
+                font-weight: normal;
+            }
+        }
+        div[class^="barInner-"]{
+            background-color: #FFF;
+            border-radius: 0;
         }
     }
 
