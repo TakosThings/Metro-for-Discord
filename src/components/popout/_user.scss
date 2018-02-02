@@ -43,7 +43,7 @@ div[class^="userPopout-"]{
     }
 
     //Bottom half
-    div[class*="body-"]{
+    div[class^="body-"]{
         background-color: $b1;
     }
 
