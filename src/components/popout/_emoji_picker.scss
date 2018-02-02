@@ -9,6 +9,8 @@
 
     // Dimmer
     div[class^="dimmer"]{
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
         z-index: 2;
         border-radius: 0;
     }
