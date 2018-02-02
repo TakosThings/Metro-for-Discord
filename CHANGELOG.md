@@ -1,6 +1,33 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.5.0
+* **Enhancements** (5)
+  * No text channels error message
+  * Role titles in members list are now auto-capitalised
+  * Attachments (Some unfinished code was pushed in error in the previous release, this update remedies that)
+  * Use default cursor when hovering over menu options in User Settings
+  * User popout Spotify integration
+* **Update** (2)
+  * Quickswitcher
+  * Keybinds
+* **Fixes** (15)
+  * Some elements on login screen
+  * Loading screen
+  * Direct Messages header highlighting when hovered
+  * GIF tag on embedded images
+  * Some letters being cut off in profile modal
+  * Profile modal note textarea
+  * Profile modal scrollbar
+  * Friends list scrollbar will only be shown when it's required
+  * Line height of assigned roles in user popout
+  * Phantom scrollbar appearing on codeblocks when no language was defined
+  * Nitro sidebar option in User Settings now obeys convention
+  * Grey background on Spotify user popout
+  * Emoji picker dimmer sizing
+  * Emoji picker diversity selector icon jumping when menu was open
+  * User popout instant message input sizing
+
 #### 3.4.3
 * **Update** (9)
   * Emoji picker
