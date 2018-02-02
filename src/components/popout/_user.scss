@@ -35,9 +35,6 @@ div[class^="userPopout-"]{
             mask: none;
             -webkit-mask: none;
         }
-        img[class^="assetsLargeImageUserPopout-"]{
-            border-radius: 0;
-        }
         div[class^="name-"]{
             color: #FFF;
             font-size: $fsui;
@@ -46,6 +43,32 @@ div[class^="userPopout-"]{
         }
         span[class^="playTime"]{
             font-size: 13px;
+        }
+        //Spotify
+        // Album art
+        img[class^="assetsLargeImageUserPopout-"]{
+            border-radius: 0;
+        }
+        // Song details
+        div[class^="contentImagesUserPopout"]{
+            color: #FFF;
+            a[class^="bodyLink"]{
+                color: #FFF;
+                font-weight: $fwui;
+            }
+            div[class^="details-"]{
+                color: #FFF;
+                font-weight: $fwui;
+            }
+        }
+        // Song progress bar
+        div[class^="bar-"]{
+            background-color: rgba($color: #FFF, $alpha: 0.3);
+            border-radius: 0;
+        }
+        div[class^="barInner-"]{
+            background-color: #FFF;
+            border-radius: 0;
         }
     }
 
