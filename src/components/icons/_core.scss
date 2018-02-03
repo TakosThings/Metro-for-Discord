@@ -17,6 +17,10 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMA
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwT1BfYHB/gJCgr7DAz9Df4O/w2y78+wAAAJJJREFUeAHl0G1OAzEMhOFx3BAgQPPBvvc/KiKtygq84gD7/B7NWNaplAbtSUessTRTrDOzWZ40hQrTVtGkHBRkLflWwY6+gWlJ8H8gcv2ZuCryzLgdOSjhhDrjktJl0BUHrLN0U+yVuxeFPqC65BXeo4nK5lp8o/4NJHDdOST9Vql6eKMGb3I9ePCqDe3wqVP6AjwMDh1E1dLiAAAAAElFTkSuQmCC) !important;
 }
 
+.chat div[class^="titleWrapper"] div[class^="search-"] .search-bar{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAEDBPUGBvcI+Qn6DP0N/g7/DWADvhAAAAmElEQVR4Ab2R4Q6DIAwGkaFMgXa793/YxURiLMzEP9wvm5MP2rrxzFuGvL3+6CAcSOj5FTR653xUeHd9rN8R1iYf/Fl5sLdoPV8zxLwfNQdMRDoDakS61AXvLnjypQZngGc/aHtFefbIGblvsx2UPh319IHlZllT5guy7OtepOvLFJQDDT2/95IUSqraessw70LrDcH6sfwAxRkI55lYy9wAAAAASUVORK5CYII=);
+}
+
 // Recent mentions
 .chat div[class^="titleWrapper"] svg[name="Mention"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwQE9QX2BvcH+An6CvsL/Az9Df4O/wqrhjWwAAAOBJREFUeAHNkNGOqzAMBY1J21xuCS7QJvP/P7q7tZQNAqF97LwcKTmaOJYPo7s9Flimf3p8PVIZO9kRM1jsRfpokMPuHqya1SDKhivbkztsHF1mENk2cjtHwvz4wfIf5JuZ1Ajg/f6K854DfhUD5toSJBQviDWvGlcXBJ/X/8VcCy/6nwBpomepBdiH51mhg/Mnrqy1MBObIf1/3ZPYrC155CAhw0P18mwEoptFrcWjXbUxuWrmdRdNsEZp0UKUUyJ/aExahdNy0CgwXlREbyOUIDs0UUkqR+hgBVYbVD6LLy2bEtQK3TtvAAAAAElFTkSuQmCC) !important;
