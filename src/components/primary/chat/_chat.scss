@@ -61,11 +61,13 @@
 }
 
 // Mentions
-.mention{
+.theme-dark .mention{
     background-color: transparent;
     color: var(--accent);
+    transition: none;
     &:hover{
         background-color: transparent;
+        text-decoration: underline;
     }
 }
 .theme-dark .message-group .comment .markup .mention{
