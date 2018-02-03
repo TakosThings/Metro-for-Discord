@@ -22,6 +22,19 @@ div[class^="userPopout-"]{
         padding-left: 4px;
         font-size: $fschat;
     }
+    // If a nickname is set
+    div[class^="headerName-"]{
+        font-size: $fsheader;
+        font-weight: $fwheader;
+    }
+    div[class^="headerTag"]{
+        max-width: 250px;
+        padding: 0 8px;
+        box-sizing: border-box;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 
     // Now Playing
     div[class^="activityUserPopout"]{
