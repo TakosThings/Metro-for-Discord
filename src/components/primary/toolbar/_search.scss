@@ -1,36 +1,64 @@
 .chat div[class^="titleWrapper"] div[class^="search-"]{
     margin: 0;
-}
-.chat div[class^="titleWrapper"] .search .search-bar{
-    height: 40px;
-    border-radius: 0;
-}
-.theme-dark .chat div[class^="titleWrapper"] .search .search-bar{
-    background-color: $b3;
-}
-.chat div[class^="titleWrapper"] .search .DraftEditor-root{
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: 35px;
-}
-.chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root{
-    padding: 3px 11px 10px;
-}
-.search .DraftEditor-root .public-DraftEditor-content{
-    padding: 3px 11px 10px;
-}
-.theme-dark .chat div[class^="titleWrapper"] .search .search-bar .public-DraftEditorPlaceholder-root{
-    color: #FFF;
-}
+    .search-bar{
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        border-radius: 0;
+        cursor: pointer;
+        &:hover{
+            background-color: $b4;
+        }
+        .public-DraftEditorPlaceholder-root,
+        .search-bar-icon{
+            display: none;
+        }
+    }
 
-// Eyeglass icon
-.chat div[class^="titleWrapper"] .search .search-bar .icon{
-    top: 12px;
-}
+    .search.focused .search-bar,
+    .search.open .search-bar,
+    .search.popout-open .search-bar{
+        width: 232px;
+        background-color: $b4;
+        background-image: none;
+        cursor: text;
+    }
 
-// Search in use
-.chat div[class^="titleWrapper"] .search.focused .search-bar,
-.chat div[class^="titleWrapper"] .search.open .search-bar,
-.chat div[class^="titleWrapper"] .search.popout-open .search-bar{
-    width: 232px;
+    .search.open .search-bar-icon,
+    .search.focused .search-bar-icon,
+    .seach.open .search-bar .public-DraftEditorPlaceholder-root,
+    .search.focused .search-bar .public-DraftEditorPlaceholder-root{
+        display: block;
+    }
+    .search .search-bar .DraftEditor-root{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        .public-DraftEditor-content{
+            overflow-x: hidden;
+        }
+        .public-DraftEditor-content,
+        .public-DraftEditorPlaceholder-root{
+            padding: 9px 8px 0;
+            box-sizing: border-box;
+        }
+    }
+    .search .search-bar .public-DraftEditorPlaceholder-root{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    .search .search-bar .icon{
+        top: 11px;
+    }
+
+    span[class^="searchAnswer-"],
+    span[class^="searchFilter-"]{
+        background-color: #FFF;
+        color: #000;
+        font-weight: normal;
+    }
 }
