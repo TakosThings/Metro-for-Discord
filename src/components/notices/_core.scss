@@ -1,10 +1,14 @@
-.notice{
+div[class*="notice-"]{
     border-radius: 0;
-    font-weight: normal;
-}
-
-// Button
-.notice .btn{
-    border-radius: 0;
-    font-weight: normal;
+    font-size: $fsui;
+    font-weight: $fwui;
+    button{
+        padding: 4px 12px 10px;
+        border-radius: 0;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    div[class^="dismiss"]{
+        opacity: 1;
+    }
 }
