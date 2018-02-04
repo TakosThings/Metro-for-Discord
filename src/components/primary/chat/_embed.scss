@@ -35,3 +35,70 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
     color: #FFF;
     font-size: 18px;
 }
+
+// Spotify Invite
+.accessory{
+    div[class^="invite-"]{
+        background-color: darken($color: $b2, $amount: 1);
+        border: 0;
+        border-left: 3px solid #000;
+        border-radius: 0;
+        div[class^="header-"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+        }
+        // Song name, Artist, Album
+        div[class^="partyStatus"]{
+            margin-top: 12px;
+            font-size: $fschat;
+            div[class^="details-"]{
+                font-size: $fschat;
+            }
+            div[class^="state"]{
+                font-size: $fschat;
+            }
+        }
+        // Join the party button
+        button[class^="buttonGreenFilledDefault"]{
+            height: 36px;
+            min-width: 36px;
+            background-color: transparent;
+            border: 1px solid $inputborder;
+            font-size: 0;
+            position: relative;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+        }
+        // Disabled button
+        button[class^="buttonGreyFilledDisabled"]{
+            height: 36px;
+            background-color: transparent;
+            border: 1px solid $inputborder;
+            border-radius: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+
+        // Poster avatar/People listening
+        div[class^="partyMembers"]{
+            margin-left: 12px;
+            div[class^="avatar"]{
+                width: 36px;
+                height: 36px;
+            }
+        }
+        
+        // Album art
+        img[class*="artwork-"]{
+            border-radius: 0;
+        }
+        // Session ended art (just show a spotify logo)
+        div[class^="artworkSpotifySessionEnded"]{
+            background-image: url(https://i.imgur.com/ccG6HYH.png);
+            background-size: auto;
+        }
+    }
+}
