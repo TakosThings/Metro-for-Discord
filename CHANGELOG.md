@@ -1,12 +1,6 @@
 # Changelog
 Newest Changes are at the top
 
-#### 3.5.1
-* **Enhancements**
-  * Search in toolbar will now hide itself when not in use
-* **Fixes**
-  * Mention hover state
-
 #### 3.5.0
 * **Enhancements** (5)
   * No text channels error message
