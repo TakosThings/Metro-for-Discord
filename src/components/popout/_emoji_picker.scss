@@ -88,9 +88,7 @@
 
     // Sticky header
     div[class^="stickyHeader-"]{
-        width: calc(100% - 12px);
-        left: 0;
-        background-color: var(--accent);
+        display: none;
     }
     // Category header
     div[class^="category-"]{
