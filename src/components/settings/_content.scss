@@ -59,18 +59,38 @@
 }
 
 // NITRO
-.premium-settings .premium-header .premium-logo{
-    width: auto;
-    height: auto;
-    background-image: none;
-}
-.theme-dark .premium-settings .premium-header.splash{
-    height: auto;
-    background-image: none;
-    border: 0;
-}
-.premium-settings .premium-header .premium-splash-wumpus{
-    display: none;
+.theme-dark .premium-settings{
+    .premium-settings-background{
+        background-image: none;
+    }
+    div[class^="header-"]{
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        line-height: $lh;
+    }
+    div[class^="blurb-"]{
+        color: #FFF;
+        font-size: $fsui;
+        line-height: $lh;
+    }
+    
+    div[class^="features-"]{
+        > div{
+            margin-top: 8px;
+        }
+        div[class*="Icon-"]{
+            display: none;
+            ~ div div[class^="title"]{
+                font-size: $fsui;
+                font-weight: $fwui;
+            }
+            ~ div div[class^="description-"]{
+                font-size: $fsui;
+                font-weight: $fwui;
+                text-indent: 24px;
+            }
+        }
+    }
 }
 
 // Warnings
