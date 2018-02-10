@@ -178,6 +178,10 @@ div[class^="emojiPicker-"] div[class^="categories"] div[class*="flags"]{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
     background-size: 24px;    
 }
+.message-group .comment div[class^="attachment-"] svg[class^="downloadButton"]{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAWlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////9ZMre9AAAAHXRSTlMAAQIDBgwOEBITZnN8f4+XnqKlprvBxcbMzc7P/gg9xc8AAAClSURBVHgB7c3ZroMgAIRhEFE87nqsSzvv/5pNSYikywQbe8efuf0y4qRi5bKUB0kDNJHwIokkeSUJF9UleybZXDFRA3PmESuA+rOQI4BJ+0RPAAZJTAtgMTsxK4DWCmpW48guAowlZuPCN1vxIIUTYaYH+qsvaGoEcLPDoAKA+wHcR6Ahghgnwk24cKmuU+JgUoqflP6R0rckByk/i+h/khZfF7sDJq8eJRZkcv8AAAAASUVORK5CYII=);
+    background-size: 24px;
+}
 
 // Upload modal
 div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"] {
