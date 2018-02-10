@@ -330,7 +330,9 @@
     background-size: 24px;
     box-sizing: border-box;
 }
-
+.message-group .comment div[class^="attachment-"] svg[class^="downloadButton"] g{
+    display: none;
+}
 
 // Uploading
 .message-group .comment .attachment .upload>.filename{
