@@ -1,0 +1,96 @@
+.theme-dark div[class*="phoneVerificationModal"]{
+    min-height: auto;
+    margin: 0;
+    padding: 20px;
+    justify-content: initial;
+    align-items: baseline;
+    div[class^="animationContainer"]{
+        display: none;
+    }
+    div[class^="title"]{
+        margin-top: 0;
+        padding: 36px 0 4px;
+        color: #FFF;
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        text-align: left;
+    }
+    div[class^="description"]{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        letter-spacing: normal;
+        text-align: left;
+    }
+
+    div[class*="phoneField-"]{
+        margin: 0;
+        background-color: transparent;
+    }
+    div[class*="countryButton"]{
+        height: 36px;
+        margin-right: 8px;
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        box-sizing: border-box;
+        &:hover{
+            background-color: transparent;
+            border-color: $inputborderhover;
+        }
+        div[class^="plusSign"]{
+            color: #FFF;
+            font-size: $fsui;
+        }
+        div[class^="countryCode"]{
+            font-size: $fsui;
+        }
+    }
+    input[class^="inputField"]{
+        height: 36px;
+        margin-right: 8px;
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        font-size: $fsui;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: #FFF;
+            border-color: var(--accent);
+            color: #000;
+        }
+    }
+
+    // Countries popout list
+    div[class*="phoneFieldPopout"]{
+        padding: 0;
+        background-color: $b1;
+        border: 1px solid var(--accent);
+        border-radius: 0;
+    }
+    div[class*="searchBar-"]{
+        height: 36px;
+        background-color: $b3;
+        border-radius: 0;
+        i[class^="icon-"]{
+            top: 9px;
+        }
+    }
+    div[class^="divider"]{
+        display: none;
+    }
+    div[class^="scrollerWrap"]{
+        height: 204px;
+    }
+    div[class*="selectableItem-"]{
+        margin: 0;
+        border-radius: 0;
+        &:hover{
+            background-color: var(--accent);
+        }
+        div[class^="countryName"]{
+            color: #FFF;
+        }
+    }
+}
