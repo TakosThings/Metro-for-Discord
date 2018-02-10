@@ -93,6 +93,8 @@
     }
     // Category header
     div[class^="category-"]{
+        margin-bottom: 4px;
+        border-bottom: 1px solid $b3;
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
@@ -101,13 +103,12 @@
 
     // Row
     div[class^="row-"]{
-        height: 40px;
+        height: auto;
         div[class^="emojiItem-"]{
             width: 40px;
             height: 40px;
-            margin: 0 0 0 2px;
             border: 0;
-            line-height: 40px;
+            line-height: 1;
             div[class^="spriteItem"]{
                 margin: 9px;
             }
