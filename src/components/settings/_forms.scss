@@ -116,6 +116,23 @@
     }
 }
 
+// Keybind record
+h5 ~ div[class^="container-"][class*="container-"]{
+    border: 1px solid $inputborder;
+    border-radius: 0;
+    input{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    div > button{
+        padding: 4px 12px 10px;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        font-weight: normal;
+    }
+}
+
 // Buttons
 button[class*="button-"]{
     padding: 9px 12px 10px;
