@@ -31,6 +31,9 @@
 // Nitro item
 .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
     color: #FFF !important;
+    &:hover{
+        background-color: rgba(255,255,255,0.15) !important;
+    }
 }
 .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
     background-color: transparent !important;
