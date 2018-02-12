@@ -84,6 +84,11 @@
             border-color: $inputborderhover;
         }
     }
+    .Select.is-disabled .Select-control{
+        &:hover{
+            border-color: rgba($color: #FFF, $alpha: 0.13);
+        }
+    }
     .is-open .Select-control{
         background-color: var(--accent);
         border-color: $inputborderhover;
