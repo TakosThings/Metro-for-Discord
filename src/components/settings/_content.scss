@@ -1,253 +1,326 @@
-.ui-standard-sidebar-view .content-column.default{
-    padding: 26px 15px 0 12px;
-}
-.theme-dark .ui-standard-sidebar-view .content-region{
-    background-color: #000;
-}
-
-// Headers
-// This gets most headers, but some others need to be targetted manually
-div[class^="userSettingsAccount"] > h2,
-.ui-standard-sidebar-view .content-column.default > div > h2{
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 300;
-    text-transform: none;
-}
-// User security
-div[class^="userSettingsSecurity"] > h2{
-    color: #FFF !important;
-    font-size: 27px;
-    font-weight: 300;
-    text-transform: none;
-}
-div[class^="userSettingsSecurity"] h5{
-    font-size: 15px;
-    font-weight: normal;
-    text-transform: none;
-}
-
-// Descriptions
-.theme-dark div[class^="description-"]{
-    color: #FFF;
-    font-weight: normal;
-}
-
-// Sub headers
-.ui-standard-sidebar-view .content-column.default .margin-bottom-40 > h5{
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    text-transform: none;
-}
-
-// Connection services
-.theme-dark div[class^="connectedAccounts"]{
-    padding-top: 8px;
-    div[class*="accountBtn"]{
-        button{
-            background-color: transparent;
-            border: 1px solid $inputborder;
-            border-radius: 0;
-            &:hover{
-                border-color: $inputborderhover;
-            }
+.theme-dark{
+    .ui-standard-sidebar-view{
+        .content-column.default{
+            padding: 26px 15px 0 12px;
         }
-    }
-}
+        .content-region{
+            background-color: #000;
+        }
 
-// Auto detect accounts toggle label
-.theme-dark div[class^="accountList"] ~ div > div > h3{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-
-// Connection
-div[class^="connection-"]{
-    border-radius: 0;
-    div[class^="connectionHeader"]{
-        border: 0;
-        border-radius: 0;
-        div[class*="connectionAccountLabel"]{
-            font-size: $fsui;
-            line-height: $lh;
-        }
-        div[class^="description-"]{
-            display: none;
-        }
-    }
-    div[class^="connectionDelete"]{
-        border: 0;
-        border-radius: 0;
-    }
-}
-
-// NITRO
-.theme-dark .premium-settings{
-    &::before{
-        content: "Discord Nitro";
-        margin-bottom: 20px;
-        color: #FFF;
-        font-size: 27px;
-        font-weight: 300;
-    }
-    div[class*="splashHeader-"]{
-        align-items: baseline;
-        justify-content: initial;
-    }
-    .premium-settings-background{
-        background-image: none;   
-    }
-    div[class^="header-"]{
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: $lh;
-        display: inline;
-        &::after{
-            content: ".";
-        }
-    }
-    div[class^="blurb-"]{
-        color: #FFF;
-        font-size: $fsui;
-        line-height: $lh;
-        display: inline;
-    }
-    div[class*="actions-"]{
-        margin-top: 12px;
-        button{
-            min-height: 36px;
-            span{
-                opacity: 1;
-            }
-        }
-        button[class^="buttonPrimaryOutlinedDefault"]{
-            margin-left: 0;
-        }
-        div[class^="promo-"]{
+        // Titles
+        h2[class*="title-"]{
             color: #FFF;
-            font-weight: normal;
+            font-size: 27px;
+            font-weight: 300;
             text-transform: none;
         }
-    }
-    
-    div[class^="features-"]{
-        iframe{
-            width: 713px;
-            height: 400px
+        // Sub section header
+        h5[class*="title-"]{
+            color: #FFF;
+            font-size: 20px;
+            font-weight: 300;
+            text-transform: none;
         }
-        > div{
-            margin-top: 8px;
+        // Description
+        div[class^="description"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            line-height: $lh;
         }
-        div[class*="Icon-"]{
-            display: none;
-            ~ div div[class^="title"]{
-                font-size: 20px;
+
+        // Connections
+        // Connection services
+        div[class^="connectedAccounts"]{
+            padding-top: 8px;
+            div[class*="accountBtn"]{
+                button{
+                    background-color: transparent;
+                    border: 1px solid $inputborder;
+                    border-radius: 0;
+                    &:hover{
+                        border-color: $inputborderhover;
+                    }
+                }
+            }
+        }
+        // Auto detect accounts toggle label
+        div[class^="accountList"] ~ div > div > h3{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+        // Connection
+        div[class^="connection-"]{
+            border-radius: 0;
+            div[class^="connectionHeader"]{
+                border: 0;
+                border-radius: 0;
+                div[class*="connectionAccountLabel"]{
+                    font-size: $fsui;
+                    line-height: $lh;
+                }
+                div[class^="description-"]{
+                    display: none;
+                }
+            }
+            div[class^="connectionDelete"]{
+                border: 0;
+                border-radius: 0;
+            }
+        }
+
+        // Nitro
+        .premium-settings{
+            &::before{
+                content: "Discord Nitro";
+                margin-bottom: 20px;
+                color: #FFF;
+                font-size: 27px;
                 font-weight: 300;
             }
-            ~ div div[class^="description-"]{
+            div[class*="splashHeader-"]{
+                align-items: baseline;
+                justify-content: initial;
+            }
+            .premium-settings-background{
+                background-image: none;   
+            }
+            div[class^="header-"]{
                 font-size: $fsui;
                 font-weight: $fwui;
+                line-height: $lh;
+                display: inline;
+                &::after{
+                    content: ".";
+                }
+            }
+            div[class^="blurb-"]{
+                color: #FFF;
+                font-size: $fsui;
+                line-height: $lh;
+                display: inline;
+            }
+            div[class*="actions-"]{
+                margin-top: 12px;
+                button{
+                    min-height: 36px;
+                    span{
+                        opacity: 1;
+                    }
+                }
+                button[class^="buttonPrimaryOutlinedDefault"]{
+                    margin-left: 0;
+                }
+                div[class^="promo-"]{
+                    color: #FFF;
+                    font-weight: normal;
+                    text-transform: none;
+                }
+            }
+            
+            div[class^="features-"]{
+                iframe{
+                    width: 713px;
+                    height: 400px
+                }
+                > div{
+                    margin-top: 8px;
+                }
+                div[class*="Icon-"]{
+                    display: none;
+                    ~ div div[class^="title"]{
+                        font-size: 20px;
+                        font-weight: 300;
+                    }
+                    ~ div div[class^="description-"]{
+                        font-size: $fsui;
+                        font-weight: $fwui;
+                    }
+                }
             }
         }
-    }
-}
 
-// Warnings
-// Overlay warning
-div[class*="cardWarning-"]{
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-}
-.theme-dark div[class*="cardWarning-"] > div > div > div{
-    color: #FF0;
-}
-.theme-dark div[class*="cardWarning-"] > div > div > div a{
-    font-weight: normal;
-}
-// Keybinds warning
-div[class^="ghostPill"]{
-    background-color: transparent;
-    padding: 0;
-    color: #FF0;
-    font-size: $fsui;
-    line-height: 1;
-}
+        // Keybinds
+        div[class*="keybindGroup"]{
+            padding: 20px;
+            div[class*="removeKeybind"]{
+                top: 4px;
+                right: 4px;
+                background-color: transparent;
+                box-shadow: none;
+                filter: grayscale(100%) brightness(200%);
+            }
+        }
 
-// Cards
-// Main Cards
-.theme-dark div[class*="cardPrimary"]{
-    background-color: #101010;
-    border: 0;
-    border-radius: 0;
-}
-.theme-dark .ui-hover-card:before{
-    background-color: #191919;
-    border: 0;
-}
-.theme-dark div[class*="cardPrimary"] h5{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-.theme-dark div[class*="cardPrimary"] div[class*="desc"]{
-    color: #FFF;
-}
-// Keybind card
-.user-settings-keybinds .keybind-group{
-    padding-left: 8px;
-    padding-right: 8px;
-}
-// Now playing
-.theme-dark .user-settings-games .not-detected,
-.theme-light .user-settings-games .not-detected{
-    background-color: $b4;
-}
-.user-settings-games .now-playing{
-    border-radius: 0;
-}
-// Game
-.user-settings-games .game{
-    padding: 20px;
-}
-// Remove icon
-.user-settings-keybinds .remove-keybind,
-.user-settings-games .game .remove-game{
-    right: -12px;
-}
-// Hovered card
-.ui-hover-card:before{
-    right: 0;
-    left: 0;
-    border-radius: 0;
-}
+        // Games
+        // Now playing card
+        .user-settings-games{
+            // No game detected
+            .not-detected{
+                background-color: #101010;
+                border-radius: 0;
+                .game-name{
+                    color: #FFF;
+                    font-size: $fsui;
+                    font-weight: normal;
+                }
+                .last-played{
+                    display: none;
+                }
+            }
+            // Game Detected
+            .now-playing{
+                padding: 20px;
+                border-radius: 0;
+                input{
+                    &:hover{
+                        background-color: transparent;
+                        border-color: $inputborderhover;
+                    }
+                    &:focus{
+                        background-color: #FFF;
+                        border-color: var(--accent);
+                        color: #000;
+                    }
+                }
+                .last-played{
+                    margin-top: 8px;
+                    color: #FFF;
+                    font-weight: normal;
+                    line-height: 1.33333;
+                }
+            }
+            .game-name-input{
+                margin: 0;
+            }
+            // "Added Games"
+            .games-list h5{
+                margin-bottom: 12px;
+            }
+            // List of games
+            .game{
+                padding: 20px;
+                .overlay-status-text{
+                    color: #FFF;
+                    font-size: $fsui;
+                    text-transform: none;
+                }
+                .remove-game{
+                    top: 4px;
+                    right: 4px;
+                    background-color: transparent;
+                    box-shadow: none;
+                    filter: grayscale(100%) brightness(200%);
+                }
+                .last-played{
+                    margin-top: 8px;
+                    color: #FFF;
+                    font-weight: normal;
+                    line-height: 1.33333;
+                }
+            }
+            .now-playing-add{
+                color: #FFF;
+                font-size: $fsui;
+                button{
+                    padding-left: 4px;
+                }
+            }
+            // Display games as status message toggle label
+            .now-playing-add ~ div > div > h3{
+                font-weight: normal;
+            }
+        }
 
-// Roles list
-.theme-dark div[class^="side"] div[class^="header"]{
-    color: #FFF;
-    font-size: $fsui;
-    text-transform: none;
-}
-div[class^="side"] div[class*="item"]{
-    border-radius: 0;
-    font-weight: normal;
-}
-div[class^="side"] div[class*="itemDefaultSelected"]{
-    background-color: var(--accent);
+        // Streamer mode enabled warning
+        div[class^="streamerModeEnabled-"]{
+            align-items: baseline;
+            &::before{
+                content: "Streamer Mode enabled";
+                color: #FFF;
+                font-size: 27px;
+                font-weight: 300;
+            }
+            div[class^="streamerModeEnabledImage-"]{
+                width: auto;
+                height: auto;
+                margin-top: 20px;
+                background-image: none;
+                &::before{
+                    content: "Some settings are hidden because streamer mode is enabled.";
+                    color: #FFF;
+                }
+            }
+            div[class^="streamerModeEnabledBtn"]{
+                height: 36px;
+                margin-top: 12px;
+                padding: 9px 12px 10px;
+                border: 1px solid transparent;
+                border-radius: 0;
+                font-size: 0;
+                font-weight: $fwui;
+                line-height: 1;
+                text-transform: none;
+                &:hover{
+                    border-color: $inputborder;
+                }
+                &::before{
+                    content: "Go to Streamer Mode settings";
+                    font-size: $fsui;
+                }
+            }
+        }
+
+        // Server settings roles list
+        div[class^="side"]{
+            div[class^="header"]{
+                color: #FFF;
+                font-size: $fsui;
+                text-transform: none;
+            }
+            div[class*="item"]{
+                border-radius: 0;
+                font-weight: normal;
+            }
+            div[class*="itemDefaultSelected"]{
+                background-color: var(--accent);
+            }
+        }        
+
+        // UI COMMONS
+        // Warnings
+        div[class^="ghostPill"]{
+            background-color: transparent;
+            padding: 0;
+            color: #FF0;
+            font-size: $fsui;
+            line-height: 1;
+        }
+
+        // Cards
+        div[class*="cardPrimary"]{
+            background-color: #101010;
+            border: 0;
+            border-radius: 0;
+            h5{
+                font-size: $fsui;
+            }
+            div[class*="desc"]{
+                color: #FFF;
+            }
+        }
+    } 
 }
 
 // Images removal
 // US = User settings, CS = Channel settings, SS = Server Settings
-img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"], // US: 2FA
+img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"],    // US: 2FA
 div[style*="/assets/b47564b3086d0d8d941aae95a4b7b78c.svg"], // US: Authorised Apps
 div[style*="/assets/e9aaf1824f17126a7992e5ad98752389.svg"], // US: Connections
 div[style*="/assets/f3bb89a27e9d102f748da035cd7e5df7.svg"], // US: Keybinds
 div[style*="/assets/d01c53acda73318e5b39676ef8242eb7.svg"], // US: Games
 img[src="/assets/616e078b351d0df460971441949c53a3.svg"],    // US: Streamer Mode
-img[src^="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiI+CiAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMzZ2MzZIMHoiLz4KICAgIDxwYXRoIGZpbGw9IiM0M0I1ODEiIGQ9Ik0xOS4zMDUgMjIuNjA1bC0zLjgxLTMuNzY1LjA0NS0uMDQ1YzIuNjEtMi45MSA0LjQ3LTYuMjU1IDUuNTY1LTkuNzk1SDI1LjVWNkgxNVYzaC0zdjNIMS41djNoMTYuNzU1Yy0xLjAwNSAyLjg4LTIuNTk1IDUuNjI1LTQuNzU1IDguMDI1LTEuMzk1LTEuNTQ1LTIuNTUtMy4yNC0zLjQ2NS01LjAyNWgtM2MxLjA5NSAyLjQ0NSAyLjU5NSA0Ljc1NSA0LjQ3IDYuOD"],
 div[style*="/assets/99253cefda98913b1e9f7d155ad81ed3.svg"], // SS: Audit Log
 div[style*="/assets/59c726954bd8424f376ca3a7eedc4c54.svg"], // SS: Integration
 div[style*="/assets/a7371de3223292c6f31f8aeed62f17c1.svg"], // SS: Emoji
