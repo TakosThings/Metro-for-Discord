@@ -41,6 +41,19 @@ div[class^="userSettingsSecurity"] h5{
     text-transform: none;
 }
 
+// Connection
+div[class^="connection-"]{
+    border-radius: 0;
+    div[class^="connectionHeader"]{
+        border: 0;
+        border-radius: 0;
+    }
+    div[class^="connectionDelete"]{
+        border: 0;
+        border-radius: 0;
+    }
+}
+
 // NITRO
 .theme-dark .premium-settings{
     .premium-settings-background{
