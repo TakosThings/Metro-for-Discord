@@ -7,18 +7,12 @@
 // Left sidebar
 .theme-dark .ui-standard-sidebar-view .sidebar-region{
     flex: 0;
-    background-color: #000;
+    background-color: $b1;
 }
 
-// Header
+// Remove Header
 .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="header"]{
-    padding: 0 8px;
-    border-bottom: 1px solid rgba(255,255,255,.5);
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: 42px;
-    text-transform: none;
+    display: none
 }
 
 // Sidebar item
@@ -65,6 +59,14 @@
     left: 0;
     background-color: var(--accent);
     margin-top: -10px;
+}
+
+// Logout item
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
+    color: $alert !important;
+}
+.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
+    background-color: rgba(255,255,255,0.15) !important;
 }
 
 // Remove separators
