@@ -1,15 +1,13 @@
 .ui-standard-sidebar-view .content-column.default{
-    padding: 26px 15px 0 0;
+    padding: 26px 15px 0 12px;
 }
-.theme-light .ui-standard-sidebar-view .sidebar-region,
-.theme-light .ui-standard-sidebar-view .content-region,
 .theme-dark .ui-standard-sidebar-view .content-region{
     background-color: #000;
 }
 
 // Headers
 // This gets most headers, but some others need to be targetted manually
-.user-settings-account > h2,
+div[class^="userSettingsAccount"] > h2,
 .ui-standard-sidebar-view .content-column.default > div > h2{
     color: #FFF;
     font-size: 27px;
@@ -17,10 +15,15 @@
     text-transform: none;
 }
 // User security
-.user-settings-security > h5{
+div[class^="userSettingsSecurity"] > h2{
     color: #FFF !important;
     font-size: 27px;
     font-weight: 300;
+    text-transform: none;
+}
+div[class^="userSettingsSecurity"] h5{
+    font-size: 15px;
+    font-weight: normal;
     text-transform: none;
 }
 
@@ -30,32 +33,12 @@
     font-weight: normal;
 }
 
-// 2FA status text (ie. "Two-Factor Authentication enabled")
-.user-settings-security div[class^="flexChild"] > div > h5{
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-
-// NITRO
-.premium-settings .premium-header .premium-logo{
-    color: #FFF;
-    font-size: 27px;
-    font-weight: 300;
-    line-height: 1;
-    text-indent: 0;
-}
-
 // Sub headers
-.user-settings-security > h5,
 .ui-standard-sidebar-view .content-column.default .margin-bottom-40 > h5{
     color: #FFF;
     font-size: $fsheader;
     font-weight: $fwheader;
     text-transform: none;
-}
-.user-settings-security > h5{
-    color: #FFF !important;
 }
 
 // NITRO
