@@ -318,6 +318,10 @@ div[class*="switchDisabled-"]::after{
     height: 10px;
     box-shadow: none;
 }
+// Connection switch
+div[class^="connection-"] div[class*="themeClear-"][class*="valueUnchecked"]{
+    box-shadow: none;
+}
 
 // Radio
 div[class^="radioGroup"] div[style*="rgb(114, 137, 218)"]{
