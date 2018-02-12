@@ -168,7 +168,7 @@ div[class*="cardWarning-"]{
     font-weight: normal;
 }
 // Keybinds warning
-.user-settings-keybinds .ghost-pill{
+div[class^="ghostPill"]{
     background-color: transparent;
     padding: 0;
     color: #FF0;
