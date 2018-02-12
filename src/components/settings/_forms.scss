@@ -158,12 +158,14 @@ button[class^="buttonGreenFilledDefault"]{
 
 // Red outlined button (eg. Remove 2FA button)
 button[class^="buttonRedOutlined"]{
-    border-color: $alert;
+    border-color: rgba($color: $alert, $alpha: 0.6);
     border-radius: 0;
     color: $alert;
     font-weight: normal;
     &:hover{
-        border-color: $inputborder;
+        background-color: rgba($color: $alert, $alpha: 0.6);
+        border-color: $alert;
+        color: #FFF;
     }
 }
 
