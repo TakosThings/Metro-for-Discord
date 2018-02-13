@@ -1,6 +1,32 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.0
+* **Enhancements** (8)
+  * Search in toolbar will now hide itself when not in use
+  * Spotify embed
+  * Invite modal
+  * Phone verification modal
+  * Remove sticky header from emoji picker
+  * Adjust vertical position of emoji picker
+  * Red outlined button
+  * Connections
+* **Fixes** (12)
+  * Mention hover state
+  * Remove avatar masking from user popout
+  * Long usernames in user popout overflowing if a nickname was set
+  * Remove top right border radius from notices
+  * Notice dismiss button
+  * Adjust height of theme warning notices to match Discord's
+  * Truncate long file names of attachments
+  * My account header in settings
+  * Double border on connection toggle switch
+  * Nitro settings sidebar hover background colour
+  * Disabled dropdown hover state
+  * Keybinds warning message
+* **Notes** (1)
+  * User/Server/Channel settings CSS has been re-written. If you notice any major problems, please [create a new issue](https://github.com/TakosThings/Metro-for-Discord/issues/new) on the repo.
+
 #### 3.5.0
 * **Enhancements** (5)
   * No text channels error message
