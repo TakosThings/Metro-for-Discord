@@ -63,10 +63,8 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
         // Join the party button
         button[class^="buttonGreenFilledDefault"]{
             height: 36px;
-            min-width: 36px;
             background-color: transparent;
             border: 1px solid $inputborder;
-            font-size: 0;
             position: relative;
             &:hover{
                 border-color: $inputborderhover;
