@@ -58,6 +58,13 @@
     background-color: #FFF !important;
 }
 
+// Voice connected
+.guilds-wrapper .guilds .guild.audio .guild-inner::after{
+    top: 0;
+    right: 0;
+    background-color: var(--guildvoice);
+}
+
 // Unread guild
 .guilds-wrapper .guilds .guild.unread .guild-inner{
     background-color: var(--accent) !important;
