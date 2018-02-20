@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.1
+* **Enhancements** (2)
+  * Changed background of voice connected badge
+  * Added uservar to easily allow changing the background of the voice connected badge
+* **Fixes** (3)
+  * Added missing uservar to userstyle
+  * Buttons
+  * Invite modal button alignment
+
 #### 3.6.0
 * **Enhancements** (8)
   * Search in toolbar will now hide itself when not in use
