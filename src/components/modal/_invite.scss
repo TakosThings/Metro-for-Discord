@@ -46,14 +46,18 @@ div[class^="inviteModal"]{
             right: 6px;
             bottom: 20px;
             display: inline-block;
-            button[class^="buttonGreenFilledDefault"]{
+            button[class*="lookFilled-"][class*="colorGreen"]{
                 width: calc(50% - 2px);
                 min-width: calc(50% - 2px);
+                height: 36px;
                 min-height: 36px;
                 margin: 0 4px 0 0;
                 background-color: var(--accent);
                 border: 1px solid transparent;
-                display: inline-block;
+                float: left;
+                strong{
+                    font-weight: normal;
+                }
                 &:hover{
                     border: 1px solid $inputborder;
                 }
