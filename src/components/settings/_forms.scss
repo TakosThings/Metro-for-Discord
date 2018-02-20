@@ -139,7 +139,8 @@ button[class*="button-"]{
     font-size: 15px;
     line-height: 1.3333;
 }
-button[class*="button-"][class*="sizeSmall-"]{
+button[class*="button-"][class*="sizeSmall-"],
+button[class*="button-"][class*="sizeXlarge-"]{
     height: 36px;
     min-width: 36px;
 }
@@ -241,7 +242,7 @@ button[class*="lookOutlined"][class*="colorPrimary"],
 }
 
 // Primary filled button (eg. Trust this domain cancel button)
-.theme-dark button[class^="buttonPrimaryFilledDefault"]{
+.theme-dark button[class*="lookFilled-"][class*="colorPrimary-"]{
     background-color: transparent;
     border: 1px solid $inputborder;
     border-radius: 0;
