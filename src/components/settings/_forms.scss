@@ -137,10 +137,14 @@ h5 ~ div[class^="container-"][class*="container-"]{
 button[class*="button-"]{
     padding: 9px 12px 10px;
     font-size: 15px;
-    line-height: 1;
+    line-height: 1.3333;
+}
+button[class*="button-"][class*="sizeSmall-"]{
+    height: 36px;
+    min-width: 36px;
 }
 // Branded button (eg. View Backup Codes or account deatils Edit)
-button[class^="buttonBrandFilledDefault"]{
+button[class*="lookFilled-"][class*="colorBrand-"]{
     background-color: var(--accent);
     border: 1px solid transparent;
     border-radius: 0;
@@ -163,7 +167,7 @@ button[class^="buttonBrandFilledDisabled"]{
 }
 
 // Green button (eg. account deatils Save)
-button[class^="buttonGreenFilledDefault"]{
+button[class*="lookFilled-"][class*="colorGreen-"]{
     background-color: $safe;
     border: 1px solid transparent;
     border-radius: 0;
@@ -179,7 +183,7 @@ button[class^="buttonGreenFilledDefault"]{
 }
 
 // Red outlined button (eg. Remove 2FA button)
-button[class^="buttonRedOutlined"]{
+button[class*="lookOutlined-"][class*="colorRed-"]{
     border-color: rgba($color: $alert, $alpha: 0.6);
     border-radius: 0;
     color: $alert;
@@ -192,7 +196,7 @@ button[class^="buttonRedOutlined"]{
 }
 
 // Red filled (eg. Logout modal logout button)
-button[class^="buttonRedFilledDefault"]{
+button[class*="lookFilled"][class*="colorRed"]{
     background-color: $alert;
     border-radius: 0;
     color: #FFF;
@@ -203,7 +207,8 @@ button[class^="buttonRedFilledDefault"]{
 }
 
 // Link button (eg. account details Cancel)
-button[class^="buttonPrimaryLinkDefault"]{
+button[class*="lookLink-"][class*="colorPrimary-"]{
+    height: 36px;
     border: 1px solid $inputborder;
     border-radius: 0;
     font-weight: normal;
@@ -211,7 +216,7 @@ button[class^="buttonPrimaryLinkDefault"]{
         background-color: rgba(255,255,255,.3);
         border-color: $inputborder;
     }
-    &:hover div[class^="contentsDefault"]{
+    &:hover div[class^="contents-"]{
         background-image: none !important;
     }
     &:focus{
@@ -222,7 +227,7 @@ button[class^="buttonPrimaryLinkDefault"]{
 }
 
 // Primary outlined (eg. Nitro $4.99/month button)
-button[class^="buttonWhiteOutlined"],
+button[class*="lookOutlined"][class*="colorPrimary"],
 .theme-dark button[class^="buttonPrimaryOutlinedDefault"]{
     border: 1px solid $inputborder;
     border-radius: 0;
