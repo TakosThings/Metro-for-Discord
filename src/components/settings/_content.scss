@@ -286,7 +286,19 @@
             div[class*="itemDefaultSelected"]{
                 background-color: var(--accent);
             }
-        }        
+        }
+
+        // Audit log
+        div[class*="auditLog-"]{
+            border: none;
+            border-radius: 0;
+            div[class^="divider-"]{
+                display: none;
+            }
+            div[class^="changeStr-"]{
+                line-height: 1.333;
+            }
+        }
 
         // UI COMMONS
         // Warnings
