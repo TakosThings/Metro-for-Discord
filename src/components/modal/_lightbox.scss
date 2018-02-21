@@ -1,6 +1,9 @@
 .theme-dark div[class^="modal-"]{
     div[class^="imageWrapper-"]{
         border-radius: 0;
+        ~ div{
+            text-align: right;
+        }
     }
     a[class^="downloadLink"]{
         opacity: 1;
