@@ -418,3 +418,37 @@ div[class^="group"] button[class*="allowSelected"]{
     background-color: $safe;
     border-color: $safe;
 }
+
+// Copy box
+.theme-dark div[class^="copyInputDefault"]{
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid $inputborder;
+    border-radius: 0;
+
+    input{
+        font-size: $fsui;
+    }
+    button{
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+}
+.theme-dark div[class^="copyInputSuccess"]{
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid $safe;
+    border-radius: 0;
+    button{
+        background-color: $safe;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+}
