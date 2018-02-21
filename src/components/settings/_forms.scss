@@ -140,9 +140,10 @@ button[class*="button-"]{
     line-height: 1.3333;
 }
 button[class*="button-"][class*="sizeSmall-"],
+button[class*="button-"][class*="sizeMedium-"],
 button[class*="button-"][class*="sizeXlarge-"]{
     height: 36px;
-    min-width: 36px;
+    min-height: 36px;
 }
 // Branded button (eg. View Backup Codes or account deatils Edit)
 button[class*="lookFilled-"][class*="colorBrand-"]{
@@ -208,10 +209,12 @@ button[class*="lookFilled"][class*="colorRed"]{
 }
 
 // Link button (eg. account details Cancel)
-button[class*="lookLink-"][class*="colorPrimary-"]{
+button[class*="lookLink-"][class*="colorPrimary-"],
+button[class*="lookLink-"][class*="colorGrey-"]{
     height: 36px;
     border: 1px solid $inputborder;
     border-radius: 0;
+    color: #FFF;
     font-weight: normal;
     &:hover{
         background-color: rgba(255,255,255,.3);
