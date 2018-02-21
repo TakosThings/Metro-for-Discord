@@ -351,6 +351,18 @@
                 }
             }
         }
+
+
+        // Save alert
+        .notice-region{
+            div[class^="container-"]{
+                border-radius: 0;
+                div[class^="message-"]{
+                    font-size: $fsui;
+                    font-weight: $fwui;
+                }
+            }
+        }
     } 
 }
 
