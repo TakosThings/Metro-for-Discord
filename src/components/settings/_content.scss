@@ -300,6 +300,22 @@
             }
         }
 
+        // Members
+        .guild-settings-members-member .tag{
+            color: #FFF;
+            font-size: $fsui;
+            line-height: $lh;
+        }
+        .role-wrapper{
+            li[class^="role-"]{
+                border-width: 2px;
+            }
+            button[class^="addButton"]{
+                border: 2px solid #FFF;
+                color: #FFF;
+            }
+        }
+        
         // UI COMMONS
         // Warnings
         div[class^="ghostPill"]{
