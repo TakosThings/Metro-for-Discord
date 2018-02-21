@@ -338,6 +338,19 @@
                 color: #FFF;
             }
         }
+
+        // No content warning
+        div[class^="image-"] ~ div{
+            h4{
+                color: #FFF;
+                font-size: $fsheader;
+                font-weight: $fwheader;
+                text-transform: none;
+                ~ div[class^="text-"]{
+                    color: #FFF;
+                }
+            }
+        }
     } 
 }
 
