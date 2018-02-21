@@ -9,12 +9,21 @@ div[class^="modal-"]{
 }
 
 // Header
-div[class^="modal"] div[class*="header"] h4{
+div[class^="modal"] div[class*="header"] h4,
+div[class^="scroller-"][class*="content-"] h2{
     padding: 36px 0 4px;
     font-size: $fsheader;
     font-weight: $fwheader;
     line-height: $lh;
     text-transform: none;
+}
+div[class^="scroller-"][class*="content-"] h2{
+    text-align: left;
+}
+div[class^="scroller-"][class*="content-"] div[class^="body-"]{
+    color: #FFF;
+    font-size: $fsui;
+    text-align: left;
 }
 
 // Footer
