@@ -1,55 +1,45 @@
-.ui-popout-list{
+// Located in: Server settings > Audit Log > Filter action
+.theme-dark div[class^="popoutList-"]{
+    background-color: $b1;
     border: 1px solid var(--accent);
     border-radius: 0;
-}
-.theme-dark .ui-popout-list{
-    background-color: $b1;
-}
 
-// Search
-.theme-dark .ui-popout-list .ui-search-bar{
-    height: auto;
-    position: relative;
-    background-color: transparent;
-}
-.theme-dark .ui-popout-list .ui-search-bar input{
-    height: 36px;
-    padding: 9px 12px 10px;
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    box-sizing: border-box;
-    font-size: $fsui;
-    &:hover{
-        border-color: $inputborderhover;
+    // Search bar
+    div[class*="searchBar-"]{
+        height: 36px;
+        background-color: transparent;
+        border-radius: 0;
+        input{
+            border: 1px solid $inputborder;
+            border-radius: 0;
+            font-size: $fsui;
+            &::-webkit-input-placeholder{
+                color: #FFF;
+            }
+            &:hover{
+                border-color: $inputborderhover;
+            }
+            &:focus{
+                background-color: #FFF;
+                color: #000;
+                border-color: var(--accent);
+            }
+        }
+        div[class^="searchBarIcon"]{
+            margin-top: 3px;
+            margin-left: -18px;
+        }
     }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
-    }
-}
-.ui-popout-list .ui-search-bar .ui-search-bar-icon{
-    position: absolute;
-    top: 4px;
-    right: 4px;
-}
 
-// List
-.ui-popout-list .ui-selectable-item{
-    padding: 8px;
-    border: 0;
-    border-radius: 0;
-    &:hover{
-        background-color: rgba(255,255,255,.1);
+    // Items
+    div[class*="actionItem-"]{
+        height: 30px;
+        border-radius: 0;
+        &:hover{
+            background-color: $b2;
+        }
     }
-}
-.ui-popout-list .ui-selectable-item .ui-selectable-item-label{
-    font-size: $fsui;
-}
-.ui-popout-list .ui-selectable-item .ui-selectable-item-label div[class^="avatar-"]{
-    width: 25px;
-    height: 25px;
-}
-.theme-dark .ui-popout-list .ui-selectable-item[style*="background: rgb(114, 137, 218)"]{
-    background-color: var(--accent) !important
+    div[class*="actionItem-"][class*="selected-"]{
+        background-color: var(--accent) !important;
+    }
 }
