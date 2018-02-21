@@ -76,12 +76,17 @@
         font-size: $fsui;
     }
     .Select-control{
+        min-height: 36px;
+        padding: 0;
         background-color: transparent;
         border: 1px solid $inputborder;
         border-radius: 0;
         color: #FFF;
         &:hover{
             border-color: $inputborderhover;
+        }
+        div{
+            padding-top: 0;
         }
     }
     .Select.is-disabled .Select-control{
@@ -110,6 +115,9 @@
                 }
                 &.is-focused{
                     background-color: var(--accent);
+                }
+                &:last-of-type{
+                    border-radius: 0;
                 }
             }
         }
