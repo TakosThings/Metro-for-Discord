@@ -8,6 +8,13 @@ div[class^="modal-"]{
     border-radius: 0;
 }
 
+// Close button
+div[class^="modal-"] svg[class^="close-"]{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 // Header
 div[class^="modal"] div[class*="header"] h4,
 div[class^="scroller-"][class*="content-"] h2{
@@ -20,10 +27,17 @@ div[class^="scroller-"][class*="content-"] h2{
 div[class^="scroller-"][class*="content-"] h2{
     text-align: left;
 }
+
+// Body
 div[class^="scroller-"][class*="content-"] div[class^="body-"]{
     color: #FFF;
     font-size: $fsui;
     text-align: left;
+}
+div[class^="scroller-"][class*="content"] div[class^="medium-"]{
+    color: #FFF;
+    font-size: $fsui;
+    line-height: 1.33333;
 }
 
 // Footer
