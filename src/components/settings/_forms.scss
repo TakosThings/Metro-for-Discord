@@ -240,6 +240,7 @@ button[class*="lookLink-"][class*="colorGrey-"]{
 
 // Primary outlined (eg. Nitro $4.99/month button)
 button[class*="lookOutlined"][class*="colorPrimary"],
+button[class*="lookOutlined"][class*="colorWhite"],
 .theme-dark button[class^="buttonPrimaryOutlinedDefault"]{
     border: 1px solid $inputborder;
     border-radius: 0;
