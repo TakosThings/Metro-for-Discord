@@ -1,164 +1,220 @@
-div[class^="userPopout-"]{
-    border: 1px solid var(--accent);
+.theme-dark.popouts .popout.popout-right.no-arrow.no-shadow,
+.theme-dark.popouts .popout.popout-left.no-arrow.no-shadow{
+    position: absolute;
+    top: 32px !important;
+    right: 0 !important;
+    left: initial !important;
+    height: 100vh;
+    margin: 0;
+    transform: none !important;
+    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
+}
+
+.theme-dark div[class^="userPopout-"]{
+    width: 420px;
+    height: 100vh;
+    background-color: $b1;
     border-radius: 0;
-    box-shadow: none;
-
+    
+    // Header
     div[class^="headerNormal"],
-    div[class^="headerPlaying"]{
-        background-color: $b1;
-    }
-    div[class*="headerTop"]{
-        background-color: var(--accent);
-    }
-    div[class*="mask"]{
-        mask: none;
-        -webkit-mask: none;
-    }
-    span.username{
-        font-size: $fsheader;
-        font-weight: $fwheader;
-    }
-    span.discriminator{
-        padding-left: 4px;
-        font-size: $fschat;
-    }
-    // If a nickname is set
-    div[class^="headerName-"]{
-        font-size: $fsheader;
-        font-weight: $fwheader;
-    }
-    div[class^="headerTag"]{
-        max-width: 250px;
-        padding: 0 8px;
-        box-sizing: border-box;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
+    div[class^="headerPlaying"],
+    div[class^="headerSpotify"]{
+        div[class*="headerTop"]{
+            padding: 20px;
+            flex-direction: initial;
+            justify-content: initial;
+            background-color: var(--accent);
+            div[class*="avatarWrapper-"]{
+                margin-bottom: 0;
+                div[class^="image-"]{
+                    mask: none;
+                    -webkit-mask: none;
+                }
+                div[class^="avatarStatus"]{
+                    box-shadow: none;
+                }
+            }
+            div[class^="headerText-"]{
+                align-items: baseline;
+                margin-left: 20px;
+                text-align: left;
+                div[class^="headerName"]{
+                    margin: 0;
+                    padding: 0;
+                    font-size: $fsheader;
+                    font-weight: $fwheader;
+                }
+                span{
+                    display: block;
+                    line-height: 1.3333;
+                }
+                span.username{
+                    font-size: $fsheader;
+                    font-weight: $fwheader;
+                }
+                span.discriminator{
+                    font-size: $fsui;
+                    font-weight: $fwui;
+                }
+                span[class*="botTag-"]{
+                    margin: 0;
+                    padding: 0;
+                    background-color: transparent;
+                    color: hsla(0,0%,100%,.6);
+                    font-size: 0;
+                    text-transform: capitalize;
+                    &::before{
+                        content: "Bot";
+                        font-size: $fsui;
+                    }
+                }
+            }
+        }
     }
 
-    // Now Playing
-    div[class^="activityUserPopout"]{
-        div[class^="headerText"]{
-            margin-bottom: 12px;
+    // Header (playing game)
+    div[class^="headerPlaying"]{
+        background-color: transparent;
+        div[class*="headerTop"]{
+            background-color: var(--accent);
+        }
+    }
+
+    // Activity
+    div[class^="activityUserPopout-"]{
+        padding: 20px;
+        background-color: transparent;
+        div[class^="headerTextNormal-"]{
             font-size: $fsui;
-            font-weight: $fwheader;
+            font-weight: $fwui;
             text-transform: none;
+            line-height: $lh;
         }
-        div[class^="assetsLargeMaskUserPopout-"]{
-            mask: none;
-            -webkit-mask: none;
+
+        // Generic now playing (has generic question mark image)
+        div[class^="contentGameImageUserPopout"]{
+            margin-left: 20px;
+            color: #FFF;
+            div[class^="nameNormal"]{
+                font-size: $fsui;
+                font-weight: $fwui;
+            }
+            span[class^="playTime-"]{
+               font-size: $fschat; 
+            }
         }
-        div[class^="name-"]{
+
+        // No images (eg. status set by a bot)
+        div[class^="contentNoImagesUserPopout"]{
             color: #FFF;
             font-size: $fsui;
-            font-weight: normal;
-            line-height: 1.33333;
+            font-weight: $fwui;
         }
-        span[class^="playTime"]{
-            font-size: 13px;
+
+        // Rich status
+        div[class^="assets-"]{
+            img[class^="assetsLargeImageUserPopout"]{
+                mask: none;
+                -webkit-mask: none;
+                border-radius: 0;
+            }
+            img[class^="assetsSmallImageUserPopout"]{
+                background-color: $b3;
+            }
         }
-        //Spotify
-        // Album art
-        img[class^="assetsLargeImageUserPopout-"]{
-            border-radius: 0;
-        }
-        // Song details
         div[class^="contentImagesUserPopout"]{
+            margin-left: 20px;
             color: #FFF;
-            a[class^="bodyLink"]{
-                color: #FFF;
+            div[class^="nameNormal"]{
+                font-size: $fsui;
                 font-weight: $fwui;
             }
             div[class^="details-"]{
                 color: #FFF;
-                font-weight: $fwui;
+                font-size: $fschat;
             }
-        }
-        // Song progress bar
-        div[class^="bar-"]{
-            background-color: rgba($color: #FFF, $alpha: 0.3);
-            border-radius: 0;
-            ~ div div[class^="textLeft"],
-            ~ div div[class^="textRight"]{
+            div[class^="state-"],
+            div[class^="timestamp-"]{
+                font-size: $fschat;
+            }
+            // Spotify song/artist
+            a[class^="bodyLink-"]{
                 color: #FFF;
-                font-weight: normal;
             }
         }
-        div[class^="barInner-"]{
-            background-color: #FFF;
-            border-radius: 0;
+
+        // Spotify progress bar
+        div[class^="timeBarUserPopout"]{
+            div[class^="bar-"]{
+                background-color: #FFF;
+                border-radius: 0;
+                ~ div div[class^="textLeft-"],
+                ~ div div[class^="textRight-"]{
+                    color: #FFF;
+                    font-weight: $fwui;
+                }
+            }
         }
     }
 
-    //Bottom half
+    // Body
     div[class^="body-"]{
-        background-color: $b1;
-    }
-
-    div[class^="bodyTitle"]{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: normal;
-        text-transform: none;
-    }
-
-    // Roles
-    li[class^="role-"]{
-        border-width: 2px;
-        color: #FFF;
-        font-weight: normal;
-        div[class^="roleName"]{
-            line-height: 1.3;
+        padding: 20px;
+        background-color: transparent;
+        div[class^="bodyTitle"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+            line-height: $lh;
         }
-    }
-    button[class^="addButton"]{
-        color: #FFF;
-        border-color: rgba($color: #FFF, $alpha: 0.6);
-        border-width: 2px;
-    }
-
-    // Note
-    div[class^="note-"] textarea{
-        min-height: 36px;
-        padding: 9px 12px 10px;
-        border: 1px solid $inputborder;
-        border-radius: 0;
-        color: #FFF;
-        font-size: $fsui;
-        line-height: 1;
-        &:hover{
-            border-color: $inputborderhover;
+        ul{
+            li{
+                color: #FFF;
+                font-weight: $fwui;
+                line-height: $lh;
+                border-width: 2px;
+            }
         }
-        &:focus{
-            background-color: transparent !important;
-            border-color: var(--accent);
+        div[class^="note-"]{
+            margin-left: 0;
+            textarea{
+                min-height: 36px;
+                padding: 9px 12px 10px;
+                border: 1px solid $inputborder;
+                border-radius: 0;
+                color: #FFF;
+                font-size: $fsui;
+                line-height: 1;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+                &:focus{
+                    background-color: #FFF !important;
+                    color: #000;
+                    border-color: var(--accent);
+                }
+            }
         }
     }
 
     // Footer
-    div[class^="footer"]{
-        padding: 0px 10px 6px 6px;
-        background-color: $b1;
+    div[class^="footer-"]{
+        padding: 0 20px 20px;
+        background-color: transparent;
         border: 0;
-    }
-    input[class^="quickMessage"]{
-        height: 36px;
-        margin-bottom: 0;
-        padding: 9px 12px 10px;
-        border: 1px solid $inputborder;
-        border-radius: 0;
-        color: #FFF;
-        font-size: $fsui;
-        line-height: 1;
-        &:hover{
-            border-color: $inputborderhover;
+        input{
+            font-size: $fsui;
+            line-height: $lh;
+            border: 1px solid $inputborder;
+            border-radius: 0;
+            &:hover{
+                border-color: $inputborderhover;
+            }
         }
-        &:focus{
-            background-color: transparent !important;
-            border-color: var(--accent);
+        div[class^="protip-"]{
+            display: none;
         }
-    }
-    div[class^="protip"]{
-        display: none;
     }
 }
