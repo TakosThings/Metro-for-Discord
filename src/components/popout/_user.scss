@@ -147,8 +147,11 @@
         // Spotify progress bar
         div[class^="timeBarUserPopout"]{
             div[class^="bar-"]{
-                background-color: #FFF;
                 border-radius: 0;
+                div[class^="barInner"]{
+                    background-color: #FFF;
+                    border-radius: 0;
+                }
                 ~ div div[class^="textLeft-"],
                 ~ div div[class^="textRight-"]{
                     color: #FFF;
