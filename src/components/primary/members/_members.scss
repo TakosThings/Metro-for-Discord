@@ -23,16 +23,21 @@
 
 // Member
 .channel-members .member{
+    margin: 0 0 0 4px;
     padding: 5px 20px;
 }
 .theme-dark .channel-members .member{
+    border: 2px solid transparent;
     color: #ACACAC;
+    &:hover{
+        background: transparent;
+        border-color: rgba(255,255,255,0.1)
+    }
 }
 .channel-members .member .member-inner{
     width: 150px;
 }
-.theme-dark .channel-members .member.popout-open,
-.theme-dark .channel-members .member:hover{
+.theme-dark .channel-members .member.popout-open{
     background: rgba(255,255,255,0.1);
 }
 .channel-members .member .member-username{
