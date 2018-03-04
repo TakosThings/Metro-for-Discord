@@ -1,6 +1,27 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.2
+* **Enhancements** (6)
+  * Copy box
+  * Audit log
+  * Quick select popout
+  * Move lightbox download link to right
+  * Redesigned user popout
+  * Change hover state of members list
+* **Fixes** (9)
+  * Dropdown box sizing
+  * Some buttons missed in last pass
+  * Server settings members list role tags
+  * No content warning (eg. Server settings > Integrations > "No integrations" message)
+  * Some generic modal layouts
+  * Settings save alert
+  * More fixes for generic modals
+  * Modal close button position
+  * Members list role header showed select text mouse cursor when hovered
+* **Notes** (1)
+  * User popout has been re-written. If you notice any major problems, please [open a new issue](https://github.com/TakosThings/Metro-for-Discord/issues/new).
+
 #### 3.6.1
 * **Enhancements** (2)
   * Changed background of voice connected badge
