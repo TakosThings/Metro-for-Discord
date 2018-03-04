@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.6.1";
+    content: "Metro for Discord 3.6.2";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -370,7 +370,7 @@
   .guilds-wrapper .guilds {
     margin-bottom: 112px;
     padding: 8px;
-    padding-bottom: 112px; }
+    padding-bottom: 124px; }
   .guilds-wrapper .guilds .guild {
     width: 48px;
     height: 48px; }
@@ -1340,15 +1340,20 @@
     overflow: hidden; }
   .theme-dark .channel-members h2 {
     color: #FFF;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    cursor: default; }
   .channel-members .member {
+    margin: 0 0 0 4px;
     padding: 5px 20px; }
   .theme-dark .channel-members .member {
+    border: 2px solid transparent;
     color: #ACACAC; }
+    .theme-dark .channel-members .member:hover {
+      background: transparent;
+      border-color: rgba(255, 255, 255, 0.1); }
   .channel-members .member .member-inner {
     width: 150px; }
-  .theme-dark .channel-members .member.popout-open,
-  .theme-dark .channel-members .member:hover {
+  .theme-dark .channel-members .member.popout-open {
     background: rgba(255, 255, 255, 0.1); }
   .channel-members .member .member-username {
     font-size: 15px;
@@ -1888,6 +1893,22 @@
     font-weight: normal; }
   .theme-dark .ui-standard-sidebar-view div[class^="side"] div[class*="itemDefaultSelected"] {
     background-color: var(--accent); }
+  .theme-dark .ui-standard-sidebar-view div[class*="auditLog-"] {
+    border: none;
+    border-radius: 0; }
+    .theme-dark .ui-standard-sidebar-view div[class*="auditLog-"] div[class^="divider-"] {
+      display: none; }
+    .theme-dark .ui-standard-sidebar-view div[class*="auditLog-"] div[class^="changeStr-"] {
+      line-height: 1.333; }
+  .theme-dark .ui-standard-sidebar-view .guild-settings-members-member .tag {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1.5625; }
+  .theme-dark .ui-standard-sidebar-view .role-wrapper li[class^="role-"] {
+    border-width: 2px; }
+  .theme-dark .ui-standard-sidebar-view .role-wrapper button[class^="addButton"] {
+    border: 2px solid #FFF;
+    color: #FFF; }
   .theme-dark .ui-standard-sidebar-view div[class^="ghostPill"] {
     background-color: transparent;
     padding: 0;
@@ -1902,6 +1923,20 @@
       font-size: 15px; }
     .theme-dark .ui-standard-sidebar-view div[class*="cardPrimary"] div[class*="desc"] {
       color: #FFF; }
+  .theme-dark .ui-standard-sidebar-view div[class^="image-"] ~ div h4 {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: none; }
+    .theme-dark .ui-standard-sidebar-view div[class^="image-"] ~ div h4 ~ div[class^="text-"] {
+      color: #FFF; }
+  .theme-dark .ui-standard-sidebar-view .notice-region div[class^="container-"] {
+    border-radius: 0; }
+    .theme-dark .ui-standard-sidebar-view .notice-region div[class^="container-"] div[class^="message-"] {
+      font-size: 15px;
+      font-weight: 400; }
+  .theme-dark .ui-standard-sidebar-view .notice-region button {
+    padding: 8px 12px 10px; }
   img[src="/assets/cdea41ede63f61153e4a3c0531fa3873.svg"],
   div[style*="/assets/b47564b3086d0d8d941aae95a4b7b78c.svg"],
   div[style*="/assets/e9aaf1824f17126a7992e5ad98752389.svg"],
@@ -1970,12 +2005,16 @@
   .theme-dark div[class^="select-"] .Select {
     font-size: 15px; }
   .theme-dark div[class^="select-"] .Select-control {
+    min-height: 36px;
+    padding: 0;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0;
     color: #FFF; }
     .theme-dark div[class^="select-"] .Select-control:hover {
       border-color: rgba(255, 255, 255, 0.8); }
+    .theme-dark div[class^="select-"] .Select-control div {
+      padding-top: 0; }
   .theme-dark div[class^="select-"] .Select.is-disabled .Select-control:hover {
     border-color: rgba(255, 255, 255, 0.13); }
   .theme-dark div[class^="select-"] .is-open .Select-control {
@@ -1997,6 +2036,8 @@
           background-color: transparent; }
         .theme-dark div[class^="select-"] .Select-menu-outer .Select-menu .Select-option.is-focused {
           background-color: var(--accent); }
+        .theme-dark div[class^="select-"] .Select-menu-outer .Select-menu .Select-option:last-of-type {
+          border-radius: 0; }
   h5 ~ div[class^="container-"][class*="container-"] {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0; }
@@ -2014,9 +2055,10 @@
     font-size: 15px;
     line-height: 1.3333; }
   button[class*="button-"][class*="sizeSmall-"],
+  button[class*="button-"][class*="sizeMedium-"],
   button[class*="button-"][class*="sizeXlarge-"] {
     height: 36px;
-    min-width: 36px; }
+    min-height: 36px; }
   button[class*="lookFilled-"][class*="colorBrand-"] {
     background-color: var(--accent);
     border: 1px solid transparent;
@@ -2059,29 +2101,37 @@
     font-weight: normal; }
     button[class*="lookFilled"][class*="colorRed"]:hover {
       background-color: #9d2300; }
-  button[class*="lookLink-"][class*="colorPrimary-"] {
+  button[class*="lookLink-"][class*="colorPrimary-"],
+  button[class*="lookLink-"][class*="colorGrey-"] {
     height: 36px;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0;
+    color: #FFF;
     font-weight: normal; }
-    button[class*="lookLink-"][class*="colorPrimary-"]:hover {
+    button[class*="lookLink-"][class*="colorPrimary-"]:hover,
+    button[class*="lookLink-"][class*="colorGrey-"]:hover {
       background-color: rgba(255, 255, 255, 0.3);
       border-color: rgba(255, 255, 255, 0.6); }
-    button[class*="lookLink-"][class*="colorPrimary-"]:hover div[class^="contents-"] {
+    button[class*="lookLink-"][class*="colorPrimary-"]:hover div[class^="contents-"],
+    button[class*="lookLink-"][class*="colorGrey-"]:hover div[class^="contents-"] {
       background-image: none !important; }
-    button[class*="lookLink-"][class*="colorPrimary-"]:focus {
+    button[class*="lookLink-"][class*="colorPrimary-"]:focus,
+    button[class*="lookLink-"][class*="colorGrey-"]:focus {
       background-color: #FFF;
       color: #000;
       border-color: rgba(255, 255, 255, 0.8); }
   button[class*="lookOutlined"][class*="colorPrimary"],
+  button[class*="lookOutlined"][class*="colorWhite"],
   .theme-dark button[class^="buttonPrimaryOutlinedDefault"] {
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0;
     font-weight: normal; }
     button[class*="lookOutlined"][class*="colorPrimary"]:hover,
+    button[class*="lookOutlined"][class*="colorWhite"]:hover,
     .theme-dark button[class^="buttonPrimaryOutlinedDefault"]:hover {
       border-color: rgba(255, 255, 255, 0.8); }
     button[class*="lookOutlined"][class*="colorPrimary"]:focus,
+    button[class*="lookOutlined"][class*="colorWhite"]:focus,
     .theme-dark button[class^="buttonPrimaryOutlinedDefault"]:focus {
       border-color: rgba(255, 255, 255, 0.8); }
   .theme-dark button[class*="lookFilled-"][class*="colorPrimary-"] {
@@ -2208,119 +2258,205 @@
   div[class^="group"] button[class*="allowSelected"] {
     background-color: #43B581;
     border-color: #43B581; }
-  div[class^="userPopout-"] {
-    border: 1px solid var(--accent);
-    border-radius: 0;
-    box-shadow: none; }
-    div[class^="userPopout-"] div[class^="headerNormal"],
-    div[class^="userPopout-"] div[class^="headerPlaying"] {
-      background-color: #191919; }
-    div[class^="userPopout-"] div[class*="headerTop"] {
+  .theme-dark div[class^="copyInputDefault"] {
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 0; }
+    .theme-dark div[class^="copyInputDefault"] input {
+      font-size: 15px; }
+    .theme-dark div[class^="copyInputDefault"] button {
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 0;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 400; }
+  .theme-dark div[class^="copyInputSuccess"] {
+    height: 36px;
+    background-color: transparent;
+    border: 1px solid #43B581;
+    border-radius: 0; }
+    .theme-dark div[class^="copyInputSuccess"] button {
+      background-color: #43B581;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 0;
+      color: #FFF;
+      font-size: 15px;
+      font-weight: 400; }
+  .theme-dark.popouts .popout.popout-right.no-arrow.no-shadow,
+  .theme-dark.popouts .popout.popout-left.no-arrow.no-shadow {
+    position: absolute;
+    top: 32px !important;
+    right: 0 !important;
+    left: initial !important;
+    height: 100vh;
+    margin: 0;
+    transform: none !important;
+    animation: 350ms slideinright cubic-bezier(0.1, 0.9, 0.2, 1); }
+  .theme-dark div[class^="userPopout-"] {
+    width: 420px;
+    height: 100vh;
+    background-color: #191919;
+    border-radius: 0; }
+    .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"],
+    .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"],
+    .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] {
+      padding: 20px;
+      flex-direction: initial;
+      justify-content: initial;
       background-color: var(--accent); }
-    div[class^="userPopout-"] div[class*="mask"] {
-      mask: none;
-      -webkit-mask: none; }
-    div[class^="userPopout-"] span.username {
-      font-size: 20px;
-      font-weight: 300; }
-    div[class^="userPopout-"] span.discriminator {
-      padding-left: 4px;
-      font-size: 13px; }
-    div[class^="userPopout-"] div[class^="headerName-"] {
-      font-size: 20px;
-      font-weight: 300; }
-    div[class^="userPopout-"] div[class^="headerTag"] {
-      max-width: 250px;
-      padding: 0 8px;
-      box-sizing: border-box;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="headerText"] {
-      margin-bottom: 12px;
-      font-size: 15px;
-      font-weight: 300;
-      text-transform: none; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="assetsLargeMaskUserPopout-"] {
-      mask: none;
-      -webkit-mask: none; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="name-"] {
-      color: #FFF;
-      font-size: 15px;
-      font-weight: normal;
-      line-height: 1.33333; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] span[class^="playTime"] {
-      font-size: 13px; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] img[class^="assetsLargeImageUserPopout-"] {
-      border-radius: 0; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="contentImagesUserPopout"] {
-      color: #FFF; }
-      div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="contentImagesUserPopout"] a[class^="bodyLink"] {
+      .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class*="avatarWrapper-"],
+      .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class*="avatarWrapper-"],
+      .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class*="avatarWrapper-"] {
+        margin-bottom: 0; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="image-"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="image-"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="image-"] {
+          mask: none;
+          -webkit-mask: none; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="avatarStatus"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="avatarStatus"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class*="avatarWrapper-"] div[class^="avatarStatus"] {
+          box-shadow: none; }
+      .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"],
+      .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"],
+      .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] {
+        align-items: baseline;
+        margin-left: 20px;
+        text-align: left; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] div[class^="headerName"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] div[class^="headerName"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] div[class^="headerName"] {
+          margin: 0;
+          padding: 0;
+          font-size: 20px;
+          font-weight: 300; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span,
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span,
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span {
+          display: block;
+          line-height: 1.3333; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span.username,
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span.username,
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span.username {
+          font-size: 20px;
+          font-weight: 300; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span.discriminator,
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span.discriminator,
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span.discriminator {
+          font-size: 15px;
+          font-weight: 400; }
+        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"],
+        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"] {
+          margin: 0;
+          padding: 0;
+          background-color: transparent;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 0;
+          text-transform: capitalize; }
+          .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before,
+          .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before,
+          .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before {
+            content: "Bot";
+            font-size: 15px; }
+    .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] {
+      background-color: transparent; }
+      .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] {
+        background-color: var(--accent); }
+    .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] {
+      padding: 20px;
+      background-color: transparent; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="headerTextNormal-"] {
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 1.5625; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentGameImageUserPopout"] {
+        margin-left: 20px;
+        color: #FFF; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentGameImageUserPopout"] div[class^="nameNormal"] {
+          font-size: 15px;
+          font-weight: 400; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentGameImageUserPopout"] span[class^="playTime-"] {
+          font-size: 13px; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentNoImagesUserPopout"] {
         color: #FFF;
+        font-size: 15px;
         font-weight: 400; }
-      div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="contentImagesUserPopout"] div[class^="details-"] {
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="assets-"] img[class^="assetsLargeImageUserPopout"] {
+        mask: none;
+        -webkit-mask: none;
+        border-radius: 0; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="assets-"] img[class^="assetsSmallImageUserPopout"] {
+        background-color: #333333; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] {
+        margin-left: 20px;
+        color: #FFF; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] div[class^="nameNormal"] {
+          font-size: 15px;
+          font-weight: 400; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] div[class^="details-"] {
+          color: #FFF;
+          font-size: 13px; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] div[class^="state-"],
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] div[class^="timestamp-"] {
+          font-size: 13px; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="contentImagesUserPopout"] a[class^="bodyLink-"] {
+          color: #FFF; }
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="timeBarUserPopout"] div[class^="bar-"] {
+        border-radius: 0; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="timeBarUserPopout"] div[class^="bar-"] div[class^="barInner"] {
+          background-color: #FFF;
+          border-radius: 0; }
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="timeBarUserPopout"] div[class^="bar-"] ~ div div[class^="textLeft-"],
+        .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="timeBarUserPopout"] div[class^="bar-"] ~ div div[class^="textRight-"] {
+          color: #FFF;
+          font-weight: 400; }
+    .theme-dark div[class^="userPopout-"] div[class^="body-"] {
+      padding: 20px;
+      background-color: transparent; }
+      .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="bodyTitle"] {
         color: #FFF;
-        font-weight: 400; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="bar-"] {
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 0; }
-      div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="bar-"] ~ div div[class^="textLeft"],
-      div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="bar-"] ~ div div[class^="textRight"] {
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: none;
+        line-height: 1.5625; }
+      .theme-dark div[class^="userPopout-"] div[class^="body-"] ul li {
         color: #FFF;
-        font-weight: normal; }
-    div[class^="userPopout-"] div[class^="activityUserPopout"] div[class^="barInner-"] {
-      background-color: #FFF;
-      border-radius: 0; }
-    div[class^="userPopout-"] div[class^="body-"] {
-      background-color: #191919; }
-    div[class^="userPopout-"] div[class^="bodyTitle"] {
-      color: #FFF;
-      font-size: 15px;
-      font-weight: normal;
-      text-transform: none; }
-    div[class^="userPopout-"] li[class^="role-"] {
-      border-width: 2px;
-      color: #FFF;
-      font-weight: normal; }
-      div[class^="userPopout-"] li[class^="role-"] div[class^="roleName"] {
-        line-height: 1.3; }
-    div[class^="userPopout-"] button[class^="addButton"] {
-      color: #FFF;
-      border-color: rgba(255, 255, 255, 0.6);
-      border-width: 2px; }
-    div[class^="userPopout-"] div[class^="note-"] textarea {
-      min-height: 36px;
-      padding: 9px 12px 10px;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 0;
-      color: #FFF;
-      font-size: 15px;
-      line-height: 1; }
-      div[class^="userPopout-"] div[class^="note-"] textarea:hover {
-        border-color: rgba(255, 255, 255, 0.8); }
-      div[class^="userPopout-"] div[class^="note-"] textarea:focus {
-        background-color: transparent !important;
-        border-color: var(--accent); }
-    div[class^="userPopout-"] div[class^="footer"] {
-      padding: 0px 10px 6px 6px;
-      background-color: #191919;
+        font-weight: 400;
+        line-height: 1.5625;
+        border-width: 2px; }
+      .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] {
+        margin-left: 0; }
+        .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] textarea {
+          min-height: 36px;
+          padding: 9px 12px 10px;
+          border: 1px solid rgba(255, 255, 255, 0.6);
+          border-radius: 0;
+          color: #FFF;
+          font-size: 15px;
+          line-height: 1; }
+          .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] textarea:hover {
+            border-color: rgba(255, 255, 255, 0.8); }
+          .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] textarea:focus {
+            background-color: #FFF !important;
+            color: #000;
+            border-color: var(--accent); }
+    .theme-dark div[class^="userPopout-"] div[class^="footer-"] {
+      padding: 0 20px 20px;
+      background-color: transparent;
       border: 0; }
-    div[class^="userPopout-"] input[class^="quickMessage"] {
-      height: 36px;
-      margin-bottom: 0;
-      padding: 9px 12px 10px;
-      border: 1px solid rgba(255, 255, 255, 0.6);
-      border-radius: 0;
-      color: #FFF;
-      font-size: 15px;
-      line-height: 1; }
-      div[class^="userPopout-"] input[class^="quickMessage"]:hover {
-        border-color: rgba(255, 255, 255, 0.8); }
-      div[class^="userPopout-"] input[class^="quickMessage"]:focus {
-        background-color: transparent !important;
-        border-color: var(--accent); }
-    div[class^="userPopout-"] div[class^="protip"] {
-      display: none; }
+      .theme-dark div[class^="userPopout-"] div[class^="footer-"] input {
+        font-size: 15px;
+        line-height: 1.5625;
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 0; }
+        .theme-dark div[class^="userPopout-"] div[class^="footer-"] input:hover {
+          border-color: rgba(255, 255, 255, 0.8); }
+      .theme-dark div[class^="userPopout-"] div[class^="footer-"] div[class^="protip-"] {
+        display: none; }
   .option-popout {
     width: 74px;
     margin-right: 8px; }
@@ -2857,45 +2993,36 @@
     .private-channel-recipients-invite .error-state.not-friends .btn:disabled:hover {
       background-color: var(--accent);
       border-color: transparent; }
-  .ui-popout-list {
+  .theme-dark div[class^="popoutList-"] {
+    background-color: #191919;
     border: 1px solid var(--accent);
     border-radius: 0; }
-  .theme-dark .ui-popout-list {
-    background-color: #191919; }
-  .theme-dark .ui-popout-list .ui-search-bar {
-    height: auto;
-    position: relative;
-    background-color: transparent; }
-  .theme-dark .ui-popout-list .ui-search-bar input {
-    height: 36px;
-    padding: 9px 12px 10px;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 0;
-    box-sizing: border-box;
-    font-size: 15px; }
-    .theme-dark .ui-popout-list .ui-search-bar input:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
-    .theme-dark .ui-popout-list .ui-search-bar input:focus {
-      background-color: #FFF;
-      border-color: var(--accent);
-      color: #000; }
-  .ui-popout-list .ui-search-bar .ui-search-bar-icon {
-    position: absolute;
-    top: 4px;
-    right: 4px; }
-  .ui-popout-list .ui-selectable-item {
-    padding: 8px;
-    border: 0;
-    border-radius: 0; }
-    .ui-popout-list .ui-selectable-item:hover {
-      background-color: rgba(255, 255, 255, 0.1); }
-  .ui-popout-list .ui-selectable-item .ui-selectable-item-label {
-    font-size: 15px; }
-  .ui-popout-list .ui-selectable-item .ui-selectable-item-label div[class^="avatar-"] {
-    width: 25px;
-    height: 25px; }
-  .theme-dark .ui-popout-list .ui-selectable-item[style*="background: rgb(114, 137, 218)"] {
-    background-color: var(--accent) !important; }
+    .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] {
+      height: 36px;
+      background-color: transparent;
+      border-radius: 0; }
+      .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] input {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 0;
+        font-size: 15px; }
+        .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] input::-webkit-input-placeholder {
+          color: #FFF; }
+        .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] input:hover {
+          border-color: rgba(255, 255, 255, 0.8); }
+        .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] input:focus {
+          background-color: #FFF;
+          color: #000;
+          border-color: var(--accent); }
+      .theme-dark div[class^="popoutList-"] div[class*="searchBar-"] div[class^="searchBarIcon"] {
+        margin-top: 3px;
+        margin-left: -18px; }
+    .theme-dark div[class^="popoutList-"] div[class*="actionItem-"] {
+      height: 30px;
+      border-radius: 0; }
+      .theme-dark div[class^="popoutList-"] div[class*="actionItem-"]:hover {
+        background-color: #262626; }
+    .theme-dark div[class^="popoutList-"] div[class*="actionItem-"][class*="selected-"] {
+      background-color: var(--accent) !important; }
   .theme-dark #autocomplete-popout {
     border: 1px solid var(--accent);
     border-radius: 0; }
@@ -3086,12 +3213,27 @@
     background-color: #191919;
     border: 1px solid var(--accent);
     border-radius: 0; }
-  div[class^="modal"] div[class*="header"] h4 {
+  div[class^="modal-"] svg[class^="close-"] {
+    position: absolute;
+    top: 20px;
+    right: 20px; }
+  div[class^="modal"] div[class*="header"] h4,
+  div[class^="scroller-"][class*="content-"] h2 {
     padding: 36px 0 4px;
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5625;
     text-transform: none; }
+  div[class^="scroller-"][class*="content-"] h2 {
+    text-align: left; }
+  div[class^="scroller-"][class*="content-"] div[class^="body-"] {
+    color: #FFF;
+    font-size: 15px;
+    text-align: left; }
+  div[class^="scroller-"][class*="content"] div[class^="medium-"] {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1.33333; }
   .theme-dark div[class^="modal"] div[class*="footer"] {
     background-color: transparent;
     box-shadow: none; }
@@ -3242,6 +3384,8 @@
     display: none; }
   .theme-dark div[class^="modal-"] div[class^="imageWrapper-"] {
     border-radius: 0; }
+    .theme-dark div[class^="modal-"] div[class^="imageWrapper-"] ~ div {
+      text-align: right; }
   .theme-dark div[class^="modal-"] a[class^="downloadLink"] {
     opacity: 1;
     font-size: 15px;
