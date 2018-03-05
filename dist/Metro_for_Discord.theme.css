@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.6.2"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.6.3"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -77,7 +77,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.6.2";
+  content: "Metro for Discord 3.6.3";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -2731,7 +2731,8 @@ div[class^="group"] button[class*="allowSelected"] {
     font-weight: 400; }
 
 .theme-dark.popouts .popout.popout-right.no-arrow.no-shadow,
-.theme-dark.popouts .popout.popout-left.no-arrow.no-shadow {
+.theme-dark.popouts .popout.popout-left.no-arrow.no-shadow,
+.theme-dark.popouts .popout.popout-right.no-arrow {
   position: absolute;
   top: 32px !important;
   right: 0 !important;
@@ -2920,7 +2921,8 @@ div[class^="group"] button[class*="allowSelected"] {
   font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 400;
-  line-height: 1.5625; }
+  line-height: 1.5625;
+  text-align: left; }
   .option-popout .btn-item:hover {
     color: #FFF;
     background-color: #333333; }
