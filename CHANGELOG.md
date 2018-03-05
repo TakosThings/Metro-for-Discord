@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.3
+* **Enhancements** (1)
+  * Left align text in chat options menu
+* **Fixes** (1)
+  * User popout not opening in correct position if user had Cozy mode enabled
+
 #### 3.6.2
 * **Enhancements** (6)
   * Copy box
