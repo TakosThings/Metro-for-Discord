@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.4
+* **Fixes** (1)
+  * Partially fix a bug which caused the emoji picker to display in top-right corner of Discord if opened from existing reactions.
+* **Known Issues** (1)
+  * Emoji picker displays in the centre of application if opened from 'Add reaction' button (next to chat options, not existing reactions). Progress is being tracked in [#16](https://github.com/TakosThings/Metro-for-Discord/issues/16).
+
 #### 3.6.3
 * **Enhancements** (1)
   * Left align text in chat options menu
