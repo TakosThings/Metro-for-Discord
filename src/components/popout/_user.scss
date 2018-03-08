@@ -209,10 +209,13 @@
         background-color: transparent;
         border: 0;
         input{
+            height: 36px;
+            background-color: transparent;
             font-size: $fsui;
             line-height: $lh;
             border: 1px solid $inputborder;
             border-radius: 0;
+            box-sizing: border-box;
             &:hover{
                 border-color: $inputborderhover;
             }
