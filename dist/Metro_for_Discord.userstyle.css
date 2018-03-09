@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.6.4";
+    content: "Metro for Discord 3.6.5";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -2286,20 +2286,20 @@
       font-weight: 400; }
   .theme-dark.popouts .popout.popout-right.no-arrow.no-shadow,
   .theme-dark.popouts .popout.popout-left.no-arrow.no-shadow,
-  .theme-dark.popouts .popout.popout-right.no-arrow[style*="top: 0px;"] {
+  .theme-dark.popouts .popout.popout-right.no-arrow[style*="top: 32px;"] {
     position: absolute;
     top: 32px !important;
     right: 0 !important;
     left: initial !important;
-    height: 100vh;
     margin: 0;
     transform: none !important;
     animation: 350ms slideinright cubic-bezier(0.1, 0.9, 0.2, 1); }
   .theme-dark div[class^="userPopout-"] {
     width: 420px;
-    height: 100vh;
+    height: calc(100vh - 32px);
     background-color: #191919;
-    border-radius: 0; }
+    border-radius: 0;
+    transform: none !important; }
     .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"],
     .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"],
     .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] {
@@ -2450,10 +2450,13 @@
       background-color: transparent;
       border: 0; }
       .theme-dark div[class^="userPopout-"] div[class^="footer-"] input {
+        height: 36px;
+        background-color: transparent;
         font-size: 15px;
         line-height: 1.5625;
         border: 1px solid rgba(255, 255, 255, 0.6);
-        border-radius: 0; }
+        border-radius: 0;
+        box-sizing: border-box; }
         .theme-dark div[class^="userPopout-"] div[class^="footer-"] input:hover {
           border-color: rgba(255, 255, 255, 0.8); }
       .theme-dark div[class^="userPopout-"] div[class^="footer-"] div[class^="protip-"] {
