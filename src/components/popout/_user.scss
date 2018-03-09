@@ -15,6 +15,7 @@
     height: calc(100vh - 32px);
     background-color: $b1;
     border-radius: 0;
+    transform: none !important; // Fixes PermissionsViewer plugin
     
     // Header
     div[class^="headerNormal"],
