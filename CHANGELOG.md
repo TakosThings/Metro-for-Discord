@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.5
+* **Fixes** (2)
+  * Speculate fix for user popout moving under titlebar
+  * Fix user popout moving under titlebar if PermissionsViewer plugin was activated
+
 #### 3.6.4
 * **Fixes** (1)
   * Partially fix a bug which caused the emoji picker to display in top-right corner of Discord if opened from existing reactions.
