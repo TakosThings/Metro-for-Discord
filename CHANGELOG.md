@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.6
+* **Fixes** (2)
+  * User popout opening in default position when user had cozy mode enabled and 'Chat font scaling' or 'Zoom level' were changed from values of 90% and 100% respectively
+  * Chat box margins when uploading files is disabled in that channel
+
 #### 3.6.5
 * **Fixes** (2)
   * Speculate fix for user popout moving under titlebar

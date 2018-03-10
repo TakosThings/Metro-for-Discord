@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.6.5";
+    content: "Metro for Discord 3.6.6";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -1045,6 +1045,8 @@
     color: #FFF; }
   div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"] ~ textarea {
     margin: 0; }
+  div[class*="channelTextArea"] div[class*="inner-"] div[class^="uploadInput"] ~ textarea {
+    margin: 0 0 0 40px; }
   div[class*="channelTextArea"] svg[class^="attachButton-"] {
     margin: 0 0 0 40px;
     padding: 8px; }
@@ -2286,7 +2288,7 @@
       font-weight: 400; }
   .theme-dark.popouts .popout.popout-right.no-arrow.no-shadow,
   .theme-dark.popouts .popout.popout-left.no-arrow.no-shadow,
-  .theme-dark.popouts .popout.popout-right.no-arrow[style*="top: 32px;"] {
+  .theme-dark.popouts .popout.popout-right.no-arrow[style*="top: 3"] {
     position: absolute;
     top: 32px !important;
     right: 0 !important;
