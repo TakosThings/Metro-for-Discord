@@ -1,6 +1,9 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.7
+* This release corrects a change made to chatbox margins, but was not properly bug checked before release.
+
 #### 3.6.6
 * **Fixes** (2)
   * User popout opening in default position when user had cozy mode enabled and 'Chat font scaling' or 'Zoom level' were changed from values of 90% and 100% respectively
