@@ -22,9 +22,6 @@ div[class*="channelTextArea"]{
 div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"]~textarea{
     margin: 0;
 }
-div[class*="channelTextArea"] div[class*="inner-"] div[class^="uploadInput"]~textarea{
-    margin: 0 0 0 40px;
-}
 
 // Upload button
 div[class*="channelTextArea"] svg[class^="attachButton-"]{
