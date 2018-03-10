@@ -75,7 +75,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.6.6";
+  content: "Metro for Discord 3.6.7";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -1343,7 +1343,7 @@ div[class*="channelTextArea"] {
 div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"] ~ textarea {
   margin: 0; }
 
-div[class*="channelTextArea"] div[class*="inner-"] div[class^="uploadInput"] ~ textarea {
+div[class*="channelTextArea"] textarea[class^="textAreaEnabledNoAttach"] {
   margin: 0 0 0 40px; }
 
 div[class*="channelTextArea"] svg[class^="attachButton-"] {
