@@ -33,9 +33,10 @@
     }
 
     // Send friend req
-    button[class^="buttonGreenFilledDefault"],
-    button[class^="buttonBrandInvertedDefault"],
-    button[class^="buttonGreenInvertedDefault"]{
+    button[class*="lookFilled"][class*="colorGreen"], // Not playing a game
+    button[class*="lookInverted"][class*="colorBrand"], // Playing game
+    button[class*="lookInverted"][class*="colorGreen"], // Listening to spotify
+    button[class*="lookInverted"][class*="buttonInvertedPurple"]{ // Twitch
         background-color: transparent;
         border: 1px solid $inputborder;
         border-radius: 0;
