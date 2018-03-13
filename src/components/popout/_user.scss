@@ -20,7 +20,8 @@
     // Header
     div[class^="headerNormal"],
     div[class^="headerPlaying"],
-    div[class^="headerSpotify"]{
+    div[class^="headerSpotify"],
+    div[class^="headerStreaming"]{
         div[class*="headerTop"]{
             padding: 20px;
             flex-direction: initial;
