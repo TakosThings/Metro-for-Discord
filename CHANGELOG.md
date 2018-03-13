@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.6.8
+* **Fixes**
+  * Add streaming class to user popout header
+  * Spotify listen along button in user popout
+  * Spotify listen along button in user modal
+  * Update send friend request button classes in user modal
+
 #### 3.6.7
 * This release corrects a change made to chatbox margins, but was not properly bug checked before release.
 
