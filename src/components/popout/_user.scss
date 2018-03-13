@@ -161,6 +161,15 @@
                 }
             }
         }
+
+        // Spotify listen along
+        div[class^="playButtonWrapper"] ~ button{
+            width: 36px;
+            height: 36px;
+            min-width: 36px;
+            max-width: 36px;
+            padding: 3px 0 0 0;
+        }
     }
 
     // Body
