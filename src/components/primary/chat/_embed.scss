@@ -61,7 +61,7 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
             }
         }
         // Join the party button
-        button[class^="buttonGreenFilledDefault"]{
+        button[class*="lookFilled"][class*="colorGreen"]{
             height: 36px;
             background-color: transparent;
             border: 1px solid $inputborder;
@@ -71,7 +71,7 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
             }
         }
         // Disabled button
-        button[class^="buttonGreyFilledDisabled"]{
+        button[class*="lookFilled"][class*="colorGrey"]{
             height: 36px;
             background-color: transparent;
             border: 1px solid $inputborder;
