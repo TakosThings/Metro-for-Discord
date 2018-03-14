@@ -1,8 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.0
+* **Enhancements** (1)
+  * Attach menu
+* **Fixes** (3)
+  * Disabled Spotify listen along button in user popout
+  * Disabled Spotify listen along button in user modal
+  * Spotify chat embed buttons
+
 #### 3.6.8
-* **Fixes**
+* **Fixes** (4)
   * Add streaming class to user popout header
   * Spotify listen along button in user popout
   * Spotify listen along button in user modal

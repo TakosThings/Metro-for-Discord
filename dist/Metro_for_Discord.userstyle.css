@@ -1226,14 +1226,14 @@
         font-size: 13px; }
       .accessory div[class^="invite-"] div[class^="partyStatus"] div[class^="state"] {
         font-size: 13px; }
-    .accessory div[class^="invite-"] button[class^="buttonGreenFilledDefault"] {
+    .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"] {
       height: 36px;
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.6);
       position: relative; }
-      .accessory div[class^="invite-"] button[class^="buttonGreenFilledDefault"]:hover {
+      .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"]:hover {
         border-color: rgba(255, 255, 255, 0.8); }
-    .accessory div[class^="invite-"] button[class^="buttonGreyFilledDisabled"] {
+    .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGrey"] {
       height: 36px;
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.6);
@@ -2428,7 +2428,8 @@
         .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="timeBarUserPopout"] div[class^="bar-"] ~ div div[class^="textRight-"] {
           color: #FFF;
           font-weight: 400; }
-      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="playButtonWrapper"] ~ button {
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="playButtonWrapper"] ~ button,
+      .theme-dark div[class^="userPopout-"] div[class^="activityUserPopout-"] div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button {
         width: 36px;
         height: 36px;
         min-width: 36px;
@@ -3083,6 +3084,23 @@
     background-color: #191919;
     border: 1px solid var(--accent);
     border-radius: 0; }
+  .theme-dark div[class^="attachPopout-"] {
+    padding: 0;
+    background-color: #191919;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: 400;
+    transform: translateX(-28px) translateY(23px); }
+    .theme-dark div[class^="attachPopout-"] div[class^="attachPopoutRow-"] {
+      padding: 15px 24px;
+      border-radius: 0;
+      transition: none; }
+      .theme-dark div[class^="attachPopout-"] div[class^="attachPopoutRow-"]:hover {
+        background-color: var(--accent); }
+      .theme-dark div[class^="attachPopout-"] div[class^="attachPopoutRow-"] svg {
+        display: none; }
+      .theme-dark div[class^="attachPopout-"] div[class^="attachPopoutRow-"] div[class^="attachPopoutRowText-"] {
+        margin-left: 0; }
   .inner-1_1f7b div[class*="root-"] {
     border: 1px solid var(--accent);
     border-radius: 0; }
@@ -3173,12 +3191,15 @@
   .inner-1_1f7b div[class^="activityProfile"] div[class^="barInner-"] {
     background-color: #FFF;
     border-radius: 0; }
-  .inner-1_1f7b div[class^="activityProfile"] div[class^="playButtonWrapper"] ~ button {
+  .inner-1_1f7b div[class^="activityProfile"] div[class^="playButtonWrapper"] ~ button,
+  .inner-1_1f7b div[class^="activityProfile"] div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button {
     width: 36px;
     height: 36px;
     min-width: 36px;
     max-width: 36px;
     padding: 3px 0 0 0; }
+  .inner-1_1f7b div[class^="activityProfile"] div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] {
+    height: 36px; }
   .inner-1_1f7b div[class^="tabBarContainer"] {
     padding-left: 20px;
     border: 0; }
