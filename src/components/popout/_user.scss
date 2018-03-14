@@ -163,7 +163,8 @@
         }
 
         // Spotify listen along
-        div[class^="playButtonWrapper"] ~ button{
+        div[class^="playButtonWrapper"] ~ button,
+        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button{
             width: 36px;
             height: 36px;
             min-width: 36px;
