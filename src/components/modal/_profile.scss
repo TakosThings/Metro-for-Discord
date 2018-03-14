@@ -124,12 +124,16 @@
             border-radius: 0;
         }
         // Spotify listen along
-        div[class^="playButtonWrapper"] ~ button{
+        div[class^="playButtonWrapper"] ~ button,
+        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button{
             width: 36px;
             height: 36px;
             min-width: 36px;
             max-width: 36px;
             padding: 3px 0 0 0;
+        }
+        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"]{
+            height: 36px;
         }
     }
 
