@@ -2,6 +2,9 @@
     transform: translateX(-40px) translateY(-100%) !important;
     margin-top: -4px;
 }
+.popout.popout-left.no-arrow{
+    transform: translateX(-100%) !important;
+}
 
 .theme-dark div[class^="emojiPicker"]{
     background-color: $b2;
