@@ -1,4 +1,4 @@
-.theme-dark div[class^="contextMenu-"]{
+div[class^="contextMenu-"].theme-dark{
     background-color: $b1;
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 0;
