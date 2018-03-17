@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.1
+* **Fixes** (1)
+  * Update context menu class
+
 #### 3.7.0
 * **Enhancements** (1)
   * Attach menu

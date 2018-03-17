@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.7.0";
+    content: "Metro for Discord 3.7.1";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -225,12 +225,12 @@
     background-color: #191919; }
   .tooltip[style*="left: -15px;"] {
     display: none; }
-  .theme-dark div[class^="contextMenu-"] {
+  div[class^="contextMenu-"].theme-dark {
     background-color: #191919;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0;
     box-shadow: none; }
-    .theme-dark div[class^="contextMenu-"] div[class^="item-"] {
+    div[class^="contextMenu-"].theme-dark div[class^="item-"] {
       max-height: 32px;
       margin: 0;
       padding: 8px 10px;
@@ -238,22 +238,22 @@
       color: #FFF;
       font-size: 13px;
       font-weight: 400; }
-      .theme-dark div[class^="contextMenu-"] div[class^="item-"]:hover {
+      div[class^="contextMenu-"].theme-dark div[class^="item-"]:hover {
         background-color: #333333; }
-    .theme-dark div[class^="contextMenu-"] div[class*="itemSlider-"] {
+    div[class^="contextMenu-"].theme-dark div[class*="itemSlider-"] {
       max-height: 128px; }
-      .theme-dark div[class^="contextMenu-"] div[class*="itemSlider-"] div[class^="slider"] div[class^="track"] div[class^="grabber"] {
+      div[class^="contextMenu-"].theme-dark div[class*="itemSlider-"] div[class^="slider"] div[class^="track"] div[class^="grabber"] {
         margin-top: -4px; }
-      .theme-dark div[class^="contextMenu-"] div[class*="itemSlider-"] div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"] {
+      div[class^="contextMenu-"].theme-dark div[class*="itemSlider-"] div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"] {
         top: -29px;
         box-sizing: border-box; }
-    .theme-dark div[class^="contextMenu-"] div[class*="danger-"] {
+    div[class^="contextMenu-"].theme-dark div[class*="danger-"] {
       color: #D02E00 !important; }
-    .theme-dark div[class^="contextMenu-"] div[class*="itemSubMenu"] {
+    div[class^="contextMenu-"].theme-dark div[class*="itemSubMenu"] {
       position: relative;
       background-color: transparent;
       background-image: none; }
-      .theme-dark div[class^="contextMenu-"] div[class*="itemSubMenu"]::after {
+      div[class^="contextMenu-"].theme-dark div[class*="itemSubMenu"]::after {
         content: "";
         width: 12px;
         height: 12px;
@@ -264,19 +264,19 @@
         border-top: 1px solid #FFF;
         border-right: 1px solid #FFF;
         transform: rotate(45deg); }
-    .theme-dark div[class^="contextMenu-"] div[class^="item-"]:first-of-type {
+    div[class^="contextMenu-"].theme-dark div[class^="item-"]:first-of-type {
       margin-top: 8px; }
-    .theme-dark div[class^="contextMenu-"] div[class^="item-"]:last-of-type {
+    div[class^="contextMenu-"].theme-dark div[class^="item-"]:last-of-type {
       margin-bottom: 8px; }
-    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner span {
+    div[class^="contextMenu-"].theme-dark .checkbox .checkbox-inner span {
       border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 0; }
-      .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner span:hover {
+      div[class^="contextMenu-"].theme-dark .checkbox .checkbox-inner span:hover {
         border-color: rgba(255, 255, 255, 0.8); }
-    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner input[type=checkbox]:checked + span {
+    div[class^="contextMenu-"].theme-dark .checkbox .checkbox-inner input[type=checkbox]:checked + span {
       background-color: var(--accent);
       border-color: rgba(255, 255, 255, 0.6); }
-    .theme-dark div[class^="contextMenu-"] .checkbox .checkbox-inner input[type=checkbox]:checked + span:after {
+    div[class^="contextMenu-"].theme-dark .checkbox .checkbox-inner input[type=checkbox]:checked + span:after {
       border-width: 0 1px 1px 0;
       top: 2px;
       left: 5px; }
