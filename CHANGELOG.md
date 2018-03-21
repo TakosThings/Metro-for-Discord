@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.2
+* **Fixes**
+  * Speculative fix: Emoiji picker opening in centre of screen when opened from 'Add Reaction' button
+  * User popout quick message
+
 #### 3.7.1
 * **Fixes** (1)
   * Update context menu class
