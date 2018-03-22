@@ -27,6 +27,14 @@ div[class^="scroller-"][class*="content-"] h2{
 div[class^="scroller-"][class*="content-"] h2{
     text-align: left;
 }
+// Subheaders
+div[class^="modal-"] div[class^="subHeader"]{
+    margin-bottom: 8px;
+    color: #FFF;
+    font-size: $fsui;
+    font-weight: $fwui;
+    text-transform: none;
+}
 
 // Body
 div[class^="scroller-"][class*="content-"] div[class^="body-"]{
