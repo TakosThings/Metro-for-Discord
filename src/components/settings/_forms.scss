@@ -218,7 +218,8 @@ button[class*="lookFilled"][class*="colorRed"]{
 
 // Link button (eg. account details Cancel)
 button[class*="lookLink-"][class*="colorPrimary-"],
-button[class*="lookLink-"][class*="colorGrey-"]{
+button[class*="lookLink-"][class*="colorGrey-"],
+button[class*="lookLink-"][class*="colorBrand-"]{
     height: 36px;
     border: 1px solid $inputborder;
     border-radius: 0;
