@@ -60,3 +60,15 @@ div[class^="modal"] div[class*="content"] ul li{
     color: #FFF;
     font-size: $fsui;
 }
+
+// Fix chatbox
+.theme-dark div[class^="modal-"] div[class*="channelTextArea"] div[class*="inner-"]{
+    background-color: #000;
+    textarea{
+        margin: 0 0 0 40px;
+    }
+    div[class*="emojiButton-"]{
+        opacity: 1;
+        color: #FFF;
+    }
+}
