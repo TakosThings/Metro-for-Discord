@@ -37,7 +37,8 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
 }
 
 // Spotify Invite
-.accessory{
+.accessory,
+div[class^="modal-"]{
     div[class^="invite-"]{
         background-color: darken($color: $b2, $amount: 1);
         border: 0;
