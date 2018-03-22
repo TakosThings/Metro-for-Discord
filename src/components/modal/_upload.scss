@@ -58,7 +58,7 @@ div[class^="uploadModal"]{
             }
             span{
                 color: #FFF;
-                font-size: #fsui;
+                font-size: $fsui;
                 font-weight: $fsui;
             }
             &::last-of-type{
