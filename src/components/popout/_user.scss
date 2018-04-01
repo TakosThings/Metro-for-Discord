@@ -230,6 +230,11 @@
             &:hover{
                 border-color: $inputborderhover;
             }
+            &:focus{
+                background-color: #FFF;
+                color: #000;
+                border-color: var(--accent);
+            }
         }
         div[class^="protip-"]{
             display: none;
