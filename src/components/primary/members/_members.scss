@@ -1,84 +1,94 @@
 .theme-dark .channel-members{
     background-color: $b1;
-}
 
-// Header
-.channel-members h2{
-    margin: 0 15px 10px 15px;
-    padding: 8px 0;
-    border-bottom: 2px solid rgba(255,255,255,.3);
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: 1.5625;
-    letter-spacing: normal;
-    text-transform: none;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-.theme-dark .channel-members h2{
-    color: #FFF;
-    text-transform: capitalize;
-    cursor: default;
-}
-
-// Member
-.channel-members .member{
-    margin: 0 0 0 4px;
-    padding: 5px 20px;
-}
-.theme-dark .channel-members .member{
-    border: 2px solid transparent;
-    color: #ACACAC;
-    &:hover{
-        background: transparent;
-        border-color: rgba(255,255,255,0.1)
+    // Rank headers
+    h2{
+        margin: 0 15px 10px 15px;
+        padding: 8px;
+        color: #FFF;
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        text-transform: none;
+        letter-spacing: normal;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        border-bottom: 2px solid rgba(255,255,255,.3);
     }
-}
-.channel-members .member .member-inner{
-    width: 150px;
-}
-.theme-dark .channel-members .member.popout-open{
-    background: rgba(255,255,255,0.1);
-}
-.channel-members .member .member-username{
-    font-size: $fsui;
-    font-weight: $fwui;
-}
 
-// Avatar
-.channel-members .avatar-small .status{
-    bottom: 0;
-    right: 0;
-    border: 0;
-}
-
-// Is typing
-.status.status-typing{
-    width: 10px !important;
-    height: 10px;
-    right: 0 !important;
-    .spinner{
-        .spinner-item{
-            width: 10px;
-            height: 10px;
-            margin-right: 0px;
-            border-radius: 50%;
-            opacity: 1;
-            animation: memberstypingpulse 1s infinite ease-in-out;
+    // Member
+    div[class*="member-"]{
+        div[class^="content-"]{
+            height: 40px;
+            padding: 4px 8px 4px 12px;
+            border: 2px solid transparent;
+            border-radius: 0;
+            box-sizing: border-box;
         }
-        .spinner-item:not(:first-of-type){
-            display: none;
+        &:hover div[class^="content"]{
+            background-color: transparent;
+            border-color: rgba(255,255,255,0.1);
+        }
+
+        // Avatar
+        span[class^="avatarWrapper-"]{
+            margin-right: 8px;
+            div[class^="avatar-"]{
+                width: 32px;
+                height: 32px;
+            }
+            div[class*="mask-"]{
+                mask: none;
+                -webkit-mask: none;
+            }
+            div[class*="status-"]{
+                right: 0;
+                bottom: 0;
+                border: 0;
+            }
+            // Typing
+            div[class*="statusTyping-"]{
+                width: 32px;
+                span[class*="pulsingEllipsis-"]{
+                    width: 32px;
+                    span[class^="pulsingEllipsisItem-"]:last-of-type{
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        // Username
+        div[class^="nameTag-"]{
+            line-height: 1.3;
+            span{
+                font-size: $fsui;
+                font-weight: $fwui;
+            }
+        }
+
+        // Bot tag
+        span[class*="botTag-"]{
+            font-size: 13px;
+            line-height: 1.3;
+            padding: 0 4px 6px 4px;
+            vertical-align: baseline;
+        }
+
+        // Activity
+        div[class^="activityText-"]{
+            color: #FFF;
+            font-size: 0;
+            line-height: 1.3;
+            strong{
+                font-size: 11px !important;
+                font-weight: normal;
+            }
         }
     }
-}
 
-// Playing status
-.channel-members .member .member-activity{
-    color: #FFF;
-    font-size: 0;
-}
-.channel-members .member .member-activity strong{
-    font-size: 12px;
-    font-weight: normal;
+    // Member online default text colour
+    div[class^="memberOnline-"]{
+        color: #FFF;
+    }
 }
