@@ -1,8 +1,19 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.3
+* **Enhancements** (1)
+  * Rewrite `/primary/members/_members.scss` for style update
+* **Fixes** (6)
+  * Branded link button
+  * SCSS variable used # instead of $ in `/modal/_upload.scss`
+  * Listen along invite modal chatbox
+  * Listen along invite modal subheaders
+  * Listen along invite modal spotify invite
+  * User popout quick message focus state
+
 #### 3.7.2
-* **Fixes**
+* **Fixes** (2)
   * Speculative fix: Emoiji picker opening in centre of screen when opened from 'Add Reaction' button
   * User popout quick message
 
