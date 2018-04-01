@@ -75,7 +75,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.7.2";
+  content: "Metro for Discord 3.7.3";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -1542,45 +1542,57 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before {
   color: #FFF;
   font-size: 18px; }
 
-.accessory div[class^="invite-"] {
+.accessory div[class^="invite-"],
+div[class^="modal-"] div[class^="invite-"] {
   background-color: #232323;
   border: 0;
   border-left: 3px solid #000;
   border-radius: 0; }
-  .accessory div[class^="invite-"] div[class^="header-"] {
+  .accessory div[class^="invite-"] div[class^="header-"],
+  div[class^="modal-"] div[class^="invite-"] div[class^="header-"] {
     color: #FFF;
     font-size: 15px;
     font-weight: 400;
     text-transform: none; }
-  .accessory div[class^="invite-"] div[class^="partyStatus"] {
+  .accessory div[class^="invite-"] div[class^="partyStatus"],
+  div[class^="modal-"] div[class^="invite-"] div[class^="partyStatus"] {
     margin-top: 12px;
     font-size: 13px; }
-    .accessory div[class^="invite-"] div[class^="partyStatus"] div[class^="details-"] {
+    .accessory div[class^="invite-"] div[class^="partyStatus"] div[class^="details-"],
+    div[class^="modal-"] div[class^="invite-"] div[class^="partyStatus"] div[class^="details-"] {
       font-size: 13px; }
-    .accessory div[class^="invite-"] div[class^="partyStatus"] div[class^="state"] {
+    .accessory div[class^="invite-"] div[class^="partyStatus"] div[class^="state"],
+    div[class^="modal-"] div[class^="invite-"] div[class^="partyStatus"] div[class^="state"] {
       font-size: 13px; }
-  .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"] {
+  .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"],
+  div[class^="modal-"] div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"] {
     height: 36px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     position: relative; }
-    .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"]:hover {
+    .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"]:hover,
+    div[class^="modal-"] div[class^="invite-"] button[class*="lookFilled"][class*="colorGreen"]:hover {
       border-color: rgba(255, 255, 255, 0.8); }
-  .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGrey"] {
+  .accessory div[class^="invite-"] button[class*="lookFilled"][class*="colorGrey"],
+  div[class^="modal-"] div[class^="invite-"] button[class*="lookFilled"][class*="colorGrey"] {
     height: 36px;
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0;
     font-size: 15px;
     font-weight: 400; }
-  .accessory div[class^="invite-"] div[class^="partyMembers"] {
+  .accessory div[class^="invite-"] div[class^="partyMembers"],
+  div[class^="modal-"] div[class^="invite-"] div[class^="partyMembers"] {
     margin-left: 12px; }
-    .accessory div[class^="invite-"] div[class^="partyMembers"] div[class^="avatar"] {
+    .accessory div[class^="invite-"] div[class^="partyMembers"] div[class^="avatar"],
+    div[class^="modal-"] div[class^="invite-"] div[class^="partyMembers"] div[class^="avatar"] {
       width: 36px;
       height: 36px; }
-  .accessory div[class^="invite-"] img[class*="artwork-"] {
+  .accessory div[class^="invite-"] img[class*="artwork-"],
+  div[class^="modal-"] div[class^="invite-"] img[class*="artwork-"] {
     border-radius: 0; }
-  .accessory div[class^="invite-"] div[class^="artworkSpotifySessionEnded"] {
+  .accessory div[class^="invite-"] div[class^="artworkSpotifySessionEnded"],
+  div[class^="modal-"] div[class^="invite-"] div[class^="artworkSpotifySessionEnded"] {
     background-image: url(https://i.imgur.com/ccG6HYH.png);
     background-size: auto; }
 
@@ -1671,72 +1683,64 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before {
 
 .theme-dark .channel-members {
   background-color: #191919; }
-
-.channel-members h2 {
-  margin: 0 15px 10px 15px;
-  padding: 8px 0;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.5625;
-  letter-spacing: normal;
-  text-transform: none;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden; }
-
-.theme-dark .channel-members h2 {
-  color: #FFF;
-  text-transform: capitalize;
-  cursor: default; }
-
-.channel-members .member {
-  margin: 0 0 0 4px;
-  padding: 5px 20px; }
-
-.theme-dark .channel-members .member {
-  border: 2px solid transparent;
-  color: #ACACAC; }
-  .theme-dark .channel-members .member:hover {
-    background: transparent;
+  .theme-dark .channel-members h2 {
+    margin: 0 15px 10px 15px;
+    padding: 8px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+  .theme-dark .channel-members div[class*="member-"] div[class^="content-"] {
+    height: 40px;
+    padding: 4px 8px 4px 12px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box; }
+  .theme-dark .channel-members div[class*="member-"]:hover div[class^="content"] {
+    background-color: transparent;
     border-color: rgba(255, 255, 255, 0.1); }
-
-.channel-members .member .member-inner {
-  width: 150px; }
-
-.theme-dark .channel-members .member.popout-open {
-  background: rgba(255, 255, 255, 0.1); }
-
-.channel-members .member .member-username {
-  font-size: 15px;
-  font-weight: 400; }
-
-.channel-members .avatar-small .status {
-  bottom: 0;
-  right: 0;
-  border: 0; }
-
-.status.status-typing {
-  width: 10px !important;
-  height: 10px;
-  right: 0 !important; }
-  .status.status-typing .spinner .spinner-item {
-    width: 10px;
-    height: 10px;
-    margin-right: 0px;
-    border-radius: 50%;
-    opacity: 1;
-    animation: memberstypingpulse 1s infinite ease-in-out; }
-  .status.status-typing .spinner .spinner-item:not(:first-of-type) {
-    display: none; }
-
-.channel-members .member .member-activity {
-  color: #FFF;
-  font-size: 0; }
-
-.channel-members .member .member-activity strong {
-  font-size: 12px;
-  font-weight: normal; }
+  .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] {
+    margin-right: 8px; }
+    .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class^="avatar-"] {
+      width: 32px;
+      height: 32px; }
+    .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="mask-"] {
+      mask: none;
+      -webkit-mask: none; }
+    .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="status-"] {
+      right: 0;
+      bottom: 0;
+      border: 0; }
+    .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] {
+      width: 32px; }
+      .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] {
+        width: 32px; }
+        .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] span[class^="pulsingEllipsisItem-"]:last-of-type {
+          margin-right: 0; }
+  .theme-dark .channel-members div[class*="member-"] div[class^="nameTag-"] {
+    line-height: 1.3; }
+    .theme-dark .channel-members div[class*="member-"] div[class^="nameTag-"] span {
+      font-size: 15px;
+      font-weight: 400; }
+  .theme-dark .channel-members div[class*="member-"] span[class*="botTag-"] {
+    font-size: 13px;
+    line-height: 1.3;
+    padding: 0 4px 6px 4px;
+    vertical-align: baseline; }
+  .theme-dark .channel-members div[class*="member-"] div[class^="activityText-"] {
+    color: #FFF;
+    font-size: 0;
+    line-height: 1.3; }
+    .theme-dark .channel-members div[class*="member-"] div[class^="activityText-"] strong {
+      font-size: 11px !important;
+      font-weight: normal; }
+  .theme-dark .channel-members div[class^="memberOnline-"] {
+    color: #FFF; }
 
 @keyframes membersloading {
   0% {
@@ -2598,21 +2602,25 @@ button[class*="lookFilled"][class*="colorRed"] {
     background-color: #9d2300; }
 
 button[class*="lookLink-"][class*="colorPrimary-"],
-button[class*="lookLink-"][class*="colorGrey-"] {
+button[class*="lookLink-"][class*="colorGrey-"],
+button[class*="lookLink-"][class*="colorBrand-"] {
   height: 36px;
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 0;
   color: #FFF;
   font-weight: normal; }
   button[class*="lookLink-"][class*="colorPrimary-"]:hover,
-  button[class*="lookLink-"][class*="colorGrey-"]:hover {
+  button[class*="lookLink-"][class*="colorGrey-"]:hover,
+  button[class*="lookLink-"][class*="colorBrand-"]:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-color: rgba(255, 255, 255, 0.6); }
   button[class*="lookLink-"][class*="colorPrimary-"]:hover div[class^="contents-"],
-  button[class*="lookLink-"][class*="colorGrey-"]:hover div[class^="contents-"] {
+  button[class*="lookLink-"][class*="colorGrey-"]:hover div[class^="contents-"],
+  button[class*="lookLink-"][class*="colorBrand-"]:hover div[class^="contents-"] {
     background-image: none !important; }
   button[class*="lookLink-"][class*="colorPrimary-"]:focus,
-  button[class*="lookLink-"][class*="colorGrey-"]:focus {
+  button[class*="lookLink-"][class*="colorGrey-"]:focus,
+  button[class*="lookLink-"][class*="colorBrand-"]:focus {
     background-color: #FFF;
     color: #000;
     border-color: rgba(255, 255, 255, 0.8); }
@@ -3006,6 +3014,10 @@ div[class^="group"] button[class*="allowSelected"] {
       box-sizing: border-box; }
       .theme-dark div[class^="userPopout-"] div[class^="footerDefault-"] input:hover {
         border-color: rgba(255, 255, 255, 0.8); }
+      .theme-dark div[class^="userPopout-"] div[class^="footerDefault-"] input:focus {
+        background-color: #FFF;
+        color: #000;
+        border-color: var(--accent); }
     .theme-dark div[class^="userPopout-"] div[class^="footerDefault-"] div[class^="protip-"] {
       display: none; }
 
@@ -3935,6 +3947,13 @@ div[class^="scroller-"][class*="content-"] h2 {
 div[class^="scroller-"][class*="content-"] h2 {
   text-align: left; }
 
+div[class^="modal-"] div[class^="subHeader"] {
+  margin-bottom: 8px;
+  color: #FFF;
+  font-size: 15px;
+  font-weight: 400;
+  text-transform: none; }
+
 div[class^="scroller-"][class*="content-"] div[class^="body-"] {
   color: #FFF;
   font-size: 15px;
@@ -3959,6 +3978,14 @@ div[class^="modal"] div[class*="content"] ul li {
   margin-bottom: 8px;
   color: #FFF;
   font-size: 15px; }
+
+.theme-dark div[class^="modal-"] div[class*="channelTextArea"] div[class*="inner-"] {
+  background-color: #000; }
+  .theme-dark div[class^="modal-"] div[class*="channelTextArea"] div[class*="inner-"] textarea {
+    margin: 0 0 0 40px; }
+  .theme-dark div[class^="modal-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"] {
+    opacity: 1;
+    color: #FFF; }
 
 .theme-dark div[class^="quickswitcher"] {
   background-color: #191919;
@@ -4171,7 +4198,7 @@ div[class^="uploadModal"] {
         text-decoration: none; }
       div[class^="uploadModal"] div[class^="footer-"] button.button span {
         color: #FFF;
-        font-size: #fsui;
+        font-size: 15px;
         font-weight: 15px; }
       div[class^="uploadModal"] div[class^="footer-"] button.button::last-of-type {
         margin-right: 0; }
