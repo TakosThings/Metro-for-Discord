@@ -184,6 +184,7 @@
             text-transform: none;
             line-height: $lh;
         }
+        // Roles
         ul{
             li{
                 color: #FFF;
@@ -192,6 +193,12 @@
                 border-width: 2px;
             }
         }
+        // Add role
+        button[class^="addButton"]{
+            color: #FFF;
+            border: 2px solid #FFF;
+        }
+        // Note input
         div[class^="note-"]{
             margin-left: 0;
             textarea{
@@ -219,6 +226,7 @@
         padding: 0 20px 20px;
         background-color: transparent;
         border: 0;
+        // Quick message input
         input{
             height: 36px;
             background-color: transparent;
@@ -236,6 +244,7 @@
                 border-color: var(--accent);
             }
         }
+        // Remove tip
         div[class^="protip-"]{
             display: none;
         }
