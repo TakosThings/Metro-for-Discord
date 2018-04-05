@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.4
+* **Fixes** (3)
+  * Unblock button in user DM chatbox area
+  * Add role button in user popout
+  * Update class names for members list
+
 #### 3.7.3
 * **Enhancements** (1)
   * Rewrite `/primary/members/_members.scss` for style update
