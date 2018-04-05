@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.7.3";
+    content: "Metro for Discord 3.7.4";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -1122,18 +1122,21 @@
   .theme-dark .channel-textarea-guard .countdown-number {
     background-color: transparent;
     border: 0; }
-  .channel-textarea-guard > div {
-    margin-top: 8px; }
-  .channel-textarea-guard button {
-    margin: 8px 0;
-    background-color: var(--accent);
-    border: 1px solid transparent;
-    border-radius: 0;
-    font-size: 15px;
-    font-weight: 400; }
-    .channel-textarea-guard button:hover {
-      background-color: var(--accent);
-      border-color: rgba(255, 255, 255, 0.6); }
+  .theme-dark .wrapper-31dmVW {
+    background-image: none; }
+    .theme-dark .wrapper-31dmVW > div {
+      display: none; }
+    .theme-dark .wrapper-31dmVW button {
+      width: 100%;
+      height: 40px;
+      margin-top: 15px;
+      background-color: #191919;
+      font-size: 15px;
+      font-weight: 400;
+      border: 1px solid transparent;
+      border-radius: 0; }
+      .theme-dark .wrapper-31dmVW button:hover {
+        border-color: rgba(255, 255, 255, 0.6); }
   div[class^="welcomeMessage"] {
     background-color: #232323;
     align-items: baseline; }
@@ -1338,66 +1341,66 @@
     font-weight: 400; }
     .chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"]:hover {
       border-color: rgba(255, 255, 255, 0.8); }
-  .theme-dark .channel-members {
+  .theme-dark div[class^="membersWrap"] div[class*="members-"] {
     background-color: #191919; }
-    .theme-dark .channel-members h2 {
-      margin: 0 15px 10px 15px;
-      padding: 8px;
-      color: #FFF;
-      font-size: 20px;
-      font-weight: 300;
-      text-transform: none;
-      letter-spacing: normal;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
-    .theme-dark .channel-members div[class*="member-"] div[class^="content-"] {
-      height: 40px;
-      padding: 4px 8px 4px 12px;
-      border: 2px solid transparent;
-      border-radius: 0;
-      box-sizing: border-box; }
-    .theme-dark .channel-members div[class*="member-"]:hover div[class^="content"] {
-      background-color: transparent;
-      border-color: rgba(255, 255, 255, 0.1); }
-    .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] {
-      margin-right: 8px; }
-      .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class^="avatar-"] {
-        width: 32px;
-        height: 32px; }
-      .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="mask-"] {
-        mask: none;
-        -webkit-mask: none; }
-      .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="status-"] {
-        right: 0;
-        bottom: 0;
-        border: 0; }
-      .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] {
+  .theme-dark div[class^="membersWrap"] div[class^="membersGroup-"] {
+    margin: 0 15px 10px 15px;
+    padding: 8px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="content-"] {
+    height: 40px;
+    padding: 4px 8px 4px 12px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box; }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"]:hover div[class^="content"] {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.1); }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] {
+    margin-right: 8px; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class^="avatar-"] {
+      width: 32px;
+      height: 32px; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class*="mask-"] {
+      mask: none;
+      -webkit-mask: none; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class*="status-"] {
+      right: 0;
+      bottom: 0;
+      border: 0; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] {
+      width: 32px; }
+      .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] {
         width: 32px; }
-        .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] {
-          width: 32px; }
-          .theme-dark .channel-members div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] span[class^="pulsingEllipsisItem-"]:last-of-type {
-            margin-right: 0; }
-    .theme-dark .channel-members div[class*="member-"] div[class^="nameTag-"] {
-      line-height: 1.3; }
-      .theme-dark .channel-members div[class*="member-"] div[class^="nameTag-"] span {
-        font-size: 15px;
-        font-weight: 400; }
-    .theme-dark .channel-members div[class*="member-"] span[class*="botTag-"] {
-      font-size: 13px;
-      line-height: 1.3;
-      padding: 0 4px 6px 4px;
-      vertical-align: baseline; }
-    .theme-dark .channel-members div[class*="member-"] div[class^="activityText-"] {
-      color: #FFF;
-      font-size: 0;
-      line-height: 1.3; }
-      .theme-dark .channel-members div[class*="member-"] div[class^="activityText-"] strong {
-        font-size: 11px !important;
-        font-weight: normal; }
-    .theme-dark .channel-members div[class^="memberOnline-"] {
-      color: #FFF; }
+        .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class^="avatarWrapper-"] div[class*="statusTyping-"] span[class*="pulsingEllipsis-"] span[class^="pulsingEllipsisItem-"]:last-of-type {
+          margin-right: 0; }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="nameTag-"] {
+    line-height: 1.3; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="nameTag-"] span {
+      font-size: 15px;
+      font-weight: 400; }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class*="botTag-"] {
+    font-size: 13px;
+    line-height: 1.3;
+    padding: 0 4px 6px 4px;
+    vertical-align: baseline; }
+  .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="activityText-"] {
+    color: #FFF;
+    font-size: 0;
+    line-height: 1.3; }
+    .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="activityText-"] strong {
+      font-size: 11px !important;
+      font-weight: normal; }
+  .theme-dark div[class^="membersWrap"] div[class^="memberOnline-"] {
+    color: #FFF; }
   @keyframes membersloading {
     0% {
       content: "Loading..."; }
@@ -2468,6 +2471,9 @@
         font-weight: 400;
         line-height: 1.5625;
         border-width: 2px; }
+      .theme-dark div[class^="userPopout-"] div[class^="body-"] button[class^="addButton"] {
+        color: #FFF;
+        border: 2px solid #FFF; }
       .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] {
         margin-left: 0; }
         .theme-dark div[class^="userPopout-"] div[class^="body-"] div[class^="note-"] textarea {
