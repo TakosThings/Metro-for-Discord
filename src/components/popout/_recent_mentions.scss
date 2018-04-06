@@ -15,118 +15,107 @@
     transform: none !important;
 }
 
-.theme-dark .themed-popout{
+.theme-dark .popout .messages-popout-wrap{
     background-color: $b1;
     border: 0;
     border-radius: 0;
-    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2)
-}
 
-// Header
-.popout .themed-popout .header{
-    border-radius: 0;
-}
-.theme-dark .themed-popout .header{
-    background-color: $b1;
-    box-shadow: none;
-}
-.popout .themed-popout .header .title{
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: $lh;
-}
-
-// Horizontal tabs
-.recent-mentions-popout .header .tab-bar-item{
-    border: 0;
-    color: rgba(255,255,255,.7);
-    font-size: $fsui;
-    font-weight: $fwui;
-    &:hover{
-        border: 0;
+    // Header
+    .header{
+        background-color: transparent;
+        box-shadow: none;
+        .title{
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            line-height: 1;
+        }
+    }
+    // Tab bar
+    .tab-bar-item{
         color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        &.selected{
+        color: var(--accent);
+        border-color: var(--accent);
+        }
     }
-}
-.recent-mentions-popout .header .tab-bar-item.selected{
-    border: 0;
-    color: var(--accent);
-}
-
-// Filter
-.theme-dark .recent-mentions-popout .mention-filter .label{
-    color: #FFF;
-}
-
-// Empty
-.messages-popout .empty-placeholder{
-    flex-direction: initial;
-    margin-top: 0;
-    padding-left: 5px;
-}
-.messages-popout .empty-placeholder.bottom{
-    position: relative;
-}
-.messages-popout .empty-placeholder .image{
-    display: none;
-}
-.messages-popout .empty-placeholder .body{
-    margin-top: 0;
-    white-space: normal;
-}
-.theme-dark .messages-popout-wrap .messages-popout .empty-placeholder .body{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-    text-align: left;
-}
-
-// Footer
-.popout .themed-popout .footer{
-    border-radius: 0;
-}
-.theme-dark .themed-popout .footer{
-    background-color: transparent;
-}
-// Protip
-.popout .footer div[class^="pro-"],
-.popout .footer div[class^="tip-"]{
-    display: none;
-}
-
-// Message header
-.messages-popout .channel-separator .channel-name{
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-}
-.messages-popout .channel-separator .guild-name{
-    font-weight: normal;
-}
-
-// Message
-.messages-popout .message-group{
-    border-radius: 0;
-}
-.theme-dark .messages-popout-wrap .messages-popout .message-group{
-    background-color: transparent;
-    border: 1px solid $b3;
-    &:hover{
-        border-color: $b4;
+    // Filter
+    .mention-filter{
+        font-size: $fsui;
+        .label{
+            color: #FFF;
+        }
     }
-}
-// Jump to button
-.theme-dark .messages-popout-wrap .messages-popout .message-group:hover .action-buttons{
-    background-color: transparent;
-    box-shadow: none;
-}
-.theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button{
-    background-color: $b3;
-    border-radius: 0;
-    &:hover{
-        background-color: $b4;
+    .scroller{
+        overflow-y: auto;
     }
-}
-.theme-dark .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button .text{
-    color: #FFF;
+    // Chanel separator
+    .channel-separator{
+        .channel-name{
+            font-size: $fsui;
+            font-weight: $fwui;
+            line-height: $lh;
+        }
+        .guild-name{
+            font-weight: normal;
+        }
+    }
+    // Message
+    .messages-popout{
+        .message-group{
+            background-color: transparent;
+            border: 1px solid $b3;
+            border-radius: 0;
+            &:hover{
+                border-color: $b4;
+            }
+            .action-buttons .jump-button{
+                background-color: $b3;
+                border-radius: 0;
+                &:hover{
+                    background-color: $b4;
+                }
+                .text{
+                    color: #FFF;
+                }
+            }
+        }
+        // Jump to button
+        .message-group:hover .action-buttons{
+            background-color: transparent;
+            box-shadow: none;
+        }
+    }
+    // Empty
+    .messages-popout .empty-placeholder{
+        .body{
+            font-size: 0;
+            &::before{
+                content: "Nothing to show...";
+                color: #FFF;
+                font-size: $fsheader;
+                font-weight: $fwheader;
+            }
+        }
+        .image{
+            display: none;
+        }
+        &.bottom{
+            top: 0;
+            right: 0;
+            bottom: unset;
+            left: 0;
+        }
+    }
+    // Footer
+    .footer{
+        background-color: transparent;
+        border-radius: 0;
+        // Protip
+        div[class^="pro-"],
+        div[class^="tip-"]{
+            display: none;
+        }
+    }
 }
