@@ -20,6 +20,7 @@
 
     // Member
     div[class*="member-"]{
+        border-radius: 0;
         div[class^="content-"]{
             height: 40px;
             padding: 4px 8px 4px 12px;
