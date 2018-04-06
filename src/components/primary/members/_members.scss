@@ -20,6 +20,7 @@
 
     // Member
     div[class*="member-"]{
+        margin: 0 0 0 4px;
         border-radius: 0;
         div[class^="content-"]{
             height: 40px;
@@ -61,6 +62,9 @@
             }
         }
 
+        div[class^="memberInner"]{
+            width: 160px;
+        }
         // Username
         div[class^="nameTag-"]{
             line-height: 1.3;
