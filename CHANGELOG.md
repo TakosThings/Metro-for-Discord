@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.5
+* **Fixes** (2)
+  * Recent Mentions/Pinned messages popout
+  * Fix members list margins
+
 #### 3.7.4
 * **Fixes** (3)
   * Unblock button in user DM chatbox area
