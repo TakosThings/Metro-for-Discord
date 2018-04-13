@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.6
+* **Enhancements** (1)
+  * Rewrite `/popout/_search.scss` for style update
+* **Fixes** (1)
+  * Bot tags
+
 #### 3.7.5
 * **Fixes** (2)
   * Recent Mentions/Pinned messages popout

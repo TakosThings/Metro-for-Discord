@@ -57,7 +57,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.7.5";
+    content: "Metro for Discord 3.7.6";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -1389,14 +1389,9 @@
       width: 160px; }
     .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="nameTag-"] {
       line-height: 1.3; }
-      .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="nameTag-"] span {
+      .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="nameTag-"] span[class*="username-"] {
         font-size: 15px;
         font-weight: 400; }
-    .theme-dark div[class^="membersWrap"] div[class*="member-"] span[class*="botTag-"] {
-      font-size: 13px;
-      line-height: 1.3;
-      padding: 0 4px 6px 4px;
-      vertical-align: baseline; }
     .theme-dark div[class^="membersWrap"] div[class*="member-"] div[class^="activityText-"] {
       color: #FFF;
       font-size: 0;
@@ -2784,7 +2779,7 @@
     right: 0 !important;
     left: initial !important;
     animation: 350ms slideinright cubic-bezier(0.1, 0.9, 0.2, 1); }
-  .search-popout {
+  .theme-dark div[class^="searchPopout-"] {
     max-height: calc(100vh - 72px) !important;
     min-height: calc(100vh - 72px);
     position: absolute;
@@ -2792,139 +2787,103 @@
     left: initial !important;
     background-color: #191919;
     border-radius: 0; }
-  .search-popout .results-group .header {
-    color: #FFF;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: none; }
-  .search-popout .option {
-    border-radius: 0;
-    font-size: 15px; }
-    .search-popout .option.selected {
-      background-color: var(--accent); }
-    .search-popout .option.selected::after {
-      background-image: none; }
-  .search-popout .search-option .filter {
-    color: #FFF;
-    font-weight: 400; }
-  .search-popout .search-option .answer {
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 400; }
-  .search-popout .option strong {
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 400; }
-  .search-popout .option::after {
-    background-image: none; }
-  .search-popout .option .non-text {
-    color: #FFF; }
-  .search-popout .search-query {
-    border-bottom: 0;
-    color: #FFF; }
-  .search-popout .results-group::before {
-    display: none; }
-  .search-popout .search-query .search-for {
-    font-size: 15px;
-    text-transform: none;
-    text-transform: lowercase; }
-    .search-popout .search-query .search-for:first-letter {
-      text-transform: uppercase; }
-  .search-popout .search-query .search-for strong {
-    color: #FFF;
-    font-size: 15px; }
-  .search-popout .search-query .search-for strong::before,
-  .search-popout .search-query .search-for strong::after {
-    content: "'"; }
-  .search-popout .date-picker {
-    border: 0; }
-  div[class^="calendarPicker"] .react-datepicker {
-    padding: 14px;
-    border-radius: 0;
-    color: #FFF;
-    font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 400; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker {
-    background-color: transparent; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__header {
-    background-color: transparent;
-    border: 0; }
-  div[class^="calendarPicker"] .react-datepicker__current-month {
-    font-size: 15px;
-    font-weight: 400;
-    text-transform: none; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__current-month {
-    border: 0;
-    color: #FFF; }
-  div[class^="calendarPicker"] .react-datepicker__day-name {
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: none; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day-name {
-    color: #FFF; }
-  div[class^="calendarPicker"] .react-datepicker__day,
-  div[class^="calendarPicker"] .react-datepicker__week:last-of-type > .react-datepicker__day,
-  div[class^="calendarPicker"] .react-datepicker__week > .react-datepicker__day:last-of-type {
-    border: 0; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day {
-    margin: 0 2px 2px 0;
-    border: 2px solid transparent;
-    color: #FFF;
-    font-weight: 400; }
-    .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day:hover {
-      background-color: transparent;
-      border-color: rgba(255, 255, 255, 0.4); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__week .react-datepicker__day:last-of-type,
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__week:last-of-type .react-datepicker__day {
-    border: 2px solid transparent; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day:last-of-type {
-    margin: 0 0 2px 0; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--outside-month {
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.3); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day.react-datepicker__day--disabled,
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day.react-datepicker__day--disabled:hover {
-    color: rgba(255, 255, 255, 0.4); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--today {
-    background-color: var(--accent); }
-    .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--today:hover {
-      background-color: var(--accent) !important; }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--selected {
-    border: 2px solid var(--accent); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__day--selected::after {
-    display: none; }
-  .search-popout .date-picker .date-picker-hint .hint-value {
-    padding: 0;
-    background-color: transparent;
-    font-size: 15px;
-    font-weight: 400; }
-    .search-popout .date-picker .date-picker-hint .hint-value:hover {
-      background-color: transparent;
-      color: var(--accent); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--previous {
-    width: 10px;
-    height: 10px;
-    top: 23px;
-    right: 60px;
-    left: initial;
-    background-image: none;
-    border: 0;
-    border-top: 2px solid rgba(255, 255, 255, 0.6);
-    border-right: 2px solid rgba(255, 255, 255, 0.6);
-    transform: rotate(-45deg); }
-    .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--previous:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
-  .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--next {
-    width: 10px;
-    height: 10px;
-    top: 16px;
-    right: 30px;
-    background-image: none;
-    border: 0;
-    border-right: 2px solid rgba(255, 255, 255, 0.6);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-    transform: rotate(45deg); }
-    .theme-dark .theme-light div[class^="calendarPicker"] .react-datepicker__navigation.react-datepicker__navigation--next:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
+    .theme-dark div[class^="searchPopout-"] div[class^="option-"][class*="searchQuery"] {
+      display: none; }
+    .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"]::before {
+      content: unset; }
+    .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"] div[class^="header-"] {
+      color: #FFF;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: none; }
+    .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"] div[class^="option-"] {
+      font-size: 15px;
+      font-weight: 400;
+      border-radius: 0; }
+      .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"] div[class^="option-"][class*="selected-"] {
+        background-color: rgba(255, 255, 255, 0.1); }
+    .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"] div[class*="searchOption-"] span[class^="filter-"] {
+      color: #FFF;
+      font-weight: 400; }
+    .theme-dark div[class^="searchPopout-"] div[class^="resultsGroup-"] div[class*="searchOption-"] span[class^="answer-"] {
+      color: #FFF;
+      font-weight: 400; }
+    .theme-dark div[class^="searchPopout-"] .react-datepicker {
+      background-color: transparent; }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__navigation.react-datepicker__navigation--previous {
+        width: 10px;
+        height: 10px;
+        top: 23px;
+        right: 60px;
+        left: initial;
+        background-image: none;
+        border: 0;
+        border-top: 2px solid rgba(255, 255, 255, 0.6);
+        border-right: 2px solid rgba(255, 255, 255, 0.6);
+        transform: rotate(-45deg); }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__navigation.react-datepicker__navigation--previous:hover {
+          border-color: rgba(255, 255, 255, 0.8); }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__navigation.react-datepicker__navigation--next {
+        width: 10px;
+        height: 10px;
+        top: 16px;
+        right: 30px;
+        background-image: none;
+        border: 0;
+        border-right: 2px solid rgba(255, 255, 255, 0.6);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+        transform: rotate(45deg); }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__navigation.react-datepicker__navigation--next:hover {
+          border-color: rgba(255, 255, 255, 0.8); }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__header {
+        background-color: transparent;
+        border: 0; }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__current-month {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: none;
+        border: 0; }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__day-name {
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: none; }
+      .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day {
+        font-size: 15px;
+        border: 2px solid transparent;
+        border-radius: 0 !important; }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day:hover {
+          background-color: transparent;
+          border-color: rgba(255, 255, 255, 0.8); }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--outside-month {
+          background-color: transparent; }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--today {
+          background-color: var(--accent);
+          font-weight: 400; }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--selected {
+          border-color: rgba(255, 255, 255, 0.6); }
+          .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--selected::after {
+            content: unset; }
+        .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--disabled {
+          background-color: transparent;
+          color: #D02E00; }
+          .theme-dark div[class^="searchPopout-"] .react-datepicker__week .react-datepicker__day--disabled:hover {
+            background-color: transparent;
+            color: #D02E00;
+            border-color: #D02E00; }
+    .theme-dark div[class^="searchPopout-"] div[class^="datePickerHint-"] {
+      border: 0; }
+      .theme-dark div[class^="searchPopout-"] div[class^="datePickerHint-"] span[class^="hint-"] {
+        color: #FFF;
+        font-style: 15px; }
+      .theme-dark div[class^="searchPopout-"] div[class^="datePickerHint-"] span[class^="hintValue"] {
+        background-color: var(--accent);
+        border-radius: 0;
+        font-weight: 400; }
+        .theme-dark div[class^="searchPopout-"] div[class^="datePickerHint-"] span[class^="hintValue"]:hover {
+          background-color: #FFF;
+          color: #000; }
   div[class^="container-"][popoutkey] {
     border: 1px solid var(--accent); }
     div[class^="container-"][popoutkey] header {
