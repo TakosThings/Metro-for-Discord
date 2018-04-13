@@ -68,18 +68,10 @@
         // Username
         div[class^="nameTag-"]{
             line-height: 1.3;
-            span{
+            span[class*="username-"]{
                 font-size: $fsui;
                 font-weight: $fwui;
             }
-        }
-
-        // Bot tag
-        span[class*="botTag-"]{
-            font-size: 13px;
-            line-height: 1.3;
-            padding: 0 4px 6px 4px;
-            vertical-align: baseline;
         }
 
         // Activity
