@@ -1,6 +1,21 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.7.7
+* **Fixes** (1)
+  * Update the following popouts;
+    * Search
+    * Recent mentions
+    * Pinned messages
+    * Emoji picker (see notes for this release)
+    * User popout
+    * Add participant to group DM
+    * Add role (from user popout)
+    * Server dropdown
+    * Status changer
+* **Notes** (1)
+  * Emoji picker may sometimes open in the top right of the client when adding a reaction via the chat options button.
+
 #### 3.7.6
 * **Enhancements** (1)
   * Rewrite `/popout/_search.scss` for style update
