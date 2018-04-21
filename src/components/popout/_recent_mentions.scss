@@ -1,37 +1,37 @@
-.popout.popout-bottom-right.no-arrow{
+.noArrow-2iqI6w.noShadow-31NiLA.popout-2RRwAO.popoutBottomRight-3JmvG2{
     margin-top: 0;
 }
-.messages-popout-wrap{
+.messagesPopoutWrap-1VBR-j{
     max-height: calc(100vh - 72px) !important;
     min-height: calc(100vh - 72px);
     position: absolute;
     right: 0 !important;
     left: initial !important;
 }
-.popout.popout-bottom-right.no-arrow.no-shadow{
+.noArrow-2iqI6w.noShadow-31NiLA.popout-2RRwAO.popoutBottomRight-3JmvG2{
     right: 0 !important;
     left: initial !important;
     animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
     transform: none !important;
 }
 
-.theme-dark .popout .messages-popout-wrap{
+.theme-dark .messagesPopoutWrap-1VBR-j{
     background-color: $b1;
     border: 0;
     border-radius: 0;
 
     // Header
-    .header{
+    .header-y_zptc{
         background-color: transparent;
         box-shadow: none;
-        .title{
+        .title-1SAkRa{
             font-size: $fsheader;
             font-weight: $fwheader;
             line-height: 1;
         }
     }
     // Tab bar
-    .tab-bar-item{
+    .headerTabBarWrapper-3uOJ6x .tab-bar.TOP .tab-bar-item{
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
@@ -41,9 +41,9 @@
         }
     }
     // Filter
-    .mention-filter{
+    .mentionFilter-wE0FR9{
         font-size: $fsui;
-        .label{
+        .label-3EbduD{
             color: #FFF;
         }
     }
@@ -51,18 +51,18 @@
         overflow-y: auto;
     }
     // Chanel separator
-    .channel-separator{
-        .channel-name{
+    .channelSeparator-21vGh8{
+        .channelName-1C6XzK{
             font-size: $fsui;
             font-weight: $fwui;
             line-height: $lh;
         }
-        .guild-name{
+        .guildName-wbcfYO{
             font-weight: normal;
         }
     }
     // Message
-    .messages-popout{
+    .messagesPopout-MzE43I{
         .message-group{
             background-color: transparent;
             border: 1px solid $b3;
@@ -70,26 +70,26 @@
             &:hover{
                 border-color: $b4;
             }
-            .action-buttons .jump-button{
+            .actionButtons-LKmOj2 .jumpButton-1CVJpO{
                 background-color: $b3;
                 border-radius: 0;
                 &:hover{
                     background-color: $b4;
                 }
-                .text{
+                .text-W1x7LP{
                     color: #FFF;
                 }
             }
         }
         // Jump to button
-        .message-group:hover .action-buttons{
+        .message-group:hover .actionButtons-LKmOj2{
             background-color: transparent;
             box-shadow: none;
         }
     }
     // Empty
-    .messages-popout .empty-placeholder{
-        .body{
+    .messagesPopout-MzE43I .emptyPlaceholder-2T_EMT{
+        .body-1fAJW-{
             font-size: 0;
             &::before{
                 content: "Nothing to show...";
@@ -98,10 +98,10 @@
                 font-weight: $fwheader;
             }
         }
-        .image{
+        .image-1drLpb{
             display: none;
         }
-        &.bottom{
+        &.bottom-2LPJ1w{
             top: 0;
             right: 0;
             bottom: unset;
@@ -109,7 +109,7 @@
         }
     }
     // Footer
-    .footer{
+    .footer-1aZ98z{
         background-color: transparent;
         border-radius: 0;
         // Protip
