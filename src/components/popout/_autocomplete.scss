@@ -4,8 +4,8 @@
     .autocomplete-shadow{
         border-radius: 0;
     }
-    .autocomplete-arrow{
-        background-color: var(--accent);
+    .autocomplete-arrow-wrapper{
+        display: none;
     }
     header{
         height: auto;
