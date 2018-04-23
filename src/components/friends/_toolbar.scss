@@ -53,3 +53,23 @@
     background-color: var(--accent);
     color: #FFF;
 }
+
+.theme-dark #friends div[class*="headerBar"]{
+    svg[class*="iconInactive-"]{
+        opacity: 1;
+    }
+    svg[class*="icon-"]{
+        width: 40px;
+        height: 40px;
+        margin: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        path{
+            display: none;
+        }
+    }
+    div[class^="divider-"]{
+        display: none;
+    }
+}
