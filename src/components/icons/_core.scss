@@ -22,11 +22,13 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMA
 }
 
 // Recent mentions
+#friends div[class*="headerBar"] svg[name="Mention"],
 .chat div[class^="titleWrapper"] svg[name="Mention"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAATlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////+QlxstAAAAGXRSTlMAECAwQE9QX2BvcH+An6CvsL/Az9Df4O/wqrhjWwAAAOBJREFUeAHNkNGOqzAMBY1J21xuCS7QJvP/P7q7tZQNAqF97LwcKTmaOJYPo7s9Flimf3p8PVIZO9kRM1jsRfpokMPuHqya1SDKhivbkztsHF1mENk2cjtHwvz4wfIf5JuZ1Ajg/f6K854DfhUD5toSJBQviDWvGlcXBJ/X/8VcCy/6nwBpomepBdiH51mhg/Mnrqy1MBObIf1/3ZPYrC155CAhw0P18mwEoptFrcWjXbUxuWrmdRdNsEZp0UKUUyJ/aExahdNy0CgwXlREbyOUIDs0UUkqR+hgBVYbVD6LLy2bEtQK3TtvAAAAAElFTkSuQmCC) !important;
 }
 
 // Help
+#friends div[class*="headerBar"] svg[name="QuestionMark"],
 .chat div[class^="titleWrapper"] svg[name="QuestionMark"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwUF9gb3CAkJ+gr7DAz9Df7/BoqbnNAAAA1ElEQVR4Ac2SYXaEIAyEIbhoK2RF+O5/1b52ebxUPIDzR5kMk4TEPQyy5gOOvMp9eGdgv5EsFVIMzoWYoC7XeASVYaYQL/dhs+cN/nlI7XGjqN4cE/oR5vPMn0xKMgYg3QioYrnul/qtt/fv7qYmq/aaG945z9n70iEoBJuv/X0Dx+DADYSDNLHm9xuKn1iTAr56PFBskbNZRKc2LWyb9lHAcgOJfBUo1lXaPKzmL+Ne53FbRMgyDDPEaeUa7K/flXvt0BY3QRIDyd/v9aYFim7inoUff8gNmEG/8z4AAAAASUVORK5CYII=) !important;
 }
@@ -49,7 +51,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMA
 }
 
 // New group DM
-.header-toolbar button span[style*="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogIDxkZWZzPgogICAgPHBhdGggaWQ9ImEiIGQ9Ik04IDJWMEgxLjc3Nzc3Nzc4Qy43OTU5MzgyMiAwIDAgLjc5NTkzODIyIDAgMS43Nzc3Nzc3OFYxNC4yMjIyMjIyQzAgMTUuMjA0MDYxOC43OTU5MzgyMiAxNiAxLjc3Nzc3Nzc4IDE2SDE0LjIyMjIyMjJDMTUuMiAxNiAxNiAxNS4yMDg4ODg5IDE2IDE0LjIyMjIyMjJWOGgtMnY2SDJWMmg2eiIvPgogICAgPG1hc2sgaWQ9ImIiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgeD0iMCIgeT0iMCIgZmlsbD0iI2"]{
+#friends div[class*="headerBar"] svg[name="Compose"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwQFBgcJCfoK+wv8DP0N/g7/AJGSj8AAAAv0lEQVR4Ac3RUYrDMAyEYY27zrZp6jT2/ve/6oKrYBDOe79nwcwg+zrpeRzPZJdSA2jXFxtFKmx25Q+ZiWOa3R7pc5Colh5tdBnZWnlJL9bY5cxeb3S3NXbx7NboWotdPBtKlnKBs8vJs7lbd8e7jJJ0xVyhkzntdNncD91+Xrypi2zZxi+2bMqV3bpfqma/UGXxxDz/RfZWcPGLBPFZcX+0xv1RCvsj7WF/9KZm+f6Zhaqxf6KQx/4Z0Nj/Vf4BRpsQfPeA1cQAAAAASUVORK5CYII=) !important;
 }
 
