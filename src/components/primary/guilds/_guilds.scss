@@ -96,6 +96,15 @@
     height: 44px;
     background-size: auto;
 }
+.guilds-wrapper .guilds .guild.active a{
+    background-color: #FFF;
+}
+.guilds-wrapper .guilds .guild.active:hover a{
+    border-color: rgba($color: #000000, $alpha: 0.5)
+}
+.guilds-wrapper .guilds .guild.active .friends-icon{
+    filter: invert(100%);
+}
 
 // Online friend count
 .guilds-wrapper .guilds .friends-online{
