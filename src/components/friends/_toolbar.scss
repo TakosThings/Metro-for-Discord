@@ -68,6 +68,12 @@
         path{
             display: none;
         }
+        &:hover{
+            background-color: rgba(255,255,255,.1);
+        }
+        &:last-of-type{
+            margin-right: 8px;
+        }
     }
     div[class^="divider-"]{
         display: none;
