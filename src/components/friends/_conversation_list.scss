@@ -57,6 +57,9 @@
                 background-color: #FFF;
                 transform: rotate(45deg);
             }
+            &:hover a{
+                background-color: $b2;
+            }
         }
         // Friends 'channel'
         &.btn-friends{
