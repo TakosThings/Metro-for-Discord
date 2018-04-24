@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.0
+* **Enhancements**
+  * Instant invite modal
+  * Re-write Friends messages list
+  * Remove search bar from friends DM messages list
+  * Remove guilds separator
+* **Fixes**
+  * Friends server icon will highlight in white when Friends is open to match behaviour to that of normal servers
+  * Friends toolbar utility icons
+  * User popout opening in wrong position if summoned from cozy mode avatar
+
 #### 3.7.7
 * **Fixes** (1)
   * Update the following popouts;
