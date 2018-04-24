@@ -79,3 +79,12 @@
         display: none;
     }
 }
+
+.theme-dark #friends .tab-bar::after{
+    content: "Press CTRL + K to search";
+    padding: 0 8px;
+    color: #FFF;
+    font-size: 10px;
+    position: absolute;
+    right: 130px;
+}
