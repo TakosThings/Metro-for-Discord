@@ -1,0 +1,77 @@
+.theme-dark .modal-3HOjGZ.modal-2D7_ks.sizeSmall-1sh0-r{
+    background-color: $b1;
+    border: 1px solid var(--accent);
+    box-shadow: none;
+
+    // Header
+    .header-3sp3cE{
+        h2{
+            padding: 36px 0 4px;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            text-transform: none;
+        }
+    }
+    .subText-QqyOhk{
+        color: #FFF;
+        font-size: $fsui;
+    }
+
+    // Input
+    .input-2YozMi:not(input){
+        border: 0;
+    }
+    .copyButton-3-sW5u{
+        margin-left: 8px;
+    }
+    // Checkbox
+    .checkbox{
+        .checkbox-inner span{
+            border: 1px solid $inputborder;
+            border-radius: 0;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+        }
+        .checkbox-inner input[type=checkbox]:checked+span{
+            background-color: var(--accent);
+            border-color: transparent;
+            &::after{
+                top: 1px;
+                left: 5px;
+                border-width: 0 1px 1px 0;
+            }
+            &:hover{
+                border-color: $inputborderhover;
+            }
+        }
+        .checkBoxLabel-2XGyJf{
+            color: #FFF;
+            font-size: $fsui;
+        }
+    }
+
+    // Dropdown header
+    .h5-3KssQU{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        letter-spacing: normal;
+        text-transform: none;
+    }
+    // Toggle label
+    .titleDefault-1CWM9y{
+        font-weight: $fwui;
+    }
+    // Toggle description
+    .description-3MVziF{
+        color: #FFF;
+        font-weight: $fwui;
+    }
+
+    // Footer
+    .footerText-2-dHt5{
+        color: #FFF;
+        font-size: $fsui;
+    }
+}
