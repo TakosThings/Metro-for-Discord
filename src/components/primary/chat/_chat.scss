@@ -87,44 +87,40 @@
 }
 
 // Divider
-.chat .divider{
-    margin: 8px 0;
-}
-.chat .divider>span{
-    padding: 0 8px;
-    border-radius: 0;
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-}
-.chat .divider.divider-red>span{
-    text-transform: none;
-    line-height: $lh;
-}
-.divider + .divider{
-    margin-top: 25px;
-}
-.chat .divider:before{
-    display: none;
-}
-.theme-dark .friends-table .messages .divider:not(.red) div,
-.theme-dark .messages-wrapper .messages .divider:not(.red) div{
-    background-color: #FFF;
-}
-.theme-dark .friends-table .messages .divider:not(.red) span,
-.theme-dark .messages-wrapper .messages .divider:not(.red) span{
-    background-color: #FFF;
-    color: #000;
-}
-.theme-dark .friends-table .messages .divider.divider-red>span,
-.theme-dark .messages-wrapper .messages .divider.divider-red>span{
-    background-color: $alert;
-    color: #FFF;
-}
-.theme-dark .friends-table .messages .divider.divider-red>div,
-.theme-dark .messages-wrapper .messages .divider.divider-red>div{
-    background-color: $alert;
-    opacity: 1;
+.theme-dark .messages-wrapper .messages .divider{
+    height: 20px;
+    margin: 0;
+    background-color: transparent;
+    div{
+        display: none;
+    }
+    &::before{
+        display: none;
+    }
+    span{
+        width: 100%;
+        padding: 2px 10px;
+        border-bottom: 1px solid #FFF;
+        border-radius: 0;
+        font-size: $fsui;
+        font-weight: normal;
+        line-height: 20px;
+        text-align: right;
+        text-transform: none;
+    }
+    & span{
+        background-color: transparent;
+    }
+    &:not(.red) span{
+        color: #FFF;
+    }
+    &.divider-red > span{
+        border-color: $alert;
+        color: $alert;
+    }
+    + .divider{
+        margin-top: 8px;
+    }
 }
 
 // New messages
