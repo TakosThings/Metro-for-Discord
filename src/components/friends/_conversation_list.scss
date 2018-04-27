@@ -21,22 +21,58 @@
 
     // Conversation
     .channel{
+        height: auto !important;
         font-size: $fsui;
         a{
+            height: auto;
             margin: 0;
-            padding: 8px 8px 8px 20px;
+            padding: 4px 12px 4px 16px;
             border-radius: 0;
         }
-        .channel-name{
-            font-weight: $fwui;
-            opacity: 1;
+        // Avatar
+        .avatar-small{
+            width: 32px;
+            height: 32px;
         }
         // Avatar status
         .status{
+            width: 12px;
+            height: 12px;
             right: 0;
             bottom: 0;
             border: 0;
         }
+        .channel-name{
+            font-size: 15px;
+            font-weight: $fwui;
+            opacity: 1;
+        }
+        .channel-activity{
+            color: rgba($color: #FFF, $alpha: 0.4);
+            font-size: 13px;
+            line-height: unset;
+            strong{
+                font-weight: normal;
+            }
+            svg path{
+                fill: rgba($color: #FFF, $alpha: 0.4);
+            }
+        }
+        // Close icon
+        button.close{
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            right: 12px;
+            z-index: 1;
+            background-color: $b2;
+            border: 1px solid $inputborder;
+            &:hover{
+                background-color: var(--accent);
+            }
+        }
+
+        // States
         // Hovered channel
         &:hover a{
             background-color: $b2;
