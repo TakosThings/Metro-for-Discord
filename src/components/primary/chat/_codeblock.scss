@@ -14,9 +14,9 @@
 // Language
 .message-group .comment .markup pre code::before{
     content: attr(class);
-    width: calc(100% + 280px);
+    width: calc(100% + 270px);
     display: block;
-    margin: -7px 0 .5em -280px;
+    margin: -7px 0 .5em -270px;
     padding: 2px 6px 2px 0;
     background-color: #5E5E5E;
     color: #FFF;
