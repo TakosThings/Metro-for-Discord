@@ -3,7 +3,7 @@
       #friends .scroller,
       div[class^="emojiPicker"] div[class*="scroller-"],
       div[class^="userPopout-"] .member-roles,
-      .inner-1_1f7b div[class^="scroller-"], // User profile modal
+      .inner-1JeGVc div[class^="scroller-"], // User profile modal
       div[class^="quickswitcher-"] div[class*="scroller-"],
       .messages-popout-wrap .scroller,
       .search-results-wrap div[class^="scroller-"],
@@ -78,7 +78,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
     visibility: visible;
 }
 // User profile modal - only show scrollbar when we need it
-.inner-1_1f7b div[class^="scroller-"]{
+.inner-1JeGVc div[class^="scroller-"]{
     overflow-y: auto;
     &::-webkit-scrollbar-thumb{
         visibility: visible;
