@@ -1,38 +1,39 @@
-.noArrow-2iqI6w.noShadow-31NiLA.popout-2RRwAO.popoutBottomRight-3JmvG2{
+div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBottomRight-"]{
     margin-top: 0;
 }
-.messagesPopoutWrap-1VBR-j{
+
+div[class^="messagesPopoutWrap-"]{
     max-height: calc(100vh - 72px) !important;
     min-height: calc(100vh - 72px);
     position: absolute;
     right: 0 !important;
     left: initial !important;
 }
-.noArrow-2iqI6w.noShadow-31NiLA.popout-2RRwAO.popoutBottomRight-3JmvG2{
+div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBottomRight-"]{
     right: 0 !important;
     left: initial !important;
     animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
     transform: none !important;
 }
 
-.theme-dark .messagesPopoutWrap-1VBR-j{
+.theme-dark div[class^="messagesPopoutWrap-"]{
     background-color: $b1;
     border: 0;
     border-radius: 0;
 
     // Header
-    .header-y_zptc{
+    div[class^="header-"]{
         background-color: transparent;
         box-shadow: none;
-        .title-1SAkRa{
+        div[class^="title-"]{
             font-size: $fsheader;
             font-weight: $fwheader;
             line-height: 1;
         }
     }
     // Tab bar
-    .headerTabBarWrapper-3uOJ6x .tab-bar.TOP .tab-bar-item{
-        color: #FFF;
+    div[class^="headerTabBarWrapper-"] .tab-bar.TOP .tab-bar-item{
+        color: rgba($color: #FFF, $alpha: 0.5);
         font-size: $fsui;
         font-weight: $fwui;
         &.selected{
@@ -41,9 +42,9 @@
         }
     }
     // Filter
-    .mentionFilter-wE0FR9{
+    div[class^="mentionFilter-"]{
         font-size: $fsui;
-        .label-3EbduD{
+        div[class^="label-"]{
             color: #FFF;
         }
     }
@@ -51,18 +52,18 @@
         overflow-y: auto;
     }
     // Chanel separator
-    .channelSeparator-21vGh8{
-        .channelName-1C6XzK{
+    div[class^="channelSeparator-"]{
+        span[class^="channelName-"]{
             font-size: $fsui;
             font-weight: $fwui;
             line-height: $lh;
         }
-        .guildName-wbcfYO{
+        span[class^="guildName-"]{
             font-weight: normal;
         }
     }
     // Message
-    .messagesPopout-MzE43I{
+    div[class^="messagesPopout-"]{
         .message-group{
             background-color: transparent;
             border: 1px solid $b3;
@@ -70,26 +71,26 @@
             &:hover{
                 border-color: $b4;
             }
-            .actionButtons-LKmOj2 .jumpButton-1CVJpO{
+            div[class^="actionButtons-"] div[class^="jumpButton-"]{
                 background-color: $b3;
                 border-radius: 0;
                 &:hover{
                     background-color: $b4;
                 }
-                .text-W1x7LP{
+                div[class^="text-"]{
                     color: #FFF;
                 }
             }
         }
         // Jump to button
-        .message-group:hover .actionButtons-LKmOj2{
+        .message-group:hover div[class^="actionButtons-"]{
             background-color: transparent;
             box-shadow: none;
         }
     }
     // Empty
-    .messagesPopout-MzE43I .emptyPlaceholder-2T_EMT{
-        .body-1fAJW-{
+    div[class^="messagesPopout-"] div[class^="emptyPlaceholder-"]{
+        div[class^="body-"]{
             font-size: 0;
             &::before{
                 content: "Nothing to show...";
@@ -98,10 +99,10 @@
                 font-weight: $fwheader;
             }
         }
-        .image-1drLpb{
+        div[class^="image-"]{
             display: none;
         }
-        &.bottom-2LPJ1w{
+        &[class*="bottom-"]{
             top: 0;
             right: 0;
             bottom: unset;
@@ -109,7 +110,7 @@
         }
     }
     // Footer
-    .footer-1aZ98z{
+    div[class^="footer-"]{
         background-color: transparent;
         border-radius: 0;
         // Protip
