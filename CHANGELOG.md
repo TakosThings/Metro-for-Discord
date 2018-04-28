@@ -1,13 +1,21 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.1
+* **Enhancements** (3)
+  * Some improvements and fixes to friends conversations list
+  * Change appearance of chat dividers
+  * Future-proofing of popouts
+* **Fixes** (1)
+  * Update classes of many elements where their class names had been re-rolled. See [#26](https://github.com/TakosThings/Metro-for-Discord/issues/26)
+
 #### 3.8.0
-* **Enhancements**
+* **Enhancements** (4)
   * Instant invite modal
   * Re-write Friends messages list
   * Remove search bar from friends DM messages list
   * Remove guilds separator
-* **Fixes**
+* **Fixes** (3)
   * Friends server icon will highlight in white when Friends is open to match behaviour to that of normal servers
   * Friends toolbar utility icons
   * User popout opening in wrong position if summoned from cozy mode avatar
