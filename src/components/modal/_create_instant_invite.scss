@@ -1,10 +1,10 @@
-.theme-dark .modal-3HOjGZ.modal-2D7_ks.sizeSmall-1sh0-r{
+.theme-dark .modal-3HD5ck.modal-vcwOUu.sizeSmall-Sf4iOi{
     background-color: $b1;
     border: 1px solid var(--accent);
     box-shadow: none;
 
     // Header
-    .header-3sp3cE{
+    div[class*="header-"]{
         h2{
             padding: 36px 0 4px;
             font-size: $fsheader;
@@ -12,16 +12,16 @@
             text-transform: none;
         }
     }
-    .subText-QqyOhk{
+    div[class^="subText-"]{
         color: #FFF;
         font-size: $fsui;
     }
 
     // Input
-    .input-2YozMi:not(input){
+    div[class^="input-"]:not(input){
         border: 0;
     }
-    .copyButton-3-sW5u{
+    button[class^="copyButton-"]{
         margin-left: 8px;
     }
     // Checkbox
@@ -52,7 +52,7 @@
     }
 
     // Dropdown header
-    .h5-3KssQU{
+    h5{
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
@@ -60,17 +60,17 @@
         text-transform: none;
     }
     // Toggle label
-    .titleDefault-1CWM9y{
+    div[class*="switchItem"] h3{
         font-weight: $fwui;
     }
     // Toggle description
-    .description-3MVziF{
+    div[class^="description-"]{
         color: #FFF;
         font-weight: $fwui;
     }
 
     // Footer
-    .footerText-2-dHt5{
+    div[class*="footerText-"]{
         color: #FFF;
         font-size: $fsui;
     }
