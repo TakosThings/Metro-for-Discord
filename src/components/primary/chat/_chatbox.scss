@@ -100,8 +100,10 @@
             font-size: $fsui;
             font-weight: $fwui;
             opacity: .5;
+            transition: .15s ease-in;
             &:hover{
                 opacity: 1;
+                transition: .15s ease-in;
             }
         }
         // Countdown
