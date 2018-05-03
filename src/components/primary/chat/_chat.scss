@@ -188,7 +188,7 @@
     border-radius: 0;
 }
 .message-group .edit-message .edit-container-inner textarea{
-    margin: 0 0 0 30px;
+    margin: 0;
 }
 .message-group .edit-message .edit-operation{
     font-family: $font;
@@ -205,8 +205,8 @@
     width: 40px;
     height: 40px;
     top: 0;
-    right: initial;
-    left: 0;
+    right: 0;
+    left: unset;
 }
 .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]{
     transition: none;
