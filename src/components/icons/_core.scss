@@ -184,6 +184,10 @@ div[class^="emojiPicker-"] div[class^="categories"] div[class*="flags"]{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
     background-size: 24px;
 }
+// Upload
+.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"]{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAERYXGBtoa2zLzNTV1tqZ9e5gAAAAY0lEQVR42u3LuxKAIAxE0YUIykP2//9WxbFCYuHoWHgm3d7gfYNAJTlZKFwhi9N3rZDEmesl2/2PhjSRxXX2YECiFr19C2DCWTExCfYAkjmi4S2OAOLRQ6L6g8eC+9i4Dr5jAUAoBp3xEaVxAAAAAElFTkSuQmCC);
+}
 
 // Upload modal
 div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"] {
