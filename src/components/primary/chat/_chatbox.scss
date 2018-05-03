@@ -1,166 +1,171 @@
 .theme-dark .chat form{
     background-color: transparent;
     box-shadow: none;
-}
-div[class*="channelTextArea"]{
-    margin: 0 0 20px;
-}
-.theme-dark div[class*="channelTextArea"] div[class*="inner-"]{
-    background-color: $b1;
-    border-radius: 0;
-}
 
-// Textarea
-.theme-dark div[class*="channelTextArea"] textarea{
-    margin-left: 40px;
-    color: #FFF;
-    letter-spacing: normal;
-}
-.theme-dark div[class*="channelTextArea"] textarea::-webkit-input-placeholder{
-    color: #FFF;
-}
-div[class*="channelTextArea"] div[class*="inner-"] div[class^="flex"]~textarea{
-    margin: 0;
-}
-div[class*="channelTextArea"] textarea[class^="textAreaEnabledNoAttach"]{
-    margin: 0 0 0 40px;
-}
+    div[class*="channelTextArea-"]{
+        margin: 0 0 20px;
+        div[class*="inner-"]{
+            background-color: transparent;
+            border-radius: 0;
+            textarea{
+                margin: 0;
+                padding: 10px 88px 10px 0;
+                border-top: 2px solid $b3;
+                color: #FFF;
+                transition: .15s ease-in;
+                &:focus{
+                    border-top-color: var(--accent);
+                    transition: .15s ease-in;
+                }
+                &::-webkit-input-placeholder{
+                    color: #FFF;
+                }
+                &[class^="textAreaEnabledNoAttach"]{
+                    padding: 10px 48px 10px 8px;
+                }
+            }
+        }
 
-// Upload button
-div[class*="channelTextArea"] svg[class^="attachButton-"]{
-    margin: 0 0 0 40px;
-    padding: 8px;
-    &:hover{
-        transform: none;
-    }
-}
+        // Upload button
+        div[class*="inner-"] > div[class^="flex-"]:first-of-type{
+            svg[class^="attachButton"]{
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                right: 40px;
+                margin: 0;
+                // Upload icon located in core icons folder
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px;
+                opacity: .5;
+                path{
+                    display: none;
+                }
+                &:hover{
+                    transform: none;
+                    opacity: 1;
+                }
+            }
+            div[class^="attachButtonDivider"]{
+                display: none;
+            }
+        }
 
-// Divider
-div[class*="channelTextArea"] div[class^="attachButtonDivider-"]{
-    width: 10px;
-    margin: 0;
-    background-color: transparent;
-}
-
-// Emoji button
-div[class*="channelTextArea"] div[class*="emojiButton-"]{
-    width: 40px;
-    height: 40px;
-    top: 0;
-    right: initial;
-    left: 0;
-}
-div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]{
-    transition: none;
-    background-image: none;
-}
-div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="sprite-"]::before{
-    content: "\E170";
-    font-family: $icon;
-    font-size: 21px;
-    text-align: center;
-}
-div[class*="channelTextArea"] div[class*="emojiButton-"] div[class*="spriteHovered"]{
-    transform: none;
-}
-div[class*="channelTextArea"] div[class*="emojiButton-"].popout-open{
-    background-color: var(--accent);
-}
-
-// Typing
-.theme-dark div[class^="typing-"]{
-    height: 20px;
-    background-color: transparent;
-    font-size: 11px;
-    line-height: 20px;
-
-    // Hide dots animation
-    & span[class^="ellipsis"]{
-        display: none;
-    }
-
-    // X is typing...
-    & span[class^="text-"]{
-        color: #FFF;
-        & strong{
-            font-weight: $fwchat;
+        // Emoji button
+        div[class*="emojiButton-"]{
+            width: 40px;
+            height: 40px;
+            right: 0;
+            top: 0;
+            div[class*="sprite-"]{
+                background-image: none;
+                transition: none;
+                &::before{
+                    content: "\E170";
+                    font-family: $icon;
+                    font-size: 21px;
+                    text-align: center;
+                }
+            }
+            div[class*="spriteHovered"]{
+                transform: none;
+            }
+            &.popout-open{
+                background-color: var(--accent);
+            }
         }
     }
-}
 
-// Auto complete
-// Hack to stop the autocomplete popout being selected
-.theme-dark div[class^="emojiButton"] ~ div[class^="autocomplete-"]{
-    background-color: $b1;
-    border-bottom: 1px solid $b2;
-    border-radius: 0;
-}
-div[class^="autocomplete-"] div[class^="contentTitle"]{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-div[class^="autocomplete-"] div[class^="contentTitle"] strong{
-    font-weight: normal;
-}
-div[class^="autocomplete-"] div[class^="contentTitle"] strong::before,
-div[class^="autocomplete-"] div[class^="contentTitle"] strong::after{
-    content: "'";
-}
-div[class^="autocomplete-"] div[class*="selector-"]{
-    border-radius: 0;
-}
-.theme-dark div[class^="autocomplete-"] div[class^="selectorSelected"]{
-    background-color: var(--accent);
-}
-.theme-dark div[class^="autocomplete-"] polygon{
-    fill: #FFF;
-}
-
-// Countdown timer
-.theme-dark .channel-textarea-guard{
-    background-color: $b1;
-    background-image: none;
-}
-.theme-dark .channel-textarea-guard > div{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-
-.channel-textarea-guard .countdown{
-    margin: 0;
-    font-family: $mono;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-.channel-textarea-guard .countdown .countdown-number{
-    min-width: auto;
-}
-.theme-dark .channel-textarea-guard .countdown-number{
-    background-color: transparent;
-    border: 0;
-}
-
-// Unblock user
-.theme-dark .wrapper-31dmVW{
-    background-image: none;
-    > div{
-        display: none;
-    }
-    button{
-        width: 100%;
-        height: 40px;
-        margin-top: 15px;
-        background-color: $b1;
-        font-size: $fsui;
-        font-weight: $fwui;
-        border: 1px solid transparent;
-        border-radius: 0;
+    // Blocked user/Countdown
+    .wrapper-39oAo3{
+        min-height: 40px;
+        background-image: none;
+        border-top: 2px solid rgba($color: $alert, $alpha: 0.5);
+        box-sizing: border-box;
+        transition: .15s ease-in;
         &:hover{
-            border-color: $inputborder;
+            border-top-color: rgba($color: $alert, $alpha: 1.0);
+            transition: .15s ease-in;
+        }
+        div{
+            display: none;
+        }
+        button{
+            width: 100%;
+            height: 40px;
+            margin: 0;
+            background-color: transparent;
+            border-radius: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+            opacity: .5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        // Countdown
+        span[class^="countdown"]{
+            margin-top: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+            span[class^="number"]{
+                min-width: auto;
+                background-color: transparent;
+                border: 0;
+                border-radius: 0;
+            }
+        }
+    }
+
+    // Typing
+    div[class^="typing-"]{
+        height: 20px;
+        background-color: transparent;
+        font-size: 11px;
+        line-height: 20px;
+        span[class^="ellipsis-"]{
+            display: none;
+        }
+        span[class^="text-"]{
+            strong{
+                font-weight: normal;
+            }
+        }
+    }
+
+    // Auto complete
+    // Hack to stop the autocomplete popout being selected
+    div[class^="emojiButton"] ~ div[class^="autocomplete-"]{
+        background-color: $b1;
+        border-bottom: 1px solid $b2;
+        border-radius: 0;
+    }
+    div[class^="autocomplete-"]{
+        div[class^="contentTitle"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+            strong{
+                font-weight: normal;
+                &::before,
+                &::after{
+                    content: "'";
+                }
+            }
+        }
+        div[class*="selector-"]{
+            border-radius: 0;
+        }
+        div[class^="selectorSelected"]{
+            background-color: var(--accent);
+        }
+        polygon{
+            fill: #FFF;
+        }
+        div[class^="description"]{
+            color: #FFF;
         }
     }
 }
-
