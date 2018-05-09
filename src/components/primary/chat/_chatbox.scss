@@ -75,6 +75,9 @@
                 background-color: var(--accent);
             }
         }
+        div[class^="emojiButtonNormal-"]{
+            opacity: 1;
+        }
     }
 
     // Blocked user/Countdown
