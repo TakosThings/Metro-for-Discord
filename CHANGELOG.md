@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.2
+* **Enhancements**
+  * Change background of settings sidebar
+  * Remove social media links from settings sidebar
+  * New chatbox design
+* **Fixes**
+  * Codeblock header was out of position
+
 #### 3.8.1
 * **Enhancements** (3)
   * Some improvements and fixes to friends conversations list
