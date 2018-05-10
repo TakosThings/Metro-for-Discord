@@ -39,8 +39,36 @@ div[class^="uploadModal"]{
             }
             div[class*="channelTextArea"] div[class*="inner-"]{
                 background-color: #000;
+                border-radius: 0;
                 textarea{
-                    padding: 8px 38px 8px 12px;
+                    padding: 10px 50px 10px 10px;
+                    margin: 0;
+                }
+                 // Emoji button
+                div[class*="emojiButton-"]{
+                    width: 40px;
+                    height: 40px;
+                    right: 0;
+                    top: 0;
+                    div[class*="sprite-"]{
+                        background-image: none;
+                        transition: none;
+                        &::before{
+                            content: "\E170";
+                            font-family: $icon;
+                            font-size: 21px;
+                            text-align: center;
+                        }
+                    }
+                    div[class*="spriteHovered"]{
+                        transform: none;
+                    }
+                    &.popout-open{
+                        background-color: var(--accent);
+                    }
+                }
+                div[class^="emojiButtonNormal-"]{
+                    opacity: 1;
                 }
             }
         }
