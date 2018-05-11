@@ -40,34 +40,34 @@
 }
 
 // Server settings Members search box
-.theme-dark .role-filter ~ .ui-search-bar{
+.theme-dark .role-filter ~ div[class*="searchBar-"]{
     position: relative;
     background-color: transparent;
-}
-.theme-dark .role-filter ~ .ui-search-bar input{
-    height: 36px;
-    border: 1px solid $inputborder;
-    border-radius: 0;
-    font-size: $fsui;
-    &::-webkit-input-placeholder{
-        color: rgba(255,255,255,.5);
-    }
-    &:hover{
-        border-color: $inputborderhover;
-    }
-    &:focus{
-        background-color: #FFF;
-        border-color: var(--accent);
-        color: #000;
+    input{
+        height: 36px;
+        border: 1px solid $inputborder;
+        border-radius: 0;
+        font-size: $fsui;
         &::-webkit-input-placeholder{
-            color: rgba(0,0,0,.5);
+            color: rgba(255,255,255,.5);
+        }
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: #FFF;
+            border-color: var(--accent);
+            color: #000;
+            &::-webkit-input-placeholder{
+                color: rgba(0,0,0,.5);
+            }
         }
     }
-}
-.theme-dark .role-filter ~ .ui-search-bar .ui-search-bar-icon{
-    position: absolute;
-    top: 4px;
-    right: 4px;
+    div[class^="searchBarIcon-"]{
+        position: absolute;
+        top: 4px;
+        right: 4px;
+    }
 }
 
 // Dropdown
