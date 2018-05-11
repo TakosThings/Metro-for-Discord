@@ -101,6 +101,35 @@ div[class^="uploadModal"]{
             }
         }
     }
+
+    // Autocomplete
+    div[class^="autocomplete-"]{
+        background-color: $b2;
+        border-radius: 0;
+        color: #FFF;
+        div[class^="contentTitle-"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwheader;
+            text-transform: none;
+        }
+        div[class*="selector-"]{
+            border-radius: 0;
+            div[class*="content-"],
+            div[class*="description-"]{
+                color: #FFF;
+            }
+            div[class^="descriptionUsername-"]{
+                color: #FFF;
+            }
+            div[class*="descriptionDiscriminator-"]{
+                color: #FFF;
+            }
+        }
+        div[class^="selectorSelected"]{
+            background-color: var(--accent);
+        }
+    }
 }
 
 div[class*="uploadModalIn"]{
