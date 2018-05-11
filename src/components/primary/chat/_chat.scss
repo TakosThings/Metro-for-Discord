@@ -4,352 +4,319 @@
     background-color: $b2;
 }
 
-.theme-dark .message-group:not(.has-divider){
-    border-bottom-color: rgba(255,255,255,0.05);
-}
-.message-group .comment .markup{
-}
-.theme-dark .message-group .comment .markup{
-    color: #FFF;
-    padding-right: 20px;
-}
-.message-group .comment{
-    margin-right: 0;
-}
+.theme-dark .chat{
+    // Cozy chat
+    .message-group{
+        .comment{
+            .markup{
+                color: #FFF;
+            }
+        }
+        h2 strong{
+            color: #ACACAC;
+            font-size: $fsui;
+            font-weight: 400;
+        }
+        &:not(.has-divider){
+            border-bottom-color: rgba($color: #FFF, $alpha: 0.05);
+        }
+        .mentioned .message-text::after{
+            display: none;
+        }
+        a{
+            color: var(--link);
+        }
+    }
 
-// Cozy
-.message-group{
-    margin-right: 0;
-    margin-left: 0;
-    padding: 15px 20px;
-}
-.message-group h2 strong{
-    font-size: $fsui;
-    font-weight: 400;
-}
-.theme-dark .message-group h2 strong{
-    color: #ACACAC;
-}
-.message-group .mentioned .message-text::after{
-    display: none;
-}
+    // Compact chat
+    .message-group.compact{
+        .timestamp{
+            width: auto;
+            display: unset;
+            color: rgba($color: #FFF, $alpha: 0.5);
+        }
+        .message:hover .timestamp{
+            color: #FFF !important;
+        }
+        .message .message-text{
+            .markup{
 
-// Compact
-.message-group.compact{
-    margin-left: 0;
-    padding: 3px 20px;
-}
-.theme-dark .message-group.compact .timestamp{
-    color: rgba(255,255,255,0.5);
-}
-.message-group.compact .message:hover .timestamp{
-    color: #FFF !important;
-}
-.message-group.compact .message .message-text .markup{
-    padding-left: 80px;
-}
-.message-group.compact .message .message-text .markup .user-name{
-    font-weight: 400;
-}
-.theme-dark .message-group.compact .message .markup .user-name{
-    color: #ACACAC;
-}
+            }
+            .user-name{
+                color: #ACACAC;
+                font-weight: 400;
+            }
+        }
+    }
 
-// Links
-.theme-dark .message-group a{
-    color: var(--link);
-}
-
-// Mentions
-.theme-dark .mention{
-    background-color: transparent;
-    color: var(--accent);
-    transition: none;
-    &:hover{
+    // Mention
+    .mention{
         background-color: transparent;
-        text-decoration: underline;
+        color: var(--link);
+        transition: none;
+        &:hover{
+            background-color: transparent;
+            text-decoration: underline;
+        }
     }
-}
-.theme-dark .message-group .comment .markup .mention{
-    background-color: transparent;
-    &:hover{
+    .message-group .comment .markup .mention{
         background-color: transparent;
+        &:hover{
+            background-color: transparent;
+        }
     }
-}
 
-// System message
-.system-message{
-    padding-left: 10px;
-    font-size: $fsui;
-}
-.theme-dark .system-message{
-    color: #FFF;
-}
+    // Dividers
+    .messages-wrapper .messages .divider{
+        height: 20px;
+        margin: 0;
+        background-color: transparent;
+        div{
+            display: none;
+        }
+        &::before{
+            display: none;
+        }
+        span{
+            width: 100%;
+            padding: 2px 10px;
+            border-bottom: 1px solid #FFF;
+            border-radius: 0;
+            font-size: $fsui;
+            font-weight: normal;
+            line-height: 20px;
+            text-align: right;
+            text-transform: none;
+        }
+        & span{
+            background-color: transparent;
+        }
+        &:not(.red) span{
+            color: #FFF;
+        }
+        &.divider-red > span{
+            border-color: $alert;
+            color: $alert;
+        }
+        + .divider{
+            margin-top: 8px;
+        }
+    }
 
-// Divider
-.theme-dark .messages-wrapper .messages .divider{
-    height: 20px;
-    margin: 0;
-    background-color: transparent;
-    div{
-        display: none;
-    }
-    &::before{
-        display: none;
-    }
-    span{
-        width: 100%;
-        padding: 2px 10px;
-        border-bottom: 1px solid #FFF;
+    // New message bars
+    .new-messages-bar{
+        background-color: var(--accent);
         border-radius: 0;
-        font-size: $fsui;
-        font-weight: normal;
-        line-height: 20px;
-        text-align: right;
-        text-transform: none;
+        button:first-child,
+        button:last-child{
+            color: #FFF;
+            font-family: $font;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+        }
     }
-    & span{
-        background-color: transparent;
+    .jump-to-present-bar{
+        background-color: var(--accent);
+        border: 0;
+        border-radius: 0;
+        button:first-child,
+        button:last-child{
+            color: #FFF;
+            font-family: $font;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+        }
     }
-    &:not(.red) span{
+
+    // Load more message
+    .has-more button{
+        background-color: $b3;
+        border: 1px solid transparent;
+        border-radius: 0;
         color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        text-transform: none;
+        &:hover{
+            border-color: $inputborder;
+        }
+        &:focus{
+            border-color: $inputborderhover;
+        }
     }
-    &.divider-red > span{
-        border-color: $alert;
-        color: $alert;
+
+    // Robot message
+    .message-group.is-local-bot-message{
+        background-color: transparent;
+        background-image: none;
+        box-shadow: none;
     }
-    + .divider{
-        margin-top: 8px;
+
+    // System message
+    .system-message{
+        color: #FFF;
+        font-size: $fsui;
+        .system-message-icon{
+            background-size: 16px;
+        }
+    }
+
+    // Editing message
+    .message-group .edit-message{
+        .edit-container-inner{
+            margin-right: 40px;
+            div[class^="innerEnabled"]{
+                background-color: $b1;
+                border-radius: 0;
+            }
+            textarea{
+                margin: 0;
+            }
+
+            // Emoji button
+            div[class*="emojiButton-"]{
+                width: 40px;
+                height: 40px;
+                top: 0;
+                right: 0;
+                left: unset;
+                div[class*="sprite-"]{
+                    transition: none;
+                    background-image: none;
+                    &:active{
+                        color: var(--accent);
+                    }
+                    &::before{
+                        content: "\E170";
+                        font-family: $icon;
+                        font-size: 21px;
+                        text-align: center;
+                    }
+                }
+                div[class*="spriteHovered"]{
+                    transform: none;
+                }
+            }
+        }
+        .edit-operation{
+            color: #FFF;
+            font-family: $font;
+            font-weight: normal;
+            > a{
+                color: var(--accent);
+            }
+        }
+    }
+
+    // Reactions
+    .reaction{
+        border: 1px solid transparent;
+        border-radius: 0;
+        &:hover{
+            border-color: $inputborder;
+        }
+        .reaction-count{
+            color: rgba(255,255,255,.5);
+            font-weight: normal;
+        }
+        &.reaction-me{
+            background-color: var(--accent);
+            color: #FFF;
+            font-weight: normal;
+        }
+    }
+
+    // Start of channel history
+    .messages div[class^="default-"]{
+        height: auto;
+        margin: 0;
+        padding: 20px;
+        background-color: #232323;
+        background-image: none;
+        h1.old-h1{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwchat;
+        }
+    }
+
+    // File attachments
+    .message-group .comment div[class^="attachment-"]{
+        height: 56px;
+        padding: 8px;
+        background-color: $b1;
+        border-radius: 0;
+        img[class^="icon-"]{
+            display: none;
+        }
+        div[class^="attachmentInner"]{
+            height: 40px;
+            position: relative;
+            padding-left: 48px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            a[class^="filename-"],
+            div[class^="filename-"]{
+                font-size: $fsui;
+                font-weight: $fwui;
+                line-height: $lh;
+            }
+            div[class^="size-"]{
+                line-height: $lh;
+            }
+            div[class^="metadata-"]{
+                color: #FFF;
+                font-weight: normal;
+            }
+            // Upload progress bar
+            div[class^="progress-"]{
+                background-color: rgba($color: #FFF, $alpha: 0.2) !important;
+                border-radius: 0;
+                div[class^="progressBar-"]{
+                    background-color: var(--accent) !important;
+                    border-radius: 0;
+                }
+            }
+        }
+        img[class^="icon-"]~div::before{
+            content: "";
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: var(--accent);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            box-sizing: border-box;
+        }
+        svg[class^="downloadButton"] g{
+            display: none;
+        }
     }
 }
 
-// New messages
-.chat .new-messages-bar{
-    left: 20px;
-    right: 20px;
-    background-color: var(--accent);
-    border-radius: 0;
-    &:hover{
-        background-color: var(--accent);
-    }
-}
-.chat .new-messages-bar button:first-child,
-.chat .new-messages-bar button:last-child{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-
-// Jump to present
-.chat .jump-to-present-bar{
-    left: 20px;
-    right: 20px;
-    border-bottom: 1px solid $b2;
-    border-radius: 0;
-}
-.theme-dark .chat .jump-to-present-bar{
-    background-color: var(--accent);
-    &:hover{
-        background-color: var(--accent);
-    }
-}
-.chat .jump-to-present-bar button:first-child,
-.chat .jump-to-present-bar button:last-child{
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-
-// Load More
-.theme-dark .chat .has-more button{
-    background-color: $b3;
-    border: 1px solid transparent;
-    border-radius: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-    &:hover{
-        border-color: $inputborder;
-    }
-    &:focus{
-        border-color: $inputborderhover;
-    }
-}
-
-// Editing message
-.message-group .edit-message .edit-container-inner{
-    margin-right: 40px;
-}
-.theme-dark .message-group .edit-container-inner div[class^="innerEnabled"]{
-    background-color: $b1;
-    border-radius: 0;
-}
-.message-group .edit-message .edit-container-inner textarea{
-    margin: 0;
-}
-.message-group .edit-message .edit-operation{
-    font-family: $font;
-    font-weight: normal;
-}
-.theme-dark .message-group .edit-message .edit-operation{
-    color: #FFF;
-}
-.message-group .edit-message .edit-operation>a{
-    color: var(--accent);
-}
-// Editing message emoji button
-.message-group .edit-message .edit-container-inner div[class*="emojiButton-"]{
-    width: 40px;
-    height: 40px;
-    top: 0;
-    right: 0;
-    left: unset;
-}
-.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]{
-    transition: none;
-    background-image: none;
-    &:active{
-        color: var(--accent);
-    }
-}
-.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]::before{
-    content: "\E170";
-    font-family: $icon;
-    font-size: 21px;
-    text-align: center;
-}
-.message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="spriteHovered"]{
-    transform: none;
-}
-
+// Special snowflakes
 // Blocked messages
-.message-group-blocked{
+.theme-dark .messages-wrapper .messages .message-group-blocked{
     border: 1px solid transparent;
     border-radius: 0;
-}
-.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn{
-    background: $b3;
-    color: #fff;
-    font-size: $fschat;
-    font-weight: $fwchat;
-    text-transform: none;
-    &:hover{
+    .message-group-blocked-btn{
+        background: $b3;
+        color: #fff;
+        font-size: $fschat;
+        font-weight: $fwchat;
+        text-transform: none;
+        &:hover{
+            background-color: $b3;
+        }
+    }
+    &.revealed{
         background-color: $b3;
     }
-}
-.theme-dark .messages-wrapper .messages .message-group-blocked.revealed{
-    background-color: $b3;
-}
-
-// Reactions
-.reaction{
-    border-radius: 0;
-}
-.theme-dark .reaction{
-    border: 1px solid transparent;
-    &:hover{
-        border-color: $inputborder;
-    }
-}
-.theme-dark .reaction .reaction-count{
-    color: rgba(255,255,255,.5);
-    font-weight: normal;
-}
-.theme-dark .reaction.reaction-me .reaction-count{
-    color: #FFF;
-    font-weight: normal;
-}
-.theme-dark .reaction.reaction-me{
-    background-color: var(--accent);
-}
-
-// Local bot message
-.theme-dark .message-group.is-local-bot-message{
-    background-image: none;
-}
-
-// Start of channel history
-.theme-dark .chat .messages div[class^="default-"]{
-    height: auto;
-    margin: 0;
-    padding: 20px;
-    background-color: #232323;
-    background-image: none;
-    h1.old-h1{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwchat;
-    }
-}
-
-// File attachments
-.message-group .comment div[class^="attachment-"]{
-    height: 56px;
-    padding: 8px;
-    background-color: $b1;
-    border-radius: 0;
-}
-.message-group .comment div[class^="attachment-"] img[class^="icon-"]{
-    display: none;
-}
-.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"]{
-    height: 40px;
-    position: relative;
-    padding-left: 48px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"] a[class^="filename-"]{
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-}
-.message-group .comment div[class^="attachment-"] div[class^="attachmentInner"] div[class^="metadata-"]{
-    color: #FFF;
-    font-weight: normal;
-}
-.message-group .comment div[class^="attachment-"] img[class^="icon-"]~div::before{
-    content: "";
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--accent);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-    box-sizing: border-box;
-}
-.message-group .comment div[class^="attachment-"] svg[class^="downloadButton"] g{
-    display: none;
-}
-
-// Uploading
-.message-group .comment .attachment .upload>.filename{
-    color: var(--accent);
-}
-.message-group .comment .attachment .upload>.speed{
-    color: #FFF;
-}
-.message-group .comment .attachment .upload>.progress{
-    background-color: rgba(255,255,255,.2);
-    border-radius: 0;
-}
-.message-group .comment .attachment .upload>.progress .progress-bar{
-    background-color: var(--accent);
-    border-radius: 0;
-}
-
-// Font scaling bodges
-html[style*="font-size: 150%"] .message-group.compact .message .message-text .markup{
-    padding-left: 95px;
-}
-html[style*="font-size: 125%"] .message-group.compact .message .message-text .markup{
-    padding-left: 85px;
 }
