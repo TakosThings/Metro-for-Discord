@@ -75,7 +75,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.8.3";
+  content: "Metro for Discord 3.8.4";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -1050,6 +1050,10 @@ div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > 
 
 .theme-dark .chat .message-group.compact .message:hover .timestamp {
   color: #FFF !important; }
+
+.theme-dark .chat .message-group.compact .message .message-text .markup {
+  padding-left: 50px;
+  text-indent: -50px; }
 
 .theme-dark .chat .message-group.compact .message .message-text .user-name {
   color: #ACACAC;
