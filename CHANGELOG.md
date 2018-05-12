@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.4
+* **Fixes**
+  * Reduce chat indenting
+
 #### 3.8.3
 * **Enhancements**
   * Re-write chat CSS
