@@ -1,7 +1,7 @@
-div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutTopRight-"]{
+div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popout-top-right{
     margin-top: 0;
 }
-div[class^="noArrow-"][class*="popout-"][class*="popoutLeft-"]{
+div[class^="noArrow-"][class*="popout-"].popout-left{
     transform: translateX(-100%) !important;
 }
 
