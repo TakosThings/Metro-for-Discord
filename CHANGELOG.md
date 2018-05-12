@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.3
+* **Enhancements**
+  * Re-write chat CSS
+* **Fixes**
+  * Upload modal comment box
+  * Chat timestamps will now position correctly if the time is not in H:i format
+  * Upload modal mention list
+  * Server settings user list search bar
+  * Update Recent Mentions, Pinned messages and emoji picker classes 
+  * BetterDiscord: Fix settings padding
+
 #### 3.8.2
 * **Enhancements**
   * Change background of settings sidebar
