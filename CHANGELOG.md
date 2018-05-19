@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.5
+* **Enhancements**
+  * Embedded Audio/Video players
+* **Fixes**
+  * Editing message autocomplete
+  * NSFW channel warning Continue button
+
 #### 3.8.4
 * **Fixes**
   * Reduce chat indenting
