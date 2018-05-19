@@ -180,6 +180,9 @@ div[class^="emojiPicker-"] div[class^="categories"] div[class*="flags"]{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
     background-size: 24px;    
 }
+.theme-dark div[class^="wrapperAudio"] div[class^="audioMetadata"]::before{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAATlBMVEUAAAD////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7///////+xcCBGAAAAGXRSTlMAARcdMU9VWGNucHJ1eIeMlaiquLvQ4u/we7ud+wAAAFpJREFUeNqt0UsOgCAQA1AV/CAqovLp/S/qwsSMSTcSuuzLbKZNWcbrk+mFFbLHJkDeV4F96DgAODn4ZSbwVD9Ah8whRM8hHRqWgQOSYtD2RlX4FQc+FJ+2KDce8AwWwvAsxQAAAABJRU5ErkJggg==);
+}
 // Download button
 .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"]{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
