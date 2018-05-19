@@ -1,48 +1,40 @@
-.chat div[class*="nsfw-"]{
-    align-items: baseline;
-}
+.theme-dark .chat div[class*="nsfw-"]{
+    // Remove image
+    div[class^="image-"]{
+        display: none;
+    }
 
-// Image
-.chat div[class*="nsfw-"] div[class^="image-"]{
-    display: none;
-}
+    // Title
+    div[class^="title-"]{
+        font-size: $fsheader;
+        font-weight: $fwheader;
+        line-height: $lh;
+        text-align: left;
+    }
 
-// Title
-.chat div[class*="nsfw-"] div[class^="title-"]{
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: $lh;
-    text-align: left;
-}
+    // Description
+    div[class^="description-"]{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        line-height: $lh;
+        text-align: left;
+    }
 
-// Description
-.chat div[class*="nsfw-"] div[class^="description-"]{
-    font-size: $fsui;
-    font-weight: $fwui;
-    line-height: $lh;
-    text-align: left;
-}
+    // Separator
+    div[class^="separator-"]{
+        display: none;
+    }
 
-// Separator
-.chat div[class*="nsfw-"] div[class^="separator-"]{
-    display: none;
-}
-
-// Buttons
-.chat div[class*="nsfw-"] button{
-    min-width: 120px;
-    min-height: 36px;
-}
-.chat div[class*="nsfw-"] button:first-of-type{
-    margin-left: 0;
-}
-// Outlined button
-.chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"]{
-    border-color: $inputborder;
-    border-radius: 0;
-    color: #FFF;
-    font-weight: $fwui;
-    &:hover{
-        border-color: $inputborderhover;
+    // Buttons
+    button{
+        min-width: 120px;
+        min-height: 36px;
+        height: 36px;
+        border-radius: 0;
+        font-weight: $fwui;
+        &:first-of-type{
+            margin-left: 0;
+        }        
     }
 }
