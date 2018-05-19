@@ -5,6 +5,9 @@
   /* ##################### Third Party ##################### */
   /* ## Monokai code highlighting from highlight.js       ## */
   /* ## https://highlightjs.org                           ## */
+  /* ## ------------------------------------------------- ## */
+  /* ## Most icons by Icons8                              ## */
+  /* ## https://icons8.com                                ## */
   /* ####################################################### */
   /* Accent Colour */
   :root {
@@ -57,7 +60,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.4";
+    content: "Metro for Discord 3.8.5";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -932,6 +935,27 @@
     font-weight: normal; }
     .theme-dark .chat .message-group .edit-message .edit-operation > a {
       color: var(--accent); }
+  .theme-dark .chat div[class^="emojiButton"] ~ div[class^="autocomplete-"] {
+    background-color: #191919;
+    border-bottom: 1px solid #262626;
+    border-radius: 0; }
+  .theme-dark .chat div[class^="autocomplete-"] div[class^="contentTitle"] {
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: none; }
+    .theme-dark .chat div[class^="autocomplete-"] div[class^="contentTitle"] strong {
+      font-weight: normal; }
+      .theme-dark .chat div[class^="autocomplete-"] div[class^="contentTitle"] strong::before, .theme-dark .chat div[class^="autocomplete-"] div[class^="contentTitle"] strong::after {
+        content: "'"; }
+  .theme-dark .chat div[class^="autocomplete-"] div[class*="selector-"] {
+    border-radius: 0; }
+  .theme-dark .chat div[class^="autocomplete-"] div[class^="selectorSelected"] {
+    background-color: var(--accent); }
+  .theme-dark .chat div[class^="autocomplete-"] polygon {
+    fill: #FFF; }
+  .theme-dark .chat div[class^="autocomplete-"] div[class^="description"] {
+    color: #FFF; }
   .theme-dark .chat .reaction {
     border: 1px solid transparent;
     border-radius: 0; }
@@ -1260,6 +1284,78 @@
     div[class^="modal-"] div[class^="invite-"] div[class^="artworkSpotifySessionEnded"] {
       background-image: url(https://i.imgur.com/ccG6HYH.png);
       background-size: auto; }
+  .theme-dark div[class^="wrapperAudio"] {
+    background-color: #191919;
+    border: 0;
+    border-radius: 0; }
+    .theme-dark div[class^="wrapperAudio"] div[class^="audioMetadata"]::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-color: var(--accent);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .theme-dark div[class^="wrapperAudio"] div[class^="metadataSize"] {
+      color: #FFF; }
+  .theme-dark video {
+    border-radius: 0; }
+  .theme-dark a[class*="metadataDownload"] svg[name="Download"] g {
+    display: none; }
+  .theme-dark div[class^="audioControls-"],
+  .theme-dark div[class^="videoControls-"] {
+    background-color: #000;
+    border-radius: 0; }
+    .theme-dark div[class^="audioControls-"] div[class^="buffer"],
+    .theme-dark div[class^="videoControls-"] div[class^="buffer"] {
+      display: none; }
+    .theme-dark div[class^="audioControls-"] div[class^="durationTimeWrapper"] span,
+    .theme-dark div[class^="videoControls-"] div[class^="durationTimeWrapper"] span {
+      font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 400; }
+    .theme-dark div[class^="audioControls-"] div[class^="mediaBarInteraction"],
+    .theme-dark div[class^="videoControls-"] div[class^="mediaBarInteraction"] {
+      cursor: default; }
+    .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"],
+    .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] {
+      height: 2px;
+      background-color: #fff; }
+      .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"]::before, .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"]::after,
+      .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"]::before,
+      .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"]::after {
+        display: none; }
+      .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarPreview"]::before, .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarPreview"]::after,
+      .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarPreview"]::before,
+      .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarPreview"]::after {
+        display: none; }
+      .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"],
+      .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"] {
+        height: 4px;
+        margin-top: -1px;
+        background-color: var(--accent); }
+        .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"] span,
+        .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"] span {
+          width: 12px;
+          height: 12px;
+          margin-top: -8px;
+          margin-right: -8px;
+          background-color: #191919;
+          border: 2px solid var(--accent);
+          border-radius: 50%;
+          transform: none;
+          cursor: default; }
+          .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"] span:hover,
+          .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"] span:hover {
+            border-color: #FFF; }
+        .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"]::before, .theme-dark div[class^="audioControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"]::after,
+        .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"]::before,
+        .theme-dark div[class^="videoControls-"] div[class^="mediaBarWrapper"] div[class^="mediaBarProgress"]::after {
+          display: none; }
+    .theme-dark div[class^="audioControls-"] div[class*="mediaBarInteractionVolume-"],
+    .theme-dark div[class^="videoControls-"] div[class*="mediaBarInteractionVolume-"] {
+      padding: 12px;
+      background-color: #000;
+      border-radius: 0; }
   .theme-dark .wrapper-35wsBm {
     background-color: #000;
     border: 0;
@@ -1308,34 +1404,29 @@
       height: 36px; }
     .theme-dark .wrapper-35wsBm button svg {
       display: none; }
-  .chat div[class*="nsfw-"] {
-    align-items: baseline; }
-  .chat div[class*="nsfw-"] div[class^="image-"] {
+  .theme-dark .chat div[class*="nsfw-"] div[class^="image-"] {
     display: none; }
-  .chat div[class*="nsfw-"] div[class^="title-"] {
+  .theme-dark .chat div[class*="nsfw-"] div[class^="title-"] {
     font-size: 20px;
     font-weight: 300;
     line-height: 1.5625;
     text-align: left; }
-  .chat div[class*="nsfw-"] div[class^="description-"] {
+  .theme-dark .chat div[class*="nsfw-"] div[class^="description-"] {
+    color: #FFF;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5625;
     text-align: left; }
-  .chat div[class*="nsfw-"] div[class^="separator-"] {
+  .theme-dark .chat div[class*="nsfw-"] div[class^="separator-"] {
     display: none; }
-  .chat div[class*="nsfw-"] button {
+  .theme-dark .chat div[class*="nsfw-"] button {
     min-width: 120px;
-    min-height: 36px; }
-  .chat div[class*="nsfw-"] button:first-of-type {
-    margin-left: 0; }
-  .chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"] {
-    border-color: rgba(255, 255, 255, 0.6);
+    min-height: 36px;
+    height: 36px;
     border-radius: 0;
-    color: #FFF;
     font-weight: 400; }
-    .chat div[class*="nsfw-"] button[class^="buttonPrimaryOutlinedDefault"]:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
+    .theme-dark .chat div[class*="nsfw-"] button:first-of-type {
+      margin-left: 0; }
   .theme-dark div[class^="membersWrap"] div[class*="members-"] {
     background-color: #191919; }
   .theme-dark div[class^="membersWrap"] div[class^="membersGroup-"] {
@@ -1613,7 +1704,7 @@
       .private-channels .channel.selected:hover a {
         background-color: #262626; }
       .private-channels .channel.btn-friends a {
-        padding: 8px 18px; }
+        padding: 10px 18px; }
       .private-channels .channel.btn-friends svg {
         display: none; }
       .private-channels .channel.btn-friends .channel-name {
@@ -4123,6 +4214,9 @@
   .message-group .comment div[class^="attachment-"] img[class^="icon-"][title="video"] ~ div::before {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
     background-size: 24px; }
+  .theme-dark div[class^="wrapperAudio"] div[class^="audioMetadata"]::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAATlBMVEUAAAD////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7///////+xcCBGAAAAGXRSTlMAARcdMU9VWGNucHJ1eIeMlaiquLvQ4u/we7ud+wAAAFpJREFUeNqt0UsOgCAQA1AV/CAqovLp/S/qwsSMSTcSuuzLbKZNWcbrk+mFFbLHJkDeV4F96DgAODn4ZSbwVD9Ah8whRM8hHRqWgQOSYtD2RlX4FQc+FJ+2KDce8AwWwvAsxQAAAABJRU5ErkJggg==); }
+  a[class*="metadataDownload"] svg[name="Download"],
   .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"] {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
     background-size: 24px; }
