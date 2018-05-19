@@ -211,6 +211,42 @@
         }
     }
 
+    // Auto complete
+    // Hack to stop the autocomplete popout being selected
+    // This code is borrowed from _chatbox.scss, changes there should be mirrored here
+    div[class^="emojiButton"] ~ div[class^="autocomplete-"]{
+        background-color: $b1;
+        border-bottom: 1px solid $b2;
+        border-radius: 0;
+    }
+    div[class^="autocomplete-"]{
+        div[class^="contentTitle"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+            strong{
+                font-weight: normal;
+                &::before,
+                &::after{
+                    content: "'";
+                }
+            }
+        }
+        div[class*="selector-"]{
+            border-radius: 0;
+        }
+        div[class^="selectorSelected"]{
+            background-color: var(--accent);
+        }
+        polygon{
+            fill: #FFF;
+        }
+        div[class^="description"]{
+            color: #FFF;
+        }
+    }
+
     // Reactions
     .reaction{
         border: 1px solid transparent;
