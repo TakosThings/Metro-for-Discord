@@ -141,6 +141,7 @@
 
     // Auto complete
     // Hack to stop the autocomplete popout being selected
+    // This code is must be mirrored to _chat.scss
     div[class^="emojiButton"] ~ div[class^="autocomplete-"]{
         background-color: $b1;
         border-bottom: 1px solid $b2;
