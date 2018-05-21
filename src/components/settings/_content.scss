@@ -365,6 +365,17 @@
                 padding: 8px 12px 10px;
             }
         }
+
+        // Server settings remove emoji
+        // Server settings revoke invite
+        .emoji-remove,
+        .revoke-invite{
+            top: 4px;
+            right: 4px;
+            background-color: transparent;
+            box-shadow: none;
+            filter: grayscale(100%) brightness(200%);
+        }
     } 
 }
 
