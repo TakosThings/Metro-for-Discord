@@ -376,6 +376,11 @@
             box-shadow: none;
             filter: grayscale(100%) brightness(200%);
         }
+
+         // Server settings emoji alias name
+        .emoji-alias-placeholder{
+            padding-top: 11px;
+        }
     } 
 }
 
