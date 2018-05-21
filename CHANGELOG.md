@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.6
+* **Fixes**
+  * Revert change made to system message icon
+  * Server settings bans search box
+  * Server settings remove emoji, revoke invite buttons
+  * Server settings emoji alias text moved position when hovered
+  * RTC channel name line-height
+
 #### 3.8.5
 * **Enhancements**
   * Embedded Audio/Video players
