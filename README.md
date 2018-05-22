@@ -4,7 +4,7 @@ Latest version: `3.8.6`
 
 # Download
 Right click, then select Save As  
-* [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css)
+* [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord_Auto-Update.theme.css)
 * [Download for BeautifulDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.css)
 * [Install from Userstyles.org](https://userstyles.org/styles/136340/metro-for-discord)
 
