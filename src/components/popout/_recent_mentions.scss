@@ -1,4 +1,4 @@
-div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popout-bottom-right{
+div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
     margin-top: 0;
 }
 
@@ -9,7 +9,7 @@ div[class^="messagesPopoutWrap-"]{
     right: 0 !important;
     left: initial !important;
 }
-div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popout-bottom-right{
+div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
     right: 0 !important;
     left: initial !important;
     animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
