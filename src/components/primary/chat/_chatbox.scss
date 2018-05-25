@@ -19,6 +19,7 @@
                 }
                 &::-webkit-input-placeholder{
                     color: #FFF;
+                    font-family: $font;
                 }
                 &[class^="textAreaEnabledNoAttach"]{
                     padding: 10px 48px 10px 8px;
