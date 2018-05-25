@@ -38,6 +38,7 @@ div[class^="uploadModal"]{
                 text-transform: none;
             }
             div[class*="channelTextArea"] div[class*="inner-"]{
+                margin: 0;
                 background-color: #000;
                 border-radius: 0;
                 textarea{
