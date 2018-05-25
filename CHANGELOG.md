@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.7
+* **Enhancements**
+  * Corrected HEX default accent colour
+* **Fixes**
+  * Chat box placeholder font
+  * Chat editing message
+  * Upload modal comment box margins
+  * Recent/Pinned messages popouts were out of position
+  * User popout DM textbox
+  * Chat options menu right margin
+
 #### 3.8.6
 * **Fixes**
   * Revert change made to system message icon
