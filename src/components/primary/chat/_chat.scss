@@ -168,7 +168,7 @@
     .message-group .edit-message{
         .edit-container-inner{
             margin-right: 40px;
-            div[class^="innerEnabled"]{
+            div[class^="inner-"]{
                 background-color: $b1;
                 border-radius: 0;
             }
