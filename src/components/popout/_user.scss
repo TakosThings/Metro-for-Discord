@@ -227,6 +227,10 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noSha
         padding: 0 20px 20px;
         background-color: transparent;
         border: 0;
+        // New user wumpus
+        div[class^="wumpusWrapper"]{
+            display: none;
+        }
         // Quick message input
         input{
             height: 36px;
