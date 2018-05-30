@@ -40,6 +40,9 @@
   .markdown-modal pre,
   .markdown-modal code.inline {
     font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder {
+    font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
   @keyframes slideinright {
     0% {
       right: -420px; }
@@ -60,7 +63,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.7";
+    content: "Metro for Discord 3.8.8";
     width: 100%;
     height: auto;
     padding: 0 0 6px;
@@ -213,6 +216,9 @@
       visibility: visible; }
   #friends .scroller {
     overflow-y: auto; }
+  .theme-dark div[class*="themeGhostHairline-"] div[class^="scroller-"][class*="members-"]::-webkit-scrollbar-thumb,
+  .theme-dark div[class*="themeGhostHairlineChannels-"] div[class^="scroller-"]::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2); }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
@@ -2640,6 +2646,8 @@
       padding: 0 20px 20px;
       background-color: transparent;
       border: 0; }
+      .theme-dark div[class^="userPopout-"] div[class^="footer-"] div[class^="wumpusWrapper"] {
+        display: none; }
       .theme-dark div[class^="userPopout-"] div[class^="footer-"] input {
         height: 36px;
         background-color: transparent;

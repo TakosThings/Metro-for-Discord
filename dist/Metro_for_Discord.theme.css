@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.7"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.8"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -54,6 +54,10 @@ body, input, textarea, button {
 .markdown-modal code.inline {
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace; }
 
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
+
 @keyframes slideinright {
   0% {
     right: -420px; }
@@ -80,7 +84,7 @@ body, input, textarea, button {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.8.7";
+  content: "Metro for Discord 3.8.8";
   width: 100%;
   height: auto;
   padding: 0 0 6px;
@@ -258,6 +262,10 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
 
 #friends .scroller {
   overflow-y: auto; }
+
+.theme-dark div[class*="themeGhostHairline-"] div[class^="scroller-"][class*="members-"]::-webkit-scrollbar-thumb,
+.theme-dark div[class*="themeGhostHairlineChannels-"] div[class^="scroller-"]::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2); }
 
 .tooltip {
   padding: 7px 8px 8px;
@@ -3012,6 +3020,8 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noSha
     padding: 0 20px 20px;
     background-color: transparent;
     border: 0; }
+    .theme-dark div[class^="userPopout-"] div[class^="footer-"] div[class^="wumpusWrapper"] {
+      display: none; }
     .theme-dark div[class^="userPopout-"] div[class^="footer-"] input {
       height: 36px;
       background-color: transparent;
