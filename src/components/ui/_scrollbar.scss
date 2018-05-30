@@ -88,3 +88,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
 #friends .scroller{
     overflow-y: auto;
 }
+// Members list
+.theme-dark div[class*="themeGhostHairline-"] div[class^="scroller-"][class*="members-"]::-webkit-scrollbar-thumb{
+    background-color: rgba($color: #FFF, $alpha: 0.2);
+}
