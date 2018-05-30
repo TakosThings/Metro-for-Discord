@@ -1,10 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.8
+* **Fixes** (3)
+  * Remove wumpus<sup>(ugh)</sup> from user popout. This would normally only appear on newly registered users
+  * Override input and textarea placeholder fonts
+  * Memberslist scrollbar visibility
+
 #### 3.8.7
-* **Enhancements**
+* **Enhancements** (1)
   * Corrected HEX default accent colour
-* **Fixes**
+* **Fixes** (6)
   * Chat box placeholder font
   * Chat editing message
   * Upload modal comment box margins
@@ -13,7 +19,7 @@ Newest Changes are at the top
   * Chat options menu right margin
 
 #### 3.8.6
-* **Fixes**
+* **Fixes** (5)
   * Revert change made to system message icon
   * Server settings bans search box
   * Server settings remove emoji, revoke invite buttons
@@ -21,20 +27,20 @@ Newest Changes are at the top
   * RTC channel name line-height
 
 #### 3.8.5
-* **Enhancements**
+* **Enhancements** (1)
   * Embedded Audio/Video players
-* **Fixes**
+* **Fixes** (2)
   * Editing message autocomplete
   * NSFW channel warning Continue button
 
 #### 3.8.4
-* **Fixes**
+* **Fixes** (1)
   * Reduce chat indenting
 
 #### 3.8.3
-* **Enhancements**
+* **Enhancements** (1)
   * Re-write chat CSS
-* **Fixes**
+* **Fixes** (6)
   * Upload modal comment box
   * Chat timestamps will now position correctly if the time is not in H:i format
   * Upload modal mention list
@@ -43,11 +49,11 @@ Newest Changes are at the top
   * BetterDiscord: Fix settings padding
 
 #### 3.8.2
-* **Enhancements**
+* **Enhancements** (3)
   * Change background of settings sidebar
   * Remove social media links from settings sidebar
   * New chatbox design
-* **Fixes**
+* **Fixes** (1)
   * Codeblock header was out of position
 
 #### 3.8.1
