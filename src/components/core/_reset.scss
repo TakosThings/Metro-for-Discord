@@ -13,3 +13,8 @@ body, input, textarea, button{
 .markdown-modal code.inline{
     font-family: $mono;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    font-family: $font;
+}
