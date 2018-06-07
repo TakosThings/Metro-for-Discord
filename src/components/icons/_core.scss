@@ -191,7 +191,7 @@ a[class*="metadataDownload"] svg[name="Download"], // Embedded audio download bu
     background-size: 24px;
 }
 // Upload
-.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"]{
+.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] button[class^="attachButton-"]{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAERYXGBtoa2zLzNTV1tqZ9e5gAAAAY0lEQVR42u3LuxKAIAxE0YUIykP2//9WxbFCYuHoWHgm3d7gfYNAJTlZKFwhi9N3rZDEmesl2/2PhjSRxXX2YECiFr19C2DCWTExCfYAkjmi4S2OAOLRQ6L6g8eC+9i4Dr5jAUAoBp3xEaVxAAAAAElFTkSuQmCC);
 }
 
