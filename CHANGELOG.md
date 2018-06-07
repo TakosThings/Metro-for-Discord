@@ -2,12 +2,14 @@
 Newest Changes are at the top
 
 #### 3.8.9
-* **Enhancements** (1)
+* **Enhancements** (3)
   * Added hover states to microphone and speaker muting buttons
   * Make chatbox scrollbar more visible
-* **Fixes** (2)
+  * Some alignment and sizing changes to the account box and version info area
+* **Fixes** (3)
   * Chatbox upload and emoji buttons
   * Upload modal comment box emoji button
+  * Editing message emoji button
 
 #### 3.8.8
 * **Fixes** (3)
