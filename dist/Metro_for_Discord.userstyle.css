@@ -63,14 +63,17 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.8";
+    content: "Metro for Discord 3.8.9";
     width: 100%;
-    height: auto;
-    padding: 0 0 6px;
+    height: 20px;
+    padding-bottom: 1px;
+    box-sizing: border-box;
     background: #191919;
-    color: #FFF;
-    font-size: 10px;
-    text-align: center; }
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle; }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
@@ -216,9 +219,14 @@
       visibility: visible; }
   #friends .scroller {
     overflow-y: auto; }
+  .theme-dark div[class^="channelTextArea-"] textarea::-webkit-scrollbar-thumb,
   .theme-dark div[class*="themeGhostHairline-"] div[class^="scroller-"][class*="members-"]::-webkit-scrollbar-thumb,
   .theme-dark div[class*="themeGhostHairlineChannels-"] div[class^="scroller-"]::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.2); }
+  .theme-dark .edit-message textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.2) !important; }
+  .theme-dark .edit-message textarea::-webkit-scrollbar-track-piece {
+    background-color: transparent !important; }
   .tooltip {
     padding: 7px 8px 8px;
     background-color: #191919;
@@ -692,13 +700,19 @@
     div[class^="channels-"] .container-1UB9sr a[class^="channel-"] {
       line-height: 1.3; }
   div[class^="channels-"] .container-2Thooq {
-    height: 60px;
+    height: 40px;
     margin-bottom: 0;
     background-color: #191919; }
     div[class^="channels-"] .container-2Thooq .status {
       border: 0;
       right: 0;
       bottom: 0; }
+    div[class^="channels-"] .container-2Thooq button {
+      width: 40px;
+      height: 40px;
+      border-radius: 0; }
+      div[class^="channels-"] .container-2Thooq button:hover {
+        background-color: #333333; }
   .badge,
   div[class^="channels-"] div[class*="contentDefaultText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
   div[class^="channels-"] div[class*="contentSelectedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
@@ -919,24 +933,26 @@
       border-radius: 0; }
     .theme-dark .chat .message-group .edit-message .edit-container-inner textarea {
       margin: 0; }
-    .theme-dark .chat .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] {
+    .theme-dark .chat .message-group .edit-message .edit-container-inner button[class*="emojiButton-"] {
       width: 40px;
       height: 40px;
       top: 0;
       right: 0;
-      left: unset; }
-      .theme-dark .chat .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"] {
-        transition: none;
-        background-image: none; }
-        .theme-dark .chat .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]:active {
-          color: var(--accent); }
-        .theme-dark .chat .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="sprite-"]::before {
-          content: "\E170";
-          font-family: winjs-symbols;
-          font-size: 21px;
-          text-align: center; }
-      .theme-dark .chat .message-group .edit-message .edit-container-inner div[class*="emojiButton-"] div[class*="spriteHovered"] {
-        transform: none; }
+      padding: 0;
+      border-radius: 0; }
+      .theme-dark .chat .message-group .edit-message .edit-container-inner button[class*="emojiButton-"]::before {
+        content: "\E170";
+        font-family: winjs-symbols;
+        font-size: 21px;
+        text-align: center; }
+      .theme-dark .chat .message-group .edit-message .edit-container-inner button[class*="emojiButton-"] div[class*="sprite-"] {
+        display: none; }
+      .theme-dark .chat .message-group .edit-message .edit-container-inner button[class*="emojiButton-"].popout-open {
+        background-color: var(--accent); }
+        .theme-dark .chat .message-group .edit-message .edit-container-inner button[class*="emojiButton-"].popout-open:hover {
+          background-color: var(--accent); }
+    .theme-dark .chat .message-group .edit-message .edit-container-inner div[class^="emojiButtonNormal-"] {
+      opacity: 1; }
   .theme-dark .chat .message-group .edit-message .edit-operation {
     color: #FFF;
     font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif;
@@ -1054,7 +1070,7 @@
         border-radius: 0; }
         .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea {
           margin: 0;
-          padding: 10px 88px 10px 0;
+          padding: 10px 48px 10px 48px;
           border-top: 2px solid #333333;
           color: #FFF;
           transition: .15s ease-in; }
@@ -1066,40 +1082,42 @@
             font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
           .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea[class^="textAreaEnabledNoAttach"] {
             padding: 10px 48px 10px 8px; }
-      .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"] {
+      .theme-dark .chat form div[class*="channelTextArea-"] button[class^="attachButton-"] {
         width: 40px;
         height: 40px;
         position: absolute;
-        right: 40px;
-        margin: 0;
+        top: 2px;
+        left: 0;
+        border-radius: 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
         opacity: .5; }
-        .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"] path {
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class^="attachButton-"] svg {
           display: none; }
-        .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"]:hover {
-          transform: none;
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class^="attachButton-"]:hover {
+          background-color: #333333;
           opacity: 1; }
-      .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type div[class^="attachButtonDivider"] {
-        display: none; }
-      .theme-dark .chat form div[class*="channelTextArea-"] div[class*="emojiButton-"] {
+      .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"] {
         width: 40px;
         height: 40px;
+        top: 2px;
         right: 0;
-        top: 0; }
-        .theme-dark .chat form div[class*="channelTextArea-"] div[class*="emojiButton-"] div[class*="sprite-"] {
-          background-image: none;
-          transition: none; }
-          .theme-dark .chat form div[class*="channelTextArea-"] div[class*="emojiButton-"] div[class*="sprite-"]::before {
-            content: "\E170";
-            font-family: winjs-symbols;
-            font-size: 21px;
-            text-align: center; }
-        .theme-dark .chat form div[class*="channelTextArea-"] div[class*="emojiButton-"] div[class*="spriteHovered"] {
-          transform: none; }
-        .theme-dark .chat form div[class*="channelTextArea-"] div[class*="emojiButton-"].popout-open {
+        padding: 0;
+        border-radius: 0; }
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"]::before {
+          content: "\E170";
+          font-family: winjs-symbols;
+          font-size: 21px;
+          text-align: center; }
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"] div[class*="sprite-"] {
+          display: none; }
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"].popout-open {
           background-color: var(--accent); }
+          .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"].popout-open:hover {
+            background-color: var(--accent); }
+        .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"]:hover {
+          background-color: #333333; }
       .theme-dark .chat form div[class*="channelTextArea-"] div[class^="emojiButtonNormal-"] {
         opacity: 1; }
     .theme-dark .chat form .wrapper-39oAo3 {
@@ -3653,23 +3671,26 @@
           div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] textarea {
             padding: 10px 50px 10px 10px;
             margin: 0; }
-          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"] {
+          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] {
             width: 40px;
             height: 40px;
+            top: 0;
             right: 0;
-            top: 0; }
-            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"] div[class*="sprite-"] {
-              background-image: none;
-              transition: none; }
-              div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"] div[class*="sprite-"]::before {
-                content: "\E170";
-                font-family: winjs-symbols;
-                font-size: 21px;
-                text-align: center; }
-            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"] div[class*="spriteHovered"] {
-              transform: none; }
-            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class*="emojiButton-"].popout-open {
+            padding: 0;
+            border-radius: 0; }
+            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]::before {
+              content: "\E170";
+              font-family: winjs-symbols;
+              font-size: 21px;
+              text-align: center; }
+            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] div[class*="sprite-"] {
+              display: none; }
+            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open {
               background-color: var(--accent); }
+              div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open:hover {
+                background-color: var(--accent); }
+            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]:hover {
+              background-color: #333333; }
           div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class^="emojiButtonNormal-"] {
             opacity: 1; }
     div[class^="uploadModal"] div[class^="footer-"] {
@@ -4239,7 +4260,7 @@
   .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"] {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
     background-size: 24px; }
-  .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] > div[class^="flex-"]:first-of-type svg[class^="attachButton"] {
+  .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] button[class^="attachButton-"] {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAERYXGBtoa2zLzNTV1tqZ9e5gAAAAY0lEQVR42u3LuxKAIAxE0YUIykP2//9WxbFCYuHoWHgm3d7gfYNAJTlZKFwhi9N3rZDEmesl2/2PhjSRxXX2YECiFr19C2DCWTExCfYAkjmi4S2OAOLRQ6L6g8eC+9i4Dr5jAUAoBp3xEaVxAAAAAElFTkSuQmCC); }
   div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="acrobat"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ae"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ai"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="archive"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="code"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="document"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="photoshop"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ps"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="sketch"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="spreadsheet"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="unknown"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="video"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="webcode"] {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAAbFBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8+T+BWAAAAI3RSTlMABQ4PECAkKC0wMjc9QGB1f4Cgv8DHyczN4OLm5+rt8PP192v0xVYAAADJSURBVHja7dPbDsFQEIXhoYqi2GznQ4v3f0cJ6XLRpGk3KyrWfz3Jl5lkTCnV2mJXt1k4kt5qt46ICNp2qQgUKgKFi0AJR3x12UvphSNWnS/twkKgUBEoVAQKBVk+hhb7Qol4yDw+YBfauZz1T1B4iA3OUHiIDTMoPMRGORQeYuMLFB5ikysUArLzz47FV26izyPlVh0iglIh30KmrlQI0jghQoQIESJEiBAhQoQIESJEiBAhQv4ccY1rhgQm5LeRxL9VYkqptnYHdgDuPCcIJAIAAAAASUVORK5CYII=);
