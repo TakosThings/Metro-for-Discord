@@ -45,27 +45,31 @@ div[class^="uploadModal"]{
                     padding: 10px 50px 10px 10px;
                     margin: 0;
                 }
-                 // Emoji button
-                div[class*="emojiButton-"]{
+                // Emoji button
+                button[class*="emojiButton-"]{
                     width: 40px;
                     height: 40px;
-                    right: 0;
                     top: 0;
-                    div[class*="sprite-"]{
-                        background-image: none;
-                        transition: none;
-                        &::before{
-                            content: "\E170";
-                            font-family: $icon;
-                            font-size: 21px;
-                            text-align: center;
-                        }
+                    right: 0;
+                    padding: 0;
+                    border-radius: 0;
+                    &::before{
+                        content: "\E170";
+                        font-family: $icon;
+                        font-size: 21px;
+                        text-align: center;
                     }
-                    div[class*="spriteHovered"]{
-                        transform: none;
+                    div[class*="sprite-"]{
+                        display: none;
                     }
                     &.popout-open{
                         background-color: var(--accent);
+                        &:hover{
+                            background-color: var(--accent);
+                        }
+                    }
+                    &:hover{
+                        background-color: $b3;
                     }
                 }
                 div[class^="emojiButtonNormal-"]{
