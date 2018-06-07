@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.10
+* **Fixes** (1)
+  * Chatbox autocomplete background
+
 #### 3.8.9
 * **Enhancements** (3)
   * Added hover states to microphone and speaker muting buttons
