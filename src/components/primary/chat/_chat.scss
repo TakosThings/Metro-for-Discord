@@ -177,28 +177,31 @@
             }
 
             // Emoji button
-            div[class*="emojiButton-"]{
+            button[class*="emojiButton-"]{
                 width: 40px;
                 height: 40px;
                 top: 0;
                 right: 0;
-                left: unset;
+                padding: 0;
+                border-radius: 0;
+                &::before{
+                    content: "\E170";
+                    font-family: $icon;
+                    font-size: 21px;
+                    text-align: center;
+                }
                 div[class*="sprite-"]{
-                    transition: none;
-                    background-image: none;
-                    &:active{
-                        color: var(--accent);
-                    }
-                    &::before{
-                        content: "\E170";
-                        font-family: $icon;
-                        font-size: 21px;
-                        text-align: center;
+                    display: none;
+                }
+                &.popout-open{
+                    background-color: var(--accent);
+                    &:hover{
+                        background-color: var(--accent);
                     }
                 }
-                div[class*="spriteHovered"]{
-                    transform: none;
-                }
+            }
+            div[class^="emojiButtonNormal-"]{
+                opacity: 1;
             }
         }
         .edit-operation{
