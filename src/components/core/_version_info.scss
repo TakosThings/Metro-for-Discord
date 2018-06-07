@@ -1,10 +1,13 @@
 div[class^="channels-"]::after{
   content: "Metro for Discord 3.8.8";
   width: 100%;
-  height: auto;
-  padding: 0 0 6px;
+  height: 20px;
+  padding-bottom: 1px;
+  box-sizing: border-box;
   background: $b1;
-  color: #FFF;
-  font-size: 10px;
+  color: hsla(0,0%,100%,.8);
+  font-size: 11px;
+  line-height: 20px;
   text-align: center;
+  vertical-align: middle;
 }
