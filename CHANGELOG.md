@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.9
+* **Enhancements** (1)
+  * Added hover states to microphone and speaker muting buttons
+* **Fixes** (2)
+  * Chatbox upload and emoji buttons
+  * Upload modal comment box emoji button
+
 #### 3.8.8
 * **Fixes** (3)
   * Remove wumpus<sup>(ugh)</sup> from user popout. This would normally only appear on newly registered users

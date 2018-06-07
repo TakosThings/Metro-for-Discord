@@ -1,5 +1,5 @@
 div[class^="channels-"] .container-2Thooq{
-    height: 60px;
+    height: 40px;
     margin-bottom: 0;
     background-color: $b1;
     .status{
@@ -7,5 +7,12 @@ div[class^="channels-"] .container-2Thooq{
         right: 0;
         bottom: 0;
     }
-    
+    button{
+        width: 40px;
+        height: 40px;
+        border-radius: 0;
+        &:hover{
+            background-color: $b3;
+        }
+    }
 }
