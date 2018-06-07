@@ -63,7 +63,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.9";
+    content: "Metro for Discord 3.8.10";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -959,7 +959,7 @@
     font-weight: normal; }
     .theme-dark .chat .message-group .edit-message .edit-operation > a {
       color: var(--accent); }
-  .theme-dark .chat div[class^="emojiButton"] ~ div[class^="autocomplete-"] {
+  .theme-dark .chat button[class^="emojiButton"] ~ div[class^="autocomplete-"] {
     background-color: #191919;
     border-bottom: 1px solid #262626;
     border-radius: 0; }
@@ -1162,7 +1162,7 @@
         display: none; }
       .theme-dark .chat form div[class^="typing-"] span[class^="text-"] strong {
         font-weight: normal; }
-    .theme-dark .chat form div[class^="emojiButton"] ~ div[class^="autocomplete-"] {
+    .theme-dark .chat form button[class^="emojiButton"] ~ div[class^="autocomplete-"] {
       background-color: #191919;
       border-bottom: 1px solid #262626;
       border-radius: 0; }
