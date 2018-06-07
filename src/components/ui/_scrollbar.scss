@@ -96,3 +96,10 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
 .theme-dark div[class*="themeGhostHairlineChannels-"] div[class^="scroller-"]::-webkit-scrollbar-thumb{
     background-color: rgba($color: #FFF, $alpha: 0.2);
 }
+// Editing message
+.theme-dark .edit-message textarea::-webkit-scrollbar-thumb{
+    background-color: rgba($color: #FFF, $alpha: 0.2) !important;
+}
+.theme-dark .edit-message textarea::-webkit-scrollbar-track-piece{
+    background-color: transparent !important;
+}
