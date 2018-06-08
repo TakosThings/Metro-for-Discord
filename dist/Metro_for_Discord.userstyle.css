@@ -63,7 +63,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.10";
+    content: "Metro for Discord 3.8.11";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -1080,7 +1080,7 @@
           .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea::-webkit-input-placeholder {
             color: #FFF;
             font-family: "Segoe UI", Selawik, Arial, Helvetica, sans-serif; }
-          .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea[class^="textAreaEnabledNoAttach"] {
+          .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea[class^="textAreaEnabledNoAttach"], .theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] textarea[class^="textAreaDisabled"] {
             padding: 10px 48px 10px 8px; }
       .theme-dark .chat form div[class*="channelTextArea-"] button[class^="attachButton-"] {
         width: 40px;
@@ -1098,6 +1098,8 @@
         .theme-dark .chat form div[class*="channelTextArea-"] button[class^="attachButton-"]:hover {
           background-color: #333333;
           opacity: 1; }
+      .theme-dark .chat form div[class*="channelTextArea-"] div[class^="attachButtonDivider"] {
+        display: none; }
       .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"] {
         width: 40px;
         height: 40px;
