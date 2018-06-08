@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.11
+* **Fixes** (2)
+  * Remove attachment button divider
+  * Disabled chatbox placeholder alignment
+
 #### 3.8.10
 * **Fixes** (1)
   * Chatbox autocomplete background
