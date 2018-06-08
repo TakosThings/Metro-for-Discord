@@ -21,7 +21,8 @@
                     color: #FFF;
                     font-family: $font;
                 }
-                &[class^="textAreaEnabledNoAttach"]{
+                &[class^="textAreaEnabledNoAttach"],
+                &[class^="textAreaDisabled"]{
                     padding: 10px 48px 10px 8px;
                 }
             }
