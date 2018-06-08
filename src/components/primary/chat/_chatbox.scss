@@ -47,6 +47,9 @@
                 opacity: 1;
             }
         }
+        div[class^="attachButtonDivider"]{
+            display: none;
+        }
 
         // Emoji button
         button[class*="emojiButton-"]{
