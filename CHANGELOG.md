@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.12
+* **Fixes** (1)
+  * Chatbox textarea was pushed right when the user had Spotify integration enabled
+
 #### 3.8.11
 * **Fixes** (2)
   * Remove attachment button divider
