@@ -52,6 +52,29 @@
             display: none;
         }
 
+        // Upload button with Spotify enabled
+        svg[class^="attachButton"]{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0;
+            border-top: 2px solid #0F0;
+            border-radius: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            opacity: .5;
+            g{
+                display: none;
+            }
+            &:hover{
+                background-color: $b3;
+                opacity: 1;
+            }
+        }
+
         // Emoji button
         button[class*="emojiButton-"]{
             width: 40px;
