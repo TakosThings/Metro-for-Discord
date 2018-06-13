@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.11"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.12"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -84,7 +84,7 @@ textarea::-webkit-input-placeholder {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.8.11";
+  content: "Metro for Discord 3.8.12";
   width: 100%;
   height: 20px;
   padding-bottom: 1px;
@@ -1283,6 +1283,24 @@ div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > 
         opacity: 1; }
     .theme-dark .chat form div[class*="channelTextArea-"] div[class^="attachButtonDivider"] {
       display: none; }
+    .theme-dark .chat form div[class*="channelTextArea-"] svg[class^="attachButton"] {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0;
+      border-top: 2px solid #0F0;
+      border-radius: 0;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px;
+      opacity: .5; }
+      .theme-dark .chat form div[class*="channelTextArea-"] svg[class^="attachButton"] g {
+        display: none; }
+      .theme-dark .chat form div[class*="channelTextArea-"] svg[class^="attachButton"]:hover {
+        background-color: #333333;
+        opacity: 1; }
     .theme-dark .chat form div[class*="channelTextArea-"] button[class*="emojiButton-"] {
       width: 40px;
       height: 40px;
@@ -3664,7 +3682,7 @@ div[class^="container-"][popoutkey] {
   border-radius: 0;
   font-size: 15px;
   font-weight: 400;
-  transform: translateX(-28px) translateY(23px); }
+  transform: translateX(12px) translateY(24px); }
   .theme-dark div[class^="attachPopout-"] div[class^="attachPopoutRow-"] {
     padding: 15px 24px;
     border-radius: 0;
@@ -5099,7 +5117,8 @@ a[class*="metadataDownload"] svg[name="Download"],
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
   background-size: 24px; }
 
-.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] button[class^="attachButton-"] {
+.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] button[class^="attachButton-"],
+.theme-dark .chat form div[class*="channelTextArea-"] div[class*="inner-"] svg[class^="attachButton-"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAERYXGBtoa2zLzNTV1tqZ9e5gAAAAY0lEQVR42u3LuxKAIAxE0YUIykP2//9WxbFCYuHoWHgm3d7gfYNAJTlZKFwhi9N3rZDEmesl2/2PhjSRxXX2YECiFr19C2DCWTExCfYAkjmi4S2OAOLRQ6L6g8eC+9i4Dr5jAUAoBp3xEaVxAAAAAElFTkSuQmCC); }
 
 div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="acrobat"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ae"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ai"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="archive"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="code"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="document"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="photoshop"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="ps"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="sketch"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="spreadsheet"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="unknown"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="video"], div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"][class*="webcode"] {
