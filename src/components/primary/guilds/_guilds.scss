@@ -30,7 +30,6 @@
     box-sizing: border-box;
     font-size: 15px !important;
     font-weight: normal;
-    line-height: 48px;
     text-overflow: ellipsis;
     transition: none;
     &:hover{
@@ -42,6 +41,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
+        line-height: 44px;
     }
 }
 
@@ -54,7 +54,7 @@
 .guilds-wrapper .guilds .guild.selected .guild-inner{
     background-color: #FFF !important;
 }
-.guilds-wrapper .guilds .guild.selected .guild-inner a{
+.guilds-wrapper .guilds .guild.selected .guild-inner a div{
     color: #000;
     &:hover{
         border-color: rgba(0,0,0,.5);
