@@ -26,7 +26,6 @@
     max-width: 48px;
     height: 48px;
     overflow: hidden;
-    background-size: 24px;
     border: 2px solid transparent;
     box-sizing: border-box;
     font-size: 15px !important;
@@ -36,6 +35,13 @@
     transition: none;
     &:hover{
         border-color: rgba(255,255,255,.5);
+    }
+    >div{
+        width: 44px;
+        height: 44px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
     }
 }
 
