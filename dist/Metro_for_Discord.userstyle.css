@@ -63,7 +63,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.8.12";
+    content: "Metro for Discord 3.8.13";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -403,7 +403,6 @@
     max-width: 48px;
     height: 48px;
     overflow: hidden;
-    background-size: 24px;
     border: 2px solid transparent;
     box-sizing: border-box;
     font-size: 15px !important;
@@ -413,6 +412,12 @@
     transition: none; }
     .guilds-wrapper .guilds .guild .guild-inner a:hover {
       border-color: rgba(255, 255, 255, 0.5); }
+    .guilds-wrapper .guilds .guild .guild-inner a > div {
+      width: 44px;
+      height: 44px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px; }
   .guilds-wrapper .guilds .guild::before {
     display: none; }
   .guilds-wrapper .guilds .guild.selected .guild-inner {

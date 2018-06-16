@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.12"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.8.13"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -84,7 +84,7 @@ textarea::-webkit-input-placeholder {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.8.12";
+  content: "Metro for Discord 3.8.13";
   width: 100%;
   height: 20px;
   padding-bottom: 1px;
@@ -477,7 +477,6 @@ body.bd-blue .app::before {
   max-width: 48px;
   height: 48px;
   overflow: hidden;
-  background-size: 24px;
   border: 2px solid transparent;
   box-sizing: border-box;
   font-size: 15px !important;
@@ -487,6 +486,12 @@ body.bd-blue .app::before {
   transition: none; }
   .guilds-wrapper .guilds .guild .guild-inner a:hover {
     border-color: rgba(255, 255, 255, 0.5); }
+  .guilds-wrapper .guilds .guild .guild-inner a > div {
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px; }
 
 .guilds-wrapper .guilds .guild::before {
   display: none; }

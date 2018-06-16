@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.8.13
+* **Fixes** (1)
+  * Guild icons were oversized due to a discord update
+* **Known Issues** (1)
+  * Group DM invite popout - this will be fixed at a later date
+
 #### 3.8.12
 * **Fixes** (1)
   * Chatbox textarea was pushed right when the user had Spotify integration enabled
