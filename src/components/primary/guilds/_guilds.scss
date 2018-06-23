@@ -96,19 +96,19 @@
     bottom: 2px;
 }
 
-// Friends
-.guilds-wrapper .guilds .friends-icon{
-    width: 44px;
-    height: 44px;
-    background-size: auto;
+// Home
+.guilds-wrapper .guilds .home-icon{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    g{
+        display: none;
+    }
 }
 .guilds-wrapper .guilds .guild.active a{
     background-color: #FFF;
 }
-.guilds-wrapper .guilds .guild.active:hover a{
-    border-color: rgba($color: #000000, $alpha: 0.5)
-}
-.guilds-wrapper .guilds .guild.active .friends-icon{
+.guilds-wrapper .guilds .guild.active .home-icon{
     filter: invert(100%);
 }
 
