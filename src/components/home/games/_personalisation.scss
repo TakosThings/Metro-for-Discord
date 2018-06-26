@@ -1,0 +1,46 @@
+// Opt-in to 'personalisation' of activity feed
+// Setting stored in UserFeedSettingsStore{"hasDismissedPersonalizationNotice":false}
+
+.theme-dark div[class^="activityFeed-"] div[class^="personalizationNotice-"]{
+    width: calc(100% - 28px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    margin: 0 12px 12px 12px;
+    background-color: #000;
+    border: 1px solid transparent;
+    border-radius: 0;
+    animation: personalisationattn 2s ease-in;
+    svg{
+        display: none;
+    }
+    div[class^="personalizationNoticeText-"]{
+        min-width: 100%;
+        color: #FF0;
+        font-size: $fsui;
+        font-weight: $fwui;
+        cursor: default;
+    }
+
+    // Buttons
+    // Opt-out should always appear as default
+    // Agree
+    button[class*="lookFilled"][class*="colorBrand"]{
+        background-color: transparent;
+        border: 1px solid $inputborder;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+    }
+    // Deny
+    button[class*="lookFilled"][class*="colorTransparent"]{
+        background-color: var(--accent);
+        border: 1px solid transparent;
+        border-radius: 0;
+        font-weight: normal;
+        &:hover{
+            border-color: $inputborder;
+        }
+    }
+}
