@@ -3,3 +3,13 @@
     0%{right: -420px;}
     100%{right: 0;}
 }
+
+// Games tab personalisation attention
+@keyframes personalisationattn{
+    from{
+        border: 1px solid var(--accent);
+    }
+    to{
+        border: 1px solid transparent;
+    }
+}
