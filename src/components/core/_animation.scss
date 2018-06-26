@@ -3,13 +3,3 @@
     0%{right: -420px;}
     100%{right: 0;}
 }
-
-// Members list typing pulser
-@keyframes memberstypingpulse{
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: .5;
-    }
-}
