@@ -1,7 +1,8 @@
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutLeft-"], // from memberlist
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 3"], // from compact chat
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"], // from cozy username
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"]{ // from cozy avatar
+div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"], // from cozy avatar
+div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"]{ // from home games tab
     position: absolute;
     top: 32px !important;
     right: 0 !important;
