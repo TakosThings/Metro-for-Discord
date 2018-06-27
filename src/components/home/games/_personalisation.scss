@@ -2,12 +2,11 @@
 // Setting stored in UserFeedSettingsStore{"hasDismissedPersonalizationNotice":false}
 
 .theme-dark div[class^="activityFeed-"] div[class^="personalizationNotice-"]{
-    width: calc(100% - 320px);
+    width: calc(100% - 332px);
     position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    margin: 0 12px 12px 12px;
+    top: 20px;
+    right: 18px;
+    z-index: 2;
     background-color: #000;
     border: 1px solid transparent;
     border-radius: 0;
