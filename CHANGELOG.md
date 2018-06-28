@@ -1,6 +1,19 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.0
+* **Enhancements** (3)
+  * New home tab
+  * Remove online user count from the guilds list
+  * Changed icon of former friends 'guild'
+* **Fixes** (1)
+  * Guild selected text colour
+* **Clean up** (2)
+  * `/src/friends` has been renamed `/src/home` with Friends and Games tabs organised into their respective subdirectories
+  * Delete `/src/login` as it is no longer required
+* **Dev notes**
+  * This is an awful release and I hate it
+
 #### 3.8.13
 * **Fixes** (1)
   * Guild icons were oversized due to a discord update
