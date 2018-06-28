@@ -7,16 +7,12 @@
     }
 
     // Header
+    // Position hack
     header{
-        padding: 19px 0 12px 38px;
-        opacity: 1;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
-        text-transform: none;
-        &:hover{
-            background-color: transparent;
-        }
+        height: 0;
+        margin: 40px 0 0 0;
+        padding: 0;
+        font-size: 0;
     }
 
     // Conversation
@@ -99,8 +95,13 @@
         }
         // Friends 'channel'
         &.btn-friends{
+            width: 50%;
+            &.selected::before{
+                display: none;
+            }
             a{
-                padding: 10px 18px;
+                padding: 10px 0;
+                text-align: center;
             }
             svg{
                 display: none;
@@ -109,19 +110,20 @@
                 font-size: $fsheader;
                 font-weight: $fwheader;
                 position: relative;
-                &::after{
-                    content: "\E136";
-                    color: #FFF;
-                    font-family: $icon;
-                    font-size: 21px;
-                    vertical-align: middle;
-                    position: absolute;
-                    right: 0;
-                }
             }
             &.selected a{
                 background-color: var(--accent);
             }
+        }
+        // Order Games tab on left
+        &.btn-friends:nth-of-type(1){
+            position: absolute;
+        }
+        // Order Friends tab on right
+        &.btn-friends:nth-of-type(2){
+            top: 0;
+            right: 0;
+            position: absolute;
         }
     }
 }
