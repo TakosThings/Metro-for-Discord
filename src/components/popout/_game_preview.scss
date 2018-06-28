@@ -1,0 +1,59 @@
+.theme-dark div[class*="gamePreview"]{
+    background-color: $b1;
+    border-radius: 0;
+    div[class^="sideBar-"]{
+        div[class^="gameIcon-"]{
+            border-radius: 0;
+        }
+        h2{
+            color: #FFF;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            text-align: left;
+        }
+        h3{
+            border: 0;
+            color: #FFF;
+            font-size: $fwui;
+            font-weight: $fwui;
+            text-align: left;
+        }
+    }
+    div[class^="body"]{
+        background-color: $b2;
+        div[class^="overlay-"]{
+            mask: none;
+            -webkit-mask: none;
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(transparent 40%, black 95%);
+            }
+        }
+        div[class^="summary-"]{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: normal;
+        }
+        div[class*="playersHeader-"]{
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #FFF;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+            & > div{
+                display: none;
+            }
+        }
+        // Fix carousel having background-color
+        div[class^="item"] div[class^="body"]{
+            background-color: transparent;
+        }
+    }
+}
