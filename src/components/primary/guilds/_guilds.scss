@@ -114,9 +114,7 @@
 
 // Online friend count
 .guilds-wrapper .guilds .friends-online{
-    color: #FFF;
-    font-weight: $fwui;
-    text-transform: none;
+    display: none;
 }
 
 // Error
