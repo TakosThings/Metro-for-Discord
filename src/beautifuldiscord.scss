@@ -18,9 +18,6 @@
 @import 'components/loadscreen/connecting';
 @import 'components/loadscreen/no_text_channels';
 
-// Login
-@import 'components/login/login';
-
 // Notices
 @import 'components/notices/core';
 @import 'components/notices/light_mode';
@@ -57,11 +54,16 @@
 @import 'components/primary/search/search';
 
 // Friends
-@import 'components/friends/toolbar';
-@import 'components/friends/search';
-@import 'components/friends/conversation_list';
-@import 'components/friends/table';
-@import 'components/friends/add_friend';
+@import 'components/home/friends/toolbar';
+@import 'components/home/friends/search';
+@import 'components/home/friends/conversation_list';
+@import 'components/home/friends/table';
+@import 'components/home/friends/add_friend';
+
+// Games
+@import 'components/home/games/core';
+@import 'components/home/games/personalisation';
+@import 'components/home/games/carousel';
 
 // Settings
 @import 'components/settings/core';
@@ -83,6 +85,7 @@
 @import 'components/popout/autocomplete';
 @import 'components/popout/add_game';
 @import 'components/popout/attach';
+@import 'components/popout/game_preview';
 
 // Modals
 @import 'components/modal/profile';
