@@ -3,8 +3,8 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
 }
 
 div[class^="messagesPopoutWrap-"]{
-    max-height: calc(100vh - 72px) !important;
-    min-height: calc(100vh - 72px);
+    max-height: calc(100vh - 80px) !important;
+    min-height: calc(100vh - 80px);
     position: absolute;
     right: 0 !important;
     left: initial !important;
