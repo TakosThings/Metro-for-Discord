@@ -50,6 +50,28 @@
         }
     }
 
+    // Bubbles
+    .message-group:not(.compact){
+        padding: 12px 0;
+        border-bottom: 0;
+    }
+    .message-group:not(.compact) .comment{
+        padding: 8px;
+        background-color: $b3;
+        position: relative;
+        &:after{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -12px;
+            left: 12px;
+            border-width: 12px 0 0 12px;
+            border-style: solid;
+            border-color: transparent transparent transparent $b3;
+        }
+    }
+
     // Mention
     .mention{
         background-color: transparent;
