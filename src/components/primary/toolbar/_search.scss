@@ -1,8 +1,8 @@
 .chat div[class^="titleWrapper"] div[class^="search-"]{
     margin: 0;
     .search-bar{
-        width: 40px;
-        height: 40px;
+        width: 64px;
+        height: 48px;
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
@@ -22,9 +22,14 @@
     .search.open .search-bar,
     .search.popout-open .search-bar{
         width: 232px;
+        height: 32px;
         background-color: $b4;
         background-image: none;
         cursor: text;
+        border: 2px solid $inputborder;
+    }
+    .search.focused .search-bar{
+        border-color: var(--accent);
     }
 
     .search.open .search-bar-icon,
@@ -42,7 +47,7 @@
         }
         .public-DraftEditor-content,
         .public-DraftEditorPlaceholder-root{
-            padding: 9px 8px 0;
+            padding: 3px 8px 0;
             box-sizing: border-box;
         }
     }
@@ -52,7 +57,7 @@
         font-weight: $fwui;
     }
     .search .search-bar .icon{
-        top: 11px;
+        top: 5px;
     }
 
     span[class^="searchAnswer-"],
