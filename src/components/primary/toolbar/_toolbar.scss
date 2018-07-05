@@ -1,60 +1,72 @@
-.chat div[class^="titleWrapper"] div[class*="title-"]{
-    height: 40px;
-    background-color: $b1;
-    box-shadow: none;
-}
-// Channel name
-.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="titleText"]{
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-}
-.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="titleText"] span[class^="channelName"]{
-    height: 24px;
-}
-// Channel topic
-.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"]{
-    padding-left: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-// Separator
-.chat div[class^="titleWrapper"] div[class*="title-"] div[class^="topic"]::before{
-    display: none;
-}
-// Buttons
-.chat div[class^="titleWrapper"] svg[class*="icon-"]{
-    width: 40px;
-    height: 40px;
-    &:hover{
-        background-color: rgba(255,255,255,.1);
+.theme-dark .chat .titleWrapper-1l0xT9{
+    .title-3qD0b-{
+        padding: 0 0 0 12px;
+        background-color: $b1;
+        box-shadow: none;
+
+        // Sticky hover killer
+        &::after{
+            content: "";
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        // Channel title
+        .titleText-3X-zRE{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+
+            &::before{
+                content: "#";
+            }
+            // Hash
+            svg{
+                display: none;
+            }
+        }
+
+        // Channel topic
+        .topic-2QX7LI{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+
+        // Buttons
+        svg{
+            width: 68px;
+            height: 48px;
+            opacity: 1;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            &:hover{
+                background-color: rgba(255,255,255,.1);
+            }
+            path{
+                display: none;
+            }
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+        .iconMargin-2YXk4F{
+            margin: 0 2px;
+        }
+        // Pinned messages indicator
+        .iconBadgeWrapper-1vhG5S{
+            background-color: $alert;
+            span{
+                display: none;
+            }
+        }
+        // Members list toggled on
+        .iconActive-AKd_jq{
+            background-color: var(--accent);
+        }
     }
-}
-.chat div[class^="titleWrapper"] svg[class*="iconMargin-"]{
-    margin: 0;
-}
-.chat div[class^="titleWrapper"] svg[class*="iconActive-"]{
-    background-color: var(--accent);
-}
-.chat div[class^="titleWrapper"] svg[class*="iconInactive-"]{
-    opacity: 1;
-}
-.chat div[class^="titleWrapper"] svg{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-}
-// Hide original SVGs
-.chat div[class^="titleWrapper"] svg[class*="icon-"] path{
-    display: none;
-}
-// Notification dot
-.chat div[class^="titleWrapper"] svg[class*="icon-"]~span[class^="iconBadge"]{
-    background-color: $alert;
-    border: 0;
-}
-// Divider
-.chat div[class^="titleWrapper"] div[class*="divider-"]{
-    display: none;
 }
