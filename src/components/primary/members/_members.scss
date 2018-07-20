@@ -49,15 +49,8 @@
                 right: 0;
                 bottom: 0;
                 border: 0;
-            }
-            // Typing
-            div[class*="statusTyping-"]{
-                width: 32px;
-                span[class*="pulsingEllipsis-"]{
-                    width: 32px;
-                    span[class^="pulsingEllipsisItem-"]:last-of-type{
-                        margin-right: 0;
-                    }
+                &[class*="typing-"]{
+                    left: 2px;
                 }
             }
         }
