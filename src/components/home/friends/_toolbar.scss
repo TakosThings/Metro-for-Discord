@@ -1,90 +1,80 @@
-#friends div[class*="headerBar"]{
-    height: 40px;
-    padding: 0;
-}
 .theme-dark #friends div[class*="headerBar"]{
+    padding: 0;
     background-color: $b1;
     border: 0;
     box-shadow: none;
-}
+    
+    // Left buttons
+    .tab-bar{
+        font-size: $fsui;
+        font-weight: $fwui;
+        letter-spacing: normal;
+        .tab-bar-item{
+            margin: 0;
+            padding: 0 12px;
+            border-radius: 0;
+            color: #FFF;
+            line-height: 48px;
+            &:hover:not(.selected){
+                background-color: rgba(255,255,255,0.1);
+            }
+            &.selected{
+                background-color: var(--accent);
+                color: #FFF;
+            }
+        }
+        .tab-bar-separator{
+            display: none;
+        }
+        .tab-bar-item .badge{
+            background-color: #003b67;
+            color: #FFF;
+            vertical-align: middle;
+        }
+        &:hover:not(.selected) .badge{
+            color: #FFF;
+        }
 
-// Tabs
-#friends div[class*="headerBar"] .tab-bar{
-    font-size: $fsui;
-    font-weight: $fwui;
-    letter-spacing: normal;
-}
-#friends div[class*="headerBar"] .tab-bar .tab-bar-item{
-    margin: 0;
-    padding: 0 12px;
-    border-radius: 0;
-    line-height: 40px;
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item{
-    color: #FFF;
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item:hover:not(.selected){
-    background-color: rgba(255,255,255,0.1);
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.selected{
-    background-color: var(--accent);
-    color: #FFF;
-}
-#friends div[class*="headerBar"] .tab-bar .tab-bar-separator{
-    display: none;
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item .badge{
-    background-color: #003b67;
-    color: #FFF;
-    vertical-align: middle;
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item:hover:not(.selected) .badge{
-    color: #FFF;
-}
+        // Add friend
+        .tab-bar-item.tab-bar-item-primary{
+            background-color: transparent;
+            &:hover:not(.selected){
+                background-color: rgba(255,255,255,0.1);
+            }
+            &.selected{
+                background-color: var(--accent);
+                color: #FFF;
+            }
+        }
+    }
 
-// Add friend
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary{
-    background-color: transparent;
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary:hover:not(.selected){
-    background-color: rgba(255,255,255,0.1);
-}
-.theme-dark #friends div[class*="headerBar"] .tab-bar .tab-bar-item.tab-bar-item-primary.selected{
-    background-color: var(--accent);
-    color: #FFF;
-}
-
-.theme-dark #friends div[class*="headerBar"]{
-    svg[class*="iconInactive-"]{
-        opacity: 1;
+    // Right buttons
+    .iconMargin-2YXk4F{
+        margin: 0 1px;
     }
     svg[class*="icon-"]{
-        width: 40px;
-        height: 40px;
+        width: 68px;
+        height: 48px;
         margin: 0;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
+        opacity: 1;
         path{
             display: none;
         }
         &:hover{
             background-color: rgba(255,255,255,.1);
         }
-        &:last-of-type{
-            margin-right: 8px;
-        }
     }
-    div[class^="divider-"]{
-        display: none;
-    }
-}
 
-.theme-dark #friends .tab-bar::after{
-    content: "Press CTRL + K to search";
-    padding: 0 8px;
-    color: #FFF;
-    font-size: 10px;
-    position: absolute;
-    right: 130px;
+    // Search help text
+    .tab-bar::after{
+        content: "Press CTRL + K to search";
+        padding: 0 8px;
+        color: #FFF;
+        font-size: 10px;
+        position: absolute;
+        right: 220px;
+    }
 }
