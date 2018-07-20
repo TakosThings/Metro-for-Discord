@@ -1,6 +1,20 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.1
+* **Enhancements** (3)
+  * Restyle chat dividers
+  * Cozy mode chat is now shown in bubbles
+  * Re-write toolbars
+* **Fixes** (5)
+  * Made settings window menu style only apply when dark theme is selected
+  * Added a 5px deadzone on the edge of some elements to prevent hover state remaining stuck on when the cursor leaves the Discord window. There are some neiche cases where the bug can still occur (eg. Discord snapped against another window).
+  * Settings button
+  * Members list typing status position
+  * Adjust position of badge in Friends/Games select tabs
+* **Notes** (1)
+  * Fallback fonts (Selawk and winjs-symbols) have been removed. If you do not have SegoeUI or SegoeMDL2 Assets you may experience problems
+
 #### 3.9.0
 * **Enhancements** (3)
   * New home tab
@@ -11,8 +25,6 @@ Newest Changes are at the top
 * **Clean up** (2)
   * `/src/friends` has been renamed `/src/home` with Friends and Games tabs organised into their respective subdirectories
   * Delete `/src/login` as it is no longer required
-* **Dev notes**
-  * This is an awful release and I hate it
 
 #### 3.8.13
 * **Fixes** (1)
