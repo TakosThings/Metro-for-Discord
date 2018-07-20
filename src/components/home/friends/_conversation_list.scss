@@ -114,6 +114,9 @@
             &.selected a{
                 background-color: var(--accent);
             }
+            .badge{
+                margin-right: 8px;
+            }
         }
         // Order Games tab on left
         &.btn-friends:nth-of-type(1){
