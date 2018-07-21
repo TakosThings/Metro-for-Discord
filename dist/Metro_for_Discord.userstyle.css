@@ -51,7 +51,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.9.1";
+    content: "Metro for Discord 3.9.2";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -769,6 +769,7 @@
       .theme-dark .chat .titleWrapper-1l0xT9 .title-3qD0b- svg:last-of-type {
         margin-right: 0; }
     .theme-dark .chat .titleWrapper-1l0xT9 .title-3qD0b- .iconMargin-2YXk4F {
+      height: 48px;
       margin: 0 2px; }
     .theme-dark .chat .titleWrapper-1l0xT9 .title-3qD0b- .iconBadgeWrapper-1vhG5S {
       background-color: #D02E00; }
@@ -1669,6 +1670,7 @@
           background-color: var(--accent);
           color: #FFF; }
     .theme-dark #friends div[class*="headerBar"] .iconMargin-2YXk4F {
+      height: 48px;
       margin: 0 2px; }
     .theme-dark #friends div[class*="headerBar"] svg[class*="icon-"] {
       width: 68px;

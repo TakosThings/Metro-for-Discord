@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.2
+* **Fixes**
+  * Buttons offset from toolbar
+
 #### 3.9.1
 * **Enhancements** (3)
   * Restyle chat dividers
