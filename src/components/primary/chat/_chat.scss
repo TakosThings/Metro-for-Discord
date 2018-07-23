@@ -56,19 +56,22 @@
         border-bottom: 0;
     }
     .message-group:not(.compact) .comment{
-        padding: 8px;
+        padding: 0 8px 8px 8px;
         background-color: $b3;
-        position: relative;
-        &:after{
+        &::before{
             content: "";
             width: 0;
             height: 0;
-            position: absolute;
+            display: block;
+            position: relative;
             top: -12px;
             left: 12px;
             border-width: 12px 0 0 12px;
             border-style: solid;
             border-color: transparent transparent transparent $b3;
+        }
+        .message.first{
+            margin-top: -4px;
         }
     }
 
