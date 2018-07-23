@@ -9,7 +9,7 @@
 .message-group-blocked { display: none; }
 
 /* REMOVE this if you want to see the "Welcome to the server" tutorial. */
-.chat .welcome-message{ display: none; }
+.chat div[class^="welcomeMessage"]{ display: none; }
 
 /* ####################################################### */
 /* ##                End of user options.               ## */
