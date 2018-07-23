@@ -1,27 +1,23 @@
-.option-popout{
-    width: 74px;
-}
-.small-popout-box{
+.theme-dark .container-1rPqdX{
+    width: 6.5rem;
+    margin-right: 8px; // Clear scrollbar
+    margin-bottom: -10px; // Bring closer to button
+    padding: 8px 0;
     background-color: $b1;
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 0;
-}
-.option-popout .btn-item{
-    padding: 6px 10px;
-    color: #FFF;
-    font-family: $font;
-    font-size: $fschat;
-    font-weight: $fwui;
-    line-height: 1.5625;
-    text-align: left;
-    &:hover{
+    button{
+        width: calc(100%);
+        padding: 7px 12px 8px;
+        margin: 0 0px;
+        justify-content: flex-start;
+        border-radius: 0;
         color: #FFF;
-        background-color: $b3;
+        font-size: $fschat;
+        font-weight: $fwui;
+        text-align: left;
+        &:hover{
+            background-color: $b3;
+        }
     }
-}
-.option-popout .btn-item:first-of-type{
-    margin-top: 8px;
-}
-.option-popout .btn-item:last-of-type{
-    margin-bottom: 8px;
 }
