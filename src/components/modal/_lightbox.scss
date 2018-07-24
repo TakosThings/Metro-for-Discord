@@ -5,7 +5,7 @@
             text-align: right;
         }
     }
-    a[class^="downloadLink"]{
+    a[class*="downloadLink"]{
         opacity: 1;
         font-size: $fsui;
         font-weight: $fwui;
