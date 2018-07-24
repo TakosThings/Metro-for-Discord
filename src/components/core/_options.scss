@@ -5,6 +5,9 @@
     --guildvoice:   #10893E;
 }
 
+/* REMOVE this if you want to see the online friends count in the guilds list. */
+.guilds-wrapper .guilds .friends-online{ display: none; }
+
 /* REMOVE this if you want to see the "X blocked messages" notification. */
 .message-group-blocked { display: none; }
 
