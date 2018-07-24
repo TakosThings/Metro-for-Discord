@@ -186,6 +186,12 @@
 
     // Editing message
     .message-group .edit-message{
+        .edit-container-outer{
+            margin-left: 80px;
+            .avatar-large{
+                display: none;
+            }
+        }
         .edit-container-inner{
             margin-right: 40px;
             div[class^="inner-"]{
