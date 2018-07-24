@@ -1,8 +1,18 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.3
+* **Enhancements** (4)
+  * Re-write chat menu
+  * Added a user option for online friends count. This is hidden by default
+  * Changed emoji button in chatbox to use a png icon
+  * Removed use of the MDL2 assets font as it was only in use by one element
+* **Fixes** (2)
+  * 'Welcome to your server' message is once again hidden by default
+  * Chat scrolling up when pressing Up Arrow to edit a message
+
 #### 3.9.2
-* **Fixes**
+* **Fixes** (1)
   * Buttons offset from toolbar
 
 #### 3.9.1
