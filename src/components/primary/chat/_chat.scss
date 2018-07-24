@@ -205,10 +205,12 @@
                 padding: 0;
                 border-radius: 0;
                 &::before{
-                    content: "\E170";
-                    font-family: $icon;
-                    font-size: 21px;
-                    text-align: center;
+                    content: "";
+                    width: 40px;
+                    height: 40px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 24px;
                 }
                 div[class*="sprite-"]{
                     display: none;
@@ -218,6 +220,9 @@
                     &:hover{
                         background-color: var(--accent);
                     }
+                }
+                &:hover{
+                    background-color: $b3;
                 }
             }
             div[class^="emojiButtonNormal-"]{
