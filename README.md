@@ -1,6 +1,6 @@
 # Metro for Discord
 A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'.  
-Latest version: `3.9.2`
+Latest version: `3.9.3`
 
 # Download
 Right click, then select Save As  
