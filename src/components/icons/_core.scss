@@ -186,7 +186,8 @@ div[class^="wrapperAudio"] div[class^="audioMetadata"]::before{
 }
 // Download button
 a[class*="metadataDownload"] svg[name="Download"], // Embedded audio download button
-.message-group .comment div[class^="attachment-"] svg[class^="downloadButton"]{
+.message-group .comment div[class^="attachment-"] svg[class^="downloadButton"],
+.guilds-wrapper .btn-download-apps{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
     background-size: 24px;
 }
