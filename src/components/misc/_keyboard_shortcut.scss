@@ -1,17 +1,16 @@
-div[class^="keybindShortcut-"]{
+.theme-dark div[class^="keybindShortcut-"]{
     color: #FFF;
     font-family: $mono;
     font-weight: normal;
-}
-div[class^="keybindShortcut-"] span{
-    background-color: transparent;
-    border: 1px solid #FFF;
-    border-bottom: 4px solid #FFF;
-    box-shadow: none;
-    color: #FFF;
-}
-
-// SVG
-div[class^="keybindShortcut-"] span g{
-    fill: #FFF !important;
+    span{
+        background-color: transparent;
+        border: 1px solid #FFF;
+        border-bottom: 4px solid #FFF;
+        box-shadow: none;
+        color: #FFF;
+        g{
+            fill: #FFF !important;
+        }
+        
+    }
 }
