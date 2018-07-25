@@ -1,34 +1,33 @@
-.message-group .comment .markup pre{
-    border: 0;
-    border-left: 4px solid #FFF;
-    border-radius: 0;
-}
-.theme-dark .message-group .comment .markup pre{
-    border-color: #5E5E5E;
-}
-.theme-dark .message-group .comment .markup code.inline,
-.theme-dark .message-group .comment .markup pre code{
+// Codeblock
+.theme-dark .markup-2BOw-j pre{
     background-color: #2F2F2F;
-}
-
-// Language
-.message-group .comment .markup pre code::before{
-    content: attr(class);
-    width: calc(100% + 270px);
-    display: block;
-    margin: -7px 0 .5em -270px;
-    padding: 2px 6px 2px 0;
-    background-color: #5E5E5E;
-    color: #FFF;
-    font-family: $font;
-    font-size: 10px;
-    line-height: 1.5625;
-    text-transform: uppercase;
-    word-spacing: 10px;
+    border: 0;
+    border-left: 4px solid #5e5e5e;
+    border-radius: 0;
+    code{
+        background-color: #2F2F2F;
+        font-family: $mono;
+        &::before{
+            content: attr(class);
+            width: calc(100% + 271px);
+            display: block;
+            margin: -7px 0 .5em -270px;
+            padding: 2px 6px 2px 0;
+            background-color: #5E5E5E;
+            color: #FFF;
+            font-family: $font;
+            font-size: 10px;
+            line-height: 1.5625;
+            text-transform: uppercase;
+            word-spacing: 10px;
+        }
+    }
 }
 
 // Inline code
-.message-group .comment .markup code.inline{
+.theme-dark .markup-2BOw-j code.inline{
     padding: 2px 4px;
+    background-color: #2F2F2F;
     border-radius: 0;
+    font-family: $mono;
 }
