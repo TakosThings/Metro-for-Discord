@@ -153,35 +153,35 @@ div[class^="emojiPicker-"] div[class^="categories"] div[class*="flags"]{
 }
 
 // Chat uploaded file icons
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="unknown"]~div::before{
+div[class^="attachment-"] img[class^="icon-"][title="unknown"]~div::before{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAECAwP0BggJ+vv8DP4BeyhTYAAABXSURBVHja1cxBDoAgDETRYqEo1d7/uGpRQunGsPOvJnnJwFxU3rZgIAvXDtmDhTYe8UBVPMRVxcNd9rCkqwEwaggwAIvGDjBpCPCHq9ZXKF0dEJsIpjoBsMwHmfe95SIAAAAASUVORK5CYII=);
 }
-.message-group .comment div[class^="attachment-"] img[class^="icon-"]~div::before{
+div[class^="attachment-"] img[class^="icon-"]~div::before{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAECA/QGCAn6+/wM/gXsrHPAAAAENJREFUeNrtybcNACAQBEHc4+m/XTzidRkxG6004i0KOy8Z2BJnuSTJ4cwSBJqCoN0QhJ5FUKYFsPswIFxdQJFF4qkK/5UFDCBIJhwAAAAASUVORK5CYII=);
     background-size: 24px;    
 }
-.message-group .comment .attachment .icon.icon-file.acrobat{
+.attachment .icon.icon-file.acrobat{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////9SnXPCAAAAFnRSTlMAECAwP0BQYHCAkJ+gr7C/wNDf4O/wwoURfwAAAGZJREFUKM+t0UsOgCAMRdECakVRQeXtf6nOTPlNCHd6QpsUoq74SuIfLLwIVoB8PwLmBqzY6mDh62BwNnYE24DnroNG2Cddgj4ARJgcHLAQI+oMDF5HREoVo/ypxhxRfqAA9klMXX1AMAnmxAT5tQAAAABJRU5ErkJggg==);
     background-size: 24px;
 }
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="archive"]~div::before{
+div[class^="attachment-"] img[class^="icon-"][title="archive"]~div::before{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYBAMAAAASWSDLAAAAKlBMVEUAAAD///////////////////////////////////////////////////+Gu8ovAAAADXRSTlMAEDBAYICQoL/A3+/wqFikVQAAAFlJREFUGNNjYMADPDrAoAXMiZ05c87JmTOvQjgMDCwODAxwDlsCLg6KMs4JSBwmBVwyWosQHMY9pwXgHOYrvgYImdN7kPSoFyFxQIA0DsSnEI7nTDCYgi9oAL96LW59nOxjAAAAAElFTkSuQmCC);
     background-size: 24px;
 }
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="code"]~div::before,
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="webcode"]~div::before{
+div[class^="attachment-"] img[class^="icon-"][title="code"]~div::before,
+div[class^="attachment-"] img[class^="icon-"][title="webcode"]~div::before{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAPFBMVEUAAAD////////////////////////////////////////////////////////////////////////////YSWgTAAAAE3RSTlMAECAwP0BgcICfoK+wv8DP0ODw1NYJ5wAAAH9JREFUeNqdzksSxCAIRVGEFs1Pk7z977Vjme6K4ih3AFSdCfQu3X4troGIVDuQXQv/4xYLWsXCZ6pioBQtsL8agOcyLTB0BEIeXizM4AjG1ENAoPm4rtDBDqGUSLB3wGd2iC6f3AHJKlC3iv2qPFWWBU00gJqF7dEDNDUpveoLjZQJU569iEUAAAAASUVORK5CYII=);
     background-size: 24px;
 }
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="document"]~div::before{
+div[class^="attachment-"] img[class^="icon-"][title="document"]~div::before{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAECAwP0BggJ+vv8DP4BeyhTYAAABXSURBVHja1cxBDoAgDETRYqEo1d7/uGpRQunGsPOvJnnJwFxU3rZgIAvXDtmDhTYe8UBVPMRVxcNd9rCkqwEwaggwAIvGDjBpCPCHq9ZXKF0dEJsIpjoBsMwHmfe95SIAAAAASUVORK5CYII=);
     background-size: 24px;    
 }
-.message-group .comment div[class^="attachment-"] img[class^="icon-"][title="video"]~div::before{
+div[class^="attachment-"] img[class^="icon-"][title="video"]~div::before{
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAECA/QGBvcICfoK+/wM/Q3+Dv8F2Fz/0AAABkSURBVHjapc/dDoAgCIBRLSw17Zf3f9ZsjqaBN/ZdsZ0xVPVlArXoCizG3IGrruEdSBiYLBxGl4XBk+UwQIoB9QVwugF4Tg1I3wMRwCOCBDtu8sY1yze8+CrqP4SiAkysMqqrG+kJCITxagcMAAAAAElFTkSuQmCC);
     background-size: 24px;    
 }
-.theme-dark div[class^="wrapperAudio"] div[class^="audioMetadata"]::before{
+div[class^="wrapperAudio"] div[class^="audioMetadata"]::before{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAATlBMVEUAAAD////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7///////+xcCBGAAAAGXRSTlMAARcdMU9VWGNucHJ1eIeMlaiquLvQ4u/we7ud+wAAAFpJREFUeNqt0UsOgCAQA1AV/CAqovLp/S/qwsSMSTcSuuzLbKZNWcbrk+mFFbLHJkDeV4F96DgAODn4ZSbwVD9Ah8whRM8hHRqWgQOSYtD2RlX4FQc+FJ+2KDce8AwWwvAsxQAAAABJRU5ErkJggg==);
 }
 // Download button
