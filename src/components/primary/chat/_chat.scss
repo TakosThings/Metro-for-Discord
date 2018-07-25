@@ -6,22 +6,20 @@
 
 .theme-dark .chat{
     // Cozy chat
-    .message-group{
-        .comment{
-            .markup{
-                color: #FFF;
-            }
+    .messageCozy-2JPAPA{
+        .markup-2BOw-j{
+            color: #FFF;
         }
         h2 strong{
-            color: #ACACAC;
+            color: #acacaa;
             font-size: $fsui;
-            font-weight: 400;
+            font-weight: normal;
         }
-        &:not(.has-divider){
-            border-bottom-color: rgba($color: #FFF, $alpha: 0.05);
-        }
-        .mentioned .message-text::after{
-            display: none;
+        .isMentionedCozy-3isp7y{
+            border-radius: 0;
+            &::after{
+                border-radius: 0;
+            }
         }
         a{
             color: var(--link);
@@ -29,54 +27,24 @@
     }
 
     // Compact chat
-    .message-group.compact{
-        .timestamp{
-            width: auto;
-            display: unset;
-            color: rgba($color: #FFF, $alpha: 0.5);
+    .messageCompact-kQa7ES{
+        .markup-2BOw-j{
+            color: #FFF;
         }
-        .message:hover .timestamp{
-            color: #FFF !important;
+        &:hover time{
+            color: #FFF;
         }
-        .message .message-text{
-            .markup{
-                padding-left: 50px;
-                text-indent: -50px;
-            }
-            .user-name{
-                color: #ACACAC;
-                font-weight: 400;
-            }
-        }
-    }
-
-    // Bubbles
-    .message-group:not(.compact){
-        padding: 12px 0;
-        border-bottom: 0;
-    }
-    .message-group:not(.compact) .comment{
-        padding: 0 8px 8px 8px;
-        background-color: $b3;
-        &::before{
-            content: "";
-            width: 0;
-            height: 0;
-            display: block;
-            position: relative;
-            top: -12px;
-            left: 12px;
-            border-width: 12px 0 0 12px;
-            border-style: solid;
-            border-color: transparent transparent transparent $b3;
-        }
-        .message.first{
-            margin-top: -4px;
+        h2 strong{
+            color: #acacaa;
+            font-size: $fsui;
+            font-weight: normal;
         }
     }
 
     // Mention
+    span.wrapper-3WhCwL,
     .mention{
+        padding: 0;
         background-color: transparent;
         color: var(--link);
         transition: none;
@@ -169,7 +137,7 @@
     }
 
     // Robot message
-    .message-group.is-local-bot-message{
+    .isLocalBot-38G0P0{
         background-color: transparent;
         background-image: none;
         box-shadow: none;
@@ -185,63 +153,54 @@
     }
 
     // Editing message
-    .message-group .edit-message{
-        .edit-container-outer{
-            margin-left: 80px;
-            .avatar-large{
-                display: none;
-            }
+    .messageEditorCompact-2PSR3v,
+    .contentCozy-3XX413{
+        div[class^="inner-"]{
+            background-color: $b1;
+            border-radius: 0;
         }
-        .edit-container-inner{
-            margin-right: 40px;
-            div[class^="inner-"]{
-                background-color: $b1;
-                border-radius: 0;
-            }
-            textarea{
-                margin: 0;
-            }
-
-            // Emoji button
-            button[class*="emojiButton-"]{
+        textarea{
+            margin: 0;
+        }
+        // Emoji button
+        button[class*="emojiButton-"]{
+            width: 40px;
+            height: 40px;
+            top: 0;
+            right: 0;
+            padding: 0;
+            border-radius: 0;
+            &::before{
+                content: "";
                 width: 40px;
                 height: 40px;
-                top: 0;
-                right: 0;
-                padding: 0;
-                border-radius: 0;
-                &::before{
-                    content: "";
-                    width: 40px;
-                    height: 40px;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: 24px;
-                }
-                div[class*="sprite-"]{
-                    display: none;
-                }
-                &.popout-open{
-                    background-color: var(--accent);
-                    &:hover{
-                        background-color: var(--accent);
-                    }
-                }
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px;
+            }
+            div[class*="sprite-"]{
+                display: none;
+            }
+            &.popout-open{
+                background-color: var(--accent);
                 &:hover{
-                    background-color: $b3;
+                    background-color: var(--accent);
                 }
             }
-            div[class^="emojiButtonNormal-"]{
-                opacity: 1;
+            &:hover{
+                background-color: $b3;
             }
         }
-        .edit-operation{
-            color: #FFF;
-            font-family: $font;
-            font-weight: normal;
-            > a{
-                color: var(--accent);
-            }
+        div[class^="emojiButtonNormal-"]{
+            opacity: 1;
+        }
+    }
+    .operations-36ENbA{
+        color: #FFF;
+        font-family: $font;
+        font-weight: normal;
+        > a{
+            color: var(--accent);
         }
     }
 
@@ -314,7 +273,7 @@
     }
 
     // File attachments
-    .message-group .comment div[class^="attachment-"]{
+    .attachment-33OFj0{
         height: 56px;
         padding: 8px;
         background-color: $b1;
