@@ -288,7 +288,7 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            a[class^="filename-"],
+            a[class*="fileNameLink-"],
             div[class^="filename-"]{
                 font-size: $fsui;
                 font-weight: $fwui;
