@@ -67,7 +67,7 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
     }
     // Message
     div[class^="messagesPopout-"]{
-        .message-group{
+        .messageGroupWrapper-o-Zw7G{
             background-color: transparent;
             border: 1px solid $b3;
             border-radius: 0;
@@ -75,8 +75,11 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
                 border-color: $b4;
             }
             div[class^="actionButtons-"] div[class^="jumpButton-"]{
+                height: 21px;
+                margin-right: 1px;
                 background-color: $b3;
                 border-radius: 0;
+                line-height: 21px;
                 &:hover{
                     background-color: $b4;
                 }
@@ -86,9 +89,17 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
             }
         }
         // Jump to button
-        .message-group:hover div[class^="actionButtons-"]{
+        .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug{
             background-color: transparent;
             box-shadow: none;
+            button{
+                padding: 2px 4px;
+                background-color: $b3;
+                border-radius: 0;
+                &:hover{
+                    background-color: $b4;
+                }
+            }
         }
     }
     // Empty
