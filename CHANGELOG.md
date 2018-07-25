@@ -1,6 +1,21 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.4
+* **Enhancements** (1)
+  * Re-wite keyboard shortcuts modal
+* **Fixes** (9)
+  * Update RTC class
+  * Update selector of 'Open original' link in lightbox
+  * Update chat classes
+  * Update recent mentions classes
+  * Search popout out of position
+  * Update chat options class
+  * Userstyle not generating
+  * Keybinds not themed
+  * Create instant invite modal class
+
+
 #### 3.9.3
 * **Enhancements** (4)
   * Re-write chat menu
