@@ -7,12 +7,12 @@
     font-size: $fschat;
     font-weight: $fwui;
     line-height: $lh;
-}
-.tooltip::after{
-    display: none;
-}
-.tooltip.tooltip-brand{
-    background-color: #191919;
+    &::after{
+        display: none;
+    }
+    &.tooltip-brand{
+        background-color: #191919;
+    }
 }
 
 // Hide settings button tooltip
