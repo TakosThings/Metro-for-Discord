@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.6
+* **Fixes** (1)
+  * Revert Games/Friends tabs to list items
+
 #### 3.9.5
 * **Fixes** (1)
   * Add cases to hide 'User Settings' tooltip if zoom level is set above or below default

@@ -51,7 +51,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.9.5";
+    content: "Metro for Discord 3.9.6";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -1713,10 +1713,12 @@
       padding-top: 0 !important;
       overflow-y: auto; }
     .private-channels header {
-      height: 0;
-      margin: 48px 0 0 0;
-      padding: 0;
-      font-size: 0; }
+      margin: 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      opacity: 1;
+      font-size: 20px;
+      font-weight: 300;
+      text-transform: none; }
     .private-channels .channel {
       height: auto !important;
       font-size: 15px; }
@@ -1772,29 +1774,18 @@
         transform: rotate(45deg); }
       .private-channels .channel.selected:hover a {
         background-color: #262626; }
-      .private-channels .channel.btn-friends {
-        width: 50%; }
-        .private-channels .channel.btn-friends.selected::before {
-          display: none; }
-        .private-channels .channel.btn-friends a {
-          padding: 14px 0;
-          text-align: center; }
-        .private-channels .channel.btn-friends svg {
-          display: none; }
-        .private-channels .channel.btn-friends .channel-name {
-          font-size: 20px;
-          font-weight: 300;
-          position: relative; }
-        .private-channels .channel.btn-friends.selected a {
-          background-color: var(--accent); }
-        .private-channels .channel.btn-friends .badge {
-          margin-right: 8px; }
-      .private-channels .channel.btn-friends:nth-of-type(1) {
-        position: absolute; }
-      .private-channels .channel.btn-friends:nth-of-type(2) {
-        top: 0;
-        right: 0;
-        position: absolute; }
+      .private-channels .channel.btn-friends.selected::before {
+        display: none; }
+      .private-channels .channel.btn-friends a {
+        padding: 14px 0 14px 20px; }
+      .private-channels .channel.btn-friends .channel-name {
+        font-size: 20px;
+        font-weight: 300;
+        position: relative; }
+      .private-channels .channel.btn-friends.selected a {
+        background-color: var(--accent); }
+      .private-channels .channel.btn-friends .badge {
+        margin-right: 8px; }
   #friends .friends-table {
     margin-top: 0; }
   .theme-dark .friends-table {
