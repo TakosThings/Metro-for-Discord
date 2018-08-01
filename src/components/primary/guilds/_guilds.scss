@@ -1,166 +1,141 @@
-.guilds-wrapper{
-    width: 64px;
+.theme-dark .guildsWrapper-5TJh6A{
     background-color: $b1;
-}
-.guilds-wrapper .guilds{
-    margin-bottom: 112px;
-    padding: 8px;
-    padding-bottom: 124px;
-}
+    width: 64px;
 
-.guilds-wrapper .guilds .guild{
-    width: 48px;
-    height: 48px;
-}
-.guilds-wrapper .guilds .guild+.guild{
-    margin-top: 4px;
-}
-.guilds-wrapper .guilds .guild .guild-inner{
-    background-color: transparent !important;
-    border-radius: 0 !important;
-    font-size: 20px;
-    font-weight: 400;
-}
-.guilds-wrapper .guilds .guild .guild-inner a{
-    width: 48px;
-    max-width: 48px;
-    height: 48px;
-    overflow: hidden;
-    border: 2px solid transparent;
-    box-sizing: border-box;
-    font-size: 15px !important;
-    font-weight: normal;
-    text-overflow: ellipsis;
-    transition: none;
-    &:hover{
-        border-color: rgba(255,255,255,.5);
+    .guilds-1q_RqH{
+        margin-bottom: 112px;
+        padding: 8px;
     }
-    >div{
-        width: 44px;
-        height: 44px;
+
+    // Friends online
+    .friendsOnline-_wi_fM{
+        color: #FFF;
+        text-transform: none;
+    }
+
+    // DMs
+    .dms-rcsEnV{
+        // We can afford these to be slightly larger
+        .avatar-small{
+            background-size: 32px;
+        }
+    }
+
+    // Separator
+    .guildSeparator-1X4GQ1{
+        display: none;
+    }
+
+    // Badges
+    .badge-1GsMF2{
+        right: 1px;
+        bottom: 1px;
+        max-width: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    // Hide the element when it's empty
+    .dms-rcsEnV:empty{
+        display: none;
+    }
+
+    // Guild
+    .guild-1EfMGQ:not(.guildsAdd-21_IdK){
+        width: 48px;
+        height: 48px;
+        border: 2px solid transparent;
+        box-sizing: border-box;
+        // Hide pills
+        &::before{
+            display: none;
+        }
+        &:hover{
+            border-color: rgba(255,255,255,.5);
+        }
+        &+.guild-1EfMGQ{
+            margin-top: 4px;
+        }
+        .guildInner-3DSoA4{
+            background-color: transparent !important;
+            border-radius: 0 !important; // why
+            line-height: 48px;
+            a{
+                width: 48px;
+                height: 48px;
+            }
+            .guildIcon-CT-ZDq{
+                width: 44px;
+                height: 44px;
+                background-repeat: no-repeat;
+                background-size: 24px;
+            }
+            .noIcon-1a_FrS{
+                font-size: $fsui !important; // why
+                line-height: 48px;
+            }
+        }
+        
+        // Status'
+        &.unread-qLkInr{
+            background-color: var(--accent);
+        }
+        &.selected-ML3OIq{
+            background-color: #FFF;
+            .noIcon-1a_FrS{
+                color: #000;
+            }
+            .homeIcon-1FoKUJ{
+                filter: invert(100%);
+            }
+        }
+
+        // Special cases
+        // Home
+        .homeIcon-1FoKUJ{
+            margin: -2px 0 0 -2px;
+            padding: 0;
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            g{
+                display: none;
+            }
+        }
+    }
+
+    // Add
+    .guildsAdd-21_IdK{
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 60px;
+        background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
-        line-height: 44px;
+        border: 0;
+        border-radius: 0;
+        &:hover{
+            background-color: $b3;
+        }
+        .guildsAddInner-1KMFy-{
+            display: none;
+        }
     }
-}
 
-// Hide default selected/unread indicators
-.guilds-wrapper .guilds .guild::before{
-    display: none;
-}
-
-// Selected guild
-.guilds-wrapper .guilds .guild.selected .guild-inner{
-    background-color: #FFF !important;
-}
-.guilds-wrapper .guilds .guild.selected .guild-inner a div{
-    color: #000;
-    &:hover{
-        border-color: rgba(0,0,0,.5);
+    // Mention bar
+    .bar-30k2ka{
+        border-radius: 0;
+        box-shadow: none;
+        text-transform: capitalize;
+        opacity: 1;
+        &.mention-1f5kbO{
+            background-color: $alert;
+        }
     }
-}
-.guilds-wrapper .guilds .guild.selected.unread .guild-inner{
-    background-color: #FFF !important;
-}
-
-// Voice connected
-.guilds-wrapper .guilds .guild.audio .guild-inner::after{
-    top: 0;
-    right: 0;
-    background-color: var(--guildvoice);
-}
-
-// Unread guild
-.guilds-wrapper .guilds .guild.unread .guild-inner{
-    background-color: var(--accent) !important;
-}
-
-// Guild offline
-.guilds-wrapper .guilds-error{
-    width: 48px;
-    height: 48px;
-    background-color: $alert;
-    border: 2px solid transparent;
-    border-radius: 0;
-    font-weight: normal;
-    &:hover{
-        background-color: $alert;
-        border-color: rgba(255,255,255,.5);
+    .unreadMentionsIndicatorBottom-BXS58x{
+        bottom: 108px;
     }
-}
-
-// Notification badge
-.guilds-wrapper .guilds .guild .badge{
-    right: 2px;
-    bottom: 2px;
-}
-
-// Home
-.guilds-wrapper .guilds .home-icon{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-    g{
-        display: none;
-    }
-}
-.guilds-wrapper .guilds .guild.active a{
-    background-color: #FFF;
-}
-.guilds-wrapper .guilds .guild.active .home-icon{
-    filter: invert(100%);
-}
-
-// Online friend count
-.guilds-wrapper .guilds .friends-online{
-    color: #FFF;
-    font-weight: $fwui;
-    text-transform: none;
-}
-
-// Error
-.guilds-wrapper .guilds-error{
-    width: 48px;
-    height: 48px;
-    background-size: 24px;
-}
-
-// Add new button
-.guilds-wrapper .guilds-add{
-    position: absolute !important;
-    bottom: 60px;
-    left: 8px;
-    background-color: transparent;
-    background-image: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 24px;
-    border: 0;
-    border-radius: 0;
-    color: #FFF;
-    font-size: 0;
-    &:hover{
-        background-color: $b3;
-    }
-}
-
-// New messages indicator
-.guilds-wrapper .unread-mentions-indicator-top > div[class^="bar-"],
-.guilds-wrapper .unread-mentions-indicator-bottom > div[class^="bar-"]{
-    background-color: $alert;
-    border-radius: 0;
-    box-shadow: none;
-}
-.guilds-wrapper .unread-mentions-indicator-top,
-.guilds-wrapper .unread-mentions-indicator-bottom{
-    padding: 8px;
-}
-.guilds-wrapper .unread-mentions-indicator-bottom{
-    bottom: 104px;
-}
-
-// Separator
-.guilds-wrapper .guild-separator{
-    display: none;
 }
