@@ -15,6 +15,7 @@
 
     // DMs
     .dms-rcsEnV{
+        margin: 4px 0 0;
         // We can afford these to be slightly larger
         .avatar-small{
             background-size: 32px;
@@ -23,7 +24,7 @@
 
     // Separator
     .guildSeparator-1X4GQ1{
-        height: 4px;
+            height: 4px;
             margin: 0;
         &::after{
             display: none;
