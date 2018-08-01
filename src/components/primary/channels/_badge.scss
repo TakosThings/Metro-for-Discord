@@ -1,4 +1,6 @@
 .badge,
+.badge-1GsMF2,
+.wrapper-232cHJ,
 div[class^="channels-"] div[class*="contentDefaultText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
 div[class^="channels-"] div[class*="contentSelectedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
 div[class^="channels-"] div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
@@ -13,8 +15,3 @@ div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > 
     font-weight: normal;
 }
 
-.guilds .badge{
-    max-width: 24px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
