@@ -1,17 +1,13 @@
-.badge,
-.badge-1GsMF2,
-.wrapper-232cHJ,
-div[class^="channels-"] div[class*="contentDefaultText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-div[class^="channels-"] div[class*="contentSelectedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-div[class^="channels-"] div[class*="contentUnreadText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-div[class^="channels-"] div[class*="contentMutedText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"],
-div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="flex"] > div[class*="iconSpacing"] > div[class*="wrapper"]{
-    background-color: #003b67;
-    border: 2px solid #1a4e76;
-    z-index: 2;
-    text-shadow: none;
-    border-radius: 11px;
-    box-shadow: none;
-    font-weight: normal;
+.theme-dark{
+    .badge,
+    .badge-1GsMF2,
+    .wrapper-232cHJ{
+        background-color: #003b67;
+        border: 2px solid #1a4e76;
+        z-index: 2;
+        text-shadow: none;
+        border-radius: 11px;
+        box-shadow: none;
+        font-weight: normal;
+    }
 }
-
