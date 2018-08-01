@@ -1,6 +1,20 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.7
+* **Enhancements** (1)
+  * The language bar on codeblocks will now be hidden if no language is set by the poster
+* **Fixes** (9)
+  * Remove search bar from friends list
+  * Remove extra eyeglass icon from toolbar
+  * Update guilds list
+  * Update badges classes
+  * Update hide online users count class in user options
+  * Add right padding to Friends tab when badge is present
+  * Remove inactive scrollbar from codeblocks
+  * Edit message emoji button icon
+  * Remove setting padding to 0 in the Home > Games screen
+
 #### 3.9.6
 * **Fixes** (1)
   * Revert Games/Friends tabs to list items
