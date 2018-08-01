@@ -21,6 +21,15 @@
         }
     }
 
+    // Separator
+    .guildSeparator-1X4GQ1{
+        height: 4px;
+            margin: 0;
+        &::after{
+            display: none;
+        }
+    }
+
     // Badges
     .badge-1GsMF2{
         right: 1px;
