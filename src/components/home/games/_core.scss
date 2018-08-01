@@ -1,7 +1,6 @@
 .theme-dark div[class^="activityFeed-"]{
     background-color: $b2;
     div[class*="feed-"]{
-        padding: 0;
         overflow-y: auto;
     }
     div[class^="body-"]{
