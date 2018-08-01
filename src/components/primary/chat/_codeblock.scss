@@ -23,6 +23,10 @@
             word-spacing: 10px;
         }
     }
+    // Hide language bar if no language is set
+    code[class="scrollbarGhost-2F9Zj2 scrollbar-3dvm_9 hljs"]::before{
+        display: none;
+    }
 }
 
 // Inline code
