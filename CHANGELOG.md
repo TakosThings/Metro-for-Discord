@@ -1,6 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.8
+* **Enhancements**
+  * Adjust sizing of RTC info/disconnect buttons to match mic/speakers mute buttons
+  * Add hover state to RTC info/disconnect buttons
+  * Re-write emoji picker. This should fix the jiggling bug.
+* **Fixes**
+  * Voice disconnect button
+  * Remove empty state image from games tab
+  * Remove scrollbar from games tab jumbotron
+
 #### 3.9.7
 * **Enhancements** (1)
   * The language bar on codeblocks will now be hidden if no language is set by the poster
