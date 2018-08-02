@@ -50,6 +50,9 @@
 
     // Pages
     div[class^="pagination-"]{
+        div[class^="scroller-"]{
+            overflow-y: auto;
+        }
         div[class^="paginationItem-"]{
             height: 90px;
             margin-top: 0;
