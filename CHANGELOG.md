@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.9
+* **Fixes**
+  * Update chat classes
+
 #### 3.9.8
 * **Enhancements**
   * Adjust sizing of RTC info/disconnect buttons to match mic/speakers mute buttons
