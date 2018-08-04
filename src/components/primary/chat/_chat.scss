@@ -1,10 +1,10 @@
-.theme-dark .chat,
-.theme-dark .chat>.content,
-.theme-dark .messages-wrapper{
+.theme-dark .chat-3bRxxu,
+.theme-dark .chat-3bRxxu>.content-yTz4x3,
+.theme-dark .messagesWrapper-3lZDfY{
     background-color: $b2;
 }
 
-.theme-dark .chat{
+.theme-dark .chat-3bRxxu{
     // Cozy chat
     .messageCozy-2JPAPA{
         .markup-2BOw-j{
@@ -61,7 +61,7 @@
     }
 
     // Dividers
-    .messages-wrapper .messages .divider{
+    .divider-3gKybi{
         height: 20px;
         margin: 0 6px 0 20px;
         background-color: transparent;
@@ -78,10 +78,10 @@
         div{
             background-color: #FFF;
         }
-        &:not(.red) span{
+        &:not(.dividerRed-MKoLlr) span{
             color: #FFF;
         }
-        &.divider-red{
+        &.dividerRed-MKoLlr{
             > div{
                 background-color: $alert;
                 opacity: 1;
@@ -93,7 +93,7 @@
     }
 
     // New message bars
-    .new-messages-bar{
+    .newMessagesBar-mujexs{
         background-color: var(--accent);
         border-radius: 0;
         button:first-child,
@@ -105,7 +105,7 @@
             text-transform: none;
         }
     }
-    .jump-to-present-bar{
+    .jumpToPresentBar-9P20AM{
         background-color: var(--accent);
         border: 0;
         border-radius: 0;
@@ -120,7 +120,7 @@
     }
 
     // Load more message
-    .has-more button{
+    .hasMore-3e72_v button{
         background-color: $b3;
         border: 1px solid transparent;
         border-radius: 0;
@@ -144,11 +144,11 @@
     }
 
     // System message
-    .system-message{
+    .container-3-pyIM{
         color: #FFF;
         font-size: $fsui;
-        .system-message-icon{
-            background-size: 16px;
+        .icon-2Po-VO{
+            background-size: 14px;
         }
     }
 
@@ -259,13 +259,13 @@
     }
 
     // Start of channel history
-    .messages div[class^="default-"]{
+    div[class^="default-"]{
         height: auto;
         margin: 0;
         padding: 20px;
         background-color: #232323;
         background-image: none;
-        h1.old-h1{
+        h1{
             color: #FFF;
             font-size: $fsui;
             font-weight: $fwchat;
@@ -333,10 +333,10 @@
 
 // Special snowflakes
 // Blocked messages
-.theme-dark .messages-wrapper .messages .message-group-blocked{
+.theme-dark .messageGroupBlocked-3wrQQX{
     border: 1px solid transparent;
     border-radius: 0;
-    .message-group-blocked-btn{
+    .messageGroupBlockedBtn-1PBBh-{
         background: $b3;
         color: #fff;
         font-size: $fschat;
@@ -346,7 +346,7 @@
             background-color: $b3;
         }
     }
-    &.revealed{
+    &.revealed-1_RKsf{
         background-color: $b3;
     }
 }
