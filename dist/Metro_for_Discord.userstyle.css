@@ -14,6 +14,7 @@
     --accent:       #0078D7;
     --link:         #0078D7;
     --guildvoice:   #10893E; }
+  /*[[friendsonline]]*/
   /*[[blockedmessages]]*/
   /*[[welcomemessage]]*/
   /* ####################################################### */
@@ -51,7 +52,7 @@
   .status-offline {
     background-color: #767676; }
   div[class^="channels-"]::after {
-    content: "Metro for Discord 3.9.9";
+    content: "Metro for Discord 3.9.10";
     width: 100%;
     height: 20px;
     padding-bottom: 1px;
@@ -790,7 +791,7 @@
       .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar:hover {
         background-color: #333333; }
       .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .public-DraftEditorPlaceholder-root,
-      .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .iconSearchBarEyeGlass-2n38zb {
+      .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .search-bar-icon {
         display: none; }
     .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search.focused .search-bar,
     .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search.open .search-bar,

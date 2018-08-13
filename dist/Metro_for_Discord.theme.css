@@ -1,5 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.9.9"}*//{}
-
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.9.10"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -26,7 +25,7 @@
   display: none; }
 
 /* REMOVE this if you want to see the "Welcome to the server" tutorial. */
-.chat div[class^="welcomeMessage"] {
+.welcomeMessage-3_Mcht {
   display: none; }
 
 /* ####################################################### */
@@ -74,7 +73,7 @@ textarea::-webkit-input-placeholder {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.9.9";
+  content: "Metro for Discord 3.9.10";
   width: 100%;
   height: 20px;
   padding-bottom: 1px;
@@ -898,7 +897,7 @@ div[class^="channels-"] .container-2Thooq {
     .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar:hover {
       background-color: #333333; }
     .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .public-DraftEditorPlaceholder-root,
-    .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .iconSearchBarEyeGlass-2n38zb {
+    .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-bar .search-bar-icon {
       display: none; }
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search.focused .search-bar,
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search.open .search-bar,

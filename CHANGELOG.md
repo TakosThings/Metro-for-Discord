@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.10
+* **Fixes**
+  * Update welcome message class in options section
+  * (Userstyle only) Add placeholder for hiding friends online option
+  * Revert a previous commit that updated the class of the eyeglass icon in the search bar because the class was reverted
+
 #### 3.9.9
 * **Fixes**
   * Update chat classes
