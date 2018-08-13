@@ -185,6 +185,7 @@ div[class^="wrapperAudio"] div[class^="audioMetadata"]::before{
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAATlBMVEUAAAD////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7///////+xcCBGAAAAGXRSTlMAARcdMU9VWGNucHJ1eIeMlaiquLvQ4u/we7ud+wAAAFpJREFUeNqt0UsOgCAQA1AV/CAqovLp/S/qwsSMSTcSuuzLbKZNWcbrk+mFFbLHJkDeV4F96DgAODn4ZSbwVD9Ah8whRM8hHRqWgQOSYtD2RlX4FQc+FJ+2KDce8AwWwvAsxQAAAABJRU5ErkJggg==);
 }
 // Download button
+.chat-3bRxxu div[class^="titleWrapper"] svg[name="Update"],
 a[class*="metadataDownload"] svg[name="Download"], // Embedded audio download button
 .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"],
 .guilds-wrapper .btn-download-apps{
