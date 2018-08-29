@@ -1,84 +1,25 @@
-div[class^="inviteModal"]{
-    border: 1px solid var(--accent);
-    border-radius: 0;
-    // 100% of these are garbage quality, so hide them
-    div[class^="inviteSplash"]{
+.theme-dark .modal-1UGdnR{
+    // Main body
+    .contentWrapper-3WC1ID{
+        background-color: $b1;
+        border: 1px solid var(--accent);
+        border-radius: 0;
+    }
+    // 'sub' title
+    .subTitle-3TUjmF{
         display: none;
     }
-    .scroller{
-        width: 548px;
-        background-color: $b1;
-        background-image: none;
-    }
-    div[class^="inviteContent"]{
-        height: 220px;
-        padding: 20px 6px 20px 24px;
-        text-align: left;
-        div[class^="avatar-xxxlarge"]{
-            position: absolute;
-            top: 36px;
-            right: 6px;
-            background-color: var(--accent);
-        }
-        div[class^="inviteTitle"]{
-            margin: 0;
-            padding: 36px 0 4px;
-            box-sizing: border-box;
-            color: #FFF;
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            line-height: $lh;
-        }
-        div[class^="inviteBody"]{
-            width: 350px;
-            padding: 0;
+    // Pills
+    .pill-1dHPfk{
+        background-color: #000;
+        span{
             color: #FFF;
             font-size: $fsui;
-            font-weight: $fwui;
-            strong{
-                color: var(--accent);
-                font-weight: normal;
-            }
         }
+    }
 
-        div[class^="inviteActions"]{
-            left: 24px;
-            right: 6px;
-            bottom: 20px;
-            display: inline-block;
-            button[class*="lookFilled-"][class*="colorGreen"]{
-                width: calc(50% - 2px);
-                min-width: calc(50% - 2px);
-                height: 36px;
-                min-height: 36px;
-                margin: 0 4px 0 0;
-                background-color: var(--accent);
-                border: 1px solid transparent;
-                float: left;
-                strong{
-                    font-weight: normal;
-                }
-                &:hover{
-                    border: 1px solid $inputborder;
-                }
-            }
-            div[class^="inviteCancel"]{
-                width: calc(50% - 2px);
-                height: 36px;
-                margin: 0;
-                padding: 9px 12px 10px;
-                border: 1px solid $inputborder;
-                box-sizing: border-box;
-                color: #FFF;
-                font-size: $fsui;
-                font-weight: $fwui;
-                line-height: 1;
-                text-align: center;
-                &:hover{
-                    background-color: rgba($color: #FFF, $alpha: 0.2);
-                    text-decoration: none;
-                }
-            }
-        }
+    // Remove custom image
+    .inviteSplash-40aHus{
+        display: none;
     }
 }
