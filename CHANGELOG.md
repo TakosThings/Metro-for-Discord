@@ -1,6 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.11
+* **Enhancements**
+  * Rewrite invite modal
+  * Listen along box in channels. *Provided by 'Kinky'*
+  * Rewrite Home conversation list
+* **Fixes**
+  * Offline guild
+  * Update classes of help modal
+  * Activity tab header bar
+
 #### 3.9.10
 * **Fixes**
   * Update welcome message class in options section
