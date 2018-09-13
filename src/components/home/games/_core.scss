@@ -1,4 +1,35 @@
 .theme-dark div[class^="activityFeed-"]{
+    // Header bar
+    .headerBar-UHpsPw{
+        background-color: $b1;
+        border: 0;
+        box-shadow: none;
+        .title-1aVOXw{
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+        // Right buttons
+        .iconMargin-2YXk4F{
+            height: 48px;
+            margin: 0 2px;
+        }
+        svg[class*="icon-"]{
+            width: 68px;
+            height: 48px;
+            margin: 0;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            opacity: 1;
+            path{
+                display: none;
+            }
+            &:hover{
+                background-color: rgba(255,255,255,.1);
+            }
+        }
+    }
+
     background-color: $b2;
     div[class*="feed-"]{
         overflow-y: auto;
