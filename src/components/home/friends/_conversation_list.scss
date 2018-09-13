@@ -1,7 +1,12 @@
-.private-channels{
+.privateChannels-1nO12o{
     background-color: $b1;
-    
-    div[class^="scroller-"][style="padding-top: 20px;"]{
+
+    // Remove search
+    .searchBar-6Kv8R2{
+        display: none;
+    }
+
+    .scroller-2FKFPG{
         padding-top: 0 !important;
         overflow-y: auto;
     }
@@ -16,8 +21,13 @@
         text-transform: none;
     }
 
+    // Tabs
+    a > svg ~ div{
+        padding: 10px 0;
+    }
+
     // Conversation
-    .channel{
+    .channel-2QD9_O{
         height: auto !important;
         font-size: $fsui;
         a{
@@ -25,6 +35,10 @@
             margin: 0;
             padding: 4px 12px 4px 16px;
             border-radius: 0;
+            .name-2WpE7M{
+                font-weight: normal;
+                opacity: 1;
+            }
         }
         // Avatar
         .avatar-small{
@@ -56,7 +70,7 @@
             }
         }
         // Close icon
-        button.close{
+        button.close-3hZ5Ni{
             width: 24px;
             height: 24px;
             position: absolute;
@@ -75,7 +89,7 @@
             background-color: $b2;
         }
         // Selected channel
-        &.selected{
+        &.selected-1HYmZZ{
             a{
                 background-color: transparent;
             }
@@ -92,26 +106,6 @@
             }
             &:hover a{
                 background-color: $b2;
-            }
-        }
-        // Friends 'channel'
-        &.btn-friends{
-            &.selected::before{
-                display: none;
-            }
-            a{
-                padding: 12px 8px 12px 20px;
-            }
-            .channel-name{
-                font-size: $fsheader;
-                font-weight: $fwheader;
-                position: relative;
-            }
-            &.selected a{
-                background-color: var(--accent);
-            }
-            .badge{
-                margin-right: 8px;
             }
         }
     }
