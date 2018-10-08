@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.12
+* **Changes**
+  * Search bar will no longer colapse when not in use due to a change in functionality
+* **Fixes**
+  * Seach popout
+  * Chat username font weights
+
 #### 3.9.11
 * **Enhancements**
   * Rewrite invite modal
