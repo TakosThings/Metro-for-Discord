@@ -2,38 +2,38 @@
 Newest Changes are at the top
 
 #### 3.9.12
-* **Changes**
+* **Changes** (1)
   * Search bar will no longer colapse when not in use due to a change in functionality
-* **Fixes**
+* **Fixes** (2)
   * Seach popout
   * Chat username font weights
 
 #### 3.9.11
-* **Enhancements**
+* **Enhancements** (3)
   * Rewrite invite modal
   * Listen along box in channels. *Provided by 'Kinky'*
   * Rewrite Home conversation list
-* **Fixes**
+* **Fixes** (3)
   * Offline guild
   * Update classes of help modal
   * Activity tab header bar
 
 #### 3.9.10
-* **Fixes**
+* **Fixes** (1)
   * Update welcome message class in options section
   * (Userstyle only) Add placeholder for hiding friends online option
   * Revert a previous commit that updated the class of the eyeglass icon in the search bar because the class was reverted
 
 #### 3.9.9
-* **Fixes**
+* **Fixes** (1)
   * Update chat classes
 
 #### 3.9.8
-* **Enhancements**
+* **Enhancements** (3)
   * Adjust sizing of RTC info/disconnect buttons to match mic/speakers mute buttons
   * Add hover state to RTC info/disconnect buttons
   * Re-write emoji picker. This should fix the jiggling bug.
-* **Fixes**
+* **Fixes** (3)
   * Voice disconnect button
   * Remove empty state image from games tab
   * Remove scrollbar from games tab jumbotron
