@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.13 (1)
+* **Enhancements**
+  * Revert a previous commit that changed the functionality of the search bar. The required class for this feature was returned
+* **Fixes** (1)
+  * Update settings classes
+
 #### 3.9.12
 * **Changes** (1)
   * Search bar will no longer colapse when not in use due to a change in functionality
