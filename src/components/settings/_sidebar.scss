@@ -1,11 +1,11 @@
 // Sidebar
-.ui-standard-sidebar-view .sidebar-region .sidebar{
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebar-CFHs9e{
     width: 320px;
     padding: 0 0 0 0;
 }
 
 // Left sidebar
-.theme-dark .ui-standard-sidebar-view .sidebar-region{
+.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN{
     flex: 0;
     background-color: $b1;
     // Sticky hover
@@ -18,79 +18,73 @@
         left: 0;
         z-index: 1;
     }
-}
-.theme-dark .ui-standard-sidebar-view .sidebar-region div[class^="scroller-"]{
-    overflow-y: auto;
-}
-
-// Remove Header
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="header"]{
-    display: none
-}
-
-// Sidebar item
-.theme-dark .ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"]{
-    margin-bottom: 0;
-    padding: 14px 16px;
-    border-radius: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    &:hover{
-        background-color: rgba(255,255,255,0.15);
-        cursor: default;
+    div[class^="scroller-"]{
+        overflow-y: auto;
     }
-}
-// Nitro item
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
-    color: #FFF !important;
-    &:hover{
-        background-color: rgba(255,255,255,0.15) !important;
+    .sidebar-CFHs9e{
+        div[class^="side"] div[class^="header"]{
+            display: none
+        }
+        div[class^="side"] div[class^="item"]{
+            margin-bottom: 0;
+            padding: 14px 16px;
+            border-radius: 0;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            &:hover{
+                background-color: rgba(255,255,255,0.15);
+                cursor: default;
+            }
+        }
+        // Nitro item
+        div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
+            color: #FFF !important;
+            &:hover{
+                background-color: rgba(255,255,255,0.15) !important;
+            }
+        }
+        div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
+            background-color: transparent !important;
+            color: var(--accent) !important;
+            &:hover{
+                background-color: rgba(255,255,255,0.15) !important;
+            }
+        }
+        // Selected item
+        div[class^="side"] div[class^="itemBrandSelected"],
+        div[class^="side"] div[class^="itemSelected"]{
+            background-color: transparent;
+            color: var(--accent);
+            &:hover{
+                background-color: rgba(255,255,255,0.15);
+            }
+        }
+        div[class^="side"] div[class^="itemBrandSelected"]::before,
+        div[class^="side"] div[class^="itemSelected"]::before{
+            content: "";
+            width: 4px;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-color: var(--accent);
+            margin-top: -10px;
+        }
+        // Logout item
+        div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
+            color: $alert !important;
+        }
+        div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
+            background-color: rgba(255,255,255,0.15) !important;
+        }
+        // Remove separators
+        div[class^="side"] div[class^="separator"]{
+            display: none;
+        }
+        // Social links
+        div[class^="socialLinks-"]{
+            display: none;
+        }
     }
-}
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
-    background-color: transparent !important;
-    color: var(--accent) !important;
-    &:hover{
-        background-color: rgba(255,255,255,0.15) !important;
-    }
-}
-
-// Selected item
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"],
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemSelected"]{
-    background-color: transparent;
-    color: var(--accent);
-    &:hover{
-        background-color: rgba(255,255,255,0.15);
-    }
-}
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemBrandSelected"]::before,
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="itemSelected"]::before{
-    content: "";
-    width: 4px;
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background-color: var(--accent);
-    margin-top: -10px;
-}
-
-// Logout item
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
-    color: $alert !important;
-}
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
-    background-color: rgba(255,255,255,0.15) !important;
-}
-
-// Remove separators
-.ui-standard-sidebar-view .sidebar-region .sidebar div[class^="side"] div[class^="separator"]{
-    display: none;
-}
-
-// Social links
-div[class^="socialLinks-"]{
-    display: none;
 }
