@@ -1,42 +1,69 @@
-.theme-dark .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"]{
+.chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"]{
+    margin: 0;
     .search-bar{
-        height: 32px;
-        border: 2px solid transparent;
+        width: 64px;
+        height: 48px;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
         border-radius: 0;
-        box-sizing: border-box;
-    }
-    .DraftEditor-root{
-        padding-right: 8px;
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: 25px;
-        .public-DraftEditor-content,
-        .public-DraftEditorPlaceholder-root{
-            padding: 3px 6px 20px;
+        cursor: pointer;
+        &:hover{
+            background-color: $b3;
         }
-        .searchFilter-2ESiM3,
-        .searchAnswer-3Dz2-q{
-            background-color: #FFF;
-            border-radius: 0;
-            color: #000;
+        .public-DraftEditorPlaceholder-root,
+        .search-bar-icon{
+            display: none;
         }
     }
 
-    .focused{
-        .search-bar{
-            background-color: #FFF;
-            border-color: var(--accent);
+    .search.focused .search-bar,
+    .search.open .search-bar,
+    .search.popout-open .search-bar{
+        width: 232px;
+        height: 32px;
+        background-color: $b4;
+        background-image: none;
+        cursor: text;
+        border: 2px solid $inputborder;
+    }
+    .search.focused .search-bar{
+        border-color: var(--accent);
+    }
+
+    .search.open .search-bar-icon,
+    .search.focused .search-bar-icon,
+    .seach.open .search-bar .public-DraftEditorPlaceholder-root,
+    .search.focused .search-bar .public-DraftEditorPlaceholder-root{
+        display: block;
+    }
+    .search .search-bar .DraftEditor-root{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        .public-DraftEditor-content{
+            overflow-x: hidden;
         }
-        .DraftEditor-root{
-            color: #000;
+        .public-DraftEditor-content,
+        .public-DraftEditorPlaceholder-root{
+            padding: 3px 8px 0;
+            box-sizing: border-box;
         }
-        .search-bar-icon .icon{
-            filter: invert(100%);
-        }
-        .searchFilter-2ESiM3,
-        .searchAnswer-3Dz2-q{
-            background-color: #333;
-            color: #FFF;
-        }
+    }
+    .search .search-bar .public-DraftEditorPlaceholder-root{
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    .search .search-bar .icon{
+        top: 5px;
+    }
+
+    span[class^="searchAnswer-"],
+    span[class^="searchFilter-"]{
+        background-color: #FFF;
+        color: #000;
+        font-weight: normal;
     }
 }
