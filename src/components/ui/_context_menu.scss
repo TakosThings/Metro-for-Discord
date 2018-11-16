@@ -15,6 +15,12 @@ div[class^="contextMenu-"].theme-dark{
         &:hover{
             background-color: $b3;
         }
+        &[class*="disabled-"]{
+            display: none;
+            &~[class^="item"]{
+                margin-top: 8px;
+            }
+        }
     }
     div[class*="itemSlider-"]{
         max-height: 128px;
