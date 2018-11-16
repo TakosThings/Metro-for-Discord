@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.9.14
+* **Enhancements** (1)
+  * 'Mark as read' option removed from context menu if it is disabled
+* **Fixes** (3)
+  * Search popout out of position
+  * Incorrect css being applied to badge in friends list
+  * Call toolbar not themed
+
 #### 3.9.13 (1)
 * **Enhancements**
   * Revert a previous commit that changed the functionality of the search bar. The required class for this feature was returned
