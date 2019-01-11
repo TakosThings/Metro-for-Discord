@@ -17,7 +17,7 @@ div[class^="modal-"] svg[class^="close-"]{
 
 // Header
 div[class^="modal"] div[class*="header"] h4,
-div[class^="scroller-"][class*="content-"] h2{
+div[class^="scroller-"][class*="content-"] h2:not(.headerCozyMeta-rdohGq){ // Hack to not select the user avatar in the delete modal
     padding: 36px 0 4px;
     font-size: $fsheader;
     font-weight: $fwheader;
