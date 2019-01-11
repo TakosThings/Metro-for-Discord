@@ -10,7 +10,7 @@
         // Search bar
         .search-bar-light{
             background-color: transparent;
-            .searchBarInner-1_Tg2R{
+            .search-bar-inner{
                 background-color: transparent;
                 border-radius: 0 !important; // why
                 input{
@@ -28,10 +28,12 @@
                         border-color: $inputborderhover;
                     }
                     &:focus{
+                        background-color: #fff;
+                        color: #000;
                         border-color: var(--accent);
                     }
                 }
-                .searchBarIcon-1J6sKG{
+                .search-bar-icon{
                     display: none;
                 }
             }
