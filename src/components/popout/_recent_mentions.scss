@@ -74,6 +74,10 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right{
             &:hover{
                 border-color: $b4;
             }
+            span.mention{
+                background: none;
+                color: $a;
+            }
             div[class^="actionButtons-"] div[class^="jumpButton-"]{
                 height: 21px;
                 margin-right: 1px;
