@@ -10,7 +10,7 @@
             background-color: transparent;
             border-radius: 0;
             textarea{
-                margin: 0;
+                margin: 0 -40px 0 0;
                 padding: 10px 48px 10px 48px;
                 border-top: 2px solid $b3;
                 color: #FFF;
@@ -108,6 +108,17 @@
         }
         div[class^="emojiButtonNormal-"]{
             opacity: 1;
+        }
+        // Right side buttons
+        .buttons-205you{
+            // Gift Nitro button
+            .buttonWrapper-1ZmCpA{
+                display: none;
+            }
+            // GIF button
+            .buttonContainer-21MN7J{
+                display: none;
+            }
         }
     }
 
