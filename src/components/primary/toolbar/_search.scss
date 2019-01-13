@@ -1,6 +1,6 @@
 .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"]{
     margin: 0;
-    .search-bar{
+    .searchBar-3dMhjb{
         width: 64px;
         height: 48px;
         background-color: transparent;
@@ -13,14 +13,14 @@
             background-color: $b3;
         }
         .public-DraftEditorPlaceholder-root,
-        .search-bar-icon{
+        .searchBarIcon-1J6sKG{
             display: none;
         }
     }
 
-    .search.focused .search-bar,
-    .search.open .search-bar,
-    .search.popout-open .search-bar{
+    .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb,
+    .search-2oPWTC.open-6Y_aH .searchBar-3dMhjb,
+    .search-2oPWTC.popout-open .searchBar-3dMhjb{
         width: 232px;
         height: 32px;
         background-color: $b4;
@@ -28,17 +28,17 @@
         cursor: text;
         border: 2px solid $inputborder;
     }
-    .search.focused .search-bar{
+    .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb{
         border-color: var(--accent);
     }
 
-    .search.open .search-bar-icon,
-    .search.focused .search-bar-icon,
-    .seach.open .search-bar .public-DraftEditorPlaceholder-root,
-    .search.focused .search-bar .public-DraftEditorPlaceholder-root{
+    .search-2oPWTC.open-6Y_aH .search-bar-icon,
+    .search-2oPWTC.focused-31_ccS .search-bar-icon,
+    .search-2oPWTC.open-6Y_aH .searchBar-3dMhjb .public-DraftEditorPlaceholder-root,
+    .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb .public-DraftEditorPlaceholder-root{
         display: block;
     }
-    .search .search-bar .DraftEditor-root{
+    .search-2oPWTC .searchBar-3dMhjb .DraftEditor-root{
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
@@ -51,12 +51,12 @@
             box-sizing: border-box;
         }
     }
-    .search .search-bar .public-DraftEditorPlaceholder-root{
+    .seasearch-2oPWTCrch .searchBar-3dMhjb .public-DraftEditorPlaceholder-root{
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
     }
-    .search .search-bar .icon{
+    .search-2oPWTC .searchBar-3dMhjb .icon{
         top: 5px;
     }
 
