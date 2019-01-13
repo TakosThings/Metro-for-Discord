@@ -1,50 +1,50 @@
-.theme-dark #friends div[class*="headerBar"]{
+.theme-dark .container-3gCOGc .headerBar-UHpsPw{
     padding: 0;
     background-color: $b1;
     border: 0;
     box-shadow: none;
     
     // Left buttons
-    .tab-bar{
-        font-size: $fsui;
-        font-weight: $fwui;
-        letter-spacing: normal;
-        .tab-bar-item{
+    .tabBar-1E2ExX{
+        .item-PXvHYJ{
             margin: 0;
             padding: 0 12px;
             border-radius: 0;
             color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            letter-spacing: normal;
             line-height: 48px;
-            &:hover:not(.selected){
+            &:hover:not(.itemSelected-1qLhcL){
                 background-color: rgba(255,255,255,0.1);
             }
-            &.selected{
+            &.itemSelected-1qLhcL{
                 background-color: var(--accent);
                 color: #FFF;
             }
+            .badge-xFJoEU{
+                background-color: #003b67;
+                color: #FFF;
+                vertical-align: middle;
+            }
         }
-        .tab-bar-separator{
+        .separator-gCa7yv{
             display: none;
         }
-        .tab-bar-item .badge{
-            background-color: #003b67;
-            color: #FFF;
-            vertical-align: middle;
-        }
-        &:hover:not(.selected) .badge{
+        &:hover:not(.selected) .badge-xFJoEU{
             color: #FFF;
         }
 
         // Add friend
-        .tab-bar-item.tab-bar-item-primary{
-            background-color: transparent;
-            &:hover:not(.selected){
-                background-color: rgba(255,255,255,0.1);
+        .primary-3j8BhM{
+            background-color: transparent !important; // Apparently they think this is important...
+            &:hover{
+                background-color: rgba(255,255,255,0.1) !important;
             }
-            &.selected{
-                background-color: var(--accent);
-                color: #FFF;
-            }
+        }
+        .primarySelected-3uHKZn{
+            background-color: var(--accent) !important;
+            color: #FFF !important;
         }
     }
 
@@ -67,15 +67,5 @@
         &:hover{
             background-color: rgba(255,255,255,.1);
         }
-    }
-
-    // Search help text
-    .tab-bar::after{
-        content: "Press CTRL + K to search";
-        padding: 0 8px;
-        color: #FFF;
-        font-size: 10px;
-        position: absolute;
-        right: 220px;
     }
 }
