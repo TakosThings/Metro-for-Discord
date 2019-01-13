@@ -53,6 +53,7 @@
                 padding: 0;
             }
             .popout-2nUePc{
+                height: auto !important; // override element style
                 background-color: $b2;
                 border: 1px solid var(--accent);
                 border-radius: 0;
