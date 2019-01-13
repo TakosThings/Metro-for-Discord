@@ -1,6 +1,6 @@
 .theme-dark{
     & .scrollerWrap-2lJEkd .scroller-2FKFPG.messages-3amgkR,
-      #friends .scroller,
+      .container-3gCOGc .scroller-2FKFPG.friendsTableBody-1ZhKif,
       div[class^="emojiPicker"] div[class*="scroller-"],
       div[class^="userPopout-"] .member-roles,
       .inner-1JeGVc div[class^="scroller-"], // User profile modal
@@ -86,7 +86,7 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
     }
 }
 // Friends list - only show scrollbar when we need it
-#friends .scroller{
+.container-3gCOGc .scroller-2FKFPG.friendsTableBody-1ZhKif{
     overflow-y: auto;
 }
 // Chatbox,
