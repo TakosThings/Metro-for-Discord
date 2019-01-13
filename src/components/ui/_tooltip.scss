@@ -1,4 +1,4 @@
-.tooltip{
+.tooltip-1OS-Ti{
     padding: 7px 8px 8px;
     background-color: #191919;
     border: 1px solid rgba(255,255,255,0.3);
@@ -16,13 +16,13 @@
 }
 
 // Hide settings button tooltip
-.tooltip[style*="left: -14.5px;"],      // 125%, 150%, 175%
-.tooltip[style*="left: -15.0043px"],    // 110%
-.tooltip[style*="left: -15px;"],        // 100%, 150% - Default 
-.tooltip[style*="left: -14.5208px;"],   //  90%
-.tooltip[style*="left: -15.0176px;"],   //  80%
-.tooltip[style*="left: -15.5px;"],      //  75%
-.tooltip[style*="left: -15.0037px;"],   //  67%
-.tooltip[style*="left: -16px;"]{        //  50%
+.tooltip-1OS-Ti[style*="left: -14.5px;"],      // 125%, 150%, 175%
+.tooltip-1OS-Ti[style*="left: -15.0043px"],    // 110%
+.tooltip-1OS-Ti[style*="left: -15px;"],        // 100%, 150% - Default 
+.tooltip-1OS-Ti[style*="left: -14.5208px;"],   //  90%
+.tooltip-1OS-Ti[style*="left: -15.0176px;"],   //  80%
+.tooltip-1OS-Ti[style*="left: -15.5px;"],      //  75%
+.tooltip-1OS-Ti[style*="left: -15.0037px;"],   //  67%
+.tooltip-1OS-Ti[style*="left: -16px;"]{        //  50%
     display: none;
 }
