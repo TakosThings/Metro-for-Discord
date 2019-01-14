@@ -1,91 +1,87 @@
-.theme-dark .search-results-wrap{
+.theme-dark .searchResultsWrap-2DKFzt{
     background-color: $b1;
-}
+    // Header
+    .searchHeader-1l-wpR{
+        background-color: $b1;
+        box-shadow: none;
+        // Total number of results found
+        .totalResults-gxvzgw{
+            opacity: 1;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+        }
+        // Recent/Relevant tabs
+        .tab-2Ixsn0{
+            opacity: 1;
+            border-bottom: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+            color: rgba(255,255,255,.7);
+            &:hover{
+                border-bottom: 0;
+                color: #FFF;
+            }
+            &.selected-16te-P{
+                border-bottom: 0;
+                color: var(--accent);
+            }
+        }
+    }
+    // Results
+    // Channel Name
+    .channelName-1QajIf{
+        background-color: $b1;
+        font-weight: $fwui;
+    }
+    // Remove gradient
+    .searchResult-3pzFAB{
+        &::before,
+        &::after{
+            display: none;
+        }
+        // Remove border radius
+        .searchResultMessage-2VxO12{
+            border-radius: 0;
+            &.hit-NLlWXA{
+                background-color: $b3;
+                border: 0;
+                box-shadow: none;
+            }
+        }
+        // Accent border on expanded result
+        &.expanded-v2Szsz{
+            border: 1px solid var(--accent);
+            border-radius: 0;
+        }
+    }
 
-// Header
-.theme-dark .search-results-wrap .search-header{
-    background-color: $b1;
-    box-shadow: none;
-}
-// Total results
-.search-results-wrap .search-header .total-results{
-    opacity: 1;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-}
-
-// Horizontal tabs
-.search-results-wrap .search-header .tab{
-    opacity: 1;
-    border-bottom: 0;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-.theme-dark .search-results-wrap .search-header .tab{
-    color: rgba(255,255,255,.7);
-    &:hover{
-        border-bottom: 0;
+    // Jump to message button
+    .actionButtons-14P9IC .jumpButton-Ia2hRJ{
+        background-color: var(--accent);
+        border: 1px solid transparent;
+        border-radius: 0;
         color: #FFF;
+        font-weight: normal;
+        &:hover{
+            border-color: $inputborder;
+        }
+        &:active{
+            transform: none;
+            border-color: $inputborderhover;
+        }
     }
-}
-.theme-dark .search-results-wrap .search-header .tab.selected{
-    border-bottom: 0;
-    color: var(--accent);
-}
 
-// No results
-.theme-dark .search-results-wrap .empty-results-wrap .no-results-image,
-.theme-dark .search-results-wrap .error-wrap .no-results-image{
-    display: none;
-}
-.search-results-wrap .empty-results-wrap .no-results{
-    margin-top: 0;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-
-// Results
-// Channel name
-.theme-dark .search-results-wrap .channel-separator .channel-name{
-    background-color: $b1;
-    font-weight: $fwui;
-}
-.theme-dark .search-results-wrap .search-result::before,
-.theme-dark .search-results-wrap .search-result::after{
-    display: none;
-}
-.search-results-wrap .search-result .search-result-message{
-    border-radius: 0;
-}
-.theme-dark .search-results-wrap .search-result .search-result-message.hit{
-    background-color: $b3;
-    border: 0;
-    box-shadow: none;
-}
-.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit{
-    background-color: $b3;
-    border: 0;
-}
-
-// Expanded result
-.theme-dark .search-results-wrap .search-result.expanded{
-    border: 1px solid var(--accent);
-    border-radius: 0;
-}
-
-// Jump button
-.theme-dark .search-results-wrap .action-buttons .jump-button{
-    background-color: var(--accent);
-    border: 1px solid transparent;
-    border-radius: 0;
-    color: #FFF;
-    font-weight: normal;
-    &:hover{
-        border-color: $inputborder;
-    }
-    &:active{
-        transform: none;
-        border-color: $inputborderhover;
+    // No results found
+    .emptyResultsWrap-3Kv0LQ{
+        // Remove error image
+        .noResultsImage-JbSWtu{
+            display: none;
+        }
+        .noResults-2lVUHk{
+            margin-top: 0;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
     }
 }
