@@ -1,6 +1,30 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.0
+* **Housekeeping** (5)
+  * Userstyle will no longer be updated. Related `/dist/` and  `/src` files have been deleted.
+  * *Metro for Discord* Userstyles.org entry has been archived.
+  * A CONTRIBUTING.md file will be introduced shortly after this release. This version will cover the scope of the project. Details on development of the theme will come later.
+  * Delete `/src/components/modal/_deprecated_help.scss`, as Help modal has been removed
+  * Delete `/src/components/core/_font.scss`, as it was marked for deletion in  v`3.9.1`
+* **Enhancements** (4)
+  * Channel notices have been removed
+  * Superfluous *Gift Nitro* and *GIF* buttons have been removed from the chatbox. These features can still be accessed via the User Settings and `/tenor` or `/giphy` commands respectively
+  * 'Press CTRL+K to Search' help text has now been removed
+  * Rewrite search results pane
+* **Fixes** (10)
+  * Update @ and # mentions in recent mentions popout
+  * Fix message preview in the Delete Message modal
+  * Chatbox autocomplete
+  * ~~Un-fix emoji picker search bar (what even, Discord?)~~ Nevermind, Re-fix the un-fix of the fix
+  * Update NSFW channel warning class
+  * Update chat scrollbar class
+  * Emoji picker no results found
+  * A '👌' in Emoji picker skin tone selector was overflowing
+  * Update Friends list classes
+  * Update some classes in Friends conversation list
+
 #### 3.9.14
 * **Enhancements** (1)
   * 'Mark as read' option removed from context menu if it is disabled
