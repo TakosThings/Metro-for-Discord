@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.1
+* **Enhancements** (1)
+  * Increased spacing between buttons and the searchbar when search is active
+* **Fixes** (4)
+  * Remove border on status indicator in account area
+  * DMs avatar size in guilds list
+  * Search bar clear icon not visible when search bar is active
+  * 'Search for' in search popout had incorrect background colour
+
 #### 3.10.0
 * **Housekeeping** (5)
   * Userstyle will no longer be updated. Related `/dist/` and  `/src` files have been deleted.
