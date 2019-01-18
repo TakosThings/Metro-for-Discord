@@ -13,6 +13,10 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
     background-color: $b1;
     border-radius: 0;
 
+    .focused-2bY0OD{
+        background-color: transparent;
+    }
+
     div[class^="option-"][class*="searchQuery"]{
         display: none;
     }
