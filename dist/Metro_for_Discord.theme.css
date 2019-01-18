@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.1"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -73,7 +73,7 @@ textarea::-webkit-input-placeholder {
   background-color: #767676; }
 
 div[class^="channels-"]::after {
-  content: "Metro for Discord 3.10.0";
+  content: "Metro for Discord 3.10.1";
   width: 100%;
   height: 20px;
   padding-bottom: 1px;
@@ -468,8 +468,9 @@ body.bd-blue .app::before {
     text-transform: none; }
   .theme-dark .guildsWrapper-5TJh6A .dms-rcsEnV {
     margin: 4px 0 0; }
-    .theme-dark .guildsWrapper-5TJh6A .dms-rcsEnV .avatar-small {
-      background-size: 32px; }
+    .theme-dark .guildsWrapper-5TJh6A .dms-rcsEnV .avatarSmall-3ACRaI a {
+      background-size: 32px;
+      background-repeat: no-repeat; }
   .theme-dark .guildsWrapper-5TJh6A .guildSeparator-1X4GQ1 {
     height: 4px;
     margin: 0; }
@@ -797,7 +798,7 @@ div[class^="channels-"] .container-2Thooq {
   height: 40px;
   margin-bottom: 0;
   background-color: #191919; }
-  div[class^="channels-"] .container-2Thooq .status {
+  div[class^="channels-"] .container-2Thooq .status-2kJpnA {
     border: 0;
     right: 0;
     bottom: 0; }
@@ -906,14 +907,15 @@ div[class^="channels-"] .container-2Thooq {
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.popout-open .searchBar-3dMhjb {
     width: 232px;
     height: 32px;
+    margin: 0 4px;
     background-color: #404040;
     background-image: none;
     cursor: text;
     border: 2px solid rgba(255, 255, 255, 0.6); }
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb {
     border-color: var(--accent); }
-  .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.open-6_Y_aH .search-bar-icon,
-  .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.focused-31_ccS .search-bar-icon,
+  .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.open-6_Y_aH .searchBarIcon-1J6sKG,
+  .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.focused-31_ccS .searchBarIcon-1J6sKG,
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb .public-DraftEditorPlaceholder-root,
   .chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"] .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb .public-DraftEditorPlaceholder-root {
     display: block; }
@@ -3395,6 +3397,8 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
   left: initial !important;
   background-color: #191919;
   border-radius: 0; }
+  .theme-dark .container-3ayLPN[style="width: 320px;"] .focused-2bY0OD {
+    background-color: transparent; }
   .theme-dark .container-3ayLPN[style="width: 320px;"] div[class^="option-"][class*="searchQuery"] {
     display: none; }
   .theme-dark .container-3ayLPN[style="width: 320px;"] div[class^="resultsGroup-"]::before {
