@@ -6,15 +6,11 @@ Latest version: `3.10.1`
 Right click, then select Save As  
 * [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css)
 * [Download for BeautifulDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.css)
-* [Install from Userstyles.org](https://userstyles.org/styles/136340/metro-for-discord)
 
 # Install
 You should follow the relevant install instructions for your platform.  
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 * [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
-* [Stylus](https://userstyles.org/help/stylish)
-
-A browser plugin such as Stylus for [Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne) or [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/) is required for the Userstyle.
 
 # Configure
 **Required**  
