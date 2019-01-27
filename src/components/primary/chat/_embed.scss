@@ -35,6 +35,10 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
     color: #FFF;
     font-size: 18px;
 }
+// Remove GIF favourite button
+.gifFavoriteButton-1gYkEU{
+    display: none;
+}
 
 // Spotify Invite
 .accessory,
