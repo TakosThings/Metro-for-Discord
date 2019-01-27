@@ -79,5 +79,9 @@
         .iconActive-AKd_jq{
             background-color: var(--accent);
         }
+        // Remove help button
+        a[href="https://support.discordapp.com"]{
+            display: none;
+        }
     }
 }

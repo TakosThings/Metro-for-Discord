@@ -68,4 +68,8 @@
             background-color: rgba(255,255,255,.1);
         }
     }
+    // Remove help button
+    a[href="https://support.discordapp.com"]{
+        display: none;
+    }
 }
