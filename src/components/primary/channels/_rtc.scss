@@ -1,14 +1,29 @@
 .theme-dark div[class^="channels-"] .container-1UB9sr{
+    height: 48px;
+    padding: 0 0 0 10px;
     background-color: $b1;
-    border-top: 0;
     border-bottom: 0;
+    .rtc-connection-status{
+        .ping{
+            width: 48px;
+            min-width: 48px;
+            height: 48px;
+            margin: 0 0 0 86px;
+            &:hover{
+                background-color: $b3;
+            }
+        }
+        span:not(.ping){
+            display: none;
+        }
+    }
     a[class^="channel-"]{
-        line-height: 1.3;
+        display: none;
     }
     .buttonInfo-3nkbOt,
     .buttonDisconnect-3W_SJc{
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         border-radius: 0;
         &:hover{
             background-color: $b3;
