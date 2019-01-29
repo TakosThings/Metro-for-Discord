@@ -1,11 +1,11 @@
-.theme-dark .app-19_DXt,
+.app-19_DXt,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]{
     &::before{
         content: "Metro for Discord \A Version 3.10.2 INDEV";
     }
 }
 
-.theme-dark .app-19_DXt{
+.app-19_DXt{
     &::before{   
         width: 360px;
         height: 72px;
@@ -13,7 +13,7 @@
         right: 20px;
         bottom: 20px;
         display: block;
-        z-index: 100;
+        z-index: 9999; // We're above everything
         padding: 12px 12px 12px 72px;
         box-sizing: border-box;
         background-color: $b3;
