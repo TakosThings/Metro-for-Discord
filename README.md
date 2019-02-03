@@ -13,20 +13,33 @@ You should follow the relevant install instructions for your platform.
 * [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
 
 # Configure
-**Required**  
-Discord's dark theme must be selected from the Appearance tab in User Settings.
+## Required
+* Discord's dark theme must be selected from the Appearance tab in User Settings.
+* BetterDiscord users must also disable 'Dark Mode' and 'Blue Mode' in BetterDiscord's settings.
+
+## Variables
+The theme has some variables which can be changed by editing the CSS file
 
 **Accent Colour**  
-You can change the accent colour by changing the `--accent` variable at the top of the CSS file. A list of the default colour swatches from the Windows 10 personalisation settings is available on the [Microsoft Docs](https://github.com/MicrosoftDocs/windows-uwp/blob/53eb5fbcf125c9b189de37a6afb8b50ccc2a49fe/windows-apps-src/design/style/color.md#windows-accent-colors) website.
+You can change the accent colour by changing the `--accent` variable at the top of the CSS file. A list of the default colour swatches from the Windows 10 personalisation settings is available on the [MicrosoftDocs/windows-uwp](https://github.com/MicrosoftDocs/windows-uwp/blob/53eb5fbcf125c9b189de37a6afb8b50ccc2a49fe/windows-apps-src/design/style/color.md#windows-accent-colors) repo. The default colour is *Default blue*. Brighter colours work best as your accent colour.
 
 **Link Colour**  
-You can change the colour of links in chat by changing the `--link` variable at the top of the CSS file. In general you should leave this as default.
+You can change the colour of links in chat by changing the `--link` variable at the top of the CSS file. The default colour is *Default blue*. In general you should leave this as default.
 
-**Guild Voice**  
-You can change the colour of the Voice connected indicator in the servers list by modifying the `--guildvoice` variable at the top of the CSS file. In general you should change only if the default colour (green) clashes with your modified Accent Colour.
+**Voice**  
+You can change the colour used to indicate where you are connected to a voice server by modifying the `--voice` variable at the top of the CSS file. The default colour is *Turf green*. In general you shouldn't need to change this.
 
-**BetterDiscord**  
-If you're a BetterDiscord user, you must disable 'Dark Mode' and 'Blue Mode' in BetterDiscord settings.
+## Advanced
+The following options require a line of CSS to be removed from the CSS file.
+
+**Friends Online**  
+The friends online counter shown in the guilds list is hidden by default.
+
+**Blocked Messages**  
+The 'x Blocked Messages' reminder is hidden by default.
+
+**Welcome Message**  
+The 'Welcome to your/the server' message is hidden by default.
 
 # Screenshot
 ![Preview](https://i.imgur.com/5PzfgwK.jpg)
