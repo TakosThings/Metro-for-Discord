@@ -138,4 +138,18 @@
     .guildsDiscover-oiBX_l{
         display: none;
     }
+
+    // New bar
+    .unreadMentionsIndicatorBottom-BXS58x,
+    .unreadMentionsIndicatorTop-gA6RCh{
+        padding: 0;
+    }
+    .bar-30k2ka{
+        background-color: $alert;
+        border-radius: 0;
+    }
+    // Bottom
+    .unreadMentionsIndicatorBottom-BXS58x{
+        bottom: 144px;
+    }
 }
