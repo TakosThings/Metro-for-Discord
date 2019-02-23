@@ -35,6 +35,9 @@
         background-position: center;
         border-radius: 50%;
         opacity: 1;
+        &:hover{
+            background-color: var(--voice);
+        }
     }
     .buttonInfo-3nkbOt,
     .buttonDisconnect-3W_SJc{
