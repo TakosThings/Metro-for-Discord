@@ -3,212 +3,255 @@
     border-radius: 0;
 }
 
-// Channel header
-div[class^="channels-"] div[class^="container-"] header{
-    height: 48px;
-    background-color: $b1;
-    padding: 0 18px;
-    border: 0;
-    box-shadow: none;
-    font-family: $font;
-    font-weight: $fwheader;
-    &:hover{
+.theme-dark .channels-Ie2l6A{
+    // Header
+    header{
+        padding: 0 12px;
+        background-color: $b1;
+        box-shadow: none;
+        font-weight: $fwheader;
+        &:hover{
+            background-color: $b4;
+        }
+        span{
+            font-size: $fsheader;
+        }
+    }
+
+    // Channels background
+    .container-PNkimc{
+        background-color: $b1;
+    }
+
+    // Only show scrollbar when it's needed
+    .scroller-2FKFPG{
+        overflow-y: auto;
+    }
+
+    // Channel tree root
+    .containerDefault-3GGEv_,
+    .containerDragAfter-3TEhpe,
+    .containerDragBefore-3Dzc5x,
+    .containerUserOver-1Tcb7l{
+        padding-top: 0;
+        transition: none;
+    }
+    .wrapperCollapsed-3Fbxl6,
+    .wrapperDefault-10Jfvz,
+    .wrapperHovered-28fu1D,
+    .wrapperHoveredCollapsed-1PADEo,
+    .wrapperMuted-3KeA2M,
+    .wrapperUnread-1JPWj3{
+        height: 42px;
+        padding-left: 29px;
+    }
+    .wrapperHovered-28fu1D,
+    .wrapperHoveredCollapsed-1PADEo{
         background-color: $b4;
     }
-}
-div[class^="channels-"] header span{
-    font-size: $fsheader;
-}
 
-// Channels bg
-div[class^="channels-"] > div[class*="noWrap"]{
-    background-color: $b1;
-}
-// Tree root
-// Decrease padding between categories
-div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type{
-    padding-top: 19px;
-}
-div[class^="channels-"] div[class^="container-"]:not(.container-0) > div > div[class^="containerDefault"]:first-of-type >,
-div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"]:first-of-type >{
-    & div[class*="wrapperDefault"],
-      div[class*="wrapperHovered"],
-      div[class*="wrapperCollapsed"],
-      div[class*="wrapperMuted"]{
-        padding-left: 38px;
+    // Colapse icon
+    .iconCollapsed-3hFp_8,
+    .iconDefault-3Gr8d2,
+    .iconHovered-2L3-fB,
+    .iconHoveredCollapsed-3caIIZ,
+    .iconMuted-1HVBGH,
+    .iconUnread-2eGkvX{
+        width: 9px;
+        height: 9px;
+        top: 16px;
+        left: 10px;
+        transform: rotate(45deg);
+        path{
+            display: none;
+        }
     }
-}
-
-div[class^="channels-"] .container-1 > div ~ div[class^="containerDefault"] >,
-div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[draggable] ~ div[class^="containerDefault"] >,
-div[class^="channels-"] div[class^="container-"]:not(.container-0) > div[class^="containerDefault"] ~ div[class^="containerDefault"] >{
-    & div[class*="wrapperDefault"],
-      div[class*="wrapperSelected"],
-      div[class*="wrapperUnread"],
-      div[class*="wrapperHovered"],
-      div[class*="wrapperCollapsed"],
-      div[class*="wrapperMuted"]{
-        padding-left: 14px;
+    .iconDefault-3Gr8d2,
+    .iconHovered-2L3-fB{
+        top: 14px;
     }
-}
+    // Collapse icon
+    .directionDown-26e7eE{
+        border-right: 1px solid #FFF;
+        border-bottom: 1px solid #FFF;
+    }
+    // Collapsed icon
+    .directionRight-O8AY4M{
+        border-top: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+    }
 
-div[class^="channels-"] div[class^="container-"] > div > div >,
-div[class^="channels-"] div[class^="container-"] > div > div > div >{
-    & div[class*="nameDefault"],
-      div[class*="nameHovered"],
-      div[class*="nameCollapsed"],
-      div[class*="nameMuted"]{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: 400;
+    // Hide 'Create channel icon when category is not hovered
+    .wrapperDefault-10Jfvz{
+        &:hover{
+            .addButton-1BORro{
+                display: block;
+            }
+        }
+        .addButton-1BORro{
+            display: none;
+        }
+    }
+    
+    // Category name
+    .nameCollapsed-34uFWo,
+    .nameDefault-2DI02H,
+    .nameHovered-1gxhWH,
+    .nameHoveredCollapsed-2orEWB,
+    .nameMuted-1MCOt4,
+    .nameUnread-njOjIS{
+        font-size: 15px;
+        line-height: 42px;
         text-transform: none;
+        vertical-align: middle;
     }
-}
-div[class^="channels-"] div[class^="container-"] > div > div > div[class*="nameMuted"]{
-    color: $alert;
-}
-// Arrow (pointing down)
-div[class^="channels-"] div[class^="container-"] > div > div > div >,
-div[class^="channels-"] div[class^="container-"] > div > div >,
-div[class^="channels-"] div[class^="container-"] > div >{
-    & svg[class^="iconDefault-"],
-      svg[class^="iconHovered-"],
-      div[class*="wrapperMuted"] > svg[class^="iconMuted-"]{
-        width: 16px;
-        height: 16px;
-        left: 11px;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEUAAAD///////////84wDuoAAAABHRSTlMAEDDg0PkRYQAAAClJREFUeAFjoA1gZEKwmZhABDNEBMKEUxgMDKVQAkkEykeIwPkIC8kGACyzAFxm5t42AAAAAElFTkSuQmCC);
+    .nameCollapsed-34uFWo,
+    .nameDefault-2DI02H,
+    .nameHovered-1gxhWH,
+    .nameHoveredCollapsed-2orEWB,
+    .nameUnread-njOjIS{
+        color: #FFF;
+        font-weight: normal;
     }
-}
-// Arrow (pointing right)
-div[class^="channels-"] div[class^="container-"] > div > div > div >,
-div[class^="channels-"] div[class^="container-"] > div > div >{
-    & svg[class^="iconCollapsed-"],
-      svg[class^="iconHoveredCollapsed-"],
-      svg[class^="closed-"]{
-        width: 16px;
-        height: 16px;
-        left: 11px;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAElBMVEUAAAD///////////////////8+Uq06AAAABnRSTlMAEJ+gz9D4rCXUAAAAH0lEQVR4AWMgEjAyMaKJMLPQSISZlZGqfEZmOJ8wAAAxcABf9SknGQAAAABJRU5ErkJggg==);
-        transform: none;
+
+    // Muted category
+    // De-emphasize muted categories
+    .wrapperMuted-3KeA2M{
+        opacity: .6;
     }
-}
-// Hide default arrow
-div[class^="channels-"] div[class^="container-"] > div > div > div >,
-div[class^="channels-"] div[class^="container-"] > div > div >{
-    & svg[class^="iconDefault-"] path,
-      svg[class^="iconHovered-"] path,
-      svg[class^="iconCollapsed-"] path,
-      svg[class^="iconHoveredCollapsed-"] path,
-      svg[class^="iconMuted-"] path{
-        display: none;
+    // Collapse arrow
+    .iconMuted-1HVBGH{
+        border-color: $alert;
     }
-}
+    // Name
+    .nameMuted-1MCOt4{
+        color: $alert;
+        font-weight: normal;
+        text-decoration: line-through;
+    }
 
-// All channels
-div[class^="channels-"] div[class*="containerDefault"] div[class*="name-"]{
-    font-size: $fsui;
-    font-weight: $fwui;
-}
-// Normal channel state
-div[class^="channels-"] div[class*="wrapperDefaultText"] > div[class*="contentDefaultText"] > div[class*="nameDefaultText"]{
-    color: #999;   
-}
-//Hovered channel
-div[class^="channels-"] div[class*="contentHoveredText"]{
-    background-color: transparent;
-}
-div[class^="channels-"] div[class*="contentHoveredText"] > div[class*="nameHoveredText"]{
-    color: #FFF;
-}
-div[class^="channels-"] div[class*="wrapperHoveredText"] > div[class*="unread"]{
-    width: 4px;
-    height: 17px;
-    margin-top: -9px;
-    background-color: var(--accent);
-    border-radius: 0;
-}
-// Selected channel
-div[class^="channels-"] div[class*="contentSelectedText"]{
-    background-color: transparent;
-}
-div[class^="channels-"] div[class*="contentSelectedText"]::before{
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    left: -5px;
-    background-color: #FFF;
-    transform: rotate(45deg);
-}
-div[class^="channels-"] div[class*="contentSelectedText"]:active{
-    transform: initial;
-}
-div[class^="channels-"] div[class*="contentSelectedText"] > .margin-reset > svg{
-    opacity: 1;
-}
-div[class^="channels-"] div[class*="contentSelectedText"] > div[class^="marginReset"] > svg{
-    opacity: 1;
-    color: #FFF;
-}
-div[class^="channels-"] div[class*="contentSelectedText"] div[class*="nameSelectedText"]{
-    color: #FFF;
-}
-// Unread channel
-div[class^="channels-"] div[class*="contentUnreadText"] > div[class^="marginReset"] > svg{
-    opacity: 1;
-    color: var(--accent);
-}
-div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="contentUnreadText"] > div[class*="nameUnreadText"]{
-    color: var(--accent);   
-}
-div[class^="channels-"] div[class*="wrapperUnreadText"] > div[class*="unread"]{
-    width: 4px;
-    height: 17px;
-    margin-top: -9px;
-    background-color: var(--accent);
-    border-radius: 0;
-}
-// Muted channel
-div[class^="channels-"] div[class*="contentMutedText"] > div[class^="marginReset"] > svg{
-    opacity: .5;
-    color: $alert;
-}
-div[class^="channels-"] div[class*="wrapperMutedText"] > div[class*="contentMutedText"] > div[class*="nameMutedText"]{
-    color: $alert;
-    opacity: .5;
-}
+    // CHANNELS
+    // Channel
+    .wrapper-KpKNwI{
+        height: 32px;
+    }
+    .content-20Aix8{
+        margin: 0;
+        padding: 0 8px 0 12px;
+        border-radius: 0;
+    }
+    .name-3M0b8v{
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    
+    // Remove background from selected channels
+    .contentSelectedText-3wUhMi,
+    .contentSelectedVoice-1WDIBM{
+        background-color: transparent;
+    }
 
-//Voice Channel
-div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg,
-div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg,
-div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg{
-    opacity: 1;
-}
-div[class^="channels-"] div[class*="contentDefaultVoice"] > .margin-reset > svg > path[class*="colorDefaultVoice"],
-div[class^="channels-"] div[class*="contentHoveredVoice"] > .margin-reset > svg > path[class*="colorHoveredVoice"],
-div[class^="channels-"] div[class*="contentSelectedVoice"] > .margin-reset > svg > path[class*="colorSelectedVoice"]{
-    fill: #FFF;
-}
-div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="nameDefaultVoice"],
-div[class^="channels-"] div[class*="wrapperLockedVoice"] > div[class*="contentLockedVoice"] > div[class*="nameLockedVoice"]{
-    color: #FFF;
-}
-div[class^="channels-"] div[class*="wrapperSelectedVoice"] > div[class*="contentSelectedVoice"]:active,
-div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"]:active{
-    background-color: transparent;
-}
+    // Unread channel
+    // Tab
+    .unread-1Dp-OI{
+        width: 4px;
+        height: 14px;
+        margin-top: -7px;
+        background-color: #FFF;
+        border-radius: 0;
+    }
+    // Icon
+    .colorUnreadText-2t7XRb,
+    .colorHoveredText-OZnAgu{
+        color: #FFF;
+        opacity: 1;
+        path{
+            opacity: 1;
+        }
+    }
+    // Name
+    .nameUnreadText-DfkrI4{
+        color: #FFF;
+    }
 
-// Voice channel capacity
-div[class^="channels-"] div[class*="wrapperDefaultVoice"] > div[class*="contentDefaultVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"],
-div[class^="channels-"] div[class*="wrapperHoveredVoice"] > div[class*="contentHoveredVoice"] > div[class*="noWrap"] > div > div[class*="wrapper"]{
-    background-color: $b3;
-    font-family: $mono;
-    border-radius: 0;
-    color: #FFF;
-}
+    // Selected channel
+    // Tab
+    .wrapperSelectedText-3dSUjC{
+        &::before{
+            content: "";
+            width: 4px;
+            height: 16px;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background-color: var(--accent);
+        }
+    }
+    // Icon
+    .colorSelectedText-1y4Wvs{
+        color: var(--accent);
+        opacity: 1;
+        path{
+            opacity: 1;
+        }
+    }
+    // Name
+    .nameSelectedText-sp_EUw{
+        color: var(--accent);
+    }
 
-// New messages indicator
-div[class^="channels-"] div[class^="bar-"]{
-    border-radius: 0;
+    // Muted channel
+    // De-emphasize muted channels
+    .wrapperMutedText-1YBpvv{
+        opacity: .6;
+    }
+    // Icon
+    .colorMutedText-36M8WR{
+        color: $alert;
+        opacity: 1;
+        path{
+            opacity: 1;
+        }
+    }
+    // Name
+    .nameMutedText-3Vj4bM{
+        color: $alert;
+        text-decoration: line-through;
+    }
+  
+    // Connected voice channel
+    // Tab
+    .wrapperConnectedVoice-2mvQJY{
+        &::before{
+            content: "";
+            width: 4px;
+            height: 16px;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            background-color: var(--voice);
+        }
+    }
+    // Icon
+    // Connected voice channel icon
+    .colorConnectedVoice-3kyvUN{
+        color: var(--voice);
+        opacity: 1;
+        path{
+            opacity: 1;
+        }
+    }
+    // Name
+    .nameConnectedVoice-MHUX5F{
+        color: var(--voice);
+    }
+    
+    // Channel hover/active
+    .contentHoveredText-2D9B-x,
+    .contentHoveredVoice-3p_NEO{
+        background-color: $b3;
+    }
+    .nameHoveredText-1uO31y{
+        color: #FFF;
+    }
 }
