@@ -1,4 +1,4 @@
-.theme-dark div[class^="channels-"] .container-1UB9sr{
+.theme-dark .channels-Ie2l6A .container-1UB9sr{
     height: 48px;
     padding: 0 0 0 10px;
     background-color: $b1;
@@ -17,8 +17,24 @@
             display: none;
         }
     }
-    a[class^="channel-"]{
-        display: none;
+    .inner-btChU7{
+        position: relative;
+    }
+    .channel-SEolQq{
+        font-size: 0;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        margin: 0;
+        padding: 2px;
+        background-color: $b3;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB+gAAAfoBF4pEbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVFiF7dZPK0RRHMbxc5Wsp2iSlOy9AiXZoPyJsqEs7WwsZWM1C94A70FCKTsLkpcyFsrCvwkfizlTUzMYNfeezXw3Z3Gfer51fuecG0KPHv8A2yilKj9Q5x59RRZnOIrlr5hNVf6GuZTl86nKa1gprDwKVLTyiCrucIxNlPMoz3DYRqAdH7jCTB4ijWP3jkWUMIxJ7OA6CjS4xHieEkttvg/G7XqJuSes5Smx/ENmFCcx94W9bkvsN+35xi+5rXhqoNJtiY6uYqziM2bXuy3R0WOE3aaZGOuqRCeoH+XTKHFWuECUGMFzlJhOJdGYm/NUAuU4kDUMtcvk+mORZVk1hHATQugPISwULhC5iOtUKoHbuE4U0NVKnAN4SCUw0HhLkgj06PEX31IG0S3SIDUGAAAAAElFTkSuQmCC);
+        background-size: 16px;
+        background-position: center;
+        border-radius: 50%;
+        opacity: 1;
     }
     .buttonInfo-3nkbOt,
     .buttonDisconnect-3W_SJc{
