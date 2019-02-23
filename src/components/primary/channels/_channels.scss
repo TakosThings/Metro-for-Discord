@@ -144,6 +144,12 @@
         font-size: $fsui;
         font-weight: $fwui;
     }
+    .nameDefaultText-24KCy5,
+    .nameDefaultVoice-3WUH7s,
+    .nameLockedText-3pqQcL,
+    .nameLockedVoice-26MhB1{
+        color: rgba(255,255,255,.6);
+    }
     
     // Remove background from selected channels
     .contentSelectedText-3wUhMi,
