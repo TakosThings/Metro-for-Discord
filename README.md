@@ -4,13 +4,13 @@ Latest version: `3.10.2`
 
 # Download
 Right click, then select Save As  
-* [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css)
 * [Download for BeautifulDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.css)
+* [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css)
 
 # Install
 You should follow the relevant install instructions for your platform.  
-* [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 * [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
+* [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 
 # Configure
 ## Required
@@ -42,6 +42,6 @@ The 'x Blocked Messages' reminder is hidden by default.
 The 'Welcome to your/the server' message is hidden by default.
 
 # Screenshot
-![Preview](https://i.imgur.com/5PzfgwK.jpg)
+![Preview](https://i.imgur.com/gk3IlYT.png)
 
 This project is not associated with Microsoft, nor Discord.
