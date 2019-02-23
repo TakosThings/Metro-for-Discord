@@ -1,123 +1,117 @@
 .theme-dark .guildsWrapper-5TJh6A{
+    width: 48px;
     background-color: $b1;
-    width: 64px;
-
+    border-radius: 0;
+    
     .guilds-1q_RqH{
-        margin-bottom: 112px;
-        padding: 8px;
-    }
-
-    // Friends online
-    .friendsOnline-_wi_fM{
-        color: #FFF;
-        text-transform: none;
+        margin-bottom: 144px;
+        padding: 0;
     }
 
     // DMs
     .dms-rcsEnV{
-        margin: 4px 0 0;
+        margin: 8px 0;
         // We can afford these to be slightly larger
         .avatarSmall-3ACRaI a{
             background-size: 32px;
             background-repeat: no-repeat;
+            clip-path: circle(12px at center);
+        }
+    }
+
+    // Home icon
+    .homeIcon-1FoKUJ{
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        g{
+            display: none;
         }
     }
 
     // Separator
     .guildSeparator-1X4GQ1{
-            height: 4px;
-            margin: 0;
-        &::after{
-            display: none;
-        }
-    }
-
-    // Badges
-    .badge-1GsMF2{
-        right: 1px;
-        bottom: 1px;
-        max-width: 24px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-    // Hide the element when it's empty
-    .dms-rcsEnV:empty{
         display: none;
     }
 
     // Guild
-    .guild-1EfMGQ:not(.guildsAdd-21_IdK){
+    .guild-1EfMGQ{
         width: 48px;
         height: 48px;
-        border: 2px solid transparent;
-        box-sizing: border-box;
-        // Hide pills
-        &::before{
-            display: none;
-        }
+        margin-top: 0;
         &:hover{
-            border-color: rgba(255,255,255,.5);
+            background-color: $b4;
         }
-        &+.guild-1EfMGQ{
-            margin-top: 4px;
+        &.unread-qLkInr{
+            &::before{
+                width: 4px;
+                height: 14px;
+                margin-top: -7px;
+                left: 0;
+                background-color: #FFF;
+                border-radius: 0;
+            }
         }
+        &.selected-ML3OIq{
+            color: var(--accent);
+            &::before{
+                width: 4px;
+                height: 28px;
+                margin-top: -14px;
+                left: 0;
+                background-color: var(--accent);
+                border-radius: 0;
+            }
+            // Change text to accent if no icon is present
+            .noIcon-1a_FrS{
+                color: var(--accent);
+            }
+        }
+
+        // Audio connected in guild
+        &.audio-3vVhBi{
+            &::after{
+                width: 28px;
+                height: 28px;
+                top: 8px;
+                right: 8px;
+                background-color: transparent;
+                background-image: none;
+                border: 2px solid var(--voice);
+                border-radius: 50%;
+            }
+        }
+        
+
         .guildInner-3DSoA4{
             background-color: transparent !important;
-            border-radius: 0 !important; // why
-            line-height: 48px;
+            border-radius: 0 !important;
             a{
                 width: 48px;
                 height: 48px;
             }
-            .guildIcon-CT-ZDq{
-                width: 44px;
-                height: 44px;
-                background-repeat: no-repeat;
-                background-size: 24px;
-            }
-            .noIcon-1a_FrS{
-                font-size: $fsui !important; // why
-                line-height: 48px;
-            }
         }
         
-        // Status'
-        &.unread-qLkInr{
-            background-color: var(--accent);
-        }
-        &.selected-ML3OIq{
-            background-color: #FFF;
-            .noIcon-1a_FrS{
-                color: #000;
-            }
-            .homeIcon-1FoKUJ{
-                filter: invert(100%);
-            }
-        }
-
-        // Special cases
-        // Home
-        .homeIcon-1FoKUJ{
-            margin: -2px 0 0 -2px;
-            padding: 0;
-            background-color: transparent;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            g{
-                display: none;
-            }
-        }
-         // Offline
-        .guildsError-3cFMtY{
+        .guildIcon-CT-ZDq{
             width: 48px;
             height: 48px;
-            margin: -2px 0 0 -2px;
-            background: $alert;
-            border: 0;
-            border-radius: 0;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            clip-path: circle(12px at center);
+            pointer-events: all;
         }
+    }
+
+    // Badge
+    .badge-1GsMF2{
+        right: 2px;
+        bottom: 2px;
+        max-width: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     // Add
@@ -125,7 +119,7 @@
         width: 48px;
         height: 48px;
         position: absolute;
-        bottom: 60px;
+        bottom: 96px;
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
@@ -140,17 +134,22 @@
         }
     }
 
-    // Mention bar
-    .bar-30k2ka{
-        border-radius: 0;
-        box-shadow: none;
-        text-transform: capitalize;
-        opacity: 1;
-        &.mention-1f5kbO{
-            background-color: $alert;
-        }
+    // Server Discover
+    .guildsDiscover-oiBX_l{
+        display: none;
     }
+
+    // New bar
+    .unreadMentionsIndicatorBottom-BXS58x,
+    .unreadMentionsIndicatorTop-gA6RCh{
+        padding: 0;
+    }
+    .bar-30k2ka{
+        background-color: $alert;
+        border-radius: 0;
+    }
+    // Bottom
     .unreadMentionsIndicatorBottom-BXS58x{
-        bottom: 108px;
+        bottom: 144px;
     }
 }

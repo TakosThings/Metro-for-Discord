@@ -13,3 +13,16 @@
         border: 1px solid transparent;
     }
 }
+
+// Toast
+@keyframes toast{
+    0%{
+        transform: translateX(380px);
+    }
+    5%,95%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(380px);
+    }
+}

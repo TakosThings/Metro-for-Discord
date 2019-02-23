@@ -1,9 +1,9 @@
-div[class^="channels-"] .container-2Thooq > div[class*="noWrap-"] > div~div~button[class*="button"]{
+.theme-dark div[class^="channels-"] .container-2Thooq > div[class*="noWrap-"] > div~div~button[class*="button"]{
     width: 48px;
     height: 48px;
     position: absolute;
-    bottom: 8px;
-    left: 8px;
+    bottom: 0;
+    left: 0;
     background-size: 24px;
     opacity: 1;
     border-radius: 0;

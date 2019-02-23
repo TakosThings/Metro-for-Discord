@@ -1,18 +1,48 @@
-div[class^="channels-"] .container-2Thooq{
-    height: 40px;
+.theme-dark div[class^="channels-"] .container-2Thooq{
+    height: 48px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     margin-bottom: 0;
+    padding: 0;
     background-color: $b1;
+    .avatar-3JE4B3{
+        width: 24px;
+        height: 24px;
+        margin: 0 12px 97px 12px;
+    }
     .status-2kJpnA{
         border: 0;
         right: 0;
         bottom: 0;
     }
+    .accountDetails-3k9g4n{
+        display: none;
+    }
     button{
-        width: 40px;
-        height: 40px;
+        width: 48px;
+        height: 48px;
         border-radius: 0;
         &:hover{
             background-color: $b3;
+        }
+    }
+
+
+    // Default state - No voice connection
+    width: 48px;
+    .flex-1xMQg5.flex-1O1GKY{
+        div{
+            display: none;
+        }
+    }
+}
+// Show Mic/Speaker controls when connected to voice
+div[class^="channels-"] .container-1UB9sr~.container-2Thooq{
+    width: auto;
+    .flex-1xMQg5.flex-1O1GKY{
+        div{
+            display: block;
         }
     }
 }
