@@ -3,15 +3,15 @@
     box-shadow: none;
 
     div[class*="channelTextArea-"]{
-        margin: 0 0 20px;
+        margin: 0;
         padding: 0;
         border: 0;
         div[class*="inner-"]{
             background-color: transparent;
             border-radius: 0;
             textarea{
-                margin: 0 -40px 0 0;
-                padding: 10px 48px 10px 48px;
+                margin: 0 -48px 0 0;
+                padding: 13px 56px 13px 56px;
                 border-top: 2px solid $b3;
                 color: #FFF;
                 transition: .15s ease-in;
@@ -25,15 +25,15 @@
                 }
                 &[class^="textAreaEnabledNoAttach"],
                 &[class^="textAreaDisabled"]{
-                    padding: 10px 48px 10px 8px;
+                    padding: 10px 56px 10px 8px;
                 }
             }
         }
 
         // Upload button
         button[class^="attachButton-"]{
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             position: absolute;
             top: 2px;
             left: 0;
@@ -56,8 +56,8 @@
 
         // Upload button with Spotify enabled
         svg[class^="attachButton"]{
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             position: absolute;
             top: 0;
             left: 0;
@@ -79,8 +79,8 @@
 
         // Emoji button
         button[class*="emojiButton-"]{
-            width: 40px;
-            height: 40px;
+            width: 48px;
+            height: 48px;
             top: 2px;
             right: 0;
             padding: 0;
@@ -168,9 +168,11 @@
     // Typing
     div[class^="typing-"]{
         height: 20px;
+        bottom: 46px;
         background-color: transparent;
         font-size: 11px;
         line-height: 20px;
+        justify-content: flex-end;
         span[class*="ellipsis-"]{
             display: none;
         }
