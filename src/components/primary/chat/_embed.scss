@@ -13,9 +13,14 @@
         border-radius: 0;
     }
 }
+.embedImage-2W1cML,
+.embedThumbnail-2Y84-K,
+.embedVideo-3nf0O9{
+    border-radius: 0;
+}
 
 // GIF (eg. from giphy)
-a[class^="imageWrapper"]{
+.imageWrapper-2p5ogY{
     border-radius: 0;
 }
 div[class^="embed-"] div[class^="gifTag-"],
@@ -34,6 +39,10 @@ div[class^="imageAccessory"] div[class^="gifTag-"]::before{
     content: "GIF";
     color: #FFF;
     font-size: 18px;
+}
+// Remove GIF favourite button
+.gifFavoriteButton-1gYkEU{
+    display: none;
 }
 
 // Spotify Invite
