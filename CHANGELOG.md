@@ -1,6 +1,29 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.2
+* **Enhancements** (10)
+  * Removed help button from toolbar
+  * Removed version info from below account box. This info will now be shown in a toast at theme load, it is also shown in User Settings
+  * Redesign guilds list
+  * Redesign accounts box
+  * Redesign RTC box
+  * Remove server discovery button
+  * Spoilers
+  * Changed the variable name of `guildvoice` to `voice`
+  * Changed default color of `voice` variable to *Turf green* (from *Sport green*) to improve contrast
+  * Re-write channels CSS
+* **Fixes** (5)
+  * Remove favourite button from GIFS (this was supposed to have been removed in `3.10.0`)
+  * Remove ellipsis animation from 'X is typing...' text
+  * Theme will no longer be applied to Account, RTC, or Settings button if Dark Mode is not enabled
+  * Enable dark mode warning banner not displaying
+  * Remove border-radius from embedded images, videos
+* **Notes** (3)
+  * The usage of Accent colours in the guild and channels lists has changed. Previously the Accent colour was used to indicate a guild or channel had unread messages. Now the Accent colour will indicate your currently selected guild or channel. This is to maintain consistency with how Accent colours are used.
+  * Microphone and speaker controls are now hidden when you are not connected to a voice server
+  * The `voice` CSS variable colour is now used to indicate where you are connected to a voice channel. The default colour is *Turf Green* to match your PTT lamp.
+
 #### 3.10.1
 * **Enhancements** (1)
   * Increased spacing between buttons and the searchbar when search is active
