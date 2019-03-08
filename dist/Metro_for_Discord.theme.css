@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.3"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.4"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -82,7 +82,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.10.3"; }
+  content: "Metro for Discord \A Version 3.10.4"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -594,6 +594,7 @@ body.bd-blue .app::before {
     height: 48px;
     position: absolute;
     bottom: 96px;
+    margin-bottom: 0;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;

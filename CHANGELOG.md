@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.4
+* **Fixes** (1)
+  * Remove bottom margin on add guild button
+
 #### 3.10.3
 * **Enhancements** (2)
   * Add hover state to 'return to connected voice channel' button in RTC
