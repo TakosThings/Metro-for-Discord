@@ -1,6 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.3
+* **Enhancements** (2)
+  * Add hover state to 'return to connected voice channel' button in RTC
+  * Adjust channel names colour
+* **Fixes** (2)
+  * Max capacity voice channel counter
+  * Rewrite guilds 💢
+* **Background Stuff** (1)
+  * Clean up of `/src/icons/_core.scss` file
+
 #### 3.10.2
 * **Enhancements** (10)
   * Removed help button from toolbar
