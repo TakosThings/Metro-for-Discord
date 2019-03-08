@@ -80,7 +80,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.10.3"; }
+  content: "Metro for Discord \A Version 3.10.4"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -582,6 +582,7 @@ div[class*="notice-"] {
     height: 48px;
     position: absolute;
     bottom: 96px;
+    margin-bottom: 0;
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
