@@ -28,6 +28,10 @@
         }
     }
 
+    // Remove default user settings icon
+    button[aria-label="User Settings"] div svg{
+        display: none;
+    }
 
     // Default state - No voice connection
     width: 48px;
