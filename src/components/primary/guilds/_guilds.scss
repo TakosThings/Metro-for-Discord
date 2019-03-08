@@ -1,78 +1,106 @@
-.theme-dark .guildsWrapper-5TJh6A{
+.theme-dark .wrapper-1Rf91z{
     width: 48px;
     background-color: $b1;
     border-radius: 0;
     
-    .guilds-1q_RqH{
+    // Remove padding
+    .scroller-2TZvBN{
         margin-bottom: 144px;
         padding: 0;
     }
 
-    // DMs
-    .dms-rcsEnV{
-        margin: 8px 0;
-        // We can afford these to be slightly larger
-        .avatarSmall-3ACRaI a{
-            background-size: 32px;
-            background-repeat: no-repeat;
-            clip-path: circle(12px at center);
-        }
-    }
-
-    // Home icon
-    .homeIcon-1FoKUJ{
-        margin: 0;
-        padding: 0;
-        background-color: transparent;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
-        g{
-            display: none;
-        }
-    }
-
-    // Separator
-    .guildSeparator-1X4GQ1{
-        display: none;
-    }
-
-    // Guild
-    .guild-1EfMGQ{
+    .container-1ETFDs,
+    .homeButton-2Cw51C{
         width: 48px;
         height: 48px;
-        margin-top: 0;
+        margin-bottom: 0;
         &:hover{
             background-color: $b4;
         }
-        &.unread-qLkInr{
+    }
+
+    // Home
+    .homeButton-2Cw51C{
+        background-color: transparent !important;
+        .homeIcon-tEMBK1{
+            background-color: transparent;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            g{
+                display: none;
+            }
+        }
+    }
+
+    .friendsOnline-2JkivW{
+        color: #FFF;
+        text-transform: none;
+    }
+    
+
+    // Guild, DM container
+    .container-2td-dC,
+    .container-1aNBdK{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 0;
+        &:hover{
+            background-color: $b3;
+        }
+
+        .wrapper-2lTRaf{
+            background-color: transparent;
+            // Select guilds with no icon set
+            &[style]{
+                background-color: transparent !important;
+            }
+        }
+        // Icon
+        .guildIcon-VlWW86,
+        .inner-1x-wIi{
+            width: 48px;
+            height: 48px;
+            background-size: 24px;
+            background-repeat: no-repeat;
+            clip-path: circle(12px at center); // Make icon circular
+            border-radius: 50%;
+        }
+        // DM Avatar
+        .avatar-3f3jk4{
+            width: 48px;
+            height: 48px;
+        }
+        // Unread indicator
+        &.unread-2OHH1w{
             &::before{
                 width: 4px;
-                height: 14px;
-                margin-top: -7px;
+                height: 12px;
                 left: 0;
                 background-color: #FFF;
                 border-radius: 0;
+                transition: none;
             }
         }
-        &.selected-ML3OIq{
-            color: var(--accent);
+        // Selected indicator
+        &.selected-nT-gM3{
+            // Make text accent colour if no icon is present
+            a .noIcon-1a_FrS{
+                color: var(--accent);
+            }
             &::before{
                 width: 4px;
-                height: 28px;
-                margin-top: -14px;
+                height: 24px;
                 left: 0;
+                margin-top: -12px;
                 background-color: var(--accent);
                 border-radius: 0;
-            }
-            // Change text to accent if no icon is present
-            .noIcon-1a_FrS{
-                color: var(--accent);
+                transition: none;
             }
         }
 
-        // Audio connected in guild
-        &.audio-3vVhBi{
+        // Voice connected
+        &.audio-2KA0-x{
             &::after{
                 width: 28px;
                 height: 28px;
@@ -84,38 +112,33 @@
                 border-radius: 50%;
             }
         }
-        
-
-        .guildInner-3DSoA4{
-            background-color: transparent !important;
-            border-radius: 0 !important;
-            a{
-                width: 48px;
-                height: 48px;
-            }
+        // Guild Badge
+        .badge-3dItlm{
+            right: 2px;
+            bottom: 2px;
+            max-width: 24px;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        
-        .guildIcon-CT-ZDq{
-            width: 48px;
-            height: 48px;
-            background-size: 24px;
-            background-repeat: no-repeat;
-            clip-path: circle(12px at center);
-            pointer-events: all;
+        // DM Badge
+        .badge-2_fwUZ{
+            top: 24px;
+            right: 2px;
         }
     }
-
-    // Badge
-    .badge-1GsMF2{
-        right: 2px;
-        bottom: 2px;
-        max-width: 24px;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    // DM container
+    // Why the fuck is this even set
+    .container-1aNBdK{
+        height: 48px !important;
     }
 
-    // Add
-    .guildsAdd-21_IdK{
+    // Guild Separator
+    .guildSeparator-3s64Iy{
+        display: none;
+    }
+
+    // Join server button
+    .circleIconButton-jET_ig{
         width: 48px;
         height: 48px;
         position: absolute;
@@ -129,27 +152,14 @@
         &:hover{
             background-color: $b3;
         }
-        .guildsAddInner-1KMFy-{
+        span{
             display: none;
         }
     }
 
-    // Server Discover
-    .guildsDiscover-oiBX_l{
-        display: none;
-    }
-
-    // New bar
+    // Unread notifications
     .unreadMentionsIndicatorBottom-BXS58x,
     .unreadMentionsIndicatorTop-gA6RCh{
-        padding: 0;
-    }
-    .bar-30k2ka{
-        background-color: $alert;
-        border-radius: 0;
-    }
-    // Bottom
-    .unreadMentionsIndicatorBottom-BXS58x{
-        bottom: 144px;
+        display: none;
     }
 }
