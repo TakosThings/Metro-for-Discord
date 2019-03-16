@@ -7,14 +7,23 @@
     padding: 0;
     background-color: $b1;
     .avatar-3JE4B3{
-        width: 24px;
-        height: 24px;
-        margin: 0 12px 97px 12px;
+        width: 48px;
+        height: 48px;
+        margin: 0 0 97px 0;
+        border-radius: 0;
+        &:hover{
+            background-color: $b3;
+        }
+        .inner-1W0Bkn{
+            width: 24px;
+            height: 24px;
+            margin: 12px 0 0 12px;
+        }
     }
     .status-2kJpnA{
         border: 0;
-        right: 0;
-        bottom: 0;
+        right: 10px;
+        bottom: 10px;
     }
     .accountDetails-3k9g4n{
         display: none;
