@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.5
+* **Fixes** (3)
+  * 'Add Server' tooltip appearing out of place
+  * Remove server discovery icon
+  * Add background state to user avatar in account area
+
 #### 3.10.4
 * **Fixes** (1)
   * Remove bottom margin on add guild button
