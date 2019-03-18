@@ -80,7 +80,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.10.4"; }
+  content: "Metro for Discord \A Version 3.10.5"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -577,11 +577,12 @@ div[class*="notice-"] {
     height: 48px !important; }
   .theme-dark .wrapper-1Rf91z .guildSeparator-3s64Iy {
     display: none; }
-  .theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig {
+  .theme-dark .wrapper-1Rf91z .scroller-2FKFPG > div[class=""] {
     width: 48px;
     height: 48px;
     position: absolute;
-    bottom: 96px;
+    bottom: 96px; }
+  .theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig {
     margin-bottom: 0;
     background-color: transparent;
     background-position: center;
@@ -593,6 +594,8 @@ div[class*="notice-"] {
       background-color: #333333; }
     .theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig span {
       display: none; }
+  .theme-dark .wrapper-1Rf91z .container-11WMXy {
+    display: none; }
   .theme-dark .wrapper-1Rf91z .unreadMentionsIndicatorBottom-BXS58x,
   .theme-dark .wrapper-1Rf91z .unreadMentionsIndicatorTop-gA6RCh {
     display: none; }
@@ -875,13 +878,20 @@ div[class*="notice-"] {
   background-color: #191919;
   width: 48px; }
   .theme-dark div[class^="channels-"] .container-2Thooq .avatar-3JE4B3 {
-    width: 24px;
-    height: 24px;
-    margin: 0 12px 97px 12px; }
+    width: 48px;
+    height: 48px;
+    margin: 0 0 97px 0;
+    border-radius: 0; }
+    .theme-dark div[class^="channels-"] .container-2Thooq .avatar-3JE4B3:hover {
+      background-color: #333333; }
+    .theme-dark div[class^="channels-"] .container-2Thooq .avatar-3JE4B3 .inner-1W0Bkn {
+      width: 24px;
+      height: 24px;
+      margin: 12px 0 0 12px; }
   .theme-dark div[class^="channels-"] .container-2Thooq .status-2kJpnA {
     border: 0;
-    right: 0;
-    bottom: 0; }
+    right: 10px;
+    bottom: 10px; }
   .theme-dark div[class^="channels-"] .container-2Thooq .accountDetails-3k9g4n {
     display: none; }
   .theme-dark div[class^="channels-"] .container-2Thooq button {
