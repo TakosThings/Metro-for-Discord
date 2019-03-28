@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.6
+* **Fixes** (1)
+  * Add server button position
+
 #### 3.10.5
 * **Fixes** (3)
   * 'Add Server' tooltip appearing out of place
