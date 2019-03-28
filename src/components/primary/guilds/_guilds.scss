@@ -137,15 +137,11 @@
         display: none;
     }
 
-    // Select the class which contains the 'add server' button
-    // Fixes tooltip appearing in wrong place when 'add server' button is hovered
-    .scroller-2FKFPG > div[class=""]{
-        width: 48px;
-        height: 48px;
+    // Join server button
+    .createJoinContainer-2Av064{
         position: absolute;
         bottom: 96px;
     }
-    // Join server button
     .circleIconButton-jET_ig{
         margin-bottom: 0;
         background-color: transparent;
