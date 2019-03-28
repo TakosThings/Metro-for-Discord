@@ -80,7 +80,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.10.5"; }
+  content: "Metro for Discord \A Version 3.10.6"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -577,9 +577,7 @@ div[class*="notice-"] {
     height: 48px !important; }
   .theme-dark .wrapper-1Rf91z .guildSeparator-3s64Iy {
     display: none; }
-  .theme-dark .wrapper-1Rf91z .scroller-2FKFPG > div[class=""] {
-    width: 48px;
-    height: 48px;
+  .theme-dark .wrapper-1Rf91z .createJoinContainer-2Av064 {
     position: absolute;
     bottom: 96px; }
   .theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig {
