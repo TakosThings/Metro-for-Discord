@@ -3,6 +3,12 @@
     background-color: $b1;
     border-radius: 0;
 
+    // Remove padding
+    .scroller-2TZvBN{
+        margin-bottom: 144px;
+        padding: 0;
+    }
+
     // Item
     .listItem-2P_4kh{
         width: 48px;
@@ -114,5 +120,12 @@
         svg path{
             display: none;
         }
+    }
+
+    // Unread notification bars
+    // These break due to our fixed buttons at the bottom, so we remove them
+    .unreadMentionsIndicatorTop-gA6RCh,
+    .unreadMentionsIndicatorBottom-BXS58x{
+        display: none;
     }
 }
