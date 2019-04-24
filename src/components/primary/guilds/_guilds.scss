@@ -2,180 +2,117 @@
     width: 48px;
     background-color: $b1;
     border-radius: 0;
-    
-    // Remove padding
-    .scroller-2TZvBN{
-        margin-bottom: 144px;
-        padding: 0;
+
+    // Item
+    .listItem-2P_4kh{
+        width: 48px;
+        margin: 0;
+        &:hover{
+            background-color: $b3;
+        }
+    }
+    .wrapper-25eVIn{
+        .icon-27yU2q{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+        .acronym-2mOFsV{
+            width: 24px;
+            height: 24px;
+            background-color: transparent;
+            color: #FFF;
+            font-size: 15px;
+            font-weight: $fwui;
+            &.selected-bZ3Lue{
+                color: var(--accent);
+            }
+        }
     }
 
-    .container-1ETFDs,
-    .homeButton-2Cw51C{
-        width: 48px;
-        height: 48px;
-        margin-bottom: 0;
-        &:hover{
-            background-color: $b4;
+    // Pill
+    .item-2hkk8m{
+        width: 4px;
+        height: 12px !important;
+        margin-left: 0;
+        border-radius: 0;
+        transform: none !important;
+        // Guild is selected
+        &[style*="opacity: 1;"]{
+            height: 24px !important;
+            background-color: var(--accent);
+            transform: none !important;
         }
     }
 
     // Home
-    .homeButton-2Cw51C{
-        background-color: transparent !important;
-        .homeIcon-tEMBK1{
-            background-color: transparent;
+    .button-OhfaWu{
+        background-color: transparent;
+        svg{
             background-position: center;
             background-repeat: no-repeat;
             background-size: 24px;
-            g{
+            path{
                 display: none;
             }
         }
     }
 
-    .friendsOnline-2JkivW{
-        color: #FFF;
-        text-transform: none;
-    }
-    
-
-    // Guild, DM container
-    .container-2td-dC,
-    .container-1aNBdK{
-        width: 48px;
-        height: 48px;
-        margin-bottom: 0;
-        &:hover{
-            background-color: $b3;
-        }
-
-        .wrapper-2lTRaf{
-            background-color: transparent;
-            // Select guilds with no icon set
-            &[style]{
-                background-color: transparent !important;
-            }
-        }
-        // Icon
-        .guildIcon-VlWW86,
-        .inner-1x-wIi{
-            width: 48px;
-            height: 48px;
-            background-size: 24px;
-            background-repeat: no-repeat;
-            clip-path: circle(12px at center); // Make icon circular
-            border-radius: 50%;
-        }
-        // DM Avatar
-        .avatar-3f3jk4{
-            width: 48px;
-            height: 48px;
-        }
-        // Unread indicator
-        &.unread-2OHH1w{
-            &::before{
-                width: 4px;
-                height: 12px;
-                left: 0;
-                background-color: #FFF;
-                border-radius: 0;
-                transition: none;
-            }
-        }
-        // Selected indicator
-        &.selected-nT-gM3{
-            // Make text accent colour if no icon is present
-            a .noIcon-1a_FrS{
-                color: var(--accent);
-            }
-            &::before{
-                width: 4px;
-                height: 24px;
-                left: 0;
-                margin-top: -12px;
-                background-color: var(--accent);
-                border-radius: 0;
-                transition: none;
-            }
-        }
-
-        // Voice connected
-        &.audio-2KA0-x{
-            &::after{
-                width: 28px;
-                height: 28px;
-                top: 8px;
-                right: 8px;
-                background-color: transparent;
-                background-image: none;
-                border: 2px solid var(--voice);
-                border-radius: 50%;
-            }
-        }
-        // Guild Badge
-        .badge-3dItlm{
-            right: 2px;
-            bottom: 2px;
-            max-width: 24px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-        // DM Badge
-        .badge-2_fwUZ{
-            top: 24px;
-            right: 2px;
-        }
-    }
-
-    // Offline Guild
-    .guildsError-b7zR5H{
-        width: 48px;
-        height: 48px;
-        background-color: $alert;
-        border: 0;
-        border-radius: 0;
-        font-weight: $fwui;
-    }
-
-    // DM container
-    // Why the fuck is this even set
-    .container-1aNBdK{
-        height: 48px !important;
-    }
-
-    // Guild Separator
+    // Separator
     .guildSeparator-3s64Iy{
         display: none;
     }
-
-    // Join server button
-    .createJoinContainer-2Av064{
+    
+    // Add Guild
+    .listItem-2P_4kh:nth-last-child(2){
         position: absolute;
         bottom: 96px;
-    }
-    .circleIconButton-jET_ig{
-        margin-bottom: 0;
-        background-color: transparent;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
-        border: 0;
-        border-radius: 0;
-        &:hover{
-            background-color: $b3;
-        }
-        span{
+        .pill-3YxEhL{
             display: none;
         }
-    }
-    // Server Discovery
-    .container-11WMXy{
-        display: none;
+        .circleIconButton-jET_ig{
+            background-color: transparent;
+            color: #FFF;
+        }
     }
 
-    // Unread notifications
-    .unreadMentionsIndicatorBottom-BXS58x,
-    .unreadMentionsIndicatorTop-gA6RCh{
+    // Remove Discover Guilds
+    .listItem-2P_4kh:last-child{
         display: none;
+    }
+    
+    //badge
+    .lowerBadge-29hYVK,
+    .upperBadge-2XnnGB{
+        right: 4px;
+        transform: none !important;
+    }
+    .upperBadge-2XnnGB{
+        top: 4px;
+    }
+    .lowerBadge-29hYVK{
+        bottom: 4px;
+    }
+    .numberBadge-2s8kKX{
+        min-width: 20px;
+        min-height: 20px;
+        background-color: #003b67 !important;
+        border: 2px solid #1a4e76;
+    }
+    
+    // Voice connected
+    .upperBadge-2XnnGB{
+        top: 9px;
+        right: 9px;
+    }
+    .iconBadge-2wi9r4{
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid var(--voice);
+        border-radius: 50%;
+        svg path{
+            display: none;
+        }
     }
 }
