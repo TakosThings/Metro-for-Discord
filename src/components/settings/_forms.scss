@@ -142,11 +142,12 @@ h5 ~ div[class^="container-"][class*="container-"]{
 }
 
 // Buttons
-button[class*="button-"]{
-    padding: 9px 12px 10px;
-    font-size: 15px;
-    line-height: 1.3333;
-}
+// DEBUG - THIS CODE IS CAUSING CONFLICTS WITH OTHER UNRELATED ELEMENTS
+// button[class*="button-"]{
+//     padding: 9px 12px 10px;
+//     font-size: 15px;
+//     line-height: 1.3333;
+// }
 button[class*="button-"][class*="sizeSmall-"],
 button[class*="button-"][class*="sizeMedium-"],
 button[class*="button-"][class*="sizeXlarge-"]{
