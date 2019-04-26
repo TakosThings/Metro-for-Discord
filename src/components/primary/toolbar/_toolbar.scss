@@ -1,87 +1,106 @@
-.theme-dark .chat-3bRxxu .titleWrapper-1l0xT9{
-    // Remove divider
-    .divider-2PMBlV{
-        display: none;
-    }
-    .title-3qD0b-,
-    .titleCall-_b9o8P{
-        padding: 0 0 0 12px;
-        background-color: $b1;
-        box-shadow: none;
+.theme-dark .chat-3bRxxu .container-1r6BKw{
+    // LTR
 
-        // Sticky hover killer
-        &::after{
-            content: "";
-            width: 5px;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
+    padding: 0 0 0 12px;
+    background-color: $b1;
+    box-shadow: none;
 
-        // Channel title
-        .titleText-3X-zRE{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-
-            &::before{
-                content: "#";
-            }
-            // Hash
-            svg{
-                display: none;
-            }
-        }
-
-        // AKA tag
-        .aka-1mqp34{
-            border-radius: 0;
-        }
-
-        // Channel topic
-        .topic-2QX7LI{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-        }
-
-        // Buttons
-        svg{
-            width: 68px;
-            height: 48px;
-            opacity: 1;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            &:hover{
-                background-color: rgba(255,255,255,.1);
-            }
-            path{
-                display: none;
-            }
-            &:last-of-type{
-                margin-right: 0;
-            }
-        }
-        .iconMargin-2YXk4F{
-            height: 48px;
-            margin: 0 2px;
-        }
-        // Pinned messages indicator
-        .iconBadgeWrapper-1vhG5S{
-            background-color: $alert;
-            span{
-                display: none;
-            }
-        }
-        // Members list toggled on
-        .iconActive-AKd_jq{
-            background-color: var(--accent);
-        }
-        // Remove help button
-        a[href="https://support.discordapp.com"]{
+    // Channel name, MOTD
+    .children-19S4PO{
+        // Remove hash symbol
+        .iconWrapper-2OrFZ1{
             display: none;
         }
+        // Title
+        .title-29uC1r{
+            margin-right: 12px;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            line-height: 48px;
+        }
+        // Remove divider
+        .divider-3FBTu8{
+            display: none;
+        }
+
+        // AKA
+        .akaBadge-1M-1Gw{
+            padding: 4px 6px;
+            margin: 0;
+            border-radius: 0;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+        // Other nicknames
+        .nicknames-1XK4Zt{
+            color: #FFF;
+            font-size: $fsui;
+        }
+        // Topic
+        .topic-TCb_qw{
+            margin: 0;
+            color: #FFF;
+            font-size: $fsui;
+            line-height: 48px;
+        }
+        // Remove end gradient
+        &::after{
+            display: none;
+        }
+    }
+
+    // Buttons
+    .toolbar-1t6TWx{
+        .iconWrapper-2OrFZ1{
+            height: 48px;
+            margin: 0;
+            > svg.icon-22AiRD{
+                width: 68px;
+                height: 48px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px;
+                & > path{
+                    display: none;
+                }
+            }
+            &:hover{
+                background-color: $b3;
+            }
+            &.selected-1GqIat{
+                background-color: var(--accent);
+            }
+
+            // Pinned Messages button
+            > svg:not([name]){
+                width: 68px;
+                height: 48px;
+                > foreignObject{
+                    mask: none;
+                    > svg{
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: 12px;
+                        > path{
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .iconBadge-qZ4Ksk{
+                width: 100%;
+                height: 100%;
+                right: 0;
+                bottom: 0;
+                background-color: $alert;
+                border-radius: 0;
+                z-index: -1;
+            }
+        }
+    }
+
+    // Remove help button
+    .anchor-3Z-8Bb{
+        display: none;
     }
 }
