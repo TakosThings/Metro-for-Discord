@@ -15,6 +15,7 @@
         }
         span{
             font-size: $fsheader;
+            font-weight: $fwheader;
         }
     }
 
@@ -30,242 +31,149 @@
 
     // Channel tree root
     .containerDefault-3GGEv_,
-    .containerDragAfter-3TEhpe,
-    .containerDragBefore-3Dzc5x,
-    .containerUserOver-1Tcb7l{
-        padding-top: 0;
-        transition: none;
-    }
-    .wrapperCollapsed-3Fbxl6,
-    .wrapperDefault-10Jfvz,
-    .wrapperHovered-28fu1D,
-    .wrapperHoveredCollapsed-1PADEo,
-    .wrapperMuted-3KeA2M,
-    .wrapperUnread-1JPWj3{
-        height: 42px;
-        padding-left: 29px;
-    }
-    .wrapperHovered-28fu1D,
-    .wrapperHoveredCollapsed-1PADEo{
-        background-color: $b4;
-    }
+    .containerDragBefore-3Dzc5x{
+        .wrapper-CU3qI5{
+            height: 30px;
+            padding-left: 36px;
+            padding-right: 12px;
+            color: #FFF;
+            // Collapse icon
+            .icon-WnO6o2{
+                width: 7px;
+                height: 7px;
+                top: 9px;
+                left: 14px;
+                border-right: 1px solid #FFF;
+                border-bottom: 1px solid #FFF;
+                transform: rotate(45deg);
+                path{
+                    display: none;
+                }
+            }
+            .name-IbjUBS{
+                font-size: $fsui;
+                font-weight: $fwui;
+                line-height: 1.3;
+                text-transform: none;
+            }
 
-    // Colapse icon
-    .iconCollapsed-3hFp_8,
-    .iconDefault-3Gr8d2,
-    .iconHovered-2L3-fB,
-    .iconHoveredCollapsed-3caIIZ,
-    .iconMuted-1HVBGH,
-    .iconUnread-2eGkvX{
-        width: 9px;
-        height: 9px;
-        top: 16px;
-        left: 10px;
-        transform: rotate(45deg);
-        path{
-            display: none;
-        }
-    }
-    .iconDefault-3Gr8d2,
-    .iconHovered-2L3-fB{
-        top: 14px;
-    }
-    // Collapse icon
-    .directionDown-26e7eE{
-        border-right: 1px solid #FFF;
-        border-bottom: 1px solid #FFF;
-    }
-    // Collapsed icon
-    .directionRight-O8AY4M{
-        border-top: 1px solid #FFF;
-        border-right: 1px solid #FFF;
-    }
-
-    // Hide 'Create channel icon when category is not hovered
-    .wrapperDefault-10Jfvz{
-        &:hover{
-            .addButton-1BORro{
-                display: block;
+            &.collapsed-4WdoJ7{
+                .icon-WnO6o2{
+                    top: 11px;
+                    left: 12px;
+                    transform: rotate(-45deg);
+                }
             }
         }
-        .addButton-1BORro{
-            display: none;
+    }
+
+    // Text Channel
+    .containerDefault-1ZnADq{
+        &:hover{
+            background-color: $b3;
+            .content-3at_AU{
+                background-color: transparent;
+            }
+        }
+        .wrapper-1ucjTd{
+            height: 30px;
+        }
+        .content-3at_AU{
+            height: 30px;
+            margin: 0 0 0 24px;
+            padding: 0 8px 0 0;
+            background-color: transparent;
+            > svg:not([name="Speaker"]){
+                margin-right: 8px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 18px;
+                filter: hue-rotate(35deg);
+                path:first-child{
+                    display: none;
+                }
+            }
+            > svg[name="Speaker"]{
+                margin-right: 8px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 18px;
+                path:first-child{
+                    display: none;
+                }
+            }
+            &:hover{
+                background-color: transparent;
+            }
+            // Channel name
+            .name-3_Dsmg{
+                font-size: $fsui;
+                font-weight: $fwui;
+            }
+        }
+        // Muted channel
+        .modeMuted-3osy7j{
+            svg{
+                filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
+            }
+            .name-3_Dsmg{
+                color: $alert;
+            }
+        }
+        // Selected channel
+        .modeSelected-1zApJ_{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 15px;
+                top: 50%;
+                margin-top: -8px;
+                background-color: var(--accent);
+            }
+            .name-3_Dsmg{
+                color: var(--accent);
+            }
+        }
+        // Unread dot
+        .unread-3zKkbm{
+            height: 15px;
+            width: 3px;
+            margin-top: -8px;
+            border-radius: 0;
+        }
+        // Connected to voice
+        .modeConnected-2IEL4z{
+            &::before{
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 15px;
+                top: 50%;
+                margin-top: -8px;
+                background-color: var(--voice);
+            }
+            .name-3_Dsmg{
+                color: var(--voice);
+            }
         }
     }
-    
-    // Category name
-    .nameCollapsed-34uFWo,
-    .nameDefault-2DI02H,
-    .nameHovered-1gxhWH,
-    .nameHoveredCollapsed-2orEWB,
-    .nameMuted-1MCOt4,
-    .nameUnread-njOjIS{
-        font-size: 15px;
-        line-height: 42px;
-        text-transform: none;
-        vertical-align: middle;
-    }
-    .nameCollapsed-34uFWo,
-    .nameDefault-2DI02H,
-    .nameHovered-1gxhWH,
-    .nameHoveredCollapsed-2orEWB,
-    .nameUnread-njOjIS{
-        color: #FFF;
-        font-weight: normal;
-    }
 
-    // Muted category
-    // De-emphasize muted categories
-    .wrapperMuted-3KeA2M{
-        opacity: .6;
+    // Voice channel
+    // Voice user
+    .userSmall-2t9H7n{
+        height: 30px;
     }
-    // Collapse arrow
-    .iconMuted-1HVBGH{
-        border-color: $alert;
+    .voiceUser-14U_Ns{
+        &:hover .content-3xS9Lh{
+            background-color: transparent;
+        }
     }
-    // Name
-    .nameMuted-1MCOt4{
-        color: $alert;
-        font-weight: normal;
-        text-decoration: line-through;
-    }
-
-    // CHANNELS
-    // Channel
-    .wrapper-KpKNwI{
-        height: 32px;
-    }
-    .content-20Aix8{
+    .content-3xS9Lh{
         margin: 0;
-        padding: 0 8px 0 12px;
-        border-radius: 0;
-    }
-    .name-3M0b8v{
-        font-size: $fsui;
-        font-weight: $fwui;
-    }
-    .nameDefaultText-24KCy5,
-    .nameDefaultVoice-3WUH7s,
-    .nameLockedText-3pqQcL,
-    .nameLockedVoice-26MhB1{
-        color: rgba(255,255,255,.6);
-    }
-    
-    // Remove background from selected channels
-    .contentSelectedText-3wUhMi,
-    .contentSelectedVoice-1WDIBM{
-        background-color: transparent;
-    }
-
-    // Unread channel
-    // Tab
-    .unread-1Dp-OI{
-        width: 4px;
-        height: 14px;
-        margin-top: -7px;
-        background-color: #FFF;
-        border-radius: 0;
-    }
-    // Icon
-    .colorUnreadText-2t7XRb,
-    .colorHoveredText-OZnAgu{
-        color: #FFF;
-        opacity: 1;
-        path{
-            opacity: 1;
+        .usernameFont-aFalyR{
+            font-size: $fsui;
+            font-weight: $fwui;
         }
-    }
-    // Name
-    .nameUnreadText-DfkrI4{
-        color: #FFF;
-    }
-
-    // Selected channel
-    // Tab
-    .wrapperSelectedText-3dSUjC{
-        &::before{
-            content: "";
-            width: 4px;
-            height: 16px;
-            position: absolute;
-            top: 8px;
-            left: 0;
-            background-color: var(--accent);
-        }
-    }
-    // Icon
-    .colorSelectedText-1y4Wvs{
-        color: var(--accent);
-        opacity: 1;
-        path{
-            opacity: 1;
-        }
-    }
-    // Name
-    .nameSelectedText-sp_EUw{
-        color: var(--accent);
-    }
-
-    // Muted channel
-    // De-emphasize muted channels
-    .wrapperMutedText-1YBpvv{
-        opacity: .6;
-    }
-    // Icon
-    .colorMutedText-36M8WR{
-        color: $alert;
-        opacity: 1;
-        path{
-            opacity: 1;
-        }
-    }
-    // Name
-    .nameMutedText-3Vj4bM{
-        color: $alert;
-        text-decoration: line-through;
-    }
-  
-    // Connected voice channel
-    // Tab
-    .wrapperConnectedVoice-2mvQJY{
-        &::before{
-            content: "";
-            width: 4px;
-            height: 16px;
-            position: absolute;
-            top: 8px;
-            left: 0;
-            background-color: var(--voice);
-        }
-    }
-    // Icon
-    // Connected voice channel icon
-    .colorConnectedVoice-3kyvUN{
-        color: var(--voice);
-        opacity: 1;
-        path{
-            opacity: 1;
-        }
-    }
-    // Name
-    .nameConnectedVoice-MHUX5F{
-        color: var(--voice);
-    }
-    
-    // Channel hover/active
-    .contentHoveredText-2D9B-x,
-    .contentHoveredVoice-3p_NEO{
-        background-color: $b3;
-    }
-    .nameHoveredText-1uO31y{
-        color: #FFF;
-    }
-
-    // Capacity Voice channel counter
-    .wrapper-2NJDcI{
-        background-color: $b3;
-        color: rgba(255,255,255,.6);
-        font-family: $mono;
-        border-radius: 0;
     }
 }
