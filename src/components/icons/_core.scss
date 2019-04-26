@@ -44,6 +44,16 @@
         }
     }
 
+    // Channel icons
+    .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU{
+        > svg:not([name="Speaker"]){
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAB5JREFUeAFjGGqAkRFGD00FjFgBQQXDJBxGw2GIAQBOLwChRvY3oQAAAABJRU5ErkJggg==);
+        }
+        > svg[name="Speaker"]{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACTwAAAk8B95E4kAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGISURBVFiF7Ze7SsRQFEUTH2ChYIqZkcwUNn6B/oCCvVopWlpZiJWN/oBf4F/YKViIWDuFr4g6oIOFWIlgYyEui9nBS5xHMsnkIsxpbs7m5OyVcB+J4/TjvwcwYdO8DNRsmZeAAMCGeRl4QJG3uW+a5woAFIFr+d52AgB2gKmszAuGeaA50BIAWDNqx9Ka+8C9Gp4DnvR2ACOqBdhLatgqboBStC5y7y4wq+tp4Bv4AIppAYJokygAMC/pFRiVdiBtIzFA0jrABU4lb0lbUX7UcwBpi5KPlVeU1/MCmJT8qHwI+AI+ATfaYyA2VfwITQaN3HUcB9d1/zxULwBmND5prMjnpVlxpgB6xZtKDzXOabxI0qhZXMVYhguS3oFxaSfS1tMCQIeNiMYy3AeWlYf7whvaPbsKLaWamgUhRLvVQuPseFbJdtfmRsMyv+dBnMNoicY2fAYMpwZQUx+4k2+c43g1Om+ygCgAl+bEyNQgJoQHVK0BCMLeR6kB4QFVawCCsPdj0o8s4gfs2btk5lxAHQAAAABJRU5ErkJggg==);
+        }
+    }
+
     // RTC
     .container-1UB9sr{
         // Connection Info
