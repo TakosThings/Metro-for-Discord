@@ -1,4 +1,4 @@
-.chat-3bRxxu div[class^="titleWrapper"] div[class^="search-"]{
+.theme-dark .chat-3bRxxu .container-1r6BKw .search-36MZv-{
     margin: 0;
     .searchBar-3dMhjb{
         width: 64px;
@@ -13,7 +13,7 @@
             background-color: $b3;
         }
         .public-DraftEditorPlaceholder-root,
-        .searchBarIcon-1J6sKG{
+        .icon-38sknP{
             display: none;
         }
     }
@@ -33,8 +33,8 @@
         border-color: var(--accent);
     }
 
-    .search-2oPWTC.open-6_Y_aH .searchBarIcon-1J6sKG,
-    .search-2oPWTC.focused-31_ccS .searchBarIcon-1J6sKG,
+    .search-2oPWTC.open-6_Y_aH .icon-38sknP,
+    .search-2oPWTC.focused-31_ccS .icon-38sknP,
     .search-2oPWTC.open-6_Y_aH .searchBar-3dMhjb .public-DraftEditorPlaceholder-root,
     .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb .public-DraftEditorPlaceholder-root{
         display: block;
@@ -57,7 +57,7 @@
         font-size: $fsui;
         font-weight: $fwui;
     }
-    .search-2oPWTC .searchBar-3dMhjb .icon{
+    .search-2oPWTC .searchBar-3dMhjb .icon-3cZ1F_{
         top: 5px;
     }
 
