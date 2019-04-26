@@ -70,21 +70,18 @@
     }
     
     // Add Guild
-    .listItem-2P_4kh:nth-last-child(2){
-        position: absolute;
-        bottom: 96px;
-        .pill-3YxEhL{
-            display: none;
-        }
-        .circleIconButton-jET_ig{
-            background-color: transparent;
-            color: #FFF;
-        }
+    .circleIconButton-jET_ig{
+        background-color: transparent;
+        color: #FFF;
     }
 
-    // Remove Discover Guilds
-    .listItem-2P_4kh:last-child{
-        display: none;
+    // Offline
+    .guildsError-b7zR5H{
+        background-color: $alert;
+        border: 0;
+        border-radius: 0;
+        transition: none;
+        font-weight: $fwui;
     }
     
     //badge
