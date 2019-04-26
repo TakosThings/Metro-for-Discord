@@ -65,6 +65,10 @@
                 }
             }
         }
+        // Add channel to tree button
+        svg[name="PlusAlt"]{
+            opacity: .5;
+        }
     }
 
     // Text Channel
@@ -143,7 +147,7 @@
             margin-top: -8px;
             border-radius: 0;
         }
-        // Connected to voice
+        // Connected to voice dot
         .modeConnected-2IEL4z{
             &::before{
                 content: "";
@@ -157,6 +161,10 @@
             .name-3_Dsmg{
                 color: var(--voice);
             }
+        }
+        // Channel actions (instant invite, settings)
+        .actionIcon-2Hi9ZG{
+            color: rgba($color: #FFF, $alpha: .5);
         }
     }
 
