@@ -1,75 +1,83 @@
-.theme-dark .container-3gCOGc .headerBar-UHpsPw{
+.theme-dark .container-3gCOGc .container-1r6BKw{
+    // LTR
+
     padding: 0;
     background-color: $b1;
-    border: 0;
     box-shadow: none;
-    
-    // Left buttons
-    .tabBar-1E2ExX{
-        .item-PXvHYJ{
+
+    // Left tabs
+    .children-19S4PO{
+        // Remove current icon, and 'channel' name
+        .iconWrapper-2OrFZ1{
+            display: none;
+        }
+        .title-29uC1r{
+            display: none;
+        }
+        .divider-3FBTu8{
+            display: none;
+        }
+        .tabBar-1E2ExX{
+            .item-3HpYcP{
+                min-width: 68px;
+                min-height: 48px;
+                margin: 0;
+                border-radius: 0;
+                color: #FFF;
+                font-size: $fsui;
+                font-weight: $fwui;
+                &.selected-3s45Ha{
+                    background-color: var(--accent);
+                }
+                &.primary-3j8BhM{
+                    background-color: transparent !important;
+                    &:hover{
+                        background-color: $b3 !important;
+                    }
+                }
+                &.primarySelected-3uHKZn{
+                    background-color: var(--accent) !important;
+                    color: #FFF !important;
+                }
+                &:not(.selected-3s45Ha):hover{
+                    background-color: $b3;
+                }
+            }
+        }
+        &::after{
+            display: none;
+        }
+    }
+
+    // Buttons
+    .toolbar-1t6TWx{
+        .iconWrapper-2OrFZ1{
+            height: 48px;
             margin: 0;
-            padding: 0 12px;
-            border-radius: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-            letter-spacing: normal;
-            line-height: 48px;
-            &:hover:not(.itemSelected-1qLhcL){
-                background-color: rgba(255,255,255,0.1);
+            > svg.icon-22AiRD{
+                width: 68px;
+                height: 48px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px;
+                & > path{
+                    display: none;
+                }
             }
-            &.itemSelected-1qLhcL{
-                background-color: var(--accent);
-                color: #FFF;
-            }
-            .badge-xFJoEU{
-                background-color: #003b67;
-                color: #FFF;
-                vertical-align: middle;
-            }
-        }
-        .separator-gCa7yv{
-            display: none;
-        }
-        &:hover:not(.selected) .badge-xFJoEU{
-            color: #FFF;
-        }
-
-        // Add friend
-        .primary-3j8BhM{
-            background-color: transparent !important; // Apparently they think this is important...
             &:hover{
-                background-color: rgba(255,255,255,0.1) !important;
+                background-color: $b3;
+            }
+            &.selected-1GqIat{
+                background-color: var(--accent);
             }
         }
-        .primarySelected-3uHKZn{
-            background-color: var(--accent) !important;
-            color: #FFF !important;
+        .divider-3FBTu8{
+            display: none;
         }
     }
 
-    // Right buttons
-    .iconMargin-2YXk4F{
-        height: 48px;
-        margin: 0 2px;
-    }
-    svg[class*="icon-"]{
-        width: 68px;
-        height: 48px;
-        margin: 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
-        opacity: 1;
-        path{
-            display: none;
-        }
-        &:hover{
-            background-color: rgba(255,255,255,.1);
-        }
-    }
     // Remove help button
-    a[href="https://support.discordapp.com"]{
+    .anchor-3Z-8Bb{
         display: none;
     }
 }
