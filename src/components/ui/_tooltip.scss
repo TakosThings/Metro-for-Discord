@@ -1,4 +1,4 @@
-.tooltip-1OS-Ti{
+.theme-dark .tooltip-2QfLtc{
     padding: 7px 8px 8px;
     background-color: #191919;
     border: 1px solid rgba(255,255,255,0.3);
@@ -7,21 +7,21 @@
     font-size: $fschat;
     font-weight: $fwui;
     line-height: $lh;
-    &::after{
+    .tooltipPointer-3ZfirK{
         display: none;
-    }
-    &.tooltip-brand{
-        background-color: #191919;
     }
 }
 
 // Hide settings button tooltip
-.tooltip-1OS-Ti[style*="left: -23.0014px"],    // 110%
-.tooltip-1OS-Ti[style*="left: -23px;"],        // 100% - Default, 125%, 200
-.tooltip-1OS-Ti[style*="left: -22.5069px;"],   //  90%
-.tooltip-1OS-Ti[style*="left: -22.0059px;"],   //  80%
-.tooltip-1OS-Ti[style*="left: -22.5px;"],      //  75%, 150%, 175%
-.tooltip-1OS-Ti[style*="left: -22.5028px;"],   //  67%
-.tooltip-1OS-Ti[style*="left: -22px;"]{        //  50%
-    display: none;
+.theme-dark .layer-v9HyYc{
+    &[style*="left: -23.0014px"],    // 110%
+    &[style*="left: -23px;"],        // 100% - Default, 125%, 200
+    &[style*="left: -22.5069px;"],   //  90%
+    &[style*="left: -22.0059px;"],   //  80%
+    &[style*="left: -22.5px;"],      //  75%, 150%, 175%
+    &[style*="left: -22.5028px;"],   //  67%
+    &[style*="left: -22px;"]{        //  50%
+        display: none;
+    }
 }
+
