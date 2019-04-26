@@ -13,12 +13,7 @@
 
     // Header
     header{
-        margin: 0;
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        opacity: 1;
-        font-size: $fsheader;
-        font-weight: $fwheader;
-        text-transform: none;
+        display: none;
     }
 
     // Tabs
