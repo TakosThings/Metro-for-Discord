@@ -115,6 +115,9 @@
             font-weight: $fwui;
             text-transform: none;
         }
+        button:last-child{
+            display: none;
+        }
     }
     .jumpToPresentBar-9P20AM{
         background-color: var(--accent);
@@ -127,6 +130,9 @@
             font-size: $fsui;
             font-weight: $fwui;
             text-transform: none;
+        }
+        button:last-child{
+            display: none;
         }
     }
 
