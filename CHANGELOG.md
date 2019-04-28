@@ -1,6 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.7
+* **Enhancements** (1)
+  * Remove unneeded header in Direct Messages list
+* **Fixes** (2)
+  * Guilds, Channels list reverted to default style
+  * Toolbars reverted to default style
+* **Current Issues** (2)
+  * Server discovery button can't be removed without leaving a blank position in the Guilds list. It will stay for now, but the server discovery page will not be themed.
+  * Add server button cannot be fixed to bottom of guilds list as it was previously.
+
 #### 3.10.6
 * **Fixes** (1)
   * Add server button position
