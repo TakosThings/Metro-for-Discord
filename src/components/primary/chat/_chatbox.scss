@@ -173,6 +173,7 @@
         font-size: 11px;
         line-height: 20px;
         justify-content: flex-end;
+        pointer-events: none;
         span[class*="ellipsis-"]{
             display: none;
         }
