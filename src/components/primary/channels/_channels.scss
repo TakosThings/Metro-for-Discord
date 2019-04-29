@@ -90,24 +90,9 @@
             margin: 0 0 0 24px;
             padding: 0 8px 0 0;
             background-color: transparent;
-            > svg:not([name="Speaker"]){
+            > svg{
                 margin-right: 8px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 18px;
-                filter: hue-rotate(35deg);
-                path:first-child{
-                    display: none;
-                }
-            }
-            > svg[name="Speaker"]{
-                margin-right: 8px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 18px;
-                path:first-child{
-                    display: none;
-                }
+                color: rgba($color: #FFF, $alpha: .5);
             }
             &:hover{
                 background-color: transparent;
