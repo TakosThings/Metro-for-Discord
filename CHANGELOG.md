@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.8
+* **Enchancements** (1)
+  * Make connected voice and selected text channel icons use accent colour
+* **Fixes** (2)
+ * Remove border radius on channels list
+ * Private voice channels had hash symbol instead of voice icon
+
 #### 3.10.7
 * **Enhancements** (1)
   * Remove unneeded header in Direct Messages list
