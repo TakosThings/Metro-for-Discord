@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.7"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.8"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -575,7 +575,7 @@ body.bd-blue .app::before {
   .theme-dark div[class^="channels-"] .container-2Thooq > div[class*="noWrap-"] > div ~ div ~ button[class*="button"]:hover {
     background-color: #333333; }
 
-.base-3dtUhz {
+.platform-win .base-3dtUhz {
   border-radius: 0; }
 
 .theme-dark .channels-Ie2l6A header {
@@ -644,21 +644,9 @@ body.bd-blue .app::before {
   margin: 0 0 0 24px;
   padding: 0 8px 0 0;
   background-color: transparent; }
-  .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg:not([name="Speaker"]) {
+  .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg {
     margin-right: 8px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 18px;
-    filter: hue-rotate(35deg); }
-    .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg:not([name="Speaker"]) path:first-child {
-      display: none; }
-  .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg[name="Speaker"] {
-    margin-right: 8px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 18px; }
-    .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg[name="Speaker"] path:first-child {
-      display: none; }
+    color: rgba(255, 255, 255, 0.5); }
   .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU:hover {
     background-color: transparent; }
   .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU .name-3_Dsmg {
@@ -681,6 +669,7 @@ body.bd-blue .app::before {
   margin-top: -8px;
   background-color: var(--accent); }
 
+.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeSelected-1zApJ_ svg.icon-1_QxNX,
 .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeSelected-1zApJ_ .name-3_Dsmg {
   color: var(--accent); }
 
@@ -699,6 +688,7 @@ body.bd-blue .app::before {
   margin-top: -8px;
   background-color: var(--voice); }
 
+.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeConnected-2IEL4z svg.icon-1_QxNX,
 .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeConnected-2IEL4z .name-3_Dsmg {
   color: var(--voice); }
 
@@ -4923,12 +4913,6 @@ div[class^="emojiPicker"] {
 .theme-dark .chat-3bRxxu .title-3qD0b- svg[name="Nova_ChatNew"],
 .theme-dark .container-3gCOGc .container-1r6BKw svg[name="Nova_ChatNew"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwQFBgcJCfoK+wv8DP0N/g7/AJGSj8AAAAv0lEQVR4Ac3RUYrDMAyEYY27zrZp6jT2/ve/6oKrYBDOe79nwcwg+zrpeRzPZJdSA2jXFxtFKmx25Q+ZiWOa3R7pc5Colh5tdBnZWnlJL9bY5cxeb3S3NXbx7NboWotdPBtKlnKBs8vJs7lbd8e7jJJ0xVyhkzntdNncD91+Xrypi2zZxi+2bMqV3bpfqma/UGXxxDz/RfZWcPGLBPFZcX+0xv1RCvsj7WF/9KZm+f6Zhaqxf6KQx/4Z0Nj/Vf4BRpsQfPeA1cQAAAAASUVORK5CYII=) !important; }
-
-.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg:not([name="Speaker"]) {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAB5JREFUeAFjGGqAkRFGD00FjFgBQQXDJBxGw2GIAQBOLwChRvY3oQAAAABJRU5ErkJggg==); }
-
-.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .content-3at_AU > svg[name="Speaker"] {
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAACTwAAAk8B95E4kAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGISURBVFiF7Ze7SsRQFEUTH2ChYIqZkcwUNn6B/oCCvVopWlpZiJWN/oBf4F/YKViIWDuFr4g6oIOFWIlgYyEui9nBS5xHMsnkIsxpbs7m5OyVcB+J4/TjvwcwYdO8DNRsmZeAAMCGeRl4QJG3uW+a5woAFIFr+d52AgB2gKmszAuGeaA50BIAWDNqx9Ka+8C9Gp4DnvR2ACOqBdhLatgqboBStC5y7y4wq+tp4Bv4AIppAYJokygAMC/pFRiVdiBtIzFA0jrABU4lb0lbUX7UcwBpi5KPlVeU1/MCmJT8qHwI+AI+ATfaYyA2VfwITQaN3HUcB9d1/zxULwBmND5prMjnpVlxpgB6xZtKDzXOabxI0qhZXMVYhguS3oFxaSfS1tMCQIeNiMYy3AeWlYf7whvaPbsKLaWamgUhRLvVQuPseFbJdtfmRsMyv+dBnMNoicY2fAYMpwZQUx+4k2+c43g1Om+ygCgAl+bEyNQgJoQHVK0BCMLeR6kB4QFVawCCsPdj0o8s4gfs2btk5lxAHQAAAABJRU5ErkJggg==); }
 
 .theme-dark .container-1UB9sr div[class^="buttonInfo"] {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAQlBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8IX9KGAAAAFXRSTlMAECAwQE9Qb3B/gI+Qn6C/wM/Q7/BdGazpAAAAy0lEQVR42r2TSxKEIAxEBcYfoxKFd/+rDotRQKhyZ68iSbqbELt3oUe3w+5G3Ux/HBecqfMLhG2ICTNsAb63tHIEq64vG3CqKBBCwWpiRckf1I0ysGT+Un/OYTIBe4ZwRjaJ6EwAMpFzHhNb18DGdCkMrYIB+UdHZgeSTfbbYR0/FjxJHA2TUJisrwmNa2p8a1Ae/TBqyR7L14/lyc6WJJIElnJhvLn1S9kg+Dmt3Bzzql5av/YmNverJ/EnGOGCmPaPM8kBh0y6exU/GUYNrK0FHlMAAAAASUVORK5CYII=);
