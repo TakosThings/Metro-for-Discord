@@ -129,13 +129,24 @@
                 color: var(--accent);
             }
         }
-        // Unread dot
-        .unread-3zKkbm{
-            height: 15px;
-            width: 3px;
-            margin-top: -8px;
-            border-radius: 0;
+        // Unread channel
+        .modeUnread-1zpFdA{
+            // Unread dot
+            .unread-3zKkbm{
+                height: 15px;
+                width: 3px;
+                margin-top: -8px;
+                background-color: #FFF;
+                border-radius: 0;
+            }
+            .content-3at_AU > svg{
+                color: #FFF;
+            }
+            .name-3_Dsmg{
+                color: #FFF;
+            }
         }
+        
         // Connected to voice dot
         .modeConnected-2IEL4z{
             &::before{
