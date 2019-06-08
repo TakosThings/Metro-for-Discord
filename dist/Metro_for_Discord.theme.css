@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.8"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.10.9"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -82,7 +82,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.10.7"; }
+  content: "Metro for Discord \A Version 3.10.9"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -308,6 +308,12 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
 .theme-dark .edit-message textarea::-webkit-scrollbar-track-piece {
   background-color: transparent !important; }
 
+.contextMenu-HLZMGh::-webkit-scrollbar {
+  width: 2px; }
+
+.contextMenu-HLZMGh::-webkit-scrollbar-thumb {
+  background-color: #454545; }
+
 .theme-dark .tooltip-2QfLtc {
   padding: 7px 8px 8px;
   background-color: #191919;
@@ -327,7 +333,11 @@ div[class^="contextMenu-"].theme-dark {
   background-color: #191919;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0;
-  box-shadow: none; }
+  box-shadow: none;
+  max-height: calc(100vh - 32px - 40px);
+  overflow-y: auto; }
+  div[class^="contextMenu-"].theme-dark[style*="top: 10px"] {
+    top: 36px !important; }
   div[class^="contextMenu-"].theme-dark div[class^="item-"] {
     max-height: 32px;
     margin: 0;
@@ -512,10 +522,14 @@ body.bd-blue .app::before {
     margin-left: 0;
     border-radius: 0;
     transform: none !important; }
+    .theme-dark .wrapper-1Rf91z .item-2hkk8m[style*="opacity: 0.7;"] {
+      opacity: 1 !important; }
     .theme-dark .wrapper-1Rf91z .item-2hkk8m[style*="opacity: 1;"] {
       height: 24px !important;
       background-color: var(--accent);
       transform: none !important; }
+  .theme-dark .wrapper-1Rf91z .blobContainer-239gwq:active {
+    transform: none; }
   .theme-dark .wrapper-1Rf91z .button-OhfaWu {
     background-color: transparent; }
     .theme-dark .wrapper-1Rf91z .button-OhfaWu svg {
@@ -673,11 +687,18 @@ body.bd-blue .app::before {
 .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeSelected-1zApJ_ .name-3_Dsmg {
   color: var(--accent); }
 
-.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .unread-3zKkbm {
+.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeUnread-1zpFdA .unread-3zKkbm {
   height: 15px;
   width: 3px;
   margin-top: -8px;
+  background-color: #FFF;
   border-radius: 0; }
+
+.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeUnread-1zpFdA .content-3at_AU > svg {
+  color: #FFF; }
+
+.theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeUnread-1zpFdA .name-3_Dsmg {
+  color: #FFF; }
 
 .theme-dark .channels-Ie2l6A .containerDefault-1ZnADq .modeConnected-2IEL4z::before {
   content: "";
@@ -819,6 +840,58 @@ div[class^="channels-"] .container-1UB9sr ~ .container-2Thooq {
   border-radius: 11px;
   box-shadow: none;
   font-weight: normal; }
+
+.theme-dark .pageWrapper-1PgVDX {
+  background-color: #262626; }
+  .theme-dark .pageWrapper-1PgVDX .bg-AYqtMd {
+    display: none; }
+  .theme-dark .pageWrapper-1PgVDX .pageHeader-3615mp {
+    height: 32px; }
+  .theme-dark .pageWrapper-1PgVDX .body-2lagau {
+    margin: 0; }
+    .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r {
+      align-items: baseline;
+      margin-bottom: 42px; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r h2 {
+        font-size: 27px;
+        font-weight: 300; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r .searchBox-3Y2Vi7 {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: 0; }
+        .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv {
+          font-size: 15px;
+          font-weight: 400;
+          border-radius: 0; }
+          .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r .searchBox-3Y2Vi7 .searchBoxInput-uJtBcv::-webkit-input-placeholder {
+            font-size: 15px;
+            font-weight: 400; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r .searchIcon-1a1-yA,
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau .search-JQJ-3r .clear-U3WkKp {
+        display: none; }
+    .theme-dark .pageWrapper-1PgVDX .body-2lagau section h3 {
+      font-size: 20px;
+      font-weight: 300; }
+    .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .card-3DjzTQ {
+      min-height: 60px;
+      background-color: #333333;
+      border-radius: 0; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .card-3DjzTQ:hover {
+        box-shadow: none;
+        transform: none; }
+    .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .cardHeader-Int16m {
+      flex: 0 0 83px; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .cardHeader-Int16m .guildIcon-3W0pfo {
+        top: 16px;
+        bottom: unset; }
+        .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .cardHeader-Int16m .guildIcon-3W0pfo svg foreignObject {
+          mask: none !important; }
+    .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .guildInfo-2wGKIg {
+      padding: 16px; }
+      .theme-dark .pageWrapper-1PgVDX .body-2lagau section .guildList-1ItbxP .guildCard-2arfcG .guildInfo-2wGKIg .description-2QALGo {
+        color: #FFF;
+        font-size: 15px;
+        line-height: 1.5625; }
 
 .theme-dark .chat-3bRxxu .container-1r6BKw {
   padding: 0 0 0 12px;
@@ -2902,7 +2975,8 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noSha
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 3"],
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"],
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"],
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"] {
+div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"],
+.layer-v9HyYc[style^="top: 20px"] {
   position: absolute;
   top: 32px !important;
   right: 0 !important;
@@ -3255,12 +3329,6 @@ div[class^="messagesPopoutWrap-"] {
   right: 0 !important;
   left: initial !important; }
 
-div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutbottom-right {
-  right: 0 !important;
-  left: initial !important;
-  animation: 350ms slideinright cubic-bezier(0.1, 0.9, 0.2, 1);
-  transform: none !important; }
-
 .theme-dark div[class^="messagesPopoutWrap-"] {
   background-color: #191919;
   border: 0;
@@ -3483,115 +3551,60 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
     color: #FFF;
     font-weight: 400; }
 
-.private-channel-recipients-invite {
-  height: calc(100vh - 72px); }
+.theme-dark .noArrow-3BYQ0Z.noShadow-321ZPm.popout-3sVMXz.popoutBottomRight-2JrySt.arrowAlignmentTop-iGQczz.theme-undefined {
+  top: calc(30px + 40px) !important;
+  right: 0 !important;
+  left: initial !important;
+  animation: 350ms slideinright cubic-bezier(0.1, 0.9, 0.2, 1);
+  transform: none !important; }
 
-.theme-dark .private-channel-recipients-invite {
-  background-color: #191919;
-  border: 0;
-  border-radius: 0; }
-  .theme-dark .private-channel-recipients-invite .header {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0; }
-    .theme-dark .private-channel-recipients-invite .header .title {
-      font-size: 20px;
-      font-weight: 300;
-      text-align: left; }
-    .theme-dark .private-channel-recipients-invite .header .subtitle {
+.theme-dark .popout-103y-5 {
+  min-height: calc(100vh - 80px);
+  max-height: unset;
+  background-color: #191919; }
+  .theme-dark .popout-103y-5.modal-3HD5ck {
+    box-shadow: none; }
+  .theme-dark .popout-103y-5 .header-1R_AjF h4 {
+    padding: 0; }
+  .theme-dark .popout-103y-5 .header-1R_AjF .subtitle-2P4u9v {
+    color: #FFF;
+    font-size: 15px; }
+  .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z {
+    background-color: transparent; }
+    .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z input {
       color: #FFF;
       font-size: 15px;
-      font-weight: 400;
-      text-align: left; }
-    .theme-dark .private-channel-recipients-invite .header .search-bar {
-      padding: 0;
-      background-color: transparent;
-      border-radius: 0; }
-      .theme-dark .private-channel-recipients-invite .header .search-bar .search-bar-inner {
-        background-color: transparent;
-        border: 0; }
-        .theme-dark .private-channel-recipients-invite .header .search-bar .search-bar-inner .search-bar-tag {
-          margin: 6px 2px; }
-      .theme-dark .private-channel-recipients-invite .header .search-bar input {
-        height: 36px;
-        border: 1px solid rgba(255, 255, 255, 0.6);
-        color: #FFF;
-        font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: 400; }
-        .theme-dark .private-channel-recipients-invite .header .search-bar input:hover {
-          border-color: rgba(255, 255, 255, 0.8); }
-        .theme-dark .private-channel-recipients-invite .header .search-bar input:focus {
-          background-color: #FFF;
-          border-color: var(--accent);
-          color: #000; }
-        .theme-dark .private-channel-recipients-invite .header .search-bar input::-webkit-input-placeholder {
-          color: rgba(255, 255, 255, 0.5); }
-  .theme-dark .private-channel-recipients-invite .body .scroller {
-    height: auto;
-    overflow-y: auto; }
-  .theme-dark .private-channel-recipients-invite .body .friend {
-    background-color: transparent; }
-    .theme-dark .private-channel-recipients-invite .body .friend:hover {
-      background-color: var(--accent);
-      background-image: none; }
-    .theme-dark .private-channel-recipients-invite .body .friend.selected {
-      background-color: transparent;
-      background-image: none; }
-      .theme-dark .private-channel-recipients-invite .body .friend.selected:hover {
-        background-color: var(--accent); }
-    .theme-dark .private-channel-recipients-invite .body .friend .discord-tag {
-      font-size: 15px; }
-  .theme-dark .private-channel-recipients-invite .body .checkbox .checkbox-inner span {
-    border: 1px solid rgba(255, 255, 255, 0.6);
-    border-radius: 0; }
-    .theme-dark .private-channel-recipients-invite .body .checkbox .checkbox-inner span:hover {
-      border-color: rgba(255, 255, 255, 0.8); }
-  .theme-dark .private-channel-recipients-invite .footer {
-    background-color: transparent; }
-    .theme-dark .private-channel-recipients-invite .footer button {
-      background-color: var(--accent);
-      border: 1px solid transparent;
-      border-radius: 0;
-      font-size: 15px;
-      font-weight: 400; }
-      .theme-dark .private-channel-recipients-invite .footer button:hover {
-        background-color: var(--accent);
-        border-color: rgba(255, 255, 255, 0.6); }
-      .theme-dark .private-channel-recipients-invite .footer button:focus {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      min-height: 36px; }
+      .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z input:hover {
         border-color: rgba(255, 255, 255, 0.8); }
-      .theme-dark .private-channel-recipients-invite .footer button:disabled:hover {
-        background-color: var(--accent);
-        border-color: transparent; }
-  .theme-dark .private-channel-recipients-invite .error-state.search-results {
-    height: auto; }
-    .theme-dark .private-channel-recipients-invite .error-state.search-results .icon {
-      display: none; }
-  .theme-dark .private-channel-recipients-invite .error-state.not-friends .btn {
-    width: auto;
-    padding: 9px 12px 10px;
+      .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z input:focus {
+        background-color: #FFF;
+        border-color: var(--accent);
+        color: #000; }
+      .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+    .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z .tag-2gHSR7 {
+      height: 36px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 0;
+      line-height: 36px; }
+      .theme-dark .popout-103y-5 .header-1R_AjF .container-2XeR5Z .tag-2gHSR7 svg {
+        display: none; }
+  .theme-dark .popout-103y-5 .scroller-2FKFPG {
+    max-height: unset; }
+  .theme-dark .popout-103y-5 .friendWrapper-LdKLp8 .friend-2E0q2S .nickname-2CALbl {
+    font-size: 15px;
+    font-weight: normal; }
+  .theme-dark .popout-103y-5 .friendWrapper-LdKLp8 .friend-2E0q2S .discordTag-3gO1VA {
+    font-size: 13px; }
+    .theme-dark .popout-103y-5 .friendWrapper-LdKLp8 .friend-2E0q2S .discordTag-3gO1VA span {
+      font-weight: 400; }
+  .theme-dark .popout-103y-5 .friendWrapper-LdKLp8 .friendSelected-3J_Uh8 {
     background-color: var(--accent);
-    border: 1px solid transparent;
-    border-radius: 0;
-    box-sizing: border-box;
-    font-size: 15px;
-    font-weight: 400; }
-    .theme-dark .private-channel-recipients-invite .error-state.not-friends .btn:hover {
-      background-color: var(--accent);
-      border-color: rgba(255, 255, 255, 0.6); }
-    .theme-dark .private-channel-recipients-invite .error-state.not-friends .btn:focus {
-      border-color: rgba(255, 255, 255, 0.8); }
-    .theme-dark .private-channel-recipients-invite .error-state.not-friends .btn:disabled:hover {
-      background-color: var(--accent);
-      border-color: transparent; }
-  .theme-dark .private-channel-recipients-invite .error-state.not-friends .icon {
-    display: none; }
-  .theme-dark .private-channel-recipients-invite .error-state .text {
-    padding: 0;
-    color: #FFF;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1; }
+    border-radius: 0; }
+  .theme-dark .popout-103y-5 .footer-1eyGBa {
+    flex: 0 1 auto !important; }
 
 .theme-dark div[class^="popoutList-"] {
   background-color: #191919;
