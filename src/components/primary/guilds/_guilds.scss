@@ -43,6 +43,10 @@
         margin-left: 0;
         border-radius: 0;
         transform: none !important;
+        // Guild is unread
+        &[style*="opacity: 0.7;"]{
+            opacity: 1 !important;
+        }
         // Guild is selected
         &[style*="opacity: 1;"]{
             height: 24px !important;
