@@ -1,0 +1,84 @@
+.theme-dark .pageWrapper-1PgVDX{
+    background-color: $b2;
+    // Remove background image
+    .bg-AYqtMd{
+        display: none;
+    }
+
+    // Less head, please
+    .pageHeader-3615mp{
+        height: 32px;
+    }
+
+    // Main content
+    .body-2lagau{
+        margin: 0;
+        // Header/search
+        .search-JQJ-3r{
+            align-items: baseline;
+            margin-bottom: 42px;
+            // Head
+            h2{
+                font-size: 27px;
+                font-weight: $fwheader;
+            }
+            // Search
+            .searchBox-3Y2Vi7{
+                padding-right: 0;
+                background-color: transparent;
+                box-shadow: none;
+                border-radius: 0;
+                input{ // Hover and focus states don't work if this isn't here
+                    border-width: 2px;
+                    border-style: solid;
+                }
+            }
+            // Remove search button
+            .searchIcon-1a1-yA,
+            .clear-U3WkKp{
+                display: none;
+            }
+        }
+
+        // Section
+        section{
+            h3{
+                font-size: $fsheader;
+                font-weight: $fwheader;
+            }
+            
+            // Guilds
+            .guildList-1ItbxP{
+                .guildCard-2arfcG{
+                    .card-3DjzTQ{
+                        min-height: 60px;
+                        background-color: $b3;
+                        border-radius: 0;
+                        &:hover{
+                            box-shadow: none;
+                            transform: none;
+                        }
+                    }
+                    .cardHeader-Int16m{
+                        flex: 0 0 83px;
+                        .guildIcon-3W0pfo{
+                            top: 16px;
+                            bottom: unset;
+                            svg foreignObject{
+                                mask: none !important;
+                            }
+                        }
+                    }
+                    .guildInfo-2wGKIg{
+                        padding: 16px;
+                        .description-2QALGo{
+                            color: #FFF;
+                            font-size: $fsui;
+                            line-height: $lh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
