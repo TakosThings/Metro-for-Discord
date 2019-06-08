@@ -18,6 +18,12 @@
             font-weight: $fwheader;
             line-height: 1.3;
         }
+        // Remove guild level icon
+        .guildIconContainer-E1JUVt{
+            div[aria-label^="Level"]{
+                display: none;
+            }
+        }
     }
 
     // Channels background
