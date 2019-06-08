@@ -1,6 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.9
+* **Enchancements** (1)
+  * Add friends to group DM popout
+* **Fixes** (5)
+  * Improve visibility of unread channels
+  * Improve visibility of unread guilds
+  * Remove guild icons/abbreviations 'bobbing' effect when in `:active` state
+  * User popout in wrong position when opened from voice channel user
+  * Speculative fix for context menu clipping under titbar if viewport is too small
+
 #### 3.10.8
 * **Enchancements** (1)
   * Make connected voice and selected text channel icons use accent colour
