@@ -1,45 +1,35 @@
-.private-channel-recipients-invite{
-    height: calc(100vh - 72px);
+.theme-dark .noArrow-3BYQ0Z.noShadow-321ZPm.popout-3sVMXz.popoutBottomRight-2JrySt.arrowAlignmentTop-iGQczz.theme-undefined{
+    top: calc(30px + 40px) !important; // Titlebar + toobar
+    right: 0 !important;
+    left: initial !important;
+    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
+    transform: none !important;
 }
-
-.theme-dark .private-channel-recipients-invite{
+.theme-dark .popout-103y-5{
+    min-height: calc(100vh - 80px);
+    max-height: unset;
     background-color: $b1;
-    border: 0;
-    border-radius: 0;
-    .header{
-        background-color: transparent;
+    &.modal-3HD5ck{
         box-shadow: none;
-        border-radius: 0;
-        .title{
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            text-align: left;
+    }
+
+    // Header
+    .header-1R_AjF{
+        h4{
+            padding: 0;
         }
-        .subtitle{
+        .subtitle-2P4u9v{
             color: #FFF;
             font-size: $fsui;
-            font-weight: $fwui;
-            text-align: left;
         }
-
-        .search-bar{
-            padding: 0;
+        // Search
+        .container-2XeR5Z{
             background-color: transparent;
-            border-radius: 0;
-            .search-bar-inner{
-                background-color: transparent;
-                border: 0;
-                .search-bar-tag{
-                    margin: 6px 2px;
-                }
-            }
             input{
-                height: 36px;
-                border: 1px solid $inputborder;
                 color: #FFF;
-                font-family: $font;
                 font-size: $fsui;
-                font-weight: $fwui;
+                border: 1px solid $inputborder;
+                min-height: 36px;
                 &:hover{
                     border-color: $inputborderhover;
                 }
@@ -49,106 +39,47 @@
                     color: #000;
                 }
                 &::-webkit-input-placeholder{
-                    color: rgba(255,255,255,.5);
+                    color: rgba($color: #FFF, $alpha: .5);
                 }
             }
-        }
-    }
-    
-    .body{
-        .scroller{
-            height: auto;
-            overflow-y: auto;
-        }
-        .friend{
-            background-color: transparent;
-            &:hover{
-                background-color: var(--accent);
-                background-image: none;
-            }
-            &.selected{
-                background-color: transparent;
-                background-image: none;
-                &:hover{
-                    background-color: var(--accent);
-                }
-            }
-            .discord-tag{
-                font-size: $fsui;
-            }
-        }
-        .checkbox .checkbox-inner span{
-            border: 1px solid $inputborder;
-            border-radius: 0;
-            &:hover{
-                border-color: $inputborderhover;
-            }
-        }
-    }
-
-    .footer{
-        background-color: transparent;
-        button{
-            background-color: var(--accent);
-            border: 1px solid transparent;
-            border-radius: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
-            &:hover{
-                background-color: var(--accent);
-                border-color: $inputborder;
-            }
-            &:focus{
-                border-color: $inputborderhover;
-            }
-            &:disabled:hover{
-                background-color: var(--accent);
-                border-color: transparent;
-            }
-        }
-    }
-
-    .error-state{
-        // No results
-        &.search-results{
-            height: auto;
-            .icon{
-                display: none;
-            }
-        }
-        // Not friends
-        &.not-friends{
-            .btn{
-                width: auto;
-                padding: 9px 12px 10px;
-                background-color: var(--accent);
-                border: 1px solid transparent;
+            .tag-2gHSR7{
+                height: 36px;
+                background-color: rgba($color: #FFF, $alpha: .1);
                 border-radius: 0;
-                box-sizing: border-box;
+                line-height: 36px;
+                svg{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    // User list
+    .scroller-2FKFPG{
+        max-height: unset;
+    }
+    .friendWrapper-LdKLp8{
+        .friend-2E0q2S{
+            .nickname-2CALbl{
                 font-size: $fsui;
-                font-weight: $fwui;
-                &:hover{
-                    background-color: var(--accent);
-                    border-color: $inputborder;
-                }
-                &:focus{
-                    border-color: $inputborderhover;
-                }
-                &:disabled:hover{
-                    background-color: var(--accent);
-                    border-color: transparent;
-                }
+                font-weight: normal;
             }
-            .icon{
-                display: none;
+            .discordTag-3gO1VA{
+                font-size: $fschat;
+                span{
+                    font-weight: $fwui;
+                }   
             }
         }
-        .text{
-            padding: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-            line-height: 1;
+        .friendSelected-3J_Uh8{
+            background-color: var(--accent);
+            border-radius: 0;
         }
+
+    }
+
+    // Footer
+    .footer-1eyGBa{
+        flex: 0 1 auto !important;
     }
 }
