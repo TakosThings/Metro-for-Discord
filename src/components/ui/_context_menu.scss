@@ -3,6 +3,13 @@ div[class^="contextMenu-"].theme-dark{
     border: 1px solid rgba(255,255,255,.2);
     border-radius: 0;
     box-shadow: none;
+    max-height: calc(100vh - 32px - 40px);
+    overflow-y: auto;
+
+    // Push context menu down if it may be clipping under titlebar
+    &[style*="top: 10px"]{
+        top: 36px !important;
+    }
 
     & div[class^="item-"]{
         max-height: 32px;
