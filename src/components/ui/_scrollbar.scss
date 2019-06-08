@@ -104,3 +104,12 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
 .theme-dark .edit-message textarea::-webkit-scrollbar-track-piece{
     background-color: transparent !important;
 }
+// Context menu
+.contextMenu-HLZMGh{
+    &::-webkit-scrollbar{
+        width: 2px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: #454545;
+    }
+}
