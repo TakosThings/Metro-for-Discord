@@ -7,11 +7,11 @@
     // Header
     header{
         padding: 0 12px;
-        background-color: $b1;
+        background-color: transparent;
         box-shadow: none;
         font-weight: $fwheader;
         &:hover{
-            background-color: $b4;
+            background-color: transparent;
         }
         span{
             font-size: $fsheader;
