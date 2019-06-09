@@ -20,7 +20,8 @@
         }
         // Remove guild level icon
         .guildIconContainer-E1JUVt{
-            div[aria-label^="Level"]{
+            div[aria-label^="Level"],
+            div[aria-label^="No Level"]{
                 display: none;
             }
         }
