@@ -23,11 +23,15 @@
     }
     .sidebar-CFHs9e{
         div[class^="side"] div[class^="header"]{
-            display: none
+            margin-top: 16px;
+            padding: 0 16px;
+            color: gray;
+            font-weight: normal;
+            line-height: 48px;
         }
         div[class^="side"] div[class^="item"]{
             margin-bottom: 0;
-            padding: 14px 16px;
+            padding: 14px 48px;
             border-radius: 0;
             color: #FFF;
             font-size: $fsui;
@@ -85,6 +89,163 @@
         // Social links
         div[class^="socialLinks-"]{
             display: none;
+        }
+    }
+}
+
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]{
+    .sidebar-CFHs9e{
+        .item-PXvHYJ{
+            &::after{
+                position: absolute;
+                left: 16px;
+                color: #FFF;
+                font-size: 16px;
+                font-family: $icon;
+            }
+        }
+        .item-PXvHYJ:nth-child(2)::after{ // My account
+            content: "\E77B";
+        }
+        .item-PXvHYJ:nth-child(3)::after{ // Privacy & safety
+            content: "\EA18";
+        }
+        .item-PXvHYJ:nth-child(4)::after{ // Authorised apps
+            content: "\E8D7";
+        }
+        .item-PXvHYJ:nth-child(5)::after{ // connections
+            content: "\F0B9";
+        }
+        .item-PXvHYJ:nth-child(6)::after{ // Billing
+            content: "\E8C7";
+        }
+        .item-PXvHYJ:nth-child(8)::after{ // Nitro
+            content: "N";
+            font-family: $font;
+        }
+        .item-PXvHYJ:nth-child(9)::after{ // Nitro
+            content: "H";
+            font-family: $font;
+        }
+
+        .item-PXvHYJ:nth-child(12)::after{ // Voice & Audio
+            content: "\E720";
+        }
+        .item-PXvHYJ:nth-child(13)::after{ // Overlay
+            content: "\E9A6";
+        }
+        .item-PXvHYJ:nth-child(14)::after{ // Notifications
+            content: "\E91C";
+        }
+        .item-PXvHYJ:nth-child(15)::after{ // Keybinds
+            content: "\E765";
+        }
+        .item-PXvHYJ:nth-child(16)::after{ // Game activity
+            content: "\E7FC";
+        }
+        .item-PXvHYJ:nth-child(17)::after{ // Activity Feed
+            content: "\EA37";
+        }
+        .item-PXvHYJ:nth-child(18)::after{ // Game library
+            content: "\E8F1";
+        }
+        .item-PXvHYJ:nth-child(19)::after{ // Text and images
+            content: "\EA69";
+        }
+        .item-PXvHYJ:nth-child(20)::after{ // Appearance
+            content: "\E790";
+        }
+        .item-PXvHYJ:nth-child(21)::after{ // Streamer mode
+            content: "\E93E";
+        }
+        .item-PXvHYJ:nth-child(22)::after{ // Language
+            content: "\EC45";
+        }
+        .item-PXvHYJ:nth-child(23)::after{ // Windows settings
+            content: "\E8A9";
+        }
+        .item-PXvHYJ:nth-child(25)::after{ // Changelog
+            content: "\E77C";
+        }
+    }
+}
+.theme-dark .layer-3QrUeG[aria-label="GUILD_SETTINGS"]{
+    .sidebar-CFHs9e{
+        .item-PXvHYJ{
+            &::after{
+                position: absolute;
+                left: 16px;
+                color: #FFF;
+                font-size: 16px;
+                font-family: $icon;
+            }
+        }
+        .item-PXvHYJ:nth-child(2)::after{ // Overview
+            content: "\F246";
+        }
+        .item-PXvHYJ:nth-child(3)::after{ // Moderation
+            content: "\EC81";
+        }
+        .item-PXvHYJ:nth-child(4)::after{ // Audit log
+            content: "\EADF";
+        }
+        .item-PXvHYJ:nth-child(5)::after{ // Audit log
+            content: "\EC1B";
+        }
+        .item-PXvHYJ:nth-child(6)::after{ // Integrations
+            content: "\ED5C";
+        }
+        .item-PXvHYJ:nth-child(7)::after{ // Emoji
+            content: "\E76E";
+        }
+        .item-PXvHYJ:nth-child(8)::after{ // Webhook
+            content: "\E774";
+        }
+        .item-PXvHYJ:nth-child(9)::after{ // Widget
+            content: "\EA86";
+        }
+        .item-PXvHYJ:nth-child(11)::after{ // Server boost
+            content: "\E70E";
+        }
+        .item-PXvHYJ:nth-child(14)::after{ // Members
+            content: "\E716";
+        }
+        .item-PXvHYJ:nth-child(15)::after{ // Invites
+            content: "\E8FA";
+        }
+        .item-PXvHYJ:nth-child(16)::after{ // Bans
+            content: "\E8F8";
+        }
+        .item-PXvHYJ:nth-child(18)::after{ // Delete server
+            content: "\E74D";
+        }
+    }
+}
+.theme-dark .layer-3QrUeG[aria-label="CHANNEL_SETTINGS"]{
+    .sidebar-CFHs9e{
+        .item-PXvHYJ{
+            &::after{
+                position: absolute;
+                left: 16px;
+                color: #FFF;
+                font-size: 16px;
+                font-family: $icon;
+            }
+        }
+        .item-PXvHYJ:nth-child(2)::after{ // Overview
+            content: "\F246";
+        }
+        .item-PXvHYJ:nth-child(3)::after{ // Permissions
+            content: "\EA18";
+        }
+        .item-PXvHYJ:nth-child(4)::after{ // Invites
+            content: "\E8FA";
+        }
+        .item-PXvHYJ:nth-child(5)::after{ // Web hook
+            content: "\E774";
+        }
+        .separator-gCa7yv ~ .item-PXvHYJ::after{ // Delete channel
+            content: "\E74D";
         }
     }
 }
