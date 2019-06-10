@@ -52,16 +52,16 @@
             }
         }
         // Selected item
-        div[class^="side"] div[class^="itemBrandSelected"],
-        div[class^="side"] div[class^="itemSelected"]{
-            background-color: transparent;
-            color: var(--accent);
+        div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"],
+        div[class^="side"] div[class*="selected-"]{
+            background-color: transparent !important;
+            color: var(--accent) !important;
             &:hover{
-                background-color: rgba(255,255,255,0.15);
+                background-color: rgba(255,255,255,0.15) !important;
             }
         }
-        div[class^="side"] div[class^="itemBrandSelected"]::before,
-        div[class^="side"] div[class^="itemSelected"]::before{
+        div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"]::before,
+        div[class^="side"] div[class*="selected-"]::before{
             content: "";
             width: 4px;
             height: 50%;
