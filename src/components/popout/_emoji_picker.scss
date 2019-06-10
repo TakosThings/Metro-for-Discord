@@ -8,14 +8,14 @@
     .header-1nkwgG{
         border: 0;
         // Search bar
-        .searchBarLight-1NxoDG{
+        .searchBar-2pWH0_{
             background-color: transparent;
-            .searchBarInner-1_Tg2R{
+            .inner-3ErfOT{
                 background-color: transparent;
                 border-radius: 0 !important; // why
                 input{
                     height: 36px;
-                    border: 1px solid $inputborder;
+                    border: 2px solid $inputborder;
                     color: #FFF;
                     font-size: $fsui;
                     font-weight: $fwui;
@@ -33,7 +33,7 @@
                         border-color: var(--accent);
                     }
                 }
-                .searchBarIcon-1J6sKG{
+                .iconLayout-1WxHy4{
                     display: none;
                 }
             }
@@ -42,7 +42,7 @@
         .diversitySelector-tmmMv0{
             width: 36px;
             height: 36px;
-            border: 1px solid $inputborder;
+            border: 2px solid $inputborder;
             box-sizing: border-box;
             &:hover{
                 border-color: $inputborderhover;
@@ -54,8 +54,10 @@
             }
             .popout-2nUePc{
                 height: auto !important; // override element style
+                margin-top: -2px;
+                margin-left: -2px;
                 background-color: $b2;
-                border: 1px solid var(--accent);
+                border: 2px solid var(--accent);
                 border-radius: 0;
                 .item-16cXuq{
                     &:hover{
