@@ -1,13 +1,19 @@
-.status-online{
-    background-color: #10893E
-}
-.status-idle{
-    background-color: #FFB900;
-}
-.status-dnd{
-    background-color: #E81123;
-}
-.status-invisible,
-.status-offline{
-    background-color: #767676;
+.theme-dark{
+    .status-oxiHuE{
+        border: 0;
+    }
+    .online-2S838R{
+        background-color: $statusonline;
+    }
+    .idle-3DEnRT{
+        background-color: $statusidle;
+    }
+    .dnd-1_xrcq{
+        background-color: $statusdnd;
+    }
+    .invisible-1kp8Z0,
+    .offline-3qoTek,
+    .unknown-Ms2zdV{
+        background-color: $statusoffline;
+    }
 }
