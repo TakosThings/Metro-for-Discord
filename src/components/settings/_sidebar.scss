@@ -68,12 +68,12 @@
         div[class^="side"] div[class*="selected-"]::before{
             content: "";
             width: 4px;
-            height: 50%;
+            height: 24px;
             position: absolute;
             top: 50%;
             left: 0;
             background-color: var(--accent);
-            margin-top: -10px;
+            margin-top: -12px;
         }
         // Logout item
         div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
