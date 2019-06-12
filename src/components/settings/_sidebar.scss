@@ -252,3 +252,22 @@
         }
     }
 }
+.theme-dark .layer-3QrUeG[aria-label="RTC_DEBUG"]{
+    .sidebar-CFHs9e{
+        .item-PXvHYJ{
+            &::after{
+                position: absolute;
+                left: 16px;
+                color: #FFF;
+                font-size: 16px;
+                font-family: $icon;
+            }
+        }
+        .item-PXvHYJ:nth-child(3)::after{ // Overview
+            content: "\E804";
+        }
+        .item-PXvHYJ:nth-child(4)::after{ // Permissions
+            content: "\E898";
+        }
+    }
+}
