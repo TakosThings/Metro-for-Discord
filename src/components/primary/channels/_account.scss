@@ -25,27 +25,30 @@
         right: 10px;
         bottom: 10px;
     }
-    .accountDetails-3k9g4n{
+    .nameTag-LxtdSI{
         display: none;
     }
     button{
         width: 48px;
         height: 48px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
         border-radius: 0;
+        opacity: 1;
         &:hover{
             background-color: $b3;
         }
-    }
-
-    // Remove default user settings icon
-    button[aria-label="User Settings"] div svg{
-        display: none;
+        .contents-18-Yxp{
+            display: none;
+        }
     }
 
     // Default state - No voice connection
     width: 48px;
     .flex-1xMQg5.flex-1O1GKY{
-        div{
+        button[aria-label="Mute"],
+        button[aria-label="Deafen"]{
             display: none;
         }
     }
@@ -54,7 +57,8 @@
 div[class^="channels-"] .container-1UB9sr~.container-2Thooq{
     width: auto;
     .flex-1xMQg5.flex-1O1GKY{
-        div{
+        button[aria-label="Mute"],
+        button[aria-label="Deafen"]{
             display: block;
         }
     }
