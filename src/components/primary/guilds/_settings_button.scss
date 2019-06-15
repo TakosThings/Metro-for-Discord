@@ -1,4 +1,4 @@
-.theme-dark div[class^="channels-"] .container-2Thooq > div[class*="noWrap-"] > div~div~button[class*="button"]{
+.theme-dark .channels-Ie2l6A .container-2Thooq .noWrap-3jynv6 button[aria-label="User Settings"]{
     width: 48px;
     height: 48px;
     position: absolute;
@@ -9,5 +9,8 @@
     border-radius: 0;
     &:hover{
         background-color: $b3;
+    }
+    .contents-18-Yxp{
+        display: none;
     }
 }

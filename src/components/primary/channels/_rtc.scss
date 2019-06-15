@@ -39,13 +39,18 @@
             background-color: var(--voice);
         }
     }
-    .buttonInfo-3nkbOt,
-    .buttonDisconnect-3W_SJc{
+    button[aria-label="Connection Info"],
+    button[aria-label="Disconnect"]{
         width: 48px;
         height: 48px;
         border-radius: 0;
+        background-repeat: no-repeat;
+        background-position: center;
         &:hover{
             background-color: $b3;
+        }
+        svg{
+            display: none;
         }
     }
 }
