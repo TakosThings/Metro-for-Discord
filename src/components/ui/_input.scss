@@ -1,0 +1,286 @@
+.theme-dark{
+    // Standard one line text input
+    .input-cIJ7To{
+        background-color: transparent;
+        border: 2px solid $inputborder;
+        border-radius: 0;
+        color: #FFF;
+        font-size: $fsui;
+        font-weight: $fwui;
+        box-sizing: border-box;
+        &.error-2O5WFJ{
+            border-color: $alert;
+            &::-webkit-input-placeholder{
+                color: $alert;
+            }
+        }
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: #FFF;
+            border-color: var(--accent);
+            color: #000;
+            &::-webkit-input-placeholder{
+                color: #999;
+            }
+        }
+        &::-webkit-input-placeholder{
+            color: $inputborder;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+
+        // States
+        &.disabled-2BKQFm{
+            opacity: .5;
+            border-color: $inputborder;
+            &:hover{
+                opacity: .5;
+                border-color: $inputborder;
+            }
+        }
+
+        // Sizing
+        &.inputDefault-_djjkz{
+            height: 32px;
+            padding: 10px;
+        }
+
+        // Special cases
+        // Credit card input
+        &.cardNumberInput-3vDUEy{
+            height: 32px;
+            padding: 10px;
+            padding-left: 52px;
+        }
+    }
+    
+    // Dropdown
+    .select-2TCrqx{
+        .css-15ejc46-control,   // Normal dropdown
+        .css-2yldzf-control,    // Open dropdown
+        .css-1yegjoj-control{   // Just closed dropdown?
+            min-height: 32px;
+            background-color: transparent;
+            border: 2px solid $inputborder;
+            border-radius: 0;
+            transition: none;
+            color: #FFF;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+        }
+        // Dropdown is open
+        .css-2yldzf-control{
+            background-color: var(--accent);
+            border-color: $inputborderhover;
+            border-radius: 0;
+            color: #FFF;
+        }
+        // Value
+        .css-1hwfws3{
+            padding: 2px 10px;
+        }
+
+        // Dropdown
+        .css-181m2lf-menu{
+            margin-top: 0;
+            background-color: $b1;
+            border: 2px solid transparent;
+            border-radius: 0;
+        }
+        // Options
+        .css-1aymab5-option,
+        .css-12o7ek3-option,
+        .css-1gnr91b-option{
+            min-height: 32px;
+            padding: 2px 12px;
+        }
+        // Currenly selected option in menu
+        .css-12o7ek3-option{
+            background-color: transparent;
+            &:hover{
+                background-color: var(--accent);
+            }
+        }
+        // Hovered option
+        .css-1gnr91b-option{
+            background-color: var(--accent);
+        }
+        // truncate long entries
+        .deviceOptionLabel-22FM_u{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 1.3;
+        }
+
+        // Dropdown arrow
+        .css-12qlrak-indicatorContainer,
+        .css-1flfamv-indicatorContainer{
+            padding: 1px 10px 1px 0;
+        }
+    }
+
+    // Record keybind
+    .container-1nZlH6{
+        height: 32px;
+        background-color: #333;
+        border: 2px solid transparent;
+        border-radius: 0;
+        &.disabled-qocNLx{
+            &:hover{
+                border-color: transparent;
+            }
+        }
+        &:hover{
+            border-color: $inputborder;
+        }
+        input{
+            font-size: $fsui;
+            font-weight: $fwui;
+            &::-webkit-input-placeholder{
+                color: #999;
+            }
+        }
+        .button-3tQuzi{
+            background-color: transparent;
+            margin: 0 0 0 -2px;
+            &:hover{
+                border: 0;
+            }
+        }
+    }
+
+    // Slider
+    .slider-1PF9SW{
+        .bar-2Qqk5Z{
+            height: 2px;
+            background-color: $inputborder;
+            border-radius: 0;
+        }
+        .barFill-23-gu-{
+            background-color: var(--accent);
+        }
+        .track-11EASc{
+            right: 0;
+            left: 0;
+        }
+        .grabber-3mFHz2{
+            width: 8px;
+            height: 24px;
+            background-color: var(--accent);
+            border: 0;
+            border-radius: 4px;
+        }
+        .bubble-3we2di{
+            height: auto;
+            padding: 7px 8px 8px;
+            top: -42px;
+            background-color: $b1;
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 0;
+            color: #FFF;
+            &::before{
+                display: none;
+            }
+        }
+        &:hover{
+            .bar-2Qqk5Z{
+                background-color: $inputborderhover;
+            }
+            .grabber-3mFHz2{
+                background-color: #FFF;
+            }
+        }
+    }
+
+    // Toggle switch
+    .switchEnabled-V2WDBB{
+        width: 40px;
+        height: 20px;
+        background-color: transparent;
+        border: 2px solid $inputborder;
+        box-sizing: border-box;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:active::after{
+            width: 10px !important;
+            left: 0 !important;
+        }
+        &::after{
+            width: 10px;
+            height: 10px;
+            box-shadow: none;
+        }
+        &.valueChecked-m-4IJZ{
+            background-color: var(--accent) !important;
+            border: 2px solid transparent;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+        }
+    }
+    .switchDisabled-3HsXAJ{
+        width: 40px;
+        height: 20px;
+        background-color: transparent;
+        border: 2px solid rgba(255,255,255,.2);
+        box-sizing: border-box;
+        &:hover{
+            border-color: rgba(255,255,255,.2);
+        }
+        &::after{
+            width: 10px;
+            height: 10px;
+            box-shadow: none;
+        }
+    }
+
+    // Checkbox ('old type') (eg: Instant Invite modal)
+    .checkbox-3kaeSU{
+        .checkboxInner-3yjcPe{
+            width: 20px;
+            height: 20px;
+            span{
+                border: 2px solid $inputborder;
+                border-radius: 0;
+            }
+            .checkboxElement-1qV33p:checked+span{
+                background-color: var(--accent);
+                border-color: var(--accent);
+                &::after{
+                    width: 6px;
+                    height: 12px;
+                    left: 4px;
+                    border-width: 0 1px 1px 0;
+                }
+            }
+            &:hover{
+                span{
+                    border-color: $inputborderhover;
+                }
+                .checkboxElement-1qV33p:checked+span{
+                    border-color: $inputborderhover;
+                }
+            }
+        }
+    }
+
+    // Copy box
+    .copyInput-2rOSt7{
+        height: 32px;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0;
+        font-size: $fsui;
+        input{
+            border: 2px solid $inputborder;
+        }
+        button{
+            margin: 0;
+        }
+    }
+}

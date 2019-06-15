@@ -8,6 +8,8 @@
 @import 'components/core/version_info';
 
 // UI
+@import 'components/ui/button';
+@import 'components/ui/input';
 @import 'components/ui/titlebar';
 @import 'components/ui/scrollbar';
 @import 'components/ui/tooltip';
@@ -66,7 +68,6 @@
 @import 'components/settings/core';
 @import 'components/settings/sidebar';
 @import 'components/settings/content';
-@import 'components/settings/forms';
 
 // Popouts
 @import 'components/popout/user';
