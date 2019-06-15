@@ -164,16 +164,6 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
                 }
             }
         }
-
-        // Spotify listen along
-        div[class^="playButtonWrapper"] ~ button,
-        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button{
-            width: 36px;
-            height: 36px;
-            min-width: 36px;
-            max-width: 36px;
-            padding: 3px 0 0 0;
-        }
     }
 
     // Body
@@ -205,9 +195,9 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
         div[class^="note-"]{
             margin-left: 0;
             textarea{
-                min-height: 36px;
+                min-height: 32px;
                 padding: 9px 12px 10px;
-                border: 1px solid $inputborder;
+                border: 2px solid $inputborder;
                 border-radius: 0;
                 color: #FFF;
                 font-size: $fsui;
@@ -235,11 +225,11 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
         }
         // Quick message input
         input{
-            height: 36px;
+            height: 32px;
             background-color: transparent;
             font-size: $fsui;
             line-height: $lh;
-            border: 1px solid $inputborder;
+            border: 2px solid $inputborder;
             border-radius: 0;
             box-sizing: border-box;
             &:hover{
