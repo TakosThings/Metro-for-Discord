@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.10.10
+* **Fixes** (1)
+  * Update RTC button classes
+
 #### 3.10.9
 * **Enchancements** (1)
   * Add friends to group DM popout
