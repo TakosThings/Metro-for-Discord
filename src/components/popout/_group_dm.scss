@@ -28,8 +28,8 @@
             input{
                 color: #FFF;
                 font-size: $fsui;
-                border: 1px solid $inputborder;
-                min-height: 36px;
+                border: 2px solid $inputborder;
+                min-height: 32px;
                 &:hover{
                     border-color: $inputborderhover;
                 }

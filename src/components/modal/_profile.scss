@@ -32,24 +32,6 @@
         text-transform: none;
     }
 
-    // Send friend req
-    button[class*="lookFilled"][class*="colorGreen"], // Not playing a game
-    button[class*="lookInverted"][class*="colorBrand"], // Playing game
-    button[class*="lookInverted"][class*="colorGreen"], // Listening to spotify
-    button[class*="lookInverted"][class*="buttonInvertedPurple"]{ // Twitch
-        background-color: transparent;
-        border: 1px solid $inputborder;
-        border-radius: 0;
-        color: #FFF;
-        font-weight: normal;
-        &:hover{
-            border-color: $inputborderhover;
-        }
-        &:active{
-            background-color: $inputborder;
-        }
-    }
-
     // Additional actions
     div[class^="additionalActionsIcon"]{
         height: 14px;
@@ -170,9 +152,9 @@
         text-transform: none;
     }
     div[class^="note-"] textarea{
-        min-height: 36px;
+        min-height: 32px;
         padding: 9px 12px 10px;
-        border: 1px solid $inputborder;
+        border: 2px solid $inputborder;
         border-radius: 0;
         color: #FFF;
         font-size: $fsui;

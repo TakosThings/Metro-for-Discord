@@ -55,9 +55,6 @@ div[class^="scroller-"][class*="content"] div[class^="medium-"]{
 }
 
 // Buttons
-.theme-dark div[class^="modal"] div[class*="footer"] button{
-    min-height: 36px;
-}
 .theme-dark div[class^="modal"] div[class*="footer"] button+button{
     margin-right: 8px;
 }
