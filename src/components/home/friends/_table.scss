@@ -37,6 +37,18 @@
             padding-right: 20px;
             .friendsAction-__WNE9{
                 border-radius: 0;
+                background-image: none;
+                position: relative;
+                &::before{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    color: #FFF;
+                    font-family: $icon;
+                    font-size: 20px;
+                    text-align: center;
+                    line-height: 36px;
+                }
             }
             .friendsActionVoiceCall-3EdPsR,
             .friendsActionAccept-3mkemT{
@@ -51,6 +63,22 @@
                 &:hover{
                     background-color: darken($alert, 10%) !important;
                 }
+            }
+
+            .friendsActionVideoCall-2_PKeP::before{
+                content: "\E714";
+            }
+            .friendsActionVoiceCall-3EdPsR::before{
+                content: "\F715";
+            }
+            .friendsActionRemove-qu8nnl::before{
+                content: "\E74D";
+            }
+            .friendsActionAccept-3mkemT::before{
+                content: "\E8FB";
+            }
+            .friendsActionIgnore-1-RPlq::before{
+                content: "\E8BB";
             }
         }
     }
