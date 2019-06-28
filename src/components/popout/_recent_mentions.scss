@@ -100,7 +100,7 @@ div[class^="messagesPopoutWrap-"]{
         }
     }
     // Empty
-    div[class^="messagesPopout-"] div[class^="emptyPlaceholder-"]{
+    div[class*="messagesPopout-"] div[class^="emptyPlaceholder-"]{
         div[class^="body-"]{
             font-size: 0;
             &::before{
