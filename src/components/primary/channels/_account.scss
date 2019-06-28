@@ -48,7 +48,9 @@
     width: 48px;
     .flex-1xMQg5.flex-1O1GKY{
         button[aria-label="Mute"],
-        button[aria-label="Deafen"]{
+        button[aria-label="Unmute"],
+        button[aria-label="Deafen"],
+        button[aria-label="Undeafen"]{
             display: none;
         }
     }
@@ -58,7 +60,9 @@ div[class^="channels-"] .container-1UB9sr~.container-2Thooq{
     width: auto;
     .flex-1xMQg5.flex-1O1GKY{
         button[aria-label="Mute"],
-        button[aria-label="Deafen"]{
+        button[aria-label="Unmute"],
+        button[aria-label="Deafen"],
+        button[aria-label="Undeafen"]{
             display: block;
         }
     }
