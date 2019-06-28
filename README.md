@@ -12,6 +12,9 @@ You should follow the relevant install instructions for your platform.
 * [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 
+## Requirements
+This theme utilises the Segoe UI MDL2 Assets font to provide some icons. You may notice missing icons if you are not running Windows 10.
+
 ## Configure
 ### Required
 * Discord's dark theme must be selected from the Appearance tab in User Settings.
