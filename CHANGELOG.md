@@ -1,6 +1,32 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.11.0
+* **Clean Up**
+  * Remove `/core/_userstyle_options.scss` - Unused
+  * Remove `/home/games` - Out of scope
+  * Rename `/modal/_deprecated_new_server.scss` to `/modal/_new_server.scss`
+  * Remove `/primary/members/_loading.scss` - Unused
+  * Tidy `/vendor/_hljs_monokai.scss`
+  * Clean `/icons/_core.scss`
+* **Enchancements**
+  * Remove guild level icon. 'Official' or 'partnered' sever icons will still be shown
+  * Remove background from server name menu to expose the server banner
+  * Set more agressive gradient on server banner so it blends with our background-color
+  * Server discovery
+  * Update Add Friend page
+  * Add/Join server modal
+  * Added variable for Segoe UI MDL2 Assets font
+  * Added icons for menu items in Client/Server/Channel settings
+  * Rewrite forms and inputs, and moved to own scss files
+  * Convert to use MDL icons in most places
+* **Fixes**
+  * Status circles will now use theme status colours
+  * Remove borders or box shadows from status circles
+  * Emoji picker search
+  * Show selected menu item pill in client/server settings
+  * Unmute and Undeafen buttons still appeared when not connected to a voice channel
+
 #### 3.10.9
 * **Enchancements** (1)
   * Add friends to group DM popout
