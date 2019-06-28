@@ -31,9 +31,6 @@
     button{
         width: 48px;
         height: 48px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
         border-radius: 0;
         opacity: 1;
         &:hover{
@@ -52,7 +49,26 @@
         button[aria-label="Deafen"],
         button[aria-label="Undeafen"]{
             display: none;
+            &::before{
+                font-family: $icon;
+                font-size: 18px;
+            }
         }
+        button[aria-label="Mute"]::before{
+            content: "\E720";
+        }
+        button[aria-label="Unmute"]::before{
+            content: "\EC54";
+            color: $alert;
+        }
+        button[aria-label="Deafen"]::before{
+            content: "\E767";
+        }
+        button[aria-label="Undeafen"]::before{
+            content: "\E74F";
+            color: $alert;
+        }
+        
     }
 }
 // Show Mic/Speaker controls when connected to voice
