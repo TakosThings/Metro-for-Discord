@@ -4,10 +4,14 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-size: 24px;
     opacity: 1;
     border-radius: 0;
     &:hover{
         background-color: $b3;
+    }
+    &::before{
+        content: "\E713";
+        font-family: $icon;
+        font-size: 18px;
     }
 }
