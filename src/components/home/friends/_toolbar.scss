@@ -52,23 +52,27 @@
     // Buttons
     .toolbar-1t6TWx{
         .iconWrapper-2OrFZ1{
+            width: 68px;
             height: 48px;
             margin: 0;
-            > svg.icon-22AiRD{
-                width: 68px;
-                height: 48px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 24px;
-                & > path{
-                    display: none;
-                }
+            > svg{
+                display: none;
             }
             &:hover{
                 background-color: $b3;
             }
             &.selected-1GqIat{
                 background-color: var(--accent);
+            }
+            &::before{
+                width: 68px;
+                height: 48px;
+                position: absolute;
+                color: #FFF;
+                font-family: $icon;
+                font-size: 20px;
+                text-align: center;
+                line-height: 48px;
             }
         }
         .divider-3FBTu8{
@@ -79,5 +83,11 @@
     // Remove help button
     .anchor-3Z-8Bb{
         display: none;
+    }
+    div[aria-label="New Group DM"]::before{
+        content: "\E902";
+    }
+    div[aria-label="Mentions"]::before{
+        content: "\E910";
     }
 }
