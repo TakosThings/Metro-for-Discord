@@ -110,6 +110,13 @@
     div[aria-label="Mentions"]::before{
         content: "\E910";
     }
+    // DM specific
+    div[aria-label="Start Voice Call"]::before{
+        content: "\F715";
+    }
+    div[aria-label="Start Video Call"]::before{
+        content: "\E714";
+    }
     div[aria-label="Add Friends to DM"]::before{
         content: "\E902";
     }
