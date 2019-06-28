@@ -109,10 +109,8 @@
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAMFBMVEUAAAD///////////////////////////////////////////////////////////87TQQwAAAAD3RSTlMAERYXGBtoa2zLzNTV1tqZ9e5gAAAAY0lEQVR42u3LuxKAIAxE0YUIykP2//9WxbFCYuHoWHgm3d7gfYNAJTlZKFwhi9N3rZDEmesl2/2PhjSRxXX2YECiFr19C2DCWTExCfYAkjmi4S2OAOLRQ6L6g8eC+9i4Dr5jAUAoBp3xEaVxAAAAAElFTkSuQmCC);
     }
     // Download button
-    .chat-3bRxxu div[class^="titleWrapper"] svg[name="Update"],
     a[class*="metadataDownload"] svg[name="Download"], // Embedded audio download button
-    .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"],
-    .guilds-wrapper .btn-download-apps{
+    .message-group .comment div[class^="attachment-"] svg[class^="downloadButton"]{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAANlBMVEUAAAD////////////////////////////////////////////////////////////////////xY8b8AAAAEXRSTlMAEBYXGBscIGhrbMvU1dba3+yhKy8AAABjSURBVHgB7czRCoAgDIXh6dIsNTvv/7IFQ7wYIwgCL/rx7nyOJgz4wecg+QE46X1H4Q64YlPAZbQgIDRkR4YAKI5diwisZ99VXHDgfsWradwAzP8iZLfjKvftFqaXQfUM5ukCioUHUXR/UwQAAAAASUVORK5CYII=);
         background-size: 24px;
     }
@@ -127,5 +125,4 @@
     .chat-3bRxxu .contentCozy-3XX413 button[class*="emojiButton-"]::before{
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJMSURBVFhH7ZbLThNhHMWbdEncsJICC5CAbwCRpC/AZQ34BEDVQPUNuCxgT7jsldbgBvEVfAFRH0DX0BrDRSu/M5whhPo50ykLFz3JL/PN+f7/07l8nZlcRx21okaj0Qcl+ACf4YfR+AgWoM/l9ydCC7AHl38SpBrYhR63tyeCpqHu8HN4DTMwAl1G41nYh3PXnsKkY7KJgBfwW4GownjAU0FR8wiqalAvPPNUa6JRZ66AX7BkO7XoKbtXTNlOJxp6oeazaPnHY9FbVgY6YZx+TVC858aKrcwi662C2O7Y+rco7AddtjNIvOdJIkNrQotX/45e22FRVPIRv7EVif1VqMOKrSaFanQlnblgKyyK3rt4xlYkBduv22pSqIb9OfuHtsKi6KuLh21FYj/zFWB/2JlfbIVFUbz6H9hqW8pyZs1WWP/DAfz1FrQjskacmeoWxItw1lbbIuupM1MtwkUX79uSV4SPMGorKGqeuLZo6/bfcN5WWBTpQaSHht5qg/bWHPANggfB3Bh8d+2qPT2ILkCZhagwSRTuKgRFj2K2ebwjGWz1hNyBceg2Gss7c41uY95Z7+xtaT+VKC7Qc+LGZXkMdRDrEL+em6Q50NWKf/zl9UyU9VBeatGs13H8Oi3blj8Am/AJfhqNN+Dm3cH4FcT9E7ZbE43PITpjtlUY8lRQqoED9+jHS57KJgIm4dSBWpj6MtKz/THb6JPMY/3VNHf7kyzbmd8VQT2wDWk/SrfU4/b7E6H6UpqHQziGmtFYnuaS3/kddXSjXO4KVKTjpWGjINEAAAAASUVORK5CYII=);
     }
-
 }
