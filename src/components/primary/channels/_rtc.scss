@@ -3,8 +3,8 @@
     padding: 0 0 0 10px;
     background-color: $b1;
     border-bottom: 0;
-    .rtc-connection-status{
-        .ping{
+    .rtcConnectionStatus-3BKDnG{
+        .ping-1sxZBI{
             width: 48px;
             min-width: 48px;
             height: 48px;
@@ -13,7 +13,6 @@
             background-image: none;
             &:hover{
                 background-color: $b3;
-                cursor: pointer;
             }
             &::before{
                 width: 48px;
@@ -25,27 +24,42 @@
                 line-height: 48px;
             }
         }
-        &.rtc-connection-quality-unknown .ping::before{
+        &.rtc-connection-quality-unknown .ping-1sxZBI::before{
             content: "\E904"
         }
-        &.rtc-connection-quality-fine .ping::before{
+        &.rtcConnectionQualityFine-2pNrqR .ping-1sxZBI::before{
             content: "\E908";
         }
-        &.rtc-connection-quality-average .ping::before{
+        &.rtcConnectionQualityAverage-OaWUpp .ping-1sxZBI::before{
             content: "\E907";
         }
-        &.rtc-connection-quality-bad .ping::before{
+        &.rtcConnectionQualityBad-HrtD7z .ping-1sxZBI::before{
             content: "\E906";
         }
-        span:not(.ping){
+        span:not(.ping-1sxZBI){
             display: none;
         }
     }
     .inner-btChU7{
         position: relative;
     }
-    .channel-SEolQq{
-        display: none;
+
+    button[aria-label="Connection Info"]{
+        width: 48px;
+        height: 48px;
+        border-radius: 0;
+        opacity: 1;
+        &:hover{
+            background-color: $b3;
+        }
+        .contents-18-Yxp{
+            display: none;
+        }
+        &::before{
+            content: "\E946";
+            font-family: $icon;
+            font-size: 20px;
+        }
     }
     button[aria-label="Disconnect"]{
         width: 48px;
@@ -65,24 +79,45 @@
         }
     }
 
-    // Voice status
-    .customStatusContainer-pHFGrE{
-        button[aria-label="Set Voice Status"]{
-            width: 48px;
-            height: 48px;
-            opacity: 1;
-            .contents-18-Yxp{
-                display: none;
-            }
-            &:hover{
-                background-color: $b3;
-            }
-            &::before{
-                content: "\E90A";
-                color: #FFF;
-                font-family: $icon;
-                font-size: 20px;
-            }
+    // // Voice status
+    // .customStatusContainer-pHFGrE{
+    //     button[aria-label="Set Voice Status"]{
+    //         width: 48px;
+    //         height: 48px;
+    //         opacity: 1;
+    //         .contents-18-Yxp{
+    //             display: none;
+    //         }
+    //         &:hover{
+    //             background-color: $b3;
+    //         }
+    //         &::before{
+    //             content: "\E90A";
+    //             color: #FFF;
+    //             font-family: $icon;
+    //             font-size: 20px;
+    //         }
+    //     }
+    // }
+
+    // Return to channel button
+    .channel-SEolQq{
+        font-size: 0;
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        margin: 0;
+        padding: 2px;
+        background-color: $b3;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB+gAAAfoBF4pEbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVFiF7dZPK0RRHMbxc5Wsp2iSlOy9AiXZoPyJsqEs7WwsZWM1C94A70FCKTsLkpcyFsrCvwkfizlTUzMYNfeezXw3Z3Gfer51fuecG0KPHv8A2yilKj9Q5x59RRZnOIrlr5hNVf6GuZTl86nKa1gprDwKVLTyiCrucIxNlPMoz3DYRqAdH7jCTB4ijWP3jkWUMIxJ7OA6CjS4xHieEkttvg/G7XqJuSes5Smx/ENmFCcx94W9bkvsN+35xi+5rXhqoNJtiY6uYqziM2bXuy3R0WOE3aaZGOuqRCeoH+XTKHFWuECUGMFzlJhOJdGYm/NUAuU4kDUMtcvk+mORZVk1hHATQugPISwULhC5iOtUKoHbuE4U0NVKnAN4SCUw0HhLkgj06PEX31IG0S3SIDUGAAAAAElFTkSuQmCC);
+        background-size: 16px;
+        background-position: center;
+        border-radius: 50%;
+        opacity: 1;
+        &:hover{
+            background-color: var(--voice);
         }
     }
 }
