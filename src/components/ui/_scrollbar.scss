@@ -2,14 +2,7 @@
     & .scrollerWrap-2lJEkd .scroller-2FKFPG.messages-3amgkR,
       .container-3gCOGc .scroller-2FKFPG.friendsTableBody-1ZhKif,
       div[class^="emojiPicker"] div[class*="scroller-"],
-      div[class^="userPopout-"] .member-roles,
-      .inner-1JeGVc div[class^="scroller-"], // User profile modal
-      div[class^="quickswitcher-"] div[class*="scroller-"],
-      .messages-popout-wrap .scroller,
-      .search-results-wrap div[class^="scroller-"],
-      .private-channel-recipients-invite .body .scroller,
-      #autocomplete-popout div[class^="scroller-"],
-      div[class^="activityFeed-"] div[class^="scroller-"]{
+      div[class^="quickswitcher-"] div[class*="scroller-"]{
         &::-webkit-scrollbar{
             width: 12px;
         }
