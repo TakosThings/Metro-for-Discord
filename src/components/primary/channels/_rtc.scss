@@ -1,10 +1,11 @@
-.theme-dark .channels-Ie2l6A .container-1UB9sr{
+.theme-dark .channels-Ie2l6A .container-1giJp5{
     height: 48px;
     padding: 0 0 0 10px;
     background-color: $b1;
     border-bottom: 0;
-    .rtcConnectionStatus-3BKDnG{
-        .ping-1sxZBI{
+    .rtcConnectionStatus-2-jIsi{
+        position: relative;
+        .ping-2NgC8E{
             width: 48px;
             min-width: 48px;
             height: 48px;
@@ -24,19 +25,19 @@
                 line-height: 48px;
             }
         }
-        &.rtc-connection-quality-unknown .ping-1sxZBI::before{
+        &.rtc-connection-quality-unknown .ping-2NgC8E::before{
             content: "\E904"
         }
-        &.rtcConnectionQualityFine-2pNrqR .ping-1sxZBI::before{
+        &.rtcConnectionQualityFine-2J6i8z .ping-2NgC8E::before{
             content: "\E908";
         }
-        &.rtcConnectionQualityAverage-OaWUpp .ping-1sxZBI::before{
+        &.rtcConnectionQualityAverage-3KV0u- .ping-2NgC8E::before{
             content: "\E907";
         }
-        &.rtcConnectionQualityBad-HrtD7z .ping-1sxZBI::before{
+        &.rtcConnectionQualityBad-1J7mUU .ping-2NgC8E::before{
             content: "\E906";
         }
-        span:not(.ping-1sxZBI){
+        span:not(.ping-2NgC8E){
             display: none;
         }
     }
@@ -101,7 +102,7 @@
     // }
 
     // Return to channel button
-    .channel-SEolQq{
+    .channel-1TmDQ6{
         font-size: 0;
         width: 14px;
         height: 14px;
