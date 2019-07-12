@@ -2,14 +2,17 @@
 Newest Changes are at the top
 
 #### 3.11.0
-* **Clean Up**
+* **Clean Up** (9)
   * Remove `/core/_userstyle_options.scss` - Unused
   * Remove `/home/games` - Out of scope
   * Rename `/modal/_deprecated_new_server.scss` to `/modal/_new_server.scss`
   * Remove `/primary/members/_loading.scss` - Unused
   * Tidy `/vendor/_hljs_monokai.scss`
   * Clean `/icons/_core.scss`
-* **Enchancements**
+  * Rename `/modal/_new_modal.scss` to `/modal/_modal.scss` - No longer 'new', implied other function
+  * Tidy `/ui/_scrollbar.scss` - Remove old and obsolete classes
+  * Remove `/home/friends/_search.scss` - Unused, redundant
+* **Enchancements** (12)
   * Remove guild level icon. 'Official' or 'partnered' sever icons will still be shown
   * Remove background from server name menu to expose the server banner
   * Set more agressive gradient on server banner so it blends with our background-color
@@ -20,12 +23,24 @@ Newest Changes are at the top
   * Added icons for menu items in Client/Server/Channel settings
   * Rewrite forms and inputs, and moved to own scss files
   * Convert to use MDL icons in most places
-* **Fixes**
+  * New profile modal
+  * Removed option to hide/show friends online count - counter doesn't exist anymore
+* **Fixes** (15)
   * Status circles will now use theme status colours
   * Remove borders or box shadows from status circles
   * Emoji picker search
   * Show selected menu item pill in client/server settings
   * Unmute and Undeafen buttons still appeared when not connected to a voice channel
+  * No error message was displayed when chatbox was disabled because user required phone verification
+  * Remove tutorial from Quickswitcher modal
+  * Account/RTC reverted to default
+  * Remove border-radius from server dropdown
+  * Fix positioning of status picker popout
+  * Remove last separator from status picker popout
+  * Instant Invite modal reverted some style to default
+  * Use font variable for Connecting screen status text
+  * Invite modal
+  * Auto complete modal
 
 #### 3.10.9
 * **Enchancements** (1)
