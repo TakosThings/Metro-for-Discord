@@ -42,6 +42,10 @@ Newest Changes are at the top
   * Invite modal
   * Auto complete modal
 
+#### 3.10.10
+* **Fixes** (1)
+  * Update RTC button classes
+
 #### 3.10.9
 * **Enchancements** (1)
   * Add friends to group DM popout
