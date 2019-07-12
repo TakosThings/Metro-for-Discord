@@ -52,6 +52,7 @@
         button[aria-label="Unmute"],
         button[aria-label="Deafen"],
         button[aria-label="Undeafen"]{
+
             display: none;
             &::before{
                 font-family: $icon;
