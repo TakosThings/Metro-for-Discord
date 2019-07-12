@@ -1,4 +1,4 @@
-.theme-dark div[class^="channels-"] .container-2Thooq{
+.theme-dark div[class^="channels-"] .container-3baos1{
     height: 48px;
     position: absolute;
     bottom: 0;
@@ -6,7 +6,11 @@
     margin-bottom: 0;
     padding: 0;
     background-color: $b1;
-    .avatar-3JE4B3{
+    // Remove right margin to stop controls shifting
+    .avatarWrapper-2yR4wp{
+        margin-right: 0;
+    }
+    .avatar-SmRMf2{
         width: 48px;
         height: 48px;
         margin: 0 0 97px 0;
@@ -20,48 +24,66 @@
             margin: 12px 0 0 12px;
         }
     }
-    .status-2kJpnA{
+    .status-2zcSVk{
         border: 0;
         right: 10px;
         bottom: 10px;
     }
-    .nameTag-LxtdSI{
+    .nameTag-3uD-yy{
         display: none;
     }
     button{
         width: 48px;
         height: 48px;
         border-radius: 0;
-        background-repeat: no-repeat;
-        background-position: center;
+        opacity: 1;
         &:hover{
             background-color: $b3;
         }
-        svg{
+        .contents-18-Yxp{
             display: none;
         }
-    }
-
-    // Remove default user settings icon
-    button[aria-label="User Settings"] div svg{
-        display: none;
     }
 
     // Default state - No voice connection
     width: 48px;
     .flex-1xMQg5.flex-1O1GKY{
         button[aria-label="Mute"],
-        button[aria-label="Deafen"]{
+        button[aria-label="Unmute"],
+        button[aria-label="Deafen"],
+        button[aria-label="Undeafen"]{
+
             display: none;
+            &::before{
+                font-family: $icon;
+                font-size: 18px;
+            }
         }
+        button[aria-label="Mute"]::before{
+            content: "\E720";
+        }
+        button[aria-label="Unmute"]::before{
+            content: "\EC54";
+            color: $alert;
+        }
+        button[aria-label="Deafen"]::before{
+            content: "\E767";
+        }
+        button[aria-label="Undeafen"]::before{
+            content: "\E74F";
+            color: $alert;
+        }
+        
     }
 }
 // Show Mic/Speaker controls when connected to voice
-div[class^="channels-"] .container-1UB9sr~.container-2Thooq{
+div[class^="channels-"] .container-1giJp5~.container-3baos1{
     width: auto;
     .flex-1xMQg5.flex-1O1GKY{
         button[aria-label="Mute"],
-        button[aria-label="Deafen"]{
+        button[aria-label="Unmute"],
+        button[aria-label="Deafen"],
+        button[aria-label="Undeafen"]{
             display: block;
         }
     }

@@ -1,4 +1,4 @@
-.theme-dark .noArrow-3BYQ0Z.noShadow-321ZPm.popout-3sVMXz.popoutBottomRight-2JrySt.arrowAlignmentTop-iGQczz.theme-undefined{
+.theme-dark .noArrow-2foL9g.noShadow-3pu20z.popout-2iWAc-.popoutBottomRight-2Rno5S.arrowAlignmentTop-1yftWI.theme-undefined{
     top: calc(30px + 40px) !important; // Titlebar + toobar
     right: 0 !important;
     left: initial !important;
@@ -14,7 +14,7 @@
     }
 
     // Header
-    .header-1R_AjF{
+    .header-2tA9Os{
         h4{
             padding: 0;
         }
@@ -28,8 +28,8 @@
             input{
                 color: #FFF;
                 font-size: $fsui;
-                border: 1px solid $inputborder;
-                min-height: 36px;
+                border: 2px solid $inputborder;
+                min-height: 32px;
                 &:hover{
                     border-color: $inputborderhover;
                 }
@@ -56,7 +56,7 @@
 
     // User list
     .scroller-2FKFPG{
-        max-height: unset;
+        max-height: calc(100vh - 30px - 48px - 147px - 72px); // Viewport - titlebar - toolbar - popout header - footer
     }
     .friendWrapper-LdKLp8{
         .friend-2E0q2S{

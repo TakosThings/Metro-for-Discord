@@ -52,17 +52,12 @@
     // Buttons
     .toolbar-1t6TWx{
         .iconWrapper-2OrFZ1{
+            width: 68px;
             height: 48px;
             margin: 0;
-            > svg.icon-22AiRD{
-                width: 68px;
-                height: 48px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 24px;
-                & > path{
-                    display: none;
-                }
+            opacity: 1;
+            > svg{
+                display: none;
             }
             &:hover{
                 background-color: $b3;
@@ -70,23 +65,18 @@
             &.selected-1GqIat{
                 background-color: var(--accent);
             }
-
-            // Pinned Messages button
-            > svg:not([name]){
+            &::before{
                 width: 68px;
                 height: 48px;
-                > foreignObject{
-                    mask: none;
-                    > svg{
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: 12px;
-                        > path{
-                            display: none;
-                        }
-                    }
-                }
+                position: absolute;
+                color: #FFF;
+                font-family: $icon;
+                font-size: 20px;
+                text-align: center;
+                line-height: 48px;
             }
+
+            
             .iconBadge-qZ4Ksk{
                 width: 100%;
                 height: 100%;
@@ -102,5 +92,32 @@
     // Remove help button
     .anchor-3Z-8Bb{
         display: none;
+    }
+
+    div[aria-roledescription="Channel Mute Switch"][aria-checked="false"]::before{
+        content: "\EA8F";
+    }
+    div[aria-roledescription="Channel Mute Switch"][aria-checked="true"]::before{
+        content: "\E7ED";
+        color: $alert;
+    }
+    div[aria-label="Pinned Messages"]::before{
+        content: "\E840";
+    }
+    div[aria-label="Member List"]::before{
+        content: "\E779";
+    }
+    div[aria-label="Mentions"]::before{
+        content: "\E910";
+    }
+    // DM specific
+    div[aria-label="Start Voice Call"]::before{
+        content: "\F715";
+    }
+    div[aria-label="Start Video Call"]::before{
+        content: "\E714";
+    }
+    div[aria-label="Add Friends to DM"]::before{
+        content: "\E902";
     }
 }

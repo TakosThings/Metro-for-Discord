@@ -1,6 +1,7 @@
 .theme-dark .container-2x5lvQ{
     border: 1px solid var(--accent);
-    header{
+    border-radius: 0;
+    .header-2C89wJ{
         background-color: $b1;
         border-radius: 0;
         font-size: $fsheader;
@@ -18,13 +19,20 @@
         stroke: #FFF !important;
     }
 
+    
+
     // Section
     section{
         background-color: $b1;
         border-radius: 0;
-        p{
+        .paragraph{
+            padding-bottom: 12px;
             color: #FFF;
-            font-size: $fschat;
+            font-size: $fsui;
+            line-height: 1.3333;
+        }
+        strong{
+            color: #FFF;
         }
         hr{
             border: 0;

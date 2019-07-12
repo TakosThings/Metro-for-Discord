@@ -1,26 +1,108 @@
-.theme-dark .channels-Ie2l6A .container-1UB9sr{
+.theme-dark .channels-Ie2l6A .container-1giJp5{
     height: 48px;
     padding: 0 0 0 10px;
     background-color: $b1;
     border-bottom: 0;
-    .rtc-connection-status{
-        .ping{
+    .rtcConnectionStatus-2-jIsi{
+        position: relative;
+        .ping-2NgC8E{
             width: 48px;
             min-width: 48px;
             height: 48px;
             margin: 0 0 0 86px;
+            padding: 0;
+            background-image: none;
             &:hover{
                 background-color: $b3;
             }
+            &::before{
+                width: 48px;
+                height: 48px;
+                position: absolute;
+                font-family: $icon;
+                font-size: 24px;
+                text-align: center;
+                line-height: 48px;
+            }
         }
-        span:not(.ping){
+        &.rtc-connection-quality-unknown .ping-2NgC8E::before{
+            content: "\E904"
+        }
+        &.rtcConnectionQualityFine-2J6i8z .ping-2NgC8E::before{
+            content: "\E908";
+        }
+        &.rtcConnectionQualityAverage-3KV0u- .ping-2NgC8E::before{
+            content: "\E907";
+        }
+        &.rtcConnectionQualityBad-1J7mUU .ping-2NgC8E::before{
+            content: "\E906";
+        }
+        span:not(.ping-2NgC8E){
             display: none;
         }
     }
     .inner-btChU7{
         position: relative;
     }
-    .channel-SEolQq{
+
+    button[aria-label="Connection Info"]{
+        width: 48px;
+        height: 48px;
+        border-radius: 0;
+        opacity: 1;
+        &:hover{
+            background-color: $b3;
+        }
+        .contents-18-Yxp{
+            display: none;
+        }
+        &::before{
+            content: "\E946";
+            font-family: $icon;
+            font-size: 20px;
+        }
+    }
+    button[aria-label="Disconnect"]{
+        width: 48px;
+        height: 48px;
+        border-radius: 0;
+        opacity: 1;
+        &:hover{
+            background-color: $b3;
+        }
+        .contents-18-Yxp{
+            display: none;
+        }
+        &::before{
+            content: "\E89B";
+            font-family: $icon;
+            font-size: 20px;
+        }
+    }
+
+    // // Voice status
+    // .customStatusContainer-pHFGrE{
+    //     button[aria-label="Set Voice Status"]{
+    //         width: 48px;
+    //         height: 48px;
+    //         opacity: 1;
+    //         .contents-18-Yxp{
+    //             display: none;
+    //         }
+    //         &:hover{
+    //             background-color: $b3;
+    //         }
+    //         &::before{
+    //             content: "\E90A";
+    //             color: #FFF;
+    //             font-family: $icon;
+    //             font-size: 20px;
+    //         }
+    //     }
+    // }
+
+    // Return to channel button
+    .channel-1TmDQ6{
         font-size: 0;
         width: 14px;
         height: 14px;
@@ -37,20 +119,6 @@
         opacity: 1;
         &:hover{
             background-color: var(--voice);
-        }
-    }
-    button[aria-label="Connection Info"],
-    button[aria-label="Disconnect"]{
-        width: 48px;
-        height: 48px;
-        border-radius: 0;
-        background-repeat: no-repeat;
-        background-position: center;
-        &:hover{
-            background-color: $b3;
-        }
-        svg{
-            display: none;
         }
     }
 }
