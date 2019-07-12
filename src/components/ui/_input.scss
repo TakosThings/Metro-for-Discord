@@ -272,6 +272,50 @@
         }
     }
 
+    // Radio button
+    .radioGroup-1GBvlr{
+        .item-26Dhrx{
+            margin-bottom: 0;
+            padding: 4px !important;
+            background-color: transparent !important;
+            border: 0;
+            border-radius: 0;
+            .checkbox-1ix_J3{
+                width: 20px !important;
+                height: 20px !important;
+                border-width: 2px;
+                border-color: $inputborder;
+            }
+            &:hover .checkbox-1ix_J3{
+                border-color: $inputborderhover;
+            }
+            .box-mmYMsp{
+                border-radius: 50%;
+            }
+            .checked-3_4uQ9{
+                background-color: transparent;
+                border-color: var(--accent) !important;
+                &::before{
+                    content: "";
+                    width: 10px;
+                    height: 10px;
+                    background-color: #FFF;
+                    border-radius: 50%;
+                }
+            }
+            svg{
+                display: none;
+            }
+            .title-3BE6m5{
+                font-size: $fsui;
+                font-weight: $fwui;
+            }
+        }
+        .item-26Dhrx[style*="background-color: rgb(114, 137, 218)"]{
+            background-color: transparent !important;
+        }
+    }
+
     // Copy box
     .copyInput-2rOSt7{
         height: 32px;
