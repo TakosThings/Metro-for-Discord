@@ -1,210 +1,126 @@
-.inner-1JeGVc{
-    // Main body
-    div[class*="root-"]{
-        border: 1px solid var(--accent);
+.theme-dark{
+    .root-SR8cQa{
         border-radius: 0;
     }
-
-    // Top half
-    div[class*="topSection"]{
+    // HEADER
+    .topSectionNormal-2-vo2m,
+    .topSectionPlaying-1J5E4n,
+    .topSectionSpotify-1lI0-P{
         background-color: $b1;
     }
+    .topSectionSpotify-1lI0-P .activityProfile-2bJRaP{
+        background-color: #1DB954;
+    }
 
-    // Header
-    div[class*="topSection"] header{
-        background-color: var(--accent);
-    }
-    // Avatar
-    div[class^="avatar-"] div[class*="mask"]{
-        mask: none;
-        -webkit-mask: none;
-    }
-    // Username
-    div[class^="headerInfo"] span.username{
+    .username-3gJmXY{
         font-size: 24px;
-        font-weight: 300;
-        line-height: $lh;
-    }
-    // Badge
-    div[class^="headerInfo"] div[class^="profileBadgeText"]{
-        font-size: 14px;
-        font-weight: normal;
-        text-transform: none;
-    }
-
-    // Additional actions
-    div[class^="additionalActionsIcon"]{
-        height: 14px;
-        position: relative;
-        background: none;
-        border-top: 2px solid $inputborder;
-        border-bottom: 2px solid $inputborder;
-        &::before{
-            content: "";
-            width: 100%;
-            height: 2px;
-            position: absolute;
-            top: 50%;
-            margin-top: -1px;
-            border-top: 2px solid $inputborder;
-        }
-        &:hover{
-            border-color: $inputborderhover;
-        }
-        &:hover::before{
-            border-color: $inputborderhover;
-        }
-    }
-
-    // Playing game
-    div[class^="activityProfile"]{
-        div[class^="headerText"]{
-            margin-bottom: 24px;
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            text-transform: none;
-        }
-        img[class*="assetsLargeImageProfile"]{
-            border-radius: 0;
-            mask: none;
-            -webkit-mask: none;
-        }
-        div[class^="name-"]{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: normal;
-            line-height: 1.33333;
-        }
-        span[class^="playTime"]{
-            color: #FFF;
-            font-size: $fschat;
-        }
-        // Spotify
-        div[class^="contentImagesProfile"]{
-            color: #FFF;
-            a[class^="bodyLink"]{
-                color: #FFF;
-                font-weight: $fwui;
-            }
-            div[class^="details-"]{
-                color: #FFF;
-                font-weight: $fwui;
-            }
-        }
-        // Song progress bar
-        div[class^="bar-"]{
-            background-color: rgba($color: #FFF, $alpha: 0.3);
-            border-radius: 0;
-            ~ div div[class^="textLeft"],
-            ~ div div[class^="textRight"]{
-                color: #FFF;
-                font-weight: normal;
-            }
-        }
-        div[class^="barInner-"]{
-            background-color: #FFF;
-            border-radius: 0;
-        }
-        // Spotify listen along
-        div[class^="playButtonWrapper"] ~ button,
-        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"] button{
-            width: 36px;
-            height: 36px;
-            min-width: 36px;
-            max-width: 36px;
-            padding: 3px 0 0 0;
-        }
-        div[class^="playButtonWrapper"] ~ span[class*="disabledWrapper"]{
-            height: 36px;
-        }
-    }
-
-    // Horizontal tabs
-    div[class^="tabBarContainer"]{
-        padding-left: 20px;
-        border: 0;
-    }
-    .tab-bar .tab-bar-item{
-        color: rgba(255,255,255,.7);
-        font-size: $fsheader;
         font-weight: $fwheader;
-        border: 0;
-        &:hover{
-            color: #FFF;
-            border: none;
-        }
     }
-    .tab-bar .tab-bar-item.selected{
-        color: var(--accent);
-        border: 0;
+    .discriminator-xUhQkU{
+        margin-left: 4px;
+        font-size: $fschat;
     }
 
-    // Bottom Half
-    div[class*="body-"]{
+    // Game details
+    // We only want to change the background of the game details, not the tab bar below
+    .headerFill-adLl4x{
+        background-color: transparent;
+    }
+    .activityProfile-2bJRaP{
+        background-color: rgba($color: #FFF, $alpha: 0.07);
+    }
+
+    // TAB BAR
+    .tabBarContainer-1s1u-z{
+        margin-top: 8px;
+        border-top: 0;
+    }
+    .tabBar-2MuP6-{
+        height: 32px;
+    }
+    .tabBarItem-1b8RUP{
+        margin-right: 25px;
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    // Never heard of a selected class?
+    .tabBarItem-1b8RUP[style^="border-color: rgb(255, 255, 255)"]{
+        border-color: var(--accent) !important;
+        color: var(--accent) !important;
+    }
+
+    // BODY
+    .body-3ND3kc{
         background-color: $b1;
     }
 
-    // Note textarea
-    div[class^="userInfoSectionHeader"]{
-        color: #FFF;
-        font-size: 15px;
-        font-weight: normal;
-        text-transform: none;
-    }
-    div[class^="note-"] textarea{
-        min-height: 32px;
-        padding: 9px 12px 10px;
-        border: 2px solid $inputborder;
-        border-radius: 0;
-        color: #FFF;
-        font-size: $fsui;
-        line-height: 1;
-        &:hover{
-            border-color: $inputborderhover;
-        }
-        &:focus{
-            background-color: #FFF !important;
-            border-color: var(--accent);
+    // Personal notes
+    .note-3kmerW.note-QfFU8y{
+        textarea{
+            height: 48px !important;
+            padding: 10px;
+            border: 2px solid $inputborder;
+            border-radius: 0;
+            font-size: $fsui;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+            &:focus{
+                background-color: #FFF;
+                border-color: var(--accent);
+                color: #000;
+            }
         }
     }
 
     // Connected accounts
-    div[class*="connectedAccount-"]{
-        background-color: #000;
-        border: 0;
-        border-radius: 0;
-    }
-    div[class*="connectedAccountName"]{
-        color: #FFF;
-        line-height: $lh;
-    }
-
-    // Common server list
-    div[class*=listRow]{
-        color: #FFF;
-        font-weight: normal;
-        &:hover{
+    .connectedAccounts-repVzS{
+        .connectedAccount-36nQx7{
+            position: relative;
+            margin-top: 12px;
+            padding: 4px 8px;
             background-color: $b2;
-            background-image: none;
-        }
-        div[class^="listName"]{
-            line-height: $lh;
-        }
-        div[class^="guildNick"]{
-            color: #FFF;
+            border: 2px solid transparent;
+            border-radius: 0;
+            &:hover{
+                border-color: $inputborder;
+            }
+            a{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                .connectedAccountOpenIcon-2cNbq5{
+                    position: absolute;
+                    right: 12px;
+                    top: 50%;
+                    margin-top: -9px;
+                }
+            }
         }
     }
 
-    // No common friends
-    div[class^="emptyIconGuilds"],
-    div[class^="emptyIconFriends"]{
-        display: none;
-    }
-    div[class^="emptyText"]{
-        margin: 0;
+    // Mutual Servers
+    .listRow-hutiT_{
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
-        text-transform: none;
+        &:hover{
+            background-color: $b3;
+            background-image: none; 
+        }
+    }
+
+    // No results
+    .empty-2WtT5s{
+        .emptyIcon-pGTAhd{
+            display: none;
+        }
+        .emptyText-6tYmO5{
+            margin-top: 0;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-transform: none;
+        }
     }
 }
