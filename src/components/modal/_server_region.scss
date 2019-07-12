@@ -21,10 +21,10 @@ div[class^="regionSelectModal-"]{
             justify-content: flex-start;
             flex-direction: row;
             background-color: transparent;
-            border: 1px solid $inputborder;
+            border: 2px solid $inputborder;
             border-radius: 0;
             &:hover{
-                border-color: $inputborderhover;
+                border-color: var(--accent);
             }
             div[class^="regionSelectFlag"]{
                 clip-path: inset(1px 1px 1px 1px);

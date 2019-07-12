@@ -25,16 +25,4 @@
     div[class^="separator-"]{
         display: none;
     }
-
-    // Buttons
-    button{
-        min-width: 120px;
-        min-height: 36px;
-        height: 36px;
-        border-radius: 0;
-        font-weight: $fwui;
-        &:first-of-type{
-            margin-left: 0;
-        }        
-    }
 }

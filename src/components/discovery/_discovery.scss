@@ -1,0 +1,139 @@
+.theme-dark .pageWrapper-1PgVDX{
+    background-color: $b2;
+    // Remove background image
+    .bg-AYqtMd{
+        display: none;
+    }
+
+    // Less head, please
+    .pageHeader-3615mp{
+        height: 32px;
+    }
+
+    // Main content
+    .body-2lagau{
+        margin: 0;
+        // Header
+        .mainHeader-1i17pL{
+            font-size: 24px;
+            font-weight: $fwheader;
+            text-align-last: left;
+        }
+
+        // Header/search
+        .search-JQJ-3r{
+            align-items: baseline;
+            justify-content: normal;
+            margin-bottom: 42px;
+            // Search
+            .searchBox-3Y2Vi7{
+                padding-right: 0;
+                background-color: transparent;
+                box-shadow: none;
+                border-radius: 0;
+                input{ // Hover and focus states don't work if this isn't here
+                    border-width: 2px;
+                    border-style: solid;
+                }
+            }
+            // Remove search button
+            .searchIcon-1a1-yA,
+            .clear-U3WkKp{
+                display: none;
+            }
+            // Remove 'help' text
+            .searchHelpText-19imBp{
+                display: none;
+            }
+        }
+
+        // Langauge dropdown
+        .languageSelector-1R8fPE{
+            height: 32px;
+            .css-1wqqa50-container{
+                background-color: transparent;
+                border: 2px solid $inputborder;
+                border-radius: 0;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+                .css-ncjuf0-control,
+                .css-5fjw8m-control{
+                    min-height: 28px;
+                    font-size: $fsui;
+                    font-weight: $fwui;
+                    line-height: 1.3;
+                }
+                .css-1rckt42-menu{
+                    background-color: $b3;
+                    border-radius: 0;
+                    box-shadow: none;
+                }
+            }
+        }
+
+        // No results
+        .emptySearchResults-1ba__I{
+            width: auto;
+            margin-top: 42px;
+            background-image: none;
+            letter-spacing: normal;
+            // Remove image
+            .emptySearchImage-1qOMLW{
+                display: none;
+            }
+            // Header
+            .emptySearchTitle-2zDhhZ{
+                font-size: $fsheader;
+                font-weight: $fwheader;
+                text-align-last: left;
+            }
+            // Error description
+            .emptySearchDescription-2AmfE4{
+                font-size: $fsui;
+                text-align: left;
+            }
+        }
+
+        // Section
+        section{
+            h3{
+                font-size: $fsheader;
+                font-weight: $fwheader;
+            }
+            
+            // Guilds
+            .guildList-1ItbxP{
+                .guildCard-2arfcG{
+                    .card-3DjzTQ{
+                        min-height: 60px;
+                        background-color: $b3;
+                        border-radius: 0;
+                        &:hover{
+                            box-shadow: none;
+                            transform: none;
+                        }
+                    }
+                    .cardHeader-Int16m{
+                        flex: 0 0 83px;
+                        .guildIcon-3W0pfo{
+                            top: 16px;
+                            bottom: unset;
+                            svg foreignObject{
+                                mask: none !important;
+                            }
+                        }
+                    }
+                    .guildInfo-2wGKIg{
+                        padding: 16px;
+                        .description-2QALGo{
+                            color: #FFF;
+                            font-size: $fsui;
+                            line-height: $lh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

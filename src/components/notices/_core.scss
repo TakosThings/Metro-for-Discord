@@ -3,10 +3,12 @@ div[class*="notice-"]{
     font-size: $fsui;
     font-weight: $fwui;
     button{
-        padding: 4px 12px 10px;
+        padding: 0 12px;
+        border: 2px solid $inputborder;
         border-radius: 0;
         font-size: $fsui;
         font-weight: $fwui;
+        line-height: 1.3;
     }
     div[class^="dismiss"]{
         opacity: 1;

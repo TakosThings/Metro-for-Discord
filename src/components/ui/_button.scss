@@ -1,0 +1,177 @@
+.theme-dark{
+    // Common
+    .button-38aScr{
+        border-radius: 0;
+        font-size: $fsui;
+        font-weight: $fwui;
+        line-height: $lh;
+        
+        // Size
+        &.sizeMedium-1AC_Sl,
+        &.sizeLarge-1vSeWK,
+        &.sizeXlarge-2yFAlZ{
+            height: 32px;
+            min-height: 32px;
+        }
+
+        // Outlined buttons
+        &.lookOutlined-3sRXeN{
+            border: 2px solid transparent;
+            &.colorPrimary-3b3xI6{
+                border-color: $inputborder;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+            &.colorRed-1TFJan{
+                color: $alert;
+                border-color: $alert;
+                &:hover{
+                    background-color: $alert;
+                    color: #FFF;
+                }
+            }
+            &.colorWhite-rEQuAQ{
+                border-color: $inputborder;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+        }
+
+        // Filled buttons
+        &.lookFilled-1Gx00P{
+            border: 2px solid transparent;
+            &.colorPrimary-3b3xI6{
+                background-color: #333;
+                color: #FFF;
+                &:hover{
+                    border-color: #858585;
+                }
+            }
+            &.colorBrand-3pXr91{
+                background-color: var(--accent);
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+            &.colorGreen-29iAKY{
+                background-color: $safe;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+            &.colorRed-1TFJan,
+            &.actionRed-gYn8D3{
+                background-color: $alert;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+        }
+
+        // Link buttons
+        &.lookLink-9FtZy-{
+            &.colorPrimary-3b3xI6,
+            &.colorGrey-2DXtkV{
+                color: $inputborder;
+                &:hover{
+                    color: #FFF;
+                    .contents-18-Yxp{
+                        background-image: none;
+                    }
+                }
+            }
+        }
+
+        // Ghost
+        &.lookGhost-2Fn_0-{
+            border: 2px solid transparent;
+            &.colorGrey-2DXtkV{
+                background-color: #333;
+                color: #FFF;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+        }
+
+        // Inverted
+        &.lookInverted-2D7oAl{
+            border: 2px solid transparent;
+            &.colorBrand-3pXr91{
+                background-color: var(--accent);
+                color: #FFF;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+            // Friend request button in user profile modal when spotify is playing
+            &.colorGreen-29iAKY{
+                background-color: var(--accent);
+                color: #FFF;
+                &:hover{
+                    border-color: $inputborderhover;
+                }
+            }
+        }
+    }
+
+    // Pagination button
+    // Location: Server discovery
+    .pageButton-MknE-_{
+        font-size: $fsui;
+        font-weight: $fwui;
+        // Back/Next buttons
+        .endButton-3wGL3C{
+            border-radius: 0;
+        }
+        // Page numbers
+        &.roundButton-2CW1Hh{
+            width: 32px;
+            height: 32px;
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            &:hover{
+                background-color: rgba($color: #FFF, $alpha: .3);
+            }
+        }
+        &.activeButton-1BJAiN{
+            background-color: var(--accent);
+        }
+    } 
+
+    // Button group
+    .group-2dAfBy{
+        border: 2px solid $inputborder;
+        .item-3T2z1R{
+            border: 0;
+            border-radius: 0;
+            &.allow-1PzSY3{
+                &:hover{
+                    background-color: rgba($color: $safe, $alpha: .5);
+                }
+            }
+            &.passthrough-1c2ewQ{
+                &:hover{
+                    background-color: rgba($color: #FFF, $alpha: .5);
+                }
+            }
+            &.deny-3nAuT6{
+                &:hover{
+                    background-color: rgba($color: $alert, $alpha: .5);
+                }
+            }
+            &.allowSelected-25S_i5{
+                background-color: $safe;
+            }
+            &.passthroughSelected-1Eq0Kl{
+                background-color: $inputborder;
+            }
+            &.denySelected-1mh2mZ{
+                background-color: $alert;
+            }
+        }
+    }
+}

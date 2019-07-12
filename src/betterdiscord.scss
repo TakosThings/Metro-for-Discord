@@ -8,6 +8,8 @@
 @import 'components/core/version_info';
 
 // UI
+@import 'components/ui/button';
+@import 'components/ui/input';
 @import 'components/ui/titlebar';
 @import 'components/ui/scrollbar';
 @import 'components/ui/tooltip';
@@ -33,6 +35,9 @@
 @import 'components/primary/channels/account';
 @import 'components/primary/channels/badge';
 
+// Discovery
+@import 'components/discovery/discovery';
+
 // Toolbar
 @import 'components/primary/toolbar/toolbar';
 @import 'components/primary/toolbar/search';
@@ -48,28 +53,20 @@
 
 // Members
 @import 'components/primary/members/members';
-@import 'components/primary/members/loading';
 
 // Search results pane
 @import 'components/primary/search/search';
 
 // Friends
 @import 'components/home/friends/toolbar';
-@import 'components/home/friends/search';
 @import 'components/home/friends/conversation_list';
 @import 'components/home/friends/table';
 @import 'components/home/friends/add_friend';
-
-// Games
-@import 'components/home/games/core';
-@import 'components/home/games/personalisation';
-@import 'components/home/games/carousel';
 
 // Settings
 @import 'components/settings/core';
 @import 'components/settings/sidebar';
 @import 'components/settings/content';
-@import 'components/settings/forms';
 
 // Popouts
 @import 'components/popout/user';
@@ -89,7 +86,7 @@
 
 // Modals
 @import 'components/modal/profile';
-@import 'components/modal/new_modal';
+@import 'components/modal/_modal';
 @import 'components/modal/quickswitcher';
 @import 'components/modal/keyboard_combo';
 @import 'components/modal/server_region';
@@ -101,7 +98,7 @@
 @import 'components/modal/invite';
 @import 'components/modal/phone_verification';
 @import 'components/modal/create_instant_invite';
-@import 'components/modal/deprecated_new_server';
+@import 'components/modal/_new_server';
 
 // Misc
 @import 'components/misc/bot_tag';

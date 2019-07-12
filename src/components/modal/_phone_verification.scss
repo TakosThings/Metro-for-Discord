@@ -28,10 +28,10 @@
         background-color: transparent;
     }
     div[class*="countryButton"]{
-        height: 36px;
+        height: 32px;
         margin-right: 8px;
         background-color: transparent;
-        border: 1px solid $inputborder;
+        border: 2px solid $inputborder;
         border-radius: 0;
         box-sizing: border-box;
         &:hover{
@@ -47,10 +47,10 @@
         }
     }
     input[class^="inputField"]{
-        height: 36px;
+        height: 32px;
         margin-right: 8px;
         background-color: transparent;
-        border: 1px solid $inputborder;
+        border: 2px solid $inputborder;
         font-size: $fsui;
         &:hover{
             border-color: $inputborderhover;
