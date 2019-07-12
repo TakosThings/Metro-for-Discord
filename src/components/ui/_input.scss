@@ -286,4 +286,28 @@
             margin: 0;
         }
     }
+
+    // Member/bans search
+    .container-cMG81i{
+        background-color: transparent;
+    }
+    .searchBar-1YE5UV{
+        .input-3Xdcic{
+            height: 32px;
+            padding: 10px;
+            border: 2px solid $inputborder;
+            &:hover{
+                border-color: $inputborderhover;
+            }
+            &:focus{
+                background-color: #FFF;
+                border-color: var(--accent);
+                color: #000;
+            }
+        }
+        // Remove icon
+        .iconLayout-3OgqU3{
+            display: none;
+        }
+    }
 }
