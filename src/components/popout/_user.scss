@@ -64,15 +64,10 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
                 }
                 span[class*="botTag-"]{
                     margin: 0;
-                    padding: 0;
+                    padding: 4px;
                     background-color: transparent;
                     color: hsla(0,0%,100%,.6);
-                    font-size: 0;
-                    text-transform: capitalize;
-                    &::before{
-                        content: "Bot";
-                        font-size: $fsui;
-                    }
+                    font-size: 13px;
                 }
             }
         }
