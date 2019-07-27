@@ -39,9 +39,6 @@ You can change the colour used to indicate where you are connected to a voice se
 ### Advanced
 The following options require a line of CSS to be removed from the CSS file.
 
-**Friends Online**  
-The friends online counter shown in the guilds list is hidden by default.
-
 **Blocked Messages**  
 The 'x Blocked Messages' reminder is hidden by default.
 
