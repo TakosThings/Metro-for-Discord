@@ -19,7 +19,10 @@ This theme utilises the Segoe UI MDL2 Assets font to provide some icons. You may
 ## Configure
 ### Required
 * Discord's dark theme must be selected from the Appearance tab in User Settings.
-* BetterDiscord users must also disable 'Dark Mode' and 'Blue Mode' in BetterDiscord's settings.
+* BetterDiscord users must also disable the following options;
+  * Dark Mode
+  * Normalise Classes
+  * Public Servers
 
 ### Variables
 The theme has some variables which can be changed by editing the CSS file
