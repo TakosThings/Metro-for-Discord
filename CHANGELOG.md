@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.11.1
+* **Fixes** (3)
+  * Bot tag in user profile popout
+  * User avatar sizing in guilds list
+  * User status colours
+
 #### 3.11.0
 * **Clean Up** (9)
   * Remove `/core/_userstyle_options.scss` - Unused
