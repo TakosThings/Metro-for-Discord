@@ -1,20 +1,17 @@
 .theme-dark{
-    .status-oxiHuE{
-        border: 0;
-        box-shadow: none;
+    rect[mask="url(#svg-mask-status-online)"]{
+        fill: $statusonline;
     }
-    .online-2S838R{
-        background-color: $statusonline;
+    rect[mask="url(#svg-mask-status-idle)"]{
+        fill: $statusidle;
     }
-    .idle-3DEnRT{
-        background-color: $statusidle;
+    rect[mask="url(#svg-mask-status-dnd)"]{
+        fill: $statusdnd;
     }
-    .dnd-1_xrcq{
-        background-color: $statusdnd;
+    rect[mask="url(#svg-mask-status-online)"]{
+        fill: $statusonline;
     }
-    .invisible-1kp8Z0,
-    .offline-3qoTek,
-    .unknown-Ms2zdV{
-        background-color: $statusoffline;
+    rect[mask="url(#svg-mask-status-streaming)"]{
+        fill: $statusstreaming;
     }
 }
