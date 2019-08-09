@@ -14,8 +14,8 @@ assignees: ''
 **Describe the bug**
 A clear and concise description of what the bug is.
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem. Screenshots must have context. A 10 pixel wide image and saying "this scrollbar" is not helpful.
+**Steps to reproduce**
+Explain the steps to reproduce the issue (if required).
 
-**Additional context**
-Add any other context about the problem here.
+**Screenshots**
+If applicable, add screenshots to help explain your problem. Screenshots should have context. A 10 pixel wide image and saying "this scrollbar" is not helpful.
