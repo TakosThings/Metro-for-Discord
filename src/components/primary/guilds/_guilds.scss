@@ -134,4 +134,41 @@
     .unreadMentionsIndicatorBottom-BXS58x{
         display: none;
     }
+
+    // Folders
+    .wrapper-21YSNc{
+        .listItem-2P_4kh{
+            .wrapper-25eVIn{
+                svg{
+                    mask{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .folder-21wGz3{
+        background-color: transparent;
+    }
+    .folderIconWrapper-226oVY{
+        background-color: transparent !important;
+        border-radius: 0;
+    }
+    .expandedFolderBackground-2sPsd-{
+        left: 0;
+        bottom: 0;
+        background-color: $b2;
+        border-radius: 0;
+        &.collapsed-1GMuSb{
+            background-color: transparent;
+        }
+    }
+    .expandedFolderIconWrapper-1xLaU-{
+        svg path{
+            clip-path: inset(1px 1px 1px 1px);
+        }
+    }
+    .expandedGuilds-1JMD4M{
+        height: auto !important;
+    }
 }
