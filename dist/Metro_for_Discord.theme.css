@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.11.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.11.1"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -61,27 +61,24 @@ textarea::-webkit-input-placeholder {
   100% {
     transform: translateX(380px); } }
 
-.theme-dark .status-oxiHuE {
-  border: 0;
-  box-shadow: none; }
+.theme-dark rect[mask="url(#svg-mask-status-online)"] {
+  fill: #10893E; }
 
-.theme-dark .online-2S838R {
-  background-color: #10893E; }
+.theme-dark rect[mask="url(#svg-mask-status-idle)"] {
+  fill: #FFB900; }
 
-.theme-dark .idle-3DEnRT {
-  background-color: #FFB900; }
+.theme-dark rect[mask="url(#svg-mask-status-dnd)"] {
+  fill: #E81123; }
 
-.theme-dark .dnd-1_xrcq {
-  background-color: #E81123; }
+.theme-dark rect[mask="url(#svg-mask-status-online)"] {
+  fill: #10893E; }
 
-.theme-dark .invisible-1kp8Z0,
-.theme-dark .offline-3qoTek,
-.theme-dark .unknown-Ms2zdV {
-  background-color: #767676; }
+.theme-dark rect[mask="url(#svg-mask-status-streaming)"] {
+  fill: #392e5c; }
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.11.0"; }
+  content: "Metro for Discord \A Version 3.11.1"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -880,6 +877,24 @@ body.bd-blue .app::before {
   .theme-dark .wrapper-1Rf91z .unreadMentionsIndicatorTop-gA6RCh,
   .theme-dark .wrapper-1Rf91z .unreadMentionsIndicatorBottom-BXS58x {
     display: none; }
+  .theme-dark .wrapper-1Rf91z .wrapper-21YSNc .listItem-2P_4kh .wrapper-25eVIn svg mask {
+    display: none; }
+  .theme-dark .wrapper-1Rf91z .folder-21wGz3 {
+    background-color: transparent; }
+  .theme-dark .wrapper-1Rf91z .folderIconWrapper-226oVY {
+    background-color: transparent !important;
+    border-radius: 0; }
+  .theme-dark .wrapper-1Rf91z .expandedFolderBackground-2sPsd- {
+    left: 0;
+    bottom: 0;
+    background-color: #262626;
+    border-radius: 0; }
+    .theme-dark .wrapper-1Rf91z .expandedFolderBackground-2sPsd-.collapsed-1GMuSb {
+      background-color: transparent; }
+  .theme-dark .wrapper-1Rf91z .expandedFolderIconWrapper-1xLaU- svg path {
+    clip-path: inset(1px 1px 1px 1px); }
+  .theme-dark .wrapper-1Rf91z .expandedGuilds-1JMD4M {
+    height: auto !important; }
 
 .theme-dark .channels-Ie2l6A .container-3baos1 .noWrap-3jynv6 button[aria-label="User Settings"] {
   width: 48px;
@@ -1155,8 +1170,9 @@ body.bd-blue .app::before {
   .theme-dark div[class^="channels-"] .container-3baos1 .avatarWrapper-2yR4wp {
     margin-right: 0; }
   .theme-dark div[class^="channels-"] .container-3baos1 .avatar-SmRMf2 {
-    width: 48px;
-    height: 48px;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 9px;
     margin: 0 0 97px 0;
     border-radius: 0; }
     .theme-dark div[class^="channels-"] .container-3baos1 .avatar-SmRMf2:hover {
@@ -1305,6 +1321,7 @@ div[class^="channels-"] .container-1giJp5 ~ .container-3baos1 {
         color: #FFF;
         font-size: 15px;
         line-height: 1.5625; }
+
 .theme-dark .chat-3bRxxu .container-1r6BKw {
   padding: 0 0 0 12px;
   background-color: #191919;
@@ -3097,17 +3114,10 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
       .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"],
       .theme-dark div[class^="userPopout-"] div[class^="headerStreaming"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"] {
         margin: 0;
-        padding: 0;
+        padding: 4px;
         background-color: transparent;
         color: rgba(255, 255, 255, 0.6);
-        font-size: 0;
-        text-transform: capitalize; }
-        .theme-dark div[class^="userPopout-"] div[class^="headerNormal"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before,
-        .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before,
-        .theme-dark div[class^="userPopout-"] div[class^="headerSpotify"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before,
-        .theme-dark div[class^="userPopout-"] div[class^="headerStreaming"] div[class*="headerTop"] div[class^="headerText-"] span[class*="botTag-"]::before {
-          content: "Bot";
-          font-size: 15px; }
+        font-size: 13px; }
   .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] {
     background-color: transparent; }
     .theme-dark div[class^="userPopout-"] div[class^="headerPlaying"] div[class*="headerTop"] {
