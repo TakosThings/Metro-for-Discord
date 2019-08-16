@@ -4,9 +4,7 @@ A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'
 Latest version: `3.11.2`
 
 ## Download
-Right click, then select Save As  
-* [Download for BeautifulDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.css)
-* [Download for BetterDiscord](https://raw.githubusercontent.com/TakosThings/Metro-for-Discord/master/dist/Metro_for_Discord.theme.css)
+Get the latest version from the [Releases](https://github.com/TakosThings/Metro-for-Discord/releases) page
 
 ## Install
 You should follow the relevant install instructions for your platform.  
