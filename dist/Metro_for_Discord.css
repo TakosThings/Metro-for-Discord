@@ -76,7 +76,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.11.1"; }
+  content: "Metro for Discord \A Version 3.11.2"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1296,7 +1296,7 @@ div[class^="channels-"] .container-1giJp5 ~ .container-3baos1 {
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Mentions"]::before {
     content: "\E910"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Voice Call"]::before {
-    content: "\F715"; }
+    content: "\E717"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Video Call"]::before {
     content: "\E714"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Add Friends to DM"]::before {

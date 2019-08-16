@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.11.2
+* **Fixes** (1)
+  * This update changes the *Start Voice Call* icon which could be missing for some users
+
 #### 3.11.1
 * **Fixes** (3)
   * Bot tag in user profile popout
