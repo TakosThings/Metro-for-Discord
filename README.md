@@ -29,10 +29,10 @@ The theme has some variables which can be changed by editing the CSS file
 You can change the accent colour by changing the `--accent` variable at the top of the CSS file. A list of the default colour swatches from the Windows 10 personalisation settings is available on the [MicrosoftDocs/windows-uwp](https://github.com/MicrosoftDocs/windows-uwp/blob/53eb5fbcf125c9b189de37a6afb8b50ccc2a49fe/windows-apps-src/design/style/color.md#windows-accent-colors) repo. The default colour is *Default blue*. Brighter colours work best as your accent colour.
 
 **Link Colour**  
-You can change the colour of links in chat by changing the `--link` variable at the top of the CSS file. The default colour is *Default blue*. In general you should leave this as default.
+`--link` changes the colour of links in chat. The default colour is *Default blue*. Normally you should leave this as default.
 
 **Voice**  
-You can change the colour used to indicate where you are connected to a voice server by modifying the `--voice` variable at the top of the CSS file. The default colour is *Turf green*. In general you shouldn't need to change this.
+`--voice` changes the colour of the ring which indicates where you are connected to a voice server. The default colour is *Turf green*. Normally you should leave this as default.
 
 ### Advanced
 The following options require a line of CSS to be removed from the CSS file.
