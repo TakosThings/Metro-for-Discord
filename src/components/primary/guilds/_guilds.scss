@@ -42,16 +42,11 @@
         height: 12px !important;
         margin-left: 0;
         border-radius: 0;
-        transform: none !important;
-        // Guild is unread
-        &[style*="opacity: 0.7;"]{
-            opacity: 1 !important;
-        }
+        transform:  none !important;
         // Guild is selected
-        &[style*="opacity: 1;"]{
+        &[style*="height: 40px;"]{
             height: 24px !important;
             background-color: var(--accent);
-            transform: none !important;
         }
     }
 
