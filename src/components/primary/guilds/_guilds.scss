@@ -61,8 +61,10 @@
     }
 
     // Home
-    .button-OhfaWu{
-        background-color: transparent;
+    .wrapper-1BJsBx{
+        .childWrapper-anI2G9{
+            background-color: transparent;
+        }
         svg{
             background-position: center;
             background-repeat: no-repeat;
@@ -71,6 +73,10 @@
                 display: none;
             }
         }
+    }
+    // Stop home :active transform
+    .listItemWrapper-3X98Pc:active{
+        transform: none;
     }
 
     // Separator
