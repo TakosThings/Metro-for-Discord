@@ -5,12 +5,15 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutBottomRight-2
     margin-top: 0;
 }
 
-div[class^="messagesPopoutWrap-"]{
+.messagesPopoutWrap-1MQ1bW{
     max-height: calc(100vh - 80px) !important;
     min-height: calc(100vh - 80px);
     position: absolute;
     right: 0 !important;
     left: initial !important;
+}
+.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-2fmau1){
+    right: -200px !important;
 }
 
 .theme-dark div[class^="messagesPopoutWrap-"]{
