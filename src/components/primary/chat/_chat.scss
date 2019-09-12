@@ -137,10 +137,11 @@
     }
 
     // Load more message
-    .hasMore-3e72_v button{
+    .hasMore-3e72_v{
         background-color: $b3;
-        border: 1px solid transparent;
+        border: 2px solid transparent;
         border-radius: 0;
+        box-shadow: none;
         color: #FFF;
         font-size: $fsui;
         font-weight: $fwui;
