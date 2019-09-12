@@ -1,91 +1,96 @@
-.theme-dark div[class^="channels-"] .container-3baos1{
-    height: 48px;
+.panels-j1Uci_{
+    background-color: $b1;
+}
+.theme-dark .sidebar-2K8pFh .container-3baos1{
     position: absolute;
     bottom: 0;
     left: 0;
+    height: 48px;
     margin-bottom: 0;
     padding: 0;
-    background-color: $b1;
-    // Remove right margin to stop controls shifting
     .avatarWrapper-2yR4wp{
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        bottom: 48px;
+        left: 0;
         margin-right: 0;
-    }
-    .avatar-SmRMf2{
-        width: 30px !important;
-        height: 30px !important;
-        padding: 9px;
-        margin: 0 0 97px 0;
-        border-radius: 0;
         &:hover{
-            background-color: $b3;
+            background-color: $b2;
+            cursor: pointer;
         }
-        .inner-1W0Bkn{
-            width: 24px;
-            height: 24px;
-            margin: 12px 0 0 12px;
+        .avatar-SmRMf2{
+            margin: 8px;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
-    .status-2zcSVk{
-        border: 0;
-        right: 10px;
-        bottom: 10px;
-    }
+    
+    // Hide name
     .nameTag-3uD-yy{
         display: none;
     }
-    button{
+
+    // Buttons
+    .flex-1xMQg5{
+        margin-left: 48px;
+    }
+    .button-14-BFJ{
         width: 48px;
         height: 48px;
-        border-radius: 0;
-        opacity: 1;
+        color: #FFF;
         &:hover{
             background-color: $b3;
+        }
+        &::before{
+            font-family: $icon;
+            font-size: 18px;
         }
         .contents-18-Yxp{
             display: none;
         }
     }
+    button[aria-label="Mute"],
+    button[aria-label="Unmute"],
+    button[aria-label="Deafen"],
+    button[aria-label="Undeafen"]{
+        background-color: transparent;
+        display: none;
+    }
 
-    // Default state - No voice connection
-    width: 48px;
-    .flex-1xMQg5.flex-1O1GKY{
-        button[aria-label="Mute"],
-        button[aria-label="Unmute"],
-        button[aria-label="Deafen"],
-        button[aria-label="Undeafen"]{
-
-            display: none;
-            &::before{
-                font-family: $icon;
-                font-size: 18px;
-            }
-        }
-        button[aria-label="Mute"]::before{
-            content: "\E720";
-        }
-        button[aria-label="Unmute"]::before{
-            content: "\EC54";
-            color: $alert;
-        }
-        button[aria-label="Deafen"]::before{
-            content: "\E767";
-        }
-        button[aria-label="Undeafen"]::before{
-            content: "\E74F";
-            color: $alert;
-        }
-        
+    button[aria-label="Mute"]::before{
+        content: "\E720";
+    }
+    button[aria-label="Unmute"]::before{
+        content: "\EC54";
+        color: $alert;
+    }
+    button[aria-label="Deafen"]::before{
+        content: "\E767";
+    }
+    button[aria-label="Undeafen"]::before{
+        content: "\E74F";
+        color: $alert;
+    }
+    button[aria-label="User Settings"]::before{
+        content: "\E713";
+    }
+    // Place the setting button in the guilds list
+    button[aria-label="User Settings"]{
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        bottom: 0;
+        left: 0;   
     }
 }
-// Show Mic/Speaker controls when connected to voice
-div[class^="channels-"] .container-1giJp5~.container-3baos1{
-    width: auto;
-    .flex-1xMQg5.flex-1O1GKY{
-        button[aria-label="Mute"],
-        button[aria-label="Unmute"],
-        button[aria-label="Deafen"],
-        button[aria-label="Undeafen"]{
-            display: block;
-        }
+.theme-dark .sidebar-2K8pFh .container-1giJp5~.container-3baos1{
+    width: 96px;
+    button[aria-label="Mute"],
+    button[aria-label="Unmute"],
+    button[aria-label="Deafen"],
+    button[aria-label="Undeafen"]{
+        display: block;
     }
 }
