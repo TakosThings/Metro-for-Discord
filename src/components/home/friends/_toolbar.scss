@@ -42,6 +42,23 @@
                 &:not(.selected-3s45Ha):hover{
                     background-color: $b3;
                 }
+                // Add Friend
+                // Discord stop.
+                &[style*="rgb(67, 181, 129)"]{
+                    background-color: transparent !important;
+                    &:hover{
+                        background-color: $b3 !important;
+                    }
+                }
+                &[style*="rgba(67, 181, 129, 0.2)"]{
+                    background-color: var(--accent) !important;
+                    color: #FFF !important;
+                    &:hover{
+                        background-color: var(--accent) !important;
+                        cursor: default;
+                    }
+                }
+                
             }
         }
         &::after{
