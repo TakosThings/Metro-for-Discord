@@ -1,12 +1,20 @@
 .menu-Sp6bN1{
     margin-left: 24px;
-    div[class^="item-"]{
-        div[class^="helper-"]{
+    padding: 8px 0;
+    .statusItem-2uzPIV{
+        margin: 0;
+        border-radius: 0;
+        .statusIconText-3b4TkH{
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+        .helper-2c73HK{
             display: none;
         }
     }
     // Remove last separator
-    .separator-2zcjq8:last-of-type{
+    .separator-2zcjq8{
         display: none;
     }
 }
