@@ -1,92 +1,51 @@
-div[class^="contextMenu-"].theme-dark{
-    background-color: $b1;
-    border: 1px solid rgba(255,255,255,.2);
+.theme-dark .contextMenu-HLZMGh{
+    min-width: 256px;
+    padding: 0;
+    background-color: $b2;
+    border: 1px solid rgba($color: #FFF, $alpha: .5);
     border-radius: 0;
-    box-shadow: none;
-    max-height: calc(100vh - 32px - 40px);
-    overflow-y: auto;
-
-    // Push context menu down if it may be clipping under titlebar
-    &[style*="top: 10px"]{
-        top: 36px !important;
+   
+    .itemGroup-1tL0uz{
+        border: 0;
+        &::after{
+            content: "";
+            width: calc(100% - 16px);
+            height: 1px;
+            display: block;
+            background-color: rgba($color: #FFF, $alpha: .3);
+            margin: 8px;
+        }
+        &:last-child{
+            margin-bottom: 8px;
+            &::after{
+                display: none;
+            }
+        }
     }
-
-    & div[class^="item-"]{
-        max-height: 32px;
+    
+    .itemBase-tz5SeC{
         margin: 0;
-        padding: 8px 10px;
         border-radius: 0;
         color: #FFF;
         font-size: $fschat;
         font-weight: $fwui;
-        &:hover{
-            background-color: $b3;
+        &:first-child{
+            margin-top: 8px;
         }
-        &[class*="disabled-"]{
+    }
+
+    .caret-UIZBlm{
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #FFF;
+        border-right: 1px solid #FFF;
+        transform: rotate(45deg) translateX(-10px) translateY(10px);
+        path{
             display: none;
-            &~[class^="item"]{
-                margin-top: 8px;
-            }
-        }
-    }
-    div[class*="itemSlider-"]{
-        max-height: 128px;
-        div[class^="slider"] div[class^="track"] div[class^="grabber"]{
-            margin-top: -4px;
-        }
-        div[class^="slider"] div[class^="track"] div[class^="grabber"] span[class^="bubble"]{
-            top: -29px;
-            box-sizing: border-box;
         }
     }
 
-    // Danger Six
-    div[class*="danger-"]{
-        color: $alert !important;
-    }
-
-    // Sub menu
-    div[class*="itemSubMenu"]{
-        position: relative;
-        background-color: transparent;
-        background-image: none;
-        &::after{
-            content: "";
-            width: 12px;
-            height: 12px;
-            position: absolute;
-            right: 12px;
-            top: 50%;
-            margin-top: -6px;
-            border-top: 1px solid #FFF;
-            border-right: 1px solid #FFF;
-            transform: rotate(45deg);
-        }
-    }
-
-    // Add margin to first and last items
-    & div[class^="item-"]:first-of-type{
-        margin-top: 8px;
-    }
-    & div[class^="item-"]:last-of-type{
-        margin-bottom: 8px;
-    }
-
-    // Checkbox
-    .checkbox .checkbox-inner span{
-        border: 1px solid $inputborder;
-        border-radius: 0;
-        &:hover{
-            border-color: $inputborderhover;
-        }
-    }
-    .checkbox .checkbox-inner input[type=checkbox]:checked+span{
-        background-color: var(--accent);
-        border-color: $inputborder;
-    }
-    .checkbox .checkbox-inner input[type=checkbox]:checked+span:after{
-        border-width: 0 1px 1px 0;
-        top: 2px;
-        left: 5px;
+    .grabber-3mFHz2{
+        margin-top: -4px;
     }
 }
