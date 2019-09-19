@@ -12,7 +12,8 @@ You should follow the relevant install instructions for your platform.
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 
 ## Requirements
-This theme utilises the Segoe UI MDL2 Assets font to provide some icons. You may notice missing icons if you are not running Windows 10.
+* An up to date install of Windows 10 with Segoe UI MDL2 Assets font. 
+* English language selected. The theme relies upon English strings to replace icons.
 
 ## Configure
 ### Required
