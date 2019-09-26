@@ -17,93 +17,33 @@
         display: none;
     }
 
-    // Tabs
-    a > svg ~ div.name-2WpE7M{
-        padding: 10px 0;
-    }
-
     // Conversation
     .channel-2QD9_O{
-        height: auto !important;
-        font-size: $fsui;
-        a{
-            height: auto;
-            margin: 0;
-            padding: 4px 12px 4px 16px;
+        max-width: 100%;
+        margin: 0;
+        color: #FFF;
+        &.container-2Pjhx-{
+            padding: 0;
             border-radius: 0;
-            .name-2WpE7M{
-                font-weight: normal;
-                opacity: 1;
-            }
-        }
-        // Avatar
-        .avatar-small{
-            width: 32px;
-            height: 32px;
-        }
-        // Avatar status
-        .status-oxiHuE{
-            width: 12px;
-            height: 12px;
-            right: 0;
-            bottom: 0;
-            border: 0;
-        }
-        .name-2WpE7M{
-            color: #FFF;
-            font-size: 15px;
-            font-weight: $fwui;
-            opacity: 1;
-        }
-        .activityText-OW8WYb{
-            color: rgba($color: #FFF, $alpha: 0.4);
-            font-size: 13px;
-            line-height: 1.3;
-            strong{
-                font-weight: normal;
-            }
-            svg path{
-                fill: rgba($color: #FFF, $alpha: 0.4);
-            }
-        }
-        // Close icon
-        button.close-3hZ5Ni{
-            width: 24px;
-            height: 24px;
-            position: absolute;
-            right: 12px;
-            z-index: 1;
-            background-color: $b2;
-            border: 1px solid $inputborder;
-            &:hover{
-                background-color: var(--accent);
-            }
         }
 
-        // States
-        // Hovered channel
-        &:hover a{
-            background-color: $b2;
+
+        .layout-2DM8Md{
+            height: 48px;
+            border-radius: 0;
         }
-        // Selected channel
-        &.selected-1HYmZZ{
-            a{
-                background-color: transparent;
+
+        .name-uJV0GL{
+            font-size: $fsui;
+            font-weight: $fwui;
+        }
+
+        // State
+        &.selected-aXhQR6{
+            .layout-2DM8Md{
+                background-color: $b3;
             }
-            &::before{
-                content: "";
-                width: 10px;
-                height: 10px;
-                position: absolute;
-                top: 50%;
-                left: -5px;
-                margin-top: -5px;
-                background-color: #FFF;
-                transform: rotate(45deg);
-            }
-            &:hover a{
-                background-color: $b2;
-            }
+            
         }
     }
 }
