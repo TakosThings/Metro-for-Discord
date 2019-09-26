@@ -52,35 +52,39 @@
                     text-align: center;
                     line-height: 36px;
                 }
+                svg{
+                    display: none;
+                }
             }
-            .friendsActionVoiceCall-3EdPsR,
-            .friendsActionAccept-3mkemT{
+            .friendsAction-__WNE9[aria-label="Start Video Call"],
+            .friendsAction-__WNE9[aria-label="Start Voice Call"],
+            .friendsAction-__WNE9[aria-label="Accept"]{
                 background-color: $safe;
                 &:hover{
                     background-color: darken($safe, 10%) !important;
                 }
             }
-            .friendsActionRemove-qu8nnl,
-            .friendsActionIgnore-1-RPlq{
+            .friendsAction-__WNE9[aria-label="Remove Friend"],
+            .friendsAction-__WNE9[aria-label="Ignore"]{
                 background-color: $alert;
                 &:hover{
                     background-color: darken($alert, 10%) !important;
                 }
             }
 
-            .friendsActionVideoCall-2_PKeP::before{
+            .friendsAction-__WNE9[aria-label="Start Video Call"]::before{
                 content: "\E714";
             }
-            .friendsActionVoiceCall-3EdPsR::before{
+            .friendsAction-__WNE9[aria-label="Start Voice Call"]::before{
                 content: "\F715";
             }
-            .friendsActionRemove-qu8nnl::before{
+            .friendsAction-__WNE9[aria-label="Remove Friend"]::before{
                 content: "\E74D";
             }
-            .friendsActionAccept-3mkemT::before{
+            .friendsAction-__WNE9[aria-label="Accept"]::before{
                 content: "\E8FB";
             }
-            .friendsActionIgnore-1-RPlq::before{
+            .friendsAction-__WNE9[aria-label="Ignore"]::before{
                 content: "\E8BB";
             }
         }
