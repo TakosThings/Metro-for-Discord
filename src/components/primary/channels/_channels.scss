@@ -1,9 +1,16 @@
 // Remove rounded corners on top-left and bottom-left
-.platform-win .base-3dtUhz{
-    border-radius: 0;
+.platform-win{
+    // Removes the gap between guilds and channel list
+    .base-3dtUhz{
+        left: 48px;
+    }
+    // Removes top-left rounded corner of the channels list
+    .sidebar-2K8pFh{
+        border-radius: 0;
+    }
 }
 
-.theme-dark .channels-Ie2l6A{
+.theme-dark .sidebar-2K8pFh{
     // Header
     header{
         padding: 0 12px;
@@ -80,6 +87,11 @@
                     top: 11px;
                     left: 12px;
                     transform: rotate(-45deg);
+                }
+            }
+            &.muted-1NRuDm{
+                .name-IbjUBS{
+                    color: $alert;
                 }
             }
         }

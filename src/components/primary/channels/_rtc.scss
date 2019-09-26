@@ -1,128 +1,68 @@
-.theme-dark .channels-Ie2l6A .container-1giJp5{
+.theme-dark .sidebar-2K8pFh .container-1giJp5{
+    width: 144px;
     height: 48px;
-    padding: 0 0 0 10px;
-    background-color: $b1;
-    border-bottom: 0;
+    padding: 0;
+    border: 0;
+    margin-left: 96px;
+    // Ping meter
     .rtcConnectionStatus-2-jIsi{
+        width: 48px;
+        height: 48px;
         position: relative;
+        &:hover{
+            background-color: $b2;
+        }
         .ping-2NgC8E{
-            width: 48px;
-            min-width: 48px;
-            height: 48px;
-            margin: 0 0 0 86px;
-            padding: 0;
-            background-image: none;
-            &:hover{
-                background-color: $b3;
-            }
-            &::before{
-                width: 48px;
-                height: 48px;
+            padding: 14px;
+        }
+    }
+
+    .labelWrapper-Pniq53{
+        .title-eS5yk3{
+            display: none;
+        }
+        a{
+            > div{
+                width: 16px;
+                height: 16px;
                 position: absolute;
-                font-family: $icon;
-                font-size: 24px;
-                text-align: center;
-                line-height: 48px;
+                right: 6px;
+                bottom: 6px;
+                background-color: $b3;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB+gAAAfoBF4pEbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVFiF7dZPK0RRHMbxc5Wsp2iSlOy9AiXZoPyJsqEs7WwsZWM1C94A70FCKTsLkpcyFsrCvwkfizlTUzMYNfeezXw3Z3Gfer51fuecG0KPHv8A2yilKj9Q5x59RRZnOIrlr5hNVf6GuZTl86nKa1gprDwKVLTyiCrucIxNlPMoz3DYRqAdH7jCTB4ijWP3jkWUMIxJ7OA6CjS4xHieEkttvg/G7XqJuSes5Smx/ENmFCcx94W9bkvsN+35xi+5rXhqoNJtiY6uYqziM2bXuy3R0WOE3aaZGOuqRCeoH+XTKHFWuECUGMFzlJhOJdGYm/NUAuU4kDUMtcvk+mORZVk1hHATQugPISwULhC5iOtUKoHbuE4U0NVKnAN4SCUw0HhLkgj06PEX31IG0S3SIDUGAAAAAElFTkSuQmCC);
+                background-size: 16px;
+                background-position: center;
+                border-radius: 50%;
+                border-radius: 50%;
+                font-size: 0;
+                &:hover{
+                    background-color: $b4;
+                }
             }
         }
-        &.rtc-connection-quality-unknown .ping-2NgC8E::before{
-            content: "\E904"
-        }
-        &.rtcConnectionQualityFine-2J6i8z .ping-2NgC8E::before{
-            content: "\E908";
-        }
-        &.rtcConnectionQualityAverage-3KV0u- .ping-2NgC8E::before{
-            content: "\E907";
-        }
-        &.rtcConnectionQualityBad-1J7mUU .ping-2NgC8E::before{
-            content: "\E906";
-        }
-        span:not(.ping-2NgC8E){
-            display: none;
-        }
     }
-    .inner-btChU7{
-        position: relative;
-    }
+    
 
-    button[aria-label="Connection Info"]{
+    // Buttons
+    .button-14-BFJ{
         width: 48px;
         height: 48px;
-        border-radius: 0;
-        opacity: 1;
+        color: #FFF;
         &:hover{
             background-color: $b3;
+        }
+        &::before{
+            font-family: $icon;
+            font-size: 18px;
         }
         .contents-18-Yxp{
             display: none;
         }
-        &::before{
-            content: "\E946";
-            font-family: $icon;
-            font-size: 20px;
-        }
     }
-    button[aria-label="Disconnect"]{
-        width: 48px;
-        height: 48px;
-        border-radius: 0;
-        opacity: 1;
-        &:hover{
-            background-color: $b3;
-        }
-        .contents-18-Yxp{
-            display: none;
-        }
-        &::before{
-            content: "\E89B";
-            font-family: $icon;
-            font-size: 20px;
-        }
+    button[aria-label="Connection Info"]::before{
+        content: "\E946";
     }
-
-    // // Voice status
-    // .customStatusContainer-pHFGrE{
-    //     button[aria-label="Set Voice Status"]{
-    //         width: 48px;
-    //         height: 48px;
-    //         opacity: 1;
-    //         .contents-18-Yxp{
-    //             display: none;
-    //         }
-    //         &:hover{
-    //             background-color: $b3;
-    //         }
-    //         &::before{
-    //             content: "\E90A";
-    //             color: #FFF;
-    //             font-family: $icon;
-    //             font-size: 20px;
-    //         }
-    //     }
-    // }
-
-    // Return to channel button
-    .channel-1TmDQ6{
-        font-size: 0;
-        width: 14px;
-        height: 14px;
-        position: absolute;
-        right: 6px;
-        bottom: 6px;
-        margin: 0;
-        padding: 2px;
-        background-color: $b3;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB+gAAAfoBF4pEbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVFiF7dZPK0RRHMbxc5Wsp2iSlOy9AiXZoPyJsqEs7WwsZWM1C94A70FCKTsLkpcyFsrCvwkfizlTUzMYNfeezXw3Z3Gfer51fuecG0KPHv8A2yilKj9Q5x59RRZnOIrlr5hNVf6GuZTl86nKa1gprDwKVLTyiCrucIxNlPMoz3DYRqAdH7jCTB4ijWP3jkWUMIxJ7OA6CjS4xHieEkttvg/G7XqJuSes5Smx/ENmFCcx94W9bkvsN+35xi+5rXhqoNJtiY6uYqziM2bXuy3R0WOE3aaZGOuqRCeoH+XTKHFWuECUGMFzlJhOJdGYm/NUAuU4kDUMtcvk+mORZVk1hHATQugPISwULhC5iOtUKoHbuE4U0NVKnAN4SCUw0HhLkgj06PEX31IG0S3SIDUGAAAAAElFTkSuQmCC);
-        background-size: 16px;
-        background-position: center;
-        border-radius: 50%;
-        opacity: 1;
-        &:hover{
-            background-color: var(--voice);
-        }
+    button[aria-label="Disconnect"]::before{
+        content: "\E89B";
     }
-}
-
-.theme-dark .listeningAlong-2UPsxf{
-    background-color: $b1
 }

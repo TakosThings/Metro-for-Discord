@@ -21,8 +21,12 @@
 
 // Notices
 @import 'components/notices/core';
+@import 'components/notices/language';
 @import 'components/notices/light_mode';
 @import 'components/notices/bd_blue';
+
+// Primary core
+@import 'components/primary/core';
 
 // Guilds
 @import 'components/primary/guilds/guilds';
@@ -32,6 +36,7 @@
 @import 'components/primary/channels/channels';
 @import 'components/primary/channels/channel_notices';
 @import 'components/primary/channels/rtc';
+@import 'components/primary/channels/activity';
 @import 'components/primary/channels/account';
 @import 'components/primary/channels/badge';
 
@@ -72,8 +77,7 @@
 @import 'components/popout/user';
 @import 'components/popout/chat_options';
 @import 'components/popout/emoji_picker';
-@import 'components/popout/status_changer';
-@import 'components/popout/server_dropdown';
+@import 'components/popout/channels_menu';
 @import 'components/popout/recent_mentions';
 @import 'components/popout/search';
 @import 'components/popout/rtc';
@@ -83,6 +87,7 @@
 @import 'components/popout/add_game';
 @import 'components/popout/attach';
 @import 'components/popout/game_preview';
+@import 'components/popout/livestream';
 
 // Modals
 @import 'components/modal/profile';
@@ -98,7 +103,8 @@
 @import 'components/modal/invite';
 @import 'components/modal/phone_verification';
 @import 'components/modal/create_instant_invite';
-@import 'components/modal/_new_server';
+@import 'components/modal/new_server';
+@import 'components/modal/go_live';
 
 // Misc
 @import 'components/misc/bot_tag';
