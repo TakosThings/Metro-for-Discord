@@ -162,7 +162,7 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popou
     }
 
     // Body
-    div[class^="body-"]{
+    div[class*="bodyInner-"]{
         padding: 20px;
         background-color: transparent;
         div[class^="bodyTitle"]{
