@@ -1,7 +1,7 @@
 # Metro for Discord
 A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'.  
 
-Latest version: `3.11.2` - 3.12.0 is being worked on to address issues from the 'Light Theme Update'. Pre-releases are available from the [Releases](https://github.com/TakosThings/Metro-for-Discord/releases) page. You may track progress in [#114](https://github.com/TakosThings/Metro-for-Discord/issues/114).
+Latest version: `3.12.0`
 
 ## Download
 Get the latest version from the [Releases](https://github.com/TakosThings/Metro-for-Discord/releases) page
@@ -12,7 +12,8 @@ You should follow the relevant install instructions for your platform.
 * [BetterDiscord](https://i.imgur.com/H7VyWea.png)
 
 ## Requirements
-This theme utilises the Segoe UI MDL2 Assets font to provide some icons. You may notice missing icons if you are not running Windows 10.
+* An up to date install of Windows 10 with Segoe UI MDL2 Assets font. 
+* English language selected. The theme relies upon English strings to replace icons.
 
 ## Configure
 ### Required

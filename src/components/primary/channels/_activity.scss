@@ -1,0 +1,43 @@
+.theme-dark .sidebar-2K8pFh .activityPanel-28dQGo{
+    width: 240px;
+    height: 48px;
+    position: absolute;
+    bottom: 0;
+    left: 48px;
+    padding: 0 0 0 12px;
+    border: 0;
+    box-sizing: border-box;
+    z-index: 1; // fixes buttons not being able to be used
+    .gameName-13va7o{
+        font-size: $fsui;
+        font-weight: $fwui;
+    }
+    .actions-aUdUfC{
+        button{
+            width: 48px;
+            height: 48px;
+            color: #FFF;
+            &:hover{
+                background-color: $b3;
+            }
+            &::before{
+                font-family: $icon;
+                font-size: 18px;
+            }
+            .contents-18-Yxp{
+                display: none;
+            }
+        }
+        button[aria-label="Go Live"]::before{
+            content: "\F71C";
+        }
+        button[aria-label="Stop Streaming"]::before{
+            content: "\F71D";
+        }
+    }
+}
+
+// Move up when connect to a voice channel
+.theme-dark .sidebar-2K8pFh .container-1giJp5~.activityPanel-28dQGo{
+    bottom: 48px;
+}

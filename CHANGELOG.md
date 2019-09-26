@@ -1,6 +1,34 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.0
+* **Repo**
+  * Themes will now be released through the Releases page
+  * Updated download instructions
+  * Updated explainations for Variables
+  * Update requirements for Windows 10
+  * Added requirement for English to be selected language
+* **Clean Up** (9)
+  * `/popout/_status_changer.scss` and `/popout/_server_menu.scss` were deleted and combined into `/popout/_channels_menu.scss`
+* **Enhancements**
+  * Themed 'Go Live' box, and fix it from displacing audio controls
+  * Added a warning banner if English or Simplified English is not selected
+  * Go Live modal
+  * Streaming popout
+* **Fixes**
+  * Updated Guilds after it was broken in a Discord update
+  * Updated Channels after it was broken in a Discord update
+  * Muted channel categories will now be coloured red
+  * Recent Mentions and Pinned Messages popouts opened 10px too low
+  * New Group DM popout opened in wrong position
+  * Updated Friends tab after it was broken in a Discord update
+  * Load more messages chat button
+  * Status changer
+  * Context Menu
+  * Hover state on members list
+  * User/Server/Channel Settings after it was broken in a Discord update
+  * Change 'Start Voice Call' icon in Friends table to improve backwards compatibility
+
 #### 3.11.2
 * **Fixes** (1)
   * This update changes the *Start Voice Call* icon which could be missing for some users

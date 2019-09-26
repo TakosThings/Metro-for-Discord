@@ -7,6 +7,7 @@
     .scroller-2TZvBN{
         margin-bottom: 96px;
         padding: 0;
+        background-color: transparent;
     }
 
     // Item
@@ -42,16 +43,11 @@
         height: 12px !important;
         margin-left: 0;
         border-radius: 0;
-        transform: none !important;
-        // Guild is unread
-        &[style*="opacity: 0.7;"]{
-            opacity: 1 !important;
-        }
+        transform:  none !important;
         // Guild is selected
-        &[style*="opacity: 1;"]{
+        &[style*="height: 40px;"]{
             height: 24px !important;
             background-color: var(--accent);
-            transform: none !important;
         }
     }
 
@@ -61,8 +57,10 @@
     }
 
     // Home
-    .button-OhfaWu{
-        background-color: transparent;
+    .wrapper-1BJsBx{
+        .childWrapper-anI2G9{
+            background-color: transparent;
+        }
         svg{
             background-position: center;
             background-repeat: no-repeat;
@@ -71,6 +69,10 @@
                 display: none;
             }
         }
+    }
+    // Stop home :active transform
+    .listItemWrapper-3X98Pc:active{
+        transform: none;
     }
 
     // Separator
@@ -112,21 +114,21 @@
         border: 2px solid #1a4e76;
     }
     
-    // Voice connected
-    .upperBadge-2XnnGB{
-        top: 9px;
-        right: 9px;
-    }
-    .iconBadge-2wi9r4{
-        width: 30px;
-        height: 30px;
-        background-color: transparent;
-        border: 2px solid var(--voice);
-        border-radius: 50%;
-        svg path{
-            display: none;
-        }
-    }
+    // // Voice connected
+    // .upperBadge-2XnnGB{
+    //     top: 9px;
+    //     right: 9px;
+    // }
+    // .iconBadge-2wi9r4{
+    //     width: 30px;
+    //     height: 30px;
+    //     background-color: transparent;
+    //     border: 2px solid var(--voice);
+    //     border-radius: 50%;
+    //     svg path{
+    //         display: none;
+    //     }
+    // }
 
     // Unread notification bars
     // These break due to our fixed buttons at the bottom, so we remove them
