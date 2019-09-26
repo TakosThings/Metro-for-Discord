@@ -7,7 +7,9 @@
 // Left sidebar
 .theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN{
     flex: 0;
-    background-color: $b1;
+    .sidebarRegionScroller-3MXcoP{
+        background-color: $b1;
+    }
     // Sticky hover
     &::before{
         content: "";
