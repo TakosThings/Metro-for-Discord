@@ -21,6 +21,10 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"].popoutBottomRight-2
     border: 0;
     border-radius: 0;
 
+    .messagesPopout-24nkyi{
+        background-color: $b1;
+    }
+    
     // Header
     div[class^="header-"]{
         background-color: transparent;
