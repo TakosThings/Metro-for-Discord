@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.1
+* **Fixes**
+  * Recent Mentions/Pinned Messages background-color
+
 #### 3.12.0
 * **Repo**
   * Themes will now be released through the Releases page
