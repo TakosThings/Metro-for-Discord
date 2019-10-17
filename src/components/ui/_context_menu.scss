@@ -21,6 +21,9 @@
                 display: none;
             }
         }
+        &:empty{
+            display: none;
+        }
     }
 
     .item-1Yvehc{
