@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.1"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.2"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -78,7 +78,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.1"; }
+  content: "Metro for Discord \A Version 3.12.2"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -628,8 +628,14 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
 .theme-dark .layer-v9HyYc[style*="left: -23.0014px"], .theme-dark .layer-v9HyYc[style*="left: -23px;"], .theme-dark .layer-v9HyYc[style*="left: -22.5069px;"], .theme-dark .layer-v9HyYc[style*="left: -22.0059px;"], .theme-dark .layer-v9HyYc[style*="left: -22.5px;"], .theme-dark .layer-v9HyYc[style*="left: -22.5028px;"], .theme-dark .layer-v9HyYc[style*="left: -22px;"] {
   display: none; }
 
+.theme-dark .layerContainer-yqaFcK {
+  max-height: calc(100vh - 32px);
+  top: 32px; }
+
 .theme-dark .contextMenu-HLZMGh {
   min-width: 256px;
+  max-height: calc(100vh - 32px);
+  overflow-y: scroll;
   padding: 0;
   background-color: #262626;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -647,6 +653,13 @@ div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]::-webkit-scroll
       margin-bottom: 8px; }
       .theme-dark .contextMenu-HLZMGh .itemGroup-1tL0uz:last-child::after {
         display: none; }
+    .theme-dark .contextMenu-HLZMGh .itemGroup-1tL0uz:empty {
+      display: none; }
+  .theme-dark .contextMenu-HLZMGh .item-1Yvehc:hover {
+    background-color: #333333; }
+  .theme-dark .contextMenu-HLZMGh .itemSubMenu-1vN_Yn:last-child,
+  .theme-dark .contextMenu-HLZMGh .item-1Yvehc:last-child {
+    margin-bottom: 8px; }
   .theme-dark .contextMenu-HLZMGh .itemBase-tz5SeC {
     margin: 0;
     border-radius: 0;
@@ -1187,7 +1200,8 @@ body.bd-blue .app::before {
       font-size: 18px; }
     .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button .contents-18-Yxp {
       display: none; }
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button[aria-label="Go Live"]::before {
+  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button[aria-label="Go Live"]::before,
+  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button:disabled::before {
     content: "\F71C"; }
   .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button[aria-label="Stop Streaming"]::before {
     content: "\F71D"; }
@@ -1388,8 +1402,7 @@ body.bd-blue .app::before {
   .theme-dark .chat-3bRxxu .container-1r6BKw .children-19S4PO .topic-TCb_qw {
     margin: 0;
     color: #FFF;
-    font-size: 15px;
-    line-height: 48px; }
+    font-size: 15px; }
   .theme-dark .chat-3bRxxu .container-1r6BKw .children-19S4PO::after {
     display: none; }
   .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 {
@@ -3055,11 +3068,11 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   display: none; }
 
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutLeft-"],
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 3"],
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"],
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"],
+.theme-dark div[class*="popouts-"] div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][style*="top: 3"],
+.theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"],
+.theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"],
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"],
-.layer-v9HyYc[style^="top: 20px"] {
+.layer-v9HyYc[id^="popout"][style^="top: 20px"] {
   position: absolute;
   top: 32px !important;
   right: 0 !important;
