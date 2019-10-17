@@ -3,7 +3,7 @@ div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noSha
 .theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"], // from cozy username
 .theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"], // from cozy avatar
 div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"], // from home games tab
-.layer-v9HyYc[style^="top: 20px"]{ // From voice channel
+.layer-v9HyYc[id^="popout"][style^="top: 20px"]{ // From voice channel. Defining ID to prevent selecting context menu when viewport is too small
     position: absolute;
     top: 32px !important;
     right: 0 !important;
