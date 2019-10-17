@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.2
+* **Fixes** (6)
+  * Emoji floating under channel topic in toolbar
+  * User popouts opening in wrong position
+  * Some bottom margins, and hover background-colour in context menus
+  * Hide empty item groups in context menu (fixes the double horizontal line in a few context menus eg. guild)
+  * Speculative fix for context menu opening under the app titlebar
+  * No icon displayed when game streaming is not enabled in that server
+
 #### 3.12.1
 * **Fixes** (1)
   * Recent Mentions/Pinned Messages background-color
