@@ -22,6 +22,19 @@
             }
         }
     }
+
+    .item-1Yvehc{
+        &:hover{
+            background-color: $b3;
+        }
+    }
+
+    .itemSubMenu-1vN_Yn,
+    .item-1Yvehc{
+        &:last-child{
+            margin-bottom: 8px;
+        }
+    }
     
     .itemBase-tz5SeC{
         margin: 0;
