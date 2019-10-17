@@ -2,24 +2,24 @@
 Newest Changes are at the top
 
 #### 3.12.1
-* **Fixes**
+* **Fixes** (1)
   * Recent Mentions/Pinned Messages background-color
 
 #### 3.12.0
-* **Repo**
+* **Repo** (5)
   * Themes will now be released through the Releases page
   * Updated download instructions
   * Updated explainations for Variables
   * Update requirements for Windows 10
   * Added requirement for English to be selected language
-* **Clean Up** (9)
+* **Clean Up** (1)
   * `/popout/_status_changer.scss` and `/popout/_server_menu.scss` were deleted and combined into `/popout/_channels_menu.scss`
-* **Enhancements**
+* **Enhancements** (4)
   * Themed 'Go Live' box, and fix it from displacing audio controls
   * Added a warning banner if English or Simplified English is not selected
   * Go Live modal
   * Streaming popout
-* **Fixes**
+* **Fixes** (12)
   * Updated Guilds after it was broken in a Discord update
   * Updated Channels after it was broken in a Discord update
   * Muted channel categories will now be coloured red
