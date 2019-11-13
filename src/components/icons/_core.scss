@@ -70,10 +70,6 @@
             background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAECAwP0BggJ+vv8DP4BeyhTYAAABXSURBVHja1cxBDoAgDETRYqEo1d7/uGpRQunGsPOvJnnJwFxU3rZgIAvXDtmDhTYe8UBVPMRVxcNd9rCkqwEwaggwAIvGDjBpCPCHq9ZXKF0dEJsIpjoBsMwHmfe95SIAAAAASUVORK5CYII=);
         }
     }
-    // Embedded audio attachment
-    div[class^="audioMetadata"]::before{
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAATlBMVEUAAAD////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7////+/v7+/v7+/v7+/v7+/v7///////+xcCBGAAAAGXRSTlMAARcdMU9VWGNucHJ1eIeMlaiquLvQ4u/we7ud+wAAAFpJREFUeNqt0UsOgCAQA1AV/CAqovLp/S/qwsSMSTcSuuzLbKZNWcbrk+mFFbLHJkDeV4F96DgAODn4ZSbwVD9Ah8whRM8hHRqWgQOSYtD2RlX4FQc+FJ+2KDce8AwWwvAsxQAAAABJRU5ErkJggg==);
-    }
 
     // Upload modal
     div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"] {
