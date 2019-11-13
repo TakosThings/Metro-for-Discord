@@ -105,9 +105,14 @@
         border: 0;
         .item-16cXuq{
             width: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
             margin: 0;
             &.selected-39BZ4S{
                 border-color: var(--accent);
+            }
+            svg{
+                display: none;
             }
         }
     }
