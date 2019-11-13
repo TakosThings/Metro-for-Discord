@@ -1,48 +1,148 @@
-// Media
-.theme-dark div[class^="embed-"]{
-    & div[class^="embedPill-"]{
-        background-color: #000;
-        border-radius: 0;
+.theme-dark .embed-IeVjo6{
+    border-radius: 0;
+    &.embedFull-2tM8--{
+        background-color: $b1;
+        border-left: 4px solid #000;
     }
-    & div[class^="embedInner"]{
-        background-color: darken($color: $b2, $amount: 1);
-        border: 0;
+
+    // Media
+    .embedMedia-1guQoW{
         border-radius: 0;
+        // GIF
+        .imageAccessory-3uSIjZ{
+            top: unset;
+            right: unset;
+            bottom: 4px;
+            left: 4px;
+            .gifTag-31zFY8{
+                width: auto;
+                background-image: none;
+                &::before{
+                    content: "GIF";
+                    color: #FFF;
+                    font-size: $fschat;
+                    padding: 4px;
+                    background-color: #000;
+                }
+            }
+            // Remove Gif favourite
+            .gifFavoriteButton-1gYkEU{
+                display: none;
+            }
+        }
+        
     }
-    & a[class*="embedImage"]{
+    
+    // Remove border radius on preview images
+    .embedImage-2W1cML img,
+    .embedImage-2W1cML video,
+    .embedThumbnail-2Y84-K img,
+    .embedThumbnail-2Y84-K video,
+    .embedVideo-3nf0O9 img,
+    .embedVideo-3nf0O9 video{
         border-radius: 0;
     }
 }
-.embedImage-2W1cML,
-.embedThumbnail-2Y84-K,
-.embedVideo-3nf0O9{
+
+// Audio
+.theme-dark .wrapperAudio-1jDe0Q{
+    background-color: $b1;
+    border: 0;
+    border-radius: 0;
+    // File type icon
+    .audioMetadata-3zOuGv{
+        &::before{
+            content: "\EC4F";
+            font-family: $icon;
+            font-size: 24px;
+            text-align: center;
+            line-height: 36px;
+        }
+    }
+    // Download
+    .metadataDownload-1fk90V{
+        &::before{
+            content: "\E896";
+            font-family: $icon;
+            font-size: 24px;
+            text-align: center;
+            line-height: 36px;
+        }
+        svg{
+            display: none;
+        }
+    }
+}
+
+// Video
+// Brought to you by the Department of Redundancy Department
+.theme-dark .wrapper-2TxpI8,
+.theme-dark .imageWrapper-2p5ogY,
+.theme-dark .video-8eMOth{
     border-radius: 0;
 }
 
-// GIF (eg. from giphy)
-.imageWrapper-2p5ogY{
+// Media player controls
+.theme-dark .audioControls-2HsaU6,
+.theme-dark .videoControls-2kcYic{
+    background-color: #000;
     border-radius: 0;
-}
-div[class^="embed-"] div[class^="gifTag-"],
-div[class^="imageAccessory"],
-div[class^="imageAccessory"] div[class^="gifTag-"]{
-    width: auto;
-    height: auto;
-    top: initial;
-    right: initial;
-    bottom: 8px;
-    left: 8px;
-    background-image: none;
-}
-div[class^="embed-"] div[class^="gifTag-"]::before,
-div[class^="imageAccessory"] div[class^="gifTag-"]::before{
-    content: "GIF";
-    color: #FFF;
-    font-size: 18px;
-}
-// Remove GIF favourite button
-.gifFavoriteButton-1gYkEU{
-    display: none;
+    // Duration
+    div[class^="buffer"]{
+        display: none;
+    }
+    div[class^="durationTimeWrapper"] span{
+        font-family: $font;
+        font-size: $fschat;
+        font-weight: $fwui;
+    }
+    // Scrubbing bar
+    div[class^="mediaBarInteraction"]{
+        cursor: default;
+    }
+    div[class^="mediaBarWrapper"]{
+        height: 2px;
+        background-color: #fff;
+        &::before,
+        &::after{
+            display: none;
+        }
+        div[class^="mediaBarPreview"]{
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+        div[class^="mediaBarProgress"]{
+            height: 4px;
+            margin-top: -1px;
+            background-color: var(--accent);
+            span{
+                width: 12px;
+                height: 12px;
+                margin-top: -8px;
+                margin-right: -8px;
+                background-color: $b1;
+                border: 2px solid var(--accent);
+                border-radius: 50%;
+                transform: none;
+                cursor: default;
+                &:hover{
+                    border-color: #FFF;
+                }
+            }
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+    }
+    // Parent element is rotated 90deg CCW
+    div[class*="mediaBarInteractionVolume-"]{
+        padding: 12px;
+        background-color: #000;
+        border-radius: 0;
+    }
 }
 
 // Spotify Invite
@@ -108,96 +208,5 @@ div[class^="modal-"]{
             background-image: url(https://i.imgur.com/ccG6HYH.png);
             background-size: auto;
         }
-    }
-}
-
-// Embedded AV
-// Embedded audio metadata
-.theme-dark div[class^="wrapperAudio"]{
-    background-color: $b1;
-    border: 0;
-    border-radius: 0;
-
-    // Icon
-    div[class^="audioMetadata"]::before{
-        content: "";
-        width: 40px;
-        height: 40px;
-        background-color: var(--accent);
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    div[class^="metadataSize"]{
-        color: #FFF;
-    }
-}
-// Embedded video viewport
-.theme-dark video{
-    border-radius: 0;
-}
-
-.theme-dark a[class*="metadataDownload"] svg[name="Download"] g{
-    display: none;
-}
-// AV controls
-.theme-dark div[class^="audioControls-"],
-.theme-dark div[class^="videoControls-"]{
-    background-color: #000;
-    border-radius: 0;
-    // Duration
-    div[class^="buffer"]{
-        display: none;
-    }
-    div[class^="durationTimeWrapper"] span{
-        font-family: $font;
-        font-size: $fschat;
-        font-weight: $fwui;
-    }
-    // Scrubbing bar
-    div[class^="mediaBarInteraction"]{
-        cursor: default;
-    }
-    div[class^="mediaBarWrapper"]{
-        height: 2px;
-        background-color: #fff;
-        &::before,
-        &::after{
-            display: none;
-        }
-        div[class^="mediaBarPreview"]{
-            &::before,
-            &::after{
-                display: none;
-            }
-        }
-        div[class^="mediaBarProgress"]{
-            height: 4px;
-            margin-top: -1px;
-            background-color: var(--accent);
-            span{
-                width: 12px;
-                height: 12px;
-                margin-top: -8px;
-                margin-right: -8px;
-                background-color: $b1;
-                border: 2px solid var(--accent);
-                border-radius: 50%;
-                transform: none;
-                cursor: default;
-                &:hover{
-                    border-color: #FFF;
-                }
-            }
-            &::before,
-            &::after{
-                display: none;
-            }
-        }
-    }
-    // Parent element is rotated 90deg CCW
-    div[class*="mediaBarInteractionVolume-"]{
-        padding: 12px;
-        background-color: #000;
-        border-radius: 0;
     }
 }
