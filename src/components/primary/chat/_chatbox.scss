@@ -161,13 +161,14 @@
     // Typing
     div[class^="typing-"]{
         height: 20px;
-        bottom: 46px;
+        bottom: 50px;
+        margin-left: -16px;
         background-color: transparent;
         font-size: 11px;
         line-height: 20px;
         justify-content: flex-end;
         pointer-events: none;
-        span[class*="ellipsis-"]{
+        svg[class*="ellipsis-"]{
             display: none;
         }
         span[class^="text-"]{
