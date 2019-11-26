@@ -262,20 +262,22 @@
     }
 
     // Reactions
-    .reaction{
+    .reaction-1ELvT8{
         border: 1px solid transparent;
         border-radius: 0;
         &:hover{
             border-color: $inputborder;
         }
-        .reaction-count{
+        .reactionCount-2ddRoS{
             color: rgba(255,255,255,.5);
             font-weight: normal;
         }
-        &.reaction-me{
+        &.reactionMe-23mbRf{
             background-color: var(--accent);
-            color: #FFF;
-            font-weight: normal;
+            .reactionCount-2ddRoS{
+                color: #000;
+                font-weight: bold;
+            }
         }
     }
 
