@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.4
+* **Fixes** (1)
+  * Oversized Pinned Messages toolbar button icon
+
 #### 3.12.3
 * **Enhancements** (2)
   * Rewrite of chatbox SCSS. This may allow BetterDiscord plugins to utilise the `buttonContainer`, however this is untested and will likely cause a problem with the top border which indicates when the textarea is focused.
