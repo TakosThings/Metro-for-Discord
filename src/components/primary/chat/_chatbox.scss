@@ -1,123 +1,141 @@
-.theme-dark .chat-3bRxxu form{
-    background-color: transparent;
-    box-shadow: none;
-
-    div[class*="channelTextArea-"]{
-        margin: 0;
-        padding: 0;
-        border: 0;
-        div[class*="inner-"]{
-            background-color: transparent;
-            border-radius: 0;
-            textarea{
-                margin: 0 -48px 0 0;
-                padding: 13px 56px 13px 56px;
-                border-top: 2px solid $b3;
-                color: #FFF;
-                transition: .15s ease-in;
-                &:focus{
-                    border-top-color: var(--accent);
-                    transition: .15s ease-in;
-                }
-                &::-webkit-input-placeholder{
-                    color: #FFF;
-                    font-family: $font;
-                }
-                &[class^="textAreaEnabledNoAttach"],
-                &[class^="textAreaDisabled"]{
-                    padding: 10px 56px 10px 8px;
-                }
-            }
+.theme-dark .form-2fGMdU{
+    // Remove top border
+    .channelTextArea-rNsIhG{
+        padding-top: 0;
+        margin-bottom: 0;
+        border-top: 0;
+    }
+    // Remove border radii from container
+    .innerAutocomplete-1PN280,
+    .innerNoAutocomplete-1WpcVO{
+        border-radius: 0;
+    }
+    // Remove container background
+    .inner-zqa7da{
+        background-color: transparent;
+    }
+    
+    // Attach button
+    .attachButton-1UjEWA{
+        width: 48px;
+        height: 46px;
+        position: absolute;
+        top: 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        &:hover{
+            background-color: $b3;
         }
-
-        // Upload button
-        button[class^="attachButton-"]{
-            width: 48px;
-            height: 48px;
-            position: absolute;
-            top: 2px;
-            left: 0;
-            border-radius: 0;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            opacity: .5;
-            svg{
-                display: none;
-            }
-            &:hover{
-                background-color: $b3;
-                opacity: 1;
-            }
-        }
-        div[class^="attachButtonDivider"]{
+        svg{
             display: none;
         }
+    }
+    .attachButtonDivider-3Glu60{
+        display: none;
+    }
 
-        // Upload button with Spotify enabled
-        svg[class^="attachButton"]{
-            width: 48px;
-            height: 48px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 0;
-            border-top: 2px solid #0F0;
-            border-radius: 0;
+    // Upload button with Spotify enabled
+    svg[class^="attachButton"]{
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        border-top: 2px solid #0F0;
+        border-radius: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        opacity: .5;
+        g{
+            display: none;
+        }
+        &:hover{
+            background-color: $b3;
+            opacity: 1;
+        }
+    }
+
+    // Textarea
+    .textArea-2Spzkt{
+        margin: 0 -48px 0 0;
+        padding: 12px 48px 13px calc(48px + 8px);
+        border-top: 2px solid $b3;
+        color: #FFF;
+        line-height: 1.3333;
+        &:focus{
+            border-top-color: var(--accent);
+        }
+
+        &::-webkit-input-placeholder{
+            color: #FFF;
+            font-family: $font;
+        }
+
+        // No attach button present
+        &.textAreaDisabled-2_o-kZ,
+        &.textAreaEnabledNoAttach-1WxUwj{
+            padding-left: 10px;
+        }
+    }
+
+    // Right Buttons
+    .buttons-205you{
+        padding-right: 0;
+        // Remove gift button
+        button[aria-label="Send a gift"]{
+            display: none;
+        }
+        .buttonContainer-21MN7J{
+            // Remove GIF button
+            button[aria-label="Open GIF picker"]{
+                display: none;
+            }
+        }
+    }
+    .emojiButton-3uL3Aw{
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        margin: 0;
+        &::before{
+            content: "";
+            width: 40px;
+            height: 40px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: 24px;
-            opacity: .5;
-            g{
-                display: none;
-            }
-            &:hover{
-                background-color: $b3;
-                opacity: 1;
-            }
         }
+        &:hover{
+            background-color: $b3;
+        }
+        // popout is open
+        &[aria-expanded="true"]{
+            background-color: var(--accent);
+        }
+        // Remove default emoji
+        .sprite-2iCowe{
+            display: none;
+        }
+    }
 
-        // Emoji button
-        button[class*="emojiButton-"]{
-            width: 48px;
-            height: 48px;
-            top: 2px;
-            right: 0;
-            padding: 0;
-            border-radius: 0;
-            &::before{
-                content: "";
-                width: 40px;
-                height: 40px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 24px;
-            }
-            div[class*="sprite-"]{
-                display: none;
-            }
-            &.popout-open{
-                background-color: var(--accent);
-                &:hover{
-                    background-color: var(--accent);
-                }
-            }
-            &:hover{
-                background-color: $b3;
-            }
+    // Typing
+    .typing-2GQL18{
+        height: 20px;
+        bottom: 46px;
+        background-color: transparent;
+        font-size: 11px;
+        line-height: 20px;
+        justify-content: flex-end;
+        pointer-events: none;
+        svg[class*="ellipsis-"]{
+            display: none;
         }
-        div[class^="emojiButtonNormal-"]{
-            opacity: 1;
-        }
-        // Right side buttons
-        .buttons-205you{
-            // Gift Nitro button
-            .buttonWrapper-1ZmCpA{
-                display: none;
-            }
-            // GIF button
-            .buttonContainer-21MN7J{
-                display: none;
+        span[class^="text-"]{
+            strong{
+                font-weight: normal;
             }
         }
     }
@@ -154,25 +172,6 @@
                 background-color: transparent;
                 border: 0;
                 border-radius: 0;
-            }
-        }
-    }
-
-    // Typing
-    div[class^="typing-"]{
-        height: 20px;
-        bottom: 46px;
-        background-color: transparent;
-        font-size: 11px;
-        line-height: 20px;
-        justify-content: flex-end;
-        pointer-events: none;
-        span[class*="ellipsis-"]{
-            display: none;
-        }
-        span[class^="text-"]{
-            strong{
-                font-weight: normal;
             }
         }
     }

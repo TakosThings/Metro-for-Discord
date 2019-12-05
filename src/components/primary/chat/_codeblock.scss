@@ -4,15 +4,19 @@
     border: 0;
     border-left: 4px solid #5e5e5e;
     border-radius: 0;
+    .hljs{
+        border-radius: 0;
+    }
     code{
         background-color: #2F2F2F;
+        border: 0;
         font-family: $mono;
         overflow-x: hidden;
         &::before{
             content: attr(class);
-            width: calc(100% + 271px);
+            width: calc(100% + 326px);
             display: block;
-            margin: -7px 0 .5em -270px;
+            margin: -7px 0 1em -326px;
             padding: 2px 6px 2px 0;
             background-color: #5E5E5E;
             color: #FFF;
@@ -24,7 +28,7 @@
         }
     }
     // Hide language bar if no language is set
-    code[class="scrollbarGhost-2F9Zj2 scrollbar-3dvm_9 hljs"]::before{
+    code[class="scrollbarGhostHairline-1mSOM1 scrollbar-3dvm_9 hljs"]::before{
         display: none;
     }
 }

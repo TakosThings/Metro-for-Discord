@@ -1,6 +1,30 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.3
+* **Enhancements** (2)
+  * Rewrite of chatbox SCSS. This may allow BetterDiscord plugins to utilise the `buttonContainer`, however this is untested and will likely cause a problem with the top border which indicates when the textarea is focused.
+  * Added a bottom border to emoji picker categories
+* **Fixes** (18)
+  * Emoji picker category tabs icons were repeating XY
+  * Return to RTC channel shortcut had wrong hover background colour
+  * Emoji picker info bar had default background-color
+  * Embedded content in chat reverted to default
+  * Codeblock headers showed extra attributes
+  * Codeblock header was still visible when no language had been defined by the user
+  * Remove 'User is typing...' dots animation
+  * 'User is typing...' position to align with right edge of chat box
+  * Chat reactions were unthemed
+  * Chat timestamp text colour
+  * User popout can no longer be easily forced to display at right side of window, will now open with default behaviour
+  * User Settings menu had wrong icons on some options, caused by a new option being added
+  * Changed Boost status menu icon in Server settings to match User Settings
+  * Emoji picker diversity selector icon size was clipping outside of button
+  * Some icons missing from toolbars
+  * Pinned/Recent messages popouts leaving a gap between toolbar and popout
+  * Profile modal username line-height
+  * Create instant invite modal search, and friends list
+
 #### 3.12.2
 * **Fixes** (6)
   * Emoji floating under channel topic in toolbar
