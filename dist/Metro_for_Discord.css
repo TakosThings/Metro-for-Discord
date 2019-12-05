@@ -76,7 +76,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.3"; }
+  content: "Metro for Discord \A Version 3.12.4"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1319,6 +1319,14 @@ html[lang="ko"] .app-2rEoOp {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 24px; }
+    .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject {
+      mask: none; }
+    .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject svg {
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px; }
     .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg path {
       display: none; }
     .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
@@ -2419,6 +2427,14 @@ div[class^="modal-"] div[class^="invite-"] {
       background-position: center;
       background-repeat: no-repeat;
       background-size: 24px; }
+    .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject {
+      mask: none; }
+    .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject svg {
+      width: 24px;
+      height: 24px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px; }
     .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg path {
       display: none; }
     .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
