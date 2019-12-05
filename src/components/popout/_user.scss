@@ -173,6 +173,7 @@
         // Note input
         div[class^="note-"]{
             margin-left: 0;
+            margin-right: -8px; // Hack: Fix textarea width
             textarea{
                 min-height: 32px;
                 padding: 9px 12px 10px;
