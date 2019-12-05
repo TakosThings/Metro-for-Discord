@@ -1,21 +1,5 @@
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutLeft-"], // from memberlist
-.theme-dark div[class*="popouts-"] div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][style*="top: 3"], // from compact chat
-.theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 3"], // from cozy username
-.theme-dark [class*="popouts-"] div[class^="noArrow-"][class*="noShadow"][class*="popout-"][style*="top: 42"], // from cozy avatar
-div[class^="theme-dark"][class*="popouts-"] div[class^="noArrow-"][class*="popout-"][style*="top: 42"], // from home games tab
-.layer-v9HyYc[id^="popout"][style^="top: 20px"]{ // From voice channel. Defining ID to prevent selecting context menu when viewport is too small
-    position: absolute;
-    top: 32px !important;
-    right: 0 !important;
-    left: initial !important;
-    margin: 0;
-    transform: none !important;
-    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
-}
-
 .theme-dark div[class^="userPopout-"]{
     width: 420px;
-    height: calc(100vh - 32px);
     background-color: $b1;
     border-radius: 0;
     transform: none !important; // Fixes PermissionsViewer plugin
