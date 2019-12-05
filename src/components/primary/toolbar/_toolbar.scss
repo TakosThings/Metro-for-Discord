@@ -56,6 +56,13 @@
             margin: 0;
             opacity: 1;
             > svg{
+                width: 68px;
+                height: 48px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 24px;
+            }
+            > svg path{
                 display: none;
             }
             &:hover{
