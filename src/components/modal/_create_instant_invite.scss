@@ -17,6 +17,44 @@
         font-size: $fsui;
     }
 
+    // Friends list
+    // Search
+    .container-2XeR5Z{
+        background-color: transparent;
+        border-radius: 0;
+    }
+    .input-1Rv96N{
+        height: auto;
+        padding: 4px 12px;
+        border: 2px solid $inputborder;
+        font-size: $fsui;
+        font-weight: $fwui;
+        &:hover{
+            border-color: $inputborderhover;
+        }
+        &:focus{
+            background-color: #FFF;
+            border-color: var(--accent);
+            color: #000;
+        }
+    }
+    .iconLayout-1WxHy4{
+        display: none;
+    }
+
+    // No Results
+    .title-2BxgL2{
+        color: #FFF;
+        font-weight: normal;
+        text-transform: none;
+    }
+
+    // Invite button
+    .inviteRowButton-3opYo2{
+        width: 73px;
+    }
+
+
     // Input
     div[class^="input-"]:not(input){
         border: 0;
