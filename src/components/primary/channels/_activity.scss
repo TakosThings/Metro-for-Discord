@@ -1,9 +1,6 @@
-.theme-dark .sidebar-2K8pFh .activityPanel-28dQGo{
+.theme-dark .sidebar-2K8pFh .panel-24C3ux{
     width: 240px;
     height: 48px;
-    position: absolute;
-    bottom: 0;
-    left: 48px;
     padding: 0 0 0 12px;
     border: 0;
     box-sizing: border-box;
@@ -28,17 +25,12 @@
                 display: none;
             }
         }
-        button[aria-label="Go Live"]::before,
+        button[aria-label^="Stream"]::before,
         button:disabled::before{
             content: "\F71C";
         }
-        button[aria-label="Stop Streaming"]::before{
+        button.disabled-2iW-fm::before{
             content: "\F71D";
         }
     }
-}
-
-// Move up when connect to a voice channel
-.theme-dark .sidebar-2K8pFh .container-1giJp5~.activityPanel-28dQGo{
-    bottom: 48px;
 }
