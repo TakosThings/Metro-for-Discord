@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.5
+* **Fixes** (5)
+  * Chatbox border-top didn't indicate focus
+  * Chatbox placeholder text colour
+  * Chatbox upload button couldn't be clicked
+  * Chatbox Emoji picker clipping over top border when hovered
+  * Go live button icons in Activity box
+
 #### 3.12.4
 * **Fixes** (1)
   * Oversized Pinned Messages toolbar button icon
