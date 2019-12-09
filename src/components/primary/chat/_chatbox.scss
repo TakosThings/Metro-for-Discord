@@ -24,6 +24,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
+        z-index: 1;
         &:hover{
             background-color: $b3;
         }
