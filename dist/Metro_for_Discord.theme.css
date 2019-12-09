@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.4"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.5"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -78,7 +78,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.4"; }
+  content: "Metro for Discord \A Version 3.12.5"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1176,38 +1176,32 @@ body.bd-blue .app::before {
   .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label="Disconnect"]::before {
     content: "\E89B"; }
 
-.theme-dark .sidebar-2K8pFh .activityPanel-28dQGo {
+.theme-dark .sidebar-2K8pFh .panel-24C3ux {
   width: 240px;
   height: 48px;
-  position: absolute;
-  bottom: 0;
-  left: 48px;
   padding: 0 0 0 12px;
   border: 0;
   box-sizing: border-box;
   z-index: 1; }
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .gameName-13va7o {
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .gameName-13va7o {
     font-size: 15px;
     font-weight: 400; }
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button {
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button {
     width: 48px;
     height: 48px;
     color: #FFF; }
-    .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button:hover {
+    .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button:hover {
       background-color: #333333; }
-    .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button::before {
+    .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button::before {
       font-family: "Segoe MDL2 Assets";
       font-size: 18px; }
-    .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button .contents-18-Yxp {
+    .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button .contents-18-Yxp {
       display: none; }
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button[aria-label="Go Live"]::before,
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button:disabled::before {
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button[aria-label^="Stream"]::before,
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button:disabled::before {
     content: "\F71C"; }
-  .theme-dark .sidebar-2K8pFh .activityPanel-28dQGo .actions-aUdUfC button[aria-label="Stop Streaming"]::before {
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button.disabled-2iW-fm::before {
     content: "\F71D"; }
-
-.theme-dark .sidebar-2K8pFh .container-1giJp5 ~ .activityPanel-28dQGo {
-  bottom: 48px; }
 
 .panels-j1Uci_ {
   background-color: #191919; }
@@ -1846,7 +1840,8 @@ body.bd-blue .app::before {
   top: 2px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 24px; }
+  background-size: 24px;
+  z-index: 1; }
   .theme-dark .form-2fGMdU .attachButton-1UjEWA:hover {
     background-color: #333333; }
   .theme-dark .form-2fGMdU .attachButton-1UjEWA svg {
@@ -1874,17 +1869,17 @@ body.bd-blue .app::before {
     background-color: #333333;
     opacity: 1; }
 
+.theme-dark .form-2fGMdU .placeholder-P6ptfj {
+  color: #AAA; }
+
 .theme-dark .form-2fGMdU .textArea-2Spzkt {
   margin: 0 -48px 0 0;
   padding: 12px 48px 13px calc(48px + 8px);
   border-top: 2px solid #333333;
   color: #FFF;
   line-height: 1.3333; }
-  .theme-dark .form-2fGMdU .textArea-2Spzkt:focus {
+  .theme-dark .form-2fGMdU .textArea-2Spzkt:focus-within {
     border-top-color: var(--accent); }
-  .theme-dark .form-2fGMdU .textArea-2Spzkt::-webkit-input-placeholder {
-    color: #FFF;
-    font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
   .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaDisabled-2_o-kZ, .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaEnabledNoAttach-1WxUwj {
     padding-left: 10px; }
 
@@ -1897,9 +1892,10 @@ body.bd-blue .app::before {
 
 .theme-dark .form-2fGMdU .emojiButton-3uL3Aw {
   width: 48px;
-  height: 48px;
+  height: 46px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  top: 2px; }
   .theme-dark .form-2fGMdU .emojiButton-3uL3Aw::before {
     content: "";
     width: 40px;
