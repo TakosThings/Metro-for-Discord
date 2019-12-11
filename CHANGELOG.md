@@ -4,7 +4,7 @@ Newest Changes are at the top
 #### 3.12.6
 * **Fixes** (3)
   * Don't use Imgur for replacing Spotify icon
-  * Chatbox had reverted to default border
+  * Chatbox had reverted to default style
   * Toolbar icons were doubled
 
 #### 3.12.5
