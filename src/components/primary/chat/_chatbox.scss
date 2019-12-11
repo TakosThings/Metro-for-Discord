@@ -1,21 +1,21 @@
 .theme-dark .form-2fGMdU{
+    border-top: 0;
     // Remove top border
     .channelTextArea-rNsIhG{
         padding-top: 0;
+        margin-top: 0;
         margin-bottom: 0;
         border-top: 0;
     }
-    // Remove border radii from container
-    .innerAutocomplete-1PN280,
-    .innerNoAutocomplete-1WpcVO{
-        border-radius: 0;
-    }
-    // Remove container background
-    .inner-zqa7da{
+    .scrollableContainer-38zsVD{
         background-color: transparent;
+        border-radius: 0;
     }
     
     // Attach button
+    .attachWrapper-1_D-pj{
+        border: 0;
+    }
     .attachButton-1UjEWA{
         width: 48px;
         height: 46px;
@@ -59,11 +59,7 @@
         }
     }
 
-    // Textarea
-    .placeholder-P6ptfj{
-        color: #AAA;
-    }
-    .textArea-2Spzkt{
+        .textArea-2Spzkt{
         margin: 0 -48px 0 0;
         padding: 12px 48px 13px calc(48px + 8px);
         border-top: 2px solid $b3;
@@ -71,6 +67,9 @@
         line-height: 1.3333;
         &:focus-within{
             border-top-color: var(--accent);
+        }
+        &::-webkit-input-placeholder{
+            color: #AAA;
         }
 
         // No attach button present
@@ -82,6 +81,7 @@
 
     // Right Buttons
     .buttons-205you{
+        margin-right: 0;
         padding-right: 0;
         // Remove gift button
         button[aria-label="Send a gift"]{
@@ -179,7 +179,7 @@
     // Auto complete
     // Hack to stop the autocomplete popout being selected
     // Changes to this code must be mirrored to _chat.scss
-    button[class^="emojiButton"] ~ div[class^="autocomplete-"]{
+    div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"]{
         background-color: $b1;
         border-bottom: 1px solid $b2;
         border-radius: 0;
