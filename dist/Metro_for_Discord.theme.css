@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.5"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.6"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -78,7 +78,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.5"; }
+  content: "Metro for Discord \A Version 3.12.6"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1405,20 +1405,6 @@ body.bd-blue .app::before {
     margin: 0;
     opacity: 1; }
     .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg {
-      width: 68px;
-      height: 48px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 24px; }
-    .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject {
-      mask: none; }
-    .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject svg {
-      width: 24px;
-      height: 24px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 12px; }
-    .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg path {
       display: none; }
     .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
       background-color: #333333; }
@@ -1709,7 +1695,7 @@ body.bd-blue .app::before {
   .theme-dark .chat-3bRxxu .operations-36ENbA > a {
     color: var(--accent); }
 
-.theme-dark .chat-3bRxxu .buttons-205you ~ div[class^="autocomplete-"] {
+.theme-dark .chat-3bRxxu div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"] {
   background-color: #191919;
   border-bottom: 1px solid #262626;
   border-radius: 0; }
@@ -1821,161 +1807,148 @@ body.bd-blue .app::before {
   .theme-dark .messageGroupBlocked-3wrQQX.revealed-1_RKsf {
     background-color: #333333; }
 
-.theme-dark .form-2fGMdU .channelTextArea-rNsIhG {
-  padding-top: 0;
-  margin-bottom: 0;
+.theme-dark .form-2fGMdU {
   border-top: 0; }
-
-.theme-dark .form-2fGMdU .innerAutocomplete-1PN280,
-.theme-dark .form-2fGMdU .innerNoAutocomplete-1WpcVO {
-  border-radius: 0; }
-
-.theme-dark .form-2fGMdU .inner-zqa7da {
-  background-color: transparent; }
-
-.theme-dark .form-2fGMdU .attachButton-1UjEWA {
-  width: 48px;
-  height: 46px;
-  position: absolute;
-  top: 2px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  z-index: 1; }
-  .theme-dark .form-2fGMdU .attachButton-1UjEWA:hover {
-    background-color: #333333; }
-  .theme-dark .form-2fGMdU .attachButton-1UjEWA svg {
-    display: none; }
-
-.theme-dark .form-2fGMdU .attachButtonDivider-3Glu60 {
-  display: none; }
-
-.theme-dark .form-2fGMdU svg[class^="attachButton"] {
-  width: 48px;
-  height: 48px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0;
-  border-top: 2px solid #0F0;
-  border-radius: 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 24px;
-  opacity: .5; }
-  .theme-dark .form-2fGMdU svg[class^="attachButton"] g {
-    display: none; }
-  .theme-dark .form-2fGMdU svg[class^="attachButton"]:hover {
-    background-color: #333333;
-    opacity: 1; }
-
-.theme-dark .form-2fGMdU .placeholder-P6ptfj {
-  color: #AAA; }
-
-.theme-dark .form-2fGMdU .textArea-2Spzkt {
-  margin: 0 -48px 0 0;
-  padding: 12px 48px 13px calc(48px + 8px);
-  border-top: 2px solid #333333;
-  color: #FFF;
-  line-height: 1.3333; }
-  .theme-dark .form-2fGMdU .textArea-2Spzkt:focus-within {
-    border-top-color: var(--accent); }
-  .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaDisabled-2_o-kZ, .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaEnabledNoAttach-1WxUwj {
-    padding-left: 10px; }
-
-.theme-dark .form-2fGMdU .buttons-205you {
-  padding-right: 0; }
-  .theme-dark .form-2fGMdU .buttons-205you button[aria-label="Send a gift"] {
-    display: none; }
-  .theme-dark .form-2fGMdU .buttons-205you .buttonContainer-21MN7J button[aria-label="Open GIF picker"] {
-    display: none; }
-
-.theme-dark .form-2fGMdU .emojiButton-3uL3Aw {
-  width: 48px;
-  height: 46px;
-  padding: 0;
-  margin: 0;
-  top: 2px; }
-  .theme-dark .form-2fGMdU .emojiButton-3uL3Aw::before {
-    content: "";
-    width: 40px;
-    height: 40px;
+  .theme-dark .form-2fGMdU .channelTextArea-rNsIhG {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 0; }
+  .theme-dark .form-2fGMdU .scrollableContainer-38zsVD {
+    background-color: transparent;
+    border-radius: 0; }
+  .theme-dark .form-2fGMdU .attachWrapper-1_D-pj {
+    border: 0; }
+  .theme-dark .form-2fGMdU .attachButton-1UjEWA {
+    width: 48px;
+    height: 46px;
+    position: absolute;
+    top: 2px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 24px; }
-  .theme-dark .form-2fGMdU .emojiButton-3uL3Aw:hover {
-    background-color: #333333; }
-  .theme-dark .form-2fGMdU .emojiButton-3uL3Aw[aria-expanded="true"] {
-    background-color: var(--accent); }
-  .theme-dark .form-2fGMdU .emojiButton-3uL3Aw .sprite-2iCowe {
-    display: none; }
-
-.theme-dark .form-2fGMdU .typing-2GQL18 {
-  height: 20px;
-  bottom: 46px;
-  background-color: transparent;
-  font-size: 11px;
-  line-height: 20px;
-  justify-content: flex-end;
-  pointer-events: none; }
-  .theme-dark .form-2fGMdU .typing-2GQL18 svg[class*="ellipsis-"] {
-    display: none; }
-  .theme-dark .form-2fGMdU .typing-2GQL18 span[class^="text-"] strong {
-    font-weight: normal; }
-
-.theme-dark .form-2fGMdU .wrapper-39oAo3 {
-  min-height: 48px;
-  margin-bottom: 0;
-  padding: 0 16px;
-  background-color: transparent;
-  background-image: none;
-  border-top: 2px solid rgba(208, 46, 0, 0.5);
-  border-radius: 0;
-  box-sizing: border-box;
-  transition: .15s ease-in; }
-  .theme-dark .form-2fGMdU .wrapper-39oAo3:hover {
-    border-top-color: #d02e00;
-    transition: .15s ease-in; }
-  .theme-dark .form-2fGMdU .wrapper-39oAo3 .content-c_0cLD {
-    font-size: 15px; }
-    .theme-dark .form-2fGMdU .wrapper-39oAo3 .content-c_0cLD img {
+    background-size: 24px;
+    z-index: 1; }
+    .theme-dark .form-2fGMdU .attachButton-1UjEWA:hover {
+      background-color: #333333; }
+    .theme-dark .form-2fGMdU .attachButton-1UjEWA svg {
       display: none; }
-  .theme-dark .form-2fGMdU .wrapper-39oAo3 span[class^="countdown"] {
-    margin-top: 0;
+  .theme-dark .form-2fGMdU .attachButtonDivider-3Glu60 {
+    display: none; }
+  .theme-dark .form-2fGMdU svg[class^="attachButton"] {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    border-top: 2px solid #0F0;
+    border-radius: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    opacity: .5; }
+    .theme-dark .form-2fGMdU svg[class^="attachButton"] g {
+      display: none; }
+    .theme-dark .form-2fGMdU svg[class^="attachButton"]:hover {
+      background-color: #333333;
+      opacity: 1; }
+  .theme-dark .form-2fGMdU .textArea-2Spzkt {
+    margin: 0 -48px 0 0;
+    padding: 12px 48px 13px calc(48px + 8px);
+    border-top: 2px solid #333333;
+    color: #FFF;
+    line-height: 1.3333; }
+    .theme-dark .form-2fGMdU .textArea-2Spzkt:focus-within {
+      border-top-color: var(--accent); }
+    .theme-dark .form-2fGMdU .textArea-2Spzkt::-webkit-input-placeholder {
+      color: #AAA; }
+    .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaDisabled-2_o-kZ, .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaEnabledNoAttach-1WxUwj {
+      padding-left: 10px; }
+  .theme-dark .form-2fGMdU .buttons-205you {
+    margin-right: 0;
+    padding-right: 0; }
+    .theme-dark .form-2fGMdU .buttons-205you button[aria-label="Send a gift"] {
+      display: none; }
+    .theme-dark .form-2fGMdU .buttons-205you .buttonContainer-21MN7J button[aria-label="Open GIF picker"] {
+      display: none; }
+  .theme-dark .form-2fGMdU .emojiButton-3uL3Aw {
+    width: 48px;
+    height: 46px;
+    padding: 0;
+    margin: 0;
+    top: 2px; }
+    .theme-dark .form-2fGMdU .emojiButton-3uL3Aw::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 24px; }
+    .theme-dark .form-2fGMdU .emojiButton-3uL3Aw:hover {
+      background-color: #333333; }
+    .theme-dark .form-2fGMdU .emojiButton-3uL3Aw[aria-expanded="true"] {
+      background-color: var(--accent); }
+    .theme-dark .form-2fGMdU .emojiButton-3uL3Aw .sprite-2iCowe {
+      display: none; }
+  .theme-dark .form-2fGMdU .typing-2GQL18 {
+    height: 20px;
+    bottom: 46px;
+    background-color: transparent;
+    font-size: 11px;
+    line-height: 20px;
+    justify-content: flex-end;
+    pointer-events: none; }
+    .theme-dark .form-2fGMdU .typing-2GQL18 svg[class*="ellipsis-"] {
+      display: none; }
+    .theme-dark .form-2fGMdU .typing-2GQL18 span[class^="text-"] strong {
+      font-weight: normal; }
+  .theme-dark .form-2fGMdU .wrapper-39oAo3 {
+    min-height: 48px;
+    margin-bottom: 0;
+    padding: 0 16px;
+    background-color: transparent;
+    background-image: none;
+    border-top: 2px solid rgba(208, 46, 0, 0.5);
+    border-radius: 0;
+    box-sizing: border-box;
+    transition: .15s ease-in; }
+    .theme-dark .form-2fGMdU .wrapper-39oAo3:hover {
+      border-top-color: #d02e00;
+      transition: .15s ease-in; }
+    .theme-dark .form-2fGMdU .wrapper-39oAo3 .content-c_0cLD {
+      font-size: 15px; }
+      .theme-dark .form-2fGMdU .wrapper-39oAo3 .content-c_0cLD img {
+        display: none; }
+    .theme-dark .form-2fGMdU .wrapper-39oAo3 span[class^="countdown"] {
+      margin-top: 0;
+      font-size: 15px;
+      font-weight: 400; }
+      .theme-dark .form-2fGMdU .wrapper-39oAo3 span[class^="countdown"] span[class^="number"] {
+        min-width: auto;
+        background-color: transparent;
+        border: 0;
+        border-radius: 0; }
+  .theme-dark .form-2fGMdU div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"] {
+    background-color: #191919;
+    border-bottom: 1px solid #262626;
+    border-radius: 0; }
+  .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] {
+    color: #FFF;
     font-size: 15px;
-    font-weight: 400; }
-    .theme-dark .form-2fGMdU .wrapper-39oAo3 span[class^="countdown"] span[class^="number"] {
-      min-width: auto;
-      background-color: transparent;
-      border: 0;
-      border-radius: 0; }
-
-.theme-dark .form-2fGMdU button[class^="emojiButton"] ~ div[class^="autocomplete-"] {
-  background-color: #191919;
-  border-bottom: 1px solid #262626;
-  border-radius: 0; }
-
-.theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] {
-  color: #FFF;
-  font-size: 15px;
-  font-weight: 400;
-  text-transform: none; }
-  .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong {
-    font-weight: normal; }
-    .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong::before, .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong::after {
-      content: "'"; }
-
-.theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class*="selector-"] {
-  border-radius: 0; }
-
-.theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="selectorSelected"] {
-  background-color: var(--accent); }
-
-.theme-dark .form-2fGMdU div[class^="autocomplete-"] polygon {
-  fill: #FFF; }
-
-.theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="description"] {
-  color: #FFF; }
+    font-weight: 400;
+    text-transform: none; }
+    .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong {
+      font-weight: normal; }
+      .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong::before, .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="contentTitle"] strong::after {
+        content: "'"; }
+  .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class*="selector-"] {
+    border-radius: 0; }
+  .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="selectorSelected"] {
+    background-color: var(--accent); }
+  .theme-dark .form-2fGMdU div[class^="autocomplete-"] polygon {
+    fill: #FFF; }
+  .theme-dark .form-2fGMdU div[class^="autocomplete-"] div[class^="description"] {
+    color: #FFF; }
 
 div[class^="welcomeMessage"] {
   background-color: #232323;
@@ -2198,7 +2171,7 @@ div[class^="modal-"] div[class^="invite-"] {
     border-radius: 0; }
   .accessory div[class^="invite-"] div[class^="artworkSpotifySessionEnded"],
   div[class^="modal-"] div[class^="invite-"] div[class^="artworkSpotifySessionEnded"] {
-    background-image: url(https://i.imgur.com/ccG6HYH.png);
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAACeVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8avHfUAAAA0nRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWGBkaGxweHyAhIiMkJSYoKiwtLi8wMTQ2Nzg5Ojs9QEJDRUZHSElKS0xNTlFSU1VWV1laXF1hYmNkZWZoaWprbG1ub3Fyc3R1dnd4ent9fn+AgYKDhIWGh4iLjI2Oj5CRkpSWmJmcnZ6foKKkpaanqaqrrK2ur7CxtLW2t7i5uru8vb6/wMHExcbHyMrLzM3Oz9DR0tTW19jZ2tze3+Dh4uPk5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f6WqEk/AAADn0lEQVR4AZ3S618U9R8F8DMzP0BY+clFxBAq0/KiKRUWXQIJy0SjIERJQxERJUQiIkxLCqqtRLCLWpZplIEQJgkaEiAsErG6zPmLAmaB7zCzuzO8n50Hn/M639cMfIlNO/jppU6X2+3q/PmzQ+mLYYe07kirSh217e1ECdYsyGujqau7I62cFw/QJ9dbgSrkzB761ZutwI8HzzOgH5fBp5dctODOFpiTy1RaU6HARFAtLXOGmNyfpA0Nhga5lrY4Fegdpk0V0Nmk0q4tENw/SNvuPIRp8jnOwQ8KpmzlnGTBK7ybRneHBweGRsboR28ENIWcoXY2VOSkro0PD5IBSQmJXvpYel7VV9dNmw55B/RRo7aUp8bAXNST+04PcZZBbUIONV3r4F9wUvk16ryBCS3UJCMwOfGoizPaJQBrqBlVYMn/d17ntPUASqjxRECgOBbeFxcbHSLDKCS7m15HAFymVwkmLEjKfa+hpcdNzT83muort29YOGtFHTWtQPQYvdTjySnvNHtoqqMua6k4osN7E4vnaFl72SpMOUZNGgpoxy+ZoZhUT00xamjOPeRyjag06M6bB2C1m5pPcJ56nrbafS+uX+JQJEmSQxatfDbn3bN9FF3L3vBmP70uop2CrqqUSBjJy16p7aWpP3FLSN+Ewqf/JVWbdQxiUEiPwq95my9wtlFdwXJMU8KiYqIdQZjliTPU+1f3hEqMW7SxsPbijckPoI72/FZfvm1NMGY8dYWiAfxOweevV7apNBg+s3eFBK/gLynowPe0pr0oAZqHKfgJJ2iV5+TjmLCEgjrspQ1frwJQRkERnqHBcHN99YGdmRkZ23L3V59qvyeuOLHDSdFGRHooGDq1PyVegk5o4q7GEZpTY4AmIV+NgTnHpvp7NNECoFjIBfAt7vAADcoArBDycUyYv/qFHaVHP3I6P36/dPvzD8jwiio1vGQtxv3KaWNlKfnOPzzU6W/cvRyahAvUuSJh3GsMSG3eFa3/iTS5mBDWQwuGqxYDSNBvC8ekPbRk+EB45BcUFULj6KI17rsUdYfD62XOyVZMkU5zDs7KmBbXR9sGEiBIHaNNajp0CmlTCfSkY7SlRsYsSh1tcAbBQLGxoSYIJqTCMVqiHpRhLrWPFtxOg09xjQzo23j4IW3uol83MyT4F5Z/iz79XTAfgYW92kRTl7McsOiRokse6niailfClojk/A/Otd7sv/1X63cf7nk6Ej78B9PzXW2egHSAAAAAAElFTkSuQmCC);
     background-size: auto; }
 
 .theme-dark .wrapper-35wsBm {
@@ -2430,20 +2403,6 @@ div[class^="modal-"] div[class^="invite-"] {
     height: 48px;
     margin: 0; }
     .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg {
-      width: 68px;
-      height: 48px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 24px; }
-    .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject {
-      mask: none; }
-    .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg foreignobject svg {
-      width: 24px;
-      height: 24px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: 12px; }
-    .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 > svg path {
       display: none; }
     .theme-dark .container-3gCOGc .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1:hover {
       background-color: #333333; }
