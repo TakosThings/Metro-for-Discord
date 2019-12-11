@@ -56,26 +56,6 @@
             margin: 0;
             opacity: 1;
             > svg{
-                width: 68px;
-                height: 48px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 24px;
-            }
-            // Pinned messages alerted
-            > svg foreignobject{
-                mask: none;
-            }
-            // Pinned messages alerted
-            > svg foreignobject svg{
-                width: 24px;
-                height: 24px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 12px;
-            }
-            // Remove og icon
-            > svg path{
                 display: none;
             }
             &:hover{
