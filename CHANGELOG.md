@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.7
+* **Fixes** (1)
+  * Chatbox upload button couldn't be clicked
+
 #### 3.12.6
 * **Fixes** (3)
   * Don't use Imgur for replacing Spotify icon
