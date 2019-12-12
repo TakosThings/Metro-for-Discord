@@ -76,7 +76,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.6"; }
+  content: "Metro for Discord \A Version 3.12.7"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1721,7 +1721,8 @@ html[lang="ko"] .app-2rEoOp {
     background-color: transparent;
     border-radius: 0; }
   .theme-dark .form-2fGMdU .attachWrapper-1_D-pj {
-    border: 0; }
+    border: 0;
+    z-index: 1; }
   .theme-dark .form-2fGMdU .attachButton-1UjEWA {
     width: 48px;
     height: 46px;
@@ -1767,6 +1768,10 @@ html[lang="ko"] .app-2rEoOp {
       color: #AAA; }
     .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaDisabled-2_o-kZ, .theme-dark .form-2fGMdU .textArea-2Spzkt.textAreaEnabledNoAttach-1WxUwj {
       padding-left: 10px; }
+    .theme-dark .form-2fGMdU .textArea-2Spzkt .placeholder-P6ptfj,
+    .theme-dark .form-2fGMdU .textArea-2Spzkt .slateTextArea-1bp44y {
+      right: unset;
+      left: unset; }
   .theme-dark .form-2fGMdU .buttons-205you {
     margin-right: 0;
     padding-right: 0; }
