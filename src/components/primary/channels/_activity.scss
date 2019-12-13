@@ -29,7 +29,7 @@
         button:disabled::before{
             content: "\F71C";
         }
-        button.disabled-2iW-fm::before{
+        button[aria-label^="Stop Streaming"]::before{
             content: "\F71D";
         }
     }

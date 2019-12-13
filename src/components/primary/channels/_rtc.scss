@@ -65,4 +65,11 @@
     button[aria-label="Disconnect"]::before{
         content: "\E89B";
     }
+    button[aria-label^="Go Live"]::before,
+    button:disabled::before{
+        content: "\F71C";
+    }
+    button[aria-label^="Change Screen"]::before{
+        content: "\EC19";
+    }
 }
