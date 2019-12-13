@@ -76,7 +76,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.7"; }
+  content: "Metro for Discord \A Version 3.12.8"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1163,6 +1163,11 @@ html[lang="ko"] .app-2rEoOp {
     content: "\E946"; }
   .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label="Disconnect"]::before {
     content: "\E89B"; }
+  .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label^="Go Live"]::before,
+  .theme-dark .sidebar-2K8pFh .container-1giJp5 button:disabled::before {
+    content: "\F71C"; }
+  .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label^="Change Screen"]::before {
+    content: "\EC19"; }
 
 .theme-dark .sidebar-2K8pFh .panel-24C3ux {
   width: 240px;
@@ -1188,7 +1193,7 @@ html[lang="ko"] .app-2rEoOp {
   .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button[aria-label^="Stream"]::before,
   .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button:disabled::before {
     content: "\F71C"; }
-  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button.disabled-2iW-fm::before {
+  .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button[aria-label^="Stop Streaming"]::before {
     content: "\F71D"; }
 
 .panels-j1Uci_ {
