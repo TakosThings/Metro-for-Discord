@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.8
+* **Fixes** (1)
+  * Additional Streaming icons in RTC controls
+
 #### 3.12.7
 * **Fixes** (1)
   * Chatbox upload button couldn't be clicked
