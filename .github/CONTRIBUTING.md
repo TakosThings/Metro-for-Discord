@@ -16,9 +16,8 @@
 * Use the provided `.editorconfig`. See [editorconfig.org](https://editorconfig.org) if you don't know what this is.
 * Make your changes in a new branch.
 * Only edit the files in the `/src` directory.
-* Don't commit your `/dist` directory.
-* Don't worry about updating `CHANGELOG.md`, but do document your changes in your issue.
+* Don't worry about updating `CHANGELOG.md` or committing your `/dist` directory. List your changes in your Change Proposal.
 * Submit your PR with a reference to your proposal issue
 
 ## You Should Know
-* All development and testing is done using BeautifulDiscord. `Metro_for_Discord.theme.css` is mostly a legacy feature at this stage.
+* All development and testing is done using BeautifulDiscord.
