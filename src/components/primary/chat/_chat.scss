@@ -188,44 +188,39 @@
     // Editing message
     .messageEditorCompact-2PSR3v,
     .contentCozy-3XX413{
-        div[class^="inner-"]{
+        .scrollableContainer-2NUZem{
             background-color: $b1;
             border-radius: 0;
         }
-        textarea{
-            margin: 0;
+        .textArea-12jD-V{
+            padding: 13px 0;
         }
-        // Emoji button
-        button[class*="emojiButton-"]{
-            width: 40px;
-            height: 40px;
-            top: 0;
-            right: 0;
-            padding: 0;
-            border-radius: 0;
-            &::before{
-                content: "";
-                width: 40px;
-                height: 40px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 24px;
-            }
-            div[class*="sprite-"]{
-                display: none;
-            }
-            &.popout-open{
-                background-color: var(--accent);
-                &:hover{
-                    background-color: var(--accent);
+        .buttons-3JBrkn{
+            height: 48px;
+            margin-right: -10px;
+            .emojiButton-3uL3Aw{
+                width: 48px;
+                max-height: 48px;
+                margin: 0;
+                
+                .contents-18-Yxp{
+                    .sprite-2iCowe{
+                        display: none;
+                    }
+                    &:hover{
+                        &::before{
+                            color: $b4;
+                        }
+                    }
+                    &::before{
+                        content: "\E76E";
+                        width: 48px;
+                        color: #FFF;
+                        font-family: $icon;
+                        font-size: 20px;
+                    }
                 }
             }
-            &:hover{
-                background-color: $b3;
-            }
-        }
-        div[class^="emojiButtonNormal-"]{
-            opacity: 1;
         }
     }
     .operations-36ENbA{
