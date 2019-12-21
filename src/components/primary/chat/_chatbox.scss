@@ -7,17 +7,17 @@
         margin-bottom: 0;
         border-top: 0;
     }
-    .scrollableContainer-38zsVD{
+    .scrollableContainer-2NUZem{
         background-color: transparent;
         border-radius: 0;
     }
     
     // Attach button
-    .attachWrapper-1_D-pj{
+    .attachWrapper-2TRKBi{
         border: 0;
         z-index: 1;
     }
-    .attachButton-1UjEWA{
+    .attachButton-2WznTc{
         width: 48px;
         height: 46px;
         position: absolute;
@@ -31,6 +31,12 @@
         }
         svg{
             display: none;
+        }
+        &::before{
+            content: "\E898";
+            color: #FFF;
+            font-family: $icon;
+            font-size: 18px;
         }
     }
     .attachButtonDivider-3Glu60{
@@ -60,41 +66,33 @@
         }
     }
 
-        .textArea-2Spzkt{
-            margin: 0 -48px 0 0;
-            padding: 12px 48px 13px calc(48px + 8px);
-            border-top: 2px solid $b3;
-            color: #FFF;
-            line-height: 1.3333;
+    .textArea-12jD-V{
+        margin: 0 -48px 0 0;
+        padding: 12px 48px 13px calc(48px + 8px);
+        border-top: 2px solid $b3;
+        color: #FFF;
+        line-height: 1.3333;
         &:focus-within{
             border-top-color: var(--accent);
         }
-        &::-webkit-input-placeholder{
+        .placeholder-37qJjk{
             color: #AAA;
         }
-
-        // No attach button present
-        &.textAreaDisabled-2_o-kZ,
-        &.textAreaEnabledNoAttach-1WxUwj{
-            padding-left: 10px;
-        }
-
-        .placeholder-P6ptfj,
-        .slateTextArea-1bp44y{
-            right: unset;
-            left: unset;
-        }
+    }
+    .attachWrapper-2TRKBi ~ .textArea-12jD-V .placeholder-37qJjk,
+    .attachWrapper-2TRKBi ~ .textArea-12jD-V .slateTextArea-1Mkdgw{
+        left: calc(48px + 8px);
     }
 
     // Right Buttons
-    .buttons-205you{
+    .buttons-3JBrkn{
         margin-right: 0;
         padding-right: 0;
         // Remove gift button
         button[aria-label="Send a gift"]{
             display: none;
         }
-        .buttonContainer-21MN7J{
+        .buttonContainer-28fw2U{
             // Remove GIF button
             button[aria-label="Open GIF picker"]{
                 display: none;
