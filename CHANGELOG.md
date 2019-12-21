@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.9
+* **Fixes** (2)
+  * Update rolled classes on chatbox
+  * Edit chat message wasn't themed
+
 #### 3.12.8
 * **Fixes** (1)
   * Additional Streaming icons in RTC controls
