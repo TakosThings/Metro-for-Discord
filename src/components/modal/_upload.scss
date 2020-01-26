@@ -1,4 +1,4 @@
-div[class^="uploadModal"]{
+.theme-dark div[class^="uploadModal"]{
     background-color: $b1;
     border: 1px solid var(--accent);
     border-radius: 0;
@@ -37,6 +37,10 @@ div[class^="uploadModal"]{
                 font-weight: $fwui;
                 text-transform: none;
             }
+            .scrollableContainer-2NUZem{
+                background-color: #000;
+                border-radius: 0;
+            }
             div[class*="channelTextArea"] div[class*="inner-"]{
                 margin: 0;
                 background-color: #000;
@@ -45,10 +49,16 @@ div[class^="uploadModal"]{
                     padding: 10px 50px 10px 10px;
                     margin: 0;
                 }
+                .buttons-3JBrkn{
+                    margin: 0;
+                }
+                .button-318s1X{
+                    margin: 0;
+                }
                 // Emoji button
                 button[class*="emojiButton-"]{
-                    width: 40px;
-                    height: 40px;
+                    width: 48px;
+                    height: 48px;
                     top: 0;
                     right: 0;
                     padding: 0;
