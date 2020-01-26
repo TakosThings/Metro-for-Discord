@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.10
+* **Fixes** (3)
+ * Upload modal unthemed
+ * Missing icon for canel friend request button
+ * Chatbox scrolling issues
+
 #### 3.12.9
 * **Fixes** (2)
   * Update rolled classes on chatbox
