@@ -84,7 +84,8 @@
             .friendsAction-__WNE9[aria-label="Accept"]::before{
                 content: "\E8FB";
             }
-            .friendsAction-__WNE9[aria-label="Ignore"]::before{
+            .friendsAction-__WNE9[aria-label="Ignore"]::before,
+            .friendsAction-__WNE9[aria-label="Cancel"]::before{
                 content: "\E8BB";
             }
         }
