@@ -76,7 +76,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.9"; }
+  content: "Metro for Discord \A Version 3.12.10"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -1706,13 +1706,16 @@ html[lang="ko"] .app-2rEoOp {
     background-color: #333333; }
 
 .theme-dark .form-2fGMdU {
-  border-top: 0; }
+  border-top: 2px solid #333333; }
+  .theme-dark .form-2fGMdU:focus-within {
+    border-top-color: var(--accent); }
   .theme-dark .form-2fGMdU .channelTextArea-rNsIhG {
     padding-top: 0;
     margin-top: 0;
     margin-bottom: 0;
     border-top: 0; }
   .theme-dark .form-2fGMdU .scrollableContainer-2NUZem {
+    max-height: 256px;
     background-color: transparent;
     border-radius: 0; }
   .theme-dark .form-2fGMdU .attachWrapper-2TRKBi {
@@ -1721,8 +1724,6 @@ html[lang="ko"] .app-2rEoOp {
   .theme-dark .form-2fGMdU .attachButton-2WznTc {
     width: 48px;
     height: 46px;
-    position: absolute;
-    top: 2px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px;
@@ -1757,19 +1758,12 @@ html[lang="ko"] .app-2rEoOp {
       background-color: #333333;
       opacity: 1; }
   .theme-dark .form-2fGMdU .textArea-12jD-V {
-    margin: 0 -48px 0 0;
-    padding: 12px 48px 13px calc(48px + 8px);
-    border-top: 2px solid #333333;
-    color: #FFF;
-    line-height: 1.3333; }
-    .theme-dark .form-2fGMdU .textArea-12jD-V:focus-within {
-      border-top-color: var(--accent); }
+    min-height: 48px;
+    color: #FFF; }
     .theme-dark .form-2fGMdU .textArea-12jD-V .placeholder-37qJjk {
       color: #AAA; }
-  .theme-dark .form-2fGMdU .attachWrapper-2TRKBi ~ .textArea-12jD-V .placeholder-37qJjk,
-  .theme-dark .form-2fGMdU .attachWrapper-2TRKBi ~ .textArea-12jD-V .slateTextArea-1Mkdgw {
-    left: calc(48px + 8px); }
   .theme-dark .form-2fGMdU .buttons-3JBrkn {
+    height: 48px;
     margin-right: 0;
     padding-right: 0; }
     .theme-dark .form-2fGMdU .buttons-3JBrkn button[aria-label="Send a gift"] {
@@ -1778,10 +1772,9 @@ html[lang="ko"] .app-2rEoOp {
       display: none; }
   .theme-dark .form-2fGMdU .emojiButton-3uL3Aw {
     width: 48px;
-    height: 46px;
+    height: 48px;
     padding: 0;
-    margin: 0;
-    top: 2px; }
+    margin: 0; }
     .theme-dark .form-2fGMdU .emojiButton-3uL3Aw::before {
       content: "";
       width: 40px;
@@ -2513,7 +2506,8 @@ div[class^="modal-"] div[class^="invite-"] {
         content: "\E74D"; }
       .theme-dark .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9[aria-label="Accept"]::before {
         content: "\E8FB"; }
-      .theme-dark .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9[aria-label="Ignore"]::before {
+      .theme-dark .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9[aria-label="Ignore"]::before,
+      .theme-dark .friendsTable-133bsv .friendsRow-2yicud .friendsColumnActions-1LT3_M .friendsAction-__WNE9[aria-label="Cancel"]::before {
         content: "\E8BB"; }
   .theme-dark .friendsTable-133bsv .friendsEmpty-1KQXin .image-1GzsFd {
     display: none; }
@@ -4147,110 +4141,117 @@ form[class^="modal-"] video {
   .theme-dark div[class^="modal-"] a[class*="downloadLink"]:hover {
     text-decoration: underline; }
 
-div[class^="uploadModal"] {
+.theme-dark div[class^="uploadModal"] {
   background-color: #191919;
   border: 1px solid var(--accent);
   border-radius: 0; }
-  div[class^="uploadModal"] div[class^="inner-"] {
+  .theme-dark div[class^="uploadModal"] div[class^="inner-"] {
     margin: 20px;
     border: 0;
     border-radius: 0; }
-    div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] {
+    .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] {
       height: auto; }
-      div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="icon-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="icon-"] {
         width: 90px;
         height: 90px;
         margin-top: 0; }
-        div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="icon-"][class*="image"] {
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="icon-"][class*="image"] {
           margin: 0;
           border: 0;
           border-radius: 0; }
-      div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="description"] {
+      .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="description"] {
         height: auto;
         padding: 0 0 0 8px; }
-        div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="description"] div[class^="filename"] {
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="file-"] div[class^="description"] div[class^="filename"] {
           height: auto;
           font-size: 20px;
           font-weight: 300;
           line-height: 1.5625; }
-    div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] {
+    .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] {
       margin: 20px 0; }
-      div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class^="label-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class^="label-"] {
         margin: 8px 0;
         font-size: 15px;
         font-weight: 400;
         text-transform: none; }
-      div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] .scrollableContainer-2NUZem {
+        background-color: #000;
+        border-radius: 0; }
+      .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] {
         margin: 0;
         background-color: #000;
         border-radius: 0; }
-        div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] textarea {
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] textarea {
           padding: 10px 50px 10px 10px;
           margin: 0; }
-        div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] {
-          width: 40px;
-          height: 40px;
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] .buttons-3JBrkn {
+          margin: 0; }
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] .button-318s1X {
+          margin: 0; }
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] {
+          width: 48px;
+          height: 48px;
           top: 0;
           right: 0;
           padding: 0;
           border-radius: 0; }
-          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]::before {
+          .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]::before {
             content: "";
             width: 40px;
             height: 40px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: 24px; }
-          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] div[class*="sprite-"] {
+          .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"] div[class*="sprite-"] {
             display: none; }
-          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open {
+          .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open {
             background-color: var(--accent); }
-            div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open:hover {
+            .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"].popout-open:hover {
               background-color: var(--accent); }
-          div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]:hover {
+          .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] button[class*="emojiButton-"]:hover {
             background-color: #333333; }
-        div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class^="emojiButtonNormal-"] {
+        .theme-dark div[class^="uploadModal"] div[class^="inner-"] div[class^="comment-"] div[class*="channelTextArea"] div[class*="inner-"] div[class^="emojiButtonNormal-"] {
           opacity: 1; }
-  div[class^="uploadModal"] div[class^="footer-"] {
+  .theme-dark div[class^="uploadModal"] div[class^="footer-"] {
     padding: 20px; }
-    div[class^="uploadModal"] div[class^="footer-"] button.button {
+    .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button {
       margin-right: 8px;
       background-color: transparent;
       border: 1px solid rgba(255, 255, 255, 0.6);
       border-radius: 0; }
-      div[class^="uploadModal"] div[class^="footer-"] button.button:hover {
+      .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button:hover {
         border-color: rgba(255, 255, 255, 0.8);
         text-decoration: none; }
-      div[class^="uploadModal"] div[class^="footer-"] button.button span {
+      .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button span {
         color: #FFF;
         font-size: 15px;
         font-weight: 15px; }
-      div[class^="uploadModal"] div[class^="footer-"] button.button::last-of-type {
+      .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button::last-of-type {
         margin-right: 0; }
-    div[class^="uploadModal"] div[class^="footer-"] button.button-primary {
+    .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button-primary {
       background-color: var(--accent);
       border-color: var(--accent); }
-      div[class^="uploadModal"] div[class^="footer-"] button.button-primary:hover {
+      .theme-dark div[class^="uploadModal"] div[class^="footer-"] button.button-primary:hover {
         border-color: rgba(255, 255, 255, 0.6); }
-  div[class^="uploadModal"] div[class^="autocomplete-"] {
+  .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] {
     background-color: #262626;
     border-radius: 0;
     color: #FFF; }
-    div[class^="uploadModal"] div[class^="autocomplete-"] div[class^="contentTitle-"] {
+    .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class^="contentTitle-"] {
       color: #FFF;
       font-size: 15px;
       font-weight: 300;
       text-transform: none; }
-    div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] {
+    .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] {
       border-radius: 0; }
-      div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="content-"],
-      div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="description-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="content-"],
+      .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="description-"] {
         color: #FFF; }
-      div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class^="descriptionUsername-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class^="descriptionUsername-"] {
         color: #FFF; }
-      div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="descriptionDiscriminator-"] {
+      .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class*="selector-"] div[class*="descriptionDiscriminator-"] {
         color: #FFF; }
-    div[class^="uploadModal"] div[class^="autocomplete-"] div[class^="selectorSelected"] {
+    .theme-dark div[class^="uploadModal"] div[class^="autocomplete-"] div[class^="selectorSelected"] {
       background-color: var(--accent); }
 
 div[class*="uploadModalIn"] div[class^="uploadDropModal"] {
