@@ -1,5 +1,8 @@
 .theme-dark .form-2fGMdU{
-    border-top: 0;
+    border-top: 2px solid $b3;
+    &:focus-within{
+        border-top-color: var(--accent);
+    }
     // Remove top border
     .channelTextArea-rNsIhG{
         padding-top: 0;
@@ -8,6 +11,7 @@
         border-top: 0;
     }
     .scrollableContainer-2NUZem{
+        max-height: 256px;
         background-color: transparent;
         border-radius: 0;
     }
@@ -20,8 +24,6 @@
     .attachButton-2WznTc{
         width: 48px;
         height: 46px;
-        position: absolute;
-        top: 2px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 24px;
@@ -67,25 +69,16 @@
     }
 
     .textArea-12jD-V{
-        margin: 0 -48px 0 0;
-        padding: 12px 48px 13px calc(48px + 8px);
-        border-top: 2px solid $b3;
+        min-height: 48px;
         color: #FFF;
-        line-height: 1.3333;
-        &:focus-within{
-            border-top-color: var(--accent);
-        }
         .placeholder-37qJjk{
             color: #AAA;
         }
     }
-    .attachWrapper-2TRKBi ~ .textArea-12jD-V .placeholder-37qJjk,
-    .attachWrapper-2TRKBi ~ .textArea-12jD-V .slateTextArea-1Mkdgw{
-        left: calc(48px + 8px);
-    }
 
     // Right Buttons
     .buttons-3JBrkn{
+        height: 48px;
         margin-right: 0;
         padding-right: 0;
         // Remove gift button
@@ -101,10 +94,9 @@
     }
     .emojiButton-3uL3Aw{
         width: 48px;
-        height: 46px;
+        height: 48px;
         padding: 0;
         margin: 0;
-        top: 2px;
         &::before{
             content: "";
             width: 40px;
