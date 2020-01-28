@@ -4,7 +4,7 @@ Newest Changes are at the top
 #### 3.12.10
 * **Fixes** (3)
  * Upload modal unthemed
- * Missing icon for canel friend request button
+ * Missing icon for cancel friend request button
  * Chatbox scrolling issues
 
 #### 3.12.9
@@ -79,10 +79,10 @@ Newest Changes are at the top
 * **Repo** (5)
   * Themes will now be released through the Releases page
   * Updated download instructions
-  * Updated explainations for Variables
+  * Updated explanations for Variables
   * Update requirements for Windows 10
   * Added requirement for English to be selected language
-* **Clean Up** (1)
+* **Clean-Up** (1)
   * `/popout/_status_changer.scss` and `/popout/_server_menu.scss` were deleted and combined into `/popout/_channels_menu.scss`
 * **Enhancements** (4)
   * Themed 'Go Live' box, and fix it from displacing audio controls
@@ -114,7 +114,7 @@ Newest Changes are at the top
   * User status colours
 
 #### 3.11.0
-* **Clean Up** (9)
+* **Clean-Up** (9)
   * Remove `/core/_userstyle_options.scss` - Unused
   * Remove `/home/games` - Out of scope
   * Rename `/modal/_deprecated_new_server.scss` to `/modal/_new_server.scss`
@@ -124,16 +124,16 @@ Newest Changes are at the top
   * Rename `/modal/_new_modal.scss` to `/modal/_modal.scss` - No longer 'new', implied other function
   * Tidy `/ui/_scrollbar.scss` - Remove old and obsolete classes
   * Remove `/home/friends/_search.scss` - Unused, redundant
-* **Enchancements** (12)
+* **Enhancements** (12)
   * Remove guild level icon. 'Official' or 'partnered' sever icons will still be shown
   * Remove background from server name menu to expose the server banner
-  * Set more agressive gradient on server banner so it blends with our background-color
+  * Set more aggressive gradient on server banner so it blends with our background-color
   * Server discovery
   * Update Add Friend page
   * Add/Join server modal
   * Added variable for Segoe UI MDL2 Assets font
   * Added icons for menu items in Client/Server/Channel settings
-  * Rewrite forms and inputs, and moved to own scss files
+  * Rewrite forms and inputs, and moved to own SCSS files
   * Convert to use MDL icons in most places
   * New profile modal
   * Removed option to hide/show friends online count - counter doesn't exist anymore
@@ -159,17 +159,17 @@ Newest Changes are at the top
   * Update RTC button classes
 
 #### 3.10.9
-* **Enchancements** (1)
+* **Enhancements** (1)
   * Add friends to group DM popout
 * **Fixes** (5)
   * Improve visibility of unread channels
   * Improve visibility of unread guilds
   * Remove guild icons/abbreviations 'bobbing' effect when in `:active` state
   * User popout in wrong position when opened from voice channel user
-  * Speculative fix for context menu clipping under titbar if viewport is too small
+  * Speculative fix for context menu clipping under titlebar if viewport is too small
 
 #### 3.10.8
-* **Enchancements** (1)
+* **Enhancements** (1)
   * Make connected voice and selected text channel icons use accent colour
 * **Fixes** (2)
  * Remove border radius on channels list
@@ -207,7 +207,7 @@ Newest Changes are at the top
   * Max capacity voice channel counter
   * Rewrite guilds 💢
 * **Background Stuff** (1)
-  * Clean up of `/src/icons/_core.scss` file
+  * Clean-up of `/src/icons/_core.scss` file
 
 #### 3.10.2
 * **Enhancements** (10)
@@ -222,7 +222,7 @@ Newest Changes are at the top
   * Changed default color of `voice` variable to *Turf green* (from *Sport green*) to improve contrast
   * Re-write channels CSS
 * **Fixes** (5)
-  * Remove favourite button from GIFS (this was supposed to have been removed in `3.10.0`)
+  * Remove favourite button from GIFs (this was supposed to have been removed in `3.10.0`)
   * Remove ellipsis animation from 'X is typing...' text
   * Theme will no longer be applied to Account, RTC, or Settings button if Dark Mode is not enabled
   * Enable dark mode warning banner not displaying
@@ -234,7 +234,7 @@ Newest Changes are at the top
 
 #### 3.10.1
 * **Enhancements** (1)
-  * Increased spacing between buttons and the searchbar when search is active
+  * Increased spacing between buttons and the search bar when search is active
 * **Fixes** (4)
   * Remove border on status indicator in account area
   * DMs avatar size in guilds list
@@ -243,11 +243,11 @@ Newest Changes are at the top
 
 #### 3.10.0
 * **Housekeeping** (5)
-  * Userstyle will no longer be updated. Related `/dist/` and  `/src` files have been deleted.
+  * Userstyle will no longer be updated. Related `/dist/` and `/src` files have been deleted.
   * *Metro for Discord* Userstyles.org entry has been archived.
   * A CONTRIBUTING.md file will be introduced shortly after this release. This version will cover the scope of the project. Details on development of the theme will come later.
   * Delete `/src/components/modal/_deprecated_help.scss`, as Help modal has been removed
-  * Delete `/src/components/core/_font.scss`, as it was marked for deletion in  v`3.9.1`
+  * Delete `/src/components/core/_font.scss`, as it was marked for deletion in v`3.9.1`
 * **Enhancements** (4)
   * Channel notices have been removed
   * Superfluous *Gift Nitro* and *GIF* buttons have been removed from the chatbox. These features can still be accessed via the User Settings and `/tenor` or `/giphy` commands respectively
@@ -257,7 +257,7 @@ Newest Changes are at the top
   * Update @ and # mentions in recent mentions popout
   * Fix message preview in the Delete Message modal
   * Chatbox autocomplete
-  * ~~Un-fix emoji picker search bar (what even, Discord?)~~ Nevermind, Re-fix the un-fix of the fix
+  * ~~Un-fix emoji picker search bar (what even, Discord?)~~ Never mind, Re-fix the un-fix of the fix
   * Update NSFW channel warning class
   * Update chat scrollbar class
   * Emoji picker no results found
@@ -270,7 +270,7 @@ Newest Changes are at the top
   * 'Mark as read' option removed from context menu if it is disabled
 * **Fixes** (3)
   * Search popout out of position
-  * Incorrect css being applied to badge in friends list
+  * Incorrect CSS being applied to badge in friends list
   * Call toolbar not themed
 
 #### 3.9.13 (1)
@@ -281,7 +281,7 @@ Newest Changes are at the top
 
 #### 3.9.12
 * **Changes** (1)
-  * Search bar will no longer colapse when not in use due to a change in functionality
+  * Search bar will no longer collapse when not in use due to a change in functionality
 * **Fixes** (2)
   * Seach popout
   * Chat username font weights
@@ -340,7 +340,7 @@ Newest Changes are at the top
 
 #### 3.9.4
 * **Enhancements** (1)
-  * Re-wite keyboard shortcuts modal
+  * Re-write keyboard shortcuts modal
 * **Fixes** (9)
   * Update RTC class
   * Update selector of 'Open original' link in lightbox
@@ -357,7 +357,7 @@ Newest Changes are at the top
 * **Enhancements** (4)
   * Re-write chat menu
   * Added a user option for online friends count. This is hidden by default
-  * Changed emoji button in chatbox to use a png icon
+  * Changed emoji button in chatbox to use a PNG icon
   * Removed use of the MDL2 assets font as it was only in use by one element
 * **Fixes** (2)
   * 'Welcome to your server' message is once again hidden by default
@@ -370,16 +370,16 @@ Newest Changes are at the top
 #### 3.9.1
 * **Enhancements** (3)
   * Restyle chat dividers
-  * Cozy mode chat is now shown in bubbles
+  * cosy mode chat is now shown in bubbles
   * Re-write toolbars
 * **Fixes** (5)
   * Made settings window menu style only apply when dark theme is selected
-  * Added a 5px deadzone on the edge of some elements to prevent hover state remaining stuck on when the cursor leaves the Discord window. There are some neiche cases where the bug can still occur (eg. Discord snapped against another window).
+  * Added a 5px dead zone on the edge of some elements to prevent hover state remaining stuck on when the cursor leaves the Discord window. There are some niche cases where the bug can still occur (eg. Discord snapped against another window).
   * Settings button
   * Members list typing status position
   * Adjust position of badge in Friends/Games select tabs
 * **Notes** (1)
-  * Fallback fonts (Selawk and winjs-symbols) have been removed. If you do not have SegoeUI or SegoeMDL2 Assets you may experience problems
+  * Fallback fonts (Selawik and winjs-symbols) have been removed. If you do not have SegoeUI or SegoeMDL2 Assets you may experience problems
 
 #### 3.9.0
 * **Enhancements** (3)
@@ -388,7 +388,7 @@ Newest Changes are at the top
   * Changed icon of former friends 'guild'
 * **Fixes** (1)
   * Guild selected text colour
-* **Clean up** (2)
+* **Clean-up** (2)
   * `/src/friends` has been renamed `/src/home` with Friends and Games tabs organised into their respective subdirectories
   * Delete `/src/login` as it is no longer required
 
@@ -425,7 +425,7 @@ Newest Changes are at the top
 * **Fixes** (3)
   * Remove wumpus<sup>(ugh)</sup> from user popout. This would normally only appear on newly registered users
   * Override input and textarea placeholder fonts
-  * Memberslist scrollbar visibility
+  * Members list scrollbar visibility
 
 #### 3.8.7
 * **Enhancements** (1)
@@ -493,7 +493,7 @@ Newest Changes are at the top
 * **Fixes** (3)
   * Friends server icon will highlight in white when Friends is open to match behaviour to that of normal servers
   * Friends toolbar utility icons
-  * User popout opening in wrong position if summoned from cozy mode avatar
+  * User popout opening in wrong position if summoned from cosy mode avatar
 
 #### 3.7.7
 * **Fixes** (1)
@@ -534,8 +534,8 @@ Newest Changes are at the top
   * Branded link button
   * SCSS variable used # instead of $ in `/modal/_upload.scss`
   * Listen along invite modal chatbox
-  * Listen along invite modal subheaders
-  * Listen along invite modal spotify invite
+  * Listen along invite modal sub headers
+  * Listen along invite modal Spotify invite
   * User popout quick message focus state
 
 #### 3.7.2
@@ -567,7 +567,7 @@ Newest Changes are at the top
 
 #### 3.6.6
 * **Fixes** (2)
-  * User popout opening in default position when user had cozy mode enabled and 'Chat font scaling' or 'Zoom level' were changed from values of 90% and 100% respectively
+  * User popout opening in default position when user had cosy mode enabled and 'Chat font scaling' or 'Zoom level' were changed from values of 90% and 100% respectively
   * Chat box margins when uploading files is disabled in that channel
 
 #### 3.6.5
@@ -585,7 +585,7 @@ Newest Changes are at the top
 * **Enhancements** (1)
   * Left align text in chat options menu
 * **Fixes** (1)
-  * User popout not opening in correct position if user had Cozy mode enabled
+  * User popout not opening in correct position if user had cosy mode enabled
 
 #### 3.6.2
 * **Enhancements** (6)
@@ -686,7 +686,7 @@ Newest Changes are at the top
   * Some user popout selectors for inputs
   * Chatbox autocomplete applying style to another unrelated element (autocomplete popout)
   * Search popout applying style to autocomplete popout (animation and positioning)
-  * Remove protip from pinned messages
+  * Remove pro tip from pinned messages
   * Unread guilds notification no disappearing even if guilds were scrolled to the bottom of the list
   * Loading animations
   * Typing animation in members list was playing the loading spinner GIF
@@ -694,12 +694,12 @@ Newest Changes are at the top
   * Game name input boxes should now be uniform with other inputs
   * Some checkboxes in Privacy and Safety settings had rounded edges
   * Start of channel history message
-* **Cleanup** (1)
-  * Remove some unused code from `/friends/_add_friend.scss` (Not worth updating )
+* **Clean-up** (1)
+  * Remove some unused code from `/friends/_add_friend.scss` (Not worth updating)
 * **Known issues** (3)
-  * Instant invite modal has been reverted back to default style. It's currently marked as deprecated, therefore will not be fixed until it's revamped.
+  * Instant invite modal has been reverted to default style. It's currently marked as deprecated, therefore will not be fixed until it's revamped.
   * Add game popout is having animation and positioning CSS applied to it from pinned/recent messages.
-  * Attachments embedded in chat (eg. zip, text files etc.) have reverted back to the default icons. A fix is being researched.
+  * Attachments embedded in chat (eg. zip, text files etc.) have reverted to the default icons. A fix is being researched.
 
 #### 3.4.2
 * **Enhancements** (2)
@@ -720,7 +720,7 @@ Newest Changes are at the top
   * Loading animations
   * New unread notification bar in guilds pane
   * New unread notification bar in channels pane
-* **Cleanup** (1)
+* **Clean-up** (1)
   * Remove roles CSS from `/popout/_user.scss` (Old code)
 
 #### 3.4.0
@@ -756,7 +756,7 @@ This update contains primarily fixes for 'that titlebar update that broke everyt
   * Channels list
   * Toolbar
   * Chatbox
-* **Cleanup** (1)
+* **Clean-up** (1)
   * Remove `/icons/_titlebar.scss` (Icons not required anymore)
 * **Fixes** (1)
   * Video calling icon was default
@@ -769,7 +769,7 @@ This Update reverts changes made in 3.2.2
 
 #### 3.2.2
 * **Fixes** (1)
-  * Tooltip vertical mis-alignment
+  * Tooltip vertical misalignment
 
 #### 3.2.1
 * **Enhancements** (4)
@@ -787,7 +787,7 @@ This Update reverts changes made in 3.2.2
 #### 3.2.0
 * **Enhancements** (1)
   * Channel categories
-* **Cleanup** (2)
+* **Clean-up** (2)
   * Delete `/notices/_font_scaling.scss` (was supposed to be removed in 3.1.0)
   * Delete `/modal/_deprecated_rtc_debug.scss` (was superseded)
 * **Fixes** (3)
