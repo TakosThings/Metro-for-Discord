@@ -128,34 +128,34 @@
             content: "N";
             font-family: $font;
         }
-        .item-PXvHYJ:nth-child(9)::after{ // Server Boost
+        .item-PXvHYJ:nth-child(9)::after{ // Nitro
+            content: "\F133"
+        }
+        .item-PXvHYJ:nth-child(10)::after{ // Server Boost
             content: "\EC4A";
         }
-        .item-PXvHYJ:nth-child(10)::after{ // Nitro
+        .item-PXvHYJ:nth-child(11)::after{ // Nitro
             content: "H";
             font-family: $font;
         }
 
-        .item-PXvHYJ:nth-child(13)::after{ // Voice & Audio
+        .item-PXvHYJ:nth-child(14)::after{ // Overlay
             content: "\E720";
         }
-        .item-PXvHYJ:nth-child(14)::after{ // Overlay
+        .item-PXvHYJ:nth-child(15)::after{ // Overlay
             content: "\E9A6";
         }
-        .item-PXvHYJ:nth-child(15)::after{ // Notifications
+        .item-PXvHYJ:nth-child(16)::after{ // Notifications
             content: "\E91C";
         }
-        .item-PXvHYJ:nth-child(16)::after{ // Keybinds
+        .item-PXvHYJ:nth-child(17)::after{ // Keybinds
             content: "\E765";
         }
-        .item-PXvHYJ:nth-child(17)::after{ // Game activity
+        .item-PXvHYJ:nth-child(18)::after{ // Game activity
             content: "\E7FC";
         }
-        .item-PXvHYJ:nth-child(18)::after{ // Activity Feed
+        .item-PXvHYJ:nth-child(19)::after{ // Activity Feed
             content: "\EA37";
-        }
-        .item-PXvHYJ:nth-child(19)::after{ // Game library
-            content: "\E8F1";
         }
         .item-PXvHYJ:nth-child(20)::after{ // Text and images
             content: "\EA69";
