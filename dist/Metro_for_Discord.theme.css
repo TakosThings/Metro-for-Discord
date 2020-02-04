@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.10"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.12.11"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -78,7 +78,7 @@ textarea::-webkit-input-placeholder {
 
 .app-19_DXt::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]::before {
-  content: "Metro for Discord \A Version 3.12.10"; }
+  content: "Metro for Discord \A Version 3.12.11"; }
 
 .app-19_DXt::before {
   width: 360px;
@@ -2691,32 +2691,32 @@ div[class^="modal-"] div[class^="invite-"] {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
 
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(9)::after {
-  content: "\EC4A"; }
+  content: "\F133"; }
 
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(10)::after {
+  content: "\EC4A"; }
+
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(11)::after {
   content: "H";
   font-family: "Segoe UI", Arial, Helvetica, sans-serif; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(13)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
   content: "\E720"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
   content: "\E9A6"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
   content: "\E91C"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
   content: "\E765"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
   content: "\E7FC"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
-  content: "\EA37"; }
-
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(19)::after {
-  content: "\E8F1"; }
+  content: "\EA37"; }
 
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(20)::after {
   content: "\EA69"; }
@@ -2733,10 +2733,10 @@ div[class^="modal-"] div[class^="invite-"] {
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(24)::after {
   content: "\E8A9"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(26)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(25)::after {
   content: "\E77C"; }
 
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(28)::after {
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ:nth-child(27)::after {
   content: "\F3B1"; }
 
 .theme-dark .layer-3QrUeG[aria-label="GUILD_SETTINGS"] .sidebar-CFHs9e .item-PXvHYJ::after {
