@@ -1,240 +1,127 @@
-.theme-dark .chat-3bRxxu,
-.theme-dark .chat-3bRxxu>.content-yTz4x3,
-.theme-dark .messagesWrapper-3lZDfY{
+.chat-3bRxxu,
+.chat-3bRxxu .messages-3amgkR{
     background-color: $b2;
 }
 
 .theme-dark .chat-3bRxxu{
-    .messages-3amgkR{
-        background-color: transparent;
-    }
-    // Cozy chat
-    .messageCozy-2JPAPA{
-        .markup-2BOw-j{
-            color: #FFF;
-        }
-        .username-_4ZSMR{
-            color: #acacaa;
-            font-size: $fsui;
-            font-weight: normal;
-        }
-        .isMentionedCozy-3isp7y{
-            border-radius: 0;
-            &::after{
-                border-radius: 0;
-            }
-        }
-        a{
-            color: var(--link);
-        }
-        .timestampCozy-2hLAPV{
-            color: #FFF;
-            opacity: .5;
-        }
-    }
-
-    // Compact chat
-    .messageCompact-kQa7ES{
-        .markup-2BOw-j{
-            color: #FFF;
-        }
-        &:hover time{
-            color: #FFF;
-        }
-        .username-_4ZSMR{
-            color: #acacaa;
-            font-size: $fsui;
-            font-weight: normal;
-        }
-        .timestampCompactBase-26h38e{
-            color: #FFF;
-            opacity: .5;
-        }
-    }
-
-    // Mention
-    span.wrapper-3WhCwL,
-    .mention{
-        padding: 0;
-        background-color: transparent;
-        color: var(--link);
-        transition: none;
-        &:hover{
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    }
-    .message-group .comment .markup .mention{
-        background-color: transparent;
-        &:hover{
-            background-color: transparent;
-        }
-    }
-
-    // Spoilers
-    .spoilerContainer-331r0R{
+    // New Message bars
+    .newMessagesBar-mujexs,
+    .jumpToPresentBar-9P20AM{
+        background-color: var(--accent);
         border-radius: 0;
-    }
-    .spoilerText-3p6IlD{
-        border-radius: 0;
-        &.hidden-HHr2R9{
-            background-color: #000;
+        .barButtonBase-3UKlW2{
+            font-weight: normal;
         }
     }
 
     // Dividers
-    .divider-3gKybi{
-        height: 20px;
-        margin: 0 6px 0 20px;
-        background-color: transparent;
-        &::before{
-            display: none;
-        }
-        span{
-            padding: 4px 12px;
-            background-color: transparent;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        div{
-            background-color: #FFF;
-        }
-        &:not(.dividerRed-MKoLlr) span{
-            color: #FFF;
-        }
-        &.dividerRed-MKoLlr{
-            > div{
-                background-color: $alert;
-                opacity: 1;
-            }
-            > span{
+    .divider-JfaTT5{
+        border-color: #555;
+        &.isUnread-3Ef-o9{
+            border-color: $alert;
+            span{
                 color: $alert;
             }
+            .unreadPill-2HyYtt{
+                text-transform: capitalize;
+            }
+        }
+        span{
+            padding: 2px 8px;
+            background-color: $b2;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
         }
     }
 
-    // New message bars
-    .newMessagesBar-mujexs{
-        background-color: var(--accent);
-        border-radius: 0;
-        button:first-child,
-        button:last-child{
-            color: #FFF;
-            font-family: $font;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        button:last-child{
-            display: none;
-        }
-    }
-    .jumpToPresentBar-9P20AM{
-        background-color: var(--accent);
-        border: 0;
-        border-radius: 0;
-        button:first-child,
-        button:last-child{
-            color: #FFF;
-            font-family: $font;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        button:last-child{
-            display: none;
-        }
-    }
-
-    // Load more message
-    .hasMore-3e72_v{
-        background-color: $b3;
-        border: 2px solid transparent;
-        border-radius: 0;
-        box-shadow: none;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
-        text-transform: none;
+    // Message
+    .message-2qnXI6{
+        // Remove hover state
         &:hover{
-            border-color: $inputborder;
+            background-color: transparent;
         }
-        &:focus{
-            border-color: $inputborderhover;
+
+        // Timestamp
+        .timestampCompact-29LLPQ,
+        .timestampCozy-1HNQR2{
+            color: #CCC;
+        }
+
+        // Username
+        .username-1A8OIy{
+            font-weight: 400;
+        }
+
+        span.mention{
+            background-color: transparent;
+            color: var(--accent);
         }
     }
-
-    // Robot message
-    .isLocalBot-38G0P0{
-        background-color: transparent;
-        background-image: none;
-        box-shadow: none;
+    
+    .scroller-3sQKXg:after{
+        content: unset;
     }
 
-    // System message
-    .container-3-pyIM{
-        color: #FFF;
-        font-size: $fsui;
-        .icon-2Po-VO{
-            background-size: 14px;
+    // Message options
+    .buttonContainer-DHceWr{
+        .container-3npvBV{
+            top: 0;
         }
-        .timestamp-1E3uAL{
-            color: #FFF;
-            opacity: .5;
+        .wrapper-2aW0bm{
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            .emojiButton-jE9tXC{
+                display: none;
+            }
+            .emojiSeparator-10VgEJ{
+                display: none;
+            }
+            .button-1ZiXG9{
+                &:hover{
+                    background-color: $b3;
+                }
+            }
         }
     }
 
     // Editing message
-    .messageEditorCompact-2PSR3v,
-    .contentCozy-3XX413{
+    .channelTextArea-3bF57p{
         .scrollableContainer-2NUZem{
-            background-color: $b1;
+            background-color: #000;
             border-radius: 0;
         }
-        .textArea-12jD-V{
-            padding: 13px 0;
-        }
+        // Buttons
         .buttons-3JBrkn{
-            height: 48px;
-            margin-right: -10px;
             .emojiButton-3uL3Aw{
-                width: 48px;
-                max-height: 48px;
-                margin: 0;
-                
-                .contents-18-Yxp{
-                    .sprite-2iCowe{
-                        display: none;
-                    }
-                    &:hover{
-                        &::before{
-                            color: $b4;
-                        }
-                    }
+                &::before{
+                    content: "\E76E";
+                    color: #CCC;
+                    font-family: $icon;
+                    font-size: 24px;
+                }
+                &:hover{
                     &::before{
-                        content: "\E76E";
-                        width: 48px;
                         color: #FFF;
-                        font-family: $icon;
-                        font-size: 20px;
                     }
+                }
+                .contents-18-Yxp{
+                    display: none;
                 }
             }
         }
     }
     .operations-36ENbA{
-        color: #FFF;
-        font-family: $font;
-        font-weight: normal;
-        > a{
-            color: var(--accent);
+        color: #CCC;
+        a{
+            color: var(--link);
         }
     }
 
     // Auto complete
     // Hack to stop the autocomplete popout being selected
-    // This code is borrowed from _chatbox.scss, changes there should be mirrored here
+    // Changes to this code must be mirrored to _chat.scss
     div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"]{
         background-color: $b1;
         border-bottom: 1px solid $b2;
@@ -266,117 +153,5 @@
         div[class^="description"]{
             color: #FFF;
         }
-    }
-
-    // Reactions
-    .reaction-1ELvT8{
-        border: 1px solid transparent;
-        border-radius: 0;
-        &:hover{
-            border-color: $inputborder;
-        }
-        .reactionCount-2ddRoS{
-            color: rgba(255,255,255,.5);
-            font-weight: normal;
-        }
-        &.reactionMe-23mbRf{
-            background-color: var(--accent);
-            .reactionCount-2ddRoS{
-                color: #000;
-                font-weight: bold;
-            }
-        }
-    }
-
-    // Start of channel history
-    div[class^="default-"]{
-        height: auto;
-        margin: 0;
-        padding: 20px;
-        background-color: #232323;
-        background-image: none;
-        h1{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwchat;
-        }
-    }
-
-    // File attachments
-    .attachment-33OFj0{
-        height: 56px;
-        padding: 8px;
-        background-color: $b1;
-        border-radius: 0;
-        img[class^="icon-"]{
-            display: none;
-        }
-        div[class^="attachmentInner"]{
-            height: 40px;
-            position: relative;
-            padding-left: 48px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            a[class*="fileNameLink-"],
-            div[class^="filename-"]{
-                font-size: $fsui;
-                font-weight: $fwui;
-                line-height: $lh;
-            }
-            div[class^="size-"]{
-                line-height: $lh;
-            }
-            div[class^="metadata-"]{
-                color: #FFF;
-                font-weight: normal;
-            }
-            // Upload progress bar
-            div[class^="progress-"]{
-                background-color: rgba($color: #FFF, $alpha: 0.2) !important;
-                border-radius: 0;
-                div[class^="progressBar-"]{
-                    background-color: var(--accent) !important;
-                    border-radius: 0;
-                }
-            }
-        }
-        img[class^="icon-"]~div::before{
-            content: "";
-            width: 40px;
-            height: 40px;
-            padding: 8px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: var(--accent);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            box-sizing: border-box;
-        }
-        svg[class^="downloadButton"] g{
-            display: none;
-        }
-    }
-}
-
-// Special snowflakes
-// Blocked messages
-.theme-dark .messageGroupBlocked-3wrQQX{
-    border: 1px solid transparent;
-    border-radius: 0;
-    .messageGroupBlockedBtn-1PBBh-{
-        background: $b3;
-        color: #fff;
-        font-size: $fschat;
-        font-weight: $fwchat;
-        text-transform: none;
-        &:hover{
-            background-color: $b3;
-        }
-    }
-    &.revealed-1_RKsf{
-        background-color: $b3;
     }
 }
