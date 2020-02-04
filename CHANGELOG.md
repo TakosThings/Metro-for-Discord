@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.12.11
+* **Fixes** (1)
+  * Missing or wrong icons for User Settings sidebar menu options
+
 #### 3.12.10
 * **Fixes** (3)
  * Upload modal unthemed
