@@ -1,11 +1,11 @@
-.app-19_DXt,
-.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]{
+.app-2rEoOp,
+.theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .info-1VyQPT{
     &::before{
-        content: "Metro for Discord \A Version 3.12.11";
+        content: "Metro for Discord \A Version 3.13.0 Pre1";
     }
 }
 
-.app-19_DXt{
+.app-2rEoOp{
     &::before{   
         width: 360px;
         height: 72px;
@@ -21,26 +21,20 @@
         background-position: 12px 12px;
         background-repeat: no-repeat;
         color: #FFF;
-        font-size: 13px;
+        font-size: 15px;
+        line-height: 1.5625;
         white-space: pre;
         animation: 10s toast cubic-bezier(0.1, 0.9, 0.2, 1);
         transform: translateX(380px);
     }
-    &::first-line{
-        font-size: $fsui;
-        font-weight: 500;
-        color: #FFF;
-        line-height: 2;
-    }
 }
 
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"]{
-    &::before{
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: 102;
-        padding: 8px;
-        color: rgba($color: #FFF, $alpha: 0.3);
+    .info-1VyQPT{
+        &::before{
+            color: gray;
+            font-size: 12px;
+            line-height: 16px;
+        }
     }
 }
