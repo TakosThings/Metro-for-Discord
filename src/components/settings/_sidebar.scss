@@ -191,20 +191,20 @@
         .item-PXvHYJ:nth-child(2)::after{ // Overview
             content: "\F246";
         }
-        .item-PXvHYJ:nth-child(3)::after{ // Moderation
-            content: "\EC81";
-        }
-        .item-PXvHYJ:nth-child(4)::after{ // Audit log
-            content: "\EADF";
-        }
-        .item-PXvHYJ:nth-child(5)::after{ // Audit log
+        .item-PXvHYJ:nth-child(3)::after{ // Roles
             content: "\EC1B";
         }
-        .item-PXvHYJ:nth-child(6)::after{ // Integrations
-            content: "\ED5C";
+        .item-PXvHYJ:nth-child(4)::after{ // Emoji
+            content: "\ED54";
         }
-        .item-PXvHYJ:nth-child(7)::after{ // Emoji
-            content: "\E76E";
+        .item-PXvHYJ:nth-child(5)::after{ // Moderation
+            content: "\EC81";
+        }
+        .item-PXvHYJ:nth-child(6)::after{ // Audit Log
+            content: "\E9D5";
+        }
+        .item-PXvHYJ:nth-child(7)::after{ // Integrations
+            content: "\ED5C";
         }
         .item-PXvHYJ:nth-child(8)::after{ // Webhook
             content: "\E774";
