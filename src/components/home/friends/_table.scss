@@ -1,108 +1,236 @@
-.theme-dark .friendsTable-133bsv{
-    margin-top: 0;
+.theme-dark .container-1D34oG{
     background-color: $b2;
-    .friendsTableHeader-32yE7d{
-        padding: 8px 20px;
-        .friendsColumn-eVHFqJ{
-            color: #FFF;
-            font-weight: normal;
-            letter-spacing: normal;
-            text-transform: none;
+    .tabBody-3YRQ8W{
+        &::before{
+            content: unset;
         }
-    }
-    .friendsTableBody-1ZhKif{
-        background-color: transparent;
-    }
-    .friendsRow-2yicud{
-        height: 50px !important;
-        margin: 0;
-        padding: 0 20px;
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: normal;
-        &:hover{
-            margin: 0;
-            padding: 0 20px;
-            background-color: $b3;
-            border-radius: 0;
-            .friendsColumnActions-1LT3_M{
-                padding-right: 20px;
+        .peopleColumn-29fq28{
+            .peopleList-3c4jOR{
+                background-color: $b2;
             }
-        }
-        .friendsColumnName-1zBOKm,
-        .friendsColumnStatus-ZH4ho2{
-            color: #FFF;
-            .friendActivityText-2lmziy strong{
-                font-weight: normal;
+            // Header
+            .title-30qZAO{
+                margin: 0;
+                padding: 16px 20px 8px 20px;
+                color: #FFF;
             }
-        }
-        .friendsColumnActions-1LT3_M{
-            padding-right: 20px;
-            .friendsAction-__WNE9{
-                border-radius: 0;
-                background-image: none;
-                position: relative;
-                &::before{
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    color: #FFF;
-                    font-family: $icon;
-                    font-size: 20px;
-                    text-align: center;
-                    line-height: 36px;
-                }
-                svg{
-                    display: none;
-                }
-            }
-            .friendsAction-__WNE9[aria-label="Start Video Call"],
-            .friendsAction-__WNE9[aria-label="Start Voice Call"],
-            .friendsAction-__WNE9[aria-label="Accept"]{
-                background-color: $safe;
-                &:hover{
-                    background-color: darken($safe, 10%) !important;
-                }
-            }
-            .friendsAction-__WNE9[aria-label="Remove Friend"],
-            .friendsAction-__WNE9[aria-label="Ignore"]{
-                background-color: $alert;
-                &:hover{
-                    background-color: darken($alert, 10%) !important;
-                }
+            .container-2ax-kl{
+                font-size: $fsheader;
+                font-weight: $fwheader;
+                line-height: $lh;
+                text-transform: none;
             }
 
-            .friendsAction-__WNE9[aria-label="Start Video Call"]::before{
-                content: "\E714";
+            // Person list
+            .peopleListItem-2nzedh{
+                margin-right: 20px;
+                margin-left: 20px;
             }
-            .friendsAction-__WNE9[aria-label="Start Voice Call"]::before{
-                content: "\E717";
+
+            // Username
+            .username-31C1TQ{
+                font-weight: $fwui;
             }
-            .friendsAction-__WNE9[aria-label="Remove Friend"]::before{
-                content: "\E74D";
-            }
-            .friendsAction-__WNE9[aria-label="Accept"]::before{
-                content: "\E8FB";
-            }
-            .friendsAction-__WNE9[aria-label="Ignore"]::before,
-            .friendsAction-__WNE9[aria-label="Cancel"]::before{
-                content: "\E8BB";
+            .discriminator-22Okc1{
+                font-weight: $fwui;
             }
         }
-    }
-    // meems ecks dee
-    .friendsEmpty-1KQXin{
-        .image-1GzsFd{
-            display: none;
-        }
-        h4::before{
-            content: "No Results";
-            color: #FFF;
-            font-weight: normal;
-            text-transform: none;
-        }
-        .text-GwUZgS{
-            display: none;
+
+        // Activity
+        .nowPlayingColumn-2sl4cE{
+            background-color: $b1;
+            .header-13Cw0-{
+                color: #FFF;
+                font-size: $fsheader;
+                font-weight: $fwheader;
+                line-height: $lh;
+                text-transform: none;
+            }
+            .itemCard-v9viV7{
+                padding: 0;
+                padding-bottom: 12px;
+                background-color: transparent;
+                border-bottom: 1px solid #333;
+                border-radius: 0;
+                &:last-child{
+                    border-bottom: 0;
+                }
+
+                // Inset
+                .body-1ld4H7{
+                    margin-left: 46px;
+                    background-color: $b3;
+                    border-radius: 0;
+                }
+
+                // Live badge
+                .live-vBWnV6{
+                    background-color: $alert !important;
+                    border-radius: 0;
+                }
+
+                // Game stream preview
+                .applicationStreamingPreviewWrapper-8QqvVY{
+                    border-radius: 0;
+                }
+                .emptyPreviewContainer-1KOcxV{
+                    background-color: $b4;
+                    border: 2px dashed #000;
+                    .emptyPreviewImage-IBznSI{
+                        display: none;
+                    }
+                    .emptyPreviewText-2IOfAL{
+                        color: #FFF;
+                        font-size: $fsui;
+                    }
+                }
+                .applicationStreamingHoverText-IEVyfS{
+                    width: 100%;
+                    background-color: #000;
+                    text-align: center;
+                    border-radius: 0;
+                }
+            }
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .theme-dark .friendsTable-133bsv{
+//     margin-top: 0;
+//     background-color: $b2;
+//     .friendsTableHeader-32yE7d{
+//         padding: 8px 20px;
+//         .friendsColumn-eVHFqJ{
+//             color: #FFF;
+//             font-weight: normal;
+//             letter-spacing: normal;
+//             text-transform: none;
+//         }
+//     }
+//     .friendsTableBody-1ZhKif{
+//         background-color: transparent;
+//     }
+//     .friendsRow-2yicud{
+//         height: 50px !important;
+//         margin: 0;
+//         padding: 0 20px;
+//         font-size: $fsui;
+//         font-weight: $fwui;
+//         line-height: normal;
+//         &:hover{
+//             margin: 0;
+//             padding: 0 20px;
+//             background-color: $b3;
+//             border-radius: 0;
+//             .friendsColumnActions-1LT3_M{
+//                 padding-right: 20px;
+//             }
+//         }
+//         .friendsColumnName-1zBOKm,
+//         .friendsColumnStatus-ZH4ho2{
+//             color: #FFF;
+//             .friendActivityText-2lmziy strong{
+//                 font-weight: normal;
+//             }
+//         }
+//         .friendsColumnActions-1LT3_M{
+//             padding-right: 20px;
+//             .friendsAction-__WNE9{
+//                 border-radius: 0;
+//                 background-image: none;
+//                 position: relative;
+//                 &::before{
+//                     width: 100%;
+//                     height: 100%;
+//                     position: absolute;
+//                     color: #FFF;
+//                     font-family: $icon;
+//                     font-size: 20px;
+//                     text-align: center;
+//                     line-height: 36px;
+//                 }
+//                 svg{
+//                     display: none;
+//                 }
+//             }
+//             .friendsAction-__WNE9[aria-label="Start Video Call"],
+//             .friendsAction-__WNE9[aria-label="Start Voice Call"],
+//             .friendsAction-__WNE9[aria-label="Accept"]{
+//                 background-color: $safe;
+//                 &:hover{
+//                     background-color: darken($safe, 10%) !important;
+//                 }
+//             }
+//             .friendsAction-__WNE9[aria-label="Remove Friend"],
+//             .friendsAction-__WNE9[aria-label="Ignore"]{
+//                 background-color: $alert;
+//                 &:hover{
+//                     background-color: darken($alert, 10%) !important;
+//                 }
+//             }
+
+//             .friendsAction-__WNE9[aria-label="Start Video Call"]::before{
+//                 content: "\E714";
+//             }
+//             .friendsAction-__WNE9[aria-label="Start Voice Call"]::before{
+//                 content: "\E717";
+//             }
+//             .friendsAction-__WNE9[aria-label="Remove Friend"]::before{
+//                 content: "\E74D";
+//             }
+//             .friendsAction-__WNE9[aria-label="Accept"]::before{
+//                 content: "\E8FB";
+//             }
+//             .friendsAction-__WNE9[aria-label="Ignore"]::before,
+//             .friendsAction-__WNE9[aria-label="Cancel"]::before{
+//                 content: "\E8BB";
+//             }
+//         }
+//     }
+//     // meems ecks dee
+//     .friendsEmpty-1KQXin{
+//         .image-1GzsFd{
+//             display: none;
+//         }
+//         h4::before{
+//             content: "No Results";
+//             color: #FFF;
+//             font-weight: normal;
+//             text-transform: none;
+//         }
+//         .text-GwUZgS{
+//             display: none;
+//         }
+//     }
+// }
