@@ -6,10 +6,10 @@
     // Rank headers
     header[class^="membersGroup-"]{
         margin: 0 15px 10px 15px;
-        padding: 8px;
+        padding: 12px 0;
         color: #FFF;
-        font-size: $fsheader;
-        font-weight: $fwheader;
+        font-size: $fsui;
+        font-weight: $fwui;
         text-transform: none;
         letter-spacing: normal;
         white-space: nowrap;
@@ -20,8 +20,9 @@
 
     // Member
     div[class*="member-"]{
-        margin: 0 0 0 4px;
-        border: 2px solid transparent;
+        max-width: unset;
+        margin: 0;
+        box-sizing: border-box;
         border-radius: 0;
         div[class^="content-"]{
             height: 40px;
@@ -29,12 +30,9 @@
             border-radius: 0;
             box-sizing: border-box;
         }
-        &:hover{
-            
-            border-color: rgba(255,255,255,0.1);
-            .layout-2DM8Md{
-                background-color: transparent;
-            }
+        .layout-2DM8Md{
+            padding-left: calc(15px + 8px);
+            border-radius: 0;
         }
 
         // Avatar
