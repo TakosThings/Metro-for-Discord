@@ -27,6 +27,9 @@
             border-radius: 0;
         }
 
+        &[href="/store"]{
+            display: none;
+        }
 
         .layout-2DM8Md{
             height: 48px;
