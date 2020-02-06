@@ -5,6 +5,9 @@
             content: unset;
         }
         .peopleColumn-29fq28{
+            .scroller-2FKFPG{
+                overflow-y: auto;
+            }
             .peopleList-3c4jOR{
                 background-color: $b2;
             }
@@ -23,8 +26,46 @@
 
             // Person list
             .peopleListItem-2nzedh{
-                margin-right: 20px;
-                margin-left: 20px;
+                margin: 0;
+                padding-left: 20px;
+                padding-right: 20px;
+                &:hover{
+                    background-color: $b3;
+                    border-radius: 0;
+                }
+
+                
+                .actionButton-uPB8Fs{
+                    background-color: transparent;
+                    border-radius: 0;
+                    &:hover{
+                        background-color: $b4;
+                    }
+                    svg{
+                        display: none;
+                    }
+                    &::before{
+                        color: #FFF;
+                        font-size: 20px;
+                        font-family: $icon;
+                    }
+                    &[aria-label="Message"]::before{
+                        content: "\E8BD";
+                    }
+                    &[aria-label="More"]::before{
+                        content: "\E712";
+                    }
+                    &[aria-label="Accept"]::before{
+                        content: "\E8FB";
+                    }
+                    &[aria-label="Ignore"]::before{
+                        content: "\E711";
+                    }
+                    &[aria-label="Unblock"]::before{
+                        content: "\E711";
+                    }
+                }
+                
             }
 
             // Username
@@ -33,6 +74,16 @@
             }
             .discriminator-22Okc1{
                 font-weight: $fwui;
+            }
+
+            // Empty state
+            .friendsEmpty-1KQXin{
+                .image-1GzsFd{
+                    display: none;
+                }
+                .text-GwUZgS{ // ecksdee
+                    color: #FFF;
+                }
             }
         }
 
@@ -45,6 +96,18 @@
                 font-weight: $fwheader;
                 line-height: $lh;
                 text-transform: none;
+            }
+            .emptyCard-1RJw8n{
+                padding: 0;
+                align-items: flex-start;
+                background-color: transparent;
+                h5{
+                    font-size: $fsui;
+                    font-weight: $fwui;
+                }
+                .emptyText-2zjpZr{
+                    display: none;
+                }
             }
             .itemCard-v9viV7{
                 padding: 0;
@@ -94,143 +157,3 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// .theme-dark .friendsTable-133bsv{
-//     margin-top: 0;
-//     background-color: $b2;
-//     .friendsTableHeader-32yE7d{
-//         padding: 8px 20px;
-//         .friendsColumn-eVHFqJ{
-//             color: #FFF;
-//             font-weight: normal;
-//             letter-spacing: normal;
-//             text-transform: none;
-//         }
-//     }
-//     .friendsTableBody-1ZhKif{
-//         background-color: transparent;
-//     }
-//     .friendsRow-2yicud{
-//         height: 50px !important;
-//         margin: 0;
-//         padding: 0 20px;
-//         font-size: $fsui;
-//         font-weight: $fwui;
-//         line-height: normal;
-//         &:hover{
-//             margin: 0;
-//             padding: 0 20px;
-//             background-color: $b3;
-//             border-radius: 0;
-//             .friendsColumnActions-1LT3_M{
-//                 padding-right: 20px;
-//             }
-//         }
-//         .friendsColumnName-1zBOKm,
-//         .friendsColumnStatus-ZH4ho2{
-//             color: #FFF;
-//             .friendActivityText-2lmziy strong{
-//                 font-weight: normal;
-//             }
-//         }
-//         .friendsColumnActions-1LT3_M{
-//             padding-right: 20px;
-//             .friendsAction-__WNE9{
-//                 border-radius: 0;
-//                 background-image: none;
-//                 position: relative;
-//                 &::before{
-//                     width: 100%;
-//                     height: 100%;
-//                     position: absolute;
-//                     color: #FFF;
-//                     font-family: $icon;
-//                     font-size: 20px;
-//                     text-align: center;
-//                     line-height: 36px;
-//                 }
-//                 svg{
-//                     display: none;
-//                 }
-//             }
-//             .friendsAction-__WNE9[aria-label="Start Video Call"],
-//             .friendsAction-__WNE9[aria-label="Start Voice Call"],
-//             .friendsAction-__WNE9[aria-label="Accept"]{
-//                 background-color: $safe;
-//                 &:hover{
-//                     background-color: darken($safe, 10%) !important;
-//                 }
-//             }
-//             .friendsAction-__WNE9[aria-label="Remove Friend"],
-//             .friendsAction-__WNE9[aria-label="Ignore"]{
-//                 background-color: $alert;
-//                 &:hover{
-//                     background-color: darken($alert, 10%) !important;
-//                 }
-//             }
-
-//             .friendsAction-__WNE9[aria-label="Start Video Call"]::before{
-//                 content: "\E714";
-//             }
-//             .friendsAction-__WNE9[aria-label="Start Voice Call"]::before{
-//                 content: "\E717";
-//             }
-//             .friendsAction-__WNE9[aria-label="Remove Friend"]::before{
-//                 content: "\E74D";
-//             }
-//             .friendsAction-__WNE9[aria-label="Accept"]::before{
-//                 content: "\E8FB";
-//             }
-//             .friendsAction-__WNE9[aria-label="Ignore"]::before,
-//             .friendsAction-__WNE9[aria-label="Cancel"]::before{
-//                 content: "\E8BB";
-//             }
-//         }
-//     }
-//     // meems ecks dee
-//     .friendsEmpty-1KQXin{
-//         .image-1GzsFd{
-//             display: none;
-//         }
-//         h4::before{
-//             content: "No Results";
-//             color: #FFF;
-//             font-weight: normal;
-//             text-transform: none;
-//         }
-//         .text-GwUZgS{
-//             display: none;
-//         }
-//     }
-// }
