@@ -83,6 +83,11 @@
             background-color: transparent;
         }
 
+        // Mentioned
+        &.mentioned-xhSam7{
+            background-color: transparent;
+        }
+
         &:last-child{
             margin-bottom: 1rem;
         }
@@ -150,23 +155,7 @@
     .localBot-GrCgVt::before,
     .mentioned-xhSam7::before{
         left: -20px;
-        width: 20px;
-    }
-    .mentioned-xhSam7::before,
-    .mentioned-xhSam7::after{
-        background-color: var(--background-mentioned);
-    }
-    // Matching counterpart for right side
-    .localBot-GrCgVt::after,
-    .mentioned-xhSam7::after{
-        content: "";
-        position: absolute;
-        display: block;
-        top: 0;
-        right: -20px;
-        bottom: 0;
-        pointer-events: none;
-        width: 20px;
+        width: 4px;
     }
 
     // Message options
