@@ -215,6 +215,40 @@
         }
     }
 
+    // Reactions
+    .reactions-12N0jA{
+        .reaction-1hd86g{
+            border-radius: 0;
+            .reactionInner-15NvIl{
+                padding: 4px 8px;
+                &:hover{
+                    background-color: $b4;
+                }
+            }
+            .reactionCount-2mvXRV{
+                margin-left: 8px;
+                color: #FFF;
+                font-weight: normal;
+            }
+            &.reactionMe-wv5HKu{
+                background-color: var(--accent);
+                .reactionCount-2mvXRV{
+                    color: #FFF;
+                }
+            }
+        }
+        .reactionBtn-3N03Zj{
+            width: unset;
+            height: unset;
+            margin-top: -2px;
+            padding: 5px 8px;
+            background-color: var(--background-modifier-accent);
+            &:hover{
+                background-color: $b4;
+            }
+        }
+    }
+
     // Auto complete
     // Hack to stop the autocomplete popout being selected
     // Changes to this code must be mirrored to _chat.scss
