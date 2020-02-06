@@ -62,6 +62,14 @@
         .markup-2BOw-j{
             color: #FFF;
         }
+        // Special content
+        .wrapper-3WhCwL{
+            background-color: transparent;
+            color: var(--link);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
 
         // Right buttons
         .buttons-3JBrkn{
