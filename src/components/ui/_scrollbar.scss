@@ -1,101 +1,83 @@
 .theme-dark{
-    & .scrollerWrap-2lJEkd .scroller-2FKFPG.messages-3amgkR,
-      .container-3gCOGc .scroller-2FKFPG.friendsTableBody-1ZhKif,
-      div[class^="emojiPicker"] div[class*="scroller-"],
-      div[class^="quickswitcher-"] div[class*="scroller-"]{
+    .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG,
+    .emojiPicker-3m1S-j .scroller-2FKFPG{
         &::-webkit-scrollbar{
-            width: 12px;
+            width: 16px;
         }
         &::-webkit-scrollbar-button{
-            height: 13px;
+            height: 16px;
             background-color: #171717;
-        }
-        &::-webkit-scrollbar-button:vertical:increment{
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
-            background-size: 12px 12px;
-            border-top: 1px solid #171717;
-            &:hover{
-                background-color: #747474;
+            border: 0;
+            &:vertical:increment{
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEXS0tL////S0tLS0tIBy8dCAAAAA3RSTlMAACYoe0EjAAAALklEQVR4AWNgRAN0FGBmYgACJma4ABNIBEjABUAckCBcACQN5CMJAEVAxlDLYQCPTgENZhBK9AAAAABJRU5ErkJggg==);
+                background-size: 16px;
+                &:hover{
+                    background-color: #343434;
+                }
+            }
+            &:vertical:decrement{
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAADFBMVEXS0tL////S0tLS0tIBy8dCAAAAA3RSTlMAACYoe0EjAAAALklEQVR4AWNgRAPUFGBiYkARYGJmhoowQPlMQMQAFwBxGIAEXADEB4lg2EIzAQCUvwEWzkMg9gAAAABJRU5ErkJggg==);
+                background-size: 16px 16px;
+                &:hover{
+                    background-color: #343434;
+                }
             }
         }
-        &::-webkit-scrollbar-button:vertical:decrement{
-            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
-            background-size: 12px 12px;
-            border-bottom: 1px solid #171717;
-            &:hover{
-                background-color: #747474;
-            }
+        &::-webkit-scrollbar-button:start:increment,
+        &::-webkit-scrollbar-button:end:decrement { // Only show single buttons
+            display: none;
         }
         &::-webkit-scrollbar-thumb{
-            background-color: #454545;
+            background-color: #4B4B4B;
             border: 0;
             border-radius: 0;
             &:hover{
-                background-color: #747474;
+                background-color: #787878;
             }
         }
         &::-webkit-scrollbar-track-piece{
-            background-color: #171717;
+            background-color: transparent;
             border: 0;
             border-radius: 0;
         }
     }
 }
 
-// Special snowflakes
-// Emoji picker
-div[class^="emojiPicker"] div[class*="scroller-"]::-webkit-scrollbar-thumb{
-    visibility: visible;
-    background-color: #454545 !important;
-    &:hover{
-        background-color: #747474 !important;
-    }
-}
-// Chatbox autocomplete horizontal scrollbar
-div[class^="autocomplete-"] div[class*="scrollbarGhostHairline"]{
-    &::-webkit-scrollbar{
-        height: 12px;
-    }
-    &::-webkit-scrollbar-track{
-        margin: 8px;
-    }
-    &::-webkit-scrollbar-thumb{
-        background-color: #454545;
-        border-radius: 0;
-        &:hover{
-            background-color: #747474;
+.scrollerThemed-2oenus{
+    &.themeGhostHairline-DBD-2d .scroller-2FKFPG{
+        &::-webkit-scrollbar{
+            width: 6px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: #4B4B4B;
+            border: 2px solid transparent;
+            border-radius: 0;
+            &:hover{
+                background-color: #787878;
+            }
+        }
+        &::-webkit-scrollbar-track-piece{
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
         }
     }
 }
-// Autocomplete popout
-#autocomplete-popout div[class^="scroller-"]::-webkit-scrollbar-thumb{
-    visibility: visible;
-}
-// User profile modal - only show scrollbar when we need it
-.inner-1JeGVc div[class^="scroller-"]{
-    overflow-y: auto;
-    &::-webkit-scrollbar-thumb{
-        visibility: visible;
+
+// Force emoji picker scrollbar visible
+.emojiPicker-3m1S-j{
+    .scroller-2FKFPG{
+        &::-webkit-scrollbar-track{
+            background-color: transparent !important;
+        }
+        &::-webkit-scrollbar-thumb{
+            visibility: visible;
+            background-color: #454545 !important;
+            &:hover{
+                background-color: #787878 !important;
+            }
+        }
     }
-}
-// Friends list - only show scrollbar when we need it
-.container-3gCOGc .scroller-2FKFPG.friendsTableBody-1ZhKif{
-    overflow-y: auto;
-}
-// Chatbox,
-// Members list,
-// Channel list
-.theme-dark div[class^="channelTextArea-"] textarea::-webkit-scrollbar-thumb,
-.theme-dark div[class*="themeGhostHairline-"] div[class^="scroller-"][class*="members-"]::-webkit-scrollbar-thumb,
-.theme-dark div[class*="themeGhostHairlineChannels-"] div[class^="scroller-"]::-webkit-scrollbar-thumb{
-    background-color: rgba($color: #FFF, $alpha: 0.2);
-}
-// Editing message
-.theme-dark .edit-message textarea::-webkit-scrollbar-thumb{
-    background-color: rgba($color: #FFF, $alpha: 0.2) !important;
-}
-.theme-dark .edit-message textarea::-webkit-scrollbar-track-piece{
-    background-color: transparent !important;
 }
 // Context menu
 .contextMenu-HLZMGh{

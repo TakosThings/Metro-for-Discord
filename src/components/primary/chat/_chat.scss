@@ -1,240 +1,278 @@
 .theme-dark .chat-3bRxxu,
-.theme-dark .chat-3bRxxu>.content-yTz4x3,
-.theme-dark .messagesWrapper-3lZDfY{
+.theme-dark .chat-3bRxxu .messages-3amgkR{
     background-color: $b2;
 }
 
 .theme-dark .chat-3bRxxu{
     .messages-3amgkR{
-        background-color: transparent;
+        padding: 0 20px;
     }
-    // Cozy chat
-    .messageCozy-2JPAPA{
-        .markup-2BOw-j{
-            color: #FFF;
-        }
-        .username-_4ZSMR{
-            color: #acacaa;
-            font-size: $fsui;
+
+    // New Message bars
+    .barBase-39XTcM{
+        right: 20px;
+        left: 20px;
+    }
+    .newMessagesBar-mujexs,
+    .jumpToPresentBar-9P20AM{
+        background-color: var(--accent);
+        border-radius: 0;
+        opacity: 1;
+        .barButtonBase-3UKlW2{
             font-weight: normal;
         }
-        .isMentionedCozy-3isp7y{
-            border-radius: 0;
-            &::after{
-                border-radius: 0;
+    }
+    .jumpToPresentBar-9P20AM{
+        padding-bottom: 0;
+    }
+
+    // Welcome message
+    .default-1VPH9n{
+        margin: 0;
+    }
+    .base-34jWEe{
+        background-color: transparent;
+        background-image: none;
+        border: 0;
+        h1{
+            color: #FFF;
+            font-size: $fsheader;
+            font-weight: $fwheader;
+            strong{
+                font-weight: 400;
             }
-        }
-        a{
-            color: var(--link);
-        }
-        .timestampCozy-2hLAPV{
-            color: #FFF;
-            opacity: .5;
-        }
-    }
-
-    // Compact chat
-    .messageCompact-kQa7ES{
-        .markup-2BOw-j{
-            color: #FFF;
-        }
-        &:hover time{
-            color: #FFF;
-        }
-        .username-_4ZSMR{
-            color: #acacaa;
-            font-size: $fsui;
-            font-weight: normal;
-        }
-        .timestampCompactBase-26h38e{
-            color: #FFF;
-            opacity: .5;
-        }
-    }
-
-    // Mention
-    span.wrapper-3WhCwL,
-    .mention{
-        padding: 0;
-        background-color: transparent;
-        color: var(--link);
-        transition: none;
-        &:hover{
-            background-color: transparent;
-            text-decoration: underline;
-        }
-    }
-    .message-group .comment .markup .mention{
-        background-color: transparent;
-        &:hover{
-            background-color: transparent;
-        }
-    }
-
-    // Spoilers
-    .spoilerContainer-331r0R{
-        border-radius: 0;
-    }
-    .spoilerText-3p6IlD{
-        border-radius: 0;
-        &.hidden-HHr2R9{
-            background-color: #000;
         }
     }
 
     // Dividers
-    .divider-3gKybi{
-        height: 20px;
-        margin: 0 6px 0 20px;
-        background-color: transparent;
-        &::before{
-            display: none;
+    .divider-3_HH5L{
+        margin: 4px 0;
+    }
+    .divider-JfaTT5{
+        border-color: #555;
+        &.hasContent-1_DUdQ{
+            margin-top: 2.5rem;
+            margin-bottom: -10px;
         }
-        span{
-            padding: 4px 12px;
-            background-color: transparent;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        div{
-            background-color: #FFF;
-        }
-        &:not(.dividerRed-MKoLlr) span{
-            color: #FFF;
-        }
-        &.dividerRed-MKoLlr{
-            > div{
-                background-color: $alert;
-                opacity: 1;
-            }
-            > span{
+        &.isUnread-3Ef-o9{
+            border-color: $alert;
+            span{
                 color: $alert;
             }
+            .unreadPill-2HyYtt{
+                text-transform: capitalize;
+            }
+        }
+        &.beforeGroup-1rH1F0{
+            margin-bottom: -10px;
+            margin-top: 0.5rem;
+        }
+        span{
+            padding: 2px 8px;
+            background-color: $b2;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
         }
     }
 
-    // New message bars
-    .newMessagesBar-mujexs{
-        background-color: var(--accent);
-        border-radius: 0;
-        button:first-child,
-        button:last-child{
-            color: #FFF;
-            font-family: $font;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        button:last-child{
-            display: none;
-        }
-    }
-    .jumpToPresentBar-9P20AM{
-        background-color: var(--accent);
-        border: 0;
-        border-radius: 0;
-        button:first-child,
-        button:last-child{
-            color: #FFF;
-            font-family: $font;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
-        }
-        button:last-child{
-            display: none;
-        }
-    }
-
-    // Load more message
-    .hasMore-3e72_v{
-        background-color: $b3;
-        border: 2px solid transparent;
-        border-radius: 0;
-        box-shadow: none;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
-        text-transform: none;
+    // Message
+    .message-2qnXI6{
+        // Remove hover state
         &:hover{
-            border-color: $inputborder;
+            background-color: transparent;
         }
-        &:focus{
-            border-color: $inputborderhover;
-        }
-    }
 
-    // Robot message
-    .isLocalBot-38G0P0{
-        background-color: transparent;
-        background-image: none;
-        box-shadow: none;
-    }
-
-    // System message
-    .container-3-pyIM{
-        color: #FFF;
-        font-size: $fsui;
-        .icon-2Po-VO{
-            background-size: 14px;
+        // Mentioned
+        &.mentioned-xhSam7{
+            background-color: transparent;
         }
-        .timestamp-1E3uAL{
+
+        &:last-child{
+            margin-bottom: 1rem;
+        }
+
+        // Timestamp
+        .timestampCompact-29LLPQ,
+        .timestampCozy-1HNQR2{
+            color: #CCC;
+        }
+
+        // Username
+        .username-1A8OIy{
+            font-weight: 400;
+        }
+
+        // Chat text
+        .markup-2BOw-j{
             color: #FFF;
-            opacity: .5;
         }
-    }
 
-    // Editing message
-    .messageEditorCompact-2PSR3v,
-    .contentCozy-3XX413{
-        .scrollableContainer-2NUZem{
-            background-color: $b1;
-            border-radius: 0;
+        // Mention
+        span.mention{
+            background-color: transparent;
+            color: var(--accent);
         }
-        .textArea-12jD-V{
-            padding: 13px 0;
-        }
-        .buttons-3JBrkn{
-            height: 48px;
-            margin-right: -10px;
-            .emojiButton-3uL3Aw{
-                width: 48px;
-                max-height: 48px;
-                margin: 0;
-                
-                .contents-18-Yxp{
-                    .sprite-2iCowe{
-                        display: none;
-                    }
-                    &:hover{
-                        &::before{
-                            color: $b4;
-                        }
-                    }
+
+        // System message
+        &.systemMessage-1I9LCe{
+            .container-3-pyIM{
+                color: #CCC;
+                a{
+                    color: #CCC;
+                    font-weight: normal;
+                }
+                .timestamp-1E3uAL{
+                    color: #CCC;
                     &::before{
-                        content: "\E76E";
-                        width: 48px;
-                        color: #FFF;
-                        font-family: $icon;
-                        font-size: 20px;
+                        content: "(";
+                    }
+                    &::after{
+                        content: ")";
                     }
                 }
             }
         }
     }
+
+    // Compact
+    .compact-T3H92H{
+        &.groupStart-23k01U{
+            margin-top: calc(1.0625rem / 2);
+            padding-top: calc(1.0625rem / 2);
+            border-top: 1px solid #333;
+        }
+        .container-3FojY8{
+            padding-left: 60px;
+            text-indent: calc(-80px - -1rem);
+        }
+    }
+
+    // Cozy Message
+    .cozyMessage-3V1Y8y{
+        &.groupStart-23k01U{
+            margin-top: calc(1.0625rem / 2);
+            padding-top: calc(1.0625rem / 2);
+            border-top: 1px solid #333;
+        }
+        .container-3FojY8{
+            padding-left: 60px;
+        }
+        .header-23xsNx{
+            padding-left: 60px;
+            margin-left: -60px;
+        }
+        .avatar-1BDn8e{
+            margin: 0;
+        }
+    }
+
+    .scroller-3sQKXg:after{
+        content: unset;
+    }
+
+    // Mentioned
+    // It's all hacks here
+    .localBot-GrCgVt::before,
+    .mentioned-xhSam7::before{
+        left: -20px;
+        width: 4px;
+    }
+
+    // Message options
+    .buttonContainer-DHceWr{
+        .container-3npvBV{
+            top: 0;
+            padding-left: 0;
+        }
+        .wrapper-2aW0bm{
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+            .emojiButton-jE9tXC{
+                display: none;
+            }
+            .emojiSeparator-10VgEJ{
+                display: none;
+            }
+            .button-1ZiXG9{
+                &:hover{
+                    background-color: $b3;
+                }
+            }
+        }
+    }
+
+    // Editing message
+    .channelTextArea-3bF57p{
+        .scrollableContainer-2NUZem{
+            background-color: #000;
+            border-radius: 0;
+        }
+        // Buttons
+        .buttons-3JBrkn{
+            .emojiButton-3uL3Aw{
+                &::before{
+                    content: "\E76E";
+                    color: #CCC;
+                    font-family: $icon;
+                    font-size: 24px;
+                }
+                &:hover{
+                    &::before{
+                        color: #FFF;
+                    }
+                }
+                .contents-18-Yxp{
+                    display: none;
+                }
+            }
+        }
+    }
     .operations-36ENbA{
-        color: #FFF;
-        font-family: $font;
-        font-weight: normal;
-        > a{
-            color: var(--accent);
+        color: #CCC;
+        a{
+            color: var(--link);
+        }
+    }
+
+    // Reactions
+    .reactions-12N0jA{
+        .reaction-1hd86g{
+            border-radius: 0;
+            .reactionInner-15NvIl{
+                padding: 4px 8px;
+                &:hover{
+                    background-color: $b4;
+                }
+            }
+            .reactionCount-2mvXRV{
+                margin-left: 8px;
+                color: #FFF;
+                font-weight: normal;
+            }
+            &.reactionMe-wv5HKu{
+                background-color: var(--accent);
+                .reactionCount-2mvXRV{
+                    color: #FFF;
+                }
+            }
+        }
+        .reactionBtn-3N03Zj{
+            width: unset;
+            height: unset;
+            margin-top: -2px;
+            padding: 5px 8px;
+            background-color: var(--background-modifier-accent);
+            &:hover{
+                background-color: $b4;
+            }
         }
     }
 
     // Auto complete
     // Hack to stop the autocomplete popout being selected
-    // This code is borrowed from _chatbox.scss, changes there should be mirrored here
+    // Changes to this code must be mirrored to _chat.scss
     div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"]{
         background-color: $b1;
         border-bottom: 1px solid $b2;
@@ -266,117 +304,5 @@
         div[class^="description"]{
             color: #FFF;
         }
-    }
-
-    // Reactions
-    .reaction-1ELvT8{
-        border: 1px solid transparent;
-        border-radius: 0;
-        &:hover{
-            border-color: $inputborder;
-        }
-        .reactionCount-2ddRoS{
-            color: rgba(255,255,255,.5);
-            font-weight: normal;
-        }
-        &.reactionMe-23mbRf{
-            background-color: var(--accent);
-            .reactionCount-2ddRoS{
-                color: #000;
-                font-weight: bold;
-            }
-        }
-    }
-
-    // Start of channel history
-    div[class^="default-"]{
-        height: auto;
-        margin: 0;
-        padding: 20px;
-        background-color: #232323;
-        background-image: none;
-        h1{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwchat;
-        }
-    }
-
-    // File attachments
-    .attachment-33OFj0{
-        height: 56px;
-        padding: 8px;
-        background-color: $b1;
-        border-radius: 0;
-        img[class^="icon-"]{
-            display: none;
-        }
-        div[class^="attachmentInner"]{
-            height: 40px;
-            position: relative;
-            padding-left: 48px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            a[class*="fileNameLink-"],
-            div[class^="filename-"]{
-                font-size: $fsui;
-                font-weight: $fwui;
-                line-height: $lh;
-            }
-            div[class^="size-"]{
-                line-height: $lh;
-            }
-            div[class^="metadata-"]{
-                color: #FFF;
-                font-weight: normal;
-            }
-            // Upload progress bar
-            div[class^="progress-"]{
-                background-color: rgba($color: #FFF, $alpha: 0.2) !important;
-                border-radius: 0;
-                div[class^="progressBar-"]{
-                    background-color: var(--accent) !important;
-                    border-radius: 0;
-                }
-            }
-        }
-        img[class^="icon-"]~div::before{
-            content: "";
-            width: 40px;
-            height: 40px;
-            padding: 8px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: var(--accent);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-            box-sizing: border-box;
-        }
-        svg[class^="downloadButton"] g{
-            display: none;
-        }
-    }
-}
-
-// Special snowflakes
-// Blocked messages
-.theme-dark .messageGroupBlocked-3wrQQX{
-    border: 1px solid transparent;
-    border-radius: 0;
-    .messageGroupBlockedBtn-1PBBh-{
-        background: $b3;
-        color: #fff;
-        font-size: $fschat;
-        font-weight: $fwchat;
-        text-transform: none;
-        &:hover{
-            background-color: $b3;
-        }
-    }
-    &.revealed-1_RKsf{
-        background-color: $b3;
     }
 }

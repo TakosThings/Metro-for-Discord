@@ -1,126 +1,115 @@
-.theme-dark .form-2fGMdU{
-    border-top: 2px solid $b3;
-    &:focus-within{
-        border-top-color: var(--accent);
+.form-2fGMdU{
+    margin-top: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+    // Remove gradient
+    &::before{
+        content: unset;
     }
-    // Remove top border
+
     .channelTextArea-rNsIhG{
-        padding-top: 0;
-        margin-top: 0;
         margin-bottom: 0;
-        border-top: 0;
-    }
-    .scrollableContainer-2NUZem{
-        max-height: 256px;
         background-color: transparent;
+        border-top: 2px solid $b3;
         border-radius: 0;
-    }
-    
-    // Attach button
-    .attachWrapper-2TRKBi{
-        border: 0;
-        z-index: 1;
-    }
-    .attachButton-2WznTc{
-        width: 48px;
-        height: 46px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
-        z-index: 1;
-        &:hover{
-            background-color: $b3;
+        &:focus-within{
+            border-top-color: var(--accent);
         }
-        svg{
-            display: none;
+        .scrollableContainer-2NUZem{
+            background-color: transparent;
+            border-radius: 0;
         }
-        &::before{
-            content: "\E898";
-            color: #FFF;
-            font-family: $icon;
-            font-size: 18px;
-        }
-    }
-    .attachButtonDivider-3Glu60{
-        display: none;
-    }
 
-    // Upload button with Spotify enabled
-    svg[class^="attachButton"]{
-        width: 48px;
-        height: 48px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0;
-        border-top: 2px solid #0F0;
-        border-radius: 0;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 24px;
-        opacity: .5;
-        g{
-            display: none;
+        // Upload button
+        .attachWrapper-2TRKBi{
+            border: 0;
+            button{
+                width: 48px;
+                height: 46px;
+                padding: 0;
+                &::before{
+                    content: "\E898";
+                    color: #CCC;
+                    font-family: $icon;
+                    font-size: 20px;
+                }
+                &:hover{
+                    background-color: $b3;
+                }
+                .contents-18-Yxp{
+                    display: none;
+                }
+            }
         }
-        &:hover{
-            background-color: $b3;
-            opacity: 1;
-        }
-    }
 
-    .textArea-12jD-V{
-        min-height: 48px;
-        color: #FFF;
+        .textArea-12jD-V{
+            min-height: 46px;
+        }
+
+        // Placeholder
         .placeholder-37qJjk{
-            color: #AAA;
+            color: #CCC;
         }
-    }
 
-    // Right Buttons
-    .buttons-3JBrkn{
-        height: 48px;
-        margin-right: 0;
-        padding-right: 0;
-        // Remove gift button
-        button[aria-label="Send a gift"]{
-            display: none;
+        // Adjust text to be inline with Cozy text
+        .placeholder-37qJjk,
+        .slateTextArea-1Mkdgw{
+            padding-left: 12px;
+            padding-right: 12px;
         }
-        .buttonContainer-28fw2U{
-            // Remove GIF button
-            button[aria-label="Open GIF picker"]{
+
+        // Textarea
+        .markup-2BOw-j{
+            color: #FFF;
+        }
+        // Special content
+        .wrapper-3WhCwL{
+            background-color: transparent;
+            color: var(--link);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+
+        // Right buttons
+        .buttons-3JBrkn{
+            margin-right: 0;
+            button[aria-label="Send a gift"]{
                 display: none;
+            }
+            .buttonContainer-28fw2U{
+                button[aria-label="Open GIF picker"]{
+                    display: none;
+                }
+            }
+            .emojiButton-3uL3Aw{
+                width: 48px;
+                height: 46px;
+                margin: 0;
+                padding: 0;
+                &::before{
+                    content: "\E76E";
+                    color: #CCC;
+                    font-family: $icon;
+                    font-size: 20px;
+                }
+                &:hover{
+                    background-color: $b3;
+                    &::before{
+                        color: #FFF;
+                    }
+                }
+                .contents-18-Yxp{
+                    display: none;
+                }
             }
         }
     }
-    .emojiButton-3uL3Aw{
-        width: 48px;
-        height: 48px;
-        padding: 0;
-        margin: 0;
-        &::before{
-            content: "";
-            width: 40px;
-            height: 40px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 24px;
-        }
-        &:hover{
-            background-color: $b3;
-        }
-        // popout is open
-        &[aria-expanded="true"]{
-            background-color: var(--accent);
-        }
-        // Remove default emoji
-        .sprite-2iCowe{
-            display: none;
-        }
-    }
 
-    // Typing
+    // Is Typing
     .typing-2GQL18{
         height: 20px;
+        right: 20px;
         bottom: 46px;
         background-color: transparent;
         font-size: 11px;
@@ -133,42 +122,6 @@
         span[class^="text-"]{
             strong{
                 font-weight: normal;
-            }
-        }
-    }
-
-    // Blocked user/Countdown
-    .wrapper-39oAo3{
-        min-height: 48px;
-        margin-bottom: 0;
-        padding: 0 16px;
-        background-color: transparent;
-        background-image: none;
-        border-top: 2px solid rgba($color: $alert, $alpha: 0.5);
-        border-radius: 0;
-        box-sizing: border-box;
-        transition: .15s ease-in;
-        &:hover{
-            border-top-color: rgba($color: $alert, $alpha: 1.0);
-            transition: .15s ease-in;
-        }
-        // Verify phone message
-        .content-c_0cLD{
-            font-size: $fsui;
-            img{
-                display: none;
-            }
-        }
-        // Countdown
-        span[class^="countdown"]{
-            margin-top: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
-            span[class^="number"]{
-                min-width: auto;
-                background-color: transparent;
-                border: 0;
-                border-radius: 0;
             }
         }
     }
