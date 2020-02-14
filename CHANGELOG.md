@@ -1,6 +1,34 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.13.0
+* **Clean up** (1)
+ * Remove `/popout/_chat_options.scss`, now unused
+* **Enhancements** (5)
+  * Move theme version number in User Settings from bottom right to Discord's version no. under the logout button
+  * Added border lines back to cozy and compact chat modes to assist with chat legibility
+  * Changed emoji picker category icons to MDL2
+  * Remove Nitro link from Friends conversation list as clicking it breaks the client until restart
+  * Some minor style changes to the members list
+* **Fixes** (17)
+  * Chatbox
+  * Remove chat message hover state
+  * Decrease font-weight of chat usernames
+  * Fix alignment of new chat options
+  * Some User Settings sidebar menu options had wrong icons
+  * Added bottom margin to increase gap between chatbox and last message
+  * Increased left padding on toolbar channel name
+  * Many sizing and position fixes for chat
+  * Create server modal
+  * Remove some duplicate CSS related to badges
+  * Fix compact and cozy chat indenting
+  * Friends table
+  * Chat scrollbars showing both arrow buttons
+  * Server region select modal background colour
+  * Chat file attachments
+  * Recent mentions popout
+  * Remove channel toolbar topic font-weight
+
 #### 3.12.11
 * **Fixes** (1)
   * Missing or wrong icons for User Settings sidebar menu options
