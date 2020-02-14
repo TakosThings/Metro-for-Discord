@@ -108,9 +108,30 @@
             color: #FFF;
         }
 
+        // Mention
         span.mention{
             background-color: transparent;
             color: var(--accent);
+        }
+
+        // System message
+        &.systemMessage-1I9LCe{
+            .container-3-pyIM{
+                color: #CCC;
+                a{
+                    color: #CCC;
+                    font-weight: normal;
+                }
+                .timestamp-1E3uAL{
+                    color: #CCC;
+                    &::before{
+                        content: "(";
+                    }
+                    &::after{
+                        content: ")";
+                    }
+                }
+            }
         }
     }
 
@@ -145,7 +166,7 @@
             margin: 0;
         }
     }
-    
+
     .scroller-3sQKXg:after{
         content: unset;
     }
