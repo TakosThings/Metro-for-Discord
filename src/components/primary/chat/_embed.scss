@@ -30,9 +30,9 @@
                 display: none;
             }
         }
-        
+
     }
-    
+
     // Remove border radius on preview images
     .embedImage-2W1cML img,
     .embedImage-2W1cML video,
@@ -198,7 +198,7 @@ div[class^="modal-"]{
                 height: 36px;
             }
         }
-        
+
         // Album art
         img[class*="artwork-"]{
             border-radius: 0;
@@ -208,5 +208,63 @@ div[class^="modal-"]{
             background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAACeVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8avHfUAAAA0nRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQWGBkaGxweHyAhIiMkJSYoKiwtLi8wMTQ2Nzg5Ojs9QEJDRUZHSElKS0xNTlFSU1VWV1laXF1hYmNkZWZoaWprbG1ub3Fyc3R1dnd4ent9fn+AgYKDhIWGh4iLjI2Oj5CRkpSWmJmcnZ6foKKkpaanqaqrrK2ur7CxtLW2t7i5uru8vb6/wMHExcbHyMrLzM3Oz9DR0tTW19jZ2tze3+Dh4uPk5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f6WqEk/AAADn0lEQVR4AZ3S618U9R8F8DMzP0BY+clFxBAq0/KiKRUWXQIJy0SjIERJQxERJUQiIkxLCqqtRLCLWpZplIEQJgkaEiAsErG6zPmLAmaB7zCzuzO8n50Hn/M639cMfIlNO/jppU6X2+3q/PmzQ+mLYYe07kirSh217e1ECdYsyGujqau7I62cFw/QJ9dbgSrkzB761ZutwI8HzzOgH5fBp5dctODOFpiTy1RaU6HARFAtLXOGmNyfpA0Nhga5lrY4Fegdpk0V0Nmk0q4tENw/SNvuPIRp8jnOwQ8KpmzlnGTBK7ybRneHBweGRsboR28ENIWcoXY2VOSkro0PD5IBSQmJXvpYel7VV9dNmw55B/RRo7aUp8bAXNST+04PcZZBbUIONV3r4F9wUvk16ryBCS3UJCMwOfGoizPaJQBrqBlVYMn/d17ntPUASqjxRECgOBbeFxcbHSLDKCS7m15HAFymVwkmLEjKfa+hpcdNzT83muort29YOGtFHTWtQPQYvdTjySnvNHtoqqMua6k4osN7E4vnaFl72SpMOUZNGgpoxy+ZoZhUT00xamjOPeRyjag06M6bB2C1m5pPcJ56nrbafS+uX+JQJEmSQxatfDbn3bN9FF3L3vBmP70uop2CrqqUSBjJy16p7aWpP3FLSN+Ewqf/JVWbdQxiUEiPwq95my9wtlFdwXJMU8KiYqIdQZjliTPU+1f3hEqMW7SxsPbijckPoI72/FZfvm1NMGY8dYWiAfxOweevV7apNBg+s3eFBK/gLynowPe0pr0oAZqHKfgJJ2iV5+TjmLCEgjrspQ1frwJQRkERnqHBcHN99YGdmRkZ23L3V59qvyeuOLHDSdFGRHooGDq1PyVegk5o4q7GEZpTY4AmIV+NgTnHpvp7NNECoFjIBfAt7vAADcoArBDycUyYv/qFHaVHP3I6P36/dPvzD8jwiio1vGQtxv3KaWNlKfnOPzzU6W/cvRyahAvUuSJh3GsMSG3eFa3/iTS5mBDWQwuGqxYDSNBvC8ekPbRk+EB45BcUFULj6KI17rsUdYfD62XOyVZMkU5zDs7KmBbXR9sGEiBIHaNNajp0CmlTCfSkY7SlRsYsSh1tcAbBQLGxoSYIJqTCMVqiHpRhLrWPFtxOg09xjQzo23j4IW3uol83MyT4F5Z/iz79XTAfgYW92kRTl7McsOiRokse6niailfClojk/A/Otd7sv/1X63cf7nk6Ej78B9PzXW2egHSAAAAAAElFTkSuQmCC);
             background-size: auto;
         }
+    }
+}
+
+// File attachment
+.theme-dark .attachment-33OFj0{
+    max-width: 458px;
+    height: 60px;
+    position: relative;
+    background-color: $b1;
+    border: 0;
+    border-radius: 0;
+    // Hide default image
+    img{
+        display: none;
+        // Replace with MDL icon
+        &~div::before{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 8px;
+            background-color: var(--accent);
+            color: #FFF;
+            font-family: $icon;
+            font-size: 24px;
+        }
+    }
+
+    // Move filename and size
+    .filenameLinkWrapper-1-14c5,
+    .metadata-3WGS0M{
+        margin-left: 50px;
+    }
+
+    .filenameLinkWrapper-1-14c5{
+        color: var(--link);
+        font-size: $fsui;
+        opacity: 1;
+    }
+    .metadata-3WGS0M{
+        color: #CCC;
+    }
+
+    // Remove unneeded download icon
+    .attachmentInner-3vEpKt ~ a{
+        display: none;
+    }
+
+
+    img[title="acrobat"]~div::before{
+        content: "\EA90"; //PDF
+    }
+    img[title="archive"]~div::before{
+        content: "\E8B7"; // Folder
+    }
+    img[title="unknown"]~div::before,
+    img[title="webcode"]~div::before,
+    img[title="document"]~div::before{
+        content: "\E8A5"; // Document
     }
 }
