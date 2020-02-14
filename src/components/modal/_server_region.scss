@@ -1,5 +1,6 @@
 div[class^="regionSelectModal-"]{
-    background-color: $b1;
+    max-height: unset;
+    background-color: $b1 !important;
     border: 1px solid var(--accent);
     border-radius: 0;
 

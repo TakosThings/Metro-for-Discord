@@ -1,6 +1,6 @@
 .theme-dark .emojiPicker-3m1S-j{
     background-color: $b2;
-    border: 1px solid var(--accent);
+    border: 1px solid $inputborder;
     border-radius: 0;
     box-shadow: none;
 
@@ -125,9 +125,49 @@
             margin: 0;
             &.selected-39BZ4S{
                 border-color: var(--accent);
+                &::before{
+                    color: var(--accent);
+                }
             }
             svg{
                 display: none;
+            }
+            &::before{
+                content: "";
+                color: #FFF;
+                font-family: $icon;
+                font-size: 18px;
+            }
+            &[aria-label="recent"]::before{
+                content: "\E81C";
+            }
+            &[aria-label="custom"]::before{
+                content: "\E74C";
+            }
+            &[aria-label="people"]::before{
+                content: "\ED53";
+            }
+            &[aria-label="nature"]::before{
+                content: "\E708";
+            }
+            &[aria-label="food"]::before{
+                content: "\ED56";
+            }
+            &[aria-label="activity"]::before{
+                content: "\EA86";
+            }
+            &[aria-label="travel"]::before{
+                content: "\ED57";
+            }
+            &[aria-label="objects"]::before{
+                content: "\ED55";
+            }
+            &[aria-label="symbols"]::before{
+                content: "\EB51";
+            }
+            &[aria-label="flags"]::before{
+                content: "🏳‍🌈";
+                font-family: $font;
             }
         }
     }

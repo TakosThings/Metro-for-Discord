@@ -41,14 +41,13 @@
                 background-color: #000;
                 border-radius: 0;
             }
+            .textArea-12jD-V{
+                min-height: 46px;
+            }
             div[class*="channelTextArea"] div[class*="inner-"]{
                 margin: 0;
                 background-color: #000;
                 border-radius: 0;
-                textarea{
-                    padding: 10px 50px 10px 10px;
-                    margin: 0;
-                }
                 .buttons-3JBrkn{
                     margin: 0;
                 }
@@ -56,32 +55,24 @@
                     margin: 0;
                 }
                 // Emoji button
-                button[class*="emojiButton-"]{
-                    width: 48px;
-                    height: 48px;
-                    top: 0;
-                    right: 0;
+                .emojiButton-3uL3Aw{
+                    width: 44px;
+                    height: 46px;
                     padding: 0;
-                    border-radius: 0;
                     &::before{
-                        content: "";
-                        width: 40px;
-                        height: 40px;
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: 24px;
-                    }
-                    div[class*="sprite-"]{
-                        display: none;
-                    }
-                    &.popout-open{
-                        background-color: var(--accent);
-                        &:hover{
-                            background-color: var(--accent);
-                        }
+                        content: "\E76E";
+                        color: #CCC;
+                        font-family: $icon;
+                        font-size: 20px;
                     }
                     &:hover{
                         background-color: $b3;
+                        &::before{
+                            color: #FFF;
+                        }
+                    }
+                    .contents-18-Yxp{
+                        display: none;
                     }
                 }
                 div[class^="emojiButtonNormal-"]{
