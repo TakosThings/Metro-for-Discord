@@ -1,4 +1,5 @@
-.messagesPopoutWrap-1MQ1bW{
+.recentMentionsPopout-2fmau1,
+.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-2fmau1){
     max-height: calc(100vh - 80px) !important;
     min-height: calc(100vh - 80px);
     position: absolute;
@@ -9,7 +10,7 @@
     right: -200px !important;
 }
 
-.theme-dark div[class^="messagesPopoutWrap-"]{
+.theme-dark .messagesPopoutWrap-1MQ1bW{
     margin-top: -8px;
     background-color: $b1;
     border: 0;
@@ -18,7 +19,7 @@
     .messagesPopout-24nkyi{
         background-color: $b1;
     }
-    
+
     // Header
     div[class^="header-"]{
         background-color: transparent;
@@ -85,7 +86,7 @@
                 color: #FFF;
             }
         }
-        
+
         // Jump to button
         .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug{
             background-color: transparent;
