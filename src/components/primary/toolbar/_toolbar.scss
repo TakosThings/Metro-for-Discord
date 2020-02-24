@@ -107,6 +107,9 @@
     div[aria-label="Member List"]::before{
         content: "\E779";
     }
+    div[aria-label="Update Ready"]::before{
+        content: "\ECC5";
+    }
     div[aria-label="Mentions"]::before{
         content: "\E910";
     }
