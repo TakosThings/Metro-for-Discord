@@ -175,8 +175,10 @@
     // It's all hacks here
     .localBot-GrCgVt::before,
     .mentioned-xhSam7::before{
-        left: -20px;
         width: 4px;
+        height: calc(100% - 1.0625rem / 2);
+        top: calc(1.0625rem / 2);
+        left: -20px;
     }
 
     // Message options
