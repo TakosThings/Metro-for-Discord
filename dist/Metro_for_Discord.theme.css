@@ -1,4 +1,4 @@
-//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.13.0"}*//{}
+//META{"name":"Metro_for_Discord","description":"Based on Microsoft's Modern Design Language, aka 'Metro'. Github: github.com/TakosThings","author":"Tako","version":"3.13.1"}*//{}
 
 /* ################## Metro for Discord ################## */
 /* ## License: CC-BY-NC-SA                              ## */
@@ -78,7 +78,7 @@ textarea::-webkit-input-placeholder {
 
 .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .info-1VyQPT::before {
-  content: "Metro for Discord \A Version 3.13.0"; }
+  content: "Metro for Discord \A Version 3.13.1"; }
 
 .app-2rEoOp::before {
   width: 360px;
@@ -959,7 +959,7 @@ body.bd-blue .app::before {
     width: 7px;
     height: 7px;
     top: 9px;
-    left: 14px;
+    left: 18px;
     border-right: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
     transform: rotate(45deg); }
@@ -975,7 +975,7 @@ body.bd-blue .app::before {
   .theme-dark .sidebar-2K8pFh .containerDefault-3GGEv_ .wrapper-CU3qI5.collapsed-4WdoJ7 .icon-WnO6o2,
   .theme-dark .sidebar-2K8pFh .containerDragBefore-3Dzc5x .wrapper-CU3qI5.collapsed-4WdoJ7 .icon-WnO6o2 {
     top: 11px;
-    left: 12px;
+    left: 18px;
     transform: rotate(-45deg); }
   .theme-dark .sidebar-2K8pFh .containerDefault-3GGEv_ .wrapper-CU3qI5.muted-1NRuDm .name-IbjUBS,
   .theme-dark .sidebar-2K8pFh .containerDragBefore-3Dzc5x .wrapper-CU3qI5.muted-1NRuDm .name-IbjUBS {
@@ -1411,6 +1411,8 @@ body.bd-blue .app::before {
     content: "\E840"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Member List"]::before {
     content: "\E779"; }
+  .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Update Ready"]::before {
+    content: "\ECC5"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Mentions"]::before {
     content: "\E910"; }
   .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Voice Call"]::before {
@@ -1518,7 +1520,7 @@ body.bd-blue .app::before {
 .theme-dark .chat-3bRxxu .divider-JfaTT5 {
   border-color: #555; }
   .theme-dark .chat-3bRxxu .divider-JfaTT5.hasContent-1_DUdQ {
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
     margin-bottom: -10px; }
   .theme-dark .chat-3bRxxu .divider-JfaTT5.isUnread-3Ef-o9 {
     border-color: #D02E00; }
@@ -1600,8 +1602,10 @@ body.bd-blue .app::before {
 
 .theme-dark .chat-3bRxxu .localBot-GrCgVt::before,
 .theme-dark .chat-3bRxxu .mentioned-xhSam7::before {
-  left: -20px;
-  width: 4px; }
+  width: 4px;
+  height: calc(100% - 1.0625rem / 2);
+  top: calc(1.0625rem / 2);
+  left: -20px; }
 
 .theme-dark .chat-3bRxxu .buttonContainer-DHceWr .container-3npvBV {
   top: 0;
@@ -2036,14 +2040,24 @@ div[class^="modal-"] div[class^="invite-"] {
       font-family: "Segoe MDL2 Assets";
       font-size: 24px; }
   .theme-dark .attachment-33OFj0 .filenameLinkWrapper-1-14c5,
-  .theme-dark .attachment-33OFj0 .metadata-3WGS0M {
+  .theme-dark .attachment-33OFj0 .metadata-3WGS0M,
+  .theme-dark .attachment-33OFj0 .filename-3eBB_v {
     margin-left: 50px; }
-  .theme-dark .attachment-33OFj0 .filenameLinkWrapper-1-14c5 {
-    color: var(--link);
+  .theme-dark .attachment-33OFj0 .filenameLinkWrapper-1-14c5,
+  .theme-dark .attachment-33OFj0 .filename-3eBB_v {
+    color: #FFF;
     font-size: 15px;
     opacity: 1; }
+    .theme-dark .attachment-33OFj0 .filenameLinkWrapper-1-14c5 a,
+    .theme-dark .attachment-33OFj0 .filename-3eBB_v a {
+      color: var(--link); }
   .theme-dark .attachment-33OFj0 .metadata-3WGS0M {
     color: #CCC; }
+  .theme-dark .attachment-33OFj0 .progress-3Rbvu0 {
+    border-radius: 0; }
+    .theme-dark .attachment-33OFj0 .progress-3Rbvu0 .progressBar-3u8FBM {
+      background-color: var(--accent) !important;
+      border-radius: 0; }
   .theme-dark .attachment-33OFj0 .attachmentInner-3vEpKt ~ a {
     display: none; }
   .theme-dark .attachment-33OFj0 img[title="acrobat"] ~ div::before {
