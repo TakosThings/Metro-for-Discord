@@ -237,17 +237,30 @@ div[class^="modal-"]{
 
     // Move filename and size
     .filenameLinkWrapper-1-14c5,
-    .metadata-3WGS0M{
+    .metadata-3WGS0M,
+    .filename-3eBB_v{ // Filename while uploading
         margin-left: 50px;
     }
 
-    .filenameLinkWrapper-1-14c5{
-        color: var(--link);
+    .filenameLinkWrapper-1-14c5,
+    .filename-3eBB_v{
+        color: #FFF;
         font-size: $fsui;
         opacity: 1;
+        a{
+            color: var(--link);
+        }
     }
     .metadata-3WGS0M{
         color: #CCC;
+    }
+
+    .progress-3Rbvu0{
+        border-radius: 0;
+        .progressBar-3u8FBM{
+            background-color: var(--accent) !important;
+            border-radius: 0;
+        }
     }
 
     // Remove unneeded download icon
