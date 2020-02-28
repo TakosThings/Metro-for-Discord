@@ -4,6 +4,10 @@
     top: 32px;
 }
 
+.theme-dark .subMenuContext-2n_9YM{
+    max-height: calc(100vh - 32px);
+    margin-top: 32px;
+}
 .theme-dark .contextMenu-HLZMGh{
     min-width: 256px;
     max-height: calc(100vh - 32px);
@@ -12,7 +16,7 @@
     background-color: $b2;
     border: 1px solid rgba($color: #FFF, $alpha: .5);
     border-radius: 0;
-   
+
     .itemGroup-1tL0uz{
         border: 0;
         &::after{
@@ -46,7 +50,7 @@
             margin-bottom: 8px;
         }
     }
-    
+
     .itemBase-tz5SeC{
         margin: 0;
         border-radius: 0;
