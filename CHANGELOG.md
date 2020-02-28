@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.13.1
+* **Fixes** (6)
+  * Speculative fix for Update Available button having no icon
+  * Chat message mention indicator sizing
+  * Reduce gap between the last message and top of new day line
+  * File filename under icon while uploading a file
+  * uploading progress bar
+  * Channel group collapse icon faded on one side
+
 #### 3.13.0
 * **Clean up** (1)
  * Remove `/popout/_chat_options.scss`, now unused
