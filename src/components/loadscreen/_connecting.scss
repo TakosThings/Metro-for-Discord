@@ -28,7 +28,7 @@
         color: #FFF;
         font-family: $font;
         font-size: 32px;
-        font-weight: 400;
+        font-weight: $fwheader;
         text-transform: none;
         -webkit-filter: invert(100%);
     }
@@ -41,18 +41,21 @@
         div[class^="problemsText-"]{
             display: none;
         }
-        a[class^="twitterLink"],
-        a[class^="statusLink"]{
+        a[class*="twitterLink"],
+        a[class*="statusLink"]{
             width: 48px;
             height: 48px;
             display: inline-block;
+            margin-left: 8px;
             font-size: 0;
             transition: background .3s;
-            &::before{
-                width: 48px;
-                height: 48px;
-                -webkit-background-size: 20px;
-                background-size: 20px;
+            text-align: center;
+            line-height: 48px;
+            vertical-align: middle;
+            svg{
+                width: 24px;
+                height: 24px;
+                color: #FFF;
             }
             &:hover{
                 background-color: rgba(255,255,255,.1);
