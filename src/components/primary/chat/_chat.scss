@@ -172,13 +172,23 @@
     }
 
     // Mentioned
-    // It's all hacks here
-    .localBot-GrCgVt::before,
-    .mentioned-xhSam7::before{
-        width: 4px;
-        height: calc(100% - 1.0625rem / 2);
-        top: calc(1.0625rem / 2);
-        left: -20px;
+    .message-2qnXI6.groupStart-23k01U{
+        &.localBot-GrCgVt::before,
+        &.mentioned-xhSam7::before{
+            width: 4px;
+            left: -20px;
+            top: calc(1.0625rem / 2);
+            bottom: 2px;
+        }
+    }
+    .message-2qnXI6:not(.groupStart-23k01U){
+        &.localBot-GrCgVt::before,
+        &.mentioned-xhSam7::before{
+            width: 4px;
+            left: -20px;
+            top: 2px;
+            bottom: 2px;
+        }
     }
 
     // Message options
