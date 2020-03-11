@@ -221,6 +221,9 @@
         }
 
         // Audit log
+        .contentRegion-3nDuYy{
+            background-color: #000;
+        }
         div[class*="auditLog-"]{
             border: none;
             border-radius: 0;
@@ -247,7 +250,7 @@
                 color: #FFF;
             }
         }
-        
+
         // UI COMMONS
         // Warnings
         div[class^="ghostPill"]{
@@ -313,7 +316,7 @@
         .emoji-alias-placeholder{
             padding-top: 11px;
         }
-    } 
+    }
 }
 
 // Images removal
