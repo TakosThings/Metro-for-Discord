@@ -1,6 +1,20 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.13.2
+* **Updates**
+  * The option for removing the "welcome to the server" message has been removed. The help tips normally provided are removed by default now.
+  * The option for removing 'x blocked messages' from chat has been removed.
+* **Fixes**
+  * Chat mention indicator was incorrect size when not part of the first message in a group
+  * Some sizing and position changes to Cozy chat
+  * Loading screen status font-weight was too bold
+  * Loading screen Twitter and Status Page links
+  * Server settings Audit Log had wrong background-color
+  * "X is typing" didn't move with the chatbox height when typing a multi-line message
+  * "Welcome to the server" message
+  * 'New' message divider position would break in some scenarios
+
 #### 3.13.1
 * **Fixes** (6)
   * Speculative fix for Update Available button having no icon

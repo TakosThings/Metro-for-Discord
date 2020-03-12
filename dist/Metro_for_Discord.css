@@ -15,14 +15,6 @@
   --link:         #0078D7;
   --voice:        #00CC6A; }
 
-/* REMOVE this if you want to see the "X blocked messages" notification. */
-.messageGroupBlocked-3wrQQX {
-  display: none; }
-
-/* REMOVE this if you want to see the "Welcome to the server" tutorial. */
-.welcomeMessage-3_Mcht {
-  display: none; }
-
 /* ####################################################### */
 /* ##                End of user options.               ## */
 /* ####################################################### */
@@ -77,7 +69,7 @@ textarea::-webkit-input-placeholder {
 
 .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label="USER_SETTINGS"] .info-1VyQPT::before {
-  content: "Metro for Discord \A Version 3.13.1"; }
+  content: "Metro for Discord \A Version 3.13.2"; }
 
 .app-2rEoOp::before {
   width: 360px;
@@ -658,7 +650,7 @@ div[class*="titleBar-"] div[class*="winButtonClose-"]:hover {
     color: #FFF;
     font-family: "Segoe UI", Arial, Helvetica, sans-serif;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 300;
     text-transform: none;
     -webkit-filter: invert(100%); }
   .container-16j22k div[class^="problems-"] {
@@ -667,21 +659,24 @@ div[class*="titleBar-"] div[class*="winButtonClose-"]:hover {
     padding-bottom: 20px; }
     .container-16j22k div[class^="problems-"] div[class^="problemsText-"] {
       display: none; }
-    .container-16j22k div[class^="problems-"] a[class^="twitterLink"],
-    .container-16j22k div[class^="problems-"] a[class^="statusLink"] {
+    .container-16j22k div[class^="problems-"] a[class*="twitterLink"],
+    .container-16j22k div[class^="problems-"] a[class*="statusLink"] {
       width: 48px;
       height: 48px;
       display: inline-block;
+      margin-left: 8px;
       font-size: 0;
-      transition: background .3s; }
-      .container-16j22k div[class^="problems-"] a[class^="twitterLink"]::before,
-      .container-16j22k div[class^="problems-"] a[class^="statusLink"]::before {
-        width: 48px;
-        height: 48px;
-        -webkit-background-size: 20px;
-        background-size: 20px; }
-      .container-16j22k div[class^="problems-"] a[class^="twitterLink"]:hover,
-      .container-16j22k div[class^="problems-"] a[class^="statusLink"]:hover {
+      transition: background .3s;
+      text-align: center;
+      line-height: 48px;
+      vertical-align: middle; }
+      .container-16j22k div[class^="problems-"] a[class*="twitterLink"] svg,
+      .container-16j22k div[class^="problems-"] a[class*="statusLink"] svg {
+        width: 24px;
+        height: 24px;
+        color: #FFF; }
+      .container-16j22k div[class^="problems-"] a[class*="twitterLink"]:hover,
+      .container-16j22k div[class^="problems-"] a[class*="statusLink"]:hover {
         background-color: rgba(255, 255, 255, 0.1);
         transition: background .3s; }
     .container-16j22k div[class^="problems-"] a[class^="statusLink"] {
@@ -1422,6 +1417,8 @@ html[lang="ko"] .app-2rEoOp {
   margin: 4px 0; }
 
 .theme-dark .chat-3bRxxu .divider-JfaTT5 {
+  height: 0;
+  border-color: #555;
   border-color: #555; }
   .theme-dark .chat-3bRxxu .divider-JfaTT5.hasContent-1_DUdQ {
     margin-top: 0.5rem;
@@ -1433,8 +1430,8 @@ html[lang="ko"] .app-2rEoOp {
     .theme-dark .chat-3bRxxu .divider-JfaTT5.isUnread-3Ef-o9 .unreadPill-2HyYtt {
       text-transform: capitalize; }
   .theme-dark .chat-3bRxxu .divider-JfaTT5.beforeGroup-1rH1F0 {
-    margin-bottom: -10px;
-    margin-top: 0.5rem; }
+    margin-bottom: calc(0.53125rem - 1rem - 2px);
+    top: unset; }
   .theme-dark .chat-3bRxxu .divider-JfaTT5 span {
     padding: 2px 8px;
     background-color: #262626;
@@ -1442,14 +1439,17 @@ html[lang="ko"] .app-2rEoOp {
     font-size: 15px;
     font-weight: 400; }
 
+.theme-dark .chat-3bRxxu .backgroundFlash-24qWLN .groupStart-23k01U {
+  margin-top: calc(1.0625rem / 2) !important; }
+
+.theme-dark .chat-3bRxxu :not(.backgroundFlash-24qWLN) .message-2qnXI6:last-child {
+  margin-bottom: 1rem; }
+
 .theme-dark .chat-3bRxxu .message-2qnXI6:hover {
   background-color: transparent; }
 
 .theme-dark .chat-3bRxxu .message-2qnXI6.mentioned-xhSam7 {
   background-color: transparent; }
-
-.theme-dark .chat-3bRxxu .message-2qnXI6:last-child {
-  margin-bottom: 1rem; }
 
 .theme-dark .chat-3bRxxu .message-2qnXI6 .timestampCompact-29LLPQ,
 .theme-dark .chat-3bRxxu .message-2qnXI6 .timestampCozy-1HNQR2 {
@@ -1491,6 +1491,15 @@ html[lang="ko"] .app-2rEoOp {
   padding-top: calc(1.0625rem / 2);
   border-top: 1px solid #333; }
 
+.theme-dark .chat-3bRxxu .cozyMessage-3V1Y8y.wrapper-2a6GCs {
+  padding-left: 64px; }
+
+.theme-dark .chat-3bRxxu .cozyMessage-3V1Y8y .avatar-1BDn8e {
+  width: 44px;
+  height: 44px;
+  top: 8px;
+  left: 0; }
+
 .theme-dark .chat-3bRxxu .cozyMessage-3V1Y8y .container-3FojY8 {
   padding-left: 60px; }
 
@@ -1504,12 +1513,17 @@ html[lang="ko"] .app-2rEoOp {
 .theme-dark .chat-3bRxxu .scroller-3sQKXg:after {
   content: unset; }
 
-.theme-dark .chat-3bRxxu .localBot-GrCgVt::before,
-.theme-dark .chat-3bRxxu .mentioned-xhSam7::before {
+.theme-dark .chat-3bRxxu .message-2qnXI6.groupStart-23k01U.localBot-GrCgVt::before, .theme-dark .chat-3bRxxu .message-2qnXI6.groupStart-23k01U.mentioned-xhSam7::before {
   width: 4px;
-  height: calc(100% - 1.0625rem / 2);
+  left: -20px;
   top: calc(1.0625rem / 2);
-  left: -20px; }
+  bottom: 2px; }
+
+.theme-dark .chat-3bRxxu .message-2qnXI6:not(.groupStart-23k01U).localBot-GrCgVt::before, .theme-dark .chat-3bRxxu .message-2qnXI6:not(.groupStart-23k01U).mentioned-xhSam7::before {
+  width: 4px;
+  left: -20px;
+  top: 2px;
+  bottom: 2px; }
 
 .theme-dark .chat-3bRxxu .buttonContainer-DHceWr .container-3npvBV {
   top: 0;
@@ -1668,16 +1682,22 @@ html[lang="ko"] .app-2rEoOp {
           display: none; }
   .form-2fGMdU .typing-2GQL18 {
     height: 20px;
-    right: 20px;
-    bottom: 46px;
+    top: -20px;
+    right: 24px;
+    bottom: unset;
     background-color: transparent;
     font-size: 11px;
     line-height: 20px;
     justify-content: flex-end;
     pointer-events: none; }
-    .form-2fGMdU .typing-2GQL18 svg[class*="ellipsis-"] {
+    .form-2fGMdU .typing-2GQL18 svg {
       display: none; }
-    .form-2fGMdU .typing-2GQL18 span[class^="text-"] strong {
+    .form-2fGMdU .typing-2GQL18 span[class^="text-"] {
+      right: 0;
+      position: absolute; }
+      .form-2fGMdU .typing-2GQL18 span[class^="text-"] strong {
+        font-weight: normal; }
+    .form-2fGMdU .typing-2GQL18 .cooldownWrapper-3joyFc {
       font-weight: normal; }
   .form-2fGMdU div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"] {
     background-color: #191919;
@@ -1701,29 +1721,20 @@ html[lang="ko"] .app-2rEoOp {
   .form-2fGMdU div[class^="autocomplete-"] div[class^="description"] {
     color: #FFF; }
 
-div[class^="welcomeMessage"] {
-  background-color: #232323;
-  align-items: baseline; }
-  div[class^="welcomeMessage"] h1[class^="h1-"] {
+.theme-dark .welcomeMessage-ULm0mo {
+  background-color: transparent;
+  align-items: baseline;
+  margin: 0 -20px 0 -20px;
+  padding-top: 48px;
+  padding-left: 20px; }
+  .theme-dark .welcomeMessage-ULm0mo h1 {
     color: #FFF;
     font-size: 20px;
     font-weight: 300;
     text-transform: none; }
-  div[class^="welcomeMessage"] div[class^="icon-"] {
+  .theme-dark .welcomeMessage-ULm0mo .itemContainer-1tq6cd {
     display: none; }
-  div[class^="welcomeMessage"] p {
-    width: auto;
-    margin: 0;
-    padding: 0 0 10px;
-    color: #FFF;
-    line-height: 1.3333; }
-  div[class^="welcomeMessage"] strong {
-    font-weight: normal; }
-  div[class^="welcomeMessage"] a {
-    color: #0078D7; }
-    div[class^="welcomeMessage"] a:hover {
-      color: #FFF; }
-  div[class^="welcomeMessage"] div[class^="emptyMessage"] {
+  .theme-dark .welcomeMessage-ULm0mo .emptyMessage-3-SPAD {
     display: none; }
 
 .theme-dark .markup-2BOw-j pre {
@@ -2892,6 +2903,9 @@ div[class^="modal-"] div[class^="invite-"] {
 
 .theme-dark .standardSidebarView-3F1I7i div[class^="side"] div[class*="itemDefaultSelected"] {
   background-color: var(--accent); }
+
+.theme-dark .standardSidebarView-3F1I7i .contentRegion-3nDuYy {
+  background-color: #000; }
 
 .theme-dark .standardSidebarView-3F1I7i div[class*="auditLog-"] {
   border: none;
