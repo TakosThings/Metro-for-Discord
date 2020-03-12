@@ -75,6 +75,11 @@
         }
     }
 
+    // background flash fixes
+    .backgroundFlash-24qWLN .groupStart-23k01U{
+        margin-top: calc(1.0625rem / 2) !important;
+    }
+
     // Message
     .message-2qnXI6{
         // Remove hover state
@@ -85,10 +90,6 @@
         // Mentioned
         &.mentioned-xhSam7{
             background-color: transparent;
-        }
-
-        &:last-child{
-            margin-bottom: 1rem;
         }
 
         // Timestamp
