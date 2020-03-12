@@ -117,13 +117,20 @@
         line-height: 20px;
         justify-content: flex-end;
         pointer-events: none;
-        svg[class*="ellipsis-"]{
+        svg{
             display: none;
         }
         span[class^="text-"]{
+            // Force text to right side when slowmode is enabled
+            right: 0;
+            position: absolute;
             strong{
                 font-weight: normal;
             }
+        }
+        // Slowmode font-weight
+        .cooldownWrapper-3joyFc{
+            font-weight: normal;
         }
     }
 
