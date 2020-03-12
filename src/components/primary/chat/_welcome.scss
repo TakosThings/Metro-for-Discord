@@ -1,38 +1,25 @@
-div[class^="welcomeMessage"]{
-    background-color: darken($b2, 1%);
+.theme-dark .welcomeMessage-ULm0mo{
+    background-color: transparent;
     align-items: baseline;
+    margin: 0 -20px 0 -20px;
+    padding-top: 48px; // Clear the unread message bar
+    padding-left: 20px;
 
     // Header
-    & h1[class^="h1-"]{
+    h1{
         color: #FFF;
         font-size: $fsheader;
         font-weight: $fwheader;
         text-transform: none;
     }
 
-    // Remove icons
-    div[class^="icon-"]{
+    // Remove help items
+    .itemContainer-1tq6cd{
         display: none;
     }
-    p{
-        width: auto;
-        margin: 0;
-        padding: 0 0 10px;
-        color: #FFF;
-        line-height: 1.3333;
-    }
-    strong{
-        font-weight: normal;
-    }
-    a{
-        color: $a;
-        &:hover{
-            color: #FFF;
-        }
-    }
 
-    // Remove footer watermark
-    div[class^="emptyMessage"]{
+    // Remove watermark image
+    .emptyMessage-3-SPAD{
         display: none;
     }
 }
