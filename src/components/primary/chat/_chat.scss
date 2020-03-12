@@ -49,6 +49,9 @@
         margin: 4px 0;
     }
     .divider-JfaTT5{
+        height: 0;
+        border-color: #555;
+
         border-color: #555;
         &.hasContent-1_DUdQ{
             margin-top: 0.5rem;
@@ -64,7 +67,8 @@
             }
         }
         &.beforeGroup-1rH1F0{
-            margin-bottom: calc(0.53125rem - .5rem - 2px);
+            margin-bottom: calc(0.53125rem - 1rem - 2px);
+            top: unset;
         }
         span{
             padding: 2px 8px;
@@ -78,6 +82,9 @@
     // background flash fixes
     .backgroundFlash-24qWLN .groupStart-23k01U{
         margin-top: calc(1.0625rem / 2) !important;
+    }
+    :not(.backgroundFlash-24qWLN) .message-2qnXI6:last-child{
+        margin-bottom: 1rem;
     }
 
     // Message
