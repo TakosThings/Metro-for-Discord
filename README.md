@@ -35,15 +35,6 @@ You can change the accent colour by changing the `--accent` variable at the top 
 **Voice**  
 `--voice` changes the colour of the ring which indicates where you are connected to a voice server. The default colour is *Turf green*. Normally you should leave this as default.
 
-### Advanced
-The following options require a line of CSS to be removed from the CSS file.
-
-**Blocked Messages**  
-The 'x Blocked Messages' reminder is hidden by default.
-
-**Welcome Message**  
-The 'Welcome to your/the server' message is hidden by default.
-
 ## Screenshot
 ![Preview](https://i.imgur.com/gk3IlYT.png)
 
