@@ -13,7 +13,7 @@
 .theme-dark .sidebar-2K8pFh{
     // Header
     header{
-        padding: 0 12px;
+        padding: 0 12px 0 0;
         background-color: transparent;
         box-shadow: none;
         font-weight: $fwheader;
@@ -58,24 +58,25 @@
     .containerDefault-3GGEv_,
     .containerDragBefore-3Dzc5x{
         .wrapper-CU3qI5{
-            height: 30px;
+            height: 32px;
             padding-left: 36px;
             padding-right: 12px;
             color: #FFF;
-            // Collapse icon
+            &::before{
+                content: "\E70D";
+                position: absolute;
+                left: 12px;
+                font-family: $icon;
+                font-size: 12px;
+            }
+            &:hover{
+                background-color: $b3;
+            }
             .icon-WnO6o2{
-                width: 7px;
-                height: 7px;
-                top: 9px;
-                left: 18px;
-                border-right: 1px solid #FFF;
-                border-bottom: 1px solid #FFF;
-                transform: rotate(45deg);
-                path{
-                    display: none;
-                }
+                display: none;
             }
             .name-IbjUBS{
+                color: #FFF;
                 font-size: $fsui;
                 font-weight: $fwui;
                 line-height: 1.3;
@@ -83,10 +84,11 @@
             }
 
             &.collapsed-4WdoJ7{
+                &::before{
+                    content: "\E76C";
+                }
                 .icon-WnO6o2{
-                    top: 11px;
-                    left: 18px;
-                    transform: rotate(-45deg);
+                    display: none;
                 }
             }
             &.muted-1NRuDm{
@@ -96,8 +98,13 @@
             }
         }
         // Add channel to tree button
-        svg[name="PlusAlt"]{
-            opacity: .5;
+        .children-13TY0l{
+            button[aria-label="Create Channel"]{
+                opacity: .5;
+                &:hover{
+                    opacity: 1;
+                }
+            }
         }
     }
 
@@ -112,14 +119,16 @@
             }
         }
         .wrapper-1ucjTd{
-            height: 30px;
+            height: 32px;
         }
         .content-3at_AU{
-            height: 30px;
-            margin: 0 0 0 24px;
+            height: 32px;
+            margin: 0 0 0 28px;
             padding: 0 8px 0 0;
             background-color: transparent;
             > svg{
+                width: 16px;
+                height: 16px;
                 margin-right: 8px;
                 color: rgba($color: #FFF, $alpha: .5);
             }
@@ -215,9 +224,22 @@
     }
 
     // Voice channel
+    .list-2bwCXU{
+        padding-left: 0;
+    }
     // Voice user
+    .voiceUser-14U_Ns{
+        padding-left: 44px;
+    }
     .userSmall-2t9H7n{
         height: 30px;
+        &:hover{
+            background-color: $b3;
+        }
+        .avatarSmall-2CW6I1{
+            width: 20px;
+            height: 20px;
+        }
     }
     .voiceUser-14U_Ns{
         &:hover .content-3xS9Lh{
