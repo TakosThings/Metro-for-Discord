@@ -19,6 +19,11 @@
         }
     }
     .wrapper-25eVIn{
+        svg{
+            foreignObject{
+                mask: none;
+            }
+        }
         .icon-27yU2q{
             width: 24px;
             height: 24px;
@@ -79,7 +84,7 @@
     .guildSeparator-3s64Iy{
         display: none;
     }
-    
+
     // Add Guild
     .circleIconButton-jET_ig{
         background-color: transparent;
@@ -94,7 +99,7 @@
         transition: none;
         font-weight: $fwui;
     }
-    
+
     //badge
     .lowerBadge-29hYVK,
     .upperBadge-2XnnGB{
@@ -106,8 +111,21 @@
     }
     .lowerBadge-29hYVK{
         bottom: 4px;
+        z-index: 1;
     }
-    
+
+    .participating-NBGDkr{
+        width: 32px;
+        height: 32px;
+        transform: translateX(-4px) translateY(4px);
+        background-color: transparent;
+        border: 2px solid var(--voice);
+        border-radius: 50%;
+        svg{
+            display: none;
+        }
+    }
+
     // // Voice connected
     // .upperBadge-2XnnGB{
     //     top: 9px;
