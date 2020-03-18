@@ -1,7 +1,7 @@
 # Changelog
 Newest Changes are at the top
 
-#### 3.13.3
+#### 3.13.4
 * **Enhancements**
   * Guild voice indicator
 * **Fixes**
