@@ -35,3 +35,43 @@ $b4: #404040;
 // Input element states
 $inputborder: rgba(255,255,255,0.6);
 $inputborderhover: rgba(255,255,255,0.8);
+
+$AltHigh:               rgba($color: #000000, $alpha: 1.0);
+$AltLow:                rgba($color: #000000, $alpha: 0.2);
+$AltMedium:             rgba($color: #000000, $alpha: 0.6);
+$AltMediumHigh:         rgba($color: #000000, $alpha: 0.8);
+$AltMediumLow:          rgba($color: #000000, $alpha: 0.4);
+
+$BaseHigh:              rgba($color: #FFFFFF, $alpha: 1.0);
+$BaseLow:               rgba($color: #FFFFFF, $alpha: 0.2);
+$BaseMedium:            rgba($color: #FFFFFF, $alpha: 0.6);
+$BaseMediumHigh:        rgba($color: #FFFFFF, $alpha: 0.8);
+$BaseMediumLow:         rgba($color: #FFFFFF, $alpha: 0.4);
+
+$ChromeAltLow:          rgba($color: #F2F2F2, $alpha: 1.0);
+$ChromeBlackHigh:       rgba($color: #000000, $alpha: 1.0);
+$ChromeBlackLow:        rgba($color: #000000, $alpha: 0.2);
+$ChromeBlackMediumLow:  rgba($color: #000000, $alpha: 0.4);
+$ChromeBlackMedium:     rgba($color: #000000, $alpha: 0.8);
+$ChromeDisabledHigh:    rgba($color: #333333, $alpha: 1.0);
+$ChromeDisabledLow:     rgba($color: #858585, $alpha: 1.0);
+$ChromeHigh:            rgba($color: #767676, $alpha: 1.0);
+$ChromeLow:             rgba($color: #171717, $alpha: 1.0);
+$ChromeMedium:          rgba($color: #1F1F1F, $alpha: 1.0);
+$ChromeMediumLow:       rgba($color: #2B2B2B, $alpha: 1.0);
+$ChromeWhite:           rgba($color: #FFFFFF, $alpha: 1.0);
+
+$ListLow:               rgba($color: #FFFFFF, $alpha: 0.1);
+$ListMedium:            rgba($color: #FFFFFF, $alpha: 0.2);
+$ListAccentLow:         rgba(var(--accent), 0.6);
+$ListAccentLow:         rgba(var(--accent), 0.6);
+$ListAccentMedium:      rgba(var(--accent), 0.8);
+$ListAccentHigh:        rgba(var(--accent), 0.9);
+
+// AccentLight1
+// AccentLight2
+// AccentLight3
+$Accent:                 rgba(var(--accent), 1.0);
+// AccentDark1
+// AccentDark2
+// AccentDark3
