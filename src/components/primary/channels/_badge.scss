@@ -1,5 +1,6 @@
 .theme-dark{
-    .base-PmTxvP{
+    // Mention indicator
+    .base-PmTxvP.numberBadge-2s8kKX{
         min-width: 20px;
         min-height: 20px;
         background-color: #003b67 !important;
@@ -9,5 +10,11 @@
         border-radius: 50%;
         box-shadow: none;
         font-weight: normal;
+    }
+
+    .base-PmTxvP.live-vBWnV6{
+        background-color: $alert !important;
+        font-size: 0;
+        animation: ease-in 1s infinite;
     }
 }
