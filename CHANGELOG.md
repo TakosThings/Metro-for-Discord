@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.13.3
+* **Enhancements**
+  * Guild voice indicator
+* **Fixes**
+  * Some tweaks and fixes to channels pane
+    * Fixed channel category roots having no hover state
+    * Channel category root chevron icons being incorrectly sized, and positioned
+    * Channels should now disappear off the bottom less often
+    * Clients in a voice channel having no hover state
+  * Mention count badge style applying to 'Live' indicator in channels pane
+
 #### 3.13.2
 * **Updates**
   * The option for removing the "welcome to the server" message has been removed. The help tips normally provided are removed by default now.
