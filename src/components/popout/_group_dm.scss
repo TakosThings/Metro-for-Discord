@@ -36,7 +36,7 @@
                 }
                 &:focus{
                     background-color: #FFF;
-                    border-color: var(--accent);
+                    border-color: $Accent;
                     color: #000;
                 }
                 &::-webkit-input-placeholder{
@@ -69,11 +69,11 @@
                 font-size: $fschat;
                 span{
                     font-weight: $fwui;
-                }   
+                }
             }
         }
         .friendSelected-3J_Uh8{
-            background-color: var(--accent);
+            background-color: $Accent;
             border-radius: 0;
         }
 

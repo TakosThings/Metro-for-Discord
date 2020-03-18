@@ -1,6 +1,6 @@
 .theme-dark div[class^="uploadModal"]{
     background-color: $b1;
-    border: 1px solid var(--accent);
+    border: 1px solid $Accent;
     border-radius: 0;
     div[class^="inner-"]{
         margin: 20px;
@@ -102,8 +102,8 @@
             }
         }
         button.button-primary{
-            background-color: var(--accent);
-            border-color: var(--accent);
+            background-color: $Accent;
+            border-color: $Accent;
             &:hover{
                 border-color: $inputborder;
             }
@@ -135,7 +135,7 @@
             }
         }
         div[class^="selectorSelected"]{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
     }
 }
@@ -146,7 +146,7 @@ div[class*="uploadModalIn"]{
         min-height: 200px;
         div[class^="bgScale-"]{
             background: $b1;
-            border: 1px solid var(--accent);
+            border: 1px solid $Accent;
             border-radius: 0;
         }
         div[class^="inner-"]{

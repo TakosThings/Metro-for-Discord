@@ -1,6 +1,6 @@
 .theme-dark .modal-yWgWj-.modal-1k91nT.sizeSmall-1jtLQy{
     background-color: $b1;
-    border: 1px solid var(--accent);
+    border: 1px solid $Accent;
     box-shadow: none;
 
     // Header
@@ -34,7 +34,7 @@
         }
         &:focus{
             background-color: #FFF;
-            border-color: var(--accent);
+            border-color: $Accent;
             color: #000;
         }
     }
@@ -72,7 +72,7 @@
             }
         }
         .checkbox-inner input[type=checkbox]:checked+span{
-            background-color: var(--accent);
+            background-color: $Accent;
             border-color: transparent;
             &::after{
                 top: 1px;

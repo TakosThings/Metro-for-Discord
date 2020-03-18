@@ -15,7 +15,7 @@
     }
     .newMessagesBar-mujexs,
     .jumpToPresentBar-9P20AM{
-        background-color: var(--accent);
+        background-color: $Accent;
         border-radius: 0;
         opacity: 1;
         .barButtonBase-3UKlW2{
@@ -118,7 +118,7 @@
         // Mention
         span.mention{
             background-color: transparent;
-            color: var(--accent);
+            color: $Accent;
         }
 
         // System message
@@ -280,7 +280,7 @@
                 font-weight: normal;
             }
             &.reactionMe-wv5HKu{
-                background-color: var(--accent);
+                background-color: $Accent;
                 .reactionCount-2mvXRV{
                     color: #FFF;
                 }
@@ -324,7 +324,7 @@
             border-radius: 0;
         }
         div[class^="selectorSelected"]{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
         polygon{
             fill: #FFF;

@@ -1,6 +1,6 @@
 .theme-dark div[class^="quickswitcher"]{
     background-color: $b1;
-    border: 1px solid var(--accent);
+    border: 1px solid $Accent;
     border-radius: 0;
     color: #FFF;
 
@@ -27,7 +27,7 @@
         }
         &:focus{
             background-color: #FFF;
-            border-color: var(--accent);
+            border-color: $Accent;
             color: #000;
         }
     }
@@ -78,6 +78,6 @@
         }
     }
     div[class^="resultFocused"]{
-        background-color: var(--accent);
+        background-color: $Accent;
     }
 }

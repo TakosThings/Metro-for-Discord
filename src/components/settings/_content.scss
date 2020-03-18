@@ -109,7 +109,7 @@
                     }
                     &:focus{
                         background-color: #FFF;
-                        border-color: var(--accent);
+                        border-color: $Accent;
                         color: #000;
                     }
                 }
@@ -216,7 +216,7 @@
                 font-weight: normal;
             }
             div[class*="itemDefaultSelected"]{
-                background-color: var(--accent);
+                background-color: $Accent;
             }
         }
 

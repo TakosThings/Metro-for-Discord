@@ -5,7 +5,7 @@
         font-size: $fsui;
         font-weight: $fwui;
         line-height: $lh;
-        
+
         // Size
         &.sizeMedium-1AC_Sl,
         &.sizeLarge-1vSeWK,
@@ -50,7 +50,7 @@
                 }
             }
             &.colorBrand-3pXr91{
-                background-color: var(--accent);
+                background-color: $Accent;
                 &:hover{
                     border-color: $inputborderhover;
                 }
@@ -100,7 +100,7 @@
         &.lookInverted-2D7oAl{
             border: 2px solid transparent;
             &.colorBrand-3pXr91{
-                background-color: var(--accent);
+                background-color: $Accent;
                 color: #FFF;
                 &:hover{
                     border-color: $inputborderhover;
@@ -108,7 +108,7 @@
             }
             // Friend request button in user profile modal when spotify is playing
             &.colorGreen-29iAKY{
-                background-color: var(--accent);
+                background-color: $Accent;
                 color: #FFF;
                 &:hover{
                     border-color: $inputborderhover;
@@ -138,9 +138,9 @@
             }
         }
         &.activeButton-1BJAiN{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
-    } 
+    }
 
     // Button group
     .group-2dAfBy{

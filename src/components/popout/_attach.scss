@@ -10,7 +10,7 @@
         border-radius: 0;
         transition: none;
         &:hover{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
         svg{
             display: none;

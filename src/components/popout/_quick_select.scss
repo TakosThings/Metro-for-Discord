@@ -1,7 +1,7 @@
 // Located in: Server settings > Audit Log > Filter action
 .theme-dark div[class^="popoutList-"]{
     background-color: $b1;
-    border: 1px solid var(--accent);
+    border: 1px solid $Accent;
     border-radius: 0;
 
     // Search bar
@@ -22,7 +22,7 @@
             &:focus{
                 background-color: #FFF;
                 color: #000;
-                border-color: var(--accent);
+                border-color: $Accent;
             }
         }
         div[class^="searchBarIcon"]{
@@ -40,6 +40,6 @@
         }
     }
     div[class*="actionItem-"][class*="selected-"]{
-        background-color: var(--accent) !important;
+        background-color: $Accent !important;
     }
 }

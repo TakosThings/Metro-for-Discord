@@ -30,7 +30,7 @@
                     &:focus{
                         background-color: #fff;
                         color: #000;
-                        border-color: var(--accent);
+                        border-color: $Accent;
                     }
                 }
                 .iconLayout-1WxHy4{
@@ -57,11 +57,11 @@
                 margin-top: -2px;
                 margin-left: -2px;
                 background-color: $b2;
-                border: 2px solid var(--accent);
+                border: 2px solid $Accent;
                 border-radius: 0;
                 .item-16cXuq{
                     &:hover{
-                        background-color: var(--accent);
+                        background-color: $Accent;
                     }
                 }
             }
@@ -70,7 +70,7 @@
 
     // Remove sticky header
     .stickyHeader-1SS0JU{
-        display: none; 
+        display: none;
     }
 
     // Category headers
@@ -92,7 +92,7 @@
         .emojiItem-109bjA{
             border-radius: 0;
             &.selected-39BZ4S{
-                background-color: var(--accent);
+                background-color: $Accent;
             }
             &.disabled-1H1CfW{
                 cursor: not-allowed;
@@ -101,7 +101,7 @@
                 background-color: transparent;
             }
         }
-    } 
+    }
 
     // Emoji info
     .infoBarWrapper-283ttO{
@@ -124,9 +124,9 @@
             background-position: center;
             margin: 0;
             &.selected-39BZ4S{
-                border-color: var(--accent);
+                border-color: $Accent;
                 &::before{
-                    color: var(--accent);
+                    color: $Accent;
                 }
             }
             svg{

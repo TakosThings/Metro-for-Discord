@@ -37,7 +37,7 @@
                     }
                     &:focus{
                         background-color: #FFF;
-                        border-color: var(--accent);
+                        border-color: $Accent;
                         color: #000;
                         &::-webkit-input-placeholder{
                             color: #999;

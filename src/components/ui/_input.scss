@@ -19,7 +19,7 @@
         }
         &:focus{
             background-color: #FFF;
-            border-color: var(--accent);
+            border-color: $Accent;
             color: #000;
             &::-webkit-input-placeholder{
                 color: #999;
@@ -58,7 +58,7 @@
             padding-left: 52px;
         }
     }
-    
+
     // Dropdown
     .select-2TCrqx{
         .css-15ejc46-control,   // Normal dropdown
@@ -76,7 +76,7 @@
         }
         // Dropdown is open
         .css-2yldzf-control{
-            background-color: var(--accent);
+            background-color: $Accent;
             border-color: $inputborderhover;
             border-radius: 0;
             color: #FFF;
@@ -104,12 +104,12 @@
         .css-12o7ek3-option{
             background-color: transparent;
             &:hover{
-                background-color: var(--accent);
+                background-color: $Accent;
             }
         }
         // Hovered option
         .css-1gnr91b-option{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
         // truncate long entries
         .deviceOptionLabel-22FM_u{
@@ -164,7 +164,7 @@
             border-radius: 0;
         }
         .barFill-23-gu-{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
         .track-11EASc{
             right: 0;
@@ -173,7 +173,7 @@
         .grabber-3mFHz2{
             width: 8px;
             height: 24px;
-            background-color: var(--accent);
+            background-color: $Accent;
             border: 0;
             border-radius: 4px;
         }
@@ -219,7 +219,7 @@
             box-shadow: none;
         }
         &.valueChecked-m-4IJZ{
-            background-color: var(--accent) !important;
+            background-color: $Accent !important;
             border: 2px solid transparent;
             &:hover{
                 border-color: $inputborderhover;
@@ -252,8 +252,8 @@
                 border-radius: 0;
             }
             .checkboxElement-1qV33p:checked+span{
-                background-color: var(--accent);
-                border-color: var(--accent);
+                background-color: $Accent;
+                border-color: $Accent;
                 &::after{
                     width: 6px;
                     height: 12px;
@@ -294,7 +294,7 @@
             }
             .checked-3_4uQ9{
                 background-color: transparent;
-                border-color: var(--accent) !important;
+                border-color: $Accent !important;
                 &::before{
                     content: "";
                     width: 10px;
@@ -345,7 +345,7 @@
             }
             &:focus{
                 background-color: #FFF;
-                border-color: var(--accent);
+                border-color: $Accent;
                 color: #000;
             }
         }

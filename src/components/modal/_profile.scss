@@ -46,8 +46,8 @@
     }
     // Never heard of a selected class?
     .tabBarItem-1b8RUP[style^="border-color: rgb(255, 255, 255)"]{
-        border-color: var(--accent) !important;
-        color: var(--accent) !important;
+        border-color: $Accent !important;
+        color: $Accent !important;
     }
 
     // BODY
@@ -68,7 +68,7 @@
             }
             &:focus{
                 background-color: #FFF;
-                border-color: var(--accent);
+                border-color: $Accent;
                 color: #000;
             }
         }
@@ -107,7 +107,7 @@
         font-weight: $fwui;
         &:hover{
             background-color: $b3;
-            background-image: none; 
+            background-image: none;
         }
     }
 

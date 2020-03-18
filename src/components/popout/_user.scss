@@ -3,7 +3,7 @@
     background-color: $b1;
     border-radius: 0;
     transform: none !important; // Fixes PermissionsViewer plugin
-    
+
     // Header
     div[class^="headerNormal"],
     div[class^="headerPlaying"],
@@ -13,7 +13,7 @@
             padding: 20px;
             flex-direction: initial;
             justify-content: initial;
-            background-color: var(--accent);
+            background-color: $Accent;
             div[class*="avatarWrapper-"]{
                 margin-bottom: 0;
                 div[class^="image-"]{
@@ -61,7 +61,7 @@
     div[class^="headerPlaying"]{
         background-color: transparent;
         div[class*="headerTop"]{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
     }
 
@@ -85,7 +85,7 @@
                 font-weight: $fwui;
             }
             span[class^="playTime-"]{
-               font-size: $fschat; 
+               font-size: $fschat;
             }
         }
 
@@ -188,7 +188,7 @@
                 &:focus{
                     background-color: #FFF !important;
                     color: #000;
-                    border-color: var(--accent);
+                    border-color: $Accent;
                 }
             }
         }
@@ -218,7 +218,7 @@
             &:focus{
                 background-color: #FFF;
                 color: #000;
-                border-color: var(--accent);
+                border-color: $Accent;
             }
         }
         // Remove tip
