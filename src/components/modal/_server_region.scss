@@ -1,7 +1,7 @@
 div[class^="regionSelectModal-"]{
     max-height: unset;
     background-color: $b1 !important;
-    border: 1px solid var(--accent);
+    border: 1px solid $Accent;
     border-radius: 0;
 
     //Header
@@ -25,7 +25,7 @@ div[class^="regionSelectModal-"]{
             border: 2px solid $inputborder;
             border-radius: 0;
             &:hover{
-                border-color: var(--accent);
+                border-color: $Accent;
             }
             div[class^="regionSelectFlag"]{
                 clip-path: inset(1px 1px 1px 1px);
@@ -40,7 +40,7 @@ div[class^="regionSelectModal-"]{
                 display: inline;
             }
         }
-        
+
     }
     // Footer
     div[class^="regionSelectModalFooter-"]{

@@ -37,7 +37,7 @@
             font-size: 15px;
             font-weight: $fwui;
             &.selected-bZ3Lue{
-                color: var(--accent);
+                color: $Accent;
             }
         }
     }
@@ -52,7 +52,7 @@
         // Guild is selected
         &[style*="height: 40px;"]{
             height: 24px !important;
-            background-color: var(--accent);
+            background-color: $Accent;
         }
     }
 

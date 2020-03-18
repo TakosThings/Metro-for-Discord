@@ -27,7 +27,7 @@
                 font-size: $fsui;
                 font-weight: $fwui;
                 &.selected-3s45Ha{
-                    background-color: var(--accent);
+                    background-color: $Accent;
                 }
                 &.primary-3j8BhM{
                     background-color: transparent !important;
@@ -36,7 +36,7 @@
                     }
                 }
                 &.primarySelected-3uHKZn{
-                    background-color: var(--accent) !important;
+                    background-color: $Accent !important;
                     color: #FFF !important;
                 }
                 &:not(.selected-3s45Ha):hover{
@@ -51,14 +51,14 @@
                     }
                 }
                 &[style*="rgba(67, 181, 129, 0.2)"]{
-                    background-color: var(--accent) !important;
+                    background-color: $Accent !important;
                     color: #FFF !important;
                     &:hover{
-                        background-color: var(--accent) !important;
+                        background-color: $Accent !important;
                         cursor: default;
                     }
                 }
-                
+
             }
         }
         &::after{
@@ -79,7 +79,7 @@
                 background-color: $b3;
             }
             &.selected-1GqIat{
-                background-color: var(--accent);
+                background-color: $Accent;
             }
             &::before{
                 width: 68px;

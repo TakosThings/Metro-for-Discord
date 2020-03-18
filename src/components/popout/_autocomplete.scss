@@ -1,7 +1,7 @@
 // User popout>add role
 .theme-dark{
     .container-VSDcQc{
-        border: 1px solid var(--accent);
+        border: 1px solid $Accent;
         border-radius: 0;
         .autocompleteShadow-iiGWFU{
             display: none;
@@ -29,7 +29,7 @@
                     border-color: $inputborderhover;
                 }
                 &:focus{
-                    border-color: var(--accent);
+                    border-color: $Accent;
                 }
                 &::-webkit-input-placeholder{
                     color: #FFF !important;
@@ -48,5 +48,5 @@
             }
         }
     }
-    
+
 }

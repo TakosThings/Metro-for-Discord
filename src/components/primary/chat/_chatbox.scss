@@ -13,7 +13,7 @@
         border-top: 2px solid $b3;
         border-radius: 0;
         &:focus-within{
-            border-top-color: var(--accent);
+            border-top-color: $Accent;
         }
         .scrollableContainer-2NUZem{
             background-color: transparent;
@@ -160,7 +160,7 @@
             border-radius: 0;
         }
         div[class^="selectorSelected"]{
-            background-color: var(--accent);
+            background-color: $Accent;
         }
         polygon{
             fill: #FFF;

@@ -36,8 +36,8 @@
         font-size: $fsui;
         font-weight: $fwui;
         &.selected{
-        color: var(--accent);
-        border-color: var(--accent);
+        color: $Accent;
+        border-color: $Accent;
         }
     }
     // Filter
