@@ -1,32 +1,30 @@
-div[class^="typeWindows-"]{
-    height: 28px;
-    background-color: #000;
-}
+.titleBar-AC4pGV{
+    background-color: $AltHigh;
+    &.withFrame-haYltI{
+        height: calc(32px - 4px);
+    }
+    .wordmarkWindows-1v0lYD{
+        color: $BaseHigh;
+        &::after{
+            content: "Discord";
+            top: 9px;
+            left: 12px;
+            display: block;
+            position: absolute;
+            @include FontCaption;
+        }
+        svg{
+            display: none;
+        }
+    }
 
-// Window name
-div[class^="typeWindows-"] div[class^="wordmark"]{
-    opacity: 1;
-}
-div[class^="typeWindows-"] div[class^="wordmark"] svg{
-    display: none;
-}
-div[class^="typeWindows-"] div[class^="wordmark"]::after{
-    content: "Discord";
-    color: #FFF;
-    font-size: 15px;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    display: block;
-}
-
-// Window controls
-div[class*="titleBar-"] div[class*="winButton-"]{
-    width: 45px;
-    height: 32px;
-    opacity: 1;
-}
-
-div[class*="titleBar-"] div[class*="winButtonClose-"]:hover{
-    background-color: #E81123;
+    // Controls
+    .winButton-iRh8-Z{
+        width: 45px;
+        height: 32px;
+        color: $BaseHigh;
+        &.winButtonClose-1HsbF-:hover{
+            background-color: #E81123;
+        }
+    }
 }
