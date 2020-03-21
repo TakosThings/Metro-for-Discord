@@ -49,11 +49,11 @@
             width: 6px;
         }
         &::-webkit-scrollbar-thumb{
-            background-color: #4B4B4B;
+            background-color: #4B4B4B !important;
             border: 2px solid transparent;
             border-radius: 0;
             &:hover{
-                background-color: #787878;
+                background-color: #787878 !important;
             }
         }
         &::-webkit-scrollbar-track-piece{
