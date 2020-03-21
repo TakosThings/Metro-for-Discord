@@ -2,7 +2,7 @@
     // LTR
 
     padding: 0 0 0 20px;
-    background-color: $b1;
+    background-color: $ChromeMedium;
     box-shadow: none;
 
     // Channel name, MOTD
@@ -14,9 +14,7 @@
         // Title
         .title-29uC1r{
             margin-right: 12px;
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            line-height: 48px;
+            @include FontSubtitle;
         }
         // Remove divider
         .divider-3FBTu8{
@@ -25,23 +23,24 @@
 
         // AKA
         .akaBadge-1M-1Gw{
-            padding: 4px 6px;
+            padding: 0;
             margin: 0;
+            background-color: transparent;
             border-radius: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
+            font-style: italic;
         }
         // Other nicknames
         .nicknames-1XK4Zt{
-            color: #FFF;
-            font-size: $fsui;
+            color: $BaseHigh;
+            @include FontBody;
         }
         // Topic
         .topic-TCb_qw{
             margin: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
         }
         // Remove end gradient
         &::after{
@@ -60,10 +59,10 @@
                 display: none;
             }
             &:hover{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             &.selected-1GqIat{
-                background-color: $Accent;
+                background-color: $ListAccentLow;
             }
             &::before{
                 width: 68px;
@@ -75,7 +74,6 @@
                 text-align: center;
                 line-height: 48px;
             }
-
 
             .iconBadge-qZ4Ksk{
                 width: 100%;
