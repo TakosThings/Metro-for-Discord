@@ -1,5 +1,5 @@
 .panels-j1Uci_{
-    background-color: $b1;
+    background-color: transparent;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1{
     position: absolute;
@@ -16,7 +16,7 @@
         left: 0;
         margin-right: 0;
         &:hover{
-            background-color: $b2;
+            background-color: $ListLow;
             cursor: pointer;
         }
         .avatar-SmRMf2{
@@ -26,7 +26,7 @@
             }
         }
     }
-    
+
     // Hide name
     .nameTag-3uD-yy{
         display: none;
@@ -40,8 +40,9 @@
         width: 48px;
         height: 48px;
         color: #FFF;
+        border-radius: 0;
         &:hover{
-            background-color: $b3;
+            background-color: $ListLow;
         }
         &::before{
             font-family: $icon;
@@ -82,7 +83,7 @@
         width: 48px;
         height: 48px;
         bottom: 0;
-        left: 0;   
+        left: 0;
     }
 }
 .theme-dark .sidebar-2K8pFh .container-1giJp5~.container-3baos1{
