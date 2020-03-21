@@ -31,7 +31,7 @@
             }
         }
     }
-    // Server banned image
+    // Server banner image
     .bannerImage-1jOskm{
         &::before{
             content: "";
@@ -126,16 +126,15 @@
                 width: 16px;
                 height: 16px;
                 margin-right: 8px;
-                color: rgba($color: #FFF, $alpha: .5);
+                color: $BaseMedium;
             }
             &:hover{
                 background-color: transparent;
             }
             // Channel name
             .name-3_Dsmg{
-                color: rgba($color: #FFF, $alpha: .5);
-                font-size: $fsui;
-                font-weight: $fwui;
+                color: $BaseMedium;
+                @include FontBody;
             }
         }
         // Muted channel
@@ -173,14 +172,14 @@
                 width: 2px;
                 left: 4px;
                 margin-top: -8px;
-                background-color: #FFF;
+                background-color: $BaseHigh;
                 border-radius: 0;
             }
             .content-3at_AU > svg{
-                color: #FFF;
+                color: $BaseHigh;
             }
             .name-3_Dsmg{
-                color: #FFF;
+                color: $BaseHigh;
             }
         }
 
@@ -202,7 +201,7 @@
         }
         // Channel actions (instant invite, settings)
         .actionIcon-2Hi9ZG{
-            color: rgba($color: #FFF, $alpha: .5);
+            color: $BaseMedium;
         }
         // Badge
         .numberBadge-2s8kKX{
@@ -216,7 +215,7 @@
             .content-3xS9Lh{
                 background-color: transparent;
                 .username-lm8y6T{
-                    color: #FFF;
+                    color: $BaseHigh;
                 }
             }
         }
@@ -248,9 +247,8 @@
     .content-3xS9Lh{
         margin: 0;
         .usernameFont-aFalyR{
-            color: rgba($color: #FFF, $alpha: 0.5);
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
         }
     }
 }
