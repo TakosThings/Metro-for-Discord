@@ -89,21 +89,19 @@
 @import 'components/popout/livestream';
 
 // Modals
-@import 'components/modal/profile';
-@import 'components/modal/_modal';
-@import 'components/modal/quickswitcher';
-@import 'components/modal/keyboard_combo';
-@import 'components/modal/server_region';
-@import 'components/modal/delete_message';
-@import 'components/modal/ban_user';
+@import 'components/modal/changelog';
+@import 'components/modal/create_channel';
+@import 'components/modal/instant_invite';
+@import 'components/modal/join_server';
+@import 'components/modal/keyboard_shortcuts';
 @import 'components/modal/lightbox';
-@import 'components/modal/upload';
-@import 'components/modal/notification_settings';
-@import 'components/modal/invite';
-@import 'components/modal/phone_verification';
-@import 'components/modal/create_instant_invite';
+@import 'components/modal/modal';
 @import 'components/modal/new_server';
-@import 'components/modal/go_live';
+@import 'components/modal/payment_method';
+@import 'components/modal/quickswitcher';
+@import 'components/modal/region_select';
+@import 'components/modal/upload';
+@import 'components/modal/user';
 
 // Misc
 @import 'components/misc/bot_tag';
