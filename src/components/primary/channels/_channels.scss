@@ -13,18 +13,15 @@
 .theme-dark .sidebar-2K8pFh{
     background: transparent;
     // Header
-    header{
-        padding: 0 12px 0 0;
+    .header-2o-2hj{
+        padding: 0 12px;
         background-color: transparent;
         box-shadow: none;
-        font-weight: $fwheader;
         &:hover{
-            background-color: transparent;
+            background-color: $ListLow;
         }
-        span{
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            line-height: 1.3;
+        h1{
+            @include FontSubtitle;
         }
         // Remove guild level icon
         .guildIconContainer-E1JUVt{
@@ -62,7 +59,7 @@
             height: 32px;
             padding-left: 36px;
             padding-right: 12px;
-            color: #FFF;
+            color: $BaseHigh;
             &::before{
                 content: "\E70D";
                 position: absolute;
@@ -71,16 +68,14 @@
                 font-size: 12px;
             }
             &:hover{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             .icon-WnO6o2{
                 display: none;
             }
             .name-IbjUBS{
                 color: #FFF;
-                font-size: $fsui;
-                font-weight: $fwui;
-                line-height: 1.3;
+                @include FontBody;
                 text-transform: none;
             }
 
@@ -113,7 +108,7 @@
     .containerDefault-1ZnADq{
         &:hover{
             .wrapper-1ucjTd{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             .content-3at_AU{
                 background-color: transparent;
