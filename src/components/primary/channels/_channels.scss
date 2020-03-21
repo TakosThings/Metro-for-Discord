@@ -193,11 +193,11 @@
                 height: 15px;
                 top: 50%;
                 margin-top: -8px;
-                background-color: var(--voice);
+                background-color: rgba(var(--voice), 1);
             }
             svg.icon-1_QxNX,
             .name-3_Dsmg{
-                color: var(--voice);
+                color: rgba(var(--voice), 1);
             }
         }
         // Channel actions (instant invite, settings)

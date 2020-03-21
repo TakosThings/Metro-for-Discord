@@ -119,28 +119,12 @@
         height: 32px;
         transform: translateX(-4px) translateY(4px);
         background-color: transparent;
-        border: 2px solid var(--voice);
+        border: 2px solid rgba(var(--voice), 1);
         border-radius: 50%;
         svg{
             display: none;
         }
     }
-
-    // // Voice connected
-    // .upperBadge-2XnnGB{
-    //     top: 9px;
-    //     right: 9px;
-    // }
-    // .iconBadge-2wi9r4{
-    //     width: 30px;
-    //     height: 30px;
-    //     background-color: transparent;
-    //     border: 2px solid var(--voice);
-    //     border-radius: 50%;
-    //     svg path{
-    //         display: none;
-    //     }
-    // }
 
     // Unread notification bars
     // These break due to our fixed buttons at the bottom, so we remove them
