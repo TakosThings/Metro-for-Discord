@@ -156,11 +156,13 @@
             &::before{
                 content: "";
                 position: absolute;
-                width: 3px;
-                height: 15px;
+                width: 2px;
+                height: 16px;
                 top: 50%;
+                left: 4px;
                 margin-top: -8px;
                 background-color: $Accent;
+                border-radius: 1px;
             }
             svg.icon-1_QxNX,
             .name-3_Dsmg{
@@ -171,8 +173,9 @@
         .modeUnread-1zpFdA{
             // Unread dot
             .unread-3zKkbm{
-                height: 15px;
-                width: 3px;
+                height: 16px;
+                width: 2px;
+                left: 4px;
                 margin-top: -8px;
                 background-color: #FFF;
                 border-radius: 0;
