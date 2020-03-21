@@ -13,7 +13,10 @@
 @mixin FontSubtitle{
     // Modal header
     font-size: 20px;
+    font-weight: normal;
+    letter-spacing: normal;
     line-height: 24px;
+    text-transform: none;
 }
 @mixin FontSubtitleAlt{
     font-size: 18px;
@@ -21,6 +24,7 @@
 }
 @mixin FontBody{
     font-size: 14px;
+    font-weight: normal;
     line-height: 20px;
 }
 @mixin FontBase{
