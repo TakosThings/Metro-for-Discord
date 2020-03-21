@@ -5,9 +5,8 @@
     border: 0;
     box-sizing: border-box;
     z-index: 1; // fixes buttons not being able to be used
-    .gameName-13va7o{
-        font-size: $fsui;
-        font-weight: $fwui;
+    .title-eS5yk3{
+        @include FontBody;
     }
     .actions-aUdUfC{
         button{
