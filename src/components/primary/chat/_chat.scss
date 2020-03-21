@@ -3,6 +3,11 @@
     background-color: $b2;
 }
 
+// Remove 'drop shadow' from under toolbar
+.content-yTz4x3:before{
+    display: none;
+}
+
 .theme-dark .chat-3bRxxu{
     .messages-3amgkR{
         padding: 0 20px;
