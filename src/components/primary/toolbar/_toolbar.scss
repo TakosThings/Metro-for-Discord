@@ -1,6 +1,6 @@
 .theme-dark .chat-3bRxxu .container-1r6BKw{
     // LTR
-
+    height: 40px;
     padding: 0 0 0 20px;
     background-color: $ChromeMedium;
     box-shadow: none;
@@ -14,7 +14,7 @@
         // Title
         .title-29uC1r{
             margin-right: 12px;
-            @include FontSubtitle;
+            @include FontBaseAlt;
         }
         // Remove divider
         .divider-3FBTu8{
@@ -70,7 +70,7 @@
                 position: absolute;
                 color: #FFF;
                 font-family: $icon;
-                font-size: 20px;
+                font-size: 16px;
                 text-align: center;
                 line-height: 48px;
             }
