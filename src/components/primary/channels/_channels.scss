@@ -14,6 +14,7 @@
     background: transparent;
     // Header
     .header-2o-2hj{
+        height: 40px;
         padding: 0 12px;
         background-color: transparent;
         box-shadow: none;
@@ -21,7 +22,7 @@
             background-color: $ListLow;
         }
         h1{
-            @include FontSubtitle;
+            @include FontBaseAlt;
         }
         // Remove guild level icon
         .guildIconContainer-E1JUVt{
