@@ -1,8 +1,8 @@
 .theme-dark .container-1D34oG .container-1r6BKw{
     // LTR
-
+    height: 40px;
     padding: 0;
-    background-color: $b1;
+    background-color: $ChromeMedium;
     box-shadow: none;
 
     // Left tabs
@@ -19,46 +19,31 @@
         }
         .tabBar-ZmDY9v{
             .item-PXvHYJ{
-                min-width: 68px;
-                min-height: 48px;
-                margin: 0;
+                height: 40px;
+                background-color: transparent !important;
                 border-radius: 0;
-                color: #FFF;
-                font-size: $fsui;
-                font-weight: $fwui;
-                &.selected-3s45Ha{
-                    background-color: $Accent;
-                }
-                &.primary-3j8BhM{
-                    background-color: transparent !important;
-                    &:hover{
-                        background-color: $b3 !important;
-                    }
-                }
-                &.primarySelected-3uHKZn{
-                    background-color: $Accent !important;
-                    color: #FFF !important;
-                }
-                &:not(.selected-3s45Ha):hover{
-                    background-color: $b3;
-                }
-                // Add Friend
-                // Discord stop.
-                &[style*="rgb(67, 181, 129)"]{
-                    background-color: transparent !important;
-                    &:hover{
-                        background-color: $b3 !important;
-                    }
-                }
-                &[style*="rgba(67, 181, 129, 0.2)"]{
-                    background-color: $Accent !important;
-                    color: #FFF !important;
-                    &:hover{
-                        background-color: $Accent !important;
-                        cursor: default;
-                    }
+                color: $BaseMedium !important;
+                @include FontBody;
+
+                &:hover{
+                    color: $BaseMediumHigh !important;
                 }
 
+                // Selected
+                &.selected-3s45Ha,
+                &[style*="rgba(67, 181, 129, 0.2)"]{
+                    color: $BaseHigh !important;
+                    background-color: transparent !important;
+                    &::before{
+                        content: "";
+                        width: calc(100% - 16px);
+                        height: 2px;
+                        position: absolute;
+                        top: 34px;
+                        background-color: $Accent;
+                        border-radius: 1px;
+                    }
+                }
             }
         }
         &::after{
@@ -70,26 +55,26 @@
     .toolbar-1t6TWx{
         .iconWrapper-2OrFZ1{
             width: 68px;
-            height: 48px;
+            height: 40px;
             margin: 0;
             > svg{
                 display: none;
             }
             &:hover{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             &.selected-1GqIat{
-                background-color: $Accent;
+                background-color: $ListAccentLow;
             }
             &::before{
                 width: 68px;
-                height: 48px;
+                height: 40px;
                 position: absolute;
-                color: #FFF;
+                color: $BaseHigh;
                 font-family: $icon;
-                font-size: 20px;
+                font-size: 16px;
                 text-align: center;
-                line-height: 48px;
+                line-height: 40px;
             }
         }
         .divider-3FBTu8{
