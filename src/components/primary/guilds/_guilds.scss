@@ -34,8 +34,7 @@
             height: 24px;
             background-color: transparent;
             color: #FFF;
-            font-size: 15px;
-            font-weight: $fwui;
+            @include FontBase;
             &.selected-bZ3Lue{
                 color: $Accent;
             }
@@ -152,10 +151,13 @@
         background-color: transparent !important;
         border-radius: 0;
     }
+    .closedFolderIconWrapper-15K9MK{
+        padding: 8px;
+    }
     .expandedFolderBackground-2sPsd-{
         left: 0;
         bottom: 0;
-        background-color: $b2;
+        background-color: $ListLow;
         border-radius: 0;
         &.collapsed-1GMuSb{
             background-color: transparent;
