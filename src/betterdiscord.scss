@@ -67,18 +67,19 @@
 @import 'components/notices/bd_blue';
 
 // Popouts
-@import 'components/popout/user';
-@import 'components/popout/emoji_picker';
-@import 'components/popout/channels_menu';
-@import 'components/popout/recent_mentions';
-@import 'components/popout/search';
-@import 'components/popout/rtc';
-@import 'components/popout/group_dm';
-@import 'components/popout/quick_select';
-@import 'components/popout/autocomplete';
-@import 'components/popout/add_game';
-@import 'components/popout/attach';
-@import 'components/popout/livestream';
+@import 'components/popouts/add_game';
+@import 'components/popouts/autocomplete';
+@import 'components/popouts/color_picker';
+@import 'components/popouts/emoji_picker';
+@import 'components/popouts/filter';
+@import 'components/popouts/group_dm';
+@import 'components/popouts/pinned_recent';
+@import 'components/popouts/region_select';
+@import 'components/popouts/rtc';
+@import 'components/popouts/search';
+@import 'components/popouts/server_menu';
+@import 'components/popouts/stream_preview';
+@import 'components/popouts/user';
 
 // Primary core
 @import 'components/primary/core';
