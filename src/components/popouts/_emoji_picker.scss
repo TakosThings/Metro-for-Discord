@@ -1,0 +1,153 @@
+.theme-dark .emojiPicker-3m1S-j{
+    background-color: $AltHigh;
+    border: 1px solid $BaseLow;
+    border-radius: 4px;
+
+    // Header
+    // Search
+    .container-2XeR5Z{
+        background-color: transparent;
+    }
+    .inner-3ErfOT{
+        padding: 0;
+    }
+    .input-1Rv96N{
+        height: 32px;
+        padding: 0 32px 0 10px;
+        background-color: $AltMediumLow;
+        border: 2px solid $BaseMedium;
+        border-radius: 2px;
+        color: $BaseHigh;
+        @include FontBody;
+        &::-webkit-input-placeholder{
+            color: $BaseMedium;
+        }
+        &:hover{
+            background-color: $AltMedium;
+            border-color: $BaseMediumHigh;
+        }
+        &:focus{
+            background-color: $ChromeWhite;
+            border-color: $Accent;
+            color: $ChromeBlackHigh;
+            &::-webkit-input-placeholder{
+                color: $AltMedium;
+            }
+        }
+    }
+    // Clear icon
+    .iconLayout-1WxHy4{
+        position: absolute;
+        right: 0;
+    }
+
+    // Diversity selector
+    .diversitySelector-tmmMv0{
+        width: 32px;
+        height: 32px;
+        background-color: $AltMediumLow;
+        border: 2px solid $BaseMedium;
+        border-radius: 2px;
+        box-sizing: border-box;
+        &:hover{
+            background-color: $AltMedium;
+            border-color: $BaseMediumHigh;
+        }
+        .item-16cXuq{
+            width: calc(32px - 4px);
+            height: calc(32px - 4px);
+            padding: 0;
+            background-size: 16px;
+        }
+        // Menu open
+        .popout-2nUePc{
+            height: calc(28px * 6) !important;
+            margin-top: -2px;
+            margin-left: -2px;
+            background-color: #000;
+            border: 2px solid $Accent;
+            border-radius: 2px;
+            .item-16cXuq:hover{
+                background-color: $ListLow;
+            }
+        }
+    }
+
+    // Emoji info
+    .infoBar-U6oBFk{
+        background-color: $ChromeLow;
+        .infoBarEmojiName-3t926M{
+            @include FontBody;
+        }
+    }
+
+
+    // Categories
+    .categories-1feg4n{
+        margin: 0;
+        padding: 0 8px;
+        background-color: $ChromeMedium;
+        border: 0;
+        .item-16cXuq{
+            width: 35px;
+            background-repeat: no-repeat;
+            background-position: center;
+            border: 0;
+            margin: 0;
+            position: relative;
+            &.selected-39BZ4S{
+                &::after{
+                    content: "";
+                    width: 24px;
+                    height: 2px;
+                    position: absolute;
+                    bottom: 4px;
+                    left: 50%;
+                    margin-left: -12px;
+                    background-color: $Accent;
+                    border-radius: 1px;
+                }
+            }
+            svg{
+                display: none;
+            }
+            &::before{
+                content: "";
+                color: $BaseHigh;
+                @include FontIcon;
+                font-size: 16px;
+            }
+            &[aria-label="recent"]::before{
+                content: "\E81C";
+            }
+            &[aria-label="custom"]::before{
+                content: "\E74C";
+            }
+            &[aria-label="people"]::before{
+                content: "\ED53";
+            }
+            &[aria-label="nature"]::before{
+                content: "\E708";
+            }
+            &[aria-label="food"]::before{
+                content: "\ED56";
+            }
+            &[aria-label="activity"]::before{
+                content: "\EA86";
+            }
+            &[aria-label="travel"]::before{
+                content: "\ED57";
+            }
+            &[aria-label="objects"]::before{
+                content: "\ED55";
+            }
+            &[aria-label="symbols"]::before{
+                content: "\EB51";
+            }
+            &[aria-label="flags"]::before{
+                content: "🏳‍🌈";
+                @include FontBody;
+            }
+        }
+    }
+}
