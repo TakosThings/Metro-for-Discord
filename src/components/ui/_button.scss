@@ -51,6 +51,11 @@
                 &:hover{
                     background-color: $ListAccentLow;
                 }
+                &:disabled{ // Add game, no option selected
+                    &:hover{
+                        background-color: $Accent;
+                    }
+                }
             }
             &.colorGreen-29iAKY{
                 background-color: $safe;
