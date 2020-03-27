@@ -1,0 +1,53 @@
+.theme-dark .container-VSDcQc{
+    border: 1px solid rgba($color: #2D2D2D, $alpha: 0.6);
+    border-radius: 4px;
+    .autocompleteArrowWrapper-3Z7OuM{
+        display: none;
+    }
+    .header-2bNvm4{
+        height: auto;
+        padding: 12px;
+        background-color: $ChromeBlackHigh;
+        // ???
+        .autocompleteHeaderBackground-30T70q{
+            display: none;
+        }
+        // Remove label
+        .headerText-3i6A8K{
+            display: none;
+        }
+        input[type="text"]{
+            height: 32px;
+            padding: 0 10px;
+            background-color: $AltMediumLow;
+            border: 2px solid $BaseMedium;
+            border-radius: 2px;
+            box-sizing: border-box;
+            @include FontBody;
+            &::-webkit-input-placeholder{
+                color: $BaseMedium;
+            }
+            &:hover{
+                background-color: $AltMedium;
+                border-color: $BaseMediumHigh;
+            }
+            &:focus{
+                background-color: $ChromeWhite;
+                border-color: $Accent;
+                color: $ChromeBlackHigh;
+                &::-webkit-input-placeholder{
+                    color: $AltMedium;
+                }
+            }
+        }
+    }
+    // Tags list
+    .sectionTag-pXyto9{
+        background-color: $ChromeBlackHigh;
+        color: $BaseHigh;
+        .selected-1pIgLL{
+            background-image: none;
+            background-color: $ListLow;
+        }
+    }
+}
