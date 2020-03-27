@@ -4,16 +4,6 @@
     100%{right: 0;}
 }
 
-// Games tab personalisation attention
-@keyframes personalisationattn{
-    from{
-        border: 1px solid $Accent;
-    }
-    to{
-        border: 1px solid transparent;
-    }
-}
-
 // Toast
 @keyframes toast{
     0%{
