@@ -1,0 +1,77 @@
+.recentMentionsPopout-2fmau1,
+.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-2fmau1){
+    max-height: calc(100vh - 72px) !important;
+    min-height: calc(100vh - 72px);
+    position: absolute;
+    right: 0 !important;
+    left: initial !important;
+    margin-top: -8px;
+    border-radius: 0;
+    animation: 350ms cubic-bezier(0.19, 1, 0.22, 1) slideinright;
+}
+.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-2fmau1){
+    right: -200px !important;
+}
+
+.theme-dark .messagesPopoutWrap-1MQ1bW{
+    background-color: $ChromeLow;
+    // Header
+    .header-ykumBX{
+        background-color: $ChromeLow;
+        box-shadow: none;
+        h3{
+            @include FontBase;
+        }
+    }
+    // Pivot
+    .headerTabBarWrapper-27xBDe .tabBar-2UKwcE .tabBarItem-1Cg-MI{
+        padding-bottom: 10px;
+        color: $BaseMedium;
+        @include FontSubtitleAlt;
+        &:hover{
+            color: $BaseMediumHigh;
+        }
+        &[style*="border-color: rgb(255, 255, 255)"]{
+            border-color: $Accent !important;
+        }
+    }
+
+    // Message
+    .messageGroupWrapper-o-Zw7G{
+        background-color: $ChromeMediumLow;
+        border: 0;
+        border-radius: 2px;
+    }
+
+    // Jump to button
+    .jumpButton-3DTcS_{
+        height: auto;
+        background-color: $BaseLow;
+        border-radius: 2px;
+        @include FontBody;
+        color: $BaseHigh;
+        &:hover{
+            background-color: $ListLow;
+        }
+        &:active{
+            background-color: $BaseMediumLow;
+        }
+    }
+
+    // Empty
+    .emptyPlaceholder-1zh-Eu{
+        .image-2JDb81{
+            display: none;
+        }
+        .body-bvcIjN{
+            margin-bottom: 1rem;
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
+    // Remove footer
+    .footer-1kmXd4{
+        display: none;
+    }
+}
