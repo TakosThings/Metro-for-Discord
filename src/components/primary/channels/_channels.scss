@@ -189,11 +189,13 @@
             &::before{
                 content: "";
                 position: absolute;
-                width: 3px;
+                width: 2px;
                 height: 15px;
                 top: 50%;
+                left: 4px;
                 margin-top: -8px;
                 background-color: rgba(var(--voice), 1);
+                border-radius: 1px;
             }
             svg.icon-1_QxNX,
             .name-3_Dsmg{
