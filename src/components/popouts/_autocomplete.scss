@@ -1,13 +1,16 @@
 .theme-dark .container-VSDcQc{
-    border: 1px solid rgba($color: #2D2D2D, $alpha: 0.6);
+    border: 1px inset $BorderTransient; // Using inset to fix weirdness with borders being on the outside of the element
     border-radius: 4px;
+    .autocompleteShadow-iiGWFU{
+        display: none;
+    }
     .autocompleteArrowWrapper-3Z7OuM{
         display: none;
     }
     .header-2bNvm4{
         height: auto;
         padding: 12px;
-        background-color: $ChromeBlackHigh;
+        background-color: $ChromeMediumLow;
         // ???
         .autocompleteHeaderBackground-30T70q{
             display: none;
@@ -43,7 +46,7 @@
     }
     // Tags list
     .sectionTag-pXyto9{
-        background-color: $ChromeBlackHigh;
+        background-color: $ChromeMediumLow;
         color: $BaseHigh;
         .selected-1pIgLL{
             background-image: none;

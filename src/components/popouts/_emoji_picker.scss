@@ -1,9 +1,12 @@
 .theme-dark .emojiPicker-3m1S-j{
-    background-color: $AltHigh;
-    border: 1px solid $BaseLow;
+    background-color: $ChromeMediumLow;
+    border: 1px solid $BorderTransient;
     border-radius: 4px;
 
     // Header
+    .header-1nkwgG{
+        box-shadow: none;
+    }
     // Search
     .container-2XeR5Z{
         background-color: transparent;
@@ -86,7 +89,7 @@
     .categories-1feg4n{
         margin: 0;
         padding: 0 8px;
-        background-color: $ChromeMedium;
+        background-color: transparent;
         border: 0;
         .item-16cXuq{
             width: 35px;
