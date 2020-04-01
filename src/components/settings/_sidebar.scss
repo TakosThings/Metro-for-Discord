@@ -221,19 +221,23 @@
         .item-PXvHYJ:nth-child(9)::after{ // Widget
             content: "\EA86";
         }
-        .item-PXvHYJ:nth-child(11)::after{ // Server boost
-            content: "\EC4A";
+        .item-PXvHYJ:nth-child(10)::after{ // Server template
+            content: "\EA86";
         }
-        .item-PXvHYJ:nth-child(14)::after{ // Members
+        .item-PXvHYJ:nth-child(12)::after{ // Server boost status
+            content: "\EC4A"; // SpeedHigh
+        }
+
+        .item-PXvHYJ:nth-child(15)::after{ // Members
             content: "\E716";
         }
-        .item-PXvHYJ:nth-child(15)::after{ // Invites
+        .item-PXvHYJ:nth-child(16)::after{ // Invites
             content: "\E8FA";
         }
-        .item-PXvHYJ:nth-child(16)::after{ // Bans
+        .item-PXvHYJ:nth-child(17)::after{ // Bans
             content: "\E8F8";
         }
-        .item-PXvHYJ:nth-child(18)::after{ // Delete server
+        .item-PXvHYJ:nth-child(19)::after{ // Delete server
             content: "\E74D";
         }
     }
