@@ -92,10 +92,10 @@
         display: none;
     }
 
-    div[aria-roledescription="Channel Mute Switch"][aria-checked="false"]::before{
+    div[aria-label^="Mute channel"][aria-checked="false"]::before{
         content: "\EA8F";
     }
-    div[aria-roledescription="Channel Mute Switch"][aria-checked="true"]::before{
+    div[aria-label^="Mute channel"][aria-checked="true"]::before{
         content: "\E7ED";
         color: $alert;
     }
