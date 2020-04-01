@@ -1,0 +1,25 @@
+// Region select popout menu. Found in voice call.
+.theme-dark .quickSelectPopout-X1hvgV{
+    background-color: $ChromeMediumLow;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    .quickSelectPopoutOption-opKBx9{
+        height: 32px;
+        padding: 0 8px;
+        &:hover{
+            background-color: $ListLow;
+            border-radius: 0;
+        }
+        // Change direction of menu items to flag > region > tick
+        > .directionRow-3v3tfG{
+            flex-direction: row-reverse;
+        }
+
+        .regionSelectName-c5qL8O{
+            height: auto;
+            color: $BaseHigh;
+            @include FontBody;
+            text-align: left;
+        }
+    }
+}
