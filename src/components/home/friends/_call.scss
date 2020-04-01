@@ -1,0 +1,87 @@
+.theme-dark .wrapper-KXM2i0{
+    background-color: $ChromeLow;
+}
+.theme-dark .videoControls-2EXLlI{
+    padding-top: 0;
+
+    // Region select
+    .quickSelect-3BxO0K{
+        padding-top: 8px;
+        .quickSelectLabel-2r3iJ_{
+            color: $BaseHigh;
+            @include FontBody;
+            text-transform: capitalize;
+            &::after{
+                content: ":";
+            }
+        }
+        .quickSelectClick-1HOWp1{
+            margin-left: 4px;
+            color: $BaseHigh;
+            @include FontBody;
+            &:hover{
+                color: $BaseMedium;
+            }
+        }
+    }
+
+    // Change icons
+    .bottomControls-2HI3wi{
+        button:not(.mainButton-1Qp9DO){
+            &::before{
+                color: $BaseHigh;
+                @include FontIcon;
+                font-size: 20px;
+            }
+            &:hover::before{
+                color: $BaseMedium;
+            }
+            .contents-18-Yxp{
+                display: none;
+            }
+        }
+        button.mainButton-1Qp9DO{
+            text-transform: none;
+        }
+        button[aria-label="Turn On Screen Share"]{
+            &::before{
+                content: "\EC15";
+            }
+        }
+        button[aria-label="Turn On Camera"]{
+            &::before{
+                content: "\E722";
+                color: $BaseMediumLow;
+            }
+        }
+        button[aria-label="Turn Off Camera"]{
+            &::before{
+                content: "\E722";
+                color: $BaseMediumLow;
+            }
+        }
+        button[aria-label="Camera Unavailable"]{
+            &::before{
+                content: "\E722";
+                color: $BaseMediumLow;
+                cursor: not-allowed;
+            }
+        }
+        button[aria-label="Mute"]{
+            &::before{
+                content: "\E720";
+            }
+        }
+        button[aria-label="Unmute"]{
+            &::before{
+                content: "\EC54";
+                color: $alert;
+            }
+        }
+        button[aria-label="User Settings"]{
+            &::before{
+                content: "\E713";
+            }
+        }
+    }
+}
