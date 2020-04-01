@@ -1,0 +1,150 @@
+.theme-dark .container-3ayLPN[style="width: 320px;"]{
+    max-height: calc(100vh - 72px) !important;
+    min-height: calc(100vh - 72px);
+    margin: -3px 0 0 12px;
+    background-color: $ChromeLow;
+    border-radius: 0;
+
+    .focused-2bY0OD{
+        background-color: transparent;
+    }
+
+    div[class^="option-"][class*="searchQuery"]{
+        display: none;
+    }
+
+    div[class^="resultsGroup-"]{
+        // Remove top border
+        &::before{
+            content: unset;
+        }
+        // Header
+        div[class^="header-"]{
+            color: $BaseHigh;
+            @include FontBase;
+            text-transform: none;
+        }
+        // Option
+        div[class^="option-"]{
+            border-radius: 0;
+            @include FontBody;
+            &[class*="selected-"]{
+                background-color: $ListLow;
+            }
+            &::after{
+                display: none;
+            }
+        }
+        div[class*="searchOption-"]{
+            span[class^="filter-"],
+            span[class^="answer-"]{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+        }
+    }
+
+    // Calendar
+    .react-datepicker{
+        background-color: transparent;
+        // inc/dec month buttons
+        &__navigation.react-datepicker__navigation--previous{
+            width: 10px;
+            height: 10px;
+            top: 23px;
+            right: 60px;
+            left: initial;
+            background-image: none;
+            border: 0;
+            border-top: 2px solid $BaseHigh;
+            border-right: 2px solid $BaseHigh;
+            transform: rotate(-45deg);
+            &:hover{
+                border-color: $BaseMedium;
+            }
+        }
+        &__navigation.react-datepicker__navigation--next{
+            width: 10px;
+            height: 10px;
+            top: 16px;
+            right: 30px;
+            background-image: none;
+            border: 0;
+            border-right: 2px solid $BaseHigh;
+            border-bottom: 2px solid $BaseHigh;
+            transform: rotate(45deg);
+            &:hover{
+                border-color: $BaseMedium;
+            }
+        }
+
+
+        // Header
+        &__header{
+            background-color: transparent;
+            border: 0;
+        }
+        // Current month
+        &__current-month{
+            color: $BaseHigh;
+            @include FontBody;
+            text-transform: none;
+            border: 0;
+        }
+        // Calendar
+        // weekdays
+        &__day-name{
+            color: $BaseHigh;
+            @include FontBody;
+            text-transform: none;
+        }
+        // Week
+        &__week .react-datepicker__day{
+            @include FontBody;
+            line-height: 40px; // override
+            border: 2px solid transparent;
+            border-radius: 0 !important;
+            &:hover{
+                background-color: transparent;
+                border-color: $BaseMedium;
+            }
+            &--outside-month{
+                background-color: transparent;
+            }
+            &--today{
+                background-color: $Accent;
+            }
+            &--selected{
+                border-color: $BaseMedium;
+                &::after{
+                    content: unset;
+                }
+            }
+            &--disabled{
+                background-color: transparent;
+                color: $alert;
+                &:hover{
+                    background-color: transparent;
+                    color: $alert;
+                    border-color: $alert;
+                }
+            }
+        }
+    }
+    div[class^="datePickerHint-"]{
+        border: 0;
+        span[class^="hint-"]{
+            color: #FFF;
+            @include FontBody;
+        }
+        span[class^="hintValue"]{
+            background-color: $Accent;
+            border-radius: 0;
+            @include FontBody;
+            &:hover{
+                background-color: #FFF;
+                color: #000;
+            }
+        }
+    }
+}
