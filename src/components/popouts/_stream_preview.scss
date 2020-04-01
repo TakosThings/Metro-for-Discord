@@ -1,0 +1,11 @@
+.theme-dark .streamPreview-2-WUWT{
+    background-color: $ChromeMediumLow;
+    box-shadow: none;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    // Remove tip
+    .protip-3-1FNm{
+        display: none;
+    }
+}
