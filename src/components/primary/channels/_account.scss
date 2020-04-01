@@ -60,17 +60,17 @@
         display: none;
     }
 
-    button[aria-label="Mute"]::before{
+    button[aria-label="Mute"][aria-checked="false"]::before{
         content: "\E720";
     }
-    button[aria-label="Unmute"]::before{
+    button[aria-label="Mute"][aria-checked="true"]::before{
         content: "\EC54";
         color: $alert;
     }
-    button[aria-label="Deafen"]::before{
+    button[aria-label="Deafen"][aria-checked="false"]::before{
         content: "\E767";
     }
-    button[aria-label="Undeafen"]::before{
+    button[aria-label="Deafen"][aria-checked="true"]::before{
         content: "\E74F";
         color: $alert;
     }
