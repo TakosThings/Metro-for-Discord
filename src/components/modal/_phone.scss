@@ -1,0 +1,65 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-{
+    // Phone verification
+    &.phoneVerificationModal-OzcDc3{
+        min-height: unset;
+        justify-content: unset;
+        align-items: unset;
+        padding-bottom: 19px;
+        // Remove image from top of modal
+        .animationContainer-WJHr_z{
+            display: none;
+        }
+        // Fix header
+        .title-3qNdae{
+            margin: 18px 23px;
+            color: $BaseHigh;
+            @include FontSubtitle;
+            text-align: left;
+        }
+        // Description
+        .description-3JBgvQ{
+            padding: 0 23px;
+            color: $BaseHigh;
+            @include FontBody;
+            text-align: left;
+        }
+
+        // Phone field
+        .phoneField-38N1bJ{
+            background-color: transparent;
+            .countryButton-3xq3Ts{
+                height: 32px;
+                background-color: $AltMediumLow;
+                border: 1px solid $BaseMedium;
+                border-radius: 2px;
+                &:hover{
+                    background-color: $AltMedium;
+                    border-color: $BaseMediumHigh;
+                }
+            }
+            .inputField-aNPXsv{
+                height: 32px;
+                margin-right: 8px;
+                background-color: $AltMediumLow;
+                border: 1px solid $BaseMedium;
+                border-radius: 2px;
+                color: $BaseHigh;
+                @include FontBody;
+                &:hover{
+                    background-color: $AltMedium;
+                    border-color: $BaseMediumHigh;
+                }
+                &:focus{
+                    background-color: $ChromeWhite;
+                    border-width: 2px;
+                    border-color: $Accent;
+                    color: $ChromeBlackHigh;
+                }
+            }
+        }
+        // Fix height of popout list
+        .phoneFieldPopout-h7c9mt{
+            height: auto;
+        }
+    }
+}
