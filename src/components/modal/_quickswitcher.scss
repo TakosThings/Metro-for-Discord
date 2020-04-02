@@ -1,0 +1,95 @@
+.theme-dark .quickswitcher-3JagVE{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    color: $BaseHigh;
+
+    .tutorial-3igfYb{
+        display: none;
+    }
+
+    // Input
+    input{
+        height: 32px;
+        background-color: transparent;
+        border: 1px solid $BaseMedium;
+        border-radius: 2px;
+        color: $BaseHigh;
+        @include FontBody;
+        box-sizing: border-box;
+        &.error-2O5WFJ{
+            border-color: $alert;
+            &::-webkit-input-placeholder{
+                color: $alert;
+            }
+        }
+        &:hover{
+            border-color: $BaseMediumHigh;
+        }
+        &:focus{
+            background-color: $ChromeWhite;
+            border-width: 2px;
+            border-color: $Accent;
+            color: #000;
+            &::-webkit-input-placeholder{
+                color: $AltMedium;
+            }
+        }
+        &::-webkit-input-placeholder{
+            color: $BaseMedium;
+            @include FontBody;
+        }
+    }
+
+    .scroller-zPkAnE{
+        background-color: transparent;
+    }
+
+    // Empty
+    .emptyState-2gL-9T{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        background-image: none;
+        .emptyStateNote-ZYTetQ{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+        .emptyStateCTA-veJ2Cu{
+            color: $Accent;
+            opacity: 1;
+        }
+    }
+
+    // Section header
+    .header-13MUnb{
+        color: $BaseHigh;
+        @include FontBase;
+        text-transform: none;
+    }
+
+    // Result line
+    .result-oB0z--{
+        border-radius: 0;
+        @include FontBody;
+        .badge-36LyGI{
+            background-color: #003b67;
+            border: 2px solid #1a4e76;
+            z-index: 2;
+            text-shadow: none;
+            border-radius: 11px;
+            box-shadow: none;
+            font-weight: normal;
+        }
+        .note-S--UP5{
+            color: $BaseMedium;
+            @include FontCaption;
+            text-transform: none;
+        }
+    }
+    .resultFocused-3aIoYe{
+        background-color: $ListAccentLow;
+        .contentDefault-16dKSY{
+            color: $BaseHigh;
+        }
+    }
+}
