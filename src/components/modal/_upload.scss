@@ -1,0 +1,85 @@
+.theme-dark .uploadModal-2ifh8j{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    .inner-3nWsbo{
+        margin: 18px 23px;
+        .file-34mY5K{
+            margin-bottom: 18px;
+            .icon-kyxXVr.image-2yrs5j{
+                margin: 0 12px 0 0;
+                border-radius: 2px;
+            }
+            .description-2ug5H_{
+                padding-top: 0;
+                .filename-ovv3c5{
+                    height: 30px;
+                    @include FontSubtitle;
+                }
+            }
+        }
+
+        // Comment
+        .comment-4IWttf{
+            margin: 0;
+            .label-3aiqT2{
+                @include FontBody;
+                text-transform: none;
+            }
+            .channelTextAreaUpload-3t7EIx{
+                margin-top: 4px;
+                border-radius: 2px;
+                .scrollableContainer-2NUZem{
+                    background-color: $BaseLow;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    // Footer
+    .footer-3mqk7D{
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+
+// Failed: Files too big
+.theme-dark .uploadDropModal-2kTwbc{
+    width: 320px;
+    min-height: 160px;
+    &.error-kKl9o2{
+        padding: 19px 23px;
+        background-color: $ChromeBlackHigh;
+        border: 1px solid $alert;
+        border-radius: 4px;
+        box-sizing: border-box;
+        .inner-3nWsbo{
+            align-items: unset;
+            border: 0;
+            .icons-1w691d{
+                display: none;
+            }
+            .title-2Vtl4y{
+                @include FontSubtitle;
+            }
+            .instructions-2Du9gG{
+                padding-top: 12px;
+                color: $BaseHigh;
+                @include FontBody;
+                text-align: left;
+            }
+            .premiumPromo-3oM7cT{
+                margin-top: 0;
+                padding: 0;
+                .content-P4SiGI{
+                    opacity: 1;
+                    color: $BaseMedium;
+                    @include FontCaption;
+                }
+            }
+        }
+    }
+}
+
