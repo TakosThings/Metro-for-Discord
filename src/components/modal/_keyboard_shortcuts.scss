@@ -1,0 +1,34 @@
+.theme-dark .keyboardShortcutsModal-3piNz7{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid rgba($color: #FFFFFF, $alpha: 0.2); // EdgeTransient doesn't work on this
+
+    // Header
+    .modalTitle-37O4n6{
+        padding: 19px 23px 0 23px;
+        .content-2Add9f{
+            @include FontSubtitle;
+        }
+    }
+    .modalSubtitle-1Pj5nv{
+        padding: 0 23px 19px 23px;
+        color: $BaseHigh;
+        @include FontBody;
+    }
+
+    // Remove DDR
+    .ddrArrows-lSnH7P{
+        display: none;
+    }
+
+    // Shortcut list
+    .keyboardShortcutList-13cQ-8{
+        height: 710px;
+        padding: 19px 23px;
+        // Group header
+        .keybindDescription-2RDbC2{
+            color: $BaseHigh;
+            @include FontBody;
+            text-transform: none;
+        }
+    }
+}
