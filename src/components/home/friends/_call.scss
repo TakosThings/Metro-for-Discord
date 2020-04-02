@@ -27,7 +27,7 @@
 
     // Change icons
     .bottomControls-2HI3wi{
-        button:not(.mainButton-1Qp9DO){
+        button:not(.mainButton-1Qp9DO):not(.joinVoiceCallButton-nW7zgb){
             &::before{
                 color: $BaseHigh;
                 @include FontIcon;
