@@ -1,0 +1,54 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-{
+    // Create Instant Invite
+    &.modal-1k91nT{
+        // Search box
+        .container-2XeR5Z{
+            background-color: transparent;
+            border-radius: 0;
+        }
+        .input-1Rv96N{
+            height: 32px;
+            padding: 0 10px;
+            background-color: $AltMediumLow;
+            border: 1px solid $BaseMedium;
+            border-radius: 2px;
+            color: $BaseHigh;
+            @include FontBody;
+            &::-webkit-input-placeholder{
+                color: $BaseMedium;
+            }
+            &:hover{
+                border-color: $BaseMediumHigh;
+            }
+            &:focus{
+                background-color: $ChromeWhite;
+                border-width: 2px;
+                border-color: $Accent;
+                color: $ChromeBlackHigh;
+                &::-webkit-input-placeholder{
+                    color: $AltMedium;
+                }
+            }
+        }
+        .iconLayout-1WxHy4{
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            right: 0;
+        }
+
+        // Fix copy box having 2 borders
+        div.input-cIJ7To{
+            border: 0;
+        }
+        .copyButton-1I8hd3{
+            margin-left: 8px;
+        }
+
+        // Footer
+        .footerText-2a7NxZ{
+            color: $BaseMedium;
+            @include FontCaption;
+        }
+    }
+}
