@@ -1,0 +1,41 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .container-2Yth53{
+    .contentWrapper-3WC1ID{
+        background-color: $ChromeBlackHigh;
+        border: 1px solid $BorderTransient;
+        border-radius: 4px;
+    }
+    .inviteContent-3R63XV{
+        margin: 18px 23px;
+        text-align: left;
+    }
+    // Server icon
+    .inviteLargeIcon-HrAH61{
+        background-color: $BaseMedium
+    }
+    // You've been invited
+    .colorHeaderSecondary-3Sp3Ft{
+        color: $BaseHigh;
+        @include FontBody;
+    }
+    // Server name
+    .title-jXR8lp{
+        justify-content: unset;
+        @include FontSubtitle;
+    }
+
+    // Activity
+    .activityCount-2GgGMq{
+        margin-top: 24px;
+        .pill-1dHPfk{
+            background-color: $BaseLow;
+            .pillMessage-1btqlx{
+                color: $BaseHigh;
+            }
+        }
+    }
+
+    // Remove splash
+    .inviteSplash-40aHus{
+        display: none;
+    }
+}
