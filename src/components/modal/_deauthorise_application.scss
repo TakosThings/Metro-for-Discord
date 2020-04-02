@@ -1,0 +1,34 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-{
+    // Deauthorise application and foreign link warning
+    &.container-14fypd{
+        max-height: unset;
+        // Header
+        .title-18-Ds0{
+            padding-top: 18px;
+            @include FontSubtitle;
+            text-align: left;
+        }
+        // Content
+        .body-Mj9Oxz{
+            // The url
+            strong{
+                padding: 4px;
+                color: $alert;
+                font-size: 15px;
+                font-family: $mono;
+            }
+        }
+
+        // Footer
+        .footer-3rDWdC{
+            justify-content: unset;
+            button{
+                min-width: auto;
+                flex: none;
+            }
+            .minorAction-OVxOke{
+                text-align: right;
+            }
+        }
+    }
+}
