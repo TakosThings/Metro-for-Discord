@@ -1,0 +1,32 @@
+// Modal Type 1
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    // Header
+    .header-2tA9Os{
+        padding: 18px 23px;
+        border-radius: 0;
+        .title-3sZWYQ{
+            @include FontSubtitle;
+        }
+    }
+
+    // Content
+    .inner-ZyuQk0{
+        padding: 0 23px;
+        .primary-jw0I4K{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
+    // Footer
+    .footer-3rDWdC{
+        padding: 18px 23px;
+        background-color: $ChromeBlackHigh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
