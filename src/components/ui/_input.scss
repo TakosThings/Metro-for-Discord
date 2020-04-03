@@ -193,6 +193,44 @@
         }
     }
 
+    // Dropdown type 2
+    // Found in set custom status modal
+    .select-1Pkeg4{
+        padding: 5px 10px;
+        border: 1px solid;
+        border-radius: 2px;
+        @include FontBody;
+
+        &.selectClosed-2un0PJ{
+            border-color: $BaseMedium;
+            &:hover{
+                border: 1px solid $BaseMediumHigh;
+            }
+        }
+        &.selectOpen-hQuR6b{
+            background-color: $ChromeWhite;
+            border-color: $Accent;
+            border-radius: 2px 2px 0 0;
+            color: $ChromeBlackHigh;
+        }
+    }
+    // Dropdown options are in a separte popout for some reason
+    .popout-2sKjHu{
+        background-color: $ChromeMediumLow;
+        border-radius: 0 0 2px 2px;
+        @include FontBody;
+    }
+    .optionLabel-2CkCZx{
+        padding: 0 10px;
+        line-height: 32px;
+        &:hover{
+            background-color: $ListLow;
+        }
+    }
+    .optionActive-KkAdqq{
+        background-color: $ListAccentLow;
+    }
+
     // Record keybind
     .container-1nZlH6{
         height: 32px;
