@@ -1,0 +1,51 @@
+.theme-dark .regionSelectModal-12e-57{
+    height: auto !important;
+    background-color: $ChromeBlackHigh !important; // why is that important?
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    // Header
+    .regionSelectModalHeader-21khC1{
+        color: $BaseHigh;
+        @include FontSubtitle;
+        text-align: left;
+    }
+
+    // Regions
+    .regionSelectModalOption-2DSIZ3{
+        width: 100%;
+        height: 32px;
+        padding: 0 10px;
+        margin: 0 0 8px 0;
+        justify-content: flex-start;
+        flex-direction: row;
+        background-color: transparent;
+        border: 1px solid $BaseMedium;
+        border-radius: 2px;
+        &:hover{
+            background-color: $ListLow;
+            border-color: $BaseMediumHigh;
+        }
+        .regionSelectFlag-3uwFtG{
+            width: 36px;
+            height: 24px;
+            background-size: 36px 24px;
+        }
+        .regionSelectName-2-2FWh{
+            padding: 0 8px;
+            margin: 0;
+            color: #FFF;
+            font-size: $fsui;
+            font-weight: $fwui;
+            text-align: left;
+            display: inline;
+        }
+    }
+
+    // Footer
+    .regionSelectModalFooter-20C5iA{
+        color: $BaseMedium;
+        @include FontCaption;
+        text-align: left;
+    }
+}
