@@ -30,6 +30,17 @@
         &.selected-aXhQR6{
             background-color: $ListAccentLow;
         }
+        // User is offline
+        &.offline-3nJYBR{
+            .avatar-3uk_u9{
+                filter: grayscale(100%);
+            }
+            &:hover{
+                .avatar-3uk_u9{
+                    filter: grayscale(0%);
+                }
+            }
+        }
         div[class^="content-"]{
             border-radius: 0;
             box-sizing: border-box;
