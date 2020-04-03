@@ -1,0 +1,49 @@
+.theme-dark .layer-2KE1M9 .root-1gCeng{
+    // First page
+    // Header
+    .header-3ZP1MY,     // Join header
+    .title-2Dc-Cb,      // Create header
+    .title-2CFvp_{      // Main page
+        margin: 19px 0;
+        color: $BaseHigh;
+        @include FontSubtitle;
+        text-align: left;
+    }
+    // Options
+    .actions-pBaxX6{
+        .action-1lSjCi{
+            background-color: $BaseLow;
+            border-radius: 2px;
+            .body-3AJVSA{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+        }
+    }
+
+    // Second and third page
+    .slide-2pHaq5{
+        background-color: $ChromeBlackHigh;
+    }
+    .description-QF3836,    // Create description
+    .description-Bw8krY,    // Join description
+    .sampleLink-KPFu3I{     // Join sample links
+        text-align: left;
+    }
+
+    // Create server input label
+    .label-wQQoIq{
+        color: $BaseHigh;
+        @include FontBody;
+        text-transform: none;
+    }
+    .input-1mgnkM{
+        margin-top: 4px;
+    }
+
+    // Agree to terms and conditions
+    .helpText-h3r3wC{
+        color: $BaseMedium;
+        @include FontCaption;
+    }
+}
