@@ -80,7 +80,7 @@
                 height: 100%;
                 right: 0;
                 bottom: 0;
-                background-color: $alert;
+                background-color: rgba($color: $alert, $alpha: 0.6);
                 border-radius: 0;
                 z-index: -1;
             }
