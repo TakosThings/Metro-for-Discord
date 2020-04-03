@@ -76,6 +76,14 @@
         }
     }
 
+    // Emoji category
+    .category-2U57w6{
+        color: $BaseHigh;
+        @include FontBase;
+        line-height: 32px; // Override to position in middle
+        text-transform: none;
+    }
+
     // Emoji info
     .infoBar-U6oBFk{
         background-color: $ChromeLow;
