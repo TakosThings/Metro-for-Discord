@@ -1,0 +1,17 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-1HKDLE{
+    // Message preview
+    .message-2qRu38{
+        background-color: $ChromeMedium;
+        border-radius: 2px;
+    }
+
+    // Protip in delete message modal
+    .pro-1T8RK7{
+        @include FontBase;
+        text-transform: none;
+    }
+    .tip-2ab612{
+        opacity: 1;
+        @include FontBody;
+    }
+}
