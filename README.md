@@ -19,6 +19,6 @@ You should follow the relevant install instructions for your platform.
 See the [wiki](https://github.com/TakosThings/Metro-for-Discord/wiki) for config options.
 
 ## Screenshot
-![Preview](https://i.imgur.com/gk3IlYT.png)
+![Preview](https://i.imgur.com/ZvYZOnD.png)
 
 This project is not associated with Microsoft, nor Discord.
