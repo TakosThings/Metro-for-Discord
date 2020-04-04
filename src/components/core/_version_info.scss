@@ -8,21 +8,23 @@
 .app-2rEoOp{
     &::before{
         width: 360px;
-        height: 72px;
+        height: 64px;
         position: absolute;
         right: 20px;
         bottom: 20px;
         display: block;
         z-index: 9999; // We're above everything
-        padding: 12px 12px 12px 72px;
+        padding: 12px 12px 12px 56px;
         box-sizing: border-box;
-        background-color: $b3;
+        background-color: $ChromeMediumLow;
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAC9wAAAvcBLRSNOAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAATESURBVGiB7ZlZbFVFGMf/g5RCW7QYrEVqQh/EBSOSRkpiYggaxSXywINJQaJGiAousYlbYozhye1dExISAZ+UEF9ENKbRCsqDqdQIiLI0RKOUrjSFSvrz4cwN3517Tu85t6cusf/k5k5m/vMtM9/M+WZGmsY0/t9weQoDqiTdKul6SU2S6iVdkDQoqUfScUmHnHMX89Q7KQB1wGagAxihPAaAj4CHgDn/pOH1wBtAfwqjk9AHvAbUV2pH5hACnKSHJb0p6eoYyhFJByWdljTk62oVhdVS/x/ijKSXJG13zpHVptQA5gIfx4zkYeBJoDGFjEbgaaArRs4e4IqpMr4Z6A4UHgMe9LNSicxVwMFA5o9AU97GNwE9Rsk4sBWYHfAagMf8ryGl7BnAC8BFI/8EcG1extcHIz8CrI3hrfCLsoA+YEUGPauBIdO/O5dwojjmLwArE3jflEQ07M+oaxnRNlvA7skavy4Imw0TcIdjHBiagL8SeC4cEOBO4E8jY2Olxs8Heo2g98rwv4px4MsYngM+CHi7MBsB8Kpp+4NKQonoA1PAKeDyMvzllK6B22J4q2McBbjHcGZSvO5ez2r8HO95AW2mLXbqfVvZXQhoT3Dg+YB3n2k7A9RkceAR0/kXPyJlpz6l7LsSHFgV8FwwC21JMuOUfGg6tvu6slOfQf7OQMaOBN6zhrMnrfAqYNB0vMHXp5r6DE4khqLhNBk9g8BlaQS3mk4nTH2qqc8bRCFcwC1h+4yYPjeZcneh4Jz7XNKugLvTOfdFPqYm4jtTXhw2zozpsNCUe2yDc249sE3RqavLOdeRh4VlcMqUS/KjOAdqTfnXsNEb3TFZqzJgwJTrwsa4EBo25eokqURb6zwgbhBSA2gBOom+O51AS0AZN+WSRRznwFlTvjJQNgt4gihJG5PUJ2mMKJF7Ckh0OMH4BZI+k3S7pKv8/z6KD0Y2jbCDmyh0rVn1n5j6JcDPCTtRAcfjdooJdG1MkPO44eww9etDGXHTv18Sis7LdwNvec/bJdl8aEzSiKQaXQq1ZkmdwB3Oua4UPsRFQFjfaso/pZApAe9OMMr9ROffuZ5bAzwK/G44JwlOawl6FlCcAAKcxYcQsNDUD5N2vRHF+naiM4DFIaBkL/Z9mgMnnkmpqwU4AJz3/y2mbbORtzeV8YHwpcAW4EXgAWBWGf4Go/DrzAqLZTngByOvsoNNRqWzgVGv8DxBpkqK/MdwbfLYD9SW65MLgNNGcZ2vy5SKA9XAUcN95+8yvg4Y80pHCwaSMRUnurIpoBeYn6QzaRurFG2Sqnz5W3NNuCSBX1IPrJH0iql62TnXm5+JCQAWU3zRu8m0pT2FtVJ8u7EPyHuQY42vpnjHOEqwY1HmFAbcD5wLZMybcuO98jVG8Tng5gReyS5EtHNtpfgu6Dcg7hZ7yhyw9ziprkCI7kTXAEeCmTkMNKfVPalU2GDUlCfMSIFFku6VtEXFpz9J2itpnXOuL63iXN7IgGW6dPQbl/SppGPy6bakRkmLJN0o6boYEYVkcduUPnBMBEo/VGkwALxN3u8BFTpQA7yf0ujdwCZ8RjsZ5PrMKknANZKWK3o/a1B0xh6WdFLR+9n3/6pn1mlM4z+OvwDxXg7DxHcO6gAAAABJRU5ErkJggg==);
-        background-position: 12px 12px;
+        background-position: 12px 16px;
+        background-size: 32px;
         background-repeat: no-repeat;
-        color: #FFF;
-        font-size: 15px;
-        line-height: 1.5625;
+        border: 1px solid $BorderTransient;
+        border-radius: 4px;
+        color: $BaseHigh;
+        @include FontBody;
         white-space: pre;
         animation: 10s toast cubic-bezier(0.1, 0.9, 0.2, 1);
         transform: translateX(380px);
