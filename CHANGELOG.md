@@ -1,10 +1,36 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.0
+* **Clean up** (7)
+  * Renamed `/src/components/loadscreen/` to `/src/components/loadscreens/`
+  * Moved `/src/components/core/_status_circle.scss` to `/src/components/misc/_status_circle.scss`
+  * Deleted `/src/components/notices/_light_mode.scss`
+  * Reorganised `beautifuldiscord.scss` and `betterdiscord.scss`
+  * Delete `/src/components/popout/_game_preview.scss`
+  * Delete `/src/components/notices/_bd_blue.scss`
+  * Delete `/src/components/notices/_rmenu_.scss`
+* **Enhancements** (4)
+  * Accent colour format has changed. See the [wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Theme-Config) for more info
+  * Acrylic. See [wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Acrylic) for info on customisation
+  * Adjusted sizing of indicator pills for guilds, channels, and mentioned messages
+  * Scrollbar colours have been updated, and now also respond to additional states
+* **Fixes** (10)
+  * Some thin style scrollbars had wrong colours
+  * Fix language warning not displaying
+  * Removed drop shadow from under chat toolbar
+  * Links in channel topics not displaying
+  * Some missing icons for new menu options in Server Settings
+  * Missing channel mute icon in toolbar
+  * RTC return to voice channel button floating off position when connected to voice call
+  * Mute/Deafen button icons not changing state when toggling
+  * Some fixes for conversation list
+  * Connecting screen status text
+
 #### 3.13.4
-* **Enhancements**
+* **Enhancements** (1)
   * Guild voice indicator
-* **Fixes**
+* **Fixes** (6)
   * Some tweaks and fixes to channels pane
     * Fixed channel category roots having no hover state
     * Channel category root chevron icons being incorrectly sized, and positioned
@@ -13,10 +39,10 @@ Newest Changes are at the top
   * Mention count badge style applying to 'Live' indicator in channels pane
 
 #### 3.13.2
-* **Updates**
+* **Updates** (2)
   * The option for removing the "welcome to the server" message has been removed. The help tips normally provided are removed by default now.
   * The option for removing 'x blocked messages' from chat has been removed.
-* **Fixes**
+* **Fixes** (8)
   * Chat mention indicator was incorrect size when not part of the first message in a group
   * Some sizing and position changes to Cozy chat
   * Loading screen status font-weight was too bold
