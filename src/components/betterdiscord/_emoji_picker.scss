@@ -6,9 +6,9 @@
     margin-left: 1px;
     padding-right: 0 !important;
     background-color: $b1;
-    border-top: 1px solid $Accent;
-    border-bottom: 1px solid $Accent !important;
-    border-left: 1px solid $Accent;
+    border-top: 1px solid $BorderTransient;
+    border-bottom: 1px solid $BorderTransient !important;
+    border-left: 1px solid $BorderTransient;
     border-radius: 0;
     box-sizing: border-box;
 }
@@ -23,7 +23,7 @@
     background-color: $b2;
 }
 #bda-qem button.active{
-    background-color: $Accent;
+    background-color: $BorderTransient;
 }
 #bda-qem-twitch,
 #bda-qem-favourite,
@@ -66,7 +66,7 @@ div[class^="emojiPicker"]{
     width: 366px;
     height: 334px;
     background-color: $b2;
-    border: 1px solid $Accent;
+    border: 1px solid $BorderTransient;
     border-radius: 0;
     box-sizing: border-box;
 }
@@ -87,7 +87,7 @@ div[class^="emojiPicker"]{
 }
 .bda-dark #bda-qem{
     background-color: $b1;
-    border-bottom-color: $Accent !important;
+    border-bottom-color: $BorderTransient !important;
 }
 .bda-dark #bda-qem button{
     background-color: transparent;
