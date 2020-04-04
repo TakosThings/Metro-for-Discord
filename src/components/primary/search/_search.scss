@@ -23,7 +23,7 @@
             }
             &.selected-16te-P{
                 border-bottom: 0;
-                color: var(--accent);
+                color: $Accent;
             }
         }
     }
@@ -50,14 +50,14 @@
         }
         // Accent border on expanded result
         &.expanded-v2Szsz{
-            border: 1px solid var(--accent);
+            border: 1px solid $Accent;
             border-radius: 0;
         }
     }
 
     // Jump to message button
     .actionButtons-14P9IC .jumpButton-Ia2hRJ{
-        background-color: var(--accent);
+        background-color: $Accent;
         border: 1px solid transparent;
         border-radius: 0;
         color: #FFF;

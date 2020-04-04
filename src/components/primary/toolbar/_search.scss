@@ -2,15 +2,15 @@
     margin: 0;
     .searchBar-3dMhjb{
         width: 64px;
-        height: 48px;
+        height: 40px;
         background-color: transparent;
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 24px;
+        background-size: 20px;
         border-radius: 0;
         cursor: pointer;
         &:hover{
-            background-color: $b3;
+            background-color: $ListLow;
         }
         .public-DraftEditorPlaceholder-root,
         .icon-38sknP{
@@ -24,13 +24,15 @@
         width: 232px;
         height: 32px;
         margin: 0 4px;
-        background-color: $b4;
+        background-color: $AltMediumLow;
         background-image: none;
         cursor: text;
-        border: 2px solid $inputborder;
+        border: 1px solid $BaseMedium;
+        border-radius: 2px;
     }
     .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb{
-        border-color: var(--accent);
+        border-width: 2px;
+        border-color: $Accent;
     }
 
     .search-2oPWTC.open-6_Y_aH .icon-38sknP,
@@ -39,10 +41,12 @@
     .search-2oPWTC.focused-31_ccS .searchBar-3dMhjb .public-DraftEditorPlaceholder-root{
         display: block;
     }
+    .search-2oPWTC .DraftEditor-root .DraftEditor-editorContainer{
+        height: 26px;
+    }
     .search-2oPWTC .searchBar-3dMhjb .DraftEditor-root{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
+        color: $BaseHigh;
+        @include FontBody;
         .public-DraftEditor-content{
             overflow-x: hidden;
         }
@@ -53,12 +57,11 @@
         }
     }
     .seasearch-2oPWTCrch .searchBar-3dMhjb .public-DraftEditorPlaceholder-root{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
+        color: $BaseHigh;
+        @include FontBody;
     }
     .search-2oPWTC .searchBar-3dMhjb .icon-3cZ1F_{
-        top: 5px;
+        top: 7px;
     }
 
     span[class^="searchAnswer-"],

@@ -3,7 +3,7 @@
     top: -50px;
     height: 36px;
     padding: 9px 12px 10px;
-    background-color: var(--accent);
+    background-color: $Accent;
     border: 1px solid transparent;
     border-radius: 0;
     &:hover{
@@ -39,7 +39,7 @@
 .ui-standard-sidebar-view .bda-slist .bda-right button{
     height: 36px;
     margin: 0;
-    background-color: var(--accent);
+    background-color: $Accent;
     border: 1px solid transparent;
     border-radius: 0;
     &:hover{

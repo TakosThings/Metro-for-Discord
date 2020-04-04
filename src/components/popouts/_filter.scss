@@ -1,0 +1,70 @@
+// Located in Server settings > Audit Log > Filter by Action
+.theme-dark .popoutList-T9CKZQ{
+    background-color: $ChromeMediumLow;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    box-shadow: none;
+    .input-3Xdcic{
+        height: 32px;
+        padding: 0 32px 0 10px;
+        background-color: $AltMediumLow;
+        border: 2px solid $BaseMedium;
+        border-radius: 2px;
+        box-sizing: border-box;
+        @include FontBody;
+        &::-webkit-input-placeholder{
+            color: $BaseMedium;
+        }
+        &:hover{
+            background-color: $AltMedium;
+            border-color: $BaseMediumHigh;
+        }
+        &:focus{
+            background-color: $ChromeWhite;
+            border-color: $Accent;
+            color: $ChromeBlackHigh;
+            &::-webkit-input-placeholder{
+                color: $AltMedium;
+            }
+        }
+    }
+    .iconLayout-3OgqU3{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 0;
+    }
+
+    // Divider
+    .divider-3573oO{
+        margin: 8px 0;
+    }
+
+    // List items
+    .selectableItem-1MP3MQ{
+        margin: 0 4px 0 0;
+        padding: 4px 10px;
+        border-radius: 2px;
+        &:hover{
+            background-color: $ListLow;
+        }
+        &.selected-31soGA{
+            background-color: $ListAccentLow !important;
+        }
+        &.actionItem-11pIwh{
+            height: auto;
+        }
+
+        .avatar-gPqiLm{
+            width: 24px !important;
+            height: 24px !important;
+        }
+        .selectableItemLabel-1RKQjD{
+            @include FontBody;
+        }
+    }
+
+    .popoutListEmpty-voOEBJ{
+        margin-bottom: 1rem;
+    }
+}

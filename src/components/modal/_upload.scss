@@ -1,173 +1,85 @@
-.theme-dark div[class^="uploadModal"]{
-    background-color: $b1;
-    border: 1px solid var(--accent);
-    border-radius: 0;
-    div[class^="inner-"]{
-        margin: 20px;
-        border: 0;
-        border-radius: 0;
-        div[class^="file-"]{
-            height: auto;
-            div[class^="icon-"]{
-                width: 90px;
-                height: 90px;
-                margin-top: 0;
-                &[class*="image"]{
-                    margin: 0;
-                    border: 0;
-                    border-radius: 0;
-                }
+.theme-dark .uploadModal-2ifh8j{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    .inner-3nWsbo{
+        margin: 18px 23px;
+        .file-34mY5K{
+            margin-bottom: 18px;
+            .icon-kyxXVr.image-2yrs5j{
+                margin: 0 12px 0 0;
+                border-radius: 2px;
             }
-            div[class^="description"]{
-                height: auto;
-                padding: 0 0 0 8px;
-                div[class^="filename"]{
-                    height: auto;
-                    font-size: $fsheader;
-                    font-weight: $fwheader;
-                    line-height: $lh;
+            .description-2ug5H_{
+                padding-top: 0;
+                .filename-ovv3c5{
+                    height: 30px;
+                    @include FontSubtitle;
                 }
             }
         }
-        div[class^="comment-"]{
-            margin: 20px 0;
-            div[class^="label-"]{
-                margin: 8px 0;
-                font-size: $fsui;
-                font-weight: $fwui;
+
+        // Comment
+        .comment-4IWttf{
+            margin: 0;
+            .label-3aiqT2{
+                @include FontBody;
                 text-transform: none;
             }
-            .scrollableContainer-2NUZem{
-                background-color: #000;
-                border-radius: 0;
-            }
-            .textArea-12jD-V{
-                min-height: 46px;
-            }
-            div[class*="channelTextArea"] div[class*="inner-"]{
-                margin: 0;
-                background-color: #000;
-                border-radius: 0;
-                .buttons-3JBrkn{
-                    margin: 0;
+            .channelTextAreaUpload-3t7EIx{
+                margin-top: 4px;
+                border-radius: 2px;
+                .scrollableContainer-2NUZem{
+                    background-color: $BaseLow;
+                    border-radius: 2px;
                 }
-                .button-318s1X{
-                    margin: 0;
-                }
-                // Emoji button
-                .emojiButton-3uL3Aw{
-                    width: 44px;
-                    height: 46px;
-                    padding: 0;
-                    &::before{
-                        content: "\E76E";
-                        color: #CCC;
-                        font-family: $icon;
-                        font-size: 20px;
-                    }
-                    &:hover{
-                        background-color: $b3;
-                        &::before{
-                            color: #FFF;
-                        }
-                    }
-                    .contents-18-Yxp{
-                        display: none;
-                    }
-                }
-                div[class^="emojiButtonNormal-"]{
-                    opacity: 1;
-                }
-            }
-        }
-    }
-    div[class^="footer-"]{
-        padding: 20px;
-        button.button{
-            margin-right: 8px;
-            background-color: transparent;
-            border: 1px solid $inputborder;
-            border-radius: 0;
-            &:hover{
-                border-color: $inputborderhover;
-                text-decoration: none;
-            }
-            span{
-                color: #FFF;
-                font-size: $fsui;
-                font-weight: $fsui;
-            }
-            &::last-of-type{
-                margin-right: 0;
-            }
-        }
-        button.button-primary{
-            background-color: var(--accent);
-            border-color: var(--accent);
-            &:hover{
-                border-color: $inputborder;
             }
         }
     }
 
-    // Autocomplete
-    div[class^="autocomplete-"]{
-        background-color: $b2;
-        border-radius: 0;
-        color: #FFF;
-        div[class^="contentTitle-"]{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwheader;
-            text-transform: none;
-        }
-        div[class*="selector-"]{
-            border-radius: 0;
-            div[class*="content-"],
-            div[class*="description-"]{
-                color: #FFF;
-            }
-            div[class^="descriptionUsername-"]{
-                color: #FFF;
-            }
-            div[class*="descriptionDiscriminator-"]{
-                color: #FFF;
-            }
-        }
-        div[class^="selectorSelected"]{
-            background-color: var(--accent);
-        }
+    // Footer
+    .footer-3mqk7D{
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
-div[class*="uploadModalIn"]{
-    div[class^="uploadDropModal"]{
-        width: 548px;
-        min-height: 200px;
-        div[class^="bgScale-"]{
-            background: $b1;
-            border: 1px solid var(--accent);
-            border-radius: 0;
-        }
-        div[class^="inner-"]{
-            align-items: initial;
-            justify-content: initial;
-            padding: 20px;
+// Failed: Files too big
+.theme-dark .uploadDropModal-2kTwbc{
+    width: 320px;
+    min-height: 160px;
+    &.error-kKl9o2{
+        padding: 19px 23px;
+        background-color: $ChromeBlackHigh;
+        border: 1px solid $alert;
+        border-radius: 4px;
+        box-sizing: border-box;
+        .inner-3nWsbo{
+            align-items: unset;
             border: 0;
-            div[class^="icons-"]{
+            .icons-1w691d{
                 display: none;
             }
-            div[class^="title-"]{
-                padding: 0 0 14px 0;
-                font-size: $fsheader;
-                font-weight: $fwheader;
+            .title-2Vtl4y{
+                @include FontSubtitle;
             }
-            div[class^="instructions-"]{
-                color: #FFF;
-                font-size: $fsui;
-                line-height: 1.333;
+            .instructions-2Du9gG{
+                padding-top: 12px;
+                color: $BaseHigh;
+                @include FontBody;
                 text-align: left;
+            }
+            .premiumPromo-3oM7cT{
+                margin-top: 0;
+                padding: 0;
+                .content-P4SiGI{
+                    opacity: 1;
+                    color: $BaseMedium;
+                    @include FontCaption;
+                }
             }
         }
     }
 }
+

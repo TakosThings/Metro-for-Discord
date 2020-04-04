@@ -1,0 +1,103 @@
+.popout-103y-5{
+    max-height: calc(100vh - 72px) !important;
+    min-height: calc(100vh - 72px);
+    position: absolute;
+    right: -136px !important;
+    left: initial !important;
+    margin-top: -8px;
+    border-radius: 0;
+    animation: 350ms cubic-bezier(0.19, 1, 0.22, 1) slideinright;
+}
+
+.modal-yWgWj-.popout-103y-5{
+    background-color: $ChromeLow;
+}
+.popout-103y-5{
+    // Header
+    .header-2tA9Os{
+        h4{
+            @include FontBase;
+            text-transform: none;
+        }
+        .subtitle-2P4u9v{
+            color: $BaseMedium;
+            @include FontCaption;
+        }
+    }
+
+    // Search bar
+    .container-2XeR5Z{
+        background-color: transparent;
+        .input-1Rv96N{
+            height: 32px;
+            padding: 0 10px;
+            background-color: $AltMediumLow;
+            border: 2px solid $BaseMedium;
+            border-radius: 2px;
+            box-sizing: border-box;
+            @include FontBody;
+            &::-webkit-input-placeholder{
+                color: $BaseMedium;
+            }
+            &:hover{
+                background-color: $AltMedium;
+                border-color: $BaseMediumHigh;
+            }
+            &:focus{
+                background-color: $ChromeWhite;
+                border-color: $Accent;
+                color: $ChromeBlackHigh;
+                &::-webkit-input-placeholder{
+                    color: $AltMedium;
+                }
+            }
+        }
+        // Selected friend
+        .tag-2gHSR7{
+            height: 28px;
+            margin-top: 3px;
+            background-color: $ListLow;
+            @include FontBody;
+            &:hover{
+                background-color: $ListMedium;
+            }
+        }
+    }
+
+    // List
+    .noResults-ZTbl5V,
+    .scroller-hUf6zQ{
+        max-height: none;
+    }
+    .friend-3KALPe{
+        height: 32px;
+        @include FontBody;
+        &.friendSelected-1sa4bG{
+            background-color: $ListLow;
+        }
+
+        .avatar-vr5NCN{
+            height: 24px !important;
+            width: 24px !important;
+        }
+    }
+
+    // No results
+    .errorState-KkUH_2{
+        .errorStateIcon-3fNXE5{
+            display: none;
+            ~div{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+        }
+    }
+
+    // Footer
+    .footerSeparator-M9dQY1{
+        display: none;
+    }
+    .footer-1eyGBa{
+        flex: unset !important;
+    }
+}

@@ -1,16 +1,9 @@
-.theme-dark div[class^="modal-"]{
-    div[class^="imageWrapper-"]{
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .imageWrapper-2p5ogY{
+    .embedMedia-1guQoW{
         border-radius: 0;
-        ~ div{
-            text-align: right;
-        }
     }
-    a[class*="downloadLink"]{
+    &~.downloadLink-1ywL9o{
         opacity: 1;
-        font-size: $fsui;
-        font-weight: $fwui;
-        &:hover{
-            text-decoration: underline;
-        }
+        @include FontBody;
     }
 }

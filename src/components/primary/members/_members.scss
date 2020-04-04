@@ -1,21 +1,20 @@
 .theme-dark div[class^="membersWrap"]{
     div[class*="members-"]{
-        background-color: $b1;
+        background-color: $ChromeLow;
     }
 
     // Rank headers
-    header[class^="membersGroup-"]{
-        margin: 0 15px 10px 15px;
-        padding: 12px 0;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
+    h2[class^="membersGroup-"]{
+        margin: 0 12px 8px 12px;
+        padding: 16px 0 8px;
+        color: $BaseHigh;
+        @include FontBody;
         text-transform: none;
         letter-spacing: normal;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        border-bottom: 2px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid $BaseMediumLow;
     }
 
     // Member
@@ -24,36 +23,36 @@
         margin: 0;
         box-sizing: border-box;
         border-radius: 0;
+        &:hover{
+            background-color: $ListLow;
+        }
+        // Selected, user popout open
+        &.selected-aXhQR6{
+            background-color: $ListAccentLow;
+        }
+        // User is offline
+        &.offline-3nJYBR{
+            .avatar-3uk_u9{
+                filter: grayscale(100%);
+            }
+            &:hover{
+                .avatar-3uk_u9{
+                    filter: grayscale(0%);
+                }
+            }
+        }
         div[class^="content-"]{
-            height: 40px;
-            padding: 4px 8px 4px 0;
             border-radius: 0;
             box-sizing: border-box;
         }
         .layout-2DM8Md{
-            padding-left: calc(15px + 8px);
+            padding-left: 12px;
             border-radius: 0;
         }
 
         // Avatar
-        span[class^="avatarWrapper-"]{
+        .avatar-3uk_u9{
             margin-right: 8px;
-            div[class^="avatar-"]{
-                width: 32px;
-                height: 32px;
-            }
-            div[class*="mask-"]{
-                mask: none;
-                -webkit-mask: none;
-            }
-            div[class*="status-"]{
-                right: 0;
-                bottom: 0;
-                border: 0;
-                &[class*="typing-"]{
-                    left: 2px;
-                }
-            }
         }
 
         div[class^="memberInner"]{
@@ -61,27 +60,21 @@
         }
         // Username
         div[class^="name-"]{
-            line-height: 1.3;
-            span{
-                font-size: $fsui;
-                font-weight: $fwui;
-            }
+            @include FontBody;
         }
 
-        // Activity
-        div[class^="text-"]{
-            color: #FFF;
-            font-size: 0;
-            line-height: 1.3;
+        // Status
+        .activity-2Gy-9S{
+            color: $BaseMediumLow;
+            @include FontCaption;
             strong{
-                font-size: 11px !important;
-                font-weight: normal;
+                font-weight: inherit;
             }
         }
     }
 
     // Member online default text colour
     div[class^="memberOnline-"]{
-        color: #FFF;
+        color: $BaseHigh;
     }
 }

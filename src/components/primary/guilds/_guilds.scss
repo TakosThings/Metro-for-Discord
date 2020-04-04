@@ -1,6 +1,6 @@
 .theme-dark .wrapper-1Rf91z{
     width: 48px;
-    background-color: $b1;
+    background-color: transparent;
     border-radius: 0;
 
     // Remove padding
@@ -15,7 +15,7 @@
         width: 48px;
         margin: 0;
         &:hover{
-            background-color: $b3;
+            background-color: $ListLow;
         }
     }
     .wrapper-25eVIn{
@@ -34,25 +34,24 @@
             height: 24px;
             background-color: transparent;
             color: #FFF;
-            font-size: 15px;
-            font-weight: $fwui;
+            @include FontBase;
             &.selected-bZ3Lue{
-                color: var(--accent);
+                color: $Accent;
             }
         }
     }
 
     // Pill
     .item-2hkk8m{
-        width: 4px;
-        height: 12px !important;
-        margin-left: 0;
-        border-radius: 0;
+        width: 2px;
+        height: 24px !important;
+        margin-left: 4px;
+        border-radius: 1px;
         transform:  none !important;
         // Guild is selected
         &[style*="height: 40px;"]{
             height: 24px !important;
-            background-color: var(--accent);
+            background-color: $Accent;
         }
     }
 
@@ -119,28 +118,12 @@
         height: 32px;
         transform: translateX(-4px) translateY(4px);
         background-color: transparent;
-        border: 2px solid var(--voice);
+        border: 2px solid rgba(var(--voice), 1);
         border-radius: 50%;
         svg{
             display: none;
         }
     }
-
-    // // Voice connected
-    // .upperBadge-2XnnGB{
-    //     top: 9px;
-    //     right: 9px;
-    // }
-    // .iconBadge-2wi9r4{
-    //     width: 30px;
-    //     height: 30px;
-    //     background-color: transparent;
-    //     border: 2px solid var(--voice);
-    //     border-radius: 50%;
-    //     svg path{
-    //         display: none;
-    //     }
-    // }
 
     // Unread notification bars
     // These break due to our fixed buttons at the bottom, so we remove them
@@ -168,10 +151,13 @@
         background-color: transparent !important;
         border-radius: 0;
     }
+    .closedFolderIconWrapper-15K9MK{
+        padding: 8px;
+    }
     .expandedFolderBackground-2sPsd-{
         left: 0;
         bottom: 0;
-        background-color: $b2;
+        background-color: $ListLow;
         border-radius: 0;
         &.collapsed-1GMuSb{
             background-color: transparent;

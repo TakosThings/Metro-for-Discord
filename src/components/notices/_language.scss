@@ -26,10 +26,10 @@ html[lang="ja"],    // Japanese
 html[lang="zh-TW"], // Chinese/Taiwan
 html[lang="ko"]{    // Korea
     .app-2rEoOp{
-        padding-top: 36px;    
-        &::before{
+        padding-top: 32px;
+        &::after{
             content: "This theme requires English to be the selected Language. Press 'CTRL + comma' to open your settings.";
-            height: 36px;
+            height: 32px;
             width: 100%;
             position: absolute;
             top: 0;
@@ -37,8 +37,9 @@ html[lang="ko"]{    // Korea
             z-index: 999;
             background-color: $alert;
             color: #FFF;
+            @include FontBody;
             text-align: center;
-            line-height: 36px;
+            line-height: 32px;
         }
     }
 }

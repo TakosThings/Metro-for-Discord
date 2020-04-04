@@ -1,0 +1,44 @@
+.theme-dark .container-2x5lvQ{
+    background-color: $ChromeMediumLow;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    .header-2C89wJ{
+        justify-content: unset;
+        background-color: transparent;
+        border-radius: 0;
+        text-transform: none;
+        @include FontBase;
+    }
+    section{
+        background-color: transparent;
+        P{
+            color: $BaseHigh;
+            @include FontBody;
+            strong{
+                color: $BaseHigh;
+            }
+            &+p{
+                margin-top: 8px;
+            }
+        }
+    }
+    .popoutBottom-31rU82{
+        .secured-1Yihly{
+            visibility: hidden;
+        }
+        a{
+            color: $Accent;
+            @include FontBody;
+            &:hover{
+                color: $BaseMedium;
+            }
+            &:active{
+                color: $BaseMediumLow;
+            }
+            &::after{
+                content: " Info";
+            }
+        }
+    }
+
+}

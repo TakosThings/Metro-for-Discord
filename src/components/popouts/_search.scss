@@ -1,16 +1,8 @@
-div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBottom-"][style*="z-index: 1001"]{
-    margin-top: 8px;
-    right: 0 !important;
-    left: initial !important;
-    animation: 350ms slideinright cubic-bezier(0.1,0.9,0.2,1);
-}
 .theme-dark .container-3ayLPN[style="width: 320px;"]{
-    max-height: calc(100vh - 80px) !important;
-    min-height: calc(100vh - 80px);
-    position: absolute;
-    right: 0 !important;
-    left: initial !important;
-    background-color: $b1;
+    max-height: calc(100vh - 72px) !important;
+    min-height: calc(100vh - 72px);
+    margin: -3px 0 0 12px;
+    background-color: $ChromeLow;
     border-radius: 0;
 
     .focused-2bY0OD{
@@ -28,31 +20,26 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
         }
         // Header
         div[class^="header-"]{
-            color: #FFF;
-            font-size: $fsheader;
-            font-weight: $fwheader;
+            color: $BaseHigh;
+            @include FontBase;
             text-transform: none;
         }
         // Option
         div[class^="option-"]{
-            font-size: $fsui;
-            font-weight: $fwui;
             border-radius: 0;
+            @include FontBody;
             &[class*="selected-"]{
-                background-color: rgba($color: #FFF, $alpha: 0.1);
+                background-color: $ListLow;
             }
             &::after{
                 display: none;
             }
         }
         div[class*="searchOption-"]{
-            span[class^="filter-"]{
-                color: #FFF;
-                font-weight: $fwui;
-            }
+            span[class^="filter-"],
             span[class^="answer-"]{
-                color: #FFF;
-                font-weight: $fwui;
+                color: $BaseHigh;
+                @include FontBody;
             }
         }
     }
@@ -69,11 +56,11 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
             left: initial;
             background-image: none;
             border: 0;
-            border-top: 2px solid $inputborder;
-            border-right: 2px solid $inputborder;
+            border-top: 2px solid $BaseHigh;
+            border-right: 2px solid $BaseHigh;
             transform: rotate(-45deg);
             &:hover{
-                border-color: $inputborderhover;
+                border-color: $BaseMedium;
             }
         }
         &__navigation.react-datepicker__navigation--next{
@@ -83,15 +70,15 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
             right: 30px;
             background-image: none;
             border: 0;
-            border-right: 2px solid $inputborder;
-            border-bottom: 2px solid $inputborder;
+            border-right: 2px solid $BaseHigh;
+            border-bottom: 2px solid $BaseHigh;
             transform: rotate(45deg);
             &:hover{
-                border-color: $inputborderhover;
+                border-color: $BaseMedium;
             }
         }
-        
-        
+
+
         // Header
         &__header{
             background-color: transparent;
@@ -99,38 +86,36 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
         }
         // Current month
         &__current-month{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
             text-transform: none;
             border: 0;
         }
         // Calendar
         // weekdays
         &__day-name{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
             text-transform: none;
         }
         // Week
         &__week .react-datepicker__day{
-            font-size: $fsui;
+            @include FontBody;
+            line-height: 40px; // override
             border: 2px solid transparent;
             border-radius: 0 !important;
             &:hover{
                 background-color: transparent;
-                border-color: $inputborderhover;
+                border-color: $BaseMedium;
             }
             &--outside-month{
                 background-color: transparent;
             }
             &--today{
-                background-color: var(--accent);
-                font-weight: $fwui;
+                background-color: $Accent;
             }
             &--selected{
-                border-color: $inputborder;
+                border-color: $BaseMedium;
                 &::after{
                     content: unset;
                 }
@@ -150,12 +135,12 @@ div[class^="noArrow-"][class*="noShadow-"][class*="popout-"][class*="popoutBotto
         border: 0;
         span[class^="hint-"]{
             color: #FFF;
-            font-style: $fsui;
+            @include FontBody;
         }
         span[class^="hintValue"]{
-            background-color: var(--accent);
+            background-color: $Accent;
             border-radius: 0;
-            font-weight: $fwui;
+            @include FontBody;
             &:hover{
                 background-color: #FFF;
                 color: #000;

@@ -1,0 +1,14 @@
+.bg-h5JY_x,
+.container-16j22k{
+    // Background is declared in /core/options
+    background-size: cover;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(#2d2d2d, 0.7);
+        background-repeat: repeat;
+        backdrop-filter: blur(45px) saturate(125%);
+    }
+}

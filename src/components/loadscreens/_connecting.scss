@@ -1,13 +1,12 @@
-// Going to have to select this one directly
 .container-16j22k{
-    background-color: $b1;
+    background-color: transparent;
 
-    div[class^="content-"]{
+    .content-1-zrf2{
         background-image: url(https://i.imgur.com/MfeQkLJ.gif);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 32px;
-        -webkit-filter: invert(100%);
+        filter: invert(100%);
     }
 
     // Remove video, we use our own spinner
@@ -23,26 +22,26 @@
         display: none;
     }
     // "Connecting" text
-    div[class^="status-"]{
-        margin-top: 64px;
-        color: #FFF;
-        font-family: $font;
+    .title-3JMOhC{
+        margin-top: 84px;
+        color: $BaseHigh;
         font-size: 32px;
-        font-weight: $fwheader;
+        font-style: normal;
+        font-weight: 300;
         text-transform: none;
-        -webkit-filter: invert(100%);
+        filter: invert(100%);
     }
 
     // Links to Twitter, Status page
-    div[class^="problems-"]{
+    .problems-3mgf6w{
         align-items: flex-end;
         padding-right: 20px;
         padding-bottom: 20px;
-        div[class^="problemsText-"]{
+        .problemsText-1Yx-Kl{
             display: none;
         }
-        a[class*="twitterLink"],
-        a[class*="statusLink"]{
+        a.twitterLink-3NsWMp,
+        a.statusLink-gFXhrL{
             width: 48px;
             height: 48px;
             display: inline-block;
@@ -55,14 +54,14 @@
             svg{
                 width: 24px;
                 height: 24px;
-                color: #FFF;
+                color: $BaseHigh;
             }
             &:hover{
-                background-color: rgba(255,255,255,.1);
+                background-color: $ListLow;
                 transition: background .3s;
             }
         }
-        a[class^="statusLink"]{
+        a.statusLink-gFXhrL{
             margin-left: 4px;
         }
     }

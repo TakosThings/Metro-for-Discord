@@ -1,11 +1,9 @@
 .theme-dark{
     // Common
     .button-38aScr{
-        border-radius: 0;
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: $lh;
-        
+        border-radius: 2px;
+        @include FontBody;
+
         // Size
         &.sizeMedium-1AC_Sl,
         &.sizeLarge-1vSeWK,
@@ -17,55 +15,59 @@
         // Outlined buttons
         &.lookOutlined-3sRXeN{
             border: 2px solid transparent;
-            &.colorPrimary-3b3xI6{
-                border-color: $inputborder;
+            &.colorPrimary-3b3xI6,  // Server roles 'Clear Role Permissions'
+            &.colorWhite-rEQuAQ{    // Webhook 'Edit'
+                background-color: $BaseLow;
+                border-color: transparent;
+                color: $BaseHigh;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: $ListLow;
+                }
+                &:active{
+                    background-color: $BaseMediumLow;
                 }
             }
-            &.colorRed-1TFJan{
+            &.colorRed-1TFJan{      // Remove 2FA
                 color: $alert;
                 border-color: $alert;
                 &:hover{
                     background-color: $alert;
-                    color: #FFF;
-                }
-            }
-            &.colorWhite-rEQuAQ{
-                border-color: $inputborder;
-                &:hover{
-                    border-color: $inputborderhover;
+                    color: $BaseHigh;
                 }
             }
         }
 
         // Filled buttons
         &.lookFilled-1Gx00P{
-            border: 2px solid transparent;
             &.colorPrimary-3b3xI6{
-                background-color: #333;
-                color: #FFF;
+                background-color: $BaseLow;
+                color: $BaseHigh;
                 &:hover{
-                    border-color: #858585;
+                    background-color: $ListLow;
                 }
             }
             &.colorBrand-3pXr91{
-                background-color: var(--accent);
+                background-color: $Accent;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: $ListAccentLow;
+                }
+                &:disabled{ // Add game, no option selected
+                    &:hover{
+                        background-color: $Accent;
+                    }
                 }
             }
             &.colorGreen-29iAKY{
                 background-color: $safe;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: rgba($color: $safe, $alpha: 0.6);
                 }
             }
             &.colorRed-1TFJan,
             &.actionRed-gYn8D3{
                 background-color: $alert;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: rgba($color: $alert, $alpha: 0.6);;
                 }
             }
         }
@@ -74,24 +76,28 @@
         &.lookLink-9FtZy-{
             &.colorPrimary-3b3xI6,
             &.colorGrey-2DXtkV{
-                color: $inputborder;
+                color: $BaseHigh;
                 &:hover{
-                    color: #FFF;
+                    color: $BaseMedium;
                     .contents-18-Yxp{
                         background-image: none;
                     }
+                }
+                &:active{
+                    color: $BaseMediumLow;
                 }
             }
         }
 
         // Ghost
+        // Edit keybind
         &.lookGhost-2Fn_0-{
             border: 2px solid transparent;
             &.colorGrey-2DXtkV{
                 background-color: #333;
-                color: #FFF;
+                color: $BaseHigh;
                 &:hover{
-                    border-color: $inputborderhover;
+                    border-color: $ListLow;
                 }
             }
         }
@@ -100,18 +106,22 @@
         &.lookInverted-2D7oAl{
             border: 2px solid transparent;
             &.colorBrand-3pXr91{
-                background-color: var(--accent);
-                color: #FFF;
+                background-color: $BaseLow;
+                color: $BaseHigh;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: $ListLow;
                 }
             }
             // Friend request button in user profile modal when spotify is playing
             &.colorGreen-29iAKY{
-                background-color: var(--accent);
-                color: #FFF;
+                background-color: $BaseLow;
+                color: $BaseHigh;
                 &:hover{
-                    border-color: $inputborderhover;
+                    background-color: $ListLow;
+                    color: $BaseHigh;
+                }
+                &:active{
+                    background-color: $BaseMediumLow;
                 }
             }
         }
@@ -120,57 +130,91 @@
     // Pagination button
     // Location: Server discovery
     .pageButton-MknE-_{
-        font-size: $fsui;
-        font-weight: $fwui;
+        @include FontBody;
         // Back/Next buttons
-        .endButton-3wGL3C{
-            border-radius: 0;
+        &.endButton-3wGL3C{
+            background-color: $BaseLow;
+            color: $BaseHigh;
+            &:disabled{
+                opacity: 1;
+                background-color: $BaseLow;
+                color: $BaseMediumLow;
+            }
         }
         // Page numbers
         &.roundButton-2CW1Hh{
             width: 32px;
             height: 32px;
-            margin: 0;
+            margin: 0 2px;
             padding: 0;
-            border-radius: 0;
+            border-radius: 2px;
             &:hover{
-                background-color: rgba($color: #FFF, $alpha: .3);
+                background-color: $ListLow;
             }
         }
         &.activeButton-1BJAiN{
-            background-color: var(--accent);
+            background-color: $Accent;
+            &:hover{
+                background-color: $ListAccentHigh;
+            }
         }
-    } 
+    }
 
     // Button group
     .group-2dAfBy{
-        border: 2px solid $inputborder;
+        background-color: $BaseLow;
+        border-radius: 2px;
         .item-3T2z1R{
             border: 0;
-            border-radius: 0;
+
+            &.deny-3nAuT6,
+            &.passthrough-1c2ewQ,
             &.allow-1PzSY3{
-                &:hover{
-                    background-color: rgba($color: $safe, $alpha: .5);
+                img{
+                    display: none;
+                }
+                &::before{
+                    font-size: 16px;
+                    @include FontIcon;
+                }
+            }
+
+
+            &.deny-3nAuT6{
+                &::before{
+                    content: "\F78A"; // Cancel
+                    color: $alert;
+                }
+                &.denySelected-1mh2mZ{
+                    background-color: $alert;
+                    &::before{
+                        color: $BaseHigh;
+                    }
                 }
             }
             &.passthrough-1c2ewQ{
-                &:hover{
-                    background-color: rgba($color: #FFF, $alpha: .5);
+                &::before{
+                    content: "\E9AE";
+                    color: $BaseHigh;
+                }
+                &.passthroughSelected-1Eq0Kl{
+                    background-color: $BaseLow;
+                    &::before{
+                        color: $BaseHigh;
+                    }
                 }
             }
-            &.deny-3nAuT6{
-                &:hover{
-                    background-color: rgba($color: $alert, $alpha: .5);
+            &.allow-1PzSY3{
+                &::before{
+                    content: "\F78C";
+                    color: $safe;
                 }
-            }
-            &.allowSelected-25S_i5{
-                background-color: $safe;
-            }
-            &.passthroughSelected-1Eq0Kl{
-                background-color: $inputborder;
-            }
-            &.denySelected-1mh2mZ{
-                background-color: $alert;
+                &.allowSelected-25S_i5{
+                    background-color: $safe;
+                    &::before{
+                        color: $BaseHigh;
+                    }
+                }
             }
         }
     }

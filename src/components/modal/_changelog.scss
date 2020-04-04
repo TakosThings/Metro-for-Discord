@@ -1,0 +1,15 @@
+.theme-dark .layer-2KE1M9 .root-1gCeng{
+    p,
+    ul li{
+        color: $BaseHigh;
+        @include FontBody;
+    }
+
+    // Footer text
+    .footer-2gL1pp{
+        .primary-jw0I4K{
+            color: $BaseMedium;
+            @include FontCaption;
+        }
+    }
+}

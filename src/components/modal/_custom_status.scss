@@ -1,0 +1,59 @@
+.theme-dark .layer-2KE1M9 .root-1gCeng{
+    .headerContainer-3N-yWX{
+        // Remove art work
+        .art-347BZj{
+            display: none;
+        }
+
+        // Header
+        .header-3C6qT5{
+            padding-top: 0;
+            align-items: unset;
+            .headerText-2uyvpY{
+                @include FontSubtitle;
+            }
+        }
+    }
+    // Fix emoji button over lapping input
+    .inputContainer-1SpwlU{
+        &:focus-within{
+            .emojiButtonContainer-3d6DFV .contents-18-Yxp{
+                &:hover::before{
+                    color: $ChromeBlackHigh;
+                }
+                &::before{
+                    color: $ChromeBlackHigh;
+                }
+            }
+        }
+        // Change emoji button to MDL icon
+        .emojiButtonContainer-3d6DFV{
+            padding-top: 2px;
+            &:hover{
+                .contents-18-Yxp{
+                    &::before{
+                        color: $BaseHigh;
+                    }
+                }
+            }
+            .contents-18-Yxp{
+                &::before{
+                    content: "\E76E";
+                    color: $BaseMedium;
+                    @include FontIcon;
+                    font-size: 18px;
+
+                }
+                .sprite-2iCowe{
+                    display: none;
+                }
+            }
+        }
+        .inputWrapper-31_8H8{
+            input{
+                padding-left: 32px;
+                padding-right: 32px;
+            }
+        }
+    }
+}

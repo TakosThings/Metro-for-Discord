@@ -11,19 +11,18 @@
 }
 
 .theme-dark .sidebar-2K8pFh{
+    background: transparent;
     // Header
-    header{
-        padding: 0 12px 0 0;
+    .header-2o-2hj{
+        height: 40px;
+        padding: 0 12px;
         background-color: transparent;
         box-shadow: none;
-        font-weight: $fwheader;
         &:hover{
-            background-color: transparent;
+            background-color: $ListLow;
         }
-        span{
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            line-height: 1.3;
+        h1{
+            @include FontBaseAlt;
         }
         // Remove guild level icon
         .guildIconContainer-E1JUVt{
@@ -33,7 +32,7 @@
             }
         }
     }
-    // Server banned image
+    // Server banner image
     .bannerImage-1jOskm{
         &::before{
             content: "";
@@ -46,7 +45,7 @@
 
     // Channels background
     .container-PNkimc{
-        background-color: $b1;
+        background-color: transparent;
     }
 
     // Only show scrollbar when it's needed
@@ -61,7 +60,7 @@
             height: 32px;
             padding-left: 36px;
             padding-right: 12px;
-            color: #FFF;
+            color: $BaseHigh;
             &::before{
                 content: "\E70D";
                 position: absolute;
@@ -70,16 +69,14 @@
                 font-size: 12px;
             }
             &:hover{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             .icon-WnO6o2{
                 display: none;
             }
             .name-IbjUBS{
                 color: #FFF;
-                font-size: $fsui;
-                font-weight: $fwui;
-                line-height: 1.3;
+                @include FontBody;
                 text-transform: none;
             }
 
@@ -112,7 +109,7 @@
     .containerDefault-1ZnADq{
         &:hover{
             .wrapper-1ucjTd{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             .content-3at_AU{
                 background-color: transparent;
@@ -130,16 +127,15 @@
                 width: 16px;
                 height: 16px;
                 margin-right: 8px;
-                color: rgba($color: #FFF, $alpha: .5);
+                color: $BaseMedium;
             }
             &:hover{
                 background-color: transparent;
             }
             // Channel name
             .name-3_Dsmg{
-                color: rgba($color: #FFF, $alpha: .5);
-                font-size: $fsui;
-                font-weight: $fwui;
+                color: $BaseMedium;
+                @include FontBody;
             }
         }
         // Muted channel
@@ -156,32 +152,35 @@
             &::before{
                 content: "";
                 position: absolute;
-                width: 3px;
-                height: 15px;
+                width: 2px;
+                height: 16px;
                 top: 50%;
+                left: 4px;
                 margin-top: -8px;
-                background-color: var(--accent);
+                background-color: $Accent;
+                border-radius: 1px;
             }
             svg.icon-1_QxNX,
             .name-3_Dsmg{
-                color: var(--accent);
+                color: $Accent;
             }
         }
         // Unread channel
         .modeUnread-1zpFdA{
             // Unread dot
             .unread-3zKkbm{
-                height: 15px;
-                width: 3px;
+                height: 16px;
+                width: 2px;
+                left: 4px;
                 margin-top: -8px;
-                background-color: #FFF;
+                background-color: $BaseHigh;
                 border-radius: 0;
             }
             .content-3at_AU > svg{
-                color: #FFF;
+                color: $BaseHigh;
             }
             .name-3_Dsmg{
-                color: #FFF;
+                color: $BaseHigh;
             }
         }
 
@@ -190,20 +189,22 @@
             &::before{
                 content: "";
                 position: absolute;
-                width: 3px;
+                width: 2px;
                 height: 15px;
                 top: 50%;
+                left: 4px;
                 margin-top: -8px;
-                background-color: var(--voice);
+                background-color: rgba(var(--voice), 1);
+                border-radius: 1px;
             }
             svg.icon-1_QxNX,
             .name-3_Dsmg{
-                color: var(--voice);
+                color: rgba(var(--voice), 1);
             }
         }
         // Channel actions (instant invite, settings)
         .actionIcon-2Hi9ZG{
-            color: rgba($color: #FFF, $alpha: .5);
+            color: $BaseMedium;
         }
         // Badge
         .numberBadge-2s8kKX{
@@ -217,7 +218,7 @@
             .content-3xS9Lh{
                 background-color: transparent;
                 .username-lm8y6T{
-                    color: #FFF;
+                    color: $BaseHigh;
                 }
             }
         }
@@ -234,7 +235,7 @@
     .userSmall-2t9H7n{
         height: 30px;
         &:hover{
-            background-color: $b3;
+            background-color: $ListLow;
         }
         .avatarSmall-2CW6I1{
             width: 20px;
@@ -249,9 +250,8 @@
     .content-3xS9Lh{
         margin: 0;
         .usernameFont-aFalyR{
-            color: rgba($color: #FFF, $alpha: 0.5);
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
         }
     }
 }

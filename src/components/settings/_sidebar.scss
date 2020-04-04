@@ -5,100 +5,103 @@
 }
 
 // Left sidebar
-.theme-dark .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN{
-    flex: 0;
-    .sidebarRegionScroller-3MXcoP{
-        background-color: $b1;
-    }
-    // Sticky hover
-    &::before{
-        content: "";
-        width: 5px;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    div[class^="scroller-"]{
-        overflow-y: auto;
-    }
-    .sidebar-CFHs9e{
-        div[class^="side"] div[class^="header"]{
-            margin-top: 16px;
-            padding: 0 16px;
-            color: gray;
-            font-weight: normal;
-            line-height: 48px;
-            .channelIcon-3IJ4o7{
-                top: 20px;
-            }
+.theme-dark .standardSidebarView-3F1I7i{
+    background-color: transparent;
+    .sidebarRegion-VFTUkN{
+        flex: 0;
+        .sidebarRegionScroller-3MXcoP{
+            background-color: transparent;
         }
-        div[class^="side"] div[class^="item"]{
-            margin-bottom: 0;
-            padding: 14px 48px;
-            border-radius: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-            &:hover{
-                background-color: rgba(255,255,255,0.15);
-                cursor: default;
-            }
-        }
-        // Nitro item
-        div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
-            color: #FFF !important;
-            &:hover{
-                background-color: rgba(255,255,255,0.15) !important;
-            }
-        }
-        div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
-            background-color: transparent !important;
-            color: var(--accent) !important;
-            &:hover{
-                background-color: rgba(255,255,255,0.15) !important;
-            }
-        }
-        // Selected item
-        div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"],
-        div[class^="side"] div[class*="selected-"]{
-            background-color: transparent !important;
-            color: var(--accent) !important;
-            &:hover{
-                background-color: rgba(255,255,255,0.15) !important;
-            }
-        }
-        div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"]::before,
-        div[class^="side"] div[class*="selected-"]::before{
+        // Sticky hover
+        &::before{
             content: "";
-            width: 4px;
-            height: 24px;
+            width: 5px;
+            height: 100%;
             position: absolute;
-            top: 50%;
+            top: 0;
             left: 0;
-            background-color: var(--accent);
-            margin-top: -12px;
+            z-index: 1;
         }
-        // Logout item
-        div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
-            color: $alert !important;
+        div[class^="scroller-"]{
+            overflow-y: auto;
         }
-        div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
-            background-color: rgba(255,255,255,0.15) !important;
-        }
-        // Remove separators
-        div[class^="side"] div[class^="separator"]{
-            display: none;
-        }
-        // Social links
-        div[class^="socialLinks-"]{
-            display: none;
-        }
-        // Version info
-        .info-1VyQPT{
-            div{
+        .sidebar-CFHs9e{
+            div[class^="side"] div[class^="header"]{
+                margin-top: 16px;
+                padding: 0 16px;
                 color: gray;
+                font-weight: normal;
+                line-height: 48px;
+                .channelIcon-3IJ4o7{
+                    top: 20px;
+                }
+            }
+            div[class^="side"] div[class^="item"]{
+                margin-bottom: 0;
+                padding: 14px 48px;
+                border-radius: 0;
+                color: #FFF;
+                font-size: $fsui;
+                font-weight: $fwui;
+                &:hover{
+                    background-color: rgba(255,255,255,0.15);
+                    cursor: default;
+                }
+            }
+            // Nitro item
+            div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
+                color: #FFF !important;
+                &:hover{
+                    background-color: rgba(255,255,255,0.15) !important;
+                }
+            }
+            div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
+                background-color: transparent !important;
+                color: $Accent !important;
+                &:hover{
+                    background-color: rgba(255,255,255,0.15) !important;
+                }
+            }
+            // Selected item
+            div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"],
+            div[class^="side"] div[class*="selected-"]{
+                background-color: transparent !important;
+                color: $Accent !important;
+                &:hover{
+                    background-color: rgba(255,255,255,0.15) !important;
+                }
+            }
+            div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"]::before,
+            div[class^="side"] div[class*="selected-"]::before{
+                content: "";
+                width: 4px;
+                height: 24px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                background-color: $Accent;
+                margin-top: -12px;
+            }
+            // Logout item
+            div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
+                color: $alert !important;
+            }
+            div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
+                background-color: rgba(255,255,255,0.15) !important;
+            }
+            // Remove separators
+            div[class^="side"] div[class^="separator"]{
+                display: none;
+            }
+            // Social links
+            div[class^="socialLinks-"]{
+                display: none;
+            }
+            // Version info
+            .info-1VyQPT{
+                div{
+                    color: gray;
+                }
             }
         }
     }
@@ -218,19 +221,23 @@
         .item-PXvHYJ:nth-child(9)::after{ // Widget
             content: "\EA86";
         }
-        .item-PXvHYJ:nth-child(11)::after{ // Server boost
-            content: "\EC4A";
+        .item-PXvHYJ:nth-child(10)::after{ // Server template
+            content: "\EA86";
         }
-        .item-PXvHYJ:nth-child(14)::after{ // Members
+        .item-PXvHYJ:nth-child(12)::after{ // Server boost status
+            content: "\EC4A"; // SpeedHigh
+        }
+
+        .item-PXvHYJ:nth-child(15)::after{ // Members
             content: "\E716";
         }
-        .item-PXvHYJ:nth-child(15)::after{ // Invites
+        .item-PXvHYJ:nth-child(16)::after{ // Invites
             content: "\E8FA";
         }
-        .item-PXvHYJ:nth-child(16)::after{ // Bans
+        .item-PXvHYJ:nth-child(17)::after{ // Bans
             content: "\E8F8";
         }
-        .item-PXvHYJ:nth-child(18)::after{ // Delete server
+        .item-PXvHYJ:nth-child(19)::after{ // Delete server
             content: "\E74D";
         }
     }

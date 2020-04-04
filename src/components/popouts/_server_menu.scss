@@ -1,0 +1,45 @@
+.theme-dark .menu-Sp6bN1{
+    padding: 4px 0;
+    background-color: $ChromeMediumLow;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    box-shadow: none;
+
+    .itemBase-1Qj4z6{
+        margin: 0;
+        padding: 4px 12px;
+        border-radius: 0;
+        color: $BaseHigh;
+        @include FontBody;
+        &:hover{
+            background-color: $ListLow;
+        }
+        &.invite-271nFU{
+            color: $BaseHigh;
+        }
+        svg.icon-2doZ3q{
+            display: none;
+        }
+    }
+    .separator-2zcjq8{
+        border-bottom-color: $BaseLow;
+    }
+
+    // Status change menu
+    // Experiment: Move menu so it doesn't open on the edge of the window
+    &[role="listbox"]{
+        transform: translateX(52px) translateY(40px);
+    }
+    // Remove background from currently selected option
+    .itemActive-2V2HNc{
+        background-color: transparent;
+    }
+    // Set right margin to same as left
+    .status-3Kz6VS{
+        margin-right: 12px;
+    }
+    // Remove 'help' text
+    .helper-2c73HK{
+        display: none;
+    }
+}

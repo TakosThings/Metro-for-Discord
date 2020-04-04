@@ -1,8 +1,15 @@
 /* Accent Colour */
+/* Must be provided in RGB format */
 :root{
-    --accent:       #0078D7;
-    --link:         #0078D7;
-    --voice:        #00CC6A;
+    --accent:   0, 120, 215;
+    --link:     0, 120, 215;
+    --voice:    0, 204, 106;
+}
+
+/* Change the URL to your own background. See wiki for more info */
+.bg-h5JY_x,
+.container-16j22k{
+    background-image: url(https://i.imgur.com/VmDsIgt.jpg);
 }
 
 /* ####################################################### */
