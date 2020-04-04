@@ -1,79 +1,70 @@
-div[class^="modal-"]{
-    border-radius: 0;
-}
-.theme-dark div[class^="modal-"] > div[class^="inner"] > div[class^="modal"]:not(.modal-image),
-.theme-dark div[class^="modal-"] > div[class^="inner"] > form[class^="modal"]{
-    background-color: $b1;
-    border: 1px solid var(--accent);
-    border-radius: 0;
+// Backdrop
+.backdrop-1wrmKB,
+.backdropWithLayer-3_uhz4{
+    opacity: 0.5 !important;
 }
 
-// Close button
-div[class^="modal-"] svg[class^="close-"]{
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
+// Modal Type 1
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
 
-// Header
-div[class^="modal"] div[class*="header"] h4,
-div[class^="scroller-"][class*="content-"] h2:not(.headerCozyMeta-rdohGq){ // Hack to not select the user avatar in the delete modal
-    padding: 36px 0 4px;
-    font-size: $fsheader;
-    font-weight: $fwheader;
-    line-height: $lh;
-    text-transform: none;
-}
-div[class^="scroller-"][class*="content-"] h2{
-    text-align: left;
-}
-// Subheaders
-div[class^="modal-"] div[class^="subHeader"]{
-    margin-bottom: 8px;
-    color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
-    text-transform: none;
-}
-
-// Body
-div[class^="scroller-"][class*="content-"] div[class^="body-"]{
-    color: #FFF;
-    font-size: $fsui;
-    text-align: left;
-}
-div[class^="scroller-"][class*="content"] div[class^="medium-"]{
-    color: #FFF;
-    font-size: $fsui;
-    line-height: 1.33333;
-}
-
-// Footer
-.theme-dark div[class^="modal"] div[class*="footer"]{
-    background-color: transparent;
-    box-shadow: none;
-}
-
-// Buttons
-.theme-dark div[class^="modal"] div[class*="footer"] button+button{
-    margin-right: 8px;
-}
-
-// Fixes Change log font size
-div[class^="modal"] div[class*="content"] ul li{
-    margin-bottom: 8px;
-    color: #FFF;
-    font-size: $fsui;
-}
-
-// Fix chatbox
-.theme-dark div[class^="modal-"] div[class*="channelTextArea"] div[class*="inner-"]{
-    background-color: #000;
-    textarea{
-        margin: 0 0 0 40px;
+    // Header
+    .header-2tA9Os{
+        padding: 18px 23px;
+        border-radius: 0;
+        .title-3sZWYQ{
+            @include FontSubtitle;
+        }
     }
-    div[class*="emojiButton-"]{
-        opacity: 1;
-        color: #FFF;
+
+    // Content
+    .inner-ZyuQk0{
+        padding: 0 23px;
+        .primary-jw0I4K{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
+    // Footer
+    .footer-3rDWdC{
+        padding: 18px 23px;
+        background-color: $ChromeBlackHigh;
+        border-radius: 0;
+        box-shadow: none;
+    }
+}
+
+// Modal Type 2
+.theme-dark .layer-2KE1M9 .root-1gCeng{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+    // Header
+    .header-1TKi98{
+        padding: 18px 23px;
+        border-radius: 0;
+        .title-3sZWYQ{
+            @include FontSubtitle;
+        }
+    }
+
+    // Content
+    .inner-ZyuQk0{
+        padding: 0 23px;
+        .primary-jw0I4K{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
+    // Footer
+    .footer-3rDWdC{
+        padding: 18px 23px;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
     }
 }

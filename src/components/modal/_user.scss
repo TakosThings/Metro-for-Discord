@@ -1,0 +1,215 @@
+.theme-dark .root-SR8cQa{
+    background-color: $ChromeBlackHigh;
+    border: 1px solid $BorderTransient;
+    border-radius: 4px;
+
+    // Normal state
+    .topSectionNormal-2-vo2m{
+        background-color: transparent;
+    }
+    // Playing Game
+    .topSectionPlaying-1J5E4n{
+        background-color: transparent;
+        .activityProfile-2bJRaP{
+            background-color: $Accent;
+        }
+    }
+    // Streaming
+    .topSectionStreaming-1Tpf5X{
+        background-color: transparent;
+        .activityProfile-2bJRaP{
+            background-color: #6441A4; // Twitch brand colour
+        }
+    }
+    // Spotify
+    .topSectionSpotify-1lI0-P{
+        background-color: transparent;
+        .activityProfile-2bJRaP{
+            background-color: #1DB954; // Spotify brand colour
+        }
+    }
+    // Xbox
+    .topSectionXbox-3fWLjS{
+        background-color: transparent;
+        .activityProfile-2bJRaP{
+            background-color: #107C10; // Xbox brand colour
+        }
+    }
+
+    // Header
+    .header-QKLPzZ{
+
+    }
+
+    // Activity
+    .activity-1ythUs{
+        // Header text
+        .headerText-1HLrL7{
+            @include FontBase;
+            text-transform: none;
+        }
+        // Preview image/album art
+        .assetsLargeImage-eYwpTX{
+            border-radius: 2px;
+        }
+
+        // Spotify
+        // Song info
+        .activityName-1IaRLn{
+            color: $BaseHigh;
+        }
+        // Progress bar
+        .timeBarProfile-10b-fm{
+            .bar-3urHkF,
+            .barInner-3NDaY_{
+                height: 3px;
+                border-radius: 0;
+            }
+            .bar-3urHkF{
+                background-color: $BaseLow;
+            }
+            .barInner-3NDaY_{
+                background-color: $BaseHigh;
+            }
+            // Times
+            .textLeft-3EZXG6,
+            .textRight-1XO5Ye{
+                color: $BaseHigh;
+                @include FontCaption;
+            }
+        }
+    }
+
+    // pivot
+    .tabBarContainer-1s1u-z{
+        border-top: 0;
+        .top-28JiJ-{
+            height: 40px;
+        }
+        .tabBarItem-1b8RUP{
+            margin: 0 12px;
+            @include FontBody;
+            &:first-child{
+                margin-left: 0;
+            }
+            &[style^="border-color: rgb(255, 255, 255)"]{
+                border-color: $Accent !important;
+            }
+        }
+    }
+
+    // Body
+    .body-3ND3kc{
+        background-color: transparent;
+        .userInfoSectionHeader-CBvMDh{
+            color: $BaseHigh;
+            @include FontBase;
+            text-transform: none;
+        }
+        .note-QfFU8y{
+            margin-left: 0;
+            textarea{
+                padding: 10px;
+                height: 82px !important;
+                background-color: $AltMediumLow;
+                border: 2px solid $BaseMedium;
+                border-radius: 2px;
+                color: $BaseHigh;
+                @include FontBody;
+                &::-webkit-input-placeholder{
+                    color: $BaseMedium;
+                }
+                &:hover{
+                    background-color: $AltMedium;
+                    border-color: $BaseMediumHigh;
+                }
+                &:focus{
+                    background-color: $ChromeWhite;
+                    border-color: $Accent;
+                    color: $ChromeBlackHigh;
+                    &::-webkit-input-placeholder{
+                        color: $AltMedium;
+                    }
+                }
+            }
+        }
+
+        .userInfoSection-2acyCx+.userInfoSection-2acyCx{
+            border-top: 0;
+        }
+        // user profiles
+        .connectedAccounts-repVzS{
+            &::before{
+                content: "Connected Accounts";
+                color: $BaseHigh;
+                @include FontBase;
+            }
+            .connectedAccount-36nQx7{
+                height: 40px;
+                width: 100%;
+                position: relative;
+                margin-top: 8px;
+                padding: 0 10px;
+                border: 1px solid transparent;
+                border-radius: 0;
+                &:hover{
+                    background-color: $ListLow;
+                }
+                &:active{
+                    background-color: $BaseLow;
+                }
+                .connectedAccountName-f8AEe2{
+                    color: $BaseHigh;
+                    @include FontBody;
+                }
+
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        // Mutual servers
+        .listRow-hutiT_{
+            height: 40px;
+            margin: 0;
+            padding: 0 10px;
+            border-radius: 0;
+
+            &:hover{
+                background-color: $ListLow;
+            }
+            .listAvatar-1NlAhb{
+                width: 24px !important;
+                height: 24px !important;
+            }
+            .listName-3w10cx{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+            .guildNick-3uAm3i{
+                color: $BaseMedium;
+                @include FontCaption;
+            }
+        }
+
+        // Empty
+        .empty-2WtT5s{
+            .emptyIcon-pGTAhd{
+                display: none;
+            }
+            .emptyText-6tYmO5{
+                color: $BaseHigh;
+                @include FontBody;
+                text-transform: none;
+            }
+        }
+    }
+}

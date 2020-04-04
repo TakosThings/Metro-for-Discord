@@ -4,14 +4,19 @@
     top: 32px;
 }
 
+// Sub Menu
+.layer-v9HyYc ~ .layer-v9HyYc{
+    transform: translateX(-16px);
+}
+
 .theme-dark .contextMenu-HLZMGh{
-    min-width: 256px;
+    min-width: 240px;
     max-height: calc(100vh - 32px);
     overflow-y: scroll;
     padding: 0;
-    background-color: $b2;
-    border: 1px solid rgba($color: #FFF, $alpha: .5);
-    border-radius: 0;
+    background-color: $ChromeMedium;
+    border: 1px solid rgba($color: #000000, $alpha: 36%);
+    border-radius: 4px;
 
     .itemGroup-1tL0uz{
         border: 0;
@@ -20,8 +25,8 @@
             width: calc(100% - 16px);
             height: 1px;
             display: block;
-            background-color: rgba($color: #FFF, $alpha: .3);
-            margin: 8px;
+            background-color: $BaseLow;
+            margin: 4px 8px;
         }
         &:last-child{
             margin-bottom: 8px;
@@ -36,7 +41,7 @@
 
     .item-1Yvehc{
         &:hover{
-            background-color: $b3;
+            background-color: $ListLow;
         }
     }
 
@@ -50,23 +55,24 @@
     .itemBase-tz5SeC{
         margin: 0;
         border-radius: 0;
-        color: #FFF;
-        font-size: $fschat;
-        font-weight: $fwui;
+        color: $BaseHigh;
+        @include FontBody;
+        font-weight: normal;
         &:first-child{
             margin-top: 8px;
         }
     }
 
-    .caret-UIZBlm{
-        width: 10px;
-        height: 10px;
-        border-top: 1px solid #FFF;
-        border-right: 1px solid #FFF;
-        transform: rotate(45deg) translateX(-10px) translateY(10px);
-        path{
-            display: none;
+    .itemSubMenu-1vN_Yn {
+        &::after{
+            content: "\E76C";
+            margin-right: 8px;
+            @include FontIcon;
+            font-size: 12px;
         }
+    }
+    .caret-UIZBlm{
+        display: none;
     }
 
     .grabber-3mFHz2{

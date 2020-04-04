@@ -1,8 +1,8 @@
 .theme-dark .chat-3bRxxu .container-1r6BKw{
     // LTR
-
+    height: 40px;
     padding: 0 0 0 20px;
-    background-color: $b1;
+    background-color: $ChromeMedium;
     box-shadow: none;
 
     // Channel name, MOTD
@@ -14,9 +14,7 @@
         // Title
         .title-29uC1r{
             margin-right: 12px;
-            font-size: $fsheader;
-            font-weight: $fwheader;
-            line-height: 48px;
+            @include FontBaseAlt;
         }
         // Remove divider
         .divider-3FBTu8{
@@ -25,23 +23,24 @@
 
         // AKA
         .akaBadge-1M-1Gw{
-            padding: 4px 6px;
+            padding: 0;
             margin: 0;
+            background-color: transparent;
             border-radius: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
+            font-style: italic;
         }
         // Other nicknames
         .nicknames-1XK4Zt{
-            color: #FFF;
-            font-size: $fsui;
+            color: $BaseHigh;
+            @include FontBody;
         }
         // Topic
         .topic-TCb_qw{
             margin: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
         }
         // Remove end gradient
         &::after{
@@ -53,36 +52,35 @@
     .toolbar-1t6TWx{
         .iconWrapper-2OrFZ1{
             width: 68px;
-            height: 48px;
+            height: 40px;
             margin: 0;
             opacity: 1;
             > svg{
                 display: none;
             }
             &:hover{
-                background-color: $b3;
+                background-color: $ListLow;
             }
             &.selected-1GqIat{
-                background-color: var(--accent);
+                background-color: $ListAccentLow;
             }
             &::before{
                 width: 68px;
-                height: 48px;
+                height: 40px;
                 position: absolute;
-                color: #FFF;
-                font-family: $icon;
-                font-size: 20px;
+                color: $BaseHigh;
+                @include FontIcon;
+                font-size: 16px;
                 text-align: center;
-                line-height: 48px;
+                line-height: 40px;
             }
-
 
             .iconBadge-qZ4Ksk{
                 width: 100%;
                 height: 100%;
                 right: 0;
                 bottom: 0;
-                background-color: $alert;
+                background-color: rgba($color: $alert, $alpha: 0.6);
                 border-radius: 0;
                 z-index: -1;
             }
@@ -90,14 +88,14 @@
     }
 
     // Remove help button
-    .anchor-3Z-8Bb{
+    a[href="https://support.discordapp.com"]{
         display: none;
     }
 
-    div[aria-roledescription="Channel Mute Switch"][aria-checked="false"]::before{
+    div[aria-label^="Mute channel"][aria-checked="false"]::before{
         content: "\EA8F";
     }
-    div[aria-roledescription="Channel Mute Switch"][aria-checked="true"]::before{
+    div[aria-label^="Mute channel"][aria-checked="true"]::before{
         content: "\E7ED";
         color: $alert;
     }

@@ -1,5 +1,5 @@
 .theme-dark .container-1D34oG{
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
     .tabBody-3YRQ8W{
         &::before{
             content: unset;
@@ -8,20 +8,14 @@
             .scroller-2FKFPG{
                 overflow-y: auto;
             }
-            .peopleList-3c4jOR{
-                background-color: $b2;
-            }
             // Header
             .title-30qZAO{
                 margin: 0;
                 padding: 16px 20px 8px 20px;
-                color: #FFF;
+                color: $BaseHigh;
             }
             .container-2ax-kl{
-                font-size: $fsheader;
-                font-weight: $fwheader;
-                line-height: $lh;
-                text-transform: none;
+                @include FontSubtitle;
             }
 
             // Person list
@@ -30,24 +24,24 @@
                 padding-left: 20px;
                 padding-right: 20px;
                 &:hover{
-                    background-color: $b3;
+                    background-color: $ListLow;
                     border-radius: 0;
                 }
 
-                
+
                 .actionButton-uPB8Fs{
                     background-color: transparent;
                     border-radius: 0;
                     &:hover{
-                        background-color: $b4;
+                        background-color: $ListLow;
                     }
                     svg{
                         display: none;
                     }
                     &::before{
-                        color: #FFF;
-                        font-size: 20px;
-                        font-family: $icon;
+                        color: $BaseHigh;
+                        @include FontIcon;
+                        font-size: 16px;
                     }
                     &[aria-label="Message"]::before{
                         content: "\E8BD";
@@ -65,36 +59,34 @@
                         content: "\E711";
                     }
                 }
-                
+
             }
 
             // Username
             .username-31C1TQ{
-                font-weight: $fwui;
+                @include FontBody;
             }
             .discriminator-22Okc1{
-                font-weight: $fwui;
+                @include FontBody;
             }
 
             // Empty state
-            .friendsEmpty-1KQXin{
+            .friendsEmpty-1K9B4k{
                 .image-1GzsFd{
                     display: none;
                 }
                 .text-GwUZgS{ // ecksdee
-                    color: #FFF;
+                    color: $BaseHigh;
                 }
             }
         }
 
         // Activity
         .nowPlayingColumn-2sl4cE{
-            background-color: $b1;
+            background-color: $ChromeLow;
             .header-13Cw0-{
-                color: #FFF;
-                font-size: $fsheader;
-                font-weight: $fwheader;
-                line-height: $lh;
+                color: $BaseHigh;
+                @include FontSubtitle;
                 text-transform: none;
             }
             .emptyCard-1RJw8n{
@@ -102,8 +94,7 @@
                 align-items: flex-start;
                 background-color: transparent;
                 h5{
-                    font-size: $fsui;
-                    font-weight: $fwui;
+                    @include FontBody;
                 }
                 .emptyText-2zjpZr{
                     display: none;
@@ -122,14 +113,14 @@
                 // Inset
                 .body-1ld4H7{
                     margin-left: 46px;
-                    background-color: $b3;
+                    background-color: $ChromeMedium;
                     border-radius: 0;
                 }
 
                 // Live badge
                 .live-vBWnV6{
                     background-color: $alert !important;
-                    border-radius: 0;
+                    border-radius: 50%;
                 }
 
                 // Game stream preview
@@ -137,19 +128,19 @@
                     border-radius: 0;
                 }
                 .emptyPreviewContainer-1KOcxV{
-                    background-color: $b4;
-                    border: 2px dashed #000;
+                    background-color: $ChromeMedium;
+                    border: 2px dashed $AltHigh;
                     .emptyPreviewImage-IBznSI{
                         display: none;
                     }
                     .emptyPreviewText-2IOfAL{
-                        color: #FFF;
-                        font-size: $fsui;
+                        color: $BaseHigh;
+                        @include FontBody;
                     }
                 }
                 .applicationStreamingHoverText-IEVyfS{
                     width: 100%;
-                    background-color: #000;
+                    background-color: $AltHigh;
                     text-align: center;
                     border-radius: 0;
                 }

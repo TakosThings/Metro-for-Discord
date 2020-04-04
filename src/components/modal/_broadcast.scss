@@ -1,0 +1,21 @@
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modalOverhang-3WFc1y{
+    // remove art
+    .art-2gnmb7{
+        display: none;
+    }
+
+    .modal-yWgWj-{
+        .header-3po9qd{
+            align-items: unset;
+            padding-top: 0;
+            .headerText-2ghQL3{
+                @include FontSubtitle;
+            }
+            .headerDescription-2zd5Co{
+                padding: 0;
+                @include FontBody;
+                text-align: left;
+            }
+        }
+    }
+}

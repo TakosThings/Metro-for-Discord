@@ -1,16 +1,16 @@
-div[class*="notice-"]{
+.notice-2FJMB4{
     border-radius: 0;
-    font-size: $fsui;
-    font-weight: $fwui;
+    @include FontBody;
+    line-height: 32px; // Override
     button{
         padding: 0 12px;
         border: 2px solid $inputborder;
         border-radius: 0;
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: 1.3;
+        @include FontBody;
     }
-    div[class^="dismiss"]{
+    .dismiss-SCAH9H{
+        width: 32px;
+        height: 32px;
         opacity: 1;
     }
 }

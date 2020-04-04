@@ -1,0 +1,58 @@
+@mixin FontHeader{
+    font-size: 46px;
+    font-weight: 300; // Light
+    line-height: 56px;
+}
+@mixin FontSubheader{
+    font-size: 34px;
+    font-weight: 300; // Light
+    line-height: 40px;
+}
+@mixin FontTitle{
+    font-size: 24px;
+    font-weight: 400; // Semilight
+    line-height: 28px;
+}
+@mixin FontSubtitle{
+    // Modal header
+    font-size: 20px;
+    font-weight: 400; // Normal
+    letter-spacing: normal;
+    line-height: 24px;
+    text-transform: none;
+}
+@mixin FontSubtitleAlt{
+    font-size: 18px;
+    font-weight: 400; // Normal
+    line-height: 22px;
+}
+@mixin FontBody{
+    font-size: 14px;
+    font-weight: 400; // Normal
+    line-height: 20px;
+}
+@mixin FontBase{
+    font-size: 14px;
+    font-weight: 600; // Semibold
+    line-height: 20px;
+}
+@mixin FontBaseAlt{
+    font-size: 14px;
+    font-weight: 700; // Bold
+    line-height: 20px;
+}
+@mixin FontCaptionAlt{
+    font-size: 13px;
+    font-weight: 400; // Normal
+    line-height: 16px;
+}
+@mixin FontCaption{
+    // Command bar button label
+    // App titlebar
+    font-size: 12px;
+    font-weight: 400; // Normal
+    line-height: 15px;
+}
+@mixin FontIcon{
+    font-family: "Segoe MDL2 Assets";
+}

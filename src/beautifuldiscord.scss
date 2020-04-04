@@ -1,59 +1,104 @@
 // Core
 @import 'components/core/info';
 @import 'components/core/variables';
+@import 'components/mixins/font';
 @import 'components/core/options';
 @import 'components/core/reset';
 @import 'components/core/animation';
-@import 'components/core/status_circle';
 @import 'components/core/version_info';
 
 // UI
 @import 'components/ui/button';
-@import 'components/ui/input';
-@import 'components/ui/titlebar';
-@import 'components/ui/scrollbar';
-@import 'components/ui/tooltip';
 @import 'components/ui/context_menu';
+@import 'components/ui/input';
+@import 'components/ui/scrollbar';
+@import 'components/ui/titlebar';
+@import 'components/ui/tooltip';
+
+// Discovery
+@import 'components/discovery/discovery';
+
+// Friends
+@import 'components/home/friends/add_friend';
+@import 'components/home/friends/call';
+@import 'components/home/friends/conversation_list';
+@import 'components/home/friends/table';
+@import 'components/home/friends/toolbar';
+
+// Icons
+@import 'components/icons/core';
 
 // Loadscreens
-@import 'components/loadscreen/connecting';
-@import 'components/loadscreen/no_text_channels';
+@import 'components/loadscreens/connecting';
+@import 'components/loadscreens/no_text_channels';
+
+// Misc
+@import 'components/misc/bot_tag';
+@import 'components/misc/keyboard_shortcut';
+@import 'components/misc/loading';
+@import 'components/misc/status_circle';
+
+// Modals
+@import 'components/modal/broadcast';
+@import 'components/modal/changelog';
+@import 'components/modal/custom_status';
+@import 'components/modal/deauthorise_application';
+@import 'components/modal/instant_invite';
+@import 'components/modal/join_server';
+@import 'components/modal/keyboard_shortcuts';
+@import 'components/modal/lightbox';
+@import 'components/modal/modal';
+@import 'components/modal/new_server';
+@import 'components/modal/phone';
+@import 'components/modal/pin_delete_message';
+@import 'components/modal/quickswitcher';
+@import 'components/modal/region_select';
+@import 'components/modal/upload';
+@import 'components/modal/user';
 
 // Notices
 @import 'components/notices/core';
 @import 'components/notices/language';
-@import 'components/notices/light_mode';
+
+// Popouts
+@import 'components/popouts/add_game';
+@import 'components/popouts/autocomplete';
+@import 'components/popouts/color_picker';
+@import 'components/popouts/emoji_picker';
+@import 'components/popouts/filter';
+@import 'components/popouts/group_dm';
+@import 'components/popouts/pinned_recent';
+@import 'components/popouts/region_select';
+@import 'components/popouts/rtc';
+@import 'components/popouts/search';
+@import 'components/popouts/server_menu';
+@import 'components/popouts/stream_preview';
+@import 'components/popouts/user';
 
 // Primary core
 @import 'components/primary/core';
+@import 'components/primary/acrylic';
+
+// Chat
+@import 'components/primary/chat/chat';
+@import 'components/primary/chat/chatbox';
+@import 'components/primary/chat/codeblock';
+@import 'components/primary/chat/embed';
+@import 'components/primary/chat/invite';
+@import 'components/primary/chat/nsfw';
+@import 'components/primary/chat/welcome';
 
 // Guilds
 @import 'components/primary/guilds/guilds';
 @import 'components/primary/guilds/settings_button';
 
 // Channels
-@import 'components/primary/channels/channels';
-@import 'components/primary/channels/channel_notices';
-@import 'components/primary/channels/rtc';
-@import 'components/primary/channels/activity';
 @import 'components/primary/channels/account';
+@import 'components/primary/channels/activity';
 @import 'components/primary/channels/badge';
-
-// Toolbar
-@import 'components/primary/toolbar/toolbar';
-@import 'components/primary/toolbar/search';
-
-// Chat
-@import 'components/primary/chat/chat';
-@import 'components/primary/chat/chatbox';
-@import 'components/primary/chat/welcome';
-@import 'components/primary/chat/codeblock';
-@import 'components/primary/chat/embed';
-@import 'components/primary/chat/invite';
-@import 'components/primary/chat/nsfw';
-
-// Discovery
-@import 'components/discovery/discovery';
+@import 'components/primary/channels/channel_notices';
+@import 'components/primary/channels/channels';
+@import 'components/primary/channels/rtc';
 
 // Members
 @import 'components/primary/members/members';
@@ -61,56 +106,14 @@
 // Search results pane
 @import 'components/primary/search/search';
 
-// Friends
-@import 'components/home/friends/toolbar';
-@import 'components/home/friends/conversation_list';
-@import 'components/home/friends/table';
-@import 'components/home/friends/add_friend';
+// Toolbar
+@import 'components/primary/toolbar/toolbar';
+@import 'components/primary/toolbar/search';
 
 // Settings
+@import 'components/settings/content';
 @import 'components/settings/core';
 @import 'components/settings/sidebar';
-@import 'components/settings/content';
-
-// Popouts
-@import 'components/popout/user';
-@import 'components/popout/emoji_picker';
-@import 'components/popout/channels_menu';
-@import 'components/popout/recent_mentions';
-@import 'components/popout/search';
-@import 'components/popout/rtc';
-@import 'components/popout/group_dm';
-@import 'components/popout/quick_select';
-@import 'components/popout/autocomplete';
-@import 'components/popout/add_game';
-@import 'components/popout/attach';
-@import 'components/popout/game_preview';
-@import 'components/popout/livestream';
-
-// Modals
-@import 'components/modal/profile';
-@import 'components/modal/_modal';
-@import 'components/modal/quickswitcher';
-@import 'components/modal/keyboard_combo';
-@import 'components/modal/server_region';
-@import 'components/modal/delete_message';
-@import 'components/modal/ban_user';
-@import 'components/modal/lightbox';
-@import 'components/modal/upload';
-@import 'components/modal/notification_settings';
-@import 'components/modal/invite';
-@import 'components/modal/phone_verification';
-@import 'components/modal/create_instant_invite';
-@import 'components/modal/new_server';
-@import 'components/modal/go_live';
-
-// Misc
-@import 'components/misc/bot_tag';
-@import 'components/misc/keyboard_shortcut';
-@import 'components/misc/loading';
-
-// Icons
-@import 'components/icons/core';
 
 // Third party
 @import 'components/thirdparty/hljs_monokai';
