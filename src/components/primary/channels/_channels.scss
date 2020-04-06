@@ -32,16 +32,6 @@
             }
         }
     }
-    // Server banner image
-    .bannerImage-1jOskm{
-        &::before{
-            content: "";
-            width: 100%;
-            height: 135px;
-            position: absolute;
-            background-image: linear-gradient(transparent 0%, $b1 100%);
-        }
-    }
 
     // Channels background
     .container-PNkimc{

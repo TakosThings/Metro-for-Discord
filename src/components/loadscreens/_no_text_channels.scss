@@ -1,20 +1,18 @@
 .theme-dark div[class^="noChannel-"]{
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
     div[class^="image-"]{
         display: none;
     }
     h4{
-        color: #FFF;
-        font-size: $fsheader;
-        font-weight: $fwheader;
+        color: $BaseHigh;
+        @include FontSubtitle;
         text-align: left;
         text-transform: none;
     }
     div[class^="text-"]{
         margin-top: 24px;
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
+        color: $BaseHigh;
+        @include FontBody;
         text-align: left;
     }
 }
