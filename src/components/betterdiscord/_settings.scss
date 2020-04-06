@@ -1,69 +1,69 @@
-#bd-settings-sidebar .ui-tab-bar-separator{
+.theme-dark #bd-settings-sidebar .ui-tab-bar-separator{
     display: none;
 }
 
 // Header
-#bd-settings-sidebar .ui-tab-bar-header{
-    border-bottom: 1px solid rgba(255,255,255,.5);
-    color: #FFF;
-    font-size: $fsheader;
-    font-weight: $fwheader;
+.theme-dark #bd-settings-sidebar .ui-tab-bar-header{
+    margin-top: 16px;
+    padding: 0 16px;
+    color: gray;
+    @include FontBody;
     text-transform: none;
+    line-height: 48px;
 }
 
 // Tabs
-#bd-settings-sidebar .ui-tab-bar-item{
-    padding: 14px 16px;
+.theme-dark #bd-settings-sidebar .ui-tab-bar-item{
+    padding: 14px 48px;
     margin-bottom: 0;
     border-radius: 0;
     color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
+    @include FontBody;
     &:hover{
-        background-color: $b2;
+        background-color: $ListLow;
     }
-}
-#bd-settings-sidebar .ui-tab-bar-item.selected{
-    background-color: transparent;
-    color: $Accent;
-    &:hover{
-        background-color: $b2;
+    &.selected{
+        background-color: transparent;
+        color: $Accent;
+        &:hover{
+            background-color: $ListLow;
+        }
+        &::before{
+            content: "";
+            width: 4px;
+            height: 50%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            background-color: $Accent;
+            margin-top: -10px;
+        }
     }
-}
-#bd-settings-sidebar .ui-tab-bar-item.selected::before{
-    content: "";
-    width: 4px;
-    height: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background-color: $Accent;
-    margin-top: -10px;
+
+    &::after{
+        position: absolute;
+        left: 16px;
+        color: #FFF;
+        @include FontIcon;
+        font-size: 16px;
+    }
+    &:nth-child(3)::after{ // Settings
+        content: "\E713"; // Settings
+    }
+    &:nth-child(4)::after{ // Emotes
+        content: "\E899"; // Emoji
+    }
+    &:nth-child(5)::after{ // Plugins
+        content: "\EA86";  // Puzzle
+    }
+    &:nth-child(6)::after{ // Themes
+        content: "\E771"; // Personalize
+    }
+    &:nth-child(7)::after{ // Customcss
+        content: "\E943"; // Code
+    }
 }
 
 #bd-settingspane-container{
     padding: 0 15px 0 12px;
-}
-
-// Switches
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper{
-    width: 40px;
-    height: 20px;
-}
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch{
-    background-color: transparent;
-    border: 2px solid $inputborder;
-}
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper:hover .ui-switch{
-    border-color: $inputborderhover;
-}
-// toggled
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked{
-    background-color: $Accent;
-    border-color: transparent;
-}
-// Dot
-#bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch:before{
-    width: 10px;
-    height: 10px;
 }

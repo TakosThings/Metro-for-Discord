@@ -5,11 +5,11 @@
     display: block;
     margin-left: 1px;
     padding-right: 0 !important;
-    background-color: $b1;
+    background-color: $ChromeMediumLow;
     border-top: 1px solid $BorderTransient;
     border-bottom: 1px solid $BorderTransient !important;
     border-left: 1px solid $BorderTransient;
-    border-radius: 0;
+    border-radius: 2px 0 0 2px;
     box-sizing: border-box;
 }
 #bda-qem button{
@@ -20,10 +20,10 @@
     box-shadow: none;
 }
 #bda-qem button:hover{
-    background-color: $b2;
+    background-color: $ListLow;
 }
 #bda-qem button.active{
-    background-color: $BorderTransient;
+    background-color: $Accent;
 }
 #bda-qem-twitch,
 #bda-qem-favourite,
@@ -65,7 +65,7 @@ div[class^="emojiPicker"]{
 #bda-qem-favourite-container{
     width: 366px;
     height: 334px;
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
     border: 1px solid $BorderTransient;
     border-radius: 0;
     box-sizing: border-box;
@@ -80,13 +80,13 @@ div[class^="emojiPicker"]{
     border-radius: 0;
 }
 .emote-menu-inner .emote-container:hover{
-    background-color: $b3;
+    background-color: $ListLow;
 }
 #bda-qem ~ .emoji-picker .dimmer{
     width: calc(100% - 62px);
 }
 .bda-dark #bda-qem{
-    background-color: $b1;
+    background-color: $ChromeMediumLow;
     border-bottom-color: $BorderTransient !important;
 }
 .bda-dark #bda-qem button{
@@ -95,7 +95,7 @@ div[class^="emojiPicker"]{
     box-shadow: none;
 }
 .bda-dark .emoji-picker{
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
 }
 .bda-dark .emoji-picker .header .search-bar{
     background-color: transparent;
@@ -104,14 +104,14 @@ div[class^="emojiPicker"]{
     background-color: transparent;
 }
 .bda-dark .emoji-picker .scroller .emoji-item.selected{
-    background-color: $b3;
+    background-color: $ListLow;
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
 }
 .bda-dark #bda-qem-favourite-container,
 .bda-dark #bda-qem-twitch-container{
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
 }
 
 #bda-qem-twitch-container .scroller,
