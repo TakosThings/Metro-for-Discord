@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.1
+* **Enhancements** (3)
+  * You may now click *through* the toast which appears when the theme is loaded
+  * BetterDiscord User Settings sidebar should now look closer to the rest of the sidebar
+  * Updated tooltip appearance
+* **Fixes** (4)
+  * Server discovery input out of vertical alignment
+  * Server discovery card header images had too large bottom margin
+  * Guild group folder container background height would be much longer than necessary
+  * User settings log out menu item hover background
+
 #### 3.14.0
 * **Clean up** (7)
   * Renamed `/src/components/loadscreen/` to `/src/components/loadscreens/`
