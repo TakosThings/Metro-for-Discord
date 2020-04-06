@@ -10,7 +10,7 @@
     code{
         background-color: #2F2F2F;
         border: 0;
-        font-family: $mono;
+        @include FontMonospace;
         overflow-x: hidden;
         &::before{
             content: attr(class);
@@ -20,7 +20,7 @@
             padding: 2px 6px 2px 0;
             background-color: #5E5E5E;
             color: #FFF;
-            font-family: $font;
+            @include FontMonospace;
             font-size: 10px;
             line-height: 1.5625;
             text-transform: uppercase;
@@ -38,5 +38,5 @@
     padding: 2px 4px;
     background-color: #2F2F2F;
     border-radius: 0;
-    font-family: $mono;
+    @include FontMonospace;
 }

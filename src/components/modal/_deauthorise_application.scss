@@ -15,7 +15,7 @@
                 padding: 4px;
                 color: $alert;
                 font-size: 15px;
-                font-family: $mono;
+                @include FontMonospace;
             }
         }
 

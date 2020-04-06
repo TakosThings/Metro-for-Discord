@@ -18,7 +18,7 @@
                 background-color: $ListLow;
             }
             &::before{
-                font-family: $icon;
+                @include FontIcon;
                 font-size: 18px;
             }
             .contents-18-Yxp{

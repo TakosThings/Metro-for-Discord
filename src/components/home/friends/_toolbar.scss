@@ -71,7 +71,7 @@
                 height: 40px;
                 position: absolute;
                 color: $BaseHigh;
-                font-family: $icon;
+                @include FontIcon;
                 font-size: 16px;
                 text-align: center;
                 line-height: 40px;
