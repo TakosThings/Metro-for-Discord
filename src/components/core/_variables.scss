@@ -1,17 +1,17 @@
 // Status State
-$alert: #D02E00;
-$safe: #43B581;
+$alert:                 #D02E00;
+$safe:                  #43B581;
 
 // User Status
-$statusonline: #10893E;
-$statusidle: #FFB900;
-$statusdnd: #E81123;
-$statusoffline: #767676;
-$statusstreaming: #392e5c;
+$statusonline:          #10893E;
+$statusidle:            #FFB900;
+$statusdnd:             #E81123;
+$statusoffline:         #767676;
+$statusstreaming:       #392e5c;
 
 // Input element states
-$inputborder: rgba(255,255,255,0.6);
-$inputborderhover: rgba(255,255,255,0.8);
+$inputborder:           rgba(255,255,255,0.6);
+$inputborderhover:      rgba(255,255,255,0.8);
 
 $AltHigh:               rgba($color: #000000, $alpha: 1.0);
 $AltLow:                rgba($color: #000000, $alpha: 0.2);
