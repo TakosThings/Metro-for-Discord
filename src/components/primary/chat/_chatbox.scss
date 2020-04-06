@@ -10,7 +10,7 @@
     .channelTextArea-rNsIhG{
         margin-bottom: 0;
         background-color: transparent;
-        border-top: 2px solid $b3;
+        border-top: 2px solid $ListLow;
         border-radius: 0;
         &:focus-within{
             border-top-color: $Accent;
@@ -30,11 +30,11 @@
                 &::before{
                     content: "\E898";
                     color: #CCC;
-                    font-family: $icon;
+                    @include FontIcon;
                     font-size: 20px;
                 }
                 &:hover{
-                    background-color: $b3;
+                    background-color: $ListLow;
                 }
                 .contents-18-Yxp{
                     display: none;
@@ -90,11 +90,11 @@
                 &::before{
                     content: "\E76E";
                     color: #CCC;
-                    font-family: $icon;
+                    @include FontIcon;
                     font-size: 20px;
                 }
                 &:hover{
-                    background-color: $b3;
+                    background-color: $ListLow;
                     &::before{
                         color: #FFF;
                     }
@@ -138,16 +138,14 @@
     // Hack to stop the autocomplete popout being selected
     // Changes to this code must be mirrored to _chat.scss
     div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"]{
-        background-color: $b1;
-        border-bottom: 1px solid $b2;
+        background-color: $ChromeLow;
+        border-bottom: 1px solid $Accent;
         border-radius: 0;
     }
     div[class^="autocomplete-"]{
         div[class^="contentTitle"]{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-            text-transform: none;
+            color: $BaseHigh;
+            @include FontBase;
             strong{
                 font-weight: normal;
                 &::before,
@@ -160,13 +158,13 @@
             border-radius: 0;
         }
         div[class^="selectorSelected"]{
-            background-color: $Accent;
+            background-color: $ListAccentLow;
         }
         polygon{
-            fill: #FFF;
+            fill: $BaseHigh;
         }
         div[class^="description"]{
-            color: #FFF;
+            color: $BaseHigh;
         }
     }
 }

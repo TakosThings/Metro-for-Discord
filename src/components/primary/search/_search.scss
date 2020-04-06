@@ -1,21 +1,19 @@
 .theme-dark .searchResultsWrap-2DKFzt{
-    background-color: $b1;
+    background-color: $ChromeLow;
     // Header
     .searchHeader-1l-wpR{
-        background-color: $b1;
+        background-color: $ChromeLow;
         box-shadow: none;
         // Total number of results found
         .totalResults-gxvzgw{
             opacity: 1;
-            font-size: $fsheader;
-            font-weight: $fwheader;
+            @include FontSubtitle;
         }
         // Recent/Relevant tabs
         .tab-2Ixsn0{
             opacity: 1;
             border-bottom: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
+            @include FontBody;
             color: rgba(255,255,255,.7);
             &:hover{
                 border-bottom: 0;
@@ -30,8 +28,7 @@
     // Results
     // Channel Name
     .channelName-1QajIf{
-        background-color: $b1;
-        font-weight: $fwui;
+        background-color: $ChromeLow;
     }
     // Remove gradient
     .searchResult-3pzFAB{
@@ -43,7 +40,7 @@
         .searchResultMessage-2VxO12{
             border-radius: 0;
             &.hit-NLlWXA{
-                background-color: $b3;
+                background-color: $ChromeMediumLow;
                 border: 0;
                 box-shadow: none;
             }
@@ -56,18 +53,17 @@
     }
 
     // Jump to message button
-    .actionButtons-14P9IC .jumpButton-Ia2hRJ{
+    .jumpButton-Ia2hRJ{
         background-color: $Accent;
         border: 1px solid transparent;
-        border-radius: 0;
+        border-radius: 2px;
         color: #FFF;
         font-weight: normal;
         &:hover{
-            border-color: $inputborder;
+            background-color: $ListAccentLow;
         }
         &:active{
             transform: none;
-            border-color: $inputborderhover;
         }
     }
 
@@ -79,9 +75,8 @@
         }
         .noResults-2lVUHk{
             margin-top: 0;
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            color: $BaseHigh;
+            @include FontBody;
         }
     }
 }

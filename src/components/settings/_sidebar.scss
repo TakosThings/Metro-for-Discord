@@ -40,11 +40,10 @@
                 margin-bottom: 0;
                 padding: 14px 48px;
                 border-radius: 0;
-                color: #FFF;
-                font-size: $fsui;
-                font-weight: $fwui;
+                color: $BaseHigh;
+                @include FontBody;
                 &:hover{
-                    background-color: rgba(255,255,255,0.15);
+                    background-color: $ListLow;
                     cursor: default;
                 }
             }
@@ -52,14 +51,14 @@
             div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
                 color: #FFF !important;
                 &:hover{
-                    background-color: rgba(255,255,255,0.15) !important;
+                    background-color: $ListLow !important;
                 }
             }
             div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
                 background-color: transparent !important;
                 color: $Accent !important;
                 &:hover{
-                    background-color: rgba(255,255,255,0.15) !important;
+                    background-color: $ListLow !important;
                 }
             }
             // Selected item
@@ -68,7 +67,7 @@
                 background-color: transparent !important;
                 color: $Accent !important;
                 &:hover{
-                    background-color: rgba(255,255,255,0.15) !important;
+                    background-color: $ListLow !important;
                 }
             }
             div[class^="side"] div[class^="item-"][style*="background-color: rgb(114, 137, 218);"]::before,
@@ -86,8 +85,8 @@
             div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
                 color: $alert !important;
             }
-            div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.0980392)"]{
-                background-color: rgba(255,255,255,0.15) !important;
+            div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.1)"]{
+                background-color: $ListLow !important;
             }
             // Remove separators
             div[class^="side"] div[class^="separator"]{
@@ -114,8 +113,8 @@
                 position: absolute;
                 left: 16px;
                 color: #FFF;
+                @include FontIcon;
                 font-size: 16px;
-                font-family: $icon;
             }
         }
         .item-PXvHYJ:nth-child(2)::after{ // My account
@@ -135,7 +134,7 @@
         }
         .item-PXvHYJ:nth-child(8)::after{ // Nitro
             content: "N";
-            font-family: $font;
+            @include FontNormal;
         }
         .item-PXvHYJ:nth-child(9)::after{ // Nitro
             content: "\F133"
@@ -145,7 +144,7 @@
         }
         .item-PXvHYJ:nth-child(11)::after{ // Nitro
             content: "H";
-            font-family: $font;
+            @include FontNormal;
         }
 
         .item-PXvHYJ:nth-child(14)::after{ // Overlay
@@ -193,8 +192,8 @@
                 position: absolute;
                 left: 16px;
                 color: #FFF;
+                @include FontIcon;
                 font-size: 16px;
-                font-family: $icon;
             }
         }
         .item-PXvHYJ:nth-child(2)::after{ // Overview
@@ -249,8 +248,8 @@
                 position: absolute;
                 left: 16px;
                 color: #FFF;
+                @include FontIcon;
                 font-size: 16px;
-                font-family: $icon;
             }
         }
         .item-PXvHYJ:nth-child(2)::after{ // Overview
@@ -277,8 +276,8 @@
                 position: absolute;
                 left: 16px;
                 color: #FFF;
+                @include FontIcon;
                 font-size: 16px;
-                font-family: $icon;
             }
         }
         .item-PXvHYJ:nth-child(3)::after{ // Overview

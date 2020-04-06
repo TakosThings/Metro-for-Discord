@@ -1,17 +1,21 @@
-.theme-dark .channels-Ie2l6A .container-3baos1 .noWrap-3jynv6 button[aria-label="User Settings"]{
-    width: 48px;
-    height: 48px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 1;
-    border-radius: 0;
-    &:hover{
-        background-color: $ListLow;
-    }
-    &::before{
-        content: "\E713";
-        font-family: $icon;
-        font-size: 18px;
-    }
-}
+// DEBUG
+// Marked for deletion
+// See ../channels/_account.scss
+
+// .theme-dark .channels-Ie2l6A .container-3baos1 .noWrap-3jynv6 button[aria-label="User Settings"]{
+//     width: 48px;
+//     height: 48px;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     opacity: 1;
+//     border-radius: 0;
+//     &:hover{
+//         background-color: $ListLow;
+//     }
+//     &::before{
+//         content: "\E713";
+//         @include FontIcon;
+//         font-size: 20px;
+//     }
+// }

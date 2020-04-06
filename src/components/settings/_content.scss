@@ -24,9 +24,7 @@
         // Description
         div[class^="description"]{
             color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
-            line-height: $lh;
+            @include FontBody;
         }
 
         // Connections
@@ -36,19 +34,14 @@
             div[class*="accountBtn"]{
                 button{
                     background-color: transparent;
-                    border: 1px solid $inputborder;
-                    border-radius: 0;
+                    border: 1px solid $BaseLow;
+                    border-radius: 2px;
                     &:hover{
-                        border-color: $inputborderhover;
+                        background-color: $ListLow;
+                        border-color: $ListLow;
                     }
                 }
             }
-        }
-        // Auto detect accounts toggle label
-        div[class^="accountList"] ~ div > div > h3{
-            color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
         }
         // Connection
         div[class^="connection-"]{
@@ -84,81 +77,26 @@
 
         // Games
         // Now playing card
-        .user-settings-games{
+        .activeGame-14JI7o{
             // No game detected
-            .not-detected{
+            &.notDetected-33MY4s{
                 background-color: #101010;
                 border-radius: 0;
-                .game-name{
+                .gameName-1RiWHm{
                     color: #FFF;
-                    font-size: $fsui;
-                    font-weight: normal;
+                    @include FontBody;
                 }
-                .last-played{
+                .lastPlayed-3bQ7Bo{
                     display: none;
                 }
             }
             // Game Detected
-            .now-playing{
+            .nowPlaying-284llR{
                 padding: 20px;
                 border-radius: 0;
-                input{
-                    &:hover{
-                        background-color: transparent;
-                        border-color: $inputborderhover;
-                    }
-                    &:focus{
-                        background-color: #FFF;
-                        border-color: $Accent;
-                        color: #000;
-                    }
+                .lastPlayed-3bQ7Bo{
+                    @include FontBody;
                 }
-                .last-played{
-                    margin-top: 8px;
-                    color: #FFF;
-                    font-weight: normal;
-                    line-height: 1.33333;
-                }
-            }
-            .game-name-input{
-                margin: 0;
-            }
-            // "Added Games"
-            .games-list h5{
-                margin-bottom: 12px;
-            }
-            // List of games
-            .game{
-                padding: 20px;
-                .overlay-status-text{
-                    color: #FFF;
-                    font-size: $fsui;
-                    text-transform: none;
-                }
-                .remove-game{
-                    top: 4px;
-                    right: 4px;
-                    background-color: transparent;
-                    box-shadow: none;
-                    filter: grayscale(100%) brightness(200%);
-                }
-                .last-played{
-                    margin-top: 8px;
-                    color: #FFF;
-                    font-weight: normal;
-                    line-height: 1.33333;
-                }
-            }
-            .now-playing-add{
-                color: #FFF;
-                font-size: $fsui;
-                button{
-                    padding-left: 4px;
-                }
-            }
-            // Display games as status message toggle label
-            .now-playing-add ~ div > div > h3{
-                font-weight: normal;
             }
         }
 
@@ -185,18 +123,18 @@
                 height: 32px;
                 margin-top: 12px;
                 padding: 7px 12px 10px;
-                border: 2px solid transparent;
-                border-radius: 0;
+                border: 0;
+                border-radius: 2px;
                 font-size: 0;
-                font-weight: $fwui;
+                font-weight: 400;
                 line-height: 1;
                 text-transform: none;
                 &:hover{
-                    border-color: $inputborder;
+                    background-color: $ListLow;
                 }
                 &::before{
                     content: "Go to Streamer Mode settings";
-                    font-size: $fsui;
+                    @include FontBody;
                 }
             }
         }
@@ -208,7 +146,7 @@
         div[class^="side"]{
             div[class^="header"]{
                 color: #FFF;
-                font-size: $fsui;
+                @include FontBody;
                 text-transform: none;
             }
             div[class*="item"]{
@@ -236,19 +174,9 @@
         }
 
         // Members
-        .guild-settings-members-member .tag{
-            color: #FFF;
-            font-size: $fsui;
-            line-height: $lh;
-        }
-        .role-wrapper{
-            li[class^="role-"]{
-                border-width: 2px;
-            }
-            button[class^="addButton"]{
-                border: 2px solid #FFF;
-                color: #FFF;
-            }
+        .role-2irmRk{
+            border-width: 2px;
+            @include FontCaption;
         }
 
         // UI COMMONS
@@ -257,7 +185,7 @@
             background-color: transparent;
             padding: 0;
             color: #FF0;
-            font-size: $fsui;
+            @include FontBody;
             line-height: 1;
         }
 
@@ -267,7 +195,7 @@
             border: 0;
             border-radius: 0;
             h5{
-                font-size: $fsui;
+                @include FontBody;
             }
             div[class*="desc"]{
                 color: #FFF;
@@ -278,8 +206,7 @@
         div[class^="image-"] ~ div{
             h4{
                 color: #FFF;
-                font-size: $fsheader;
-                font-weight: $fwheader;
+                @include FontSubtitle;
                 text-transform: none;
                 ~ div[class^="text-"]{
                     color: #FFF;
@@ -288,33 +215,16 @@
         }
 
         // Save alert
-        .notice-region{
+        .noticeRegion-1YviSH{
             div[class^="container-"]{
                 border-radius: 0;
                 div[class^="message-"]{
-                    font-size: $fsui;
-                    font-weight: $fwui;
+                    @include FontBody;
                 }
             }
             button{
                 padding: 8px 12px 10px;
             }
-        }
-
-        // Server settings remove emoji
-        // Server settings revoke invite
-        .emoji-remove,
-        .revoke-invite{
-            top: 4px;
-            right: 4px;
-            background-color: transparent;
-            box-shadow: none;
-            filter: grayscale(100%) brightness(200%);
-        }
-
-         // Server settings emoji alias name
-        .emoji-alias-placeholder{
-            padding-top: 11px;
         }
     }
 }

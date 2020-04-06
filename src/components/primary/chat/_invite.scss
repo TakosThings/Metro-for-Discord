@@ -1,7 +1,7 @@
 .theme-dark .wrapper-35wsBm{
-    background-color: #000;
+    background-color: $ChromeMedium;
     border: 0;
-    border-radius: 0;
+    border-radius: 2px;
 
     // YOU'VE BEEN INVITED header
     h5[class*="header-"]{
@@ -16,7 +16,7 @@
     }
     div[class^="guildIconExpired"]{
         position: relative;
-        background-color: $alert;
+        background-color: rgba($color: $alert, $alpha: 0.6);
         background-image: none;
         border-radius: 50%;
     }
@@ -36,7 +36,7 @@
         font-size: $fsui;
         font-weight: $fwui;
     }
-    div[class^="guildNameExpired"]{
+    div[class^="inviteDestinationExpired-"]{
         color: $alert;
     }
 
@@ -67,7 +67,7 @@
 
     //Button
     button{
-        height: 36px;
+        height: 32px;
     }
     button svg{
         display: none;

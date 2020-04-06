@@ -1,7 +1,7 @@
 .theme-dark .embed-IeVjo6{
     border-radius: 0;
     &.embedFull-2tM8--{
-        background-color: $b1;
+        background-color: $ChromeMedium;
         border-left: 4px solid #000;
     }
 
@@ -20,7 +20,7 @@
                 &::before{
                     content: "GIF";
                     color: #FFF;
-                    font-size: $fschat;
+                    @include FontCaption;
                     padding: 4px;
                     background-color: #000;
                 }
@@ -46,14 +46,14 @@
 
 // Audio
 .theme-dark .wrapperAudio-1jDe0Q{
-    background-color: $b1;
+    background-color: $ChromeMedium;
     border: 0;
     border-radius: 0;
     // File type icon
     .audioMetadata-3zOuGv{
         &::before{
             content: "\EC4F";
-            font-family: $icon;
+            @include FontIcon;
             font-size: 24px;
             text-align: center;
             line-height: 36px;
@@ -63,7 +63,7 @@
     .metadataDownload-1fk90V{
         &::before{
             content: "\E896";
-            font-family: $icon;
+            @include FontIcon;
             font-size: 24px;
             text-align: center;
             line-height: 36px;
@@ -92,9 +92,8 @@
         display: none;
     }
     div[class^="durationTimeWrapper"] span{
-        font-family: $font;
-        font-size: $fschat;
-        font-weight: $fwui;
+        @include FontNormal;
+        @include FontCaption;
     }
     // Scrubbing bar
     div[class^="mediaBarInteraction"]{
@@ -122,7 +121,7 @@
                 height: 12px;
                 margin-top: -8px;
                 margin-right: -8px;
-                background-color: $b1;
+                background-color: $ChromeMedium;
                 border: 2px solid $Accent;
                 border-radius: 50%;
                 transform: none;
@@ -149,45 +148,25 @@
 .accessory,
 div[class^="modal-"]{
     div[class^="invite-"]{
-        background-color: darken($color: $b2, $amount: 1);
+        background-color: $ChromeMedium;
         border: 0;
         border-left: 3px solid #000;
         border-radius: 0;
         div[class^="header-"]{
             color: #FFF;
-            font-size: $fsui;
-            font-weight: $fwui;
+            @include FontBody;
             text-transform: none;
         }
         // Song name, Artist, Album
         div[class^="partyStatus"]{
             margin-top: 12px;
-            font-size: $fschat;
+            @include FontCaption;
             div[class^="details-"]{
-                font-size: $fschat;
+                @include FontCaption;
             }
             div[class^="state"]{
-                font-size: $fschat;
+                @include FontCaption;
             }
-        }
-        // Join the party button
-        button[class*="lookFilled"][class*="colorGreen"]{
-            height: 36px;
-            background-color: transparent;
-            border: 1px solid $inputborder;
-            position: relative;
-            &:hover{
-                border-color: $inputborderhover;
-            }
-        }
-        // Disabled button
-        button[class*="lookFilled"][class*="colorGrey"]{
-            height: 36px;
-            background-color: transparent;
-            border: 1px solid $inputborder;
-            border-radius: 0;
-            font-size: $fsui;
-            font-weight: $fwui;
         }
 
         // Poster avatar/People listening
@@ -216,7 +195,7 @@ div[class^="modal-"]{
     max-width: 458px;
     height: 60px;
     position: relative;
-    background-color: $b1;
+    background-color: $ChromeMedium;
     border: 0;
     border-radius: 0;
     // Hide default image
@@ -230,7 +209,7 @@ div[class^="modal-"]{
             padding: 8px;
             background-color: $Accent;
             color: #FFF;
-            font-family: $icon;
+            @include FontIcon;
             font-size: 24px;
         }
     }
@@ -245,14 +224,14 @@ div[class^="modal-"]{
     .filenameLinkWrapper-1-14c5,
     .filename-3eBB_v{
         color: #FFF;
-        font-size: $fsui;
+        @include FontBody;
         opacity: 1;
         a{
             color: var(--link);
         }
     }
     .metadata-3WGS0M{
-        color: #CCC;
+        color: $BaseLow;
     }
 
     .progress-3Rbvu0{
