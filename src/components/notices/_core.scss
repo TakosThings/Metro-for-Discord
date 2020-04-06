@@ -4,8 +4,8 @@
     line-height: 32px; // Override
     button{
         padding: 0 12px;
-        border: 2px solid $inputborder;
-        border-radius: 0;
+        border: 1px solid $BaseMedium;
+        border-radius: 2px;
         @include FontBody;
     }
     .dismiss-SCAH9H{

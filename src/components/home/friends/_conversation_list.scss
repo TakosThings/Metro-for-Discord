@@ -21,7 +21,7 @@
     .channel-2QD9_O{
         max-width: 100%;
         margin: 0;
-        color: #FFF;
+        color: $BaseHigh;
         &:first-of-type{
             margin-top: -8px;
         }
@@ -40,8 +40,7 @@
         }
 
         .name-uJV0GL{
-            font-size: $fsui;
-            font-weight: $fwui;
+            @include FontBody;
         }
 
         // State

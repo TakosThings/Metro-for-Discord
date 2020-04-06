@@ -7,9 +7,8 @@
 
     // Header
     h1{
-        color: #FFF;
-        font-size: $fsheader;
-        font-weight: $fwheader;
+        color: $BaseHigh;
+        @include FontSubtitle;
         text-transform: none;
     }
 

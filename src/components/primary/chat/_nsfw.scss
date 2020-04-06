@@ -6,18 +6,14 @@
 
     // Title
     div[class^="title-"]{
-        font-size: $fsheader;
-        font-weight: $fwheader;
-        line-height: $lh;
+        @include FontSubtitle;
         text-align: left;
     }
 
     // Description
     div[class^="description-"]{
-        color: #FFF;
-        font-size: $fsui;
-        font-weight: $fwui;
-        line-height: $lh;
+        color: $BaseHigh;
+        @include FontBody;
         text-align: left;
     }
 

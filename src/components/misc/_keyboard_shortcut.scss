@@ -1,6 +1,6 @@
 .theme-dark div[class^="keybindShortcut-"]{
     color: #FFF;
-    font-family: $mono;
+    @include FontMonospace;
     font-weight: normal;
     span{
         background-color: transparent;
@@ -11,6 +11,6 @@
         g{
             fill: #FFF !important;
         }
-        
+
     }
 }

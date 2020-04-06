@@ -65,7 +65,7 @@
                 content: "\E70D";
                 position: absolute;
                 left: 12px;
-                font-family: $icon;
+                @include FontIcon;
                 font-size: 12px;
             }
             &:hover{
