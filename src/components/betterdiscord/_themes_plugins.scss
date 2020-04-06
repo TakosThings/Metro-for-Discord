@@ -1,22 +1,22 @@
 // Open folder button
 .bd-pfbtn{
-    top: -50px;
-    height: 36px;
-    padding: 9px 12px 10px;
-    background-color: $Accent;
-    border: 1px solid transparent;
-    border-radius: 0;
+    height: 32px;
+    padding: 0 10px;
+    background-color: $BaseLow;
+    border: 0;
+    border-radius: 2px;
+    @include FontBody;
     &:hover{
-        border-color: $inputborder;
+        border-color: $ListLow;
     }
     &:focus{
-        border-color: $inputborderhover;
+        border-color: $BaseMediumLow;
     }
 }
 
 .ui-standard-sidebar-view .bda-slist li,
 .ui-standard-sidebar-view .bda-slist li:nth-child(odd){
-    background-color: $b1;
+    background-color: $ChromeMediumLow;
     border: 0;
 }
 .ui-standard-sidebar-view .bda-slist li{
@@ -27,8 +27,7 @@
 .bda-slist .bda-name{
     max-height: initial;
     color: #FFF;
-    font-size: $fsui;
-    font-weight: $fwui;
+    @include FontBody;
 }
 
 .ui-standard-sidebar-view .bda-slist .bda-description{
@@ -37,15 +36,16 @@
 }
 
 .ui-standard-sidebar-view .bda-slist .bda-right button{
-    height: 36px;
-    margin: 0;
-    background-color: $Accent;
-    border: 1px solid transparent;
-    border-radius: 0;
+    height: 32px;
+    padding: 0 10px;
+    background-color: $BaseLow;
+    border: 0;
+    border-radius: 2px;
+    @include FontBody;
     &:hover{
-        border-color: $inputborder;
+        border-color: $ListLow;
     }
     &:focus{
-        border-color: $inputborderhover;
+        border-color: $BaseMediumLow;
     }
 }
