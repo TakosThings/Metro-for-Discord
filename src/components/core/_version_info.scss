@@ -28,6 +28,7 @@
         white-space: pre;
         animation: 10s toast cubic-bezier(0.1, 0.9, 0.2, 1);
         transform: translateX(380px);
+        pointer-events: none;
     }
 }
 
