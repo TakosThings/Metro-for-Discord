@@ -56,3 +56,9 @@
 @mixin FontIcon{
     font-family: "Segoe MDL2 Assets";
 }
+@mixin FontNormal{
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+@mixin FontMonospace {
+    font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+}
