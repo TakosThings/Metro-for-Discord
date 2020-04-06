@@ -12,14 +12,8 @@
 
 // Hide settings button tooltip
 .theme-dark .layer-v9HyYc{
-    &[style*="left: -23.0014px"],    // 110%
-    &[style*="left: -23px;"],        // 100% - Default, 125%, 200
-    &[style*="left: -22.5069px;"],   //  90%
-    &[style*="left: -22.0059px;"],   //  80%
-    &[style*="left: -22.5px;"],      //  75%, 150%, 175%
-    &[style*="left: -22.5028px;"],   //  67%
-    &[style*="left: -22px;"]{        //  50%
+    &[style*="left: -25px;"],       //  100%, 110%, 125%, 150%, 175%
+    &[style*="left: -26px;"]{       //  50%, 67%, 75%, 80%, 90%, 200%
         display: none;
     }
 }
-
