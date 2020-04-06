@@ -1,5 +1,5 @@
 .theme-dark .pageWrapper-1PgVDX{
-    background-color: $b2;
+    background-color: $ChromeMediumLow;
     // Remove background image
     .bg-AYqtMd{
         display: none;
@@ -15,14 +15,12 @@
         margin: 0;
         // Header
         .mainHeader-1i17pL{
-            font-size: 24px;
-            font-weight: $fwheader;
-            text-align-last: left;
+            @include FontSubtitle;
+            text-align: left;
         }
 
         // Header/search
         .search-JQJ-3r{
-            align-items: baseline;
             justify-content: normal;
             margin-bottom: 42px;
             // Search
@@ -32,7 +30,7 @@
                 box-shadow: none;
                 border-radius: 0;
                 input{ // Hover and focus states don't work if this isn't here
-                    border-width: 2px;
+                    border-width: 1px;
                     border-style: solid;
                 }
             }
@@ -52,20 +50,18 @@
             height: 32px;
             .css-1wqqa50-container{
                 background-color: transparent;
-                border: 2px solid $inputborder;
-                border-radius: 0;
+                border: 1px solid $BaseMedium;
+                border-radius: 2px;
                 &:hover{
-                    border-color: $inputborderhover;
+                    border-color: $BaseMediumHigh;
                 }
                 .css-ncjuf0-control,
                 .css-5fjw8m-control{
-                    min-height: 28px;
-                    font-size: $fsui;
-                    font-weight: $fwui;
-                    line-height: 1.3;
+                    min-height: 32px;
+                    @include FontBody;
                 }
                 .css-1rckt42-menu{
-                    background-color: $b3;
+                    background-color: $ChromeMedium;
                     border-radius: 0;
                     box-shadow: none;
                 }
@@ -84,13 +80,12 @@
             }
             // Header
             .emptySearchTitle-2zDhhZ{
-                font-size: $fsheader;
-                font-weight: $fwheader;
-                text-align-last: left;
+                @include FontSubtitle;
+                text-align: left;
             }
             // Error description
             .emptySearchDescription-2AmfE4{
-                font-size: $fsui;
+                @include FontBody;
                 text-align: left;
             }
         }
@@ -98,16 +93,15 @@
         // Section
         section{
             h3{
-                font-size: $fsheader;
-                font-weight: $fwheader;
+                @include FontSubtitle;
             }
-            
+
             // Guilds
             .guildList-1ItbxP{
                 .guildCard-2arfcG{
                     .card-3DjzTQ{
                         min-height: 60px;
-                        background-color: $b3;
+                        background-color: $ChromeMedium;
                         border-radius: 0;
                         &:hover{
                             box-shadow: none;
@@ -115,6 +109,7 @@
                         }
                     }
                     .cardHeader-Int16m{
+                        margin-bottom: 0;
                         flex: 0 0 83px;
                         .guildIcon-3W0pfo{
                             top: 16px;
@@ -127,9 +122,8 @@
                     .guildInfo-2wGKIg{
                         padding: 16px;
                         .description-2QALGo{
-                            color: #FFF;
-                            font-size: $fsui;
-                            line-height: $lh;
+                            color: $BaseHigh;
+                            @include FontBody;
                         }
                     }
                 }
