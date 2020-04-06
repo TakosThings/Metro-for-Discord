@@ -33,8 +33,7 @@
 
     // Server name
     div[class^="guildName"]{
-        font-size: $fsui;
-        font-weight: $fwui;
+        @include FontBody;
     }
     div[class^="inviteDestinationExpired-"]{
         color: $alert;

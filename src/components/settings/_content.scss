@@ -50,8 +50,7 @@
                 border: 0;
                 border-radius: 0;
                 div[class*="connectionAccountLabel"]{
-                    font-size: $fsui;
-                    line-height: $lh;
+                    @include FontBody;
                 }
                 div[class^="description-"]{
                     display: none;
