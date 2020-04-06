@@ -1,18 +1,21 @@
 // Everything
-body, input, textarea, button{
-    font-family: $font;
+body, button, span{
+    @include FontNormal;
 }
 #app-mount{
-    background-color: #000;
+    background-color: $ChromeBlackHigh;
 }
 
 // Code block and inline code
 .markup-2BOw-j pre,
 .markup-2BOw-j code.inline{
-    font-family: $mono;
+    @include FontMonospace
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder{
-    font-family: $font;
+// Form elements
+::-webkit-input-placeholder,
+input,
+select,
+textarea{
+    @include FontNormal;
 }
