@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.2
+* **Fixes** (2)
+  * Recent Mentions button missing icon
+  * Recent Mentions popout position
+
 #### 3.14.1a
 * Only backend changes, no updates
 
