@@ -74,4 +74,38 @@
     .footer-1kmXd4{
         display: none;
     }
+
+
+    // New design for recent mentions 2020-04
+    // Header
+    .topPill-30KHOu{
+        .item-PXvHYJ{
+            @include FontSubtitle;
+            &.active-1MbGPa{
+                background-color: transparent;
+            }
+        }
+    }
+
+    // Cards
+    .container-3iAQ-0{
+        .channelHeader-3Gd2xq{
+            background-color: $ChromeMediumLow;
+            border-radius: 2px 2px 0 0;
+            padding-right: 12px;
+        }
+        // Jump/remove button
+        .button-1-5Aqk{
+            background-color: $BaseLow;
+            color: $BaseHigh;
+            &:hover{
+                background-color: $ListLow;
+            }
+        }
+
+        .messageContainer-gbhlwo{
+            background-color: $ChromeMedium;
+            border-radius: 0 0 2px 2px;
+        }
+    }
 }
