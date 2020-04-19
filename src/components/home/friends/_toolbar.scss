@@ -84,9 +84,7 @@
 
     // Remove help button
     .anchor-3Z-8Bb{
-        ::before{
-            content: "\E897";
-        }
+        display: none;
     }
     div[aria-label="New Group DM"]::before{
         content: "\E902";
