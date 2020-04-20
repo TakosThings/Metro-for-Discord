@@ -18,7 +18,7 @@
         height: 32px;
         padding: 0 32px 0 10px;
         background-color: $AltMediumLow;
-        border: 2px solid $BaseMedium;
+        border: 1px solid $BaseMedium;
         border-radius: 2px;
         color: $BaseHigh;
         @include FontBody;
@@ -31,6 +31,7 @@
         }
         &:focus{
             background-color: $ChromeWhite;
+            border-width: 2px;
             border-color: $Accent;
             color: $ChromeBlackHigh;
             &::-webkit-input-placeholder{
@@ -49,7 +50,7 @@
         width: 32px;
         height: 32px;
         background-color: $AltMediumLow;
-        border: 2px solid $BaseMedium;
+        border: 1px solid $BaseMedium;
         border-radius: 2px;
         box-sizing: border-box;
         &:hover{
@@ -57,18 +58,19 @@
             border-color: $BaseMediumHigh;
         }
         .item-16cXuq{
-            width: calc(32px - 4px);
-            height: calc(32px - 4px);
+            width: calc(32px - 2px);
+            height: calc(32px - 2px);
             padding: 0;
             background-size: 16px;
         }
         // Menu open
         .popout-2nUePc{
-            height: calc(28px * 6) !important;
-            margin-top: -2px;
-            margin-left: -2px;
+            width: 32px;
+            height: calc(30px * 6) !important;
+            margin-top: -1px;
+            margin-left: -1px;
             background-color: #000;
-            border: 2px solid $Accent;
+            border: 1px solid $Accent;
             border-radius: 2px;
             .item-16cXuq:hover{
                 background-color: $ListLow;
