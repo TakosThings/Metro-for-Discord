@@ -66,7 +66,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.2";
+  content: "Metro for Discord \aVersion 3.14.3";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -2794,7 +2794,7 @@ html[lang=ko] .app-2rEoOp::after {
   height: 32px;
   padding: 0 32px 0 10px;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   color: white;
   font-size: 14px;
@@ -2810,6 +2810,7 @@ html[lang=ko] .app-2rEoOp::after {
 }
 .theme-dark .emojiPicker-3m1S-j .input-1Rv96N:focus {
   background-color: white;
+  border-width: 2px;
   border-color: rgba(var(--accent), 1);
   color: black;
 }
@@ -2824,7 +2825,7 @@ html[lang=ko] .app-2rEoOp::after {
   width: 32px;
   height: 32px;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   box-sizing: border-box;
 }
@@ -2833,17 +2834,18 @@ html[lang=ko] .app-2rEoOp::after {
   border-color: rgba(255, 255, 255, 0.8);
 }
 .theme-dark .emojiPicker-3m1S-j .diversitySelector-tmmMv0 .item-16cXuq {
-  width: calc(32px - 4px);
-  height: calc(32px - 4px);
+  width: calc(32px - 2px);
+  height: calc(32px - 2px);
   padding: 0;
   background-size: 16px;
 }
 .theme-dark .emojiPicker-3m1S-j .diversitySelector-tmmMv0 .popout-2nUePc {
-  height: calc(28px * 6) !important;
-  margin-top: -2px;
-  margin-left: -2px;
+  width: 32px;
+  height: calc(30px * 6) !important;
+  margin-top: -1px;
+  margin-left: -1px;
   background-color: #000;
-  border: 2px solid rgba(var(--accent), 1);
+  border: 1px solid rgba(var(--accent), 1);
   border-radius: 2px;
 }
 .theme-dark .emojiPicker-3m1S-j .diversitySelector-tmmMv0 .popout-2nUePc .item-16cXuq:hover {
@@ -2861,6 +2863,34 @@ html[lang=ko] .app-2rEoOp::after {
   background-color: #171717;
 }
 .theme-dark .emojiPicker-3m1S-j .infoBar-U6oBFk .infoBarEmojiName-3t926M {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.theme-dark .emojiPicker-3m1S-j .noSearchResultsContainer-3Dee0U .sadImage-2ph8SI {
+  display: none;
+}
+.theme-dark .emojiPicker-3m1S-j .noSearchResultsContainer-3Dee0U .wrapper-1GJGVj {
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.theme-dark .emojiPicker-3m1S-j .premiumPromo-yVfLiA {
+  background-color: #2b2b2b;
+}
+.theme-dark .emojiPicker-3m1S-j .premiumPromo-yVfLiA .premiumPromoImage-tGTlKV {
+  display: none;
+}
+.theme-dark .emojiPicker-3m1S-j .premiumPromo-yVfLiA .premiumPromoTitle-1SQQfF {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-transform: none;
+}
+.theme-dark .emojiPicker-3m1S-j .premiumPromo-yVfLiA .premiumPromoDescription-2Mn515 {
+  color: white;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -4023,7 +4053,7 @@ html[lang=ko] .app-2rEoOp::after {
   content: "";
   color: #CCC;
   font-family: "Segoe MDL2 Assets";
-  font-size: 20px;
+  font-size: 16px;
 }
 .form-2fGMdU .channelTextArea-rNsIhG .attachWrapper-2TRKBi button:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -4071,7 +4101,7 @@ html[lang=ko] .app-2rEoOp::after {
   content: "";
   color: #CCC;
   font-family: "Segoe MDL2 Assets";
-  font-size: 20px;
+  font-size: 16px;
 }
 .form-2fGMdU .channelTextArea-rNsIhG .buttons-3JBrkn .emojiButton-3uL3Aw:hover {
   background-color: rgba(255, 255, 255, 0.1);
@@ -4596,13 +4626,21 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .wrapper-1Rf91z .wrapper-1BJsBx svg {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 24px;
+  background-size: 18px;
 }
 .theme-dark .wrapper-1Rf91z .wrapper-1BJsBx svg path {
   display: none;
 }
 .theme-dark .wrapper-1Rf91z .listItemWrapper-3X98Pc:active {
   transform: none;
+}
+.theme-dark .wrapper-1Rf91z .circleIcon-LvPL6c {
+  width: 18px;
+  height: 18px;
+}
+.theme-dark .wrapper-1Rf91z .circleIconButton-jET_ig[aria-label="Server Discovery"] svg {
+  width: 18px;
+  height: 18px;
 }
 .theme-dark .wrapper-1Rf91z .guildSeparator-3s64Iy {
   display: none;
@@ -4724,7 +4762,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .button-14-BFJ::before {
   font-family: "Segoe MDL2 Assets";
-  font-size: 18px;
+  font-size: 16px;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .button-14-BFJ .contents-18-Yxp {
   display: none;
@@ -4795,7 +4833,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button::before {
   font-family: "Segoe MDL2 Assets";
-  font-size: 18px;
+  font-size: 16px;
 }
 .theme-dark .sidebar-2K8pFh .panel-24C3ux .actions-aUdUfC button .contents-18-Yxp {
   display: none;
@@ -5102,7 +5140,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .sidebar-2K8pFh .container-1giJp5 .button-14-BFJ::before {
   font-family: "Segoe MDL2 Assets";
-  font-size: 18px;
+  font-size: 16px;
 }
 .theme-dark .sidebar-2K8pFh .container-1giJp5 .button-14-BFJ .contents-18-Yxp {
   display: none;
@@ -5113,9 +5151,8 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label=Disconnect]::before {
   content: "";
 }
-.theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label^="Go Live"]::before,
-.theme-dark .sidebar-2K8pFh .container-1giJp5 button:disabled::before {
-  content: "";
+.theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label^="Noise Suppression powered by Krisp"]::before {
+  content: "";
 }
 .theme-dark .sidebar-2K8pFh .container-1giJp5 button[aria-label^="Change Screen"]::before {
   content: "";
