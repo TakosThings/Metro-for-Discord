@@ -94,6 +94,21 @@
         }
     }
 
+    // Premium promo
+    .premiumPromo-yVfLiA{
+        background-color: $ChromeMediumLow;
+        .premiumPromoImage-tGTlKV{
+            display: none;
+        }
+        .premiumPromoTitle-1SQQfF{
+            @include FontSubtitle;
+        }
+        .premiumPromoDescription-2Mn515{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
 
     // Categories
     .categories-1feg4n{
