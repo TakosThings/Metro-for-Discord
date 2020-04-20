@@ -31,7 +31,7 @@
                     content: "\E898";
                     color: #CCC;
                     @include FontIcon;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
                 &:hover{
                     background-color: $ListLow;
@@ -91,7 +91,7 @@
                     content: "\E76E";
                     color: #CCC;
                     @include FontIcon;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
                 &:hover{
                     background-color: $ListLow;
