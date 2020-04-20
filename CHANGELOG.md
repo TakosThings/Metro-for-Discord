@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.3
+* **Enhancements**
+  * Reduce sizes of some icons in the guilds and channel list to match to other icons
+  * Add icon for Noise Suppression button in RTC controls
+* **Fixes**
+  * Emoji picker search box had incorrectly sized borders
+  * Emoji picker Nitro promo overlay
+  * Emoji picker No Results text
+* **Known Issues**
+  * The Noise Suppression button icon may disappear when the Krisp popout is open. This is Discord's fault.
+
 #### 3.14.2
 * **Fixes** (2)
   * Recent Mentions button missing icon
