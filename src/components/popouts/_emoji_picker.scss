@@ -94,6 +94,17 @@
         }
     }
 
+    // No results
+    .noSearchResultsContainer-3Dee0U{
+        .sadImage-2ph8SI{
+            display: none;
+        }
+        .wrapper-1GJGVj{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+    }
+
     // Premium promo
     .premiumPromo-yVfLiA{
         background-color: $ChromeMediumLow;
