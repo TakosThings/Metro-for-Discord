@@ -68,7 +68,7 @@
         svg{
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 24px;
+            background-size: 18px;
             path{
                 display: none;
             }
@@ -77,6 +77,18 @@
     // Stop home :active transform
     .listItemWrapper-3X98Pc:active{
         transform: none;
+    }
+
+    // Add server/Server Discovery icons
+    .circleIcon-LvPL6c{
+        width: 18px;
+        height: 18px;
+    }
+    .circleIconButton-jET_ig[aria-label="Server Discovery"]{
+        svg{
+            width: 18px;
+            height: 18px;
+        }
     }
 
     // Separator
