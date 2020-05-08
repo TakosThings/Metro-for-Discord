@@ -92,8 +92,8 @@
             &:first-child{
                 margin-left: 0;
             }
-            &[style^="border-color: rgb(255, 255, 255)"]{
-                border-color: $Accent !important;
+            &.selected-3s45Ha{
+                border-color: $Accent;
             }
         }
     }
