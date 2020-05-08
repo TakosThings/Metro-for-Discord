@@ -82,9 +82,8 @@
         }
     }
 
-    // Remove help button
-    .anchor-3Z-8Bb{
-        display: none;
+    div[aria-label="Help"]::before{
+        content: "\E897";
     }
     div[aria-label="New Group DM"]::before{
         content: "\E902";
