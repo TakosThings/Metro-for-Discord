@@ -203,7 +203,7 @@
             padding: 10px;
             height: 82px !important;
             background-color: $AltMediumLow;
-            border: 2px solid $BaseMedium;
+            border: 1px solid $BaseMedium;
             border-radius: 2px;
             color: $BaseHigh;
             @include FontBody;
@@ -216,6 +216,7 @@
             }
             &:focus{
                 background-color: $ChromeWhite;
+                border-width: 2px;
                 border-color: $Accent;
                 color: $ChromeBlackHigh;
                 &::-webkit-input-placeholder{
@@ -230,7 +231,7 @@
         height: 32px;
         padding: 0 10px;
         background-color: $AltMediumLow;
-        border: 2px solid $BaseMedium;
+        border: 1px solid $BaseMedium;
         border-radius: 2px;
         color: $BaseHigh;
         @include FontBody;
@@ -243,6 +244,7 @@
         }
         &:focus{
             background-color: $ChromeWhite;
+            border-width: 2px;
             border-color: $Accent;
             color: $ChromeBlackHigh;
             &::-webkit-input-placeholder{
