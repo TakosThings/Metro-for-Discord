@@ -4,11 +4,15 @@
     background-size: cover;
     &::before{
         content: "";
-        width: 100%;
+        width: 326px;
         height: 100%;
         position: absolute;
         background-color: rgba(#2d2d2d, 0.7);
         background-repeat: repeat;
         backdrop-filter: blur(45px) saturate(125%);
     }
+}
+// Make 100% wide when load screen is shown
+.container-16j22k::before{
+    width: 100%;
 }
