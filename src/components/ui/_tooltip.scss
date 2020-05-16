@@ -1,5 +1,5 @@
 .theme-dark .tooltip-2QfLtc{
-    padding: 6px 8px 6px;
+    padding: 6px 12px;
     background-color: $ChromeMediumLow;
     border: 1px solid $BorderTransient;
     border-radius: 2px;
@@ -7,6 +7,9 @@
     @include FontBody;
     .tooltipPointer-3ZfirK{
         display: none;
+    }
+    .tooltipContent-bqVLWK{
+        padding: 0;
     }
 }
 
