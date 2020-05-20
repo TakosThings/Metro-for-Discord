@@ -1,131 +1,164 @@
-.theme-dark .pageWrapper-1PgVDX{
-    background-color: $ChromeMediumLow;
-    // Remove background image
-    .bg-AYqtMd{
-        display: none;
-    }
-
-    // Less head, please
-    .pageHeader-3615mp{
-        height: 32px;
-    }
-
-    // Main content
-    .body-2lagau{
-        margin: 0;
+.theme-dark .content-98HsJk{
+    // Sidebar
+    .sidebar-2K8pFh{
         // Header
-        .mainHeader-1i17pL{
-            @include FontSubtitle;
-            text-align: left;
+        .discoverHeader-1TWTqG{
+            margin: 0 12px;
+            @include FontBase;
+            line-height: 40px;
         }
 
-        // Header/search
-        .search-JQJ-3r{
-            justify-content: normal;
-            margin-bottom: 42px;
-            // Search
-            .searchBox-3Y2Vi7{
-                padding-right: 0;
-                background-color: transparent;
-                box-shadow: none;
+        .container-2Pjhx-{
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            color: $BaseHigh;
+            &:hover{
+                background-color: $ListLow;
+            }
+            &.selectedCategoryItem-3X8ujp{
                 border-radius: 0;
-                input{ // Hover and focus states don't work if this isn't here
-                    border-width: 1px;
-                    border-style: solid;
+                .itemInner-3gVXMG{
+                    background-color: $ListAccentLow;
                 }
             }
-            // Remove search button
-            .searchIcon-1a1-yA,
-            .clear-U3WkKp{
-                display: none;
+
+            .layout-2DM8Md{
+                padding: 4px 8px;
+                border-radius: 0;
             }
-            // Remove 'help' text
-            .searchHelpText-19imBp{
-                display: none;
+
+            // List item name
+            .name-uJV0GL{
+                @include FontBody;
+            }
+        }
+    }
+
+    // Main
+    .pageWrapper-1PgVDX{
+        background-color: $ChromeMediumLow;
+
+        // Remove max-width
+        .viewWrapper-8-8h4T{
+            max-width: none;
+        }
+
+        // Search
+        .searchHeader-2I26nG{
+            margin: -40px -40px 32px -40px;
+            .headerImage-3X1tyY{
+                border-radius: 0;
+                clip-path: inset(8px);
+            }
+            .search-1iTphC{
+                margin: auto;
             }
         }
 
-        // Langauge dropdown
-        .languageSelector-1R8fPE{
+
+        .searchBox-3Y2Vi7{
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            box-shadow: none;
+            input{
+                padding-right: 32px;
+                color: $BaseHigh;
+                &::-webkit-input-placeholder{
+                    color: $BaseMedium;
+                }
+                &:hover{
+                    color: $BaseHigh;
+                    &::-webkit-input-placeholder{
+                        color: $BaseMedium;
+                    }
+                }
+                &:focus{
+                    color: $ChromeBlackHigh;
+                    &::-webkit-input-placeholder{
+                        color: $AltMedium;
+                    }
+                }
+            }
+            // Remove "press enter to search" text
+            .cta-BiH9zX{
+                display: none;
+            }
+
+            // Move clear button into search box
+            .clear-U3WkKp{
+                position: absolute;
+                right: 12px;
+                svg{
+                    height: 16px;
+                    color: #FFF;
+                }
+            }
+            .searchBoxInputWrapper-nKncfu:focus-within ~ .clear-U3WkKp{
+                svg{
+                    color: #000;
+                }
+            }
+        }
+
+        // Servers
+        .card-3DjzTQ{
+            background-color: $ChromeMedium;
+            border-radius: 0;
+            .guildInfo-2wGKIg{
+                background-color: $ChromeMedium;
+            }
+        }
+
+        // Search results
+        .categories-1ywIbh{
+            max-width: none;
+            .categoryPill-34fszg{
+                margin-right: 24px;
+                padding: 4px 0;
+                border-radius: 0;
+                &:hover{
+                    background-color: transparent;
+                    .categoryLabel-2G3r2V{
+                        color: $BaseMediumHigh;
+                    }
+                }
+                &.selected-1dONk0{
+                    background-color: transparent;
+                    border-bottom: 2px solid $Accent;
+                    .categoryLabel-2G3r2V{
+                        color: $BaseHigh;
+                    }
+                }
+
+                .categoryLabel-2G3r2V{
+                    color: $BaseMedium;
+                    @include FontBody;
+                }
+            }
+        }
+
+        // Language select dropdown
+        .languageSelector-LEtpHP{
             height: 32px;
-            .css-1wqqa50-container{
+            .css-1pcexqc-container{
                 background-color: transparent;
                 border: 1px solid $BaseMedium;
                 border-radius: 2px;
                 &:hover{
                     border-color: $BaseMediumHigh;
                 }
-                .css-ncjuf0-control,
-                .css-5fjw8m-control{
+                .css-1b86x2o-control,
+                .css-1o55ng5-control{
                     min-height: 32px;
+                    height: 32px;
                     @include FontBody;
                 }
-                .css-1rckt42-menu{
+                .css-123uooi-menu{
                     background-color: $ChromeMedium;
                     border-radius: 0;
                     box-shadow: none;
-                }
-            }
-        }
-
-        // No results
-        .emptySearchResults-1ba__I{
-            width: auto;
-            margin-top: 42px;
-            background-image: none;
-            letter-spacing: normal;
-            // Remove image
-            .emptySearchImage-1qOMLW{
-                display: none;
-            }
-            // Header
-            .emptySearchTitle-2zDhhZ{
-                @include FontSubtitle;
-                text-align: left;
-            }
-            // Error description
-            .emptySearchDescription-2AmfE4{
-                @include FontBody;
-                text-align: left;
-            }
-        }
-
-        // Section
-        section{
-            h3{
-                @include FontSubtitle;
-            }
-
-            // Guilds
-            .guildList-1ItbxP{
-                .guildCard-2arfcG{
-                    .card-3DjzTQ{
-                        min-height: 60px;
-                        background-color: $ChromeMedium;
-                        border-radius: 0;
-                        &:hover{
-                            box-shadow: none;
-                            transform: none;
-                        }
-                    }
-                    .cardHeader-Int16m{
-                        margin-bottom: 0;
-                        flex: 0 0 83px;
-                        .guildIcon-3W0pfo{
-                            top: 16px;
-                            bottom: unset;
-                            svg foreignObject{
-                                mask: none !important;
-                            }
-                        }
-                    }
-                    .guildInfo-2wGKIg{
-                        padding: 16px;
-                        .description-2QALGo{
-                            color: $BaseHigh;
-                            @include FontBody;
-                        }
-                    }
                 }
             }
         }
