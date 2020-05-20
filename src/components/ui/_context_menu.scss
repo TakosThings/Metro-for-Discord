@@ -1,6 +1,5 @@
 .theme-dark .menu-3sdvDG{
     min-width: 240px;
-    max-height: calc(100vh - 32px);
     padding: 8px 0;
     background-color: rgba($color: #2d2d2d, $alpha: .95);
     border: 1px solid $BorderTransient;
@@ -15,6 +14,10 @@
         top: 0;
         left: 0;
         backdrop-filter: blur(10px);
+    }
+
+    .scroller-3BxosC{
+        max-height: calc(100vh - 64px);
     }
 
     // Separators
