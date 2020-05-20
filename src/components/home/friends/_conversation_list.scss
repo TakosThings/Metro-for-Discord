@@ -44,12 +44,15 @@
         }
 
         // State
-        &:hover,
-        &.selected-aXhQR6{
+        &:hover{
             .layout-2DM8Md{
                 background-color: $ListLow;
             }
-
+        }
+        &.selected-aXhQR6{
+            .layout-2DM8Md{
+                background-color: $ListAccentLow;
+            }
         }
     }
 }
