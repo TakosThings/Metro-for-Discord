@@ -56,6 +56,44 @@
         }
     }
 
+    // Go live buttons
+    .actionButtons-14eAc_{
+        width: 48px;
+        height: 24px;
+        position: absolute;
+        bottom: 48px;
+        left: 48px;
+        z-index: 1;
+        margin-top: 0;
+        display: unset;
+        button{
+            min-width: unset;
+            min-height: unset;
+            width: 24px;
+            height: 24px;
+            padding: 0 6px;
+            background-color: transparent;
+            border-radius: 0;
+            font-size: 0;
+            flex: unset;
+            display: inline-block;
+            margin: 0;
+            min-width: unset;
+            &:hover{
+                background-color: $ListLow;
+            }
+            &[aria-label="Camera Unavailable"]{
+                pointer-events: none;
+            }
+            .buttonIcon-Od8mYw{
+                width: 16px;
+                height: 16px;
+                margin-right: 0; // icon position fixes because we're hiding the button text
+                margin-left: -2px;
+            }
+        }
+    }
+
 
     // Buttons
     .button-14-BFJ{
