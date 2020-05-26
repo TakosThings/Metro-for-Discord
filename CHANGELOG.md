@@ -1,15 +1,33 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.4
+* **Enhancements** (2)
+  * Re-write for updated emoji picker
+  * Re-write for updated Server Discovery
+* **Fixes** (9)
+  * User popout inputs had incorrect border widths
+  * User modal textarea had incorrect border width
+  * User modal pivot selected item had incorrect border colour
+  * Link to Discord support site wasn't hidden in toolbar
+  * Implemented a hack to stop the Group DM popout opening half way off the screen when on the Home/Friends screen
+  * A speculative fix to improve performance ~~for people running Pentium 4 CPUs~~
+  * Oversized tooltips
+  * Context menu
+  * Slider grabber position
+* **Notes** (2)
+  * BetterDiscord: Favourite TTV emotes can't be accessed. Refer to #156
+  * Camera/Screen Share buttons should now be visible when connected to a voice channel. You'll find them just above the *Microphone Mute* button. Note that these buttons are smaller than normal as this is intened to be a temporary implementation.
+
 #### 3.14.3
-* **Enhancements**
+* **Enhancements** (2)
   * Reduce sizes of some icons in the guilds and channel list to match to other icons
   * Add icon for Noise Suppression button in RTC controls
-* **Fixes**
+* **Fixes** (3)
   * Emoji picker search box had incorrectly sized borders
   * Emoji picker Nitro promo overlay
   * Emoji picker No Results text
-* **Known Issues**
+* **Known Issues** (1)
   * The Noise Suppression button icon may disappear when the Krisp popout is open. This is Discord's fault.
 
 #### 3.14.2
