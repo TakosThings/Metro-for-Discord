@@ -80,10 +80,9 @@
         .divider-3FBTu8{
             display: none;
         }
-    }
-
-    div[aria-label="Help"]::before{
-        content: "\E897";
+        a[href="https://support.discord.com"]{
+            display: none;
+        }
     }
     div[aria-label="New Group DM"]::before{
         content: "\E902";
