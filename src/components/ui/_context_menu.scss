@@ -28,7 +28,7 @@
 
     // Item
     .item-1tOPte{
-        margin: 0;
+        margin: 0 -4px;
         padding: 0 12px;
         border-radius: 0;
         @include FontBody;
@@ -63,7 +63,7 @@
 
     // Volume slider
     .grabber-3mFHz2{
-        margin-top: -2px;
+        margin-top: -2px !important;
     }
 
     .submenu-2-ysNh{
