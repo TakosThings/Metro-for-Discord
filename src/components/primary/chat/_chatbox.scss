@@ -70,6 +70,15 @@
                 text-decoration: underline;
             }
         }
+        // Code
+        .after_inlineCode-1KfVgj span,  // End inline code marker
+        .before_inlineCode-1G9rTK span, // Start inline code marker
+        .inlineCode-2ngu6Y span,        // Inline code
+        .codeBlockSyntax-2i-tMA span,   // Start/end code block marker
+        .codeBlockLang-O_f4hr span,     // Codeblock language
+        .codeLine-14BKbG span{          // Codeblock code
+            @include FontMonospace;
+        }
 
         // Right buttons
         .buttons-3JBrkn{

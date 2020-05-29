@@ -14,9 +14,9 @@
         overflow-x: hidden;
         &::before{
             content: attr(class);
-            width: calc(100% + 326px);
+            width: calc(100% + 316px);
             display: block;
-            margin: -7px 0 1em -326px;
+            margin: -7px 0 1em -316px;
             padding: 2px 6px 2px 0;
             background-color: #5E5E5E;
             color: #FFF;

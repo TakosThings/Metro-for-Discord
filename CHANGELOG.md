@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.5
+* **Enhancements** (1)
+  * Further improvement for low-end PCs
+    * [Wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Acrylic) has been updated with new changes
+    * Default acrylic background has been changed
+    * Acrylic blur effects are disabled by default. You'll need to edit some options in the CSS file to enable blur for your own background. Check the wiki page for more info.
+    * Added an option to turn off the UI scale transition effect when opening User/Server/Channel Settings
+* **Fixes** (2)
+  * Font in chatbox will change to monospace when editing code
+  * Chatbox code header
+
 #### 3.14.4
 * **Enhancements** (2)
   * Re-write for updated emoji picker

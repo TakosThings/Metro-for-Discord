@@ -1,20 +1,22 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.14.4
+ * @version 3.14.5
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
-/* ################## Metro for Discord ################## */
-/* ## License: CC-BY-NC-SA                              ## */
-/* ## https://github.com/TakosThings                    ## */
-/* ##################### Third Party ##################### */
-/* ## Monokai code highlighting from highlight.js       ## */
-/* ## https://highlightjs.org                           ## */
-/* ## ------------------------------------------------- ## */
-/* ## Some icons by Icons8                              ## */
-/* ## https://icons8.com                                ## */
-/* ####################################################### */
+/*################## Metro for Discord ####################
+## License: CC-BY-NC-SA                                  ##
+## Repo:    https://github.com/TakosThings               ##
+####################### Third Party #######################
+## hljs:    https://highlightjs.org                      ##
+## icons8:  https://icons8.com                           ##
+#########################################################*/
+/*                 Start of user options                 ##
+###########################################################
+##     Check the repo wiki for help on this section      ##
+## https://github.com/TakosThings/Metro-for-Discord/wiki ##
+#########################################################*/
 /* Accent Colour */
 /* Must be provided in RGB format */
 :root {
@@ -23,15 +25,34 @@
   --voice: 0, 204, 106;
 }
 
-/* Change the URL to your own background. See wiki for more info */
+/* Acrylic background */
+/**
+ * Some of these settings are advanced, and may degrade
+ * performance on low-end machines. Consult the wiki before
+ * making changes.
+**/
+/* Change the URL to your own background*/
 .bg-h5JY_x,
 .container-16j22k {
-  background-image: url(https://i.imgur.com/VmDsIgt.jpg);
+  background-image: url(https://i.imgur.com/PoQUA3n.jpg);
 }
 
-/* ####################################################### */
-/* ##                End of user options.               ## */
-/* ####################################################### */
+/* Blur filter */
+/* Uncomment to ENABLE the blur filter if required */
+.bg-h5JY_x::before,
+.container-16j22k::before {
+  /* backdrop-filter: blur(45px) saturate(125%); */
+}
+
+/* Disable scale transition when opening User Settings */
+/* Uncomment to DISABLE the scale transition */
+.layer-3QrUeG {
+  /* transform: none !important; */
+}
+
+/*#########################################################
+##                  End of user options                  ##
+#########################################################*/
 body, button, span {
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
@@ -73,7 +94,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.4";
+  content: "Metro for Discord \aVersion 3.14.5";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -4031,7 +4052,6 @@ html[lang=ko] .app-2rEoOp::after {
   position: absolute;
   background-color: rgba(45, 45, 45, 0.7);
   background-repeat: repeat;
-  backdrop-filter: blur(45px) saturate(125%);
 }
 
 .container-16j22k::before {
@@ -4369,6 +4389,14 @@ html[lang=ko] .app-2rEoOp::after {
 .form-2fGMdU .channelTextArea-rNsIhG .wrapper-3WhCwL:hover {
   text-decoration: underline;
 }
+.form-2fGMdU .channelTextArea-rNsIhG .after_inlineCode-1KfVgj span,
+.form-2fGMdU .channelTextArea-rNsIhG .before_inlineCode-1G9rTK span,
+.form-2fGMdU .channelTextArea-rNsIhG .inlineCode-2ngu6Y span,
+.form-2fGMdU .channelTextArea-rNsIhG .codeBlockSyntax-2i-tMA span,
+.form-2fGMdU .channelTextArea-rNsIhG .codeBlockLang-O_f4hr span,
+.form-2fGMdU .channelTextArea-rNsIhG .codeLine-14BKbG span {
+  font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
+}
 .form-2fGMdU .channelTextArea-rNsIhG .buttons-3JBrkn {
   margin-right: 0;
 }
@@ -4493,9 +4521,9 @@ html[lang=ko] .app-2rEoOp::after {
 }
 .theme-dark .markup-2BOw-j pre code::before {
   content: attr(class);
-  width: calc(100% + 326px);
+  width: calc(100% + 316px);
   display: block;
-  margin: -7px 0 1em -326px;
+  margin: -7px 0 1em -316px;
   padding: 2px 6px 2px 0;
   background-color: #5E5E5E;
   color: #FFF;
