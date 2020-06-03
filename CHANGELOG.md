@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.6
+* **Fixes**
+  * Remove `span` from reset
+
 #### 3.14.5
 * **Enhancements** (1)
   * Further improvement for low-end PCs
