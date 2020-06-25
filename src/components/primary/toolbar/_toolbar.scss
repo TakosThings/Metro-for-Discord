@@ -74,6 +74,15 @@
                 text-align: center;
                 line-height: 40px;
             }
+            // For Inbox notifications
+            &.badge-2qGa_k::after{
+                width: 34px;
+                height: 2px;
+                bottom: 4px;
+                right: 16px;
+                background-color: $Accent;
+                border: 0;
+            }
 
             .iconBadge-qZ4Ksk{
                 width: 100%;
@@ -85,7 +94,9 @@
                 z-index: -1;
             }
         }
+
     }
+
 
     // Remove help button
     a[href="https://support.discord.com"]{
@@ -108,8 +119,8 @@
     div[aria-label="Update Ready"]::before{
         content: "\ECC5";
     }
-    div[aria-label="Recent Mentions"]::before{
-        content: "\E910";
+    div[aria-label="Inbox"]::before{
+        content: "\E715";
     }
     // DM specific
     div[aria-label="Start Voice Call"]::before{
