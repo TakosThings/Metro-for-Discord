@@ -1,8 +1,16 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.7
+* **Fixes** (5)
+  * Update Inbox toolbar button icn
+  * Update Inbox and Recent Mentions popout
+  * Some modal footers had wrong coloured footer
+  * User popout body had wrong background colour
+  * Update Search Results pane classes
+
 #### 3.14.6
-* **Fixes**
+* **Fixes** (1)
   * Remove `span` from reset
 
 #### 3.14.5

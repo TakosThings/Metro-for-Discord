@@ -87,7 +87,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.6";
+  content: "Metro for Discord \aVersion 3.14.7";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -1556,6 +1556,14 @@ textarea {
   text-align: center;
   line-height: 40px;
 }
+.theme-dark .container-1D34oG .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1.badge-2qGa_k::after {
+  width: 34px;
+  height: 2px;
+  bottom: 4px;
+  right: 16px;
+  background-color: rgba(var(--accent), 1);
+  border: 0;
+}
 .theme-dark .container-1D34oG .container-1r6BKw .toolbar-1t6TWx .divider-3FBTu8 {
   display: none;
 }
@@ -1565,8 +1573,8 @@ textarea {
 .theme-dark .container-1D34oG .container-1r6BKw div[aria-label="New Group DM"]::before {
   content: "";
 }
-.theme-dark .container-1D34oG .container-1r6BKw div[aria-label="Recent Mentions"]::before {
-  content: "";
+.theme-dark .container-1D34oG .container-1r6BKw div[aria-label=Inbox]::before {
+  content: "";
 }
 
 .theme-dark .chat-3bRxxu .title-3qD0b- svg[name=Nova_Pin],
@@ -1887,14 +1895,14 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   font-size: 15px;
   font-family: Consolas, Menlo, Monaco, "Courier New", monospace;
 }
-.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-3rDWdC {
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-2gL1pp {
   justify-content: unset;
 }
-.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-3rDWdC button {
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-2gL1pp button {
   min-width: auto;
   flex: none;
 }
-.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-3rDWdC .minorAction-OVxOke {
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj-.container-14fypd .footer-2gL1pp .minorAction-OVxOke {
   text-align: right;
 }
 
@@ -2062,7 +2070,7 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj- .footer-3rDWdC {
+.theme-dark .modal-3c3bKg .inner-1ilYF7 .modal-yWgWj- .footer-2gL1pp {
   padding: 18px 23px;
   background-color: black;
   border-radius: 0;
@@ -2094,7 +2102,7 @@ span[class^=spinner-] span[class^=inner-] span[class^=wanderingCubesItem]:last-o
   font-weight: 400;
   line-height: 20px;
 }
-.theme-dark .layer-2KE1M9 .root-1gCeng .footer-3rDWdC {
+.theme-dark .layer-2KE1M9 .root-1gCeng .footer-2gL1pp {
   padding: 18px 23px;
   background-color: transparent;
   border-radius: 0;
@@ -3256,8 +3264,8 @@ html[lang=ko] .app-2rEoOp::after {
   flex: unset !important;
 }
 
-.recentMentionsPopout-2fmau1,
-.messagesPopoutWrap-1MQ1bW:not(.recentMentionsPopout-2fmau1) {
+.recentMentionsPopout-3rCiI6,
+.messagesPopoutWrap-1MQ1bW {
   max-height: calc(100vh - 72px) !important;
   min-height: calc(100vh - 72px);
   position: absolute;
@@ -3272,89 +3280,161 @@ html[lang=ko] .app-2rEoOp::after {
   right: -200px !important;
 }
 
+.theme-dark .container-enaOkj,
 .theme-dark .messagesPopoutWrap-1MQ1bW {
   background-color: #171717;
 }
+.theme-dark .container-enaOkj .header-ykumBX,
 .theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX {
   background-color: #171717;
   box-shadow: none;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX h3 {
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .headerTabBarWrapper-27xBDe .tabBar-2UKwcE .tabBarItem-1Cg-MI {
-  padding-bottom: 10px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 22px;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .headerTabBarWrapper-27xBDe .tabBar-2UKwcE .tabBarItem-1Cg-MI:hover {
-  color: rgba(255, 255, 255, 0.8);
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .headerTabBarWrapper-27xBDe .tabBar-2UKwcE .tabBarItem-1Cg-MI[style*="border-color: rgb(255, 255, 255)"] {
-  border-color: rgba(var(--accent), 1) !important;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G {
-  background-color: #2b2b2b;
-  border: 0;
-  border-radius: 2px;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .jumpButton-3DTcS_ {
-  height: auto;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 2px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-  color: white;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .jumpButton-3DTcS_:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .jumpButton-3DTcS_:active {
-  background-color: rgba(255, 255, 255, 0.4);
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .emptyPlaceholder-1zh-Eu .image-2JDb81 {
-  display: none;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .emptyPlaceholder-1zh-Eu .body-bvcIjN {
-  margin-bottom: 1rem;
-  color: white;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 20px;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .footer-1kmXd4 {
-  display: none;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .topPill-30KHOu .item-PXvHYJ {
+.theme-dark .container-enaOkj .header-ykumBX .topPill-30KHOu .item-PXvHYJ,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .topPill-30KHOu .item-PXvHYJ {
+  margin: 8px 12px 0;
+  padding: 0 0 8px;
+  background-color: transparent;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 24px;
   text-transform: none;
+  color: rgba(255, 255, 255, 0.6);
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .topPill-30KHOu .item-PXvHYJ.active-1MbGPa {
-  background-color: transparent;
+.theme-dark .container-enaOkj .header-ykumBX .topPill-30KHOu .item-PXvHYJ:hover,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .topPill-30KHOu .item-PXvHYJ:hover {
+  color: rgba(255, 255, 255, 0.8);
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq {
-  background-color: #2b2b2b;
-  border-radius: 2px 2px 0 0;
-  padding-right: 12px;
-}
-.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .button-1-5Aqk {
-  background-color: rgba(255, 255, 255, 0.2);
+.theme-dark .container-enaOkj .header-ykumBX .topPill-30KHOu .item-PXvHYJ.selected-3s45Ha,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .topPill-30KHOu .item-PXvHYJ.selected-3s45Ha {
+  border-color: rgba(var(--accent), 1);
   color: white;
 }
-.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .button-1-5Aqk:hover {
+.theme-dark .container-enaOkj .header-ykumBX .button-1-5Aqk,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .button-1-5Aqk {
+  background-color: transparent;
+}
+.theme-dark .container-enaOkj .header-ykumBX .button-1-5Aqk:hover,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .button-1-5Aqk:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
+.theme-dark .container-enaOkj .header-ykumBX .button-1-5Aqk:active,
+.theme-dark .messagesPopoutWrap-1MQ1bW .header-ykumBX .button-1-5Aqk:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h {
+  background-color: #2b2b2b;
+  border: 1px solid rgba(0, 0, 0, 0.36);
+  border-radius: 4px;
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h .tutorialIcon-3f1miQ,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h .tutorialIcon-3f1miQ {
+  background-color: transparent;
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h .tutorialIcon-3f1miQ::before,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h .tutorialIcon-3f1miQ::before {
+  content: "";
+  font-family: "Segoe MDL2 Assets";
+  color: white;
+  font-size: 24px;
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h .tutorialIcon-3f1miQ svg,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h .tutorialIcon-3f1miQ svg {
+  display: none;
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h > div ~ div h3,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h > div ~ div h3 {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.theme-dark .container-enaOkj .tutorial-3w5I9h > div ~ div > div,
+.theme-dark .messagesPopoutWrap-1MQ1bW .tutorial-3w5I9h > div ~ div > div {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq {
+  padding: 0 12px 0 48px;
+  background-color: #2b2b2b;
+  border-radius: 4px 4px 0 0;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq .guildIcon-3Co6k-,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq .guildIcon-3Co6k-,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq .guildIcon-3Co6k-,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq .guildIcon-3Co6k- {
+  border-radius: 50%;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk {
+  background-color: transparent;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk:hover,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk:hover,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk:hover,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk:active,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk:active,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq .button-1-5Aqk:active,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq .button-1-5Aqk:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.theme-dark .container-enaOkj .channel-3pEHab .channelHeader-3Gd2xq .collapseButton-2ZsEjz,
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq .collapseButton-2ZsEjz,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .channelHeader-3Gd2xq .collapseButton-2ZsEjz,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq .collapseButton-2ZsEjz {
+  left: 12px;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .messages-3G3erD,
+.theme-dark .container-enaOkj .channel-3pEHab .messageContainer-gbhlwo,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messages-3G3erD,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messageContainer-gbhlwo,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messages-3G3erD,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messageContainer-gbhlwo,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messages-3G3erD,
 .theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messageContainer-gbhlwo {
   background-color: #1f1f1f;
-  border-radius: 0 0 2px 2px;
+  border-radius: 0 0 4px 4px;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .messages-3G3erD .divider-JfaTT5,
+.theme-dark .container-enaOkj .channel-3pEHab .messageContainer-gbhlwo .divider-JfaTT5,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messages-3G3erD .divider-JfaTT5,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messageContainer-gbhlwo .divider-JfaTT5,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messages-3G3erD .divider-JfaTT5,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messageContainer-gbhlwo .divider-JfaTT5,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messages-3G3erD .divider-JfaTT5,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messageContainer-gbhlwo .divider-JfaTT5 {
+  border-color: #2b2b2b;
+}
+.theme-dark .container-enaOkj .channel-3pEHab .messages-3G3erD .divider-JfaTT5 span,
+.theme-dark .container-enaOkj .channel-3pEHab .messageContainer-gbhlwo .divider-JfaTT5 span,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messages-3G3erD .divider-JfaTT5 span,
+.theme-dark .container-enaOkj .container-3iAQ-0 .messageContainer-gbhlwo .divider-JfaTT5 span,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messages-3G3erD .divider-JfaTT5 span,
+.theme-dark .messagesPopoutWrap-1MQ1bW .channel-3pEHab .messageContainer-gbhlwo .divider-JfaTT5 span,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messages-3G3erD .divider-JfaTT5 span,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .messageContainer-gbhlwo .divider-JfaTT5 span {
+  padding: 2px 8px;
+  background-color: #2b2b2b;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: white;
+}
+.theme-dark .container-enaOkj .container-3iAQ-0 .channelHeader-3Gd2xq,
+.theme-dark .messagesPopoutWrap-1MQ1bW .container-3iAQ-0 .channelHeader-3Gd2xq {
+  padding: 0 12px;
 }
 
 .theme-dark .quickSelectPopout-X1hvgV {
@@ -3765,7 +3845,7 @@ html[lang=ko] .app-2rEoOp::after {
   font-weight: 400;
   line-height: 15px;
 }
-.theme-dark .userPopout-3XzG_A .bodyInner-245q0L {
+.theme-dark .userPopout-3XzG_A .body-3iLsc4 {
   padding: 12px 6px 12px 10px;
   background-color: #2b2b2b;
 }
@@ -5399,14 +5479,14 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   color: white;
 }
 
-.theme-dark .searchResultsWrap-2DKFzt {
+.theme-dark .searchResultsWrap-3-pOjs {
   background-color: #171717;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR {
+.theme-dark .searchResultsWrap-3-pOjs .searchHeader-1EzJGH {
   background-color: #171717;
   box-shadow: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR .totalResults-gxvzgw {
+.theme-dark .searchResultsWrap-3-pOjs .searchHeader-1EzJGH .totalResults-1yK_Ym {
   opacity: 1;
   font-size: 20px;
   font-weight: 400;
@@ -5414,7 +5494,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   line-height: 24px;
   text-transform: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR .tab-2Ixsn0 {
+.theme-dark .searchResultsWrap-3-pOjs .searchHeader-1EzJGH .tab-EiCZG6 {
   opacity: 1;
   border-bottom: 0;
   font-size: 14px;
@@ -5422,49 +5502,49 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   line-height: 20px;
   color: rgba(255, 255, 255, 0.7);
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR .tab-2Ixsn0:hover {
+.theme-dark .searchResultsWrap-3-pOjs .searchHeader-1EzJGH .tab-EiCZG6:hover {
   border-bottom: 0;
   color: #FFF;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchHeader-1l-wpR .tab-2Ixsn0.selected-16te-P {
+.theme-dark .searchResultsWrap-3-pOjs .searchHeader-1EzJGH .tab-EiCZG6.selected-3gXBLQ {
   border-bottom: 0;
   color: rgba(var(--accent), 1);
 }
-.theme-dark .searchResultsWrap-2DKFzt .channelName-1QajIf {
+.theme-dark .searchResultsWrap-3-pOjs .channelName-wvgELL {
   background-color: #171717;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchResult-3pzFAB::before, .theme-dark .searchResultsWrap-2DKFzt .searchResult-3pzFAB::after {
+.theme-dark .searchResultsWrap-3-pOjs .searchResult-2N9RV4::before, .theme-dark .searchResultsWrap-3-pOjs .searchResult-2N9RV4::after {
   display: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchResult-3pzFAB .searchResultMessage-2VxO12 {
+.theme-dark .searchResultsWrap-3-pOjs .searchResult-2N9RV4 .searchResultMessage-30QnSN {
   border-radius: 0;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchResult-3pzFAB .searchResultMessage-2VxO12.hit-NLlWXA {
+.theme-dark .searchResultsWrap-3-pOjs .searchResult-2N9RV4 .searchResultMessage-30QnSN.hit-1CXhXT {
   background-color: #2b2b2b;
   border: 0;
   box-shadow: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .searchResult-3pzFAB.expanded-v2Szsz {
+.theme-dark .searchResultsWrap-3-pOjs .searchResult-2N9RV4.expanded-ovgtuV {
   border: 1px solid rgba(var(--accent), 1);
   border-radius: 0;
 }
-.theme-dark .searchResultsWrap-2DKFzt .jumpButton-Ia2hRJ {
+.theme-dark .searchResultsWrap-3-pOjs .jumpButton-1ol35X {
   background-color: rgba(var(--accent), 1);
   border: 1px solid transparent;
   border-radius: 2px;
   color: #FFF;
   font-weight: normal;
 }
-.theme-dark .searchResultsWrap-2DKFzt .jumpButton-Ia2hRJ:hover {
+.theme-dark .searchResultsWrap-3-pOjs .jumpButton-1ol35X:hover {
   background-color: rgba(var(--accent), 0.6);
 }
-.theme-dark .searchResultsWrap-2DKFzt .jumpButton-Ia2hRJ:active {
+.theme-dark .searchResultsWrap-3-pOjs .jumpButton-1ol35X:active {
   transform: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .emptyResultsWrap-3Kv0LQ .noResultsImage-JbSWtu {
+.theme-dark .searchResultsWrap-3-pOjs .emptyResultsWrap-G931-Q .noResultsImage-3Y0eCI {
   display: none;
 }
-.theme-dark .searchResultsWrap-2DKFzt .emptyResultsWrap-3Kv0LQ .noResults-2lVUHk {
+.theme-dark .searchResultsWrap-3-pOjs .emptyResultsWrap-G931-Q .noResults-sW1yWR {
   margin-top: 0;
   color: white;
   font-size: 14px;
@@ -5542,6 +5622,14 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   text-align: center;
   line-height: 40px;
 }
+.theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1.badge-2qGa_k::after {
+  width: 34px;
+  height: 2px;
+  bottom: 4px;
+  right: 16px;
+  background-color: rgba(var(--accent), 1);
+  border: 0;
+}
 .theme-dark .chat-3bRxxu .container-1r6BKw .toolbar-1t6TWx .iconWrapper-2OrFZ1 .iconBadge-qZ4Ksk {
   width: 100%;
   height: 100%;
@@ -5570,8 +5658,8 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Update Ready"]::before {
   content: "";
 }
-.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Recent Mentions"]::before {
-  content: "";
+.theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label=Inbox]::before {
+  content: "";
 }
 .theme-dark .chat-3bRxxu .container-1r6BKw div[aria-label="Start Voice Call"]::before {
   content: "";
