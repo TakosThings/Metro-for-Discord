@@ -1,16 +1,16 @@
-.theme-dark .searchResultsWrap-2DKFzt{
+.theme-dark .searchResultsWrap-3-pOjs{
     background-color: $ChromeLow;
     // Header
-    .searchHeader-1l-wpR{
+    .searchHeader-1EzJGH{
         background-color: $ChromeLow;
         box-shadow: none;
         // Total number of results found
-        .totalResults-gxvzgw{
+        .totalResults-1yK_Ym{
             opacity: 1;
             @include FontSubtitle;
         }
         // Recent/Relevant tabs
-        .tab-2Ixsn0{
+        .tab-EiCZG6{
             opacity: 1;
             border-bottom: 0;
             @include FontBody;
@@ -19,7 +19,7 @@
                 border-bottom: 0;
                 color: #FFF;
             }
-            &.selected-16te-P{
+            &.selected-3gXBLQ{
                 border-bottom: 0;
                 color: $Accent;
             }
@@ -27,33 +27,33 @@
     }
     // Results
     // Channel Name
-    .channelName-1QajIf{
+    .channelName-wvgELL{
         background-color: $ChromeLow;
     }
     // Remove gradient
-    .searchResult-3pzFAB{
+    .searchResult-2N9RV4{
         &::before,
         &::after{
             display: none;
         }
         // Remove border radius
-        .searchResultMessage-2VxO12{
+        .searchResultMessage-30QnSN{
             border-radius: 0;
-            &.hit-NLlWXA{
+            &.hit-1CXhXT{
                 background-color: $ChromeMediumLow;
                 border: 0;
                 box-shadow: none;
             }
         }
         // Accent border on expanded result
-        &.expanded-v2Szsz{
+        &.expanded-ovgtuV{
             border: 1px solid $Accent;
             border-radius: 0;
         }
     }
 
     // Jump to message button
-    .jumpButton-Ia2hRJ{
+    .jumpButton-1ol35X{
         background-color: $Accent;
         border: 1px solid transparent;
         border-radius: 2px;
@@ -68,12 +68,12 @@
     }
 
     // No results found
-    .emptyResultsWrap-3Kv0LQ{
+    .emptyResultsWrap-G931-Q{
         // Remove error image
-        .noResultsImage-JbSWtu{
+        .noResultsImage-3Y0eCI{
             display: none;
         }
-        .noResults-2lVUHk{
+        .noResults-sW1yWR{
             margin-top: 0;
             color: $BaseHigh;
             @include FontBody;
