@@ -1,4 +1,5 @@
 .theme-dark div[class^="membersWrap"]{
+    div[class*="members-"],
     div[class*="members-"]>div{
         background-color: $ChromeLow;
     }
