@@ -1,6 +1,5 @@
 .theme-dark{
-    .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG,
-    .emojiPicker-3m1S-j .scroller-2FKFPG{
+    .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG{
         &::-webkit-scrollbar{
             width: 16px;
         }
@@ -76,24 +75,6 @@
     }
 }
 
-// Force emoji picker scrollbar visible
-.emojiPicker-3m1S-j{
-    .scroller-2FKFPG{
-        &::-webkit-scrollbar-track{
-            background-color: transparent !important;
-        }
-        &::-webkit-scrollbar-thumb{
-            visibility: visible;
-            background-color: $BaseLow !important;
-            &:hover{
-                background-color: $BaseMediumLow !important;
-            }
-            &:active{
-                background-color: $BaseMedium !important;
-            }
-        }
-    }
-}
 // Context menu
 .contextMenu-HLZMGh{
     &::-webkit-scrollbar{
