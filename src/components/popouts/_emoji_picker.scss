@@ -1,8 +1,10 @@
-.theme-dark .emojiPicker-3PwZFl{
+.contentWrapper-SvZHNd{
     background-color: $ChromeMediumLow;
     border: 1px solid $BorderTransient;
     border-radius: 4px;
-
+}
+.theme-dark .emojiPicker-3PwZFl{
+    grid-template-rows: 46px auto 48px; // Allows to re-adjust inspector size
     // Search
     .container-2XeR5Z{
         background-color: transparent;
@@ -79,25 +81,24 @@
 
     // Emoji
     .emojiPickerListWrapper-fz8KNK{
-        .categoryWrapper-UZ5YNj{
+        .wrapper-1-Fsb8{
             margin-bottom: 4px;
             background-color: $ChromeMediumLow;
             border-bottom: 1px solid $BaseMedium;
             &:hover{
                 border-bottom-color: $BaseHigh;
             }
-            .category-3Xkx2x{
+            .headerLabel-3dG4M-{
                 color: $BaseHigh;
                 @include FontBody;
-                .categorylabel-1v_czy{
-                    text-transform: none;
-                }
+                text-transform: none;
             }
         }
     }
 
     // Description bar
     .inspector-sdLnLS{
+        height: 48px;
         background-color: $ChromeLow;
     }
 }
@@ -231,17 +232,17 @@
 }
 
 // Emoji picker opened from chatbox
-.theme-dark .contentWrapper-2txmjs{
+.theme-dark .contentWrapper-SvZHNd{
     background-color: $ChromeMediumLow;
     border: 1px solid $BorderTransient;
     border-radius: 4px;
 
     // Pivot
-    .nav-2KnmHb{
-        .navItem-12Gr9H+.navItem-12Gr9H{
+    .nav-7UD0KD{
+        .navItem-3Wp_oJ+.navItem-3Wp_oJ{
             margin-left: 0;
         }
-        .navButton-3Mnpqt{
+        .navButton-2gQCx-{
             padding: 0 0 8px 0;
             margin: 0 12px;
             color: $BaseMedium;
@@ -249,7 +250,7 @@
                 color: $BaseMediumHigh;
             }
         }
-        .navButtonActive-3RPAJy{
+        .navButtonActive-1MkytQ{
             background-color: transparent;
             color: $BaseHigh;
             &::after{

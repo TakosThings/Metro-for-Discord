@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.8
+* **Tidy Up** (1)
+  * Remove unused scrollbar CSS for old Emoji Picker
+* **Fixes** (4)
+  * Members list background
+  * Acrylic overlay was slightly too narrow when viewing User Setttings
+  * Emoji picker
+  * Home conversation list background
+
 #### 3.14.7
 * **Fixes** (5)
   * Update Inbox toolbar button icn
