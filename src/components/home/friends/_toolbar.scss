@@ -76,6 +76,15 @@
                 text-align: center;
                 line-height: 40px;
             }
+            // For Inbox notifications
+            &.badge-2qGa_k::after{
+                width: 34px;
+                height: 2px;
+                bottom: 4px;
+                right: 16px;
+                background-color: $Accent;
+                border: 0;
+            }
         }
         .divider-3FBTu8{
             display: none;
@@ -87,7 +96,7 @@
     div[aria-label="New Group DM"]::before{
         content: "\E902";
     }
-    div[aria-label="Recent Mentions"]::before{
-        content: "\E910";
+    div[aria-label="Inbox"]::before{
+        content: "\E715";
     }
 }

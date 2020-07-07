@@ -1,6 +1,38 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.8
+* **Tidy Up** (1)
+  * Remove unused scrollbar CSS for old Emoji Picker
+* **Fixes** (4)
+  * Members list background
+  * Acrylic overlay was slightly too narrow when viewing User Setttings
+  * Emoji picker
+  * Home conversation list background
+
+#### 3.14.7
+* **Fixes** (5)
+  * Update Inbox toolbar button icn
+  * Update Inbox and Recent Mentions popout
+  * Some modal footers had wrong coloured footer
+  * User popout body had wrong background colour
+  * Update Search Results pane classes
+
+#### 3.14.6
+* **Fixes** (1)
+  * Remove `span` from reset
+
+#### 3.14.5
+* **Enhancements** (1)
+  * Further improvement for low-end PCs
+    * [Wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Acrylic) has been updated with new changes
+    * Default acrylic background has been changed
+    * Acrylic blur effects are disabled by default. You'll need to edit some options in the CSS file to enable blur for your own background. Check the wiki page for more info.
+    * Added an option to turn off the UI scale transition effect when opening User/Server/Channel Settings
+* **Fixes** (2)
+  * Font in chatbox will change to monospace when editing code
+  * Chatbox code header
+
 #### 3.14.4
 * **Enhancements** (2)
   * Re-write for updated emoji picker

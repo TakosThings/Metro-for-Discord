@@ -1,3 +1,10 @@
+/*                 Start of user options                 ##
+###########################################################
+##     Check the repo wiki for help on this section      ##
+## https://github.com/TakosThings/Metro-for-Discord/wiki ##
+#########################################################*/
+
+
 /* Accent Colour */
 /* Must be provided in RGB format */
 :root{
@@ -6,12 +13,32 @@
     --voice:    0, 204, 106;
 }
 
-/* Change the URL to your own background. See wiki for more info */
+/* Acrylic background */
+/**
+ * Some of these settings are advanced, and may degrade
+ * performance on low-end machines. Consult the wiki before
+ * making changes.
+**/
+
+/* Change the URL to your own background*/
 .bg-h5JY_x,
 .container-16j22k{
-    background-image: url(https://i.imgur.com/VmDsIgt.jpg);
+    background-image: url(https://i.imgur.com/PoQUA3n.jpg);
 }
 
-/* ####################################################### */
-/* ##                End of user options.               ## */
-/* ####################################################### */
+/* Blur filter */
+/* Uncomment to ENABLE the blur filter if required */
+.bg-h5JY_x::before,
+.container-16j22k::before{
+    /* backdrop-filter: blur(45px) saturate(125%); */
+}
+
+/* Disable scale transition when opening User Settings */
+/* Uncomment to DISABLE the scale transition */
+.layer-3QrUeG{
+    /* transform: none !important; */
+}
+
+/*#########################################################
+##                  End of user options                  ##
+#########################################################*/
