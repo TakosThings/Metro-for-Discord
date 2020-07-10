@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.9
+* **Fixes**
+  * Guilds avatar is now the same size as other icons in the list
+  * Home conversation list will only show a scrollbar when required
+  * Fix width of new messages bars to compensate for scrollbar, added some border-radius
+  * Fix width of chat box to compensate for scrollbar
+  * Remove a crafty scrollbar hidden in the chatbox (this fixes the Emoji button not attaching to the right side of the chatbox correctly)
+
 #### 3.14.8
 * **Tidy Up** (1)
   * Remove unused scrollbar CSS for old Emoji Picker

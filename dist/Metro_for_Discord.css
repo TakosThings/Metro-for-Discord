@@ -87,7 +87,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.8";
+  content: "Metro for Discord \aVersion 3.14.9";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -1277,7 +1277,7 @@ textarea {
 }
 .privateChannels-1nO12o .scroller-1JbKMe {
   padding-top: 0 !important;
-  overflow-y: auto;
+  overflow-y: auto !important;
   background-color: transparent;
 }
 .privateChannels-1nO12o .privateChannelsHeaderContainer-3NB1K1 {
@@ -3949,21 +3949,24 @@ html[lang=ko] .app-2rEoOp::after {
   padding: 0 20px;
 }
 .theme-dark .chat-3bRxxu .barBase-39XTcM {
-  right: 20px;
+  right: 36px;
   left: 20px;
 }
 .theme-dark .chat-3bRxxu .newMessagesBar-mujexs,
 .theme-dark .chat-3bRxxu .jumpToPresentBar-9P20AM {
   background-color: rgba(var(--accent), 1);
-  border-radius: 0;
   opacity: 1;
 }
 .theme-dark .chat-3bRxxu .newMessagesBar-mujexs .barButtonBase-3UKlW2,
 .theme-dark .chat-3bRxxu .jumpToPresentBar-9P20AM .barButtonBase-3UKlW2 {
   font-weight: normal;
 }
+.theme-dark .chat-3bRxxu .newMessagesBar-mujex {
+  border-radius: 0 0 4px 4px;
+}
 .theme-dark .chat-3bRxxu .jumpToPresentBar-9P20AM {
   padding-bottom: 0;
+  border-radius: 4px 4px 0 0;
 }
 .theme-dark .chat-3bRxxu .default-1VPH9n {
   margin: 0;
@@ -4207,7 +4210,7 @@ html[lang=ko] .app-2rEoOp::after {
 
 .form-2fGMdU {
   margin-top: 0;
-  padding-right: 20px;
+  padding-right: 36px;
   padding-left: 20px;
 }
 .form-2fGMdU::before {
@@ -4225,6 +4228,7 @@ html[lang=ko] .app-2rEoOp::after {
 .form-2fGMdU .channelTextArea-rNsIhG .scrollableContainer-2NUZem {
   background-color: transparent;
   border-radius: 0;
+  overflow-y: auto;
 }
 .form-2fGMdU .channelTextArea-rNsIhG .attachWrapper-2TRKBi {
   border: 0;
@@ -4933,7 +4937,9 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   cursor: pointer;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 {
-  margin: 8px;
+  width: 24px;
+  height: 24px;
+  margin: 12px;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2:hover {
   opacity: 1;
