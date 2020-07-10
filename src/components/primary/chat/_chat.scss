@@ -15,20 +15,23 @@
 
     // New Message bars
     .barBase-39XTcM{
-        right: 20px;
+        right: 36px;
         left: 20px;
     }
     .newMessagesBar-mujexs,
     .jumpToPresentBar-9P20AM{
         background-color: $Accent;
-        border-radius: 0;
         opacity: 1;
         .barButtonBase-3UKlW2{
             font-weight: normal;
         }
     }
+    .newMessagesBar-mujex{
+        border-radius: 0 0 4px 4px;
+    }
     .jumpToPresentBar-9P20AM{
         padding-bottom: 0;
+        border-radius: 4px 4px 0 0;
     }
 
     // Welcome message
