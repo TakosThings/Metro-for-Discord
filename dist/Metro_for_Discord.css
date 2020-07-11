@@ -88,6 +88,7 @@ textarea {
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
   content: "Metro for Discord \aVersion 3.14.9";
+}
 
 .theme-dark .app-2rEoOp::before {
   width: 360px;
@@ -3960,7 +3961,7 @@ html[lang=ko] .app-2rEoOp::after {
 .theme-dark .chat-3bRxxu .jumpToPresentBar-9P20AM .barButtonBase-3UKlW2 {
   font-weight: normal;
 }
-.theme-dark .chat-3bRxxu .newMessagesBar-mujex {
+.theme-dark .chat-3bRxxu .newMessagesBar-mujexs {
   border-radius: 0 0 4px 4px;
 }
 .theme-dark .chat-3bRxxu .jumpToPresentBar-9P20AM {
@@ -4936,8 +4937,8 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
   cursor: pointer;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2 {
-  width: 24px;
-  height: 24px;
+  width: 24px !important;
+  height: 24px !important;
   margin: 12px;
 }
 .theme-dark .sidebar-2K8pFh .container-3baos1 .avatarWrapper-2yR4wp .avatar-SmRMf2:hover {
