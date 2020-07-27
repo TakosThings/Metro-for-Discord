@@ -87,7 +87,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.9";
+  content: "Metro for Discord \aVersion 3.14.11";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -4312,7 +4312,7 @@ html[lang=ko] .app-2rEoOp::after {
 .form-2fGMdU .typing-2GQL18 {
   height: 20px;
   top: -20px;
-  right: 24px;
+  right: 37px;
   bottom: unset;
   background-color: transparent;
   font-size: 11px;
@@ -6155,30 +6155,27 @@ img[src="/assets/bfffd518c76d3f6bc5e96eb52e4ae2cf.svg"] {
   content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(7)::after {
-  content: "";
-}
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(8)::after {
   content: "";
 }
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(8)::after {
+  content: "";
+}
 .theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(9)::after {
-  content: "";
+  content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(10)::after {
-  content: "";
-}
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(12)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(11)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(19)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
   content: "";
 }
 
