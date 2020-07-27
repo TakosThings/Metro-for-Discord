@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.11
+* **Fixes** (2)
+  * Missing Server Settings sidebar icons
+  * 'x is typing...' alignment
+
 #### 3.14.10
 * **Fixes** (2)
   * Missing letter in class for new messages bar
