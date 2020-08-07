@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.14.11
+ * @version 3.14.12
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -94,7 +94,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.11";
+  content: "Metro for Discord \aVersion 3.14.12";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -1781,10 +1781,26 @@ textarea {
   background-color: transparent;
 }
 .container-16j22k .content-1-zrf2 {
+  width: 256px;
+  height: 64px;
   background-image: url(https://i.imgur.com/MfeQkLJ.gif);
-  background-position: center top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 32px;
+  filter: invert(100%);
+}
+.container-16j22k .content-1-zrf2::after {
+  content: "Loading...";
+  width: 256px;
+  text-align: center;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  color: white;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: none;
   filter: invert(100%);
 }
 .container-16j22k video {
@@ -1793,18 +1809,8 @@ textarea {
 .container-16j22k video img {
   display: none;
 }
-.container-16j22k div[class^=quote-],
-.container-16j22k div[class^=attribution-] {
+.container-16j22k .text-3c9Zq1 {
   display: none;
-}
-.container-16j22k .title-3JMOhC {
-  margin-top: 84px;
-  color: white;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 300;
-  text-transform: none;
-  filter: invert(100%);
 }
 .container-16j22k .problems-3mgf6w {
   align-items: flex-end;
