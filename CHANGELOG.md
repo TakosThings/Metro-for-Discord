@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.12
+* **Fixes** (1)
+  * Connecting screen
+
 #### 3.14.11
 * **Fixes** (2)
   * Missing Server Settings sidebar icons

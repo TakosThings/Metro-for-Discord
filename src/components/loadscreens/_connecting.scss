@@ -2,11 +2,27 @@
     background-color: transparent;
 
     .content-1-zrf2{
+        width: 256px;
+        height: 64px;
         background-image: url(https://i.imgur.com/MfeQkLJ.gif);
-        background-position: center top;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: 32px;
         filter: invert(100%);
+        &::after{
+            content: "Loading...";
+            width: 256px;
+            text-align: center;
+            position: absolute;
+            top: 72px;
+            left: 0;
+            color: $BaseHigh;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 300;
+            text-transform: none;
+            filter: invert(100%);
+        }
     }
 
     // Remove video, we use our own spinner
@@ -16,20 +32,10 @@
             display: none;
         }
     }
-    // Remove quote
-    div[class^="quote-"],
-    div[class^="attribution-"]{
+    // Remove tip
+    .text-3c9Zq1{
         display: none;
-    }
-    // "Connecting" text
-    .title-3JMOhC{
-        margin-top: 84px;
-        color: $BaseHigh;
-        font-size: 32px;
-        font-style: normal;
-        font-weight: 300;
-        text-transform: none;
-        filter: invert(100%);
+
     }
 
     // Links to Twitter, Status page
