@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.13
+* **Fixes** (1)
+  * Change colour of channel categories so they look less like unread channels
+  * Various fixes to Group DM popout
+  * Server discovery menu items heights to match guilds
+  * Missing Server Settings sidebar icons
+
 #### 3.14.12
 * **Fixes** (1)
   * Connecting screen
