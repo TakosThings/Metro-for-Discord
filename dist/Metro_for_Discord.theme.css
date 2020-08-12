@@ -1,7 +1,7 @@
 /**
  * @name Metro for Discord
  * @author Tako
- * @version 3.14.12
+ * @version 3.14.13
  * @description The Metro theme for Discord
  * @source https://github.com/TakosThings/Metro-for-Discord
 */
@@ -94,7 +94,7 @@ textarea {
 }
 .theme-dark .app-2rEoOp::before,
 .theme-dark .layer-3QrUeG[aria-label=USER_SETTINGS] .info-1VyQPT::before {
-  content: "Metro for Discord \aVersion 3.14.12";
+  content: "Metro for Discord \aVersion 3.14.13";
 }
 
 .theme-dark .app-2rEoOp::before {
@@ -1150,7 +1150,7 @@ textarea {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
-  line-height: 40px;
+  line-height: 48px;
 }
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx- {
   margin: 0;
@@ -1168,7 +1168,7 @@ textarea {
   background-color: rgba(var(--accent), 0.6);
 }
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx- .layout-2DM8Md {
-  padding: 4px 8px;
+  padding: 8px;
   border-radius: 0;
 }
 .theme-dark .content-98HsJk .sidebar-2K8pFh .container-2Pjhx- .name-uJV0GL {
@@ -3333,52 +3333,52 @@ html[lang=ko] .app-2rEoOp::after {
   animation: 350ms cubic-bezier(0.19, 1, 0.22, 1) slideinright;
 }
 
-.modal-yWgWj-.popout-103y-5 {
+.theme-dark .popout-103y-5 {
   background-color: #171717;
 }
-
-.popout-103y-5 .header-2tA9Os h4 {
+.theme-dark .popout-103y-5 .header-1TKi98 h4 {
   font-size: 14px;
   font-weight: 600;
   line-height: 20px;
   text-transform: none;
 }
-.popout-103y-5 .header-2tA9Os .subtitle-2P4u9v {
+.theme-dark .popout-103y-5 .header-1TKi98 .subtitle-2P4u9v {
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
 }
-.popout-103y-5 .container-2XeR5Z {
+.theme-dark .popout-103y-5 .container-2XeR5Z {
   background-color: transparent;
 }
-.popout-103y-5 .container-2XeR5Z .input-1Rv96N {
+.theme-dark .popout-103y-5 .container-2XeR5Z .input-1Rv96N {
   height: 32px;
   padding: 0 10px;
   background-color: rgba(0, 0, 0, 0.4);
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.popout-103y-5 .container-2XeR5Z .input-1Rv96N::-webkit-input-placeholder {
+.theme-dark .popout-103y-5 .container-2XeR5Z .input-1Rv96N::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.popout-103y-5 .container-2XeR5Z .input-1Rv96N:hover {
+.theme-dark .popout-103y-5 .container-2XeR5Z .input-1Rv96N:hover {
   background-color: rgba(0, 0, 0, 0.6);
   border-color: rgba(255, 255, 255, 0.8);
 }
-.popout-103y-5 .container-2XeR5Z .input-1Rv96N:focus {
+.theme-dark .popout-103y-5 .container-2XeR5Z .input-1Rv96N:focus {
   background-color: white;
   border-color: rgba(var(--accent), 1);
+  border-width: 2px;
   color: black;
 }
-.popout-103y-5 .container-2XeR5Z .input-1Rv96N:focus::-webkit-input-placeholder {
+.theme-dark .popout-103y-5 .container-2XeR5Z .input-1Rv96N:focus::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-.popout-103y-5 .container-2XeR5Z .tag-2gHSR7 {
+.theme-dark .popout-103y-5 .container-2XeR5Z .tag-2gHSR7 {
   height: 28px;
   margin-top: 3px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -3386,39 +3386,39 @@ html[lang=ko] .app-2rEoOp::after {
   font-weight: 400;
   line-height: 20px;
 }
-.popout-103y-5 .container-2XeR5Z .tag-2gHSR7:hover {
+.theme-dark .popout-103y-5 .container-2XeR5Z .tag-2gHSR7:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.popout-103y-5 .noResults-ZTbl5V,
-.popout-103y-5 .scroller-hUf6zQ {
+.theme-dark .popout-103y-5 .noResults-ZTbl5V,
+.theme-dark .popout-103y-5 .scroller-hUf6zQ {
   max-height: none;
 }
-.popout-103y-5 .friend-3KALPe {
+.theme-dark .popout-103y-5 .friend-3KALPe {
   height: 32px;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.popout-103y-5 .friend-3KALPe.friendSelected-1sa4bG {
+.theme-dark .popout-103y-5 .friend-3KALPe.friendSelected-1sa4bG {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.popout-103y-5 .friend-3KALPe .avatar-vr5NCN {
+.theme-dark .popout-103y-5 .friend-3KALPe .avatar-vr5NCN {
   height: 24px !important;
   width: 24px !important;
 }
-.popout-103y-5 .errorState-KkUH_2 .errorStateIcon-3fNXE5 {
+.theme-dark .popout-103y-5 .errorState-KkUH_2 .errorStateIcon-3fNXE5 {
   display: none;
 }
-.popout-103y-5 .errorState-KkUH_2 .errorStateIcon-3fNXE5 ~ div {
+.theme-dark .popout-103y-5 .errorState-KkUH_2 .errorStateIcon-3fNXE5 ~ div {
   color: white;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
-.popout-103y-5 .footerSeparator-M9dQY1 {
+.theme-dark .popout-103y-5 .footerSeparator-M9dQY1 {
   display: none;
 }
-.popout-103y-5 .footer-1eyGBa {
+.theme-dark .popout-103y-5 .footer-1eyGBa {
   flex: unset !important;
 }
 
@@ -5154,7 +5154,7 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 }
 .theme-dark .sidebar-2K8pFh .containerDefault-3GGEv_ .wrapper-CU3qI5 .name-IbjUBS,
 .theme-dark .sidebar-2K8pFh .containerDragBefore-3Dzc5x .wrapper-CU3qI5 .name-IbjUBS {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -6122,19 +6122,22 @@ div[class^=modal-] div[class^=invite-] div[class^=artworkSpotifySessionEnded] {
 .theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(9)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(11)::after {
-  content: "";
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(12)::after {
+  content: "";
 }
 .theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(14)::after {
+  content: "";
+}
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(17)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(15)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(16)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(19)::after {
   content: "";
 }
-.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(18)::after {
+.theme-dark .layer-3QrUeG[aria-label=GUILD_SETTINGS] .sidebar-CFHs9e .item-PXvHYJ:nth-child(21)::after {
   content: "";
 }
 
