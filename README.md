@@ -1,24 +1,15 @@
 # Metro for Discord
-A custom theme for Discord based on Microsoft's Modern Design Language - 'Metro'.  
-
-Latest version: `3.14.13`
+Metro for Discord is a theme to make Discord's Desktop client look like a native UWP application.
 
 ## Download
-Get the latest version from the [Releases](https://github.com/TakosThings/Metro-for-Discord/releases/latest) page
-
-## Install
-You should follow the relevant install instructions for your platform.  
-* [BeautifulDiscord](https://github.com/DTinker/discord-resources/wiki/Installing-Modifications#beautifuldiscord)
-* [BetterDiscord](https://i.imgur.com/H7VyWea.png)
+Get the latest version from [releases](https://github.com/TakosThings/Metro-for-Discord/releases/latest)
 
 ## Requirements
-* An up to date install of Windows 10 with Segoe UI MDL2 Assets font. 
-* English language selected. The theme relies upon English strings to replace icons.
+* An up to date install of Windows 10 with Segoe UI MDL2 Assets font
+* English (Traditional or Simplified) as the selected language. The theme relies upon English strings to replace icons
 
-## Configure
-See the [wiki](https://github.com/TakosThings/Metro-for-Discord/wiki) for config options.
+## Setup
+[Visit the wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Setup-Guide) for the setup guide
 
-## Screenshot
+## Preview
 ![Preview](https://i.imgur.com/ZvYZOnD.png)
-
-This project is not associated with Microsoft, nor Discord.
