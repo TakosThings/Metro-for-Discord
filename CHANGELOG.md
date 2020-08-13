@@ -1,8 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 
+
 #### 3.14.13
-* **Fixes** (1)
+* **Fixes** (4)
   * Change colour of channel categories so they look less like unread channels
   * Various fixes to Group DM popout
   * Server discovery menu items heights to match guilds
@@ -41,7 +43,7 @@ Newest Changes are at the top
 
 #### 3.14.7
 * **Fixes** (5)
-  * Update Inbox toolbar button icn
+  * Update Inbox toolbar button icon
   * Update Inbox and Recent Mentions popout
   * Some modal footers had wrong coloured footer
   * User popout body had wrong background colour
@@ -56,7 +58,7 @@ Newest Changes are at the top
   * Further improvement for low-end PCs
     * [Wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Acrylic) has been updated with new changes
     * Default acrylic background has been changed
-    * Acrylic blur effects are disabled by default. You'll need to edit some options in the CSS file to enable blur for your own background. Check the wiki page for more info.
+    * Acrylic blur effects are disabled by default. You will need to edit some options in the CSS file to enable blur for your own background. Check the wiki page for more info.
     * Added an option to turn off the UI scale transition effect when opening User/Server/Channel Settings
 * **Fixes** (2)
   * Font in chatbox will change to monospace when editing code
@@ -70,15 +72,15 @@ Newest Changes are at the top
   * User popout inputs had incorrect border widths
   * User modal textarea had incorrect border width
   * User modal pivot selected item had incorrect border colour
-  * Link to Discord support site wasn't hidden in toolbar
-  * Implemented a hack to stop the Group DM popout opening half way off the screen when on the Home/Friends screen
+  * Link to Discord support site was not hidden in toolbar
+  * Implemented a hack to stop the Group DM popout opening halfway off the screen when on the Home/Friends screen
   * A speculative fix to improve performance ~~for people running Pentium 4 CPUs~~
   * Oversized tooltips
   * Context menu
   * Slider grabber position
 * **Notes** (2)
-  * BetterDiscord: Favourite TTV emotes can't be accessed. Refer to #156
-  * Camera/Screen Share buttons should now be visible when connected to a voice channel. You'll find them just above the *Microphone Mute* button. Note that these buttons are smaller than normal as this is intened to be a temporary implementation.
+  * BetterDiscord: Favourite TTV emotes cannot be accessed. Refer to #156
+  * Camera/Screen Share buttons should now be visible when connected to a voice channel. You will find them just above the *Microphone Mute* button. Note that these buttons are smaller than normal as this is intened to be a temporary implementation.
 
 #### 3.14.3
 * **Enhancements** (2)
@@ -153,11 +155,11 @@ Newest Changes are at the top
   * The option for removing 'x blocked messages' from chat has been removed.
 * **Fixes** (8)
   * Chat mention indicator was incorrect size when not part of the first message in a group
-  * Some sizing and position changes to Cozy chat
+  * Some sizing and position changes to Cosy chat
   * Loading screen status font-weight was too bold
   * Loading screen Twitter and Status Page links
   * Server settings Audit Log had wrong background-color
-  * "X is typing" didn't move with the chatbox height when typing a multi-line message
+  * "X is typing" did not move with the chatbox height when typing a multi-line message
   * "Welcome to the server" message
   * 'New' message divider position would break in some scenarios
 
@@ -175,7 +177,7 @@ Newest Changes are at the top
  * Remove `/popout/_chat_options.scss`, now unused
 * **Enhancements** (5)
   * Move theme version number in User Settings from bottom right to Discord's version no. under the logout button
-  * Added border lines back to cozy and compact chat modes to assist with chat legibility
+  * Added border lines back to cosy and compact chat modes to assist with chat legibility
   * Changed emoji picker category icons to MDL2
   * Remove Nitro link from Friends conversation list as clicking it breaks the client until restart
   * Some minor style changes to the members list
@@ -190,7 +192,7 @@ Newest Changes are at the top
   * Many sizing and position fixes for chat
   * Create server modal
   * Remove some duplicate CSS related to badges
-  * Fix compact and cozy chat indenting
+  * Fix compact and cosy chat indenting
   * Friends table
   * Chat scrollbars showing both arrow buttons
   * Server region select modal background colour
@@ -211,7 +213,7 @@ Newest Changes are at the top
 #### 3.12.9
 * **Fixes** (2)
   * Update rolled classes on chatbox
-  * Edit chat message wasn't themed
+  * Edit chat message was not themed
 
 #### 3.12.8
 * **Fixes** (1)
@@ -219,7 +221,7 @@ Newest Changes are at the top
 
 #### 3.12.7
 * **Fixes** (1)
-  * Chatbox upload button couldn't be clicked
+  * Chatbox upload button could not be clicked
 
 #### 3.12.6
 * **Fixes** (3)
@@ -229,9 +231,9 @@ Newest Changes are at the top
 
 #### 3.12.5
 * **Fixes** (5)
-  * Chatbox border-top didn't indicate focus
+  * Chatbox border-top did not indicate focus
   * Chatbox placeholder text colour
-  * Chatbox upload button couldn't be clicked
+  * Chatbox upload button could not be clicked
   * Chatbox Emoji picker clipping over top border when hovered
   * Go live button icons in Activity box
 
@@ -484,7 +486,7 @@ Newest Changes are at the top
 * **Changes** (1)
   * Search bar will no longer collapse when not in use due to a change in functionality
 * **Fixes** (2)
-  * Seach popout
+  * Search popout
   * Chat username font weights
 
 #### 3.9.11
