@@ -1,7 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
-#### 
+#### 3.14.14
+* **Repo** (3)
+  * `dist` directory has been removed. Download updates from [releases](https://github.com/TakosThings/Metro-for-Discord/releases/latest).
+  * Rerite of wiki pages
+  * Updated README
+* **Fixes** (5)
+  * Chat scrollbar
+  * Friends list scrollbar appearing when not needed
+  * New message bars
+  * Chat loading placeholders changed to display a simple indeterminate loading bar
+  * Reaction emoji picker background
 
 #### 3.14.13
 * **Fixes** (4)
