@@ -33,3 +33,51 @@
 //         }
 //     }
 // }
+
+// Loading chat messages
+.wrapper-3vR61M{
+    height: calc(100vh - 150px) !important;
+    background-color: transparent;
+    // The placeholding items wrappers
+    .wrapper-1F5TKx{
+        display: none;
+    }
+    &::before,
+    &::after{
+        content: "";
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 2px;
+    }
+    &::before{
+        background-color: $Accent;
+        animation: indeterminateLoadingInc 3s infinite;
+    }
+    &::after{
+        background-color: $Accent;
+        animation: indeterminateLoadingDec 3s 1.5s infinite;
+    }
+
+    @keyframes indeterminateLoadingInc{
+        from{
+            left: -5%;
+            width: 5%;
+        }
+        to{
+            left: 130%;
+            width: 100%;
+        }
+    }
+    @keyframes indeterminateLoadingDec{
+        from{
+            left: -80%;
+            width: 80%;
+        }
+        to{
+            left: 110%;
+            width: 10%;
+        }
+    }
+}
