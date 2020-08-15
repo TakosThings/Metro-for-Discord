@@ -4,7 +4,7 @@ Newest Changes are at the top
 #### 3.14.14
 * **Repo** (3)
   * `dist` directory has been removed. Download updates from [releases](https://github.com/TakosThings/Metro-for-Discord/releases/latest).
-  * Rerite of wiki pages
+  * Rewrite of wiki pages
   * Updated README
 * **Fixes** (5)
   * Chat scrollbar
