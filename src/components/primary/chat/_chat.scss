@@ -9,27 +9,30 @@
 }
 
 .theme-dark .chat-3bRxxu{
-    .messages-3amgkR{
+    .scrollerContent-WzeG7R.content-3YMskv{
         padding: 0 20px;
     }
 
     // New Message bars
-    .barBase-39XTcM{
+    .barBase-1c2Rfb{
         right: 36px;
         left: 20px;
     }
-    .newMessagesBar-mujexs,
-    .jumpToPresentBar-9P20AM{
+    .newMessagesBar-265mhP,
+    .jumpToPresentBar-G1R9s6{
         background-color: $Accent;
         opacity: 1;
-        .barButtonBase-3UKlW2{
-            font-weight: normal;
+        &:hover{
+            background-color: $ListAccentHigh;
+        }
+        .barButtonBase-2uLO1z{
+            @include FontBody;
         }
     }
-    .newMessagesBar-mujexs{
+    .newMessagesBar-265mhP{
         border-radius: 0 0 4px 4px;
     }
-    .jumpToPresentBar-9P20AM{
+    .jumpToPresentBar-G1R9s6{
         padding-bottom: 0;
         border-radius: 4px 4px 0 0;
     }

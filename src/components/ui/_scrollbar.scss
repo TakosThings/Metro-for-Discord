@@ -1,5 +1,5 @@
 .theme-dark{
-    .scrollerThemed-2oenus.themedWithTrack-q8E3vB .scroller-2FKFPG{
+    .auto-Ge5KZx{
         &::-webkit-scrollbar{
             width: 16px;
         }
@@ -47,6 +47,9 @@
             background-color: $ChromeMedium;
             border: 0;
             border-radius: 0;
+        }
+        &::-webkit-scrollbar-track{
+            margin-bottom: 0;
         }
     }
 }

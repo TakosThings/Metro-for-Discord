@@ -1,35 +1,83 @@
-// Legacy spinner animation (eg. Loading chat, members list)
-.spinner .spinner-wandering-cubes{
-    span:first-of-type{
-        width: 32px;
-            height: 32px;
-            background-color: transparent;
-            background-image: url(https://i.imgur.com/MfeQkLJ.gif);
-            background-position: center center;
-            background-size: 32px 32px;
-            filter: invert(100%);
-            animation: none;
-    }
-    span:last-of-type{
+// // Legacy spinner animation (eg. Loading chat, members list)
+// .spinner .spinner-wandering-cubes{
+//     span:first-of-type{
+//         width: 32px;
+//             height: 32px;
+//             background-color: transparent;
+//             background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+//             background-position: center center;
+//             background-size: 32px 32px;
+//             filter: invert(100%);
+//             animation: none;
+//     }
+//     span:last-of-type{
+//         display: none;
+//     }
+// }
+
+// // Loading embedded image
+// span[class^="spinner-"]{
+//     span[class^="inner-"]{
+//         span[class^="wanderingCubesItem"]:first-of-type{
+//             width: 32px;
+//             height: 32px;
+//             background-color: transparent;
+//             background-image: url(https://i.imgur.com/MfeQkLJ.gif);
+//             background-position: center center;
+//             background-size: 32px 32px;
+//             filter: invert(100%);
+//             animation: none;
+//         }
+//         span[class^="wanderingCubesItem"]:last-of-type{
+//             display: none;
+//         }
+//     }
+// }
+
+// Loading chat messages
+.wrapper-3vR61M{
+    height: calc(100vh - 150px) !important;
+    background-color: transparent;
+    // The placeholding items wrappers
+    .wrapper-1F5TKx{
         display: none;
     }
-}
+    &::before,
+    &::after{
+        content: "";
+        height: 4px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 2px;
+    }
+    &::before{
+        background-color: $Accent;
+        animation: indeterminateLoadingInc 3s infinite;
+    }
+    &::after{
+        background-color: $Accent;
+        animation: indeterminateLoadingDec 3s 1.5s infinite;
+    }
 
-// Loading embedded image
-span[class^="spinner-"]{
-    span[class^="inner-"]{
-        span[class^="wanderingCubesItem"]:first-of-type{
-            width: 32px;
-            height: 32px;
-            background-color: transparent;
-            background-image: url(https://i.imgur.com/MfeQkLJ.gif);
-            background-position: center center;
-            background-size: 32px 32px;
-            filter: invert(100%);
-            animation: none;
+    @keyframes indeterminateLoadingInc{
+        from{
+            left: -5%;
+            width: 5%;
         }
-        span[class^="wanderingCubesItem"]:last-of-type{
-            display: none;
+        to{
+            left: 130%;
+            width: 100%;
+        }
+    }
+    @keyframes indeterminateLoadingDec{
+        from{
+            left: -80%;
+            width: 80%;
+        }
+        to{
+            left: 110%;
+            width: 10%;
         }
     }
 }
