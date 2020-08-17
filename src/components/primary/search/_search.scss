@@ -1,59 +1,63 @@
 .theme-dark .searchResultsWrap-3-pOjs{
     background-color: $ChromeLow;
     // Header
-    .searchHeader-1EzJGH{
+    .searchHeader-2XoQg7{
         background-color: $ChromeLow;
         box-shadow: none;
         // Total number of results found
-        .totalResults-1yK_Ym{
+        .totalResults--dyAxF{
             opacity: 1;
             @include FontSubtitle;
         }
         // Recent/Relevant tabs
-        .tab-EiCZG6{
+        .tab-2j5AEF{
             opacity: 1;
-            border-bottom: 0;
+            border-bottom: 2px solid transparent;
             @include FontBody;
             color: rgba(255,255,255,.7);
             &:hover{
                 border-bottom: 0;
                 color: #FFF;
             }
-            &.selected-3gXBLQ{
-                border-bottom: 0;
+            &.selected-2LAck8{
+                border-bottom: 2px solid $Accent;
                 color: $Accent;
             }
         }
     }
     // Results
     // Channel Name
-    .channelName-wvgELL{
+    .channelName-1JRO3C{
         background-color: $ChromeLow;
     }
     // Remove gradient
-    .searchResult-2N9RV4{
+    .searchResult-9tQ1uo{
         &::before,
         &::after{
             display: none;
         }
         // Remove border radius
-        .searchResultMessage-30QnSN{
+        .searchResultMessage-1fxgXh{
             border-radius: 0;
-            &.hit-1CXhXT{
+            &.hit-1fVM9e{
                 background-color: $ChromeMediumLow;
                 border: 0;
                 box-shadow: none;
             }
         }
         // Accent border on expanded result
-        &.expanded-ovgtuV{
+        &.expanded-w_LCGl{
+            background-color: $ChromeMedium;
             border: 1px solid $Accent;
-            border-radius: 0;
+            border-radius: 2px;
+            &.hit-1fVM9e{
+                background-color: $ChromeMediumLow;
+            }
         }
     }
 
     // Jump to message button
-    .jumpButton-1ol35X{
+    .jumpButton-JkYoYK{
         background-color: $Accent;
         border: 1px solid transparent;
         border-radius: 2px;
