@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### π
+* **Fixes** (3)
+  * Re-enable spinner on loading media (video/images)
+  * Fix problems when jumping to messages from search/pinned/mentions
+  * Update search results classes
+
 #### 3.14.14
 * **Repo** (3)
   * `dist` directory has been removed. Download updates from [releases](https://github.com/TakosThings/Metro-for-Discord/releases/latest).
