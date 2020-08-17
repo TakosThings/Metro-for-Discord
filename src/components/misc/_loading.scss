@@ -19,7 +19,6 @@ span[class^="spinner-"]{
 
 // Loading chat messages
 .wrapper-3vR61M{
-    height: calc(100vh - 150px) !important;
     background-color: transparent;
     // The placeholding items wrappers
     .wrapper-1F5TKx{
@@ -30,7 +29,9 @@ span[class^="spinner-"]{
         content: "";
         height: 4px;
         position: absolute;
-        top: 0;
+        // Hacks ahead
+        // 100vh - titlebar - toolbar - scrollbar spacer - chatbox - height of ::before,::after
+        bottom: calc(100vh - 32px - 40px - 30px - 48px - 4px);
         left: 0;
         border-radius: 2px;
     }
