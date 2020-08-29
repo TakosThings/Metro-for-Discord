@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.16
+* **Fixes** (2)
+  * Missing client mute/deafen buttons
+  * Position of screen share buttons
+
 #### π
 * **Fixes** (3)
   * Re-enable spinner on loading media (video/images)
