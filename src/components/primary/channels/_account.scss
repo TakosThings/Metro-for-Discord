@@ -59,6 +59,7 @@
     button[aria-label="Deafen"],
     button[aria-label="Undeafen"]{
         background-color: transparent;
+        display: none;
     }
 
     button[aria-label="Mute"][aria-checked="false"]::before{
@@ -87,7 +88,8 @@
         left: 0;
     }
 }
-.theme-dark .sidebar-2K8pFh .container-1giJp5~.container-3baos1{
+// Display buttons when connected
+.theme-dark .sidebar-2K8pFh .wrapper-24pKcD:not(:empty)~.container-3baos1{
     width: 96px;
     button[aria-label="Mute"],
     button[aria-label="Unmute"],
