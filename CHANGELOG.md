@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.17
+* **Fixes** (1)
+  * Client mute/deafen buttons visible when disconnected
+
 #### 3.14.16
 * **Fixes** (2)
   * Missing client mute/deafen buttons
