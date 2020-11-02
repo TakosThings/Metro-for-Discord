@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.18
+  * **Fixes** 
+    * 'Update Ready' toolbar icon not appearing
+    * Guilds folder group height
+    * Update create new server modal
+
 #### 3.14.17
 * **Fixes** (1)
   * Client mute/deafen buttons visible when disconnected

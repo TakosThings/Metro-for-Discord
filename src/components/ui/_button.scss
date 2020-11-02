@@ -39,7 +39,8 @@
 
         // Filled buttons
         &.lookFilled-1Gx00P{
-            &.colorPrimary-3b3xI6{
+            &.colorPrimary-3b3xI6,
+            &.colorGrey-2DXtkV{
                 background-color: $BaseLow;
                 color: $BaseHigh;
                 &:hover{

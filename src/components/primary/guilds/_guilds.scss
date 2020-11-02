@@ -156,7 +156,7 @@
             }
         }
         // Fix folder container being too tall
-        div[role="group"]{
+        ul[role="group"]{
             height: auto !important;
         }
     }
