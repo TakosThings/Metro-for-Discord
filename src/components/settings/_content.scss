@@ -1,7 +1,7 @@
 .theme-dark{
     .standardSidebarView-3F1I7i{
         .contentColumnDefault-1VQkGM{
-            padding: 24px 24px 0 24px;
+            padding: 24px;
         }
         .contentRegionScroller-26nc1e{
             background-color: #000;
@@ -27,38 +27,50 @@
             @include FontBody;
         }
 
+        // My Account
+        // User Info
+        .background-1QDuV2{
+            padding: 0;
+            background-color: transparent;
+            border-radius: 0;
+        }
+        .fieldList-21DyL8{
+            padding: 12px;
+            background-color: $ChromeLow;
+            border-radius: 4px;
+        }
+        .field-1HUseB{
+            h5{
+                @include FontBody;
+            }
+            .size16-1P40sf{
+                @include FontBody;
+            }
+        }
+
         // Connections
         // Connection services
-        div[class^="connectedAccounts"]{
-            padding-top: 8px;
-            div[class*="accountBtn"]{
-                button{
-                    background-color: transparent;
-                    border: 1px solid $BaseLow;
+        .accountList-33MS45{
+            background-color: $ChromeLow;
+            border-radius: 4px;
+            h5{
+                @include FontSubtitle;
+            }
+            .connectedAccounts-2-XP1G{
+                justify-content: space-between;
+                .accountBtn-2Nozo3{
+                    margin: 0;
                     border-radius: 2px;
-                    &:hover{
-                        background-color: $ListLow;
-                        border-color: $ListLow;
-                    }
                 }
             }
         }
-        // Connection
-        div[class^="connection-"]{
-            border-radius: 0;
-            div[class^="connectionHeader"]{
-                border: 0;
-                border-radius: 0;
-                div[class*="connectionAccountLabel"]{
-                    @include FontBody;
+        .connectionList-3pzR-1{
+            .connection-1fbD7X{
+                background-color: $ChromeLow;
+                border-radius: 4px;
+                .connectionHeader-2MDqhu{
+                    border-radius: 4px 4px 0 0;
                 }
-                div[class^="description-"]{
-                    display: none;
-                }
-            }
-            div[class^="connectionDelete"]{
-                border: 0;
-                border-radius: 0;
             }
         }
 
