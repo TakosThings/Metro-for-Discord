@@ -74,6 +74,55 @@
             }
         }
 
+        // Nitro
+        // Remove background
+        .background-3NP2Rg{
+            display: none;
+        }
+        // Remove Hero
+        .hero-EvfTTA{
+            display: none;
+        }
+        .featuresHeader-4YwLcc{
+            display: none;
+        }
+        // Features
+        .featureGrid-3-fNl-{
+            grid-template-columns: repeat(auto-fill,220px);
+        }
+        .feature-2w65J5{
+            background-color: $ChromeLow;
+            border-radius: 4px;
+        }
+        .promotionBanner-1fCSab{
+            margin-top: 16px;
+            background-color: $ChromeLow;
+        }
+        .marketingRefreshTier2Cta-bw9Vyc{
+            text-align: left;
+            .marketingRefreshTitle-3pOyQb{
+                @include FontSubtitle;
+            }
+            .marketingRefreshSubtitle-3jft-o{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+            .buttonsCenter-11FqDP{
+                justify-content: start;
+            }
+        }
+        .marketingRefreshSectionTier1-dRwS-6{
+            margin-top: 24px;
+            padding-top: 24px;
+            img{
+                display: none;
+            }
+            p{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+        }
+
         // Keybinds
         div[class*="keybindGroup"]{
             padding: 20px;
