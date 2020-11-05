@@ -9,9 +9,7 @@
 
         // Titles
         h2[class*="title-"]{
-            color: #FFF;
-            font-size: 27px;
-            font-weight: 300;
+            @include FontTitle;
             text-transform: none;
         }
         // Sub section header
@@ -121,6 +119,31 @@
                 color: $BaseHigh;
                 @include FontBody;
             }
+        }
+
+        // Shill squad
+        .intro-325xRx{
+            text-align: left;
+            .introHeader-4MPach{
+                @include FontTitle;
+            }
+            .introBlurb-3gFgTQ{
+                @include FontBody;
+            }
+        }
+        .joinCTA-FN-DEn{
+            justify-content: start;
+            margin-bottom: 12px;
+            .colorStandard-2KCXvj{
+                display: none;
+            }
+            button{
+                margin-left: 0;
+            }
+
+        }
+        .newsletterWarning-UKgyLB{
+            text-align: left;
         }
 
         // Keybinds
