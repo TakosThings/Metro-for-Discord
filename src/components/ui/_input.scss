@@ -367,6 +367,50 @@
         }
     }
 
+    // New toggle switch (with cross or checkmark icon)
+    .labelRow-16e77k{
+        flex-direction: row-reverse;
+        // Switch
+        // Switch label
+        label.title-31JmR4{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+        .control-2BBjec{
+            margin-right: 12px;
+            .container-3auIfb{
+                height: 20px;
+                border: 2px solid;
+                .slider-TkfMQL{
+                    rect{
+                        width: 10px;
+                        height: 10px;
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+            .container-3auIfb[style*="rgb(114, 118, 125)"]{// Switch is off
+                background-color: transparent !important;
+                border-color: #FFF;
+                &:hover{
+                    border-color: $BaseMediumHigh;
+                }
+            }
+            .container-3auIfb[style*="rgb(67, 181, 129)"]{// Switch is on
+                background-color: $Accent !important;
+                border-color: transparent;
+                &:hover{
+                    background-color: $ListAccentHigh !important;
+                }
+                .slider-TkfMQL{
+                    left: 16px !important;
+                }
+            }
+        }
+    }
+
     // Checkbox ('old type') (eg: Instant Invite modal)
     .checkbox-3kaeSU{
         .checkboxInner-3yjcPe{
