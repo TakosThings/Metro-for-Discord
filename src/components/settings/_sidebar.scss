@@ -83,7 +83,7 @@
             }
             // Logout item
             div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
-                color: $alert !important;
+                color: $BaseHigh !important;
             }
             div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.1)"]{
                 background-color: $ListLow !important;
