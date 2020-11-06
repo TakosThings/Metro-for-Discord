@@ -380,33 +380,20 @@
             margin-right: 12px;
             .container-3auIfb{
                 height: 20px;
-                border: 2px solid;
+                box-sizing: border-box;
                 .slider-TkfMQL{
                     rect{
-                        width: 10px;
-                        height: 10px;
+                        width: 11px;
+                        height: 11px;
+                        y: 2;
                     }
                     svg{
                         display: none;
                     }
                 }
             }
-            .container-3auIfb[style*="rgb(114, 118, 125)"]{// Switch is off
-                background-color: transparent !important;
-                border-color: #FFF;
-                &:hover{
-                    border-color: $BaseMediumHigh;
-                }
-            }
-            .container-3auIfb[style*="rgb(67, 181, 129)"]{// Switch is on
-                background-color: $Accent !important;
-                border-color: transparent;
-                &:hover{
-                    background-color: $ListAccentHigh !important;
-                }
-                .slider-TkfMQL{
-                    left: 16px !important;
-                }
+            .slider-TkfMQL[style*="left: 12px;"]{
+                left: 18px !important;
             }
         }
     }
