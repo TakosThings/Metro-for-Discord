@@ -289,8 +289,14 @@
                 @include FontBody;
             }
             div[class*="desc"]{
-                color: #FFF;
+                color: $BaseMedium;
             }
+        }
+
+        // Toggle/other help text
+        .description-3_Ncsb{
+            color: $BaseMedium;
+            @include FontBody;
         }
 
         // No content warning
