@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 1.15.0
+* **Repo** (1)
+  * Updated CONTRIBUTING.md with info for plugins
+* **Enhancements** (2)
+  * Added support for BetterDiscord plugins
+  * Added support for MemberCount (Arashiryuu) - Provided in #183 by @AHIRA3000
+
 #### 3.14.19
 * **Enhancements** (1)
   * Misc improvements in User Settings
