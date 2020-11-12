@@ -19,3 +19,8 @@ select,
 textarea{
     @include FontNormal;
 }
+
+// Remove orange border on some elements when focused
+:focus{
+    outline: unset;
+}
