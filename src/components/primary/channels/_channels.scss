@@ -13,7 +13,7 @@
 .theme-dark .sidebar-2K8pFh{
     background: transparent;
     // Header
-    .header-2o-2hj{
+    .header-2V-4Sw{
         height: 40px;
         padding: 0 12px;
         background-color: transparent;
@@ -34,19 +34,19 @@
     }
 
     // Channels background
-    .container-PNkimc{
+    .container-3w7J-x{
         background-color: transparent;
     }
 
     // Only show scrollbar when it's needed
-    .scroller-2FKFPG{
+    .scroller-RmtA4e{
         overflow-y: auto;
     }
 
     // Channel tree root
-    .containerDefault-3GGEv_,
-    .containerDragBefore-3Dzc5x{
-        .wrapper-CU3qI5{
+    .containerDefault-3tr_sE,
+    .containerDragBefore-1YqewQ{
+        .wrapper-PY0fhH{
             height: 32px;
             padding-left: 36px;
             padding-right: 12px;
@@ -61,16 +61,16 @@
             &:hover{
                 background-color: $ListLow;
             }
-            .icon-WnO6o2{
+            .icon-2yIBmh{
                 display: none;
             }
-            .name-IbjUBS{
+            .name-3l27Hl{
                 color: $BaseMedium;
                 @include FontBody;
                 text-transform: none;
             }
 
-            &.collapsed-4WdoJ7{
+            &.collapsed-2-tg8y{
                 &::before{
                     content: "\E76C";
                 }
@@ -78,14 +78,14 @@
                     display: none;
                 }
             }
-            &.muted-1NRuDm{
-                .name-IbjUBS{
+            &.muted-2JBAyG{
+                .name-3l27Hl{
                     color: $alert;
                 }
             }
         }
         // Add channel to tree button
-        .children-13TY0l{
+        .children-L002ao{
             button[aria-label="Create Channel"]{
                 opacity: .5;
                 &:hover{
@@ -96,19 +96,19 @@
     }
 
     // Text Channel
-    .containerDefault-1ZnADq{
+    .containerDefault--pIXnN{
         &:hover{
-            .wrapper-1ucjTd{
+            .wrapper-2jXpOf{
                 background-color: $ListLow;
             }
-            .content-3at_AU{
+            .content-1x5b-n{
                 background-color: transparent;
             }
         }
-        .wrapper-1ucjTd{
+        .wrapper-2jXpOf{
             height: 32px;
         }
-        .content-3at_AU{
+        .content-1x5b-n{
             height: 32px;
             margin: 0 0 0 28px;
             padding: 0 8px 0 0;
@@ -123,22 +123,22 @@
                 background-color: transparent;
             }
             // Channel name
-            .name-3_Dsmg{
+            .name-23GUGE{
                 color: $BaseMedium;
                 @include FontBody;
             }
         }
         // Muted channel
-        .modeMuted-3osy7j{
+        .modeMuted-onO3r-{
             svg{
                 filter: brightness(50%) sepia(100) saturate(100) hue-rotate(25deg);
             }
-            .name-3_Dsmg{
+            .name-23GUGE{
                 color: $alert;
             }
         }
         // Selected channel
-        .modeSelected-1zApJ_{
+        .modeSelected-346R90{
             &::before{
                 content: "";
                 position: absolute;
@@ -150,15 +150,15 @@
                 background-color: $Accent;
                 border-radius: 1px;
             }
-            svg.icon-1_QxNX,
-            .name-3_Dsmg{
+            svg.icon-1DeIlz,
+            .name-23GUGE{
                 color: $Accent;
             }
         }
         // Unread channel
-        .modeUnread-1zpFdA{
+        .modeUnread-1qO3K1{
             // Unread dot
-            .unread-3zKkbm{
+            .unread-2lAfLh{
                 height: 16px;
                 width: 2px;
                 left: 4px;
@@ -166,16 +166,16 @@
                 background-color: $BaseHigh;
                 border-radius: 0;
             }
-            .content-3at_AU > svg{
+            .content-1x5b-n > div > svg{
                 color: $BaseHigh;
             }
-            .name-3_Dsmg{
+            .name-23GUGE{
                 color: $BaseHigh;
             }
         }
 
         // Connected to voice dot
-        .modeConnected-2IEL4z{
+        .modeConnected-3IsKId{
             &::before{
                 content: "";
                 position: absolute;
@@ -187,27 +187,20 @@
                 background-color: rgba(var(--voice), 1);
                 border-radius: 1px;
             }
-            svg.icon-1_QxNX,
-            .name-3_Dsmg{
+            svg.icon-1DeIlz,
+            .name-23GUGE{
                 color: rgba(var(--voice), 1);
             }
         }
         // Channel actions (instant invite, settings)
-        .actionIcon-2Hi9ZG{
+        .actionIcon-PgcMM2{
             color: $BaseMedium;
         }
-        // Badge
-        .numberBadge-2s8kKX{
-            min-width: 20px;
-            min-height: 20px;
-            background-color: #003b67 !important;
-            border: 2px solid #1a4e76;
-        }
         // Voice user popout open
-        .selected-3TGCSZ{
-            .content-3xS9Lh{
+        .selected-3t3Csj{
+            .content-1Wq3SX{
                 background-color: transparent;
-                .username-lm8y6T{
+                .username-3KYl0N{
                     color: $BaseHigh;
                 }
             }
@@ -215,31 +208,31 @@
     }
 
     // Voice channel
-    .list-2bwCXU{
+    .list-2luk8a{
         padding-left: 0;
     }
     // Voice user
-    .voiceUser-14U_Ns{
+    .voiceUser-1K6Xox{
         padding-left: 44px;
     }
-    .userSmall-2t9H7n{
+    .userSmall-YJ5L9_{
         height: 30px;
         &:hover{
             background-color: $ListLow;
         }
-        .avatarSmall-2CW6I1{
+        .avatarSmall-1PJoGO{
             width: 20px;
             height: 20px;
         }
     }
-    .voiceUser-14U_Ns{
-        &:hover .content-3xS9Lh{
+    .voiceUser-1K6Xox{
+        &:hover .content-1Wq3SX{
             background-color: transparent;
         }
     }
-    .content-3xS9Lh{
+    .content-1Wq3SX{
         margin: 0;
-        .usernameFont-aFalyR{
+        .username-3KYl0N{
             color: $BaseHigh;
             @include FontBody;
         }
