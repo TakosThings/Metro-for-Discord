@@ -1,36 +1,31 @@
 # Contributing
 
-## Issues
+## Reporting Issues
 * Disable BetterDiscord plugins and addon themes before opening an issue. 
 * Use the provided *Bug report* template when opening a new Issue.
   * You may delete the placeholder help text under each header if you wish.
-  * You may remove the *Steps to reproduce* section if you don't need it.
 * Please don't 'bulk report' unrelated issues in the same Issue.
 * Please don't report a new issue in the thread of an existing issue if it is unrelated.
 * Please don't open an issue if your problem relates directly to BetterDiscord or if a BetterDiscord plugin or addon theme is causing a conflict with this theme. 
 * Search through existing issues before adding a new *Feature request*. These issues are tagged with the `Feedback` label.
 
-## Developing
-### Requirements
+## Pull Requests
+* Open an issue using the *Change proposal* template to discuss your changes
+* Clone/rebase this repo
+* Make sure your editor is obeying `.editorconfig`. <sup>[What's this?](https://editorconfig.org/)</sup>
+  * To test: Try removing the blank new line at the end a file, then save. Everything is working properly if a blank new line is added back after saving.
+* Make any changes in a new branch (not `master`)
+* Submit a PR, be sure to reference the initial discussion issue
+
+### Developing
+#### Ingredients
 * An editor (like [Visual Studio Code](https://code.visualstudio.com/))
 * [Git](https://git-scm.com/)
-* [Node](https://nodejs.org/en/)
-* [Editorconfig](https://editorconfig.org/) plugin if your editor doesn't support it natively (VSCode needs a [plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig))
-
-### Setup
-* Clone the repository `git clone https://github.com/TakosThings/Metro-for-Discord`
+* [Node JS](https://nodejs.org/en/)
+* [Editorconfig Plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig/) (if you're using VS Code)
+#### Method
 * Run `npm i`
-
-### Development
-* Use `npm run watch` to automatically compile the themes as you work
-
-## Contributing Changes
-* Clone/rebase the repo and make your changes in a new branch
-* Open an issue using the *Change proposal* template to discuss your changes
-* Make sure your editor is obeying `.editorconfig`
-  * To test: Try adding a bunch of superfluous spaces after a line of CSS and then save. The spaces should be automatically removed.
-* Don't worry about updating `README.md`, `CHANGELOG.md` or committing the `/dist/` directory
-* Submit a PR, referencing the discussion issue
+* Use `npm run watch` to automatically compile the theme as you work
 
 ### Things to know
 * All development and testing is done using BeautifulDiscord, which can auto-reload the theme as you work
