@@ -34,3 +34,12 @@
 
 ### Things to know
 * All development and testing is done using BeautifulDiscord, which can auto-reload the theme as you work
+
+### BetterDiscord
+Additions for BetterDiscord plugins are welcome, however I likely won't update them over time. Please submit a PR for plugin additions or updates.
+* The plugin **must** be approved and listed in the BetterDiscord plugin repos.
+  * Support will be removed if the developer leaves the BetterDiscord server or is removed from the developer role.
+* File location and naming convention
+  * Plugin support files shall be located within `/src/components/betterdiscord/plugins/`
+  * Each plugin shall have it's own SCSS file using the following naming scheme `_GithubUsername.PluginName.scss`. Capitalisation should be the same as the developer's GitHub username, and plugin name.
+  * Import the plugin in `/src/components/betterdiscord/_plugin_support.scss`
