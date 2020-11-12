@@ -94,7 +94,8 @@
         // Edit keybind
         &.lookGhost-2Fn_0-{
             border: 2px solid transparent;
-            &.colorGrey-2DXtkV{
+            &.colorGrey-2DXtkV,
+            &.colorBrand-3pXr91{
                 background-color: #333;
                 color: $BaseHigh;
                 &:hover{

@@ -367,6 +367,37 @@
         }
     }
 
+    // New toggle switch (with cross or checkmark icon)
+    .labelRow-16e77k{
+        flex-direction: row-reverse;
+        // Switch
+        // Switch label
+        label.title-31JmR4{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+        .control-2BBjec{
+            margin-right: 12px;
+            .container-3auIfb{
+                height: 20px;
+                box-sizing: border-box;
+                .slider-TkfMQL{
+                    rect{
+                        width: 11px;
+                        height: 11px;
+                        y: 2;
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+            .slider-TkfMQL[style*="left: 12px;"]{
+                left: 18px !important;
+            }
+        }
+    }
+
     // Checkbox ('old type') (eg: Instant Invite modal)
     .checkbox-3kaeSU{
         .checkboxInner-3yjcPe{

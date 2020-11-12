@@ -10,7 +10,7 @@
 }
 @mixin FontTitle{
     font-size: 24px;
-    font-weight: 400; // Semilight
+    font-weight: 300; // Default is actually 400 (semilight)
     line-height: 28px;
 }
 @mixin FontSubtitle{

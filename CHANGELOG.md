@@ -1,11 +1,20 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.14.19
+* **Enhancements** (1)
+  * Misc improvements in User Settings
+* **Fixes** (4)
+  * Change colour of subheaders in User Settings to improve legibility
+  * Change colour of Log Out item in User Settings to improve legibility
+  * Fix gap appearing when no scrollbar was needed
+  * Fix channels
+
 #### 3.14.18
-  * **Fixes** 
-    * 'Update Ready' toolbar icon not appearing
-    * Guilds folder group height
-    * Update create new server modal
+* **Fixes** (3)
+  * 'Update Ready' toolbar icon not appearing
+  * Guilds folder group height
+  * Update create new server modal
 
 #### 3.14.17
 * **Fixes** (1)

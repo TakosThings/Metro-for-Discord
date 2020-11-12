@@ -1,7 +1,7 @@
 .theme-dark{
     .standardSidebarView-3F1I7i{
-        .content-column.default{
-            padding: 26px 15px 0 12px;
+        .contentColumnDefault-1VQkGM{
+            padding: 24px;
         }
         .contentRegionScroller-26nc1e{
             background-color: #000;
@@ -9,13 +9,12 @@
 
         // Titles
         h2[class*="title-"]{
-            color: #FFF;
-            font-size: 27px;
-            font-weight: 300;
+            @include FontTitle;
             text-transform: none;
         }
         // Sub section header
         h5[class*="title-"]{
+            margin-bottom: 24px;
             color: #FFF;
             font-size: 20px;
             font-weight: 300;
@@ -27,38 +26,132 @@
             @include FontBody;
         }
 
+        // My Account
+        // User Info
+        .background-1QDuV2{
+            padding: 0;
+            background-color: transparent;
+            border-radius: 0;
+        }
+        .fieldList-21DyL8{
+            padding: 12px;
+            background-color: $ChromeLow;
+            border-radius: 4px;
+        }
+        .field-1HUseB{
+            h5{
+                @include FontBody;
+            }
+            .size16-1P40sf{
+                @include FontBody;
+            }
+        }
+
         // Connections
         // Connection services
-        div[class^="connectedAccounts"]{
-            padding-top: 8px;
-            div[class*="accountBtn"]{
-                button{
-                    background-color: transparent;
-                    border: 1px solid $BaseLow;
+        .accountList-33MS45{
+            background-color: $ChromeLow;
+            border-radius: 4px;
+            h5{
+                @include FontSubtitle;
+            }
+            .connectedAccounts-2-XP1G{
+                justify-content: space-between;
+                .accountBtn-2Nozo3{
+                    margin: 0;
                     border-radius: 2px;
-                    &:hover{
-                        background-color: $ListLow;
-                        border-color: $ListLow;
-                    }
                 }
             }
         }
-        // Connection
-        div[class^="connection-"]{
-            border-radius: 0;
-            div[class^="connectionHeader"]{
-                border: 0;
-                border-radius: 0;
-                div[class*="connectionAccountLabel"]{
-                    @include FontBody;
-                }
-                div[class^="description-"]{
-                    display: none;
+        .connectionList-3pzR-1{
+            .connection-1fbD7X{
+                background-color: $ChromeLow;
+                border-radius: 4px;
+                .connectionHeader-2MDqhu{
+                    border-radius: 4px 4px 0 0;
                 }
             }
-            div[class^="connectionDelete"]{
-                border: 0;
-                border-radius: 0;
+        }
+
+        // Nitro
+        // Remove background
+        .background-3NP2Rg{
+            display: none;
+        }
+        // Remove Hero
+        .hero-EvfTTA{
+            display: none;
+        }
+        .featuresHeader-4YwLcc{
+            display: none;
+        }
+        // Features
+        .featureGrid-3-fNl-{
+            grid-template-columns: repeat(auto-fill,220px);
+        }
+        .feature-2w65J5{
+            background-color: $ChromeLow;
+            border-radius: 4px;
+        }
+        .promotionBanner-1fCSab{
+            margin-top: 16px;
+            background-color: $ChromeLow;
+        }
+        .marketingRefreshTier2Cta-bw9Vyc{
+            text-align: left;
+            .marketingRefreshTitle-3pOyQb{
+                @include FontSubtitle;
+            }
+            .marketingRefreshSubtitle-3jft-o{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+            .buttonsCenter-11FqDP{
+                justify-content: start;
+            }
+        }
+        .marketingRefreshSectionTier1-dRwS-6{
+            margin-top: 24px;
+            padding-top: 24px;
+            img{
+                display: none;
+            }
+            p{
+                color: $BaseHigh;
+                @include FontBody;
+            }
+        }
+
+        // Shill squad
+        .intro-325xRx{
+            text-align: left;
+            .introHeader-4MPach{
+                @include FontTitle;
+            }
+            .introBlurb-3gFgTQ{
+                @include FontBody;
+            }
+        }
+        .joinCTA-FN-DEn{
+            justify-content: start;
+            margin-bottom: 12px;
+            .colorStandard-2KCXvj{
+                display: none;
+            }
+            button{
+                margin-left: 0;
+            }
+
+        }
+        .newsletterWarning-UKgyLB{
+            text-align: left;
+        }
+
+        // Voice and audio
+        .wrapper-3Z-vWm{
+            // Blend to background
+            .notches-1sAcEM.gray-3_LNYR{
+                filter: contrast(100);
             }
         }
 
@@ -197,8 +290,14 @@
                 @include FontBody;
             }
             div[class*="desc"]{
-                color: #FFF;
+                color: $BaseMedium;
             }
+        }
+
+        // Toggle/other help text
+        .description-3_Ncsb{
+            color: $BaseMedium;
+            @include FontBody;
         }
 
         // No content warning

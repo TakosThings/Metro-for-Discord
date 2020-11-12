@@ -22,14 +22,14 @@
             left: 0;
             z-index: 1;
         }
-        div[class^="scroller-"]{
-            overflow-y: auto;
+        .sidebarRegionScroller-3MXcoP{
+            overflow-y: auto !important;
         }
         .sidebar-CFHs9e{
             div[class^="side"] div[class^="header"]{
                 margin-top: 16px;
                 padding: 0 16px;
-                color: gray;
+                color: $BaseMedium;
                 font-weight: normal;
                 line-height: 48px;
                 .channelIcon-3IJ4o7{
@@ -83,7 +83,7 @@
             }
             // Logout item
             div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71)"]{
-                color: $alert !important;
+                color: $BaseHigh !important;
             }
             div[class^="side"] div[class^="item"][style*="color: rgb(240, 71, 71); background-color: rgba(240, 71, 71, 0.1)"]{
                 background-color: $ListLow !important;
@@ -99,7 +99,7 @@
             // Version info
             .info-1VyQPT{
                 div{
-                    color: gray;
+                    color: $BaseMedium;
                 }
             }
         }
