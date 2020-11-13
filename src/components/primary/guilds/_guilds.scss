@@ -121,50 +121,49 @@
                 display: none;
             }
         }
-
-        // Folders
-        .wrapper-21YSNc{
-            .listItem-2P_4kh{
-                .wrapper-25eVIn{
-                    svg{
-                        mask{
-                            display: none;
-                        }
+    }
+    // Folders
+    .wrapper-21YSNc{
+        .listItem-2P_4kh{
+            .wrapper-25eVIn{
+                svg{
+                    mask{
+                        display: none;
                     }
                 }
             }
-            // Fix folder container being too tall
-            ul[role="group"]{
-                height: auto !important;
-            }
         }
-        .folder-21wGz3{
-            background-color: transparent;
-        }
-        .folderIconWrapper-226oVY{
-            background-color: transparent !important;
-            border-radius: 0;
-        }
-        .closedFolderIconWrapper-15K9MK{
-            padding: 8px;
-        }
-        .expandedFolderBackground-2sPsd-{
-            left: 0;
-            bottom: 0;
-            background-color: $ListLow;
-            border-radius: 0;
-            &.collapsed-1GMuSb{
-                background-color: transparent;
-            }
-        }
-        .expandedFolderIconWrapper-1xLaU-{
-            svg path{
-                clip-path: inset(1px 1px 1px 1px);
-            }
-        }
-        .expandedGuilds-1JMD4M{
+        // Fix folder container being too tall
+        ul[role="group"]{
             height: auto !important;
         }
+    }
+    .folder-21wGz3{
+        background-color: transparent;
+    }
+    .folderIconWrapper-226oVY{
+        background-color: transparent !important;
+        border-radius: 0;
+    }
+    .closedFolderIconWrapper-15K9MK{
+        padding: 8px;
+    }
+    .expandedFolderBackground-2sPsd-{
+        left: 0;
+        bottom: 0;
+        background-color: $ListLow;
+        border-radius: 0;
+        &.collapsed-1GMuSb{
+            background-color: transparent;
+        }
+    }
+    .expandedFolderIconWrapper-1xLaU-{
+        svg path{
+            clip-path: inset(1px 1px 1px 1px);
+        }
+    }
+    .expandedGuilds-1JMD4M{
+        height: auto !important;
     }
     // Unread notification bars
     // These break due to our fixed buttons at the bottom, so we remove them
