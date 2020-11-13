@@ -1,11 +1,14 @@
 .theme-dark .chat-3bRxxu,
 .theme-dark .chat-3bRxxu .messages-3amgkR{
-    background-color: $ChromeMediumLow;
+    background-color: transparent;
 }
 
 // Remove 'drop shadow' from under toolbar
-.content-yTz4x3:before{
-    display: none;
+.content-yTz4x3{
+    background-color: $ChromeMediumLow;
+    &:before{
+        display: none;
+    }
 }
 
 .theme-dark .chat-3bRxxu{
