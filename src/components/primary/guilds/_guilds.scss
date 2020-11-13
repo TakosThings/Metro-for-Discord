@@ -1,149 +1,127 @@
-.theme-dark .wrapper-1Rf91z{
-    width: 48px;
+.platform-win .scroller-2TZvBN{
+    padding: 0;
     background-color: transparent;
-    border-radius: 0;
+}
 
-    // Remove padding
-    .scroller-2TZvBN{
-        margin-bottom: 96px;
-        padding: 0;
-        background-color: transparent;
-    }
+.theme-dark .wrapper-1Rf91z{
+    margin-top: 40px;
+    margin-bottom: 96px;
+    background-color: transparent;
+    z-index: 10;
 
-    // Item
     .listItem-2P_4kh{
-        width: 48px;
         margin: 0;
+        width: 48px;
         &:hover{
             background-color: $ListLow;
         }
-    }
-    .wrapper-25eVIn{
-        svg{
-            foreignObject{
+        // Pill
+        .pill-31IEus,
+        .pill-2uzAFe,
+        .pill-3YxEhL{
+            .item-2hkk8m{
+                width: 2px;
+                height: 24px !important;
+                margin-left: 4px;
+                border-radius: 1px;
+                // Guild is selected
+                &[style*="height: 40px;"]{
+                    height: 24px !important;
+                    background-color: $Accent;
+                }
+            }
+        }
+        // Guild icon
+        .wrapper-25eVIn{
+            svg foreignObject{
                 mask: none;
             }
-        }
-        .icon-27yU2q{
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-        }
-        .acronym-2mOFsV{
-            width: 24px;
-            height: 24px;
-            background-color: transparent;
-            color: #FFF;
-            @include FontBase;
-            &.selected-bZ3Lue{
-                color: $Accent;
+            .icon-27yU2q{
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+            }
+            .acronym-2mOFsV{
+                width: 24px;
+                height: 24px;
+                background-color: transparent;
+                color: $BaseHigh;
+                @include FontBase;
             }
         }
-    }
-
-    // Pill
-    .item-2hkk8m{
-        width: 2px;
-        height: 24px !important;
-        margin-left: 4px;
-        border-radius: 1px;
-        transform:  none !important;
-        // Guild is selected
-        &[style*="height: 40px;"]{
-            height: 24px !important;
-            background-color: $Accent;
-        }
-    }
-
-    // Remove active state
-    .blobContainer-239gwq:active{
-        transform: none;
-    }
-
-    // Home
-    .wrapper-1BJsBx{
-        .childWrapper-anI2G9{
+        .wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9,
+        .wrapper-1BJsBx:hover .childWrapper-anI2G9{
             background-color: transparent;
         }
-        svg{
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 18px;
-            path{
+
+        // Home
+        .wrapper-1BJsBx{
+            .childWrapper-anI2G9{
+                background-color: transparent;
+            }
+            .homeIcon-tEMBK1{
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 18px;
+                path{
+                    display: none;
+                }
+            }
+        }
+        // Remove Home :active transform
+        .blobContainer-239gwq:active{
+            transform: none;
+        }
+
+        // Separator
+        .guildSeparator-3s64Iy{
+            display: none;
+        }
+        // Add server/Server Discovery icons
+        .circleIconButton-jET_ig{
+            background-color: transparent;
+            color: #FFF;
+            &[aria-label]{
+                svg{
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+        }
+        // Offline
+        .guildsError-b7zR5H{
+            background-color: $alert;
+            border: 0;
+            border-radius: 0;
+            transition: none;
+            font-weight: 400;
+        }
+        //badge
+        .lowerBadge-29hYVK,
+        .upperBadge-2XnnGB{
+            right: 4px;
+            transform: none !important;
+        }
+        .upperBadge-2XnnGB{
+            top: 4px;
+        }
+        .lowerBadge-29hYVK{
+            bottom: 4px;
+            z-index: 1;
+        }
+
+        .participating-NBGDkr{
+            width: 32px;
+            height: 32px;
+            transform: translateX(-4px) translateY(4px);
+            background-color: transparent;
+            border: 2px solid rgba(var(--voice), 1);
+            border-radius: 50%;
+            svg{
                 display: none;
             }
         }
     }
-    // Stop home :active transform
-    .listItemWrapper-3X98Pc:active{
-        transform: none;
-    }
-
-    // Add server/Server Discovery icons
-    .circleIcon-LvPL6c{
-        width: 18px;
-        height: 18px;
-    }
-    .circleIconButton-jET_ig[aria-label="Server Discovery"]{
-        svg{
-            width: 18px;
-            height: 18px;
-        }
-    }
-
-    // Separator
-    .guildSeparator-3s64Iy{
-        display: none;
-    }
-
-    // Add Guild
-    .circleIconButton-jET_ig{
-        background-color: transparent;
-        color: #FFF;
-    }
-
-    // Offline
-    .guildsError-b7zR5H{
-        background-color: $alert;
-        border: 0;
-        border-radius: 0;
-        transition: none;
-        font-weight: 400;
-    }
-
-    //badge
-    .lowerBadge-29hYVK,
-    .upperBadge-2XnnGB{
-        right: 4px;
-        transform: none !important;
-    }
-    .upperBadge-2XnnGB{
-        top: 4px;
-    }
-    .lowerBadge-29hYVK{
-        bottom: 4px;
-        z-index: 1;
-    }
-
-    .participating-NBGDkr{
-        width: 32px;
-        height: 32px;
-        transform: translateX(-4px) translateY(4px);
-        background-color: transparent;
-        border: 2px solid rgba(var(--voice), 1);
-        border-radius: 50%;
-        svg{
-            display: none;
-        }
-    }
-
-    // Unread notification bars
-    // These break due to our fixed buttons at the bottom, so we remove them
-    .unreadMentionsIndicatorTop-gA6RCh,
-    .unreadMentionsIndicatorBottom-BXS58x{
-        display: none;
-    }
-
     // Folders
     .wrapper-21YSNc{
         .listItem-2P_4kh{
@@ -186,5 +164,11 @@
     }
     .expandedGuilds-1JMD4M{
         height: auto !important;
+    }
+    // Unread notification bars
+    // These break due to our fixed buttons at the bottom, so we remove them
+    .unreadMentionsIndicatorTop-gA6RCh,
+    .unreadMentionsIndicatorBottom-BXS58x{
+        display: none;
     }
 }

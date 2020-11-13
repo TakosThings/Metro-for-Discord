@@ -6,57 +6,48 @@
         display: none;
     }
 
+    // List
     .scroller-1JbKMe{
-        padding-top: 0 !important;
-        overflow-y: auto !important; // OK discord...
         background-color: transparent;
-    }
-
-    // Header
-    .privateChannelsHeaderContainer-3NB1K1{
-        display: none;
-    }
-
-    #private-channels{
-        margin: -8px 0;
-    }
-
-    // Conversation
-    .channel-2QD9_O{
-        max-width: 100%;
-        margin: 0;
-        color: $BaseHigh;
-        &:first-of-type{
-            margin-top: -8px;
-        }
-        &.container-2Pjhx-{
-            padding: 0;
-            border-radius: 0;
+        overflow-y: auto !important;
+        &#private-channels{
+            margin: -8px 0;
         }
 
-        &[href="/store"]{
+        // Remove header
+        .privateChannelsHeaderContainer-3NB1K1{
             display: none;
         }
 
-        .layout-2DM8Md{
-            height: 48px;
-            padding: 0 8px !important;
-            border-radius: 0;
-        }
-
-        .name-uJV0GL{
-            @include FontBody;
-        }
-
-        // State
-        &:hover{
-            .layout-2DM8Md{
-                background-color: $ListLow;
+        // Channel
+        .channel-2QD9_O{
+            max-width: unset;
+            &[href="/channels/@me"]{
+                .layout-2DM8Md{
+                    height: 40px;
+                    padding: 0 12px !important;
+                    background-color: $ChromeBlackMediumLow;
+                    .avatar-3uk_u9{
+                        display: none;
+                    }
+                    .name-uJV0GL{
+                        @include FontBase;
+                    }
+                }
             }
-        }
-        &.selected-aXhQR6{
+            &[href="/store"]{
+                display: none;
+            }
+            &[href^="/channels/@me/"]{
+                margin-left: 48px;
+            }
+
             .layout-2DM8Md{
-                background-color: $ListAccentLow;
+                height: 48px;
+                padding: 0 8px !important;
+                &:hover{
+                    background-color: $ListLow;
+                }
             }
         }
     }

@@ -3,10 +3,18 @@
     .sidebar-2K8pFh{
         // Header
         .discoverHeader-1TWTqG{
-            margin: 0 12px;
+            margin: 0;
+            padding: 0 12px;
+            background-color: $ChromeBlackMediumLow;
             @include FontBase;
-            line-height: 48px;
+            line-height: 40px;
+
+            // Hack to stop selecting the 'header' in friends
+            &~.container-2Pjhx-{
+                margin-left: 48px;
+            }
         }
+
 
         .container-2Pjhx-{
             margin: 0;
@@ -24,7 +32,7 @@
             }
 
             .layout-2DM8Md{
-                padding: 8px;
+                padding: 4px;
                 border-radius: 0;
             }
 

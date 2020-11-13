@@ -1,46 +1,34 @@
-// Remove rounded corners on top-left and bottom-left
-.platform-win{
-    // Removes the gap between guilds and channel list
-    .base-3dtUhz{
-        left: 48px;
-    }
-    // Removes top-left rounded corner of the channels list
-    .sidebar-2K8pFh{
-        border-radius: 0;
-    }
+.platform-win .sidebar-2K8pFh{
+    background: transparent;
+    border-radius: 0;
 }
 
 .theme-dark .sidebar-2K8pFh{
-    background: transparent;
-    // Header
-    .header-2V-4Sw{
-        height: 40px;
-        padding: 0 12px;
-        background-color: transparent;
-        box-shadow: none;
-        &:hover{
-            background-color: $ListLow;
-        }
-        h1{
-            @include FontBaseAlt;
-        }
-        // Remove guild level icon
-        .guildIconContainer-E1JUVt{
-            div[aria-label^="Level"],
-            div[aria-label^="No Level"]{
-                display: none;
-            }
-        }
-    }
-
-    // Channels background
+    width: 288px;
     .container-3w7J-x{
         background-color: transparent;
     }
 
-    // Only show scrollbar when it's needed
+    // Header container
+    .container-1taM1r{
+        .header-2V-4Sw{
+            height: 40px;
+            padding: 0 12px;
+            box-shadow: none;
+            background-color: $ChromeBlackMediumLow;
+            @include FontBase;
+            transition: none;
+            &:hover{
+                background-color: $ListLow;
+            }
+            .name-1jkAdW{
+                @include FontBase;
+            }
+        }
+    }
+
     .scroller-RmtA4e{
-        overflow-y: auto;
+        margin-left: 48px;
     }
 
     // Channel tree root
@@ -236,5 +224,10 @@
             color: $BaseHigh;
             @include FontBody;
         }
+    }
+
+    // Unread messages bar
+    .container-35XQWE{
+        left: 48px;
     }
 }

@@ -12,4 +12,4 @@ Get the latest version from [releases](https://github.com/TakosThings/Metro-for-
 [Visit the wiki](https://github.com/TakosThings/Metro-for-Discord/wiki/Setup-Guide) for the setup guide
 
 ## Preview
-![Preview](https://i.imgur.com/ZvYZOnD.png)
+![Preview](https://i.imgur.com/qfCvxrB.png)

@@ -21,14 +21,14 @@
 **/
 
 /* Change the URL to your own background*/
-.bg-h5JY_x,
+body,
 .container-16j22k{
     background-image: url(https://i.imgur.com/PoQUA3n.jpg);
 }
 
 /* Blur filter */
 /* Uncomment to ENABLE the blur filter if required */
-.bg-h5JY_x::before,
+body::before,
 .container-16j22k::before{
     /* backdrop-filter: blur(45px) saturate(125%); */
 }
