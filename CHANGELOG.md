@@ -1,12 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
-#### 1.15.1
+#### 3.15.1
 * **Enhancements** (1)
   * Redesign titlebar and toolbar
     * Known issue: Gap appears in Home toolbar when too many conversations are listed. Close inactive conversations to resolve.
 
-#### 1.15.0
+#### 3.15.0
 * **Repo** (1)
   * Updated CONTRIBUTING.md with info for plugins
 * **Enhancements** (2)
