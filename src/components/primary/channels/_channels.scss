@@ -25,6 +25,17 @@
                 @include FontBase;
             }
         }
+        // Guild banner
+        .animatedContainer-1NSq4T{
+            left: 48px;
+            background-color: transparent;
+            box-shadow: none;
+            .bannerImage-3KhIJ6{
+                &::before{
+                    display: none;
+                }
+            }
+        }
     }
 
     .scroller-RmtA4e{
