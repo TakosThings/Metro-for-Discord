@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.2
+* **Enhancements** (1)
+  * Remove guild badge icon from channel header
+* **Fixes** (2)
+  * Guild banner position
+  * Fix unclickable area on left edge of channel list
+
 #### 3.15.1
 * **Enhancements** (1)
   * Redesign titlebar and toolbar
