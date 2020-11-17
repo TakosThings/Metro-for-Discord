@@ -21,6 +21,10 @@
             &:hover{
                 background-color: $ListLow;
             }
+            // Remove badge
+            .guildIconContainer-2FW_iA{
+                display: none;
+            }
             .name-1jkAdW{
                 @include FontBase;
             }
