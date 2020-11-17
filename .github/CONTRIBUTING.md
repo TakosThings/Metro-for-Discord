@@ -22,7 +22,7 @@
 * An editor (like [Visual Studio Code](https://code.visualstudio.com/))
 * [Git](https://git-scm.com/)
 * [Node JS](https://nodejs.org/en/)
-* [Editorconfig Plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig/) (if you're using VS Code)
+* [Editorconfig Plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) (if you're using VS Code)
 #### Method
 * Run `npm i`
 * Use `npm run watch` to automatically compile the theme as you work
