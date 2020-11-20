@@ -1,5 +1,12 @@
 // Most icons in this file by https://icons8.com
 .theme-dark{
+    // Server Toolbar
+    .chat-3bRxxu .title-3qD0b-,
+    .container-3gCOGc .container-1r6BKw{
+        .search-2oPWTC .searchBar-3dMhjb{
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAEDBPUGBvcI+Qn6DP0N/g7/DWADvhAAAAmElEQVR4Ab2R4Q6DIAwGkaFMgXa793/YxURiLMzEP9wvm5MP2rrxzFuGvL3+6CAcSOj5FTR653xUeHd9rN8R1iYf/Fl5sLdoPV8zxLwfNQdMRDoDakS61AXvLnjypQZngGc/aHtFefbIGblvsx2UPh319IHlZllT5guy7OtepOvLFJQDDT2/95IUSqraessw70LrDcH6sfwAxRkI55lYy9wAAAAASUVORK5CYII=);
+        }
+    }
     // Upload modal
     div[class^="uploadModal"] div[class^="inner"] div[class^="file-"] div[class^="icon"] {
         &[class*="acrobat"],
