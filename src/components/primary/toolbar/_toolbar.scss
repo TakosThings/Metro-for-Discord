@@ -124,8 +124,21 @@
     div[aria-label="Member List"]::before{
         content: "\E779";
     }
-    div[aria-label="Update Ready!"]::before{
-        content: "\ECC5";
+    div[aria-label="Update Ready!"]{
+        &::before{
+            content: "\ECC5";
+        }
+        &::after{
+            content: "";
+            width: 50%;
+            height: 2px;
+            position: absolute;
+            bottom: 4px;
+            left: calc(50% - 25%);
+            background-color: $alert;
+            border-radius: 1px;
+            animation: blink 2s ease-out infinite;
+        }
     }
     div[aria-label="Inbox"]::before{
         content: "\E715";
