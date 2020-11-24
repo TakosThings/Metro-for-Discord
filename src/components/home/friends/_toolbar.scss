@@ -99,4 +99,7 @@
     div[aria-label="Inbox"]::before{
         content: "\E715";
     }
+    div[aria-label="Update Ready!"]::before{
+        content: "\ECC5";
+    }
 }
