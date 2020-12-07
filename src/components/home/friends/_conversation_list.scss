@@ -3,7 +3,33 @@
 
     // Remove search
     .searchBar-6Kv8R2{
-        display: none;
+        height: 40px;
+        background-color: $ChromeBlackMediumLow;
+        &::before{
+            content: "Home";
+            color: $BaseHigh;
+            @include FontBase;
+        }
+        button{
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 0;
+            background-color: transparent;
+            border-radius: 0;
+            font-size: 0;
+            line-height: 40px;
+            &:hover{
+                background-color: $ListLow;
+            }
+            &::before{
+                content: "\E721";
+                margin: 6px;
+                color: $BaseHigh;
+                font-size: 16px;
+                @include FontIcon;
+            }
+        }
     }
 
     // List
@@ -23,17 +49,7 @@
         .channel-2QD9_O{
             max-width: unset;
             &[href="/channels/@me"]{
-                .layout-2DM8Md{
-                    height: 40px;
-                    padding: 0 12px !important;
-                    background-color: $ChromeBlackMediumLow;
-                    .avatar-3uk_u9{
-                        display: none;
-                    }
-                    .name-uJV0GL{
-                        @include FontBase;
-                    }
-                }
+                display: none;
             }
             &[href="/store"]{
                 display: none;

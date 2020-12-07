@@ -57,15 +57,18 @@
 
         // Home
         .wrapper-1BJsBx{
-            .childWrapper-anI2G9{
-                background-color: transparent;
-            }
-            .homeIcon-tEMBK1{
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 18px;
-                path{
-                    display: none;
+            &[aria-label="Home"]{
+                .childWrapper-anI2G9{
+                    background-color: transparent;
+                    &::before{
+                        content: "\E80F";
+                        color: $BaseHigh;
+                        @include FontIcon;
+                        font-size: 16px;
+                    }
+                    svg{
+                        display: none;
+                    }
                 }
             }
         }

@@ -12,9 +12,47 @@
         background-color: transparent;
         border-top: 2px solid $ListLow;
         border-radius: 0;
+        transition: 150ms ease-in border-top-color;
         &:focus-within{
             border-top-color: $Accent;
+            transition: 150ms ease-in border-top-color;
         }
+        &:hover:not(:focus-within){
+            border-top-color: $BaseLow;
+            transition: 150ms ease-in border-top-color;
+        }
+
+        // Replying to user
+        .container-2fRDfG{
+            background-color: $ChromeBlackLow;
+            border-radius: 0;
+            .actions-NlfMQc{
+                .mentionButton-3710-W{
+                    &.colorBrand-2tjs5J{
+                        color: $Accent;
+                    }
+                    &::before{
+                        content: "\E168";
+                        @include FontIcon;
+                        padding-right: 4px;
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+                .closeButton-37O8QC{
+                    &::before{
+                        content: "\E8BB";
+                        @include FontIcon;
+                    }
+                    svg{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+
         .scrollableContainer-2NUZem{
             background-color: transparent;
             border-radius: 0;

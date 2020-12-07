@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.3
+* **Enhancements** (4)
+  * Add pulsing bar to Update Ready toolbar button
+  * Reply to user bar in chatbox
+  * Add hover state, and transition effects to chatbox
+  * Display button in Home to open quickswitcher
+* **Fixes** (3)
+  * Removed some old embedded icons, dist CSS files should now be about 9KB lighter (with some extra savings for BD)
+  * Missing update icon in Home toolbar
+  * Inbox breaking main UI when selecting a pivot option within the popout
+
 #### 3.15.2
 * **Enhancements** (1)
   * Remove guild badge icon from channel header
