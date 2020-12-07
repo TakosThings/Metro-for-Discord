@@ -12,8 +12,14 @@
         background-color: transparent;
         border-top: 2px solid $ListLow;
         border-radius: 0;
+        transition: 150ms ease-in border-top-color;
         &:focus-within{
             border-top-color: $Accent;
+            transition: 150ms ease-in border-top-color;
+        }
+        &:hover:not(:focus-within){
+            border-top-color: $BaseLow;
+            transition: 150ms ease-in border-top-color;
         }
 
         // Replying to user
