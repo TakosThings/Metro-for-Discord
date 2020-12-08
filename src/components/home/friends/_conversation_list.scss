@@ -48,13 +48,10 @@
         // Channel
         .channel-2QD9_O{
             max-width: unset;
-            &[href="/channels/@me"]{
-                display: none;
-            }
             &[href="/store"]{
                 display: none;
             }
-            &[href^="/channels/@me/"]{
+            &[href^="/channels/@me"]{
                 margin-left: 48px;
             }
 

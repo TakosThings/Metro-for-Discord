@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.4
+* **Fixes** (1)
+  * Fix missing option to return to friends list
+
 #### 3.15.3
 * **Enhancements** (4)
   * Add pulsing bar to Update Ready toolbar button
