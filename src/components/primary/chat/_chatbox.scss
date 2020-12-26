@@ -119,6 +119,16 @@
             @include FontMonospace;
         }
 
+        // Command
+        .pill-2pQByF{
+            padding-bottom: 3px;
+            background-color: $ListAccentMedium;
+            @include FontBody;
+        }
+        .tabButton-1n4gNP{
+            opacity: 1;
+        }
+
         // Right buttons
         .buttons-3JBrkn{
             margin-right: 0;
@@ -186,33 +196,39 @@
     // Hack to stop the autocomplete popout being selected
     // Changes to this code must be mirrored to _chat.scss
     div[class^="scrollableContainer-"] ~ div[class^="autocomplete-"]{
+        bottom: 100%;
         background-color: $ChromeLow;
         border-bottom: 1px solid $Accent;
         border-radius: 0;
+        box-shadow: none;
     }
-    div[class^="autocomplete-"]{
-        div[class^="contentTitle"]{
-            color: $BaseHigh;
-            @include FontBase;
-            strong{
-                font-weight: normal;
-                &::before,
-                &::after{
-                    content: "'";
-                }
+
+    // Titlebar
+    .contentTitle-2tG_sM{
+        color: $BaseHigh;
+        @include FontBody;
+        text-transform: none;
+        strong{
+            &::before, &::after{
+                content: '\'';
             }
         }
-        div[class*="selector-"]{
-            border-radius: 0;
+    }
+
+    // Parameter type
+    .bar-AokMp3{
+        background-color: $ChromeMedium;
+        .option-2lkyZ_{
+            border-radius: 2px;
+            padding-bottom: 2px;
+            &.active-2awTSY{
+                background-color: $Accent;
+            }
         }
-        div[class^="selectorSelected"]{
-            background-color: $ListAccentLow;
-        }
-        polygon{
-            fill: $BaseHigh;
-        }
-        div[class^="description"]{
-            color: $BaseHigh;
+
+        // Command help
+        .description-QP9Ktn{
+            @include FontCaption;
         }
     }
 }
