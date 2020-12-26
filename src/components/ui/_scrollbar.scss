@@ -90,3 +90,19 @@
         }
     }
 }
+
+// Autocomplete GIF scrollbar
+.horizontalAutocompletes-lotYRO{
+    &::-webkit-scrollbar-track{
+        margin: 0 8px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: $BaseLow;
+        &:hover{
+            background-color: $ListLow;
+        }
+        &:active{
+            background-color: $BaseMediumLow;
+        }
+    }
+}
