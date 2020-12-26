@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.5
+* **Fixes** (1)
+  * Command autocomplete
+
 #### 3.15.4
 * **Fixes** (1)
   * Fix missing option to return to friends list
