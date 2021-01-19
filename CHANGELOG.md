@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.6
+* **Fixes** (1)
+  * Inbox breaking main UI when selecting a pivot option within the popout
+
 #### 3.15.5
 * **Fixes** (1)
   * Command autocomplete
