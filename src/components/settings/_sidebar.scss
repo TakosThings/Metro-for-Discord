@@ -203,30 +203,33 @@
                 font-size: 16px;
             }
         }
+        // Server Name
         .item-PXvHYJ:nth-child(2)::after{ // Overview
-            content: "\F246";
+            content: "\F246"; // ViewDashboard
         }
         .item-PXvHYJ:nth-child(3)::after{ // Roles
-            content: "\EC1B";
+            content: "\EC1B"; // Badge
         }
         .item-PXvHYJ:nth-child(4)::after{ // Emoji
-            content: "\ED54";
+            content: "\ED54"; // EmojiTabSmilesAnimals
         }
         .item-PXvHYJ:nth-child(5)::after{ // Moderation
-            content: "\EC81";
+            content: "\EC81"; // PoliceCar
         }
         .item-PXvHYJ:nth-child(6)::after{ // Audit Log
-            content: "\E9D5";
+            content: "\E9D5"; // CheckList
         }
         .item-PXvHYJ:nth-child(7)::after{ // Integrations
-            content: "\E774";
+            content: "\E774"; // Globe
         }
         .item-PXvHYJ:nth-child(8)::after{ // Widget
-            content: "\EA86";
+            content: "\EA86"; // Puzzle
         }
         .item-PXvHYJ:nth-child(9)::after{ // Server template
             content: "\E8C8"; // Copy
         }
+
+        // Community
         .item-PXvHYJ:nth-child(12)::after{ // Enable Community
             content: "\E902"; // Group
         }
@@ -234,17 +237,18 @@
             content: "\EC4A"; // SpeedHigh
         }
 
+        // User Management
         .item-PXvHYJ:nth-child(17)::after{ // Members
-            content: "\E716";
+            content: "\E716"; // People
         }
         .item-PXvHYJ:nth-child(18)::after{ // Invites
-            content: "\E8FA";
+            content: "\E8FA"; // AddFriend
         }
         .item-PXvHYJ:nth-child(19)::after{ // Bans
-            content: "\E8F8";
+            content: "\E8F8"; // BlockContact
         }
         .item-PXvHYJ:nth-child(21)::after{ // Delete server
-            content: "\E74D";
+            content: "\E74D"; // Delete
         }
     }
 }
@@ -260,19 +264,19 @@
             }
         }
         .item-PXvHYJ:nth-child(2)::after{ // Overview
-            content: "\F246";
+            content: "\F246"; // ViewDashboard
         }
         .item-PXvHYJ:nth-child(3)::after{ // Permissions
-            content: "\E8D7";
+            content: "\E8D7"; // Permissions
         }
         .item-PXvHYJ:nth-child(4)::after{ // Invites
-            content: "\E8FA";
+            content: "\E8FA"; // AddFriend
         }
         .item-PXvHYJ:nth-child(5)::after{ // Web hook
-            content: "\E774";
+            content: "\E774"; // Globe
         }
         .separator-gCa7yv ~ .item-PXvHYJ::after{ // Delete channel
-            content: "\E74D";
+            content: "\E74D"; // Delete
         }
     }
 }
@@ -287,11 +291,11 @@
                 font-size: 16px;
             }
         }
-        .item-PXvHYJ:nth-child(3)::after{ // Overview
-            content: "\E804";
+        .item-PXvHYJ:nth-child(3)::after{ // Transport
+            content: "\E804"; // Car
         }
         .item-PXvHYJ:nth-child(4)::after{ // Permissions
-            content: "\E898";
+            content: "\E898"; // Upload
         }
     }
 }
