@@ -1,127 +1,131 @@
-.theme-dark .sidebar-2K8pFh .container-1giJp5{
-    width: 144px;
-    height: 48px;
+.theme-dark .container-1giJp5{
+    height: calc(48px + 24px);
     padding: 0;
-    border: 0;
-    margin-left: 144px;
-    // Ping meter
-    .rtcConnectionStatus-2-jIsi{
-        width: 48px;
-        height: 48px;
+
+    .flex-1xMQg5{
         position: relative;
-        &:hover{
-            background-color: $ListLow;
-        }
-        .ping-2NgC8E{
-            padding: 14px;
-        }
+        margin-left: 0;
     }
 
-    .labelWrapper-Pniq53{
-        button{
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            position: absolute;
-            z-index: 1;
-            div{
-                display: none;
-            }
-        }
-    }
-
+    // Connection status
     .inner-tyMogq{
-        position: relative;
-    }
-    .rtcConnectionStatus-2-jIsi ~ a{
-        width: 16px;
-        height: 16px;
-        position: absolute;
-        left: 20px;
-        bottom: 10px;
-        background-color: $ChromeMediumLow;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAB+gAAAfoBF4pEbwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEqSURBVFiF7dZPK0RRHMbxc5Wsp2iSlOy9AiXZoPyJsqEs7WwsZWM1C94A70FCKTsLkpcyFsrCvwkfizlTUzMYNfeezXw3Z3Gfer51fuecG0KPHv8A2yilKj9Q5x59RRZnOIrlr5hNVf6GuZTl86nKa1gprDwKVLTyiCrucIxNlPMoz3DYRqAdH7jCTB4ijWP3jkWUMIxJ7OA6CjS4xHieEkttvg/G7XqJuSes5Smx/ENmFCcx94W9bkvsN+35xi+5rXhqoNJtiY6uYqziM2bXuy3R0WOE3aaZGOuqRCeoH+XTKHFWuECUGMFzlJhOJdGYm/NUAuU4kDUMtcvk+mORZVk1hHATQugPISwULhC5iOtUKoHbuE4U0NVKnAN4SCUw0HhLkgj06PEX31IG0S3SIDUGAAAAAElFTkSuQmCC);
-        background-size: 16px;
-        background-position: center;
-        border-radius: 50%;
-        border-radius: 50%;
-        font-size: 0;
-        z-index: 2;
-        &:hover{
-            background-color: $safe;
-        }
-        div{
-            display: none;
-        }
-    }
-
-    // Go live buttons
-    .actionButtons-14eAc_{
-        width: 48px;
+        width: 100%;
         height: 24px;
         position: absolute;
-        bottom: 48px;
-        left: 48px;
+        top: 0;
+        left: 0;
         z-index: 1;
-        margin-top: 0;
-        display: unset;
-        button{
-            min-width: unset;
-            min-height: unset;
-            width: 24px;
-            height: 24px;
-            padding: 0 6px;
-            background-color: transparent;
-            border-radius: 0;
-            font-size: 0;
-            flex: unset;
-            display: inline-block;
-            margin: 0;
-            min-width: unset;
-            &:hover{
-                background-color: $ListLow;
-            }
-            &[aria-label="Camera Unavailable"]{
-                pointer-events: none;
-            }
-            .buttonIcon-Od8mYw{
-                width: 16px;
-                height: 16px;
-                margin-right: 0; // icon position fixes because we're hiding the button text
-                margin-left: -2px;
-            }
-        }
+        background-color: $ListLow;
     }
 
+    .rtcConnectionStatus-2-jIsi{
+        padding-bottom: 0;
+        &.rtcConnectionQualityFine-2J6i8z ~ a div{
+            background-color: rgb(0, 204, 106);
+        }
+        &.rtcConnectionQualityAverage-3KV0u- ~ a div{
+            background-color: rgb(255, 185, 0);
+        }
+        &.rtcConnectionQualityBad-1J7mUU ~ a div{
+            background-color: rgb(231, 72, 86);
+        }
+        // Return to channel/status bar
+        & ~ a div{
+            width: 180px;
+            height: 24px;
+            border-radius: 0 12px 12px 0;
+            padding-left: 8px;
+            color: $AltHigh;
+            font-size: 12px;
+            line-height: 24px;
+            box-sizing: border-box;
+        }
 
-    // Buttons
-    .button-14-BFJ{
-        width: 48px;
+        // Remove SVG
+        svg{
+            display: none;
+        }
+        // RTC button
+        .labelWrapper-Pniq53{
+            button{
+                width: 60px;
+                height: 24px;
+                position: absolute;
+                top: 0px;
+                right: 0;
+                
+                
+                &:before{
+                    content: "Status";
+                    @include FontNormal;
+                    font-size: 12px;
+                    color: $BaseHigh;
+                }
+            }
+        }
+
+       
+    }
+
+    // Buttons (Disconnect and Crisp)
+    .inner-tyMogq ~ .flex-1xMQg5{
+        position: absolute;
+        top: 24px;
+        right: 0;
+    }
+    .button-14-BFJ,
+    .button-38aScr{
+        width: 60px;
         height: 48px;
-        color: #FFF;
-        border-radius: 0;
-        &:hover{
-            background-color: $ListLow;
+        .contents-18-Yxp{
+            display: none;
         }
         &::before{
             @include FontIcon;
             font-size: 16px;
         }
-        .contents-18-Yxp{
-            display: none;
+        &:hover{
+            background-color: $ListLow
         }
     }
-    button[aria-label="Connection Info"]::before{
-        content: "\E946";
+
+    // Action button - Camera and screen share
+    .actionButtons-14eAc_{
+        width: 120px;
+        margin-top: 24px;
+        justify-content: unset;
     }
+    // Video/Screen share
+    .button-38aScr{
+        width: 60px;
+        height: 48px;
+        margin: 0;
+        border-radius: 0;
+        &.lookFilled-1Gx00P.colorBrand-3pXr91{
+                background-color: transparent;
+            &:hover{
+                background-color: $ListLow;
+            }
+        }
+
+        // Disabled
+        &.fauxDisabled-2ik0Vw{
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+    }
+
+    // Icon replcements
     button[aria-label="Disconnect"]::before{
         content: "\E89B";
     }
     button[aria-label^="Noise Suppression powered by Krisp"]::before{
         content: "\F61F";
     }
-    button[aria-label^="Change Screen"]::before{
-        content: "\EC19";
+    button[aria-label^="Camera"]::before{
+        content: "\E960";
+    }
+    button[aria-label^="Share Your Screen"]::before{
+        content: "\EBC6";
     }
 }

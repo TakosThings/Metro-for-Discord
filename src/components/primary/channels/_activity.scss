@@ -1,31 +1,20 @@
-.theme-dark .sidebar-2K8pFh .panel-24C3ux{
-    width: 240px;
+.theme-dark .activityPanel-28dQGo{
     height: 48px;
-    margin-left: 48px;
-    padding: 0 0 0 12px;
-    border: 0;
-    box-sizing: border-box;
-    z-index: 1; // fixes buttons not being able to be used
-    .title-eS5yk3{
-        @include FontBody;
-    }
+    padding: 0 0 0 8px;
     .actions-aUdUfC{
         button{
             width: 48px;
             height: 48px;
-            color: #FFF;
-            border-radius: 0;
-            &:hover{
-                background-color: $ListLow;
+            .contents-18-Yxp{
+                display: none;
             }
             &::before{
                 @include FontIcon;
                 font-size: 16px;
             }
-            .contents-18-Yxp{
-                display: none;
-            }
         }
+
+        // Icon replacements
         button[aria-label^="Stream"]::before,
         button:disabled::before{
             content: "\F71C";
