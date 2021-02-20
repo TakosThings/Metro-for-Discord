@@ -117,71 +117,78 @@
                 font-size: 16px;
             }
         }
+        // User Settings
         .item-PXvHYJ:nth-child(2)::after{ // My account
-            content: "\E77B";
+            content: "\E77B"; // Contact
         }
         .item-PXvHYJ:nth-child(3)::after{ // Privacy & safety
-            content: "\EA18";
+            content: "\EA18"; // Shield
         }
         .item-PXvHYJ:nth-child(4)::after{ // Authorised apps
-            content: "\E8D7";
+            content: "\E8D7"; // Permissions
         }
         .item-PXvHYJ:nth-child(5)::after{ // connections
-            content: "\F0B9";
+            content: "\F0B9"; // Connected
         }
-        .item-PXvHYJ:nth-child(6)::after{ // Billing
-            content: "\E8C7";
-        }
+
+        // Billing Settings
         .item-PXvHYJ:nth-child(8)::after{ // Nitro
             content: "N";
             @include FontNormal;
         }
-        .item-PXvHYJ:nth-child(9)::after{ // Nitro
-            content: "\F133"
+        .item-PXvHYJ:nth-child(9)::after{ // Server boost
+            content: "\EC4A" // SpeedHigh
         }
-        .item-PXvHYJ:nth-child(10)::after{ // Server Boost
-            content: "\EC4A";
+        .item-PXvHYJ:nth-child(10)::after{ // Gift inventory
+            content: "\F133"; // GiftboxOpen
         }
-        .item-PXvHYJ:nth-child(11)::after{ // Nitro
-            content: "H";
-            @include FontNormal;
+        .item-PXvHYJ:nth-child(11)::after{ // Billing
+            content: "\E8C7"; // PaymentCard
         }
 
-        .item-PXvHYJ:nth-child(14)::after{ // Overlay
-            content: "\E720";
+        // App Settings
+        .item-PXvHYJ:nth-child(14)::after{ // Voice and Video
+            content: "\E720"; // Microphone
         }
-        .item-PXvHYJ:nth-child(15)::after{ // Overlay
-            content: "\E9A6";
+        .item-PXvHYJ:nth-child(15)::after{ // Text and images
+            content: "\EA69"; // Media
         }
-        .item-PXvHYJ:nth-child(16)::after{ // Notifications
-            content: "\E91C";
+        .item-PXvHYJ:nth-child(16)::after{ // Appearance
+            content: "\E771"; // Personalise
         }
-        .item-PXvHYJ:nth-child(17)::after{ // Keybinds
-            content: "\E765";
+        .item-PXvHYJ:nth-child(17)::after{ // Notifications
+            content: "\E91C"; // ActionCentre
         }
-        .item-PXvHYJ:nth-child(18)::after{ // Game activity
-            content: "\E7FC";
+        .item-PXvHYJ:nth-child(18)::after{ // Keybinds
+            content: "\E765"; // KeyboardClassic
         }
-        .item-PXvHYJ:nth-child(19)::after{ // Text and images
-            content: "\EA69";
+        .item-PXvHYJ:nth-child(19)::after{ // Language
+            content: "\F2B7"; // LocaleLanguage
         }
-        .item-PXvHYJ:nth-child(20)::after{ // Appearance
-            content: "\E790";
+        .item-PXvHYJ:nth-child(20)::after{ // Windows settings
+            content: "\E8A9"; // ViewAll
+            transform: perspective(24px) rotateY(24deg) scale(1.2, 1.2);
         }
         .item-PXvHYJ:nth-child(21)::after{ // Streamer mode
             content: "\E93E";
         }
-        .item-PXvHYJ:nth-child(22)::after{ // Language
-            content: "\F2B7";
+
+        // Gaming Settings
+        .item-PXvHYJ:nth-child(24)::after{ // Game activity
+            content: "\E7FC"; // Game
         }
-        .item-PXvHYJ:nth-child(23)::after{ // Windows settings
-            content: "\E8A9";
+        .item-PXvHYJ:nth-child(25)::after{ // Overlay
+            content: "\E9A6"; // FitPage
         }
-        .item-PXvHYJ:nth-child(25)::after{ // Changelog
-            content: "\E77C";
+        .item-PXvHYJ:nth-child(27)::after{ // Changelog
+            content: "\E77C"; // Memo
         }
-        .item-PXvHYJ:nth-child(27)::after{ // Log out
-            content: "\F3B1";
+        .item-PXvHYJ:nth-child(28)::after{ // Hype Squad
+            content: "H";
+            @include FontNormal;
+        }
+        .item-PXvHYJ:nth-child(30)::after{ // Log out
+            content: "\F3B1"; // SignOut
         }
     }
 }
