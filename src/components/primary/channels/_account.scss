@@ -1,13 +1,17 @@
 .theme-dark .panels-j1Uci_{
     background-color: transparent;
+    margin-left: 48px;
 }
 .theme-dark .container-3baos1{
     height: 48px;
     margin-bottom: 0;
     padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+    // Hide name
+    .nameTag-3uD-yy{
+        display: none;
+    }
+
     .avatarWrapper-2yR4wp{
         width: 48px;
         height: 48px;
@@ -29,39 +33,35 @@
         }
     }
 
-    // Hide name
-    .nameTag-3uD-yy{
-        display: none;
-    }
-
-    // Buttons
-    .flex-1xMQg5{
-        margin-left: 48px;
-    }
     .button-14-BFJ{
-        width: 48px;
         height: 48px;
-        color: #FFF;
-        border-radius: 0;
-        &:hover{
-            background-color: $ListLow;
+        .contents-18-Yxp{
+            display: none;
         }
         &::before{
             @include FontIcon;
             font-size: 16px;
         }
-        .contents-18-Yxp{
-            display: none;
+        &:hover{
+            background-color: $ListLow
         }
     }
+
+    // Mute/Deafen buttons
     button[aria-label="Mute"],
-    button[aria-label="Unmute"],
-    button[aria-label="Deafen"],
-    button[aria-label="Undeafen"]{
-        background-color: transparent;
-        display: none;
+    button[aria-label="Deafen"]{
+        width: 120px;
     }
 
+    // Place the setting button in the guilds list
+    button[aria-label="User Settings"]{
+        position: absolute;
+        width: 48px;
+        bottom: 0;
+        left: 0;
+    }
+
+    // Icon replacements
     button[aria-label="Mute"][aria-checked="false"]::before{
         content: "\E720";
     }
@@ -78,23 +78,5 @@
     }
     button[aria-label="User Settings"]::before{
         content: "\E713";
-    }
-    // Place the setting button in the guilds list
-    button[aria-label="User Settings"]{
-        position: absolute;
-        width: 48px;
-        height: 48px;
-        bottom: 0;
-        left: 0;
-    }
-}
-// Display buttons when connected
-.theme-dark .sidebar-2K8pFh .wrapper-24pKcD:not(:empty)~.container-3baos1{
-    width: 96px;
-    button[aria-label="Mute"],
-    button[aria-label="Unmute"],
-    button[aria-label="Deafen"],
-    button[aria-label="Undeafen"]{
-        display: block;
     }
 }
