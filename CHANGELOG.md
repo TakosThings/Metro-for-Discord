@@ -1,6 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.7
+* **Enhancements** (1)
+  * Redesign account/RTC/streaming controls
+* **Fixes** (3)
+  * Update icons in user settings UI
+  * Speculative fix for channels becoming uninteractive occasionally when scrolling the channel list
+  * Some fixes for theme breaking when light mode is the selected theme
+
 #### 3.15.6
 * **Fixes** (1)
   * Inbox breaking main UI when selecting a pivot option within the popout
