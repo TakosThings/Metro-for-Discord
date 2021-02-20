@@ -1,84 +1,86 @@
-.header-3msK0M{
-    align-items: flex-start;
-}
-
-.colorHeaderPrimary-26Jzh-,
-.colorHeaderSecondary-3Sp3Ft{
-    color: $BaseHigh;
-}
-
-.subtitle-Nw1LLR, .title-3w8xhj{
-    text-align: left;
-}
-
-.title-3w8xhj{
-    @include FontTitle;
-}
-.subtitle-Nw1LLR{
-    @include FontBody;
-}
-
-
-// Server Templates
-.templatesList-2E6rTe{
-    margin-top: 0;
-    padding: 0 20px 20px 20px;
-}
-.container-UC8Ug1{
-    padding: 8px 20px;
-    background-color: $BaseLow;
-    border: 0;
-    border-radius: 2px;
-    .icon-QM5383{
-        display: none;
+.theme-dark{
+    .header-3msK0M{
+        align-items: flex-start;
     }
-    .text-1FOLJS{
+
+    .colorHeaderPrimary-26Jzh-,
+    .colorHeaderSecondary-3Sp3Ft{
+        color: $BaseHigh;
+    }
+
+    .subtitle-Nw1LLR, .title-3w8xhj{
+        text-align: left;
+    }
+
+    .title-3w8xhj{
+        @include FontTitle;
+    }
+    .subtitle-Nw1LLR{
+        @include FontBody;
+    }
+
+
+    // Server Templates
+    .templatesList-2E6rTe{
+        margin-top: 0;
+        padding: 0 20px 20px 20px;
+    }
+    .container-UC8Ug1{
+        padding: 8px 20px;
+        background-color: $BaseLow;
+        border: 0;
+        border-radius: 2px;
+        .icon-QM5383{
+            display: none;
+        }
+        .text-1FOLJS{
+            color: $BaseHigh;
+            @include FontBody;
+        }
+        .arrow-hynWUl{
+            margin-right: 0;
+        }
+    }
+
+    // 'Have an invite?'
+    .optionHeader-1-5lcp{
+        @include FontBody;
+        text-transform: none;
+    }
+
+    // Footer
+    .footer-1NnaNd{
+        align-items: flex-start;
+    }
+    .footerTitle-2CYZch{
+        color: $BaseHigh;
+        @include FontBody;
+        text-transform: none;
+    }
+    // Back button
+    .lookBlank-3eh9lL{
+        color: $BaseHigh;
+    }
+
+    // Paste invite link
+    // The text input has a different background for some reason?
+    .input--jS-j2{
+        background: none;
+    }
+
+    // Sample links
+    .sampleLink-2NLvZg{
+        color: $Accent;
+    }
+
+    // Create own server
+    // T&Cs
+    .guidelines-1NSoht{
+        color: $BaseMedium;
+    }
+    // Checkbox label
+    .creationIntentText-3OlELP{
         color: $BaseHigh;
         @include FontBody;
     }
-    .arrow-hynWUl{
-        margin-right: 0;
-    }
-}
-
-// 'Have an invite?'
-.optionHeader-1-5lcp{
-    @include FontBody;
-    text-transform: none;
-}
-
-// Footer
-.footer-1NnaNd{
-    align-items: flex-start;
-}
-.footerTitle-2CYZch{
-    color: $BaseHigh;
-    @include FontBody;
-    text-transform: none;
-}
-// Back button
-.lookBlank-3eh9lL{
-    color: $BaseHigh;
-}
-
-// Paste invite link
-// The text input has a different background for some reason?
-.input--jS-j2{
-    background: none;
-}
-
-// Sample links
-.sampleLink-2NLvZg{
-    color: $Accent;
-}
-
-// Create own server
-// T&Cs
-.guidelines-1NSoht{
-    color: $BaseMedium;
-}
-// Checkbox label
-.creationIntentText-3OlELP{
-    color: $BaseHigh;
-    @include FontBody;
 }
