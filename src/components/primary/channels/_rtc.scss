@@ -92,7 +92,7 @@
     // Action button - Camera and screen share
     .actionButtons-14eAc_{
         width: 120px;
-        margin-top: 24px;
+        margin-top: 16px;
         justify-content: unset;
     }
     // Video/Screen share
@@ -122,7 +122,7 @@
     button[aria-label^="Noise Suppression powered by Krisp"]::before{
         content: "\F61F";
     }
-    button[aria-label^="Camera"]::before{
+    button[aria-label*="Camera"]::before{
         content: "\E960";
     }
     button[aria-label^="Share Your Screen"]::before{

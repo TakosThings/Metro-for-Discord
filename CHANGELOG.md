@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.8
+* **Fixes** (2)
+  * Webcam and screenshare button alignments
+  * Webcam icon din't display if the user had a webcam
+
 #### 3.15.7
 * **Enhancements** (1)
   * Redesign account/RTC/streaming controls
