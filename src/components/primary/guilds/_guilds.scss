@@ -1,25 +1,25 @@
-.platform-win .scroller-2TZvBN{
+.platform-win .scroller-1Bvpku{
     padding: 0;
     background-color: transparent;
 }
 
-.theme-dark .wrapper-1Rf91z{
+.theme-dark .wrapper-3NnKdC{
     width: 48px;
     margin-top: 40px;
     margin-bottom: 96px;
     background-color: transparent;
     z-index: 10;
 
-    .listItem-2P_4kh{
+    .listItem-GuPuDH{
         margin: 0;
         width: 48px;
         &:hover{
             background-color: $ListLow;
         }
         // Pill
-        .pill-31IEus,
-        .pill-2uzAFe,
-        .pill-3YxEhL{
+        .pill-1z4sAY,
+        .pill-3N7f9r,
+        .pill-1Z5PKm{
             .item-2hkk8m{
                 width: 2px;
                 height: 24px !important;
@@ -73,16 +73,16 @@
             }
         }
         // Remove Home :active transform
-        .blobContainer-239gwq:active{
+        .listItemWrapper-KhRmzM:active{
             transform: none;
         }
 
         // Separator
-        .guildSeparator-3s64Iy{
+        .guildSeparator-33mFX6{
             display: none;
         }
         // Add server/Server Discovery icons
-        .circleIconButton-jET_ig{
+        .circleIconButton-1QV--U{
             background-color: transparent;
             color: #FFF;
             &[aria-label]{
@@ -93,7 +93,7 @@
             }
         }
         // Offline
-        .guildsError-b7zR5H{
+        .guildsError-g6NwOI{
             background-color: $alert;
             border: 0;
             border-radius: 0;
@@ -127,8 +127,8 @@
         }
     }
     // Folders
-    .wrapper-21YSNc{
-        .listItem-2P_4kh{
+    .wrapper-3Njo_c{
+        .listItem-GuPuDH{
             .wrapper-25eVIn{
                 svg{
                     mask{
@@ -142,17 +142,17 @@
             height: auto !important;
         }
     }
-    .folder-21wGz3{
+    .folder-1hbNCn{
         background-color: transparent;
     }
-    .folderIconWrapper-226oVY{
+    .folderIconWrapper-1_bOZe{
         background-color: transparent !important;
         border-radius: 0;
     }
-    .closedFolderIconWrapper-15K9MK{
+    .closedFolderIconWrapper-2sTcE6{
         padding: 8px;
     }
-    .expandedFolderBackground-2sPsd-{
+    .expandedFolderBackground-1cujaW{
         left: 0;
         bottom: 0;
         background-color: $ListLow;
@@ -161,18 +161,15 @@
             background-color: transparent;
         }
     }
-    .expandedFolderIconWrapper-1xLaU-{
+    .expandedFolderIconWrapper-Huv7rA{
         svg path{
             clip-path: inset(1px 1px 1px 1px);
         }
     }
-    .expandedGuilds-1JMD4M{
-        height: auto !important;
-    }
     // Unread notification bars
     // These break due to our fixed buttons at the bottom, so we remove them
-    .unreadMentionsIndicatorTop-gA6RCh,
-    .unreadMentionsIndicatorBottom-BXS58x{
+    .unreadMentionsIndicatorTop-2-tcdU,
+    .unreadMentionsIndicatorBottom-2mDYbI{
         display: none;
     }
 }

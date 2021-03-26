@@ -1,10 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.9
+* **Fixes** (1)
+  * Update guilds classes
+
 #### 3.15.8
 * **Fixes** (2)
   * Webcam and screenshare button alignments
-  * Webcam icon din't display if the user had a webcam
+  * Webcam icon dind't display if the user had a webcam
 
 #### 3.15.7
 * **Enhancements** (1)
