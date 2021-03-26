@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.9
+* **Fixes** (1)
+  * Update guilds classes
+
 #### 3.15.8
 * **Fixes** (2)
   * Webcam and screenshare button alignments
