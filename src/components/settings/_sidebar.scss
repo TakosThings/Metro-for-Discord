@@ -147,47 +147,53 @@
         }
 
         // App Settings
-        .item-PXvHYJ:nth-child(14)::after{ // Voice and Video
-            content: "\E720"; // Microphone
-        }
-        .item-PXvHYJ:nth-child(15)::after{ // Text and images
-            content: "\EA69"; // Media
-        }
-        .item-PXvHYJ:nth-child(16)::after{ // Appearance
+        .item-PXvHYJ:nth-child(14)::after{ // Appearance
             content: "\E771"; // Personalise
         }
-        .item-PXvHYJ:nth-child(17)::after{ // Notifications
+        .item-PXvHYJ:nth-child(15)::after{ // Accessibility
+            content: "\E776"; // EaseOfAccess
+        }
+        .item-PXvHYJ:nth-child(16)::after{ // Voice and Video
+            content: "\E720"; // Microphone
+        }
+        .item-PXvHYJ:nth-child(17)::after{ // Text and images
+            content: "\EA69"; // Media
+        }
+        .item-PXvHYJ:nth-child(18)::after{ // Notifications
             content: "\E91C"; // ActionCentre
         }
-        .item-PXvHYJ:nth-child(18)::after{ // Keybinds
+        .item-PXvHYJ:nth-child(19)::after{ // Keybinds
             content: "\E765"; // KeyboardClassic
         }
-        .item-PXvHYJ:nth-child(19)::after{ // Language
+        .item-PXvHYJ:nth-child(20)::after{ // Language
             content: "\F2B7"; // LocaleLanguage
         }
-        .item-PXvHYJ:nth-child(20)::after{ // Windows settings
+        .item-PXvHYJ:nth-child(21)::after{ // Windows settings
             content: "\E8A9"; // ViewAll
             transform: perspective(24px) rotateY(24deg) scale(1.2, 1.2);
         }
-        .item-PXvHYJ:nth-child(21)::after{ // Streamer mode
-            content: "\E93E";
+        .item-PXvHYJ:nth-child(22)::after{ // Streamer mode
+            content: "\E93E"; // Streaming
+        }
+        .item-PXvHYJ:nth-child(23)::after{ // Advanced
+            content: "\E7BE"; // Education
         }
 
         // Gaming Settings
-        .item-PXvHYJ:nth-child(24)::after{ // Game activity
+        .item-PXvHYJ:nth-child(26)::after{ // Game activity
             content: "\E7FC"; // Game
         }
-        .item-PXvHYJ:nth-child(25)::after{ // Overlay
+        .item-PXvHYJ:nth-child(27)::after{ // Overlay
             content: "\E9A6"; // FitPage
         }
-        .item-PXvHYJ:nth-child(27)::after{ // Changelog
+        .item-PXvHYJ:nth-child(29)::after{ // Changelog
             content: "\E77C"; // Memo
         }
-        .item-PXvHYJ:nth-child(28)::after{ // Hype Squad
+        .item-PXvHYJ:nth-child(30)::after{ // Hype Squad
             content: "H";
             @include FontNormal;
         }
-        .item-PXvHYJ:nth-child(30)::after{ // Log out
+        .item-PXvHYJ:nth-child(32)::after{ // Log out
             content: "\F3B1"; // SignOut
         }
     }
