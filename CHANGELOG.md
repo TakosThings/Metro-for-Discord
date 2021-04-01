@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.10
+* **Fixes** (1)
+  * Update icons in user settings UI
+
 #### 3.15.9
 * **Fixes** (1)
   * Update guilds classes
