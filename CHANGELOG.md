@@ -2,7 +2,7 @@
 Newest Changes are at the top
 
 #### 3.15.11
-* **Fixes** ()
+* **Fixes** (2)
   * Fix background being applied to colapsed guild folders
   * Fix gap between guilds and channels
 
