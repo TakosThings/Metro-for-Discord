@@ -190,8 +190,7 @@
             content: "\E77C"; // Memo
         }
         .item-PXvHYJ:nth-child(30)::after{ // Hype Squad
-            content: "H";
-            @include FontNormal;
+            content: "\F157"; // DialShape2
         }
         .item-PXvHYJ:nth-child(32)::after{ // Log out
             content: "\F3B1"; // SignOut
