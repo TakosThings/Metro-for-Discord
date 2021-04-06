@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.11
+* **Fixes** ()
+  * Fix background being applied to colapsed guild folders
+  * Fix gap between guilds and channels
+
 #### 3.15.10
 * **Fixes** (1)
   * Update icons in user settings UI

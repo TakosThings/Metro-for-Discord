@@ -116,7 +116,8 @@
     }
 
     // Icon replcements
-    button[aria-label="Disconnect"]::before{
+    button[aria-label="Disconnect"]::before,
+    button[aria-label="Exit Quietly"]::before{
         content: "\E89B";
     }
     button[aria-label^="Noise Suppression powered by Krisp"]::before{
