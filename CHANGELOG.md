@@ -1,8 +1,18 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.12
+* **Enhancements** (3)
+  * Show connected accounts in 2 columns in the user modal
+  * Increase height of user modal
+  * Titlebar text and controls will now dim when the discord app isn't focused
+* **Fixes** (3)
+  * BetterDiscord User Settings icons
+  * Connected to voice guild indicator
+  * Stage channel banner
+
 #### 3.15.11
-* **Fixes** ()
+* **Fixes** (2)
   * Fix background being applied to colapsed guild folders
   * Fix gap between guilds and channels
 
