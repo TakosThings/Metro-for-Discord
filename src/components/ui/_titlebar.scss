@@ -4,7 +4,7 @@
         height: calc(32px - 4px);
     }
     .wordmarkWindows-1v0lYD{
-        color: $BaseHigh;
+        color: $BaseMedium;
         &::after{
             content: "Discord";
             top: 9px;
@@ -22,9 +22,17 @@
     .winButton-iRh8-Z{
         width: 45px;
         height: 32px;
-        color: $BaseHigh;
+        color: $BaseMedium;
         &.winButtonClose-1HsbF-:hover{
             background-color: #E81123;
         }
+    }
+}
+
+// Change titlebar name and controls colour when app is focused
+html.app-focused{
+    .wordmarkWindows-1v0lYD,
+    .winButton-iRh8-Z{
+        color: $BaseHigh;
     }
 }
