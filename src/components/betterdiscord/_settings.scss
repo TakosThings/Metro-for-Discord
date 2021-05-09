@@ -46,3 +46,8 @@ div[class^="bd-"]{
         }
     }
 }
+
+.bd-setting-header label[for="minimalMode"]::after{
+    content: " Metro for Discord: Do not turn this on";
+    color: $alert;
+}
