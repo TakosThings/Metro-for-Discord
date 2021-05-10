@@ -169,8 +169,9 @@
             content: "\F2B7"; // LocaleLanguage
         }
         .item-PXvHYJ[aria-controls="Windows-tab"]::after{ // Windows settings
-            content: "\E8A9"; // ViewAll
-            transform: perspective(24px) rotateY(24deg) scale(1.2, 1.2);
+            content: "\E782"; // ViewAll
+            font-family: 'HoloLens MDL2 Assets';
+
         }
         .item-PXvHYJ[aria-controls="Streamer Mode-tab"]::after{ // Streamer mode
             content: "\E93E"; // Streaming
