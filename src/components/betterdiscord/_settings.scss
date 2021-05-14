@@ -26,33 +26,28 @@ div[class^="bd-"]{
             }
         }
         // User Settings
-        .item-PXvHYJ:nth-child(30)::after{ // BD:Settings
+        .item-PXvHYJ[aria-controls="Settings-tab"]::after{ // BD:Settings
             content: "\E713" !important; // Setting
         }
-        .item-PXvHYJ:nth-child(31)::after{ // BD:Emotes
+        .item-PXvHYJ[aria-controls="Emotes-tab"]::after{ // BD:Emotes
             content: "\ED56" !important; // EmojiTabFoodPlants
         }
-        .item-PXvHYJ:nth-child(32)::after{ // BD:CustomCSS
+        .item-PXvHYJ[aria-controls="customcss-tab"]::after{ // BD:CustomCSS
             content: "\E943" !important; // Code
         }
-        .item-PXvHYJ:nth-child(33)::after{ // BD:Plugins
+        .item-PXvHYJ[aria-controls="plugins-tab"]::after{ // BD:Plugins
             content: "\E943" !important; // Code
         }
-        .item-PXvHYJ:nth-child(34)::after{ // BD:Themes
+        .item-PXvHYJ[aria-controls="themes-tab"]::after{ // BD:Themes
             content: "\E771" !important; // Personalise
         }
-        .item-PXvHYJ:nth-child(34)::after{ // BD:Themes
+        .item-PXvHYJ[aria-controls="aaa-tab"]::after{ // BD:Themes
             content: "\E771" !important; // Personalise
-        }
-
-        .item-PXvHYJ:nth-child(36)::after{ // Changelog
-            content: "\E77C"; // Memo
-        }
-        .item-PXvHYJ:nth-child(37)::after{ // Hype Squad
-            content: "\F157"; // DialShape2
-        }
-        .item-PXvHYJ:nth-child(39)::after{ // Log out
-            content: "\F3B1"; // SignOut
         }
     }
+}
+
+.bd-setting-header label[for="minimalMode"]::after{
+    content: " Metro for Discord: Do not turn this on";
+    color: $alert;
 }
