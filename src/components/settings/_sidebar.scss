@@ -36,7 +36,7 @@
                     top: 20px;
                 }
             }
-            div[class^="side"] div[class^="item"]{
+            div[class^="side"] div[class*="item"]{
                 margin-bottom: 0;
                 padding: 14px 48px;
                 border-radius: 0;
@@ -48,17 +48,9 @@
                 }
             }
             // Nitro item
-            div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"]{
-                color: #FFF !important;
-                &:hover{
-                    background-color: $ListLow !important;
-                }
-            }
-            div[class^="side"] div[class^="item"][style*="color: rgb(114, 137, 218)"][class*="selected-"]{
-                background-color: transparent !important;
-                color: $Accent !important;
-                &:hover{
-                    background-color: $ListLow !important;
+            .premiumTabItem-1QTfBr{
+                svg{
+                    display: none;
                 }
             }
             // Selected item
@@ -135,6 +127,7 @@
         .item-PXvHYJ[aria-controls="Discord Nitro-tab"]::after{ // Nitro
             content: "N";
             @include FontNormal;
+            top: 12px; // force fix positioning for Nitro
         }
         .item-PXvHYJ[aria-controls="Nitro Server Boost-tab"]::after{ // Server boost
             content: "\EC4A" // SpeedHigh
