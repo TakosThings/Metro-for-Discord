@@ -1,6 +1,18 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.13
+* **Notes**
+  * Please open an issue if you are using Windows 10 and the icon for 'Windows Settings' in Discord's User Settings is missing
+* **Fixes**
+  * Update how settings sidebar options are selected by CSS.
+  * BetterDiscord: Add warning to minimal mode option
+  * Fix Discover sidebar
+  * Removed disable scale transition from options section. Use Discord's reduce motion option instead
+  * Friends activity pane
+  * Add server and discovery pills
+  * Nitro sidebar option in User Settings
+
 #### 3.15.12
 * **Enhancements** (3)
   * Show connected accounts in 2 columns in the user modal
