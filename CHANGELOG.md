@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.15
+* **Fixes**
+  * Missing icons in user settings sidebar
+
 #### 3.15.14
 * **Fixes** (1)
   * Library menu option in home screen. (Thanks to @nicolastuttle in #232)
