@@ -1,10 +1,14 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.14
+* **Fixes** (1)
+  * Library menu option in home screen. (Thanks to @nicolastuttle in #232)
+
 #### 3.15.13
-* **Notes**
+* **Notes** (1)
   * Please open an issue if you are using Windows 10 and the icon for 'Windows Settings' in Discord's User Settings is missing
-* **Fixes**
+* **Fixes** (7)
   * Update how settings sidebar options are selected by CSS.
   * BetterDiscord: Add warning to minimal mode option
   * Fix Discover sidebar
