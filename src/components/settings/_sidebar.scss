@@ -110,13 +110,13 @@
             }
         }
         // User Settings
-        .item-PXvHYJ[aria-controls="My-Account-tab"]::after{ // My account
+        .item-PXvHYJ[aria-controls="My Account-tab"]::after{ // My account
             content: "\E77B"; // Contact
         }
-        .item-PXvHYJ[aria-controls="Privacy-&-Safety-tab"]::after{ // Privacy & safety
+        .item-PXvHYJ[aria-controls="Privacy & Safety-tab"]::after{ // Privacy & safety
             content: "\EA18"; // Shield
         }
-        .item-PXvHYJ[aria-controls="Authorized-Apps-tab"]::after{ // Authorised apps
+        .item-PXvHYJ[aria-controls="Authorized Apps-tab"]::after{ // Authorised apps
             content: "\E8D7"; // Permissions
         }
         .item-PXvHYJ[aria-controls="Connections-tab"]::after{ // connections
@@ -124,15 +124,15 @@
         }
 
         // Billing Settings
-        .item-PXvHYJ[aria-controls="Discord-Nitro-tab"]::after{ // Nitro
+        .item-PXvHYJ[aria-controls="Discord Nitro-tab"]::after{ // Nitro
             content: "N";
             @include FontNormal;
             top: 12px; // force fix positioning for Nitro
         }
-        .item-PXvHYJ[aria-controls="Nitro-Server-Boost-tab"]::after{ // Server boost
+        .item-PXvHYJ[aria-controls="Nitro Server Boost-tab"]::after{ // Server boost
             content: "\EC4A" // SpeedHigh
         }
-        .item-PXvHYJ[aria-controls="Library-Inventory-tab"]::after{ // Gift inventory
+        .item-PXvHYJ[aria-controls="Library Inventory-tab"]::after{ // Gift inventory
             content: "\F133"; // GiftboxOpen
         }
         .item-PXvHYJ[aria-controls="Billing-tab"]::after{ // Billing
@@ -146,10 +146,10 @@
         .item-PXvHYJ[aria-controls="Accessibility-tab"]::after{ // Accessibility
             content: "\E776"; // EaseOfAccess
         }
-        .item-PXvHYJ[aria-controls="Voice-&-Video-tab"]::after{ // Voice and Video
+        .item-PXvHYJ[aria-controls="Voice & Video-tab"]::after{ // Voice and Video
             content: "\E720"; // Microphone
         }
-        .item-PXvHYJ[aria-controls="Text-&-Images-tab"]::after{ // Text and images
+        .item-PXvHYJ[aria-controls="Text & Images-tab"]::after{ // Text and images
             content: "\EA69"; // Media
         }
         .item-PXvHYJ[aria-controls="Notifications-tab"]::after{ // Notifications
@@ -166,7 +166,7 @@
             font-family: 'HoloLens MDL2 Assets';
 
         }
-        .item-PXvHYJ[aria-controls="Streamer-Mode-tab"]::after{ // Streamer mode
+        .item-PXvHYJ[aria-controls="Streamer Mode-tab"]::after{ // Streamer mode
             content: "\E93E"; // Streaming
         }
         .item-PXvHYJ[aria-controls="Advanced-tab"]::after{ // Advanced
@@ -174,7 +174,7 @@
         }
 
         // Gaming Settings
-        .item-PXvHYJ[aria-controls="Game-Activity-tab"]::after{ // Game activity
+        .item-PXvHYJ[aria-controls="Game Activity-tab"]::after{ // Game activity
             content: "\E7FC"; // Game
         }
         .item-PXvHYJ[aria-controls="Overlay-tab"]::after{ // Overlay
@@ -183,7 +183,7 @@
         .item-PXvHYJ[aria-controls="changelog-tab"]::after{ // Changelog
             content: "\E77C"; // Memo
         }
-        .item-PXvHYJ[aria-controls="Hypesquad-Online-tab"]::after{ // Hype Squad
+        .item-PXvHYJ[aria-controls="Hypesquad Online-tab"]::after{ // Hype Squad
             content: "\F157"; // DialShape2
         }
         .item-PXvHYJ[aria-controls="logout-tab"]::after{ // Log out
@@ -234,7 +234,6 @@
         }
         .item-PXvHYJ[aria-controls="GUILD_PREMIUM-tab"]::after{ // Server boost status
             content: "\EC4A"; // SpeedHigh
-            top: 14px; // force fix positioning for Nitro
         }
         // Community Server tabs
         .item-PXvHYJ[aria-controls="ANALYTICS-tab"]::after{ // Server insights
