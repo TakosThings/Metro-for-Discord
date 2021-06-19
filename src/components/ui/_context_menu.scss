@@ -1,7 +1,7 @@
 .theme-dark .menu-3sdvDG{
     min-width: 240px;
     padding: 8px 0;
-    background-color: rgba($color: #2d2d2d, $alpha: .95);
+    background-color: rgba($color: #2d2d2d, $alpha: .93);
     border: 1px solid $BorderTransient;
     border-radius: 4px;
     position: relative;
@@ -14,6 +14,8 @@
         top: 0;
         left: 0;
         backdrop-filter: blur(10px);
+        border-radius: 4px;
+        border: 1px solid transparent;
     }
 
     .scroller-3BxosC{
