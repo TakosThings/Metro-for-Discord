@@ -66,7 +66,7 @@
         border-color: $ChromeHigh;
         &.hasContent-1_DUdQ{
             margin-top: 0.5rem;
-            margin-bottom: -10px;
+            margin-bottom: -9px;
         }
         &.isUnread-3Ef-o9{
             border-color: $alert;
@@ -278,33 +278,34 @@
     // Reactions
     .reactions-12N0jA{
         .reaction-1hd86g{
-            border-radius: 0;
-            .reactionInner-15NvIl{
-                padding: 4px 8px;
-                &:hover{
-                    background-color: $ListLow;
-                }
+            background-color: $ListLow;
+            border-radius: 2px;
+            &:hover{
+                background-color: $ListMedium;
             }
             .reactionCount-2mvXRV{
-                margin-left: 8px;
                 color: $BaseHigh;
                 font-weight: normal;
             }
             &.reactionMe-wv5HKu{
                 background-color: $Accent;
+                border-color: transparent;
+                &:hover{
+                    border-color: $ListLow;
+                }
                 .reactionCount-2mvXRV{
                     color: $BaseHigh;
                 }
             }
         }
         .reactionBtn-3N03Zj{
-            width: unset;
-            height: unset;
             margin-top: -2px;
+            margin-left: 0;
             padding: 5px 8px;
-            background-color: $BaseLow;
+            background-color: $ListLow;
+            border-radius: 2px;
             &:hover{
-                background-color: $ListLow;
+                background-color: $ListMedium;
             }
         }
     }

@@ -13,6 +13,12 @@
     --voice:    0, 204, 106;
 }
 
+/* Hide Stage Discovery */
+/* Delete this to display the Stage Discovery option in the Home screen */
+.channel-2QD9_O[href^="/discovery"]{
+    display: none;
+}
+
 /* Acrylic background */
 /**
  * Some of these settings are advanced, and may degrade

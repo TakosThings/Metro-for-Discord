@@ -6,6 +6,12 @@
 .theme-dark .emojiPicker-3PwZFl{
     grid-template-rows: 46px auto 48px; // Allows to re-adjust inspector size
     background-color: $ChromeMediumLow;
+    // Fix bug with top border of search box being cut off
+    // Remove bottom border
+    .header-8ilj5e{
+        padding-top: 1px;
+        box-shadow: none;
+    }
     // Search
     .container-2XeR5Z{
         background-color: transparent;
@@ -98,7 +104,7 @@
     }
 
     // Description bar
-    .inspector-sdLnLS{
+    .inspector-S2gM3e{
         height: 48px;
         background-color: $ChromeLow;
     }
