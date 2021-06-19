@@ -1,8 +1,23 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.16
+* **Enhancements** (2)
+  * Added option to *show* the Stage Discovery option in Home
+  * Added slight drop shadow to toolbar
+* **Fixes** (9)
+  * Missing icons in user settings sidebar
+  * Channel category font
+  * User profile popout
+  * user profile modal
+  * Chat reactions sizing
+  * Chat unread message bar didn't cover date divider properly
+  * Stage Discovery option in Home was mis-aligned
+  * Some minor tweaks to context menu effects
+  * Minor (temporary) fixes to emoji picker
+
 #### 3.15.15
-* **Fixes**
+* **Fixes** (1)
   * Missing icons in user settings sidebar
 
 #### 3.15.14
