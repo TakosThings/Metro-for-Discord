@@ -75,7 +75,9 @@
             }
             .name-3l27Hl{
                 color: $BaseMedium;
+                @include FontNormal;
                 @include FontBody;
+                letter-spacing: normal;
                 text-transform: none;
             }
 
