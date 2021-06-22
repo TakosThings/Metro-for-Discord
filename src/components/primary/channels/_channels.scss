@@ -17,6 +17,7 @@
             padding: 0 12px;
             box-shadow: none;
             background-color: $ChromeBlackMediumLow;
+            @include FontNormal;
             @include FontBase;
             transition: none;
             &:hover{
@@ -253,5 +254,15 @@
     // Unread messages bar
     .container-35XQWE{
         left: 48px;
+    }
+
+    // Hide invite/admin buttons on channels and categories unless hovered
+    .children-L002ao, // Category
+    .children-3rEycc{ // Channel
+        visibility: hidden;
+    }
+    .containerDefault-3tr_sE:hover .children-L002ao, // Category
+    .containerDefault--pIXnN:hover .children-3rEycc{ // Channel
+        visibility: visible;
     }
 }

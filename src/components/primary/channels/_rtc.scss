@@ -1,6 +1,7 @@
 .theme-dark .container-1giJp5{
     height: calc(48px + 24px);
     padding: 0;
+    border-bottom: 0;
 
     .flex-1xMQg5{
         position: relative;
@@ -20,25 +21,38 @@
 
     .rtcConnectionStatus-2-jIsi{
         padding-bottom: 0;
-        &.rtcConnectionQualityFine-2J6i8z ~ a div{
+        &::before{
+            content: "";
+            height: 4px;
+            width: calc(240px - 32px);
+            position: absolute;
+            bottom: -2px;
+            left: 16px;
+            border-radius: 2px;
+            background-color: #000;
+        }
+        &.rtcConnectionQualityFine-2J6i8z::before{
             background-color: rgb(0, 204, 106);
         }
-        &.rtcConnectionQualityAverage-3KV0u- ~ a div{
+        &.rtcConnectionQualityAverage-3KV0u-::before{
             background-color: rgb(255, 185, 0);
         }
-        &.rtcConnectionQualityBad-1J7mUU ~ a div{
+        &.rtcConnectionQualityBad-1J7mUU::before{
             background-color: rgb(231, 72, 86);
         }
         // Return to channel/status bar
         & ~ a div{
             width: 180px;
             height: 24px;
-            border-radius: 0 12px 12px 0;
             padding-left: 8px;
-            color: $AltHigh;
+            color: $BaseHigh;
             font-size: 12px;
+            font-weight: normal;
             line-height: 24px;
             box-sizing: border-box;
+            &:hover{
+                background-color: rgba(255, 255, 255, 0.1);
+            }
         }
 
         // Remove SVG
@@ -53,8 +67,7 @@
                 position: absolute;
                 top: 0px;
                 right: 0;
-                
-                
+
                 &:before{
                     content: "Status";
                     @include FontNormal;
@@ -63,8 +76,6 @@
                 }
             }
         }
-
-       
     }
 
     // Buttons (Disconnect and Crisp)
