@@ -258,11 +258,11 @@
 
     // Hide invite/admin buttons on channels and categories unless hovered
     .children-L002ao, // Category
-    .children-3rEycc{ // Channel
+    .children-3rEycc .iconItem-F7GRxr{ // Channel
         visibility: hidden;
     }
     .containerDefault-3tr_sE:hover .children-L002ao, // Category
-    .containerDefault--pIXnN:hover .children-3rEycc{ // Channel
+    .containerDefault--pIXnN:hover .children-3rEycc .iconItem-F7GRxr{ // Channel
         visibility: visible;
     }
 }
