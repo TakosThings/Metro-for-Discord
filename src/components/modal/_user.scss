@@ -16,6 +16,9 @@
     }
 
     // Tabs
+    .tabBarContainer-37hZsr{
+        border: 0;
+    }
     .tabBar-3nvOPa{
         height: 32px;
     }
@@ -37,6 +40,25 @@
         }
     }
 
+    // Body
+    .body-r6_QPy{
+        height: 328px;
+    }
+    .userInfoSection-q_35fn+.userInfoSection-q_35fn{
+        border: 0;
+        padding-top: 0;
+    }
+    .userInfoSectionHeader-3TYk6R{
+        color: $BaseHigh;
+        @include FontNormal;
+        @include FontBase;
+        text-transform: none;
+    }
+    // Fix note textbox size
+    .note-367eZJ{
+        margin: 0;
+    }
+
     // Connected accounts
     .connectedAccount-2Jb-Z0{
         background-color: $ListLow;
@@ -44,5 +66,15 @@
     }
     .connectedAccountName-E1KzaT{
         @include FontBase;
+    }
+
+    // No mutuals
+    .emptyIcon-1yiM-z{
+        display: none;
+    }
+    .emptyText-2d2yNp{
+        color: $BaseHigh;
+        text-transform: none;
+        font-weight: normal;
     }
 }
