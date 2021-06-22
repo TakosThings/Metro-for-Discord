@@ -1,6 +1,7 @@
 .theme-dark .container-1giJp5{
     height: calc(48px + 24px);
     padding: 0;
+    border-bottom: 0;
 
     .flex-1xMQg5{
         position: relative;
@@ -53,8 +54,8 @@
                 position: absolute;
                 top: 0px;
                 right: 0;
-                
-                
+
+
                 &:before{
                     content: "Status";
                     @include FontNormal;
@@ -64,7 +65,7 @@
             }
         }
 
-       
+
     }
 
     // Buttons (Disconnect and Crisp)
