@@ -1,11 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.18
+* **Fixes** (1)
+  * Fix channel notification badge
+
 #### 3.15.17
-* **Enhancements**
+* **Enhancements** (2)
   * Hide invite/admin buttons on channels and categories unless hovered
   * Design tweaks to RTC container
-* **Fixes** ()
+* **Fixes** (3)
   * Change font used on some headers in main UI to Segoe UI (Server name, channel name, role groups)
   * Some fixes and QoL changes to the user modal (See: #241)
   * Remove bottom border on RTC container
