@@ -1,6 +1,15 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.17
+* **Enhancements**
+  * Hide invite/admin buttons on channels and categories unless hovered
+  * Design tweaks to RTC container
+* **Fixes** ()
+  * Change font used on some headers in main UI to Segoe UI (Server name, channel name, role groups)
+  * Some fixes and QoL changes to the user modal (See: #241)
+  * Remove bottom border on RTC container
+
 #### 3.15.16
 * **Enhancements** (2)
   * Added option to *show* the Stage Discovery option in Home
