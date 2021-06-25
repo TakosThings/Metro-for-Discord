@@ -21,6 +21,13 @@
     display: none;
 }
 
+/* Hide Activity Box */
+/* Description: Uncomment to remove the Activity Box displayed above the Voice Connected (RTC) box. */
+/* Default: The Activity panel is not hidden. */
+.activityPanel-28dQGo{
+    /* display: none; */
+}
+
 /* Acrylic background */
 /* Description: Change the background image used to create 'acrylic' effects. */
 /* Default: The default background is a blue/teal/aqua gradient. */
