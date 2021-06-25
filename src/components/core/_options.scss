@@ -6,7 +6,8 @@
 
 
 /* Accent Colour */
-/* Must be provided in RGB format */
+/* Description: Change the accent colour. Must be provided in RGB format */
+/* Default: Accent is 'Default Blue'. Link is 'Default Blue'. Voice is 'Turf Green' */
 :root{
     --accent:   0, 120, 215;
     --link:     0, 120, 215;
@@ -14,26 +15,24 @@
 }
 
 /* Hide Stage Discovery */
-/* Delete this to display the Stage Discovery option in the Home screen */
+/* Description: Delete this to display the Stage Discovery option in the Home screen. */
+/* Default: The Stage Discovery option is hidden in the Home screen. */
 .channel-2QD9_O[href^="/discovery"]{
     display: none;
 }
 
 /* Acrylic background */
-/**
- * Some of these settings are advanced, and may degrade
- * performance on low-end machines. Consult the wiki before
- * making changes.
-**/
-
-/* Change the URL to your own background*/
+/* Description: Change the background image used to create 'acrylic' effects. */
+/* Default: The default background is a blue/teal/aqua gradient. */
 body,
 .container-16j22k{
     background-image: url(https://i.imgur.com/PoQUA3n.jpg);
 }
 
 /* Blur filter */
-/* Uncomment to ENABLE the blur filter if required */
+/* Description: Uncomment to enable the blur filter. This may be useful for custom backgrounds. */
+/* Warning: May degrade performance. */
+/* Default: The blur filter is disabled.*/
 body::before,
 .container-16j22k::before{
     /* backdrop-filter: blur(45px) saturate(125%); */
