@@ -53,6 +53,7 @@
     .audioMetadata-3zOuGv{
         &::before{
             content: "\EC4F";
+            background-image: none;
             @include FontIcon;
             font-size: 24px;
             text-align: center;
