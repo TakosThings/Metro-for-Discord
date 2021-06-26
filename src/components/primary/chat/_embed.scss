@@ -62,6 +62,7 @@
     }
     // Download
     .metadataDownload-1fk90V{
+        padding-left: 8px;
         &::before{
             content: "\E896";
             @include FontIcon;
