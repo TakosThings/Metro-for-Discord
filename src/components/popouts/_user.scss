@@ -1,110 +1,183 @@
 .theme-dark{
     .userPopout-xaxa6l{
+        background-color: $AltHigh;
         border-radius: 4px;
         border: 1px solid $BorderTransient;
-    }
 
-    // Header
-    .headerNormal-1mX3KY{
-        background-color: $AltHigh;
-    }
-    .headerTop-2cWpdB{
-        background-color: #000;
-        border-bottom: 0;
-    }
-    .headerText-15Q25Z,
-    .headerText-1HLrL7{
-        color: $BaseHigh;
-        text-transform: none;
-    }
-    // Username - No nickname
-    .headerTagNoNickname-1VyQza{
-        @include FontSubtitle;
-    }
-    .headerTagDiscriminatorNoNickname-1vRWkt{
-        @include FontBody;
-        vertical-align: middle;
-    }
-    // Username - Nicknamed
-    .nickname-2gQ76l{
-        @include FontSubtitle;
-    }
-    .headerTagWithNickname-1SDMpI{
-        @include FontBase;
-    }
-    // Change nickname link
-    .setIdentityLink-3lcnXW{
-        color: $Accent;
-    }
+        // Avatar
+        .avatar-37jOim{
+            background-color: $AltHigh;
+            border-color: $AltHigh;
+        }
 
-    // Avatar
-    .avatar-37jOim{
-        background-color: #000;
-        border-color: #000;
-    }
-
-    // Body
-    .body-3HBlXn{
-        background-color: #000;
-    }
-
-    // Activity
-    .activity-3v9l4T{
-        // Header
+        // Usernames
         .base-1x0h_U{
             @include FontNormal;
+        }
+        // User has NO nickname
+        .headerTagNoNickname-3qrd77{
+            @include FontSubtitle;
+        }
+        // User has nickname
+        // Nickname
+        .nickname-3M3Jfa{
+            @include FontSubtitle;
+        }
+        // Username & discrim
+        .headerTag-3GFl76{
+            @include FontNormal;
+        }
+
+        // Set server nickname link
+        .setIdentityLink-1t8Ahd a{
+            color: $Accent;
+        }
+
+
+        // Body
+        .bodyInnerWrapper-26fQXj{
+            background: transparent;
+        }
+        // Section title
+        .bodyTitle-1ySSKn{
+            @include FontNormal;
             @include FontBase;
+            color: $BaseHigh;
+            text-transform: none;
         }
-        // Album art
-        .assetsLargeImage-eYwpTX{
-            border-radius: 2px;
+
+        // Role
+        .role-2irmRk{
+            height: 24px;
+            border-radius: 12px;
+            border-width: 2px;
         }
-    }
-    // Progress bar
-    .bar-3urHkF{
-        background-color: $ListMedium;
-    }
-    .barInner-3NDaY_{
-        background-color: $Accent;
-    }
-    .textLeft-3EZXG6, .textRight-1XO5Ye{
-        @include FontCaption;
-    }
-    // Don't show 'Play on Spotifty' buttons if they're unavailable
-    .disabledButtonWrapper-3wH6-b{
-        display: none;
-    }
+        // Add role
+        .addButton-pcyyf6{
+            border-color: $BaseMedium;
+            color: $BaseMedium;
+            &:hover{
+                border-color: $BaseHigh;
+                color: $BaseMedium;
+            }
+        }
 
+        // Note
+        .note-1oo11U{
+            margin: 0;
+        }
 
-    // Role tags
-    .role-2irmRk{
-        border-width: 2px;
-    }
-    .actionButton-VzECiy{
-        color: $BaseHigh;
-    }
-    // Body headers
-    .bodyTitle-3FWCs2{
-        @include FontNormal;
-        @include FontBase;
-        text-transform: none;
-    }
-    // Note textbox
-    .note-1MiCN7{
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    // Footer
-    .body-3iLsc4{
-        background-color: $ChromeMediumLow;
-    }
-
-    // Remove protip
-    .footer-1N3bR3{
-        background-color: #000;
-        .protip-2urNh2{
-            display: none;
+        // Footer
+        .footer-3UKYOU{
+            background-color: transparent;
         }
     }
+
+
+    // // Header
+    // .headerNormal-3KXFBt{
+    //     background-color: $AltHigh;
+    // }
+    // .headerTop-3vNv-a{
+    //     background-color: #000;
+    //     border-bottom: 0;
+    // }
+    // .headerText-1vVs-U,
+    // .headerText-1HLrL7{ //FIND OTHER
+    //     color: $BaseHigh;
+    //     text-transform: none;
+    // }
+    // // Username - No nickname
+    // .headerTagUsernameNoNickname-2-Y5Ct{
+    //     @include FontSubtitle;
+    // }
+    // .headerTagDiscriminatorNoNickname-1vRWkt{
+    //     @include FontBody;
+    //     vertical-align: middle;
+    // }
+    // // Username - Nicknamed
+    // .nickname-3M3Jfa{
+    //     @include FontSubtitle;
+    // }
+    // .headerTagWithNickname-3l_x6x{
+    //     @include FontBase;
+    // }
+    // // Change nickname link
+    // .setIdentityLink-1t8Ahd{
+    //     color: $Accent;
+    // }
+
+    // // Avatar
+    // .avatar-37jOim{
+    //     background-color: #000;
+    //     border-color: #000;
+    // }
+
+    // // Body
+    // .body-3HBlXn{
+    //     background-color: #000;
+    // }
+    // .bodyInnerWrapper-26fQXj{
+    //     background-color: #000;
+    // }
+
+    // // Activity
+    // .activity-3v9l4T{
+    //     // Header
+    //     .base-1x0h_U{
+    //         @include FontNormal;
+    //         @include FontBase;
+    //     }
+    //     // Album art
+    //     .assetsLargeImage-eYwpTX{
+    //         border-radius: 2px;
+    //     }
+    // }
+    // // Progress bar
+    // .bar-3urHkF{
+    //     background-color: $ListMedium;
+    // }
+    // .barInner-3NDaY_{
+    //     background-color: $Accent;
+    // }
+    // .textLeft-3EZXG6, .textRight-1XO5Ye{
+    //     @include FontCaption;
+    // }
+    // // Don't show 'Play on Spotifty' buttons if they're unavailable
+    // .disabledButtonWrapper-3wH6-b{
+    //     display: none;
+    // }
+
+
+    // // Role tags
+    // .role-2irmRk{
+    //     border-width: 2px;
+    // }
+    // .actionButton-VzECiy{
+    //     color: $BaseHigh;
+    // }
+    // // Body headers
+    // .bodyTitle-3FWCs2{
+    //     @include FontNormal;
+    //     @include FontBase;
+    //     text-transform: none;
+    // }
+    // // Note textbox
+    // .note-1MiCN7{
+    //     margin-left: 0;
+    //     margin-right: 0;
+    // }
+
+    // // Footer
+    // .body-3iLsc4{
+    //     background-color: $ChromeMediumLow;
+    // }
+
+    // // Remove protip
+    // .footer-3UKYOU{
+    //     background-color: #000;
+    //     .protip-2urNh2{
+    //         display: none;
+    //     }
+    // }
 }
