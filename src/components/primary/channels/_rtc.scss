@@ -1,143 +1,100 @@
 .theme-dark .container-1giJp5{
-    height: calc(48px + 24px);
-    padding: 0;
+    padding: 0 0 0 8px;
     border-bottom: 0;
 
-    .flex-1xMQg5{
+    // Change user avatar to monochrome when muted
+    .avatarContainer-2LLZwy{
         position: relative;
-        margin-left: 0;
     }
-
-    // Connection status
-    .inner-tyMogq{
-        width: 100%;
-        height: 24px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-        background-color: $ListLow;
-    }
-
-    .rtcConnectionStatus-2-jIsi{
-        padding-bottom: 0;
-        &::before{
-            content: "";
-            height: 4px;
-            width: calc(240px - 32px);
+    .avatarContainer-2LLZwy{
+        .avatarIconOverlay-2nbU5G{
+            backdrop-filter: saturate(0);
+            path{
+                display: none;
+            }
+        }
+        &::after{
+            @include FontIcon;
             position: absolute;
-            bottom: -2px;
-            left: 16px;
-            border-radius: 2px;
-            background-color: #000;
+            top: 5px;
+            left: 6px;
+            color: white;
         }
-        &.rtcConnectionQualityFine-2J6i8z::before{
-            background-color: rgb(0, 204, 106);
+    }
+    .avatarContainer-2LLZwy[aria-label*="Muted"]{
+        &::after{
+            content: "\EC54";
         }
-        &.rtcConnectionQualityAverage-3KV0u-::before{
-            background-color: rgb(255, 185, 0);
-        }
-        &.rtcConnectionQualityBad-1J7mUU::before{
-            background-color: rgb(231, 72, 86);
-        }
-        // Return to channel/status bar
-        & ~ a div{
-            width: 180px;
-            height: 24px;
-            padding-left: 8px;
-            color: $BaseHigh;
-            font-size: 12px;
-            font-weight: normal;
-            line-height: 24px;
-            box-sizing: border-box;
-            &:hover{
-                background-color: rgba(255, 255, 255, 0.1);
-            }
-        }
-
-        // Remove SVG
-        svg{
-            display: none;
-        }
-        // RTC button
-        .labelWrapper-Pniq53{
-            button{
-                width: 60px;
-                height: 24px;
-                position: absolute;
-                top: 0px;
-                right: 0;
-
-                &:before{
-                    content: "Status";
-                    @include FontNormal;
-                    font-size: 12px;
-                    color: $BaseHigh;
-                }
-            }
+    }
+    .avatarContainer-2LLZwy[aria-label*="Deafened"]{
+        &::after{
+            content: "\E74F";
         }
     }
 
-    // Buttons (Disconnect and Crisp)
-    .inner-tyMogq ~ .flex-1xMQg5{
-        position: absolute;
-        top: 24px;
-        right: 0;
-    }
-    .button-14-BFJ,
-    .button-38aScr{
-        width: 60px;
+    // Connection
+    .button-14-BFJ{
+        width: 48px;
         height: 48px;
         .contents-18-Yxp{
             display: none;
         }
         &::before{
             @include FontIcon;
-            font-size: 16px;
+                font-size: 16px;
         }
-        &:hover{
-            background-color: $ListLow
+        // Icon replcements
+        &[aria-label="Disconnect"]::before,
+        &[aria-label="Exit Quietly"]::before{
+            content: "\E89B";
+        }
+        &[aria-label^="Noise Suppression powered by Krisp"]::before{
+            content: "\F61F";
+        }
+        &[aria-label*="Camera"]::before{
+            content: "\E960";
+        }
+        &[aria-label^="Share Your Screen"]::before{
+            content: "\EBC6";
         }
     }
 
-    // Action button - Camera and screen share
+    // Webcam/screen share options
     .actionButtons-14eAc_{
-        width: 120px;
-        margin-top: 16px;
-        justify-content: unset;
-    }
-    // Video/Screen share
-    .button-38aScr{
-        width: 60px;
-        height: 48px;
-        margin: 0;
-        border-radius: 0;
-        &.lookFilled-1Gx00P.colorBrand-3pXr91{
-                background-color: transparent;
+        position: absolute;
+        bottom: -48px;
+        right: 0;
+        .button-14-BFJ,
+        .button-38aScr{
+            width: 60px;
+            height: 48px;
+            margin: 0;
+            font-size: 0;
+            background-color: transparent;
             &:hover{
                 background-color: $ListLow;
             }
+            &::before{
+                @include FontIcon;
+                font-size: 16px;
+            }
         }
-
-        // Disabled
-        &.fauxDisabled-2ik0Vw{
-            cursor: not-allowed;
-            pointer-events: none;
+        .contents-18-Yxp{
+            display: none;
         }
-    }
-
-    // Icon replcements
-    button[aria-label="Disconnect"]::before,
-    button[aria-label="Exit Quietly"]::before{
-        content: "\E89B";
-    }
-    button[aria-label^="Noise Suppression powered by Krisp"]::before{
-        content: "\F61F";
-    }
-    button[aria-label*="Camera"]::before{
-        content: "\E960";
-    }
-    button[aria-label^="Share Your Screen"]::before{
-        content: "\EBC6";
+        // Icon replcements
+        button[aria-label="Disconnect"]::before,
+        button[aria-label="Exit Quietly"]::before{
+            content: "\E89B";
+        }
+        button[aria-label^="Noise Suppression powered by Krisp"]::before{
+            content: "\F61F";
+        }
+        button[aria-label*="Camera"]::before{
+            content: "\E960";
+        }
+        button[aria-label^="Share Your Screen"]::before{
+            content: "\EBC6";
+        }
     }
 }

@@ -35,6 +35,7 @@
 
     .button-14-BFJ{
         height: 48px;
+        border-radius: 0;
         .contents-18-Yxp{
             display: none;
         }
@@ -50,7 +51,8 @@
     // Mute/Deafen buttons
     button[aria-label="Mute"],
     button[aria-label="Deafen"]{
-        width: 120px;
+        width: 60px;
+
     }
 
     // Place the setting button in the guilds list
