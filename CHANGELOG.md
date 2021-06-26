@@ -1,6 +1,17 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.19
+* **Enhancements** (2)
+  * Improved comments in the options section.
+  * Added option to hide the Activity box (above RTC).
+* **Fixes** (5)
+  * RTC button arrangement when 'Show Voice Users' was enabled
+  * User popout layout
+  * Embedded audio file icon
+  * Spacing between embedded audio file name and download button
+  * Reduce font size of embedded audio file name
+
 #### 3.15.18
 * **Fixes** (1)
   * Fix channel notification badge
