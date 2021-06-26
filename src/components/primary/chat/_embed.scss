@@ -60,6 +60,10 @@
             line-height: 36px;
         }
     }
+    // Filename
+    .metadataContent-3c_ZXw a{
+        @include FontBody;
+    }
     // Download
     .metadataDownload-1fk90V{
         padding-left: 8px;
