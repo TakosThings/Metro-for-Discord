@@ -3,10 +3,5 @@
     "scripts": {
         "build": "sass src/beautifuldiscord.scss:dist/Metro_for_Discord.css src/betterdiscord.scss:dist/Metro_for_Discord.theme.css --no-charset --no-source-map",
         "watch": "sass --watch src/beautifuldiscord.scss:dist/Metro_for_Discord.css src/betterdiscord.scss:%APPDATA%/BetterDiscord/themes/Metro_for_Discord.theme.css --no-charset --no-source-map"
-    },
-    "devDependencies": {
-        "node-sass": "^4.13.1",
-        "sass-loader": "^8.0.2",
-        "webpack": "^4.21.1"
     }
 }
