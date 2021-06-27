@@ -23,19 +23,16 @@
 * [Node JS](https://nodejs.org/en/)
 * [Editorconfig Plugin](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) (if you're using VS Code)
 #### Method
-* Run `npm i`
+* Run `npm i sass -g`
 * Use `npm run watch` to automatically compile the theme as you work
-
-### Things to Know
-* All development and testing is done using BeautifulDiscord.
 
 ### BetterDiscord Plugins
 Additions for BetterDiscord plugins are welcome, however I likely won't update them over time. Please submit a PR for plugin additions or updates.
-* The plugin **must** be approved and listed in the BetterDiscord plugin repos.
-  * Support will be removed if the developer leaves the BetterDiscord server or loses the developer role.
+* The plugin **must** be approved and published on [betterdiscord.app](betterdiscord.app).
+  * Support will be removed if the plugin is removed from the website.
 * File location and naming convention
   * Plugin support files are located within `/src/components/betterdiscord/plugins/`
-  * Each plugin will have it's own SCSS file using the following naming scheme: `_GithubUsername.PluginName.scss`.
+  * Each plugin has a SCSS file using the following naming scheme: `_GithubUsername.PluginName.scss`.
     * Use the same capitalisation as the developer's GitHub username, and plugin name. Include dashes or underscores.
     * Example: If Metro for Discord was a plugin, the plugin support file would be called: `_TakosThings.metro-for-discord.scss`
   * Import the plugin in `/src/components/betterdiscord/_plugin_support.scss`
