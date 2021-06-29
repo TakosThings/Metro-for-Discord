@@ -166,13 +166,14 @@
 
     // Is Typing
     .typing-2GQL18{
-        height: 20px;
-        top: -20px;
+        height: 32px;
+        top: -32px;
         right: 37px;
         bottom: unset;
         background-color: transparent;
         font-size: 11px;
         line-height: 20px;
+        align-items: flex-end;
         justify-content: flex-end;
         pointer-events: none;
         svg{
@@ -189,6 +190,10 @@
         // Slowmode font-weight
         .cooldownWrapper-3joyFc{
             font-weight: normal;
+        }
+        // Fix position of countdown timer
+        .text-1y-e8-:not(:empty) + .cooldownWrapper-3joyFc{
+            margin-bottom: 14px;
         }
     }
 
