@@ -1,3 +1,9 @@
+// Override :root
+:root{
+    --font-primary: "Segoe UI", Arial, Helvetica, sans-serif;
+    --font-display: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
 // Everything
 body, button{
     @include FontNormal;

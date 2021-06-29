@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.15.20
+* **Fixes** ()
+  * Missing User Profile siderbar icon in User Settings
+  * Override Discord fonts
+  * 'Users are typing' overlapped slowmode countdown timer
+
 #### 3.15.19
 * **Enhancements** (2)
   * Improved comments in the options section.

@@ -113,6 +113,9 @@
         .item-PXvHYJ[aria-controls="My Account-tab"]::after{ // My account
             content: "\E77B"; // Contact
         }
+        .item-PXvHYJ[aria-controls="Profile Customization-tab"]::after{ // User Profile
+            content: "\E7EE"; // OtherUser
+        }
         .item-PXvHYJ[aria-controls="Privacy & Safety-tab"]::after{ // Privacy & safety
             content: "\EA18"; // Shield
         }
