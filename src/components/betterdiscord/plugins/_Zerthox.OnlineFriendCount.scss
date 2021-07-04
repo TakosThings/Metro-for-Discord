@@ -1,0 +1,10 @@
+.friendsOnline-2JkivW{
+    padding: 5px 0;
+    color: $BaseHigh;
+    font-weight: normal;
+    text-transform: none;
+    &:hover{
+        background-color: $ListLow;
+        color: $BaseHigh;
+    }
+}
