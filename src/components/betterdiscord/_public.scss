@@ -1,0 +1,10 @@
+#bd-pub-button{
+    background-color: transparent;
+    border-radius: 0;
+    color: $BaseHigh;
+    font-size: 10px;
+    text-transform: capitalize;
+    &:hover{
+        background-color: $ListLow;
+    }
+}
