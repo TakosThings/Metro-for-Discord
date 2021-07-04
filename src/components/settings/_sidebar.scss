@@ -94,6 +94,16 @@
                     color: $BaseMedium;
                 }
             }
+
+            // Server settings
+            // Remove "NEW" badge
+            .base-PmTxvP{
+                display: none;
+            }
+            // Remove boot icon
+            .icon-3Povsy{
+                display: none;
+            }
         }
     }
 }
@@ -215,6 +225,9 @@
         .item-PXvHYJ[aria-controls="EMOJI-tab"]::after{ // Emoji
             content: "\ED54"; // EmojiTabSmilesAnimals
         }
+        .item-PXvHYJ[aria-controls="STICKERS-tab"]::after{ // Emoji
+            content: "\F4AA"; // Sticker2
+        }
         .item-PXvHYJ[aria-controls="MODERATION-tab"]::after{ // Moderation
             content: "\EC81"; // PoliceCar
         }
@@ -237,6 +250,7 @@
         }
         .item-PXvHYJ[aria-controls="GUILD_PREMIUM-tab"]::after{ // Server boost status
             content: "\EC4A"; // SpeedHigh
+            top: 14px;
         }
         // Community Server tabs
         .item-PXvHYJ[aria-controls="ANALYTICS-tab"]::after{ // Server insights
