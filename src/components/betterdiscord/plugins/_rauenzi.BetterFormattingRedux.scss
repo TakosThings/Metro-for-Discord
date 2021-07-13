@@ -1,0 +1,15 @@
+// https://betterdiscord.app/plugin/BetterFormattingRedux
+// https://github.com/rauenzi/BetterDiscordAddons/tree/master/Plugins/BetterFormattingRedux
+
+.theme-dark .bf-toolbar{
+    right: unset;
+    left: 0;
+    padding: 10px 20px 15px 30px;
+    &::before{
+        background: $ChromeMedium;
+        border-radius: 4px;
+    }
+    .bf-arrow{
+        left: 0;
+    }
+}

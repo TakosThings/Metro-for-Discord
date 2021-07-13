@@ -24,6 +24,7 @@
 @import 'components/betterdiscord/settings';
 @import 'components/betterdiscord/ccss';
 @import 'components/betterdiscord/themes_plugins';
+@import 'components/betterdiscord/public';
 
 // Discovery
 @import 'components/discovery/discovery';
@@ -37,7 +38,6 @@
 
 // Icons
 @import 'components/icons/core';
-@import 'components/icons/betterdiscord';
 
 // Loadscreens
 @import 'components/loadscreens/connecting';
@@ -82,7 +82,6 @@
 @import 'components/popouts/region_select';
 @import 'components/popouts/rtc';
 @import 'components/popouts/search';
-@import 'components/popouts/server_menu';
 @import 'components/popouts/stream_preview';
 @import 'components/popouts/user';
 
@@ -101,7 +100,6 @@
 
 // Guilds
 @import 'components/primary/guilds/guilds';
-@import 'components/primary/guilds/settings_button';
 
 // Channels
 @import 'components/primary/channels/channels';

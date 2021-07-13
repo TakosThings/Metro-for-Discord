@@ -3,7 +3,8 @@
     border-radius: 0;
 }
 
-.theme-dark .sidebar-2K8pFh{
+// NOTE: 2021-07-13 - The hidden class is used when a video call is full screen to hide the channels pane.
+.theme-dark .sidebar-2K8pFh:not(.hidden-3iamF5){
     width: 288px;
     .container-3w7J-x{
         background-color: transparent;
