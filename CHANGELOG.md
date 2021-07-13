@@ -1,8 +1,19 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.0
+* **Plugin support**
+  * Add plugin support for OnlineFriendCount
+  * Add plugin support for ReadAllNotificationsButton
+  * Update plugin support for MemberCount
+  * Add plugin support for BetterFormattingRedux
+* **Fixes**
+  * BD: Public server button was unstyled
+  * Missing Stickers icon in Server Settings
+  * Large blank area in video call tiles view when Discord is fullscreen
+
 #### 3.15.20
-* **Fixes** ()
+* **Fixes**
   * Missing User Profile siderbar icon in User Settings
   * Override Discord fonts
   * 'Users are typing' overlapped slowmode countdown timer
