@@ -1,6 +1,9 @@
-div[class^="membersGroup-v9BXpm"]{
-    background: $ChromeLow;
-}
-div[class^="#MemberCount"]{
-    background: $ChromeLow;
+#MemberCount{
+    background: $ChromeLow !important;
+    margin-top: 0 !important;
+    h2{
+        margin-bottom: 0;
+        border-bottom: 0;
+        text-align: left;
+    }
 }
