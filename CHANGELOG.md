@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.2
+* **Fixes**
+  * User settings button in wrong positon, and missing icon
+
 #### 3.16.1
 * **Fixes**
   * Some icons not displaying on toolbars
