@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.1
+* **Fixes**
+  * Some icons not displaying on toolbars
+
 #### 3.16.0
 * **Plugin support**
   * Add plugin support for OnlineFriendCount

@@ -118,10 +118,10 @@
         content: "\E7ED";
         color: $alert;
     }
-    div[aria-label="Pinned Messages"]::before{
+    div[aria-label="Pinned messages"]::before{
         content: "\E840";
     }
-    div[aria-label="Member List"]::before{
+    div[aria-label="Member list"]::before{
         content: "\E779";
     }
     div[aria-label="Update Ready!"]{
@@ -144,13 +144,13 @@
         content: "\E715";
     }
     // DM specific
-    div[aria-label="Start Voice Call"]::before{
+    div[aria-label="Start voice call"]::before{
         content: "\E717";
     }
-    div[aria-label="Start Video Call"]::before{
+    div[aria-label="Start video call"]::before{
         content: "\E714";
     }
-    div[aria-label="Add Friends to DM"]::before{
+    div[aria-label="Add friends to DM"]::before{
         content: "\E902";
     }
 }
