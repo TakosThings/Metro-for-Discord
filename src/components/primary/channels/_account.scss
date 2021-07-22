@@ -56,7 +56,7 @@
     }
 
     // Place the setting button in the guilds list
-    button[aria-label="User Settings"]{
+    button[aria-label="User settings"]{
         position: absolute;
         width: 48px;
         bottom: 0;
@@ -78,7 +78,7 @@
         content: "\E74F";
         color: $alert;
     }
-    button[aria-label="User Settings"]::before{
+    button[aria-label="User settings"]::before{
         content: "\E713";
     }
 }
