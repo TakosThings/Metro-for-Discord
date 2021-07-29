@@ -45,6 +45,14 @@
             color: $BaseLow;
             opacity: 1;
         }
+
+        // Remove subtext on Spotify menu items
+        &[id*="spotify"],
+        &[id*="listen"]{
+            .subtext-13Lvrj{
+                display: none;
+            }
+        }
     }
 
     // Emoji items
