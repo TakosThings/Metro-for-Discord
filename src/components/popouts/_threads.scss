@@ -1,0 +1,34 @@
+.theme-dark .container-7uh5fX{
+    background-color: $ChromeLow;
+    border: 1px solid $BorderTransient;
+
+    .header-1VS4tm{
+        background-color: transparent;
+        .threadIcon-3XJhLD{
+            display: none;
+        }
+        .base-1x0h_U{
+            @include FontBase;
+        }
+        .divider-mDc_D8{
+            display: none;
+        }
+
+        // Tabs
+        .tab-PQvTH4{
+            margin-right: 8px;
+            @include FontBody;
+        }
+    }
+
+    // Items
+    .sectionHeader-17Aate{
+        @include FontBase;
+        text-transform: none;
+    }
+    .container-2I9Hud{
+        background-color: $ChromeMediumLow;
+        border: 1px solid $BorderTransient;
+        border-radius: 4px;
+    }
+}
