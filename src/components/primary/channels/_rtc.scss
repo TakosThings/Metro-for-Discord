@@ -48,13 +48,13 @@
         &[aria-label="Exit Quietly"]::before{
             content: "\E89B";
         }
-        &[aria-label^="Noise Suppression powered by Krisp"]::before{
+        &[aria-label^="Noise suppression powered by Krisp"]::before{
             content: "\F61F";
         }
         &[aria-label*="Camera"]::before{
             content: "\E960";
         }
-        &[aria-label^="Share Your Screen"]::before{
+        &[aria-label^="Share Your screen"]::before{
             content: "\EBC6";
         }
     }
@@ -87,13 +87,13 @@
         button[aria-label="Exit Quietly"]::before{
             content: "\E89B";
         }
-        button[aria-label^="Noise Suppression powered by Krisp"]::before{
+        button[aria-label^="Noise suppression powered by Krisp"]::before{
             content: "\F61F";
         }
         button[aria-label*="Camera"]::before{
             content: "\E960";
         }
-        button[aria-label^="Share Your Screen"]::before{
+        button[aria-label^="Share Your screen"]::before{
             content: "\EBC6";
         }
     }
