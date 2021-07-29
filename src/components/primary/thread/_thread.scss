@@ -1,0 +1,16 @@
+.theme-dark .threadSidebar-1o3BTy{
+    margin-left: 0;
+    background-color: transparent;
+    border-radius: 0;
+
+    // Chat
+    .form-3eU9kJ, // Creating thread
+    .chat-15Vmww{
+        background-color: $ChromeLow;
+    }
+}
+
+// Remove rounded corners on main chat when thread sidebar is open
+.chat-3bRxxu.threadSidebarOpen-vdkwIh{
+    border-radius: 0;
+}

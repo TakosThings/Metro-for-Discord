@@ -310,6 +310,19 @@
         }
     }
 
+    // Threads
+    // Compact chat thread spine
+    .spine-5jbOmI{
+        border-bottom-left-radius: 4px;
+        border-color: $ChromeHigh;
+    }
+    // See bottom of file for cozy thread spine fixes
+
+    // Chat thread box
+    .container-3hZ-gs{
+        background-color: $ChromeLow;
+    }
+
     // Auto complete
     // Hack to stop the autocomplete popout being selected
     // Changes to this code must be mirrored to _chat.scss
@@ -349,4 +362,25 @@
             @include FontCaption;
         }
     }
+}
+
+// Thread spine for cozy mode
+.font-size-12 .cozy-3raOZG.hasThread-2k82W0:after,
+.font-size-14 .cozy-3raOZG.hasThread-2k82W0:after,
+.font-size-15 .cozy-3raOZG.hasThread-2k82W0:after,
+.font-size-16 .cozy-3raOZG.hasThread-2k82W0:after{
+    width: 2.5rem;
+    left: 1.3rem;
+}
+.font-size-18 .cozy-3raOZG.hasThread-2k82W0:after{
+    width: 2.3rem;
+    left: 1.1rem;
+}
+.font-size-20 .cozy-3raOZG.hasThread-2k82W0:after{
+    width: 2rem;
+    left: 1.05rem;
+}
+.font-size-24 .cozy-3raOZG.hasThread-2k82W0:after{
+    width: 1.7rem;
+    left: 0.85rem;
 }

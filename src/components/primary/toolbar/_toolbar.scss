@@ -1,4 +1,5 @@
-.theme-dark .chat-3bRxxu .container-1r6BKw{
+.theme-dark .chat-3bRxxu .container-1r6BKw,
+.theme-dark .threadSidebar-1o3BTy .container-1r6BKw{ // Thread sidebar
     // LTR
     height: 40px;
     padding: 0 0 0 20px;
@@ -15,6 +16,10 @@
         .title-29uC1r{
             margin-right: 12px;
             @include FontBase;
+        }
+        // Caret (when a thread is open)
+        .caret-3W7cBB{
+            margin-right: 12px;
         }
         // Remove divider
         .divider-3FBTu8{
@@ -111,6 +116,18 @@
         display: none;
     }
 
+    div[aria-label="Threads"]::before{
+        content: "\E8C4"; // ShowBcc
+    }
+    div[aria-label="More"]::before{
+        content: "\E712"; // More
+    }
+    div[aria-label="Notification settings"]::before{
+        content: "\EA8F";
+    }
+    div[aria-label="Close"]::before{
+        content: "\E89F"; // ClosePane
+    }
     div[aria-label^="Mute channel"][aria-checked="false"]::before{
         content: "\EA8F";
     }

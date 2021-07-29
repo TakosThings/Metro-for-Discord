@@ -1,9 +1,20 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.3
+* **Notes**
+  * Some fixes in this release may not work for you due to a Discord A/B test (See issue [#267](https://github.com/TakosThings/Metro-for-Discord/issues/267))
+* **Enhancements**
+  * Add various icons releated to threads
+  * Threads
+* **Fixes**
+  * Remove subtext in context menu Spotify options
+  * Some missing icons in RTC area
+  * Hide stickers icon in chat box
+
 #### 3.16.2
 * **Fixes**
-  * User settings button in wrong positon, and missing icon
+  * User settings button in wrong position, and missing icon
 
 #### 3.16.1
 * **Fixes**

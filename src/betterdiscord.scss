@@ -83,6 +83,7 @@
 @import 'components/popouts/rtc';
 @import 'components/popouts/search';
 @import 'components/popouts/stream_preview';
+@import 'components/popouts/threads';
 @import 'components/popouts/user';
 
 // Primary core
@@ -108,6 +109,9 @@
 @import 'components/primary/channels/activity';
 @import 'components/primary/channels/account';
 @import 'components/primary/channels/badge';
+
+// Threads
+@import 'components/primary/thread/thread';
 
 // Members
 @import 'components/primary/members/members';
