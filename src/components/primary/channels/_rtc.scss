@@ -36,27 +36,7 @@
     .button-14-BFJ{
         width: 48px;
         height: 48px;
-        .contents-18-Yxp{
-            display: none;
-        }
-        &::before{
-            @include FontIcon;
-                font-size: 16px;
-        }
-        // Icon replcements
-        &[aria-label="Disconnect"]::before,
-        &[aria-label="Exit Quietly"]::before{
-            content: "\E89B";
-        }
-        &[aria-label^="Noise suppression powered by Krisp"]::before{
-            content: "\F61F";
-        }
-        &[aria-label*="Camera"]::before{
-            content: "\E960";
-        }
-        &[aria-label^="Share Your screen"]::before{
-            content: "\EBC6";
-        }
+
     }
 
     // Webcam/screen share options
@@ -79,6 +59,39 @@
                 font-size: 16px;
             }
         }
+
+    }
+}
+
+
+html[lang^="en-"].theme-dark .container-1giJp5{
+    .button-14-BFJ{
+        .contents-18-Yxp{
+            display: none;
+        }
+        &::before{
+            @include FontIcon;
+                font-size: 16px;
+        }
+        // Icon replcements
+        &[aria-label="Disconnect"]::before,
+        &[aria-label="Exit Quietly"]::before{
+            content: "\E89B";
+        }
+        &[aria-label^="Noise suppression powered by Krisp"]::before,
+        &[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
+            content: "\F61F";
+        }
+        &[aria-label*="Camera"]::before{
+            content: "\E960";
+        }
+        &[aria-label^="Share Your screen"]::before,
+        &[aria-label^="Share Your Screen"]::before{ // US
+            content: "\EBC6";
+        }
+    }
+
+    .actionButtons-14eAc_{
         .contents-18-Yxp{
             display: none;
         }
@@ -87,13 +100,15 @@
         button[aria-label="Exit Quietly"]::before{
             content: "\E89B";
         }
-        button[aria-label^="Noise suppression powered by Krisp"]::before{
+        button[aria-label^="Noise suppression powered by Krisp"]::before,
+        button[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
             content: "\F61F";
         }
         button[aria-label*="Camera"]::before{
             content: "\E960";
         }
-        button[aria-label^="Share Your screen"]::before{
+        button[aria-label^="Share Your screen"]::before,
+        button[aria-label^="Share Your Screen"]::before{ // US
             content: "\EBC6";
         }
     }

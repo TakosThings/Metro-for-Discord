@@ -36,29 +36,7 @@
                     &:hover{
                         background-color: $ListLow;
                     }
-                    svg{
-                        display: none;
-                    }
-                    &::before{
-                        color: $BaseHigh;
-                        @include FontIcon;
-                        font-size: 16px;
-                    }
-                    &[aria-label="Message"]::before{
-                        content: "\E8BD";
-                    }
-                    &[aria-label="More"]::before{
-                        content: "\E712";
-                    }
-                    &[aria-label="Accept"]::before{
-                        content: "\E8FB";
-                    }
-                    &[aria-label="Ignore"]::before{
-                        content: "\E711";
-                    }
-                    &[aria-label="Unblock"]::before{
-                        content: "\E711";
-                    }
+
                 }
 
             }
@@ -149,6 +127,35 @@
                     border-radius: 0;
                 }
             }
+        }
+    }
+}
+
+// Replace icons
+html[lang^="en-"].theme-dark .container-1D34oG{
+    .actionButton-uPB8Fs{
+        svg{
+            display: none;
+        }
+        &::before{
+            color: $BaseHigh;
+            @include FontIcon;
+            font-size: 16px;
+        }
+        &[aria-label="Message"]::before{
+            content: "\E8BD";
+        }
+        &[aria-label="More"]::before{
+            content: "\E712";
+        }
+        &[aria-label="Accept"]::before{
+            content: "\E8FB";
+        }
+        &[aria-label="Ignore"]::before{
+            content: "\E711";
+        }
+        &[aria-label="Unblock"]::before{
+            content: "\E711";
         }
     }
 }

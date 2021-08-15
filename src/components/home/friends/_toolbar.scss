@@ -57,8 +57,10 @@
             width: 68px;
             height: 40px;
             margin: 0;
-            > svg{
-                display: none;
+            > svg{ // Non-EN position fix
+                position: absolute;
+                top: 6px;
+                left: 22px;
             }
             &:hover{
                 background-color: $ListLow;
@@ -93,6 +95,10 @@
             display: none;
         }
     }
+}
+
+
+html[lang^="en-"].theme-dark .container-1D34oG .container-1r6BKw{
     div[aria-label="New group DM"]::before{
         content: "\E902";
     }
