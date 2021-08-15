@@ -1,6 +1,11 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.4
+* **Fixes**
+  * The theme will now only replace icons when English is the selected language. Default icons will be used in their stead.
+  * Some missing icons when English simplified is the selected language
+
 #### 3.16.3
 * **Notes**
   * Some fixes in this release may not work for you due to a Discord A/B test (See issue [#267](https://github.com/TakosThings/Metro-for-Discord/issues/267))
