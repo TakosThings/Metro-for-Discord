@@ -1,45 +1,45 @@
-html[lang="da"],    // Danish
-html[lang="de"],    // German
-html[lang="es-ES"], // Spanish
-html[lang="fr"],    // French
-html[lang="hr"],    // Croatian
-html[lang="it"],    // Italian
-html[lang="lt"],    // Lithuanian
-html[lang="hu"],    // Hungary
-html[lang="nl"],    // Dutch
-html[lang="no"],    // Norwegian
-html[lang="pl"],    // Polish
-html[lang="pt-BR"], // Portuguese, Brazilian
-html[lang="ro"],    // Romanian
-html[lang="fi"],    // Finnish
-html[lang="sv-SE"], // Sweden
-html[lang="vi"],    // Vietnamese
-html[lang="tr"],    // Turkish
-html[lang="cs"],    // Czech
-html[lang="el"],    // Greek
-html[lang="bg"],    // Bulgarian
-html[lang="ru"],    // Russian
-html[lang="uk"],    // Ukrainian
-html[lang="th"],    // Thai
-html[lang="zh-CN"], // Chinese
-html[lang="ja"],    // Japanese
-html[lang="zh-TW"], // Chinese/Taiwan
-html[lang="ko"]{    // Korea
-    .app-2rEoOp{
-        padding-top: 32px;
-        &::after{
-            content: "This theme requires English to be the selected Language. Press 'CTRL + comma' to open your settings.";
-            height: 32px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            display: block;
-            z-index: 999;
-            background-color: $alert;
-            color: #FFF;
-            @include FontBody;
-            text-align: center;
-            line-height: 32px;
-        }
-    }
-}
+// html[lang="da"],    // Danish
+// html[lang="de"],    // German
+// html[lang="es-ES"], // Spanish
+// html[lang="fr"],    // French
+// html[lang="hr"],    // Croatian
+// html[lang="it"],    // Italian
+// html[lang="lt"],    // Lithuanian
+// html[lang="hu"],    // Hungary
+// html[lang="nl"],    // Dutch
+// html[lang="no"],    // Norwegian
+// html[lang="pl"],    // Polish
+// html[lang="pt-BR"], // Portuguese, Brazilian
+// html[lang="ro"],    // Romanian
+// html[lang="fi"],    // Finnish
+// html[lang="sv-SE"], // Sweden
+// html[lang="vi"],    // Vietnamese
+// html[lang="tr"],    // Turkish
+// html[lang="cs"],    // Czech
+// html[lang="el"],    // Greek
+// html[lang="bg"],    // Bulgarian
+// html[lang="ru"],    // Russian
+// html[lang="uk"],    // Ukrainian
+// html[lang="th"],    // Thai
+// html[lang="zh-CN"], // Chinese
+// html[lang="ja"],    // Japanese
+// html[lang="zh-TW"], // Chinese/Taiwan
+// html[lang="ko"]{    // Korea
+//     .app-2rEoOp{
+//         padding-top: 32px;
+//         &::after{
+//             content: "This theme requires English to be the selected Language. Press 'CTRL + comma' to open your settings.";
+//             height: 32px;
+//             width: 100%;
+//             position: absolute;
+//             top: 0;
+//             display: block;
+//             z-index: 999;
+//             background-color: $alert;
+//             color: #FFF;
+//             @include FontBody;
+//             text-align: center;
+//             line-height: 32px;
+//         }
+//     }
+// }
