@@ -78,13 +78,15 @@ html[lang^="en-"].theme-dark .container-1giJp5{
         &[aria-label="Exit Quietly"]::before{
             content: "\E89B";
         }
-        &[aria-label^="Noise suppression powered by Krisp"]::before{
+        &[aria-label^="Noise suppression powered by Krisp"]::before,
+        &[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
             content: "\F61F";
         }
         &[aria-label*="Camera"]::before{
             content: "\E960";
         }
-        &[aria-label^="Share Your screen"]::before{
+        &[aria-label^="Share Your screen"]::before,
+        &[aria-label^="Share Your Screen"]::before{ // US
             content: "\EBC6";
         }
     }
@@ -98,13 +100,15 @@ html[lang^="en-"].theme-dark .container-1giJp5{
         button[aria-label="Exit Quietly"]::before{
             content: "\E89B";
         }
-        button[aria-label^="Noise suppression powered by Krisp"]::before{
+        button[aria-label^="Noise suppression powered by Krisp"]::before,
+        button[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
             content: "\F61F";
         }
         button[aria-label*="Camera"]::before{
             content: "\E960";
         }
-        button[aria-label^="Share Your screen"]::before{
+        button[aria-label^="Share Your screen"]::before,
+        button[aria-label^="Share Your Screen"]::before{ // US
             content: "\EBC6";
         }
     }

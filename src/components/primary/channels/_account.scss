@@ -83,7 +83,8 @@ html[lang^="en-"].theme-dark .container-3baos1{
         content: "\E74F";
         color: $alert;
     }
-    button[aria-label="User settings"]::before{
+    button[aria-label="User settings"]::before,
+    button[aria-label="User Settings"]::before{
         content: "\E713";
     }
 }
