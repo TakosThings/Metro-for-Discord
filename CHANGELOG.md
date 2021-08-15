@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.5
+* **Fixes**
+  * Update requirements
+  * Missing BD settings icon
+  * Duplicate icons in home toolbar
+
 #### 3.16.4
 * **Fixes**
   * The theme will now only replace icons when English is the selected language. Default icons will be used in their stead.

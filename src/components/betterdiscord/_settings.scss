@@ -26,7 +26,8 @@ div[class^="bd-"]{
             }
         }
         // User Settings
-        .item-PXvHYJ[aria-controls="Settings-tab"]::after{ // BD:Settings
+        .item-PXvHYJ[aria-controls="Settings-tab"]::after, // BD:Settings
+        .bd-settings-tab.item-PXvHYJ::after{ // Lazy hack to catch non-english
             content: "\E713" !important; // Setting
         }
         .item-PXvHYJ[aria-controls="Emotes-tab"]::after{ // BD:Emotes
