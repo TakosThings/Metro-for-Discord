@@ -60,8 +60,10 @@
             height: 40px;
             margin: 0;
             opacity: 1;
-            > svg{
-                display: none;
+            > svg{ // Non-EN position fix
+                position: absolute;
+                top: 6px;
+                left: 22px;
             }
             &:hover{
                 background-color: $ListLow;
@@ -110,12 +112,23 @@
 
     }
 
-
     // Remove help button
     a[href="https://support.discord.com"]{
         display: none;
     }
+}
 
+
+html[lang^="en-"].theme-dark .chat-3bRxxu .container-1r6BKw,
+html[lang^="en-"].theme-dark .threadSidebar-1o3BTy .container-1r6BKw{
+    .toolbar-1t6TWx{
+        .iconWrapper-2OrFZ1{
+            > svg{
+                display: none;
+            }
+        }
+    }
+    // Replace icons
     div[aria-label="Threads"]::before{
         content: "\E8C4"; // ShowBcc
     }
@@ -135,10 +148,12 @@
         content: "\E7ED";
         color: $alert;
     }
-    div[aria-label="Pinned messages"]::before{
+    div[aria-label="Pinned messages"]::before,
+    div[aria-label="Pinned Messages"]::before{ // US
         content: "\E840";
     }
-    div[aria-label="Member list"]::before{
+    div[aria-label="Member list"]::before,
+    div[aria-label="Member List"]::before{ // US
         content: "\E779";
     }
     div[aria-label="Update Ready!"]{

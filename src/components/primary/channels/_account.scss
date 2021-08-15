@@ -33,6 +33,26 @@
         }
     }
 
+    // Place the setting button in the guilds list
+    button:last-child{
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        bottom: 0;
+        left: 0;
+    }
+    // Mute/Deafen buttons
+    button:nth-child(1),
+    button:nth-child(2){
+        width: 60px;
+        height: 48px;
+    }
+
+
+}
+
+// Replace icons
+html[lang^="en-"].theme-dark .container-3baos1{
     .button-14-BFJ{
         height: 48px;
         border-radius: 0;
@@ -46,21 +66,6 @@
         &:hover{
             background-color: $ListLow
         }
-    }
-
-    // Mute/Deafen buttons
-    button[aria-label="Mute"],
-    button[aria-label="Deafen"]{
-        width: 60px;
-
-    }
-
-    // Place the setting button in the guilds list
-    button[aria-label="User settings"]{
-        position: absolute;
-        width: 48px;
-        bottom: 0;
-        left: 0;
     }
 
     // Icon replacements

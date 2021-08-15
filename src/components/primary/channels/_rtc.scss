@@ -36,6 +36,36 @@
     .button-14-BFJ{
         width: 48px;
         height: 48px;
+
+    }
+
+    // Webcam/screen share options
+    .actionButtons-14eAc_{
+        position: absolute;
+        bottom: -48px;
+        right: 0;
+        .button-14-BFJ,
+        .button-38aScr{
+            width: 60px;
+            height: 48px;
+            margin: 0;
+            font-size: 0;
+            background-color: transparent;
+            &:hover{
+                background-color: $ListLow;
+            }
+            &::before{
+                @include FontIcon;
+                font-size: 16px;
+            }
+        }
+
+    }
+}
+
+
+html[lang^="en-"].theme-dark .container-1giJp5{
+    .button-14-BFJ{
         .contents-18-Yxp{
             display: none;
         }
@@ -59,26 +89,7 @@
         }
     }
 
-    // Webcam/screen share options
     .actionButtons-14eAc_{
-        position: absolute;
-        bottom: -48px;
-        right: 0;
-        .button-14-BFJ,
-        .button-38aScr{
-            width: 60px;
-            height: 48px;
-            margin: 0;
-            font-size: 0;
-            background-color: transparent;
-            &:hover{
-                background-color: $ListLow;
-            }
-            &::before{
-                @include FontIcon;
-                font-size: 16px;
-            }
-        }
         .contents-18-Yxp{
             display: none;
         }
