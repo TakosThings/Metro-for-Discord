@@ -99,6 +99,9 @@
 
 
 html[lang^="en-"].theme-dark .container-1D34oG .container-1r6BKw{
+    .iconWrapper-2OrFZ1 > svg{
+        display: none;
+    }
     div[aria-label="New group DM"]::before{
         content: "\E902";
     }
