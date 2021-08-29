@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.6
+* **Fixes**
+  * Update members list class
+  * Update member list toolbar selector
+  * Update settings sidebar icon selectors
+
 #### 3.16.5
 * **Fixes**
   * Update requirements

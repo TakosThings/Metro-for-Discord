@@ -152,8 +152,8 @@ html[lang^="en-"].theme-dark .threadSidebar-1o3BTy .container-1r6BKw{
     div[aria-label="Pinned Messages"]::before{ // US
         content: "\E840";
     }
-    div[aria-label="Member list"]::before,
-    div[aria-label="Member List"]::before{ // US
+    div[aria-label="Hide Member List"]::before,
+    div[aria-label="Show Member List"]::before{ // US
         content: "\E779";
     }
     div[aria-label="Update Ready!"]{
