@@ -30,7 +30,7 @@ div[class^="bd-"]{
         .bd-settings-tab.item-PXvHYJ::after{ // Lazy hack to catch non-english
             content: "\E713" !important; // Setting
         }
-        .item-PXvHYJ[aria-controls="Emotes-tab"]::after{ // BD:Emotes
+        .item-PXvHYJ[aria-controls="emotes-tab"]::after{ // BD:Emotes
             content: "\ED56" !important; // EmojiTabFoodPlants
         }
         .item-PXvHYJ[aria-controls="customcss-tab"]::after{ // BD:CustomCSS

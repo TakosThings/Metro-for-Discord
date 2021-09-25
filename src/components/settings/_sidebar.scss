@@ -136,7 +136,10 @@
             content: "\F0B9"; // Connected
         }
 
-        // Billing Settings
+        // Payment Settings
+        .item-PXvHYJ[aria-controls="subscriptions-tab"]::after{ // Subscriptions
+            content: "\ED0E"; // SubscriptionAdd
+        }
         .item-PXvHYJ[aria-controls="discord-nitro-tab"]::after{ // Nitro
             content: "N";
             @include FontNormal;

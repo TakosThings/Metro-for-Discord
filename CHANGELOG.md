@@ -1,6 +1,13 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.7
+* **Fixes**
+  * Large gap between messages in cosy mode
+  * Add icon for Subscriptions tab
+  * BD: Missing emotes tab icon
+  * Missing New Group DM icon when using Simplified English
+
 #### 3.16.6
 * **Fixes**
   * Update members list class
