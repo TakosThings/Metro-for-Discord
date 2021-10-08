@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.8
+* **Fixes**
+  * Update Guilds list classes
+
 #### 3.16.7
 * **Fixes**
   * Large gap between messages in cosy mode
