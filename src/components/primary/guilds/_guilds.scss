@@ -10,16 +10,16 @@
     background-color: transparent;
     z-index: 10;
 
-    .listItem-1hlISG{
+    .listItem-2Ig28I{
         margin: 0;
         width: 48px;
         &:hover{
             background-color: $ListLow;
         }
         // Pill
-        .pill-1z4sAY,
-        .pill-3N7f9r,
-        .pill-1Z5PKm,
+        .pill-ZqtR4i,
+        .pill-61ft1C,
+        .pill-gcH-8B,
         .pill-1aYSec{
             .item-2hkk8m{
                 width: 2px;
@@ -79,11 +79,11 @@
         }
 
         // Separator
-        .guildSeparator-EOYZLM{
+        .guildSeparator-nWMCrR{
             display: none;
         }
         // Add server/Server Discovery icons
-        .circleIconButton-1XqULR{
+        .circleIconButton-hZmpE8{
             background-color: transparent;
             color: #FFF;
             &[aria-label]{
@@ -128,8 +128,8 @@
         }
     }
     // Folders
-    .wrapper-3Njo_c{
-        .listItem-1hlISG{
+    .wrapper-shyHJt{
+        .listItem-2Ig28I{
             .wrapper-25eVIn{
                 svg{
                     mask{
@@ -143,17 +143,17 @@
             height: auto !important;
         }
     }
-    .folder-1hbNCn{
+    .folder-2w6LX1{
         background-color: transparent;
     }
-    .folderIconWrapper-1_bOZe{
+    .folderIconWrapper-1Ml_1q{
         background-color: transparent !important;
         border-radius: 0;
     }
-    .closedFolderIconWrapper-2sTcE6{
+    .closedFolderIconWrapper-1I9YfS{
         padding: 8px;
     }
-    .expandedFolderBackground-1cujaW{
+    .expandedFolderBackground-3ZDF05{
         left: 0;
         bottom: 0;
         background-color: $ListLow;
@@ -162,7 +162,7 @@
             background-color: transparent;
         }
     }
-    .expandedFolderIconWrapper-Huv7rA{
+    .expandedFolderIconWrapper-3fmTfW{
         svg path{
             clip-path: inset(1px 1px 1px 1px);
         }
