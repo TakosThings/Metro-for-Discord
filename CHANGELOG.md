@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.9
+* **Fixes**
+  * Update Guilds list classes
+
 #### 3.16.8
 * **Fixes**
   * Update Guilds list classes
