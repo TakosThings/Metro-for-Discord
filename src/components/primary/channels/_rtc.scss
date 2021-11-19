@@ -41,22 +41,17 @@
 
     // Webcam/screen share options
     .actionButtons-14eAc_{
-        position: absolute;
-        bottom: -48px;
-        right: 0;
+        margin: 0 8px 8px 0;
         .button-14-BFJ,
         .button-38aScr{
-            width: 60px;
-            height: 48px;
-            margin: 0;
-            font-size: 0;
+            width: auto;
             background-color: transparent;
+            border: 1px solid $ListLow;
             &:hover{
                 background-color: $ListLow;
             }
-            &::before{
-                @include FontIcon;
-                font-size: 16px;
+            svg{
+                display: none;
             }
         }
 
@@ -82,19 +77,9 @@ html[lang^="en-"].theme-dark .container-1giJp5{
         &[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
             content: "\F61F";
         }
-        &[aria-label*="Camera"]::before{
-            content: "\E960";
-        }
-        &[aria-label^="Share Your screen"]::before,
-        &[aria-label^="Share Your Screen"]::before{ // US
-            content: "\EBC6";
-        }
     }
 
     .actionButtons-14eAc_{
-        .contents-18-Yxp{
-            display: none;
-        }
         // Icon replcements
         button[aria-label="Disconnect"]::before,
         button[aria-label="Exit Quietly"]::before{
@@ -103,13 +88,6 @@ html[lang^="en-"].theme-dark .container-1giJp5{
         button[aria-label^="Noise suppression powered by Krisp"]::before,
         button[aria-label^="Noise Suppression powered by Krisp"]::before{ // US
             content: "\F61F";
-        }
-        button[aria-label*="Camera"]::before{
-            content: "\E960";
-        }
-        button[aria-label^="Share Your screen"]::before,
-        button[aria-label^="Share Your Screen"]::before{ // US
-            content: "\EBC6";
         }
     }
 }

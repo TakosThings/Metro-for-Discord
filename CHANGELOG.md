@@ -1,6 +1,12 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.10
+* **Changes**
+  * Removed custom positioning of user avatar
+* **Fixes**
+  * Members list background colour
+
 #### 3.16.9
 * **Fixes**
   * Update Guilds list classes
