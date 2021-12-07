@@ -1,6 +1,10 @@
 # Changelog
 Newest Changes are at the top
 
+#### 3.16.11
+* **Fixes**
+  * Remove festive Home icon
+
 #### 3.16.10
 * **Changes**
   * Removed custom positioning of user avatar
