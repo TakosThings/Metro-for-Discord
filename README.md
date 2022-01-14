@@ -1,3 +1,8 @@
+## End of development
+Development on Metro for Discord has ended and this repo is now archived. Head over to [Fluent Discord](https://github.com/TakosThings/Fluent-Discord) for a Windows 11 Discord theme.
+
+---
+
 # Metro for Discord
 Metro for Discord is a theme to make Discord's Desktop client look like a native UWP application.
 
